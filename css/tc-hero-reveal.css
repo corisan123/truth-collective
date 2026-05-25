@@ -1,142 +1,104 @@
-/* ==========================================================================
-   TC Hero Reveal
-   --------------------------------------------------------------------------
-   Adds a hover driven reveal to the home page hero on
-   tcstaging.truth-collective.com.
-
-   How to deploy:
-     1. Open WordPress Admin on the staging site only.
-        Live site is frozen. Do not paste this there.
-     2. Appearance, Customize, Additional CSS.
-     3. Scroll to the bottom of the existing CSS. Paste this block at the
-        end. Do not delete or modify anything that is already there.
-     4. In the editor, open the home page, select the hero Section block,
-        and add the class tc-hero-reveal in the Advanced, Additional CSS
-        Class(es) field. Update.
-
-   How it behaves:
-     At rest, only the H1 inside the hero is visible.
-     On hover anywhere in the hero, the paragraph fades in, then the
-     EXPLORE button fades in below it.
-     On touch devices the paragraph and button are visible at rest
-     because there is no hover.
-
-   How to reverse:
-     Remove the tc-hero-reveal class from the Section block. The hero
-     returns to default rendering with every element visible.
-
-   Notes:
-     CSS only. No JavaScript. No external assets. Append only. The
-     EXPLORE button is a pseudo element on the Section block, so no HTML
-     button block is needed. No selector here touches tc-overlay-card,
-     tc-book-card, tc-explore-card, tc-leadership-body, or
-     tc-hero-animated.
-   ========================================================================== */
+/* ================================================================
+   TC HERO REVEAL
+   Truth Collective home page hero section
+   At rest: only the H1 headline is visible
+   On hover: paragraph fades in, then EXPLORE button fades in
+   Mobile: all elements visible at rest (no hover available)
+   The EXPLORE button is a CSS pseudo-element on the Section
+   Added: 2026-05-25
+   Removable by deleting the .tc-hero-reveal class from the
+   hero Section block
+   ================================================================ */
 
 .tc-hero-reveal {
-    position: relative;
+  position: relative;
+  cursor: default;
+  padding-bottom: 120px;
 }
 
-/* CSS only EXPLORE button rendered as a pseudo element on the Section.
-   The word EXPLORE is supplied via content. The gold arrow to its right
-   is an inline SVG delivered as a background image, so two ink colors
-   are achieved without any HTML or second pseudo element. */
+.tc-hero-reveal h1 {
+  opacity: 1;
+  transition: opacity 350ms ease;
+}
+
+.tc-hero-reveal p {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 500ms ease 100ms, transform 500ms ease 100ms;
+}
+
 .tc-hero-reveal::after {
-    content: "EXPLORE";
-    position: absolute;
-    left: 50%;
-    bottom: 6%;
-    transform: translateX(-50%);
-    box-sizing: border-box;
-    display: inline-block;
-    padding: 14px 62px 14px 28px;
-    font-family: inherit;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 0.18em;
-    line-height: 1;
-    text-transform: uppercase;
-    color: #ffffff;
-    background-color: transparent;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23c9a85a' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'><line x1='4' y1='12' x2='20' y2='12'/><polyline points='13 5 20 12 13 19'/></svg>");
-    background-repeat: no-repeat;
-    background-position: right 22px center;
-    background-size: 18px 18px;
-    border: 1px solid #ffffff;
-    border-radius: 2px;
-    pointer-events: none;
-    z-index: 2;
+  content: "EXPLORE";
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  z-index: 4;
+  padding: 14px 60px 14px 32px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #ffffff;
+  background: linear-gradient(135deg, rgba(30, 58, 95, 0.85) 0%, rgba(15, 30, 50, 0.85) 100%);
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 500ms ease 300ms, transform 500ms ease 300ms;
+  pointer-events: none;
+  white-space: nowrap;
+  backdrop-filter: blur(2px);
 }
 
-/* Hover capable devices only.
-   Touch devices skip this entire block, so paragraph and button stay
-   visible at rest on phones and tablets. */
-@media (hover: hover) and (pointer: fine) {
-
-    /* At rest, hide the paragraph and the pseudo button. */
-    .tc-hero-reveal p {
-        opacity: 0;
-        visibility: hidden;
-        transform: translateY(8px);
-        transition:
-            opacity 450ms ease,
-            transform 450ms ease,
-            visibility 0s linear 450ms;
-    }
-
-    .tc-hero-reveal::after {
-        opacity: 0;
-        visibility: hidden;
-        transform: translate(-50%, 8px);
-        transition:
-            opacity 450ms ease,
-            transform 450ms ease,
-            visibility 0s linear 450ms;
-    }
-
-    /* On hover anywhere in the hero, fade in the paragraph first. */
-    .tc-hero-reveal:hover p,
-    .tc-hero-reveal:focus-within p {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
-        transition:
-            opacity 500ms ease 80ms,
-            transform 500ms ease 80ms,
-            visibility 0s linear 0s;
-    }
-
-    /* Then fade in the EXPLORE button after a short delay. */
-    .tc-hero-reveal:hover::after,
-    .tc-hero-reveal:focus-within::after {
-        opacity: 1;
-        visibility: visible;
-        transform: translate(-50%, 0);
-        transition:
-            opacity 500ms ease 400ms,
-            transform 500ms ease 400ms,
-            visibility 0s linear 0s;
-    }
+.tc-hero-reveal::before {
+  content: "\203A";
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translate(38px, 6px);
+  z-index: 5;
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #b8944b;
+  opacity: 0;
+  transition: opacity 500ms ease 300ms, transform 500ms ease 300ms;
+  pointer-events: none;
+  line-height: 1;
 }
 
-/* Respect users who prefer reduced motion. Keep the reveal behavior
-   but remove the slide and shorten the fade. */
-@media (prefers-reduced-motion: reduce) {
-    .tc-hero-reveal p,
-    .tc-hero-reveal::after,
-    .tc-hero-reveal:hover p,
-    .tc-hero-reveal:focus-within p,
-    .tc-hero-reveal:hover::after,
-    .tc-hero-reveal:focus-within::after {
-        transform: none;
-        transition:
-            opacity 120ms linear,
-            visibility 0s linear 0s;
-    }
+@media (hover: hover) {
+  .tc-hero-reveal:hover p {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
-    .tc-hero-reveal::after,
-    .tc-hero-reveal:hover::after,
-    .tc-hero-reveal:focus-within::after {
-        transform: translateX(-50%);
-    }
+  .tc-hero-reveal:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  .tc-hero-reveal:hover::before {
+    opacity: 1;
+    transform: translate(38px, -2px);
+  }
+}
+
+@media (max-width: 767px), (hover: none) {
+  .tc-hero-reveal p {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .tc-hero-reveal::after,
+  .tc-hero-reveal::before {
+    opacity: 1;
+  }
+
+  .tc-hero-reveal::after {
+    transform: translateX(-50%) translateY(0);
+  }
+
+  .tc-hero-reveal::before {
+    transform: translate(38px, -2px);
+  }
 }
