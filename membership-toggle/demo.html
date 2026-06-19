@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TC Membership Toggle — Demo</title>
+<link rel="stylesheet" href="tc-membership-toggle.css">
+<style>
+  body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+         margin: 0; background: #f3f6f8; color: #1f2933; }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+  h1.demo { font-size: 1.5rem; margin: 0 0 .25rem; }
+  p.demo  { color: #6b7280; margin: 0 0 2rem; }
+  hr.demo { border: 0; border-top: 1px dashed #cbd5e1; margin: 3rem 0; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1 class="demo">Membership Toggle — live demo (DEMO MODE)</h1>
+    <p class="demo">No endpoints are configured, so sign-up just confirms and sign-in accepts
+       any email + password so you can preview the unlocked member view.
+       Open this file in a browser to test the toggle, forms, and unlock flow.</p>
+
+    <!-- Page 1 component pasted inline for the demo -->
+    <div class="tc-membership" data-tc-membership data-default-view="visitor">
+      <div class="tc-toggle" role="tablist" aria-label="Choose visitor or member view">
+        <button class="tc-toggle__btn is-active" data-view="visitor" role="tab" aria-selected="true" type="button">New here</button>
+        <button class="tc-toggle__btn" data-view="member" role="tab" aria-selected="false" type="button">Members</button>
+        <span class="tc-toggle__thumb" aria-hidden="true"></span>
+      </div>
+
+      <section class="tc-panel tc-panel--visitor" data-view-panel="visitor">
+        <div class="tc-card">
+          <span class="tc-eyebrow">The Truth Collective Editorial</span>
+          <h2 class="tc-title">Get the AI Mastery Series in your inbox</h2>
+          <p class="tc-lead">Join free and we'll send you our editorial blogs and social posts automatically.</p>
+          <ul class="tc-list"><li>Weekly editorial deep-dives</li><li>Early access to new articles</li><li>Unsubscribe anytime</li></ul>
+          <form class="tc-form" data-tc-signup novalidate>
+            <div class="tc-field"><label for="d-su-name">First name (optional)</label><input id="d-su-name" name="name" type="text" placeholder="Your name"></div>
+            <div class="tc-field"><label for="d-su-email">Email address</label><input id="d-su-email" name="email" type="email" placeholder="you@example.com" required></div>
+            <button class="tc-btn" type="submit">Sign me up — it's free</button>
+            <p class="tc-msg" data-tc-signup-msg></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="tc-panel tc-panel--member" data-view-panel="member">
+        <div class="tc-card">
+          <div class="tc-gate tc-locked">
+            <span class="tc-eyebrow">Members area</span>
+            <h2 class="tc-title">Welcome back</h2>
+            <p class="tc-lead">Sign in to open the inside-information articles reserved for members.</p>
+            <form class="tc-form" data-tc-signin novalidate>
+              <div class="tc-field"><label for="d-si-email">Email address</label><input id="d-si-email" name="email" type="email" placeholder="you@example.com" required></div>
+              <div class="tc-field"><label for="d-si-pass">Password</label><input id="d-si-pass" name="password" type="password" placeholder="••••••••" required></div>
+              <button class="tc-btn" type="submit">Sign in</button>
+              <p class="tc-msg" data-tc-signin-msg></p>
+            </form>
+          </div>
+          <div class="tc-unlocked">
+            <div class="tc-member-bar">
+              <span>Signed in as <strong data-tc-member-email>member</strong></span>
+              <button class="tc-btn tc-btn--ghost" type="button" data-tc-signout>Sign out</button>
+            </div>
+            <span class="tc-eyebrow">Members only</span>
+            <h2 class="tc-title">Inside Information</h2>
+            <p class="tc-lead">This content is visible only to signed-in members.</p>
+            <ul class="tc-list"><li>Full editorial archive</li><li>Source notes &amp; research</li><li>Member-only briefings</li></ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="tc-membership-toggle.js"></script>
+</body>
+</html>

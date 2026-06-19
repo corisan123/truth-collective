@@ -1,0 +1,80 @@
+<!-- =====================================================================
+     PAGE 4 — Example of what a MEMBER sees after validating email/password
+     The full members-only article. Until they sign in, the locked gate is
+     shown; after a successful sign-in the full content is revealed (and a
+     real backend would also be enforcing this server-side — see README).
+     ===================================================================== -->
+<div class="tc-membership"
+     data-tc-membership
+     data-default-view="member"
+     data-signup-endpoint=""
+     data-signin-endpoint=""
+     data-member-redirect="">
+
+  <!-- We keep the toggle so members can still jump back to the visitor view -->
+  <div class="tc-toggle" role="tablist" aria-label="Visitor or member view">
+    <button class="tc-toggle__btn" data-view="visitor" role="tab" aria-selected="false" type="button">Visitor view</button>
+    <button class="tc-toggle__btn is-active" data-view="member" role="tab" aria-selected="true" type="button">Member view</button>
+    <span class="tc-toggle__thumb" aria-hidden="true"></span>
+  </div>
+
+  <section class="tc-panel tc-panel--visitor" data-view-panel="visitor">
+    <div class="tc-card">
+      <span class="tc-eyebrow">Preview</span>
+      <h2 class="tc-title">This is a members-only page</h2>
+      <p class="tc-lead">Switch to the member view and sign in to read the full editorial.</p>
+      <button class="tc-btn" type="button"
+              onclick="document.querySelector('.tc-toggle__btn[data-view=&quot;member&quot;]').click()">Member sign-in</button>
+    </div>
+  </section>
+
+  <section class="tc-panel tc-panel--member" data-view-panel="member">
+    <div class="tc-card">
+
+      <!-- LOCKED: sign-in gate -->
+      <div class="tc-gate tc-locked">
+        <span class="tc-eyebrow">Members only</span>
+        <h2 class="tc-title">Validate your membership</h2>
+        <p class="tc-lead">Enter the email and password you registered with to unlock this page.</p>
+        <form class="tc-form" data-tc-signin novalidate>
+          <div class="tc-field">
+            <label for="tc-si-email-4">Email address</label>
+            <input id="tc-si-email-4" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+          </div>
+          <div class="tc-field">
+            <label for="tc-si-pass-4">Password</label>
+            <input id="tc-si-pass-4" name="password" type="password" autocomplete="current-password" placeholder="••••••••" required>
+          </div>
+          <button class="tc-btn" type="submit">Unlock this page</button>
+          <p class="tc-msg" data-tc-signin-msg></p>
+        </form>
+      </div>
+
+      <!-- UNLOCKED: the real member content -->
+      <div class="tc-unlocked">
+        <div class="tc-member-bar">
+          <span>Signed in as <strong data-tc-member-email>member</strong></span>
+          <button class="tc-btn tc-btn--ghost" type="button" data-tc-signout>Sign out</button>
+        </div>
+
+        <span class="tc-eyebrow">AI Mastery Series · Member edition</span>
+        <h1 class="tc-title">Artificial Intelligence Touches 80% of Our World in 2026</h1>
+        <p class="tc-lead">The complete editorial, including the parts reserved for members.</p>
+
+        <h3>The full breakdown</h3>
+        <p>Replace this section with your members-only article body, research notes,
+           downloads, or embedded media. Everything inside <code>.tc-unlocked</code>
+           is what members see after they validate their email and password.</p>
+
+        <ul class="tc-list">
+          <li>Section 1 — the data behind the 80% claim</li>
+          <li>Section 2 — where it shows up in daily life</li>
+          <li>Section 3 — what to do about it</li>
+        </ul>
+
+        <p>Member briefing, source links, and downloads go here.</p>
+      </div>
+
+    </div>
+  </section>
+</div>

@@ -1,0 +1,73 @@
+<!-- =====================================================================
+     PAGE 3 — Example of what a NON-MEMBER sees on a linked article page
+     A teaser of the article, then a sign-up / sign-in gate. This is the
+     page a visitor lands on when they click a members-style link before
+     they have an account.
+     ===================================================================== -->
+<div class="tc-membership"
+     data-tc-membership
+     data-default-view="visitor"
+     data-signup-endpoint=""
+     data-signin-endpoint=""
+     data-member-redirect="">
+
+  <article class="tc-card">
+    <span class="tc-eyebrow">AI Mastery Series</span>
+    <h1 class="tc-title">Artificial Intelligence Touches 80% of Our World in 2026</h1>
+    <p class="tc-lead">
+      A preview for visitors. The opening of the article is public so you can
+      see the quality — the full breakdown, sources, and member briefing are
+      reserved for members.
+    </p>
+    <p>
+      Artificial intelligence is no longer a future promise; in 2026 it quietly
+      runs the systems we use every day. In this editorial we map where it has
+      already taken hold, what that means for everyday decisions, and how to…
+    </p>
+
+    <!-- Gate: shows the toggle + forms -->
+    <div class="tc-toggle" role="tablist" aria-label="Sign up or sign in to continue" style="margin-top:1.75rem;">
+      <button class="tc-toggle__btn is-active" data-view="visitor" role="tab" aria-selected="true" type="button">Sign up free</button>
+      <button class="tc-toggle__btn" data-view="member" role="tab" aria-selected="false" type="button">I'm a member</button>
+      <span class="tc-toggle__thumb" aria-hidden="true"></span>
+    </div>
+
+    <section class="tc-panel tc-panel--visitor" data-view-panel="visitor">
+      <h3 class="tc-title" style="font-size:1.3rem;">Read the rest — free</h3>
+      <p class="tc-lead">Enter your email to keep reading and get future editorials automatically.</p>
+      <form class="tc-form" data-tc-signup novalidate>
+        <div class="tc-field">
+          <label for="tc-su-email-3">Email address</label>
+          <input id="tc-su-email-3" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+        </div>
+        <button class="tc-btn" type="submit">Unlock the full article</button>
+        <p class="tc-msg" data-tc-signup-msg></p>
+      </form>
+    </section>
+
+    <section class="tc-panel tc-panel--member" data-view-panel="member">
+      <div class="tc-gate tc-locked">
+        <h3 class="tc-title" style="font-size:1.3rem;">Member sign-in</h3>
+        <form class="tc-form" data-tc-signin novalidate>
+          <div class="tc-field">
+            <label for="tc-si-email-3">Email address</label>
+            <input id="tc-si-email-3" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+          </div>
+          <div class="tc-field">
+            <label for="tc-si-pass-3">Password</label>
+            <input id="tc-si-pass-3" name="password" type="password" autocomplete="current-password" placeholder="••••••••" required>
+          </div>
+          <button class="tc-btn" type="submit">Sign in to read</button>
+          <p class="tc-msg" data-tc-signin-msg></p>
+        </form>
+      </div>
+      <div class="tc-unlocked">
+        <div class="tc-member-bar">
+          <span>Signed in as <strong data-tc-member-email>member</strong></span>
+          <button class="tc-btn tc-btn--ghost" type="button" data-tc-signout>Sign out</button>
+        </div>
+        <p>Full member article appears here once signed in.</p>
+      </div>
+    </section>
+  </article>
+</div>

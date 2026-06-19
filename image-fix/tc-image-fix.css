@@ -1,0 +1,129 @@
+/* =====================================================================
+   The Truth Collective — Image cut-off fix
+   Target structure (Kadence):
+     Row Layout > Section.tc-overlay-card > Image.tc-explore-hub > (header + paragraph)
+
+   WHY THE IMAGE IS "CUT IN HALF"
+   ------------------------------------------------------------------
+   The image itself is fine (your <img> is 1900x1080 with a correct
+   srcset). The clipping happens on the CONTAINER, not the image.
+
+   An "overlay card" almost always does one of these two things:
+     1) It is given a FIXED height (or min-height) together with
+        `overflow:hidden`, while the image keeps `height:auto`. A
+        1900x1080 image scaled to 100% width is tall, so anything
+        below the card's fixed height gets clipped -> looks like the
+        bottom half is "cut off".
+     2) The image is absolutely positioned to fill the card
+        (background-style overlay) and the card's height is driven by
+        the text instead of the image, so the image overflows and is
+        clipped.
+
+   Changing the source image size (1200x650 vs 1900x1080) never helps
+   because the crop is caused by the container height, not the file.
+
+   THE FIX BELOW gives you two clean options. Use ONE of them.
+   ===================================================================== */
+
+
+/* =====================================================================
+   OPTION A — SHOW THE WHOLE IMAGE (recommended for editorial cards)
+   The card grows to fit the image; nothing is cropped. The header and
+   paragraph sit naturally below the image.
+   ===================================================================== */
+.tc-overlay-card {
+  height: auto !important;       /* kill any fixed height from the theme */
+  min-height: 0 !important;
+  overflow: visible !important;  /* stop the container from clipping     */
+  display: block;
+}
+
+/* The image wrapper Kadence outputs (figure / inner block) */
+.tc-overlay-card .tc-explore-hub,
+.tc-overlay-card figure.kb-image,
+.tc-overlay-card .kb-image-content-wrap {
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  overflow: visible !important;
+  aspect-ratio: auto !important; /* remove any forced aspect-ratio box   */
+}
+
+/* The image itself — render full, responsive, never cropped */
+.tc-overlay-card .tc-explore-hub img,
+.tc-overlay-card figure.kb-image img,
+img.tc-explore-hub {
+  display: block;
+  width: 100%;
+  height: auto !important;       /* keep natural 1900:1080 proportions   */
+  max-width: 100%;
+  object-fit: contain !important;
+  object-position: center;
+  /* keep your rounded corners + shadow from the inline style */
+  border-radius: 12px;
+}
+
+
+/* =====================================================================
+   OPTION B — TRUE OVERLAY CARD (image as a cropped banner with text
+   sitting ON TOP). Use this only if you WANT a fixed-height banner.
+   Comment out Option A above and enable this block.
+
+   This keeps a consistent banner height and crops the image evenly
+   from the CENTER (so it is never lopsided / "half cut").
+   ===================================================================== */
+/*
+.tc-overlay-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  aspect-ratio: 1900 / 1080;     // matches your uploaded file ratio
+}
+
+.tc-overlay-card .tc-explore-hub,
+.tc-overlay-card figure.kb-image {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.tc-overlay-card .tc-explore-hub img,
+.tc-overlay-card figure.kb-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;             // fills + center-crops evenly
+  object-position: center;
+}
+
+// Put the heading + paragraph on top of the image
+.tc-overlay-card > :not(.tc-explore-hub):not(figure) {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  padding: 1.5rem;
+}
+
+// Optional dark gradient so white text stays readable
+.tc-overlay-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 35%, rgba(0,0,0,.65) 100%);
+}
+*/
+
+
+/* =====================================================================
+   Safety net: Kadence sometimes wraps images in a column with a set
+   row min-height. If the image still clips, this stops the COLUMN
+   from cropping its children. Harmless to leave on.
+   ===================================================================== */
+.tc-overlay-card .kt-inside-inner-col,
+.tc-overlay-card .kadence-column,
+.tc-overlay-card .wp-block-kadence-column {
+  overflow: visible !important;
+  min-height: 0 !important;
+}

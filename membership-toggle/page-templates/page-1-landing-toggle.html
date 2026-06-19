@@ -1,0 +1,95 @@
+<!-- =====================================================================
+     PAGE 1 — Landing page with the center toggle
+     Left/active  = Visitors (email sign-up)
+     Right        = Members  (sign-in)
+     Paste this whole block into a Kadence "Custom HTML" block.
+     The CSS + JS only need to be loaded once site-wide (see README).
+     ===================================================================== -->
+<div class="tc-membership"
+     data-tc-membership
+     data-default-view="visitor"
+     data-signup-endpoint=""
+     data-signin-endpoint=""
+     data-member-redirect="">
+
+  <!-- center toggle -->
+  <div class="tc-toggle" role="tablist" aria-label="Choose visitor or member view">
+    <button class="tc-toggle__btn is-active" data-view="visitor" role="tab" aria-selected="true" type="button">New here</button>
+    <button class="tc-toggle__btn" data-view="member" role="tab" aria-selected="false" type="button">Members</button>
+    <span class="tc-toggle__thumb" aria-hidden="true"></span>
+  </div>
+
+  <!-- VISITOR PANEL -->
+  <section class="tc-panel tc-panel--visitor" data-view-panel="visitor">
+    <div class="tc-card">
+      <span class="tc-eyebrow">The Truth Collective Editorial</span>
+      <h2 class="tc-title">Get the AI Mastery Series in your inbox</h2>
+      <p class="tc-lead">Join free and we'll send you our editorial blogs and social posts — automatically curated, straight to your email.</p>
+
+      <ul class="tc-list">
+        <li>Weekly editorial deep-dives</li>
+        <li>Early access to new articles</li>
+        <li>Unsubscribe anytime</li>
+      </ul>
+
+      <form class="tc-form" data-tc-signup novalidate>
+        <div class="tc-field">
+          <label for="tc-su-name-1">First name (optional)</label>
+          <input id="tc-su-name-1" name="name" type="text" autocomplete="given-name" placeholder="Your name">
+        </div>
+        <div class="tc-field">
+          <label for="tc-su-email-1">Email address</label>
+          <input id="tc-su-email-1" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+        </div>
+        <button class="tc-btn" type="submit">Sign me up — it's free</button>
+        <p class="tc-msg" data-tc-signup-msg></p>
+        <p class="tc-fineprint">Already a member? <button type="button" class="tc-switch-link" data-view="member" onclick="document.querySelector('.tc-toggle__btn[data-view=&quot;member&quot;]').click()">Switch to member sign-in</button></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- MEMBER PANEL -->
+  <section class="tc-panel tc-panel--member" data-view-panel="member">
+    <div class="tc-card">
+
+      <!-- Shown only when NOT signed in -->
+      <div class="tc-gate tc-locked">
+        <span class="tc-eyebrow">Members area</span>
+        <h2 class="tc-title">Welcome back</h2>
+        <p class="tc-lead">Sign in to open the inside-information articles reserved for members.</p>
+
+        <form class="tc-form" data-tc-signin novalidate>
+          <div class="tc-field">
+            <label for="tc-si-email-1">Email address</label>
+            <input id="tc-si-email-1" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+          </div>
+          <div class="tc-field">
+            <label for="tc-si-pass-1">Password</label>
+            <input id="tc-si-pass-1" name="password" type="password" autocomplete="current-password" placeholder="••••••••" required>
+          </div>
+          <button class="tc-btn" type="submit">Sign in</button>
+          <p class="tc-msg" data-tc-signin-msg></p>
+          <p class="tc-fineprint">Not a member yet? <button type="button" class="tc-switch-link" onclick="document.querySelector('.tc-toggle__btn[data-view=&quot;visitor&quot;]').click()">Sign up free</button></p>
+        </form>
+      </div>
+
+      <!-- Shown only AFTER sign-in -->
+      <div class="tc-unlocked">
+        <div class="tc-member-bar">
+          <span>Signed in as <strong data-tc-member-email>member</strong></span>
+          <button class="tc-btn tc-btn--ghost" type="button" data-tc-signout>Sign out</button>
+        </div>
+        <span class="tc-eyebrow">Members only</span>
+        <h2 class="tc-title">Inside Information</h2>
+        <p class="tc-lead">This content is visible only to signed-in members. Replace it with your members-only articles, or link out to the full members page.</p>
+        <ul class="tc-list">
+          <li>Full editorial archive</li>
+          <li>Source notes &amp; research</li>
+          <li>Member-only briefings</li>
+        </ul>
+        <a class="tc-btn" href="#" >Go to the members page</a>
+      </div>
+
+    </div>
+  </section>
+</div>
