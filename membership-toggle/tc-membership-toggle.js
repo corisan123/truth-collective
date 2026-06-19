@@ -76,7 +76,10 @@
       defaultView: root.getAttribute("data-default-view") || "visitor",
       signupEndpoint: root.getAttribute("data-signup-endpoint") || GLOBAL.signupEndpoint || "",
       signinEndpoint: root.getAttribute("data-signin-endpoint") || GLOBAL.signinEndpoint || "",
-      memberRedirect: root.getAttribute("data-member-redirect") || GLOBAL.memberRedirect || ""
+      memberRedirect: root.getAttribute("data-member-redirect") || GLOBAL.memberRedirect || "",
+      // Email-only "join to unlock" mode (recommended). Optional MailerLite
+      // embedded-form action URL — if set, the email is sent there too.
+      mailerliteAction: root.getAttribute("data-mailerlite-action") || GLOBAL.mailerliteAction || ""
     };
   }
 
@@ -118,6 +121,62 @@
     }).then(function (res) {
       return res.json().catch(function () { return {}; }).then(function (json) {
         return { ok: res.ok, status: res.status, data: json };
+      });
+    });
+  }
+
+  /* ---- MailerLite (optional, fire-and-forget) ---------------------- */
+  // Posts the email to a MailerLite embedded-form action URL. We use
+  // no-cors so the browser won't block it; that means we can't read the
+  // response, so we treat a completed request as success. For guaranteed
+  // capture, the README also explains the point-and-click popup method.
+  function postMailerLite(action, email, name) {
+    if (!action) return Promise.resolve();
+    var fd = new FormData();
+    fd.append("fields[email]", email);
+    fd.append("email", email);
+    if (name) { fd.append("fields[name]", name); fd.append("name", name); }
+    fd.append("ml-submit", "1");
+    fd.append("anticsrf", "true");
+    return fetch(action, { method: "POST", body: fd, mode: "no-cors" })
+      .catch(function () { /* ignore — non-blocking */ });
+  }
+
+  /* ---- join to unlock (email only, no password) ------------------- */
+  function wireJoin(root, conf) {
+    var forms = $all("[data-tc-join]", root);
+    if (!forms.length) return;
+
+    forms.forEach(function (form) {
+      var msg = $(".tc-msg", form) || $("[data-tc-join-msg]", root);
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var emailInput = form.querySelector('input[type="email"], input[name="email"]');
+        var email = emailInput ? emailInput.value.trim() : "";
+        var name = (form.querySelector('input[name="name"]') || {}).value || "";
+
+        if (!validEmail(email)) {
+          setMsg(msg, "Please enter a valid email address.", "error");
+          if (emailInput) emailInput.focus();
+          return;
+        }
+
+        var btn = form.querySelector('button[type="submit"], .tc-btn');
+        if (btn) btn.disabled = true;
+        setMsg(msg, "One second…");
+
+        // Send to MailerLite if configured (non-blocking either way),
+        // then mark them joined and reveal the deeper content.
+        postMailerLite(conf.mailerliteAction, email, name).then(function () {
+          setSession({ email: email, joined: true, at: Date.now() });
+          reflectSession(root);
+          setView(root, "member"); // "automatically opens" the full content
+          setMsg(msg, "You're in! Enjoy the full content.", "success");
+          form.reset();
+          if (btn) btn.disabled = false;
+          if (conf.memberRedirect) window.location.href = conf.memberRedirect;
+        });
       });
     });
   }
@@ -261,8 +320,9 @@
     setView(root, startView);
 
     reflectSession(root);
-    wireSignup(root, conf);
-    wireSignin(root, conf);
+    wireJoin(root, conf);     // email-only "join to unlock" (recommended)
+    wireSignup(root, conf);   // legacy email sign-up form
+    wireSignin(root, conf);   // optional password sign-in
   }
 
   function boot() { $all("[data-tc-membership]").forEach(init); }
@@ -274,5 +334,20 @@
   }
 
   // Expose a tiny API for advanced use / re-init after AJAX page loads.
-  window.TCMembership = { init: init, boot: boot, signOut: function () { clearSession(); boot(); } };
+  // - markJoined(email): call this on a "thank you / members" page that a
+  //   MailerLite popup redirects to, so the visitor is remembered and the
+  //   deeper content stays unlocked. Example on that page:
+  //     <script>TCMembership.markJoined()</script>
+  // - isJoined(): true if this browser has already joined.
+  window.TCMembership = {
+    init: init,
+    boot: boot,
+    isJoined: function () { var s = getSession(); return !!s; },
+    markJoined: function (email) {
+      var prev = getSession() || {};
+      setSession({ email: email || prev.email || "", joined: true, at: Date.now() });
+      boot();
+    },
+    signOut: function () { clearSession(); boot(); }
+  };
 })();

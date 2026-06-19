@@ -1,12 +1,28 @@
 # Membership Toggle (Visitors ⇄ Members)
 
-A lightweight, dependency-free component for The Truth Collective:
+A lightweight, dependency-free component for The Truth Collective.
 
-- A **center toggle switch** — left = new visitors, right = members.
-- **Visitors** see an **email sign-up** form (feeds your automation).
-- **Members** see a **sign-in** form; on success the page reveals
-  members-only content (or redirects to a members page).
-- The chosen view and a signed-in member are remembered in the browser.
+## ⭐ Recommended setup: email-only "join to unlock" (no passwords)
+For growing followers/subscribers, **don't use passwords.** Use the
+email-only flow: a visitor types their email → it's stored in MailerLite →
+the deeper content unlocks instantly and their browser remembers them.
+
+- Template: **`page-templates/page-0-email-unlock.html`**
+- Setup guide (plain English, click-by-click): **`MAILERLITE-SETUP.md`**
+- Preview now: open **`demo.html`** in a browser.
+
+The password-based pieces below still exist if you ever need real logins,
+but you can ignore them for the email hook.
+
+---
+
+A center **toggle switch** drives everything:
+
+- left = new visitors, right = members/full content.
+- **Visitors** see an **email** form (feeds MailerLite / your automation).
+- **Members/Full content** unlocks after they join (email) or sign in.
+- The chosen view and the joined/signed-in state are remembered in the
+  browser.
 
 ## Files
 | File | What it is |
@@ -14,7 +30,9 @@ A lightweight, dependency-free component for The Truth Collective:
 | `tc-membership-toggle.css` | All styles (prefixed `tc-`, won't clash with Kadence) |
 | `tc-membership-toggle.js`  | The engine (vanilla JS) |
 | `demo.html`                | Open in a browser to preview the whole flow |
-| `page-templates/page-1-landing-toggle.html` | Landing page with the toggle |
+| `MAILERLITE-SETUP.md`      | ⭐ Plain-English guide to wire up MailerLite (no passwords) |
+| `page-templates/page-0-email-unlock.html` | ⭐ Recommended: email-only join-to-unlock |
+| `page-templates/page-1-landing-toggle.html` | Landing page with the toggle (password style) |
 | `page-templates/page-2-landing-compare.html` | Visitors vs Members side-by-side + toggle |
 | `page-templates/page-3-nonmember-example.html` | What a **non-member** sees on a linked article (teaser + gate) |
 | `page-templates/page-4-member-example.html` | What a **member** sees after validating (full gated article) |
