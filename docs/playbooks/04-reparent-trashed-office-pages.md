@@ -22,6 +22,27 @@ corruption. Continue purging both layers after every future structural change.
 New parent for all 8: **Office Workspace Products and Tools**
 (`/office-workspace-products-and-tools/`).
 
+## Why the Parent dropdown shows blank on these pages
+
+Confirmed by Daniel on the first page (Best Analog Writing Tools): the Parent
+dropdown in Quick Edit shows no parent selected. This is expected and does not
+block the fix. WordPress appends `__trashed` to a page's own slug automatically
+when that page is sent to trash, to free the clean slug. These 8 pages are
+children whose parent post was trashed this way, likely a page originally
+titled close to "Best Office Workspace Products and Tools" or similar, now
+sitting in the Trash. The Quick Edit Parent dropdown only lists non-trashed
+pages, so it cannot display or select that now-invalid parent, and shows blank.
+
+This does not block anything. Select the new parent, **Office Workspace
+Products and Tools**, in that same dropdown regardless of the blank starting
+state, and click Update as planned. This overwrites the broken link to the
+ghost parent.
+
+After all 8 are reparented, check Pages, Trash, for the leftover ghost parent
+page (likely matching the `best-office-workspace-products-tools` slug root).
+Once confirmed no page still needs it, permanently delete it from the Trash to
+remove the ghost.
+
 ## Exact steps, repeat for each of the 8 pages
 
 1. Go to Pages in the WordPress admin.
