@@ -1,6 +1,35 @@
 # Playbook 04 — Reparent the 8 Trashed Office Pages (No SQL)
 
-## Status update
+## Resolved, 2026-07-14
+
+All 8 pages were reparented by Daniel and verified live, no broken links, no
+404s, all redirects confirmed working.
+
+Landed under Office Workspace Products and Tools, as planned:
+- Best Analog Writing Tools
+- Executive Desk Setup
+- Executive Office Chairs and Seating
+- Office File Cabinets, Credenzas, and Filing Essentials
+
+Landed under a different hub than planned, all confirmed 200, functionally
+fine, but conflicting with the Master Brief section 3 category list:
+- Best Monitor Setup and Display → now under Technology Hub. Master Brief lists
+  "Monitors and Digital Setup" under Office Workspace.
+- Cable Management → now under Productivity Tools. Master Brief lists
+  "Organization and Cable Management" under Office Workspace.
+- Premier Audio and Video Workspace → now under Technology Hub. Master Brief
+  lists "Professional Workspace Audio & Video" under Office Workspace.
+- Premium Quality Projectors and Microphones → now under Technology Hub. Not
+  explicitly named in the Master Brief's Office Workspace list, lower priority
+  conflict.
+
+Open decision for Daniel: either update the Master Brief section 3 to move
+these categories to their new hubs (if this placement is the better call), or
+move them back under Office Workspace to match the current locked brief. Do
+not resolve this by guessing. Menus were also realigned by Daniel to match
+whatever the current live parents are.
+
+## Status update (superseded, kept for history)
 
 The menu rebuild held after the Object Cache off + Flush Cache sequence. Cache
 was confirmed as the cause of the earlier disappearing menu, not database
