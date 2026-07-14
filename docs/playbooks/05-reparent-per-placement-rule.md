@@ -13,7 +13,7 @@ digital items goes to Office Workspace Products and Tools.
 | Best Digital Smart Tablets 2026 | Office Workspace Products and Tools | Technology Hub | Quick Edit, Parent dropdown |
 | Superior Interactive Digital Displays | none (top-level) | Technology Hub | Quick Edit, Parent dropdown |
 | Smart Bulbs | none (top-level) | Smart Lighting | Quick Edit, Parent dropdown |
-| Cable Management, Executive Enterprise Setups 2026 | Productivity Tools | Office Workspace Products and Tools | Quick Edit, Parent dropdown |
+| Cable Management, Executive Enterprise Setups 2026 (scope includes racks, IT gear, trays, stands) | Productivity Tools | Office Workspace Products and Tools | Quick Edit, Parent dropdown |
 
 ## Exact steps, repeat for each page
 

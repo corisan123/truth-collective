@@ -94,11 +94,20 @@ Conversations Community. Confirmed as 3 total, matching exactly.
   Office Workspace, not Technology Hub, despite the "smart" name. Confirmed
   intentional, do not move to Technology Hub.
 - Office Desk Essential Products in 2026 (`office-workspace-products-and-tools/office-desk-essential-products`)
-- Cable Management, Executive Enterprise Setups 2026 — per the hub placement
-  rule, a physical organizer, not itself digital, belongs here. Needs
+- Cable Management, Executive Enterprise Setups 2026 — confirmed by Daniel,
+  2026-07-14: scope includes server racks, IT gear, trays, and stands, not just
+  simple desk cable organizers. Decided: stays under Office Workspace Products
+  and Tools, not Technology Hub. Reasoning: the Brand Overview names
+  organization as an explicit Office Workspace theme, the original Master
+  Brief already placed this category here, and the buyer is an executive or
+  professional organizing their own premium office, not an IT department
+  buying data center equipment. Technology Hub covers devices themselves;
+  Office Workspace covers how the space is organized and equipped, which is
+  the correct fit even for enterprise-scale cable and rack content. No new hub
+  or category needed, one page with broadened scope covers it. Needs
   reparenting: currently sits under Productivity Tools
-  (`productivity-tools/cable-management`), which does not fit either, since
-  Productivity Tools is for software and systems, not physical accessories.
+  (`productivity-tools/cable-management`), which is the wrong fit regardless
+  since that hub is for software and systems.
 
 The 8 pages being reparented from `__trashed` URLs (see
 `docs/playbooks/04-reparent-trashed-office-pages.md`) belong here too, once
