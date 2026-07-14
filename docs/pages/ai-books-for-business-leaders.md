@@ -41,7 +41,7 @@ keyword on the first (primary) image only. Set each in the Image block alt field
 Verified live URLs. Keep the existing prose link up to the hub, and add a sideways
 row of siblings near the foot of the page.
 
-- Up to parent hub: Recommended Books, https://tcstaging.truth-collective.com/recommended-books-2026/
+- Up to parent hub: Artificial Intelligence Books, https://tcstaging.truth-collective.com/artificial-intelligence-books/ (the AI Mastery Collection, parent of the AI book pages). See the canonical issue in `docs/site-structure.md` before finalizing.
 - Sideways siblings (use three to four):
   - AI For Beginners, https://tcstaging.truth-collective.com/ai-books-for-beginners-2/
   - Foundational AI Books, https://tcstaging.truth-collective.com/artificial-intelligence-books/foundational-ai-books/
@@ -56,9 +56,10 @@ deduplicated or differentiated first.
 
 RankMath already outputs the BreadcrumbList. Leave it. Add the following as a
 Custom Schema on this page (RankMath > Schema > Custom Schema, JSON import). It
-adds the page as a CollectionPage that is part of the Recommended Books hub, with
-the nine books as an ItemList. No ratings are included, since books do not carry
-the TC grade.
+adds the page as a CollectionPage that is part of the Artificial Intelligence
+Books hub, with the nine books as an ItemList. Use the hub's canonical URL once
+the canonical conflict in `docs/site-structure.md` is resolved. Book grades will
+be added as editorial reviews once the books rubric is set.
 
 ```json
 {
@@ -69,8 +70,8 @@ the TC grade.
   "about": "Curated AI books for business leaders and critical thinkers",
   "isPartOf": {
     "@type": "CollectionPage",
-    "name": "Recommended Books",
-    "url": "https://tcstaging.truth-collective.com/recommended-books-2026/"
+    "name": "Artificial Intelligence Books",
+    "url": "https://tcstaging.truth-collective.com/artificial-intelligence-books/"
   },
   "mainEntity": {
     "@type": "ItemList",
