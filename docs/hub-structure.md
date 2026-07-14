@@ -31,8 +31,9 @@ Books. This entry records that as the live, intended structure.
 
 ### 2. Smart Lighting for Home, Office and Wellness (`/smart-lighting/`)
 
-- Smart Bulbs — per the hub placement rule, digital, belongs here. Needs
-  reparenting: current URL is top-level (`smart-bulbs-light-strips`).
+- Smart Bulbs — confirmed live under this hub at
+  `smart-lighting/smart-bulbs-light-strips/` (200), old top-level URL 301s here.
+  Done, verified 2026-07-14.
 - Advanced Lighting for Indoors and Outdoors
 - Smart AI Lighting and Rechargeable Devices
 - Smart Lighting Controls
@@ -53,8 +54,9 @@ Books. This entry records that as the live, intended structure.
 - Video Technology Devices and Interactive Visual Displays (`technology-hub/video-technology-and-interactive-displays`).
   Flag: the live page title still carries a leftover draft prefix, "DRAFT 6 15
   2026," in front of the real title. Remove before launch.
-- Superior Interactive Digital Displays — per the rule, digital, belongs here.
-  Needs reparenting: current URL is top-level (`interactive-digital-displays-2`).
+- Superior Interactive Digital Displays — confirmed live under this hub at
+  `technology-hub/interactive-digital-displays-2/` (200), old top-level URL 301s
+  here. Done, verified 2026-07-14.
 - Best Monitor Setup for 2026, Premium Displays and Gear (`technology-hub/monitor-display`).
   Confirmed by Daniel, 2026-07-14, matches the placement rule. Master Brief updated.
 - Premium Quality Projectors and Microphones for 2026 (`technology-hub/projectors-and-microphones`).
