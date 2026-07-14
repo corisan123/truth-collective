@@ -46,6 +46,10 @@ Books. This entry records that as the live, intended structure.
   2026," in front of the real title. Remove before launch.
 - Superior Interactive Digital Displays — flag: current URL is top-level
   (`interactive-digital-displays-2`), not nested under Technology Hub.
+- Best Monitor Setup for 2026, Premium Displays and Gear (`technology-hub/monitor-display`).
+  Confirmed by Daniel, 2026-07-14. Master Brief updated to match.
+- Premium Quality Projectors and Microphones for 2026 (`technology-hub/projectors-and-microphones`).
+  Confirmed by Daniel, 2026-07-14. Master Brief updated to match.
 
 ### 4. Productivity Tools for 2026, Software and Systems
 

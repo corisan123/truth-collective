@@ -21,9 +21,15 @@ The brand sells decision certainty, not products. It is built around a flywheel 
 
 Recommended Books (9 categories: Leadership, Communication and Persuasion, Decision-Making and Strategy, Wealth Money and Investing, Entrepreneurship and Business Building, High-Performance and Execution, Self-Help/Mind Body Soul Mental Health, Project Management and Operations, AI Mastery Collection, Voices of Authority and Influence)
 
-Office Workspace (Desk Setup, Executive Office Chairs and Seating, Premium Executive Chairs, Office and Desk Essentials, Monitors and Digital Setup, Organization and Cable Management, Best Analog Writing Products, Professional Workspace Audio & Video, Professional Desk Speakers, Laptop Stands and Accessories)
+Office Workspace (Desk Setup, Executive Office Chairs and Seating, Premium Executive Chairs, Office and Desk Essentials, Organization and Cable Management, Best Analog Writing Products, Professional Workspace Audio & Video, Professional Desk Speakers, Laptop Stands and Accessories)
 
-Technology Hub (Best Digital Smart Tablets for Work Writing and Creative Professionals, Video Technology and Interactive Displays, Best Headphones Headsets and Hearing Protection, Computers and Digital Devices, Smart Writing Products Tools & Essentials, future spatial computing pages)
+Technology Hub (Best Digital Smart Tablets for Work Writing and Creative Professionals, Video Technology and Interactive Displays, Best Headphones Headsets and Hearing Protection, Computers and Digital Devices, Smart Writing Products Tools & Essentials, Monitors and Digital Setup, Premium Projectors and Microphones, future spatial computing pages)
+
+Update confirmed by Daniel, 2026-07-14: Monitors and Digital Setup moved from
+Office Workspace to Technology Hub. Premium Projectors and Microphones added to
+Technology Hub. Organization and Cable Management and Professional Workspace
+Audio & Video remain under Office Workspace per the brief pending final
+confirmation, see `docs/hub-structure.md` for open items.
 
 Smart (AI) Lighting (Circadian and AI lighting for home, office, wellness)
 

@@ -11,23 +11,15 @@ Landed under Office Workspace Products and Tools, as planned:
 - Executive Office Chairs and Seating
 - Office File Cabinets, Credenzas, and Filing Essentials
 
-Landed under a different hub than planned, all confirmed 200, functionally
-fine, but conflicting with the Master Brief section 3 category list:
-- Best Monitor Setup and Display → now under Technology Hub. Master Brief lists
-  "Monitors and Digital Setup" under Office Workspace.
-- Cable Management → now under Productivity Tools. Master Brief lists
-  "Organization and Cable Management" under Office Workspace.
-- Premier Audio and Video Workspace → now under Technology Hub. Master Brief
-  lists "Professional Workspace Audio & Video" under Office Workspace.
-- Premium Quality Projectors and Microphones → now under Technology Hub. Not
-  explicitly named in the Master Brief's Office Workspace list, lower priority
-  conflict.
+Confirmed intentional by Daniel, 2026-07-14, Master Brief updated to match:
+- Best Monitor Setup for 2026, Premium Displays and Gear → Technology Hub. Checked live: Parent = Technology Hub, Canonical URL correctly set to the current live URL. Nothing further to fix.
+- Premium Quality Projectors and Microphones for 2026 → Technology Hub. Same check, same result, nothing further to fix.
 
-Open decision for Daniel: either update the Master Brief section 3 to move
-these categories to their new hubs (if this placement is the better call), or
-move them back under Office Workspace to match the current locked brief. Do
-not resolve this by guessing. Menus were also realigned by Daniel to match
-whatever the current live parents are.
+Still open, awaiting Daniel's confirmation, do not resolve by guessing:
+- Cable Management → currently under Productivity Tools. Master Brief lists
+  "Organization and Cable Management" under Office Workspace.
+- Premier Audio and Video Workspace → currently under Technology Hub. Master
+  Brief lists "Professional Workspace Audio & Video" under Office Workspace.
 
 ## Status update (superseded, kept for history)
 
