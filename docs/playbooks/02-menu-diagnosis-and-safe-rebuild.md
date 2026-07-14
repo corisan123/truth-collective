@@ -1,6 +1,15 @@
 # Playbook 02 — Menu Diagnosis and Safe Rebuild (No SQL)
 
-## Status update, 2026-07-14
+## Resolved, 2026-07-14
+
+Confirmed. Daniel turned Object Cache off in the WordPress plugin, clicked
+Flush Cache in hPanel (WordPress > Overview), then rebuilt a full menu with
+nearly all site pages. It held after a private-window check. Root cause was
+page-level cache (LiteSpeed), not database corruption. Discipline going
+forward: purge both the WordPress plugin (Toolbox, Purge All) and the hPanel
+Flush Cache button after any menu, parent, or structural change.
+
+## Status update, 2026-07-14 (superseded, kept for history)
 
 Daniel confirmed he already purges the LiteSpeed Cache plugin inside WordPress
 after every day's changes. That rules out the WordPress-side plugin cache as the
