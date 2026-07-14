@@ -36,6 +36,11 @@ menus. From this point forward:
 - Never open phpMyAdmin or run SQL against `wp_posts`, `wp_terms`, or
   `wp_term_relationships`.
 
+See `docs/hub-structure.md` for the authoritative 6 hub + 3 editorial hub
+breakdown confirmed directly by Daniel, and `docs/playbooks/02-menu-diagnosis-and-safe-rebuild.md`
+for why the menu keeps disappearing (caching, most likely) and how to rebuild it
+without SQL.
+
 ## Target menu structure (rebuild to this)
 
 Use this as the Appearance > Menus target. Create a new menu named
