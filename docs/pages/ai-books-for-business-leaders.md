@@ -91,10 +91,11 @@ the TC grade.
 }
 ```
 
-## 5. Compliance and trust (already present, confirm at publish)
+## 5. Compliance and trust (verified present)
 
 - Affiliate disclosure auto-renders in the footer (Master Brief section 8). Confirm it shows on this page.
-- The nine covers link to Amazon affiliate URLs (`amzn.to`). Confirm the FTC external-link paragraph pattern is present in body, per Master Brief section 7.
+- The nine covers link to Amazon affiliate URLs (`amzn.to`).
+- The Trusted Selection Standards and FTC block is present on this page and points directly to the FTC website. This satisfies the Master Brief section 7 external-link requirement. See `docs/patterns/ftc-trusted-selection.md`.
 
 ## 6. Apply order
 
