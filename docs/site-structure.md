@@ -22,8 +22,18 @@ own canonical URL. See the open canonical issue below before wiring these.
 - Parent of the AI child books: https://tcstaging.truth-collective.com/artificial-intelligence-books/
 - This is the AI books landing page. It must be self-canonical.
 - It also contains an intro section for the editorial and podcast series, but that
-  series lives on its own separate page: https://tcstaging.truth-collective.com/ai-mastery-collection-2026-editorial-series/
+  series lives on its own separate page (see Editorial and podcast parent below).
 - Will also host a new podcast and a new blog after launch.
+
+## Editorial and podcast parent page
+
+- Live URL, self-canonical, HTTP 200: https://tcstaging.truth-collective.com/ai-mastery-podcast-collection/
+- Title: AI Mastery Collection | Podcast. Top level in WordPress (no parent).
+- SEO title: "AI Mastery Podcast and Blog Series | Truth Collective 2026".
+- Focus keyword: AI Mastery Podcast. Robots: Index.
+- This is the parent for the editorial and podcast series and the future blog.
+- Note: the old URL `/ai-mastery-collection-2026-editorial-series/` returns HTTP 404. It is not a live page. Do not link to it or canonicalize to it.
+- Minor copy fix in the SEO description: "an editorial series covers AI" should read "an editorial series that covers AI".
 
 Known children (menu, URL-nested under the hub):
 
@@ -39,13 +49,14 @@ Related AI pages that are top level in WordPress (URL not nested under the hub):
 
 ## Open issues on the AI hub (fix before publish)
 
-1. Canonical bug (high priority, decision resolved). `/artificial-intelligence-books/`
-   currently sets its canonical to the editorial-series URL. That is wrong. The
-   hub is a distinct page from the editorial series and must be self-canonical.
-   Fix: set the canonical of `/artificial-intelligence-books/` to itself, and set
-   its RankMath CollectionPage schema `url` to itself. The editorial page keeps
-   its own canonical at `/ai-mastery-collection-2026-editorial-series/`.
-   Children `isPartOf` uses `https://tcstaging.truth-collective.com/artificial-intelligence-books/`.
+1. Canonical bug (urgent). `/artificial-intelligence-books/` sets its canonical to
+   `/ai-mastery-collection-2026-editorial-series/`, which returns HTTP 404.
+   Canonicalizing to a dead URL can remove the hub from Google's index entirely.
+   Fix now: set the canonical of `/artificial-intelligence-books/` to itself, and
+   set its RankMath CollectionPage schema `url` to itself. The editorial and
+   podcast page is a separate page and is self-canonical at
+   `/ai-mastery-podcast-collection/`. Children `isPartOf` uses
+   `https://tcstaging.truth-collective.com/artificial-intelligence-books/`.
 2. Multiple H1s. The hub page renders more than one H1 (theme entry title plus two
    content H1s). Reduce to a single H1. Keep one hub H1, demote the rest to H2.
 3. Topic duplication. `/ai-books-for-business-leaders/` (7739) and

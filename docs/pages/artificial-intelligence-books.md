@@ -12,12 +12,13 @@
 
 ## 2. Canonical (high priority fix)
 
-The page sets its canonical to the editorial-series URL. That is wrong. The hub
-is a separate page from the editorial series.
+The page sets its canonical to `/ai-mastery-collection-2026-editorial-series/`,
+which returns HTTP 404. Canonicalizing to a dead URL can remove the hub from
+Google's index. This is urgent.
 
 - Set the Canonical URL to itself: https://tcstaging.truth-collective.com/artificial-intelligence-books/
 - Set the RankMath CollectionPage schema `url` to itself as well.
-- The editorial and podcast page keeps its own canonical: https://tcstaging.truth-collective.com/ai-mastery-collection-2026-editorial-series/
+- The editorial and podcast page is a separate, live page, self-canonical at: https://tcstaging.truth-collective.com/ai-mastery-podcast-collection/
 
 ## 3. Single H1 (fix)
 
