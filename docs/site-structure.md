@@ -19,7 +19,10 @@ own canonical URL. See the open canonical issue below before wiring these.
 
 ## Artificial Intelligence Books hub
 
-- URL given by Daniel as the parent of the AI child books: https://tcstaging.truth-collective.com/artificial-intelligence-books/
+- Parent of the AI child books: https://tcstaging.truth-collective.com/artificial-intelligence-books/
+- This is the AI books landing page. It must be self-canonical.
+- It also contains an intro section for the editorial and podcast series, but that
+  series lives on its own separate page: https://tcstaging.truth-collective.com/ai-mastery-collection-2026-editorial-series/
 - Will also host a new podcast and a new blog after launch.
 
 Known children (menu, URL-nested under the hub):
@@ -34,18 +37,17 @@ Related AI pages that are top level in WordPress (URL not nested under the hub):
 - https://tcstaging.truth-collective.com/ai-books-for-business-leaders/ (page id 7739)
 - https://tcstaging.truth-collective.com/ai-books-for-beginners-2/ (page id 7721)
 
-## Open issues on the AI hub (need resolution before it is the indexed parent)
+## Open issues on the AI hub (fix before publish)
 
-1. Canonical conflict (high priority). `/artificial-intelligence-books/` sets its
-   canonical to `https://tcstaging.truth-collective.com/ai-mastery-collection-2026-editorial-series/`.
-   Effect: Google is told the canonical hub is the editorial-series URL, not
-   `/artificial-intelligence-books/`. Decision required: which URL is the real,
-   indexed AI hub. Then make that page self-canonical and point children's
-   `isPartOf` at that same canonical URL.
+1. Canonical bug (high priority, decision resolved). `/artificial-intelligence-books/`
+   currently sets its canonical to the editorial-series URL. That is wrong. The
+   hub is a distinct page from the editorial series and must be self-canonical.
+   Fix: set the canonical of `/artificial-intelligence-books/` to itself, and set
+   its RankMath CollectionPage schema `url` to itself. The editorial page keeps
+   its own canonical at `/ai-mastery-collection-2026-editorial-series/`.
+   Children `isPartOf` uses `https://tcstaging.truth-collective.com/artificial-intelligence-books/`.
 2. Multiple H1s. The hub page renders more than one H1 (theme entry title plus two
-   content H1s). Reduce to a single H1.
+   content H1s). Reduce to a single H1. Keep one hub H1, demote the rest to H2.
 3. Topic duplication. `/ai-books-for-business-leaders/` (7739) and
    `/artificial-intelligence-books/ai-for-leaders-and-thinkers/` (101) target
    nearly the same phrase. Differentiate or consolidate to avoid cannibalization.
-
-Until issue 1 is decided, `isPartOf` for AI book pages is provisional.

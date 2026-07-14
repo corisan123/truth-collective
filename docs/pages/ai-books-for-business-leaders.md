@@ -57,9 +57,9 @@ deduplicated or differentiated first.
 RankMath already outputs the BreadcrumbList. Leave it. Add the following as a
 Custom Schema on this page (RankMath > Schema > Custom Schema, JSON import). It
 adds the page as a CollectionPage that is part of the Artificial Intelligence
-Books hub, with the nine books as an ItemList. Use the hub's canonical URL once
-the canonical conflict in `docs/site-structure.md` is resolved. Book grades will
-be added as editorial reviews once the books rubric is set.
+Books hub, with the nine books as an ItemList. The parent hub must be made
+self-canonical first, see `docs/site-structure.md`. Book grades will be added as
+editorial reviews once the books rubric is set.
 
 ```json
 {
