@@ -37,6 +37,23 @@ New parent for all 8: **Office Workspace Products and Tools**
 Repeat for all 8. Do this one page at a time, do not batch-edit, so each
 RankMath redirect notice can be confirmed individually.
 
+## Canonical URL, per page, checked right after its own parent change
+
+Do not delete or pre-edit the Canonical URL field before reparenting. Changing
+the Parent and clicking Update changes the page's URL automatically, and
+RankMath auto-creates a 301 redirect from the old `__trashed` URL to the new one.
+Leave that redirect in place.
+
+After each page's parent change, open its RankMath panel, Advanced tab,
+Canonical URL:
+
+- If the field is empty, nothing to do. An empty field means RankMath uses the
+  page's own current URL automatically, so it already reflects the new address.
+- If the field has text in it matching the old `__trashed` URL, clear it back to
+  empty so it falls back to automatic. Do not hand-type the new URL unless a
+  hardcoded canonical is specifically wanted.
+- Save again only if this field was changed.
+
 ## After all 8 are reparented
 
 1. Go to RankMath, Redirections.
