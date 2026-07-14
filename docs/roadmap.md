@@ -74,6 +74,7 @@ batch, BDM verifies against staging.
 - Sitemap: healthy, HTTP 200, RankMath, 66 page URLs.
 - Staging robots: `Disallow: /`, correct for staging, must flip at launch.
 - AI hub canonical: points to a 404, and the hub is missing from the sitemap because of it. Fix pending.
-- Eight office pages reparented and verified live, no broken links. Two of the four placement conflicts confirmed intentional by Daniel (Monitor Setup and Projectors/Microphones now live under Technology Hub); Master Brief updated to match. Two still open: Cable Management (Productivity Tools) and Audio and Video (Technology Hub). See `docs/playbooks/04-reparent-trashed-office-pages.md`.
+- Eight office pages reparented and verified live, no broken links. All four placement questions resolved: Monitor Setup, Projectors/Microphones, and Audio and Video confirmed correct under Technology Hub; Cable Management confirmed needs to move to Office Workspace. Master Brief updated. See `docs/playbooks/04-reparent-trashed-office-pages.md`.
+- Hub placement rule locked in (plugged in or digital: Smart Lighting or Technology Hub; office furniture and analog: Office Workspace). Applied against the full inventory: 4 more pages identified needing the same reparent treatment (Best Digital Smart Tablets, Superior Interactive Digital Displays, Smart Bulbs, Cable Management). See `docs/playbooks/05-reparent-per-placement-rule.md`.
 - Menu rebuild: resolved. Cause was LiteSpeed page cache, not database corruption. New comprehensive menu built and confirmed holding. Discipline: purge both WordPress plugin cache and hPanel Flush Cache after structural changes.
 - Full inventory and menu rebuild target: `docs/page-inventory.md`.

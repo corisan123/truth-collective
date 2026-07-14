@@ -1,5 +1,12 @@
 # Truth Collective — Authoritative Hub Structure
 
+## Hub placement rule (confirmed by Daniel, 2026-07-14)
+
+Anything plugged in or digital goes to Smart Lighting or Technology Hub.
+Anything office-related furniture, analog devices, and similar physical, non
+digital items goes to Office Workspace Products and Tools. Check every future
+placement decision against this rule before asking or guessing.
+
 This supersedes any inference drawn from the sitemap alone. Confirmed directly by
 Daniel on 2026-07-14, including the full child list for all 6 major hubs.
 
@@ -24,7 +31,8 @@ Books. This entry records that as the live, intended structure.
 
 ### 2. Smart Lighting for Home, Office and Wellness (`/smart-lighting/`)
 
-- Smart Bulbs (`smart-bulbs-light-strips`, currently top-level, should nest under this hub)
+- Smart Bulbs — per the hub placement rule, digital, belongs here. Needs
+  reparenting: current URL is top-level (`smart-bulbs-light-strips`).
 - Advanced Lighting for Indoors and Outdoors
 - Smart AI Lighting and Rechargeable Devices
 - Smart Lighting Controls
@@ -32,24 +40,27 @@ Books. This entry records that as the live, intended structure.
 
 ### 3. Technology Hub (`/technology-hub/`)
 
-- Best Digital Smart Tablets 2026 — flag: current URL is nested under Office
-  Workspace (`office-workspace-products-and-tools/best-digital-smart-tablets`),
-  not under Technology Hub. Confirm intended URL before reparenting.
-- Professional Desk Speakers and Desk Audio — flag: no confirmed URL found yet.
-  May correspond to `speakers-home-office-outdoors` (the broader speakers hub
-  referenced in the 6/29 tips) or may be a separate, not-yet-verified page. Do
-  not assume, verify the live URL before wiring links or schema.
+- Best Digital Smart Tablets 2026 — per the hub placement rule, digital, belongs
+  here. Needs reparenting: current URL is nested under Office Workspace
+  (`office-workspace-products-and-tools/best-digital-smart-tablets`). Action
+  needed, not just confirmation.
+- Professional Desk Speakers and Desk Audio — per the rule, digital, belongs
+  here. No confirmed URL found yet. May correspond to
+  `speakers-home-office-outdoors` or may be a separate, not-yet-verified page.
+  Verify the live URL before wiring links or schema.
 - Best Headphones, Headsets, and Hearing Protection for Work (`technology-hub/headphones-for-work`)
 - Computers and Digital Devices (`technology-hub/computers-digital-devices`)
 - Video Technology Devices and Interactive Visual Displays (`technology-hub/video-technology-and-interactive-displays`).
   Flag: the live page title still carries a leftover draft prefix, "DRAFT 6 15
   2026," in front of the real title. Remove before launch.
-- Superior Interactive Digital Displays — flag: current URL is top-level
-  (`interactive-digital-displays-2`), not nested under Technology Hub.
+- Superior Interactive Digital Displays — per the rule, digital, belongs here.
+  Needs reparenting: current URL is top-level (`interactive-digital-displays-2`).
 - Best Monitor Setup for 2026, Premium Displays and Gear (`technology-hub/monitor-display`).
-  Confirmed by Daniel, 2026-07-14. Master Brief updated to match.
+  Confirmed by Daniel, 2026-07-14, matches the placement rule. Master Brief updated.
 - Premium Quality Projectors and Microphones for 2026 (`technology-hub/projectors-and-microphones`).
-  Confirmed by Daniel, 2026-07-14. Master Brief updated to match.
+  Confirmed by Daniel, 2026-07-14, matches the placement rule. Master Brief updated.
+- Premier Audio and Video Workspace 2026 (`technology-hub/audio-and-video`).
+  Settled by the placement rule, digital, correctly placed here. No action needed.
 
 ### 4. Productivity Tools for 2026, Software and Systems
 
@@ -78,8 +89,16 @@ Conversations Community. Confirmed as 3 total, matching exactly.
 
 - Laptop Stands and Accessories (`office-workspace-products-and-tools/laptop-stands-for-work`)
 - Smart Writing Products, Tools and Essentials — flag: current URL is top-level
-  (`smart-writing-products-tools-essentials`), not nested under this hub.
+  (`smart-writing-products-tools-essentials`), not nested under this hub. Named
+  exception to the hub placement rule: Daniel explicitly placed this under
+  Office Workspace, not Technology Hub, despite the "smart" name. Confirmed
+  intentional, do not move to Technology Hub.
 - Office Desk Essential Products in 2026 (`office-workspace-products-and-tools/office-desk-essential-products`)
+- Cable Management, Executive Enterprise Setups 2026 — per the hub placement
+  rule, a physical organizer, not itself digital, belongs here. Needs
+  reparenting: currently sits under Productivity Tools
+  (`productivity-tools/cable-management`), which does not fit either, since
+  Productivity Tools is for software and systems, not physical accessories.
 
 The 8 pages being reparented from `__trashed` URLs (see
 `docs/playbooks/04-reparent-trashed-office-pages.md`) belong here too, once
@@ -89,15 +108,27 @@ Confirmed resolved: the homepage hub tile row for this hub was also corrupted,
 listed like the other hub tiles on the home page. Daniel deleted the entire row
 and rebuilt it. It now works.
 
-## Open items from this hub map (do not guess, confirm before wiring)
+## Open items from this hub map
 
-1. Best Digital Smart Tablets: confirm intended hub (Technology vs Office Workspace).
-2. Professional Desk Speakers and Desk Audio: confirm the live URL.
-3. Superior Interactive Digital Displays: confirm intended nesting under Technology Hub.
-4. Smart Writing Products: confirm intended nesting under Office Workspace.
-5. Smart Bulbs: confirm intended nesting under Smart Lighting.
-6. Video Technology page title: remove the leftover "DRAFT 6 15 2026" prefix.
-7. Mental Wellness Support/Recovery page: confirm which of the two similarly named URLs is correct.
+Resolved by the hub placement rule and Daniel's direct confirmation, action
+now known, needs execution (reparent via Quick Edit, no SQL):
+
+1. Best Digital Smart Tablets: move to Technology Hub.
+2. Superior Interactive Digital Displays: move to Technology Hub.
+3. Smart Bulbs: move to Smart Lighting.
+4. Cable Management: move to Office Workspace (out of Productivity Tools).
+
+Settled, no action needed:
+
+5. Smart Writing Products: confirmed exception, stays under Office Workspace.
+6. Audio and Video: confirmed correct under Technology Hub.
+7. Monitor Setup and Projectors/Microphones: confirmed correct under Technology Hub.
+
+Still genuinely open, cannot resolve without more information, do not guess:
+
+8. Professional Desk Speakers and Desk Audio: confirm the live URL, not yet found.
+9. Video Technology page title: remove the leftover "DRAFT 6 15 2026" prefix.
+10. Mental Wellness Support/Recovery page: confirm which of the two similarly named URLs is correct.
 
 ## 3 editorial hubs (non-monetized or mixed, standalone from the 6)
 
