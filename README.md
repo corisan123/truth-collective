@@ -16,6 +16,14 @@ in place of fixing the real cause.
 - `docs/brand-overview.md` — brand positioning, audience, and content focus.
 - `docs/engineering-evaluation-standards.md` — the product grading and tiering methodology.
 - `docs/components/README.md` — verified `tc-` component structures and the CSS that fires them (captured from staging).
+- `docs/launch-plan.md` — the working method and priority order to launch.
+- `docs/launch-checklist.md` — launch blockers and the top-tier gap list.
+- `docs/site-structure.md` — the real page hierarchy and canonical URLs.
+- `docs/patterns/ftc-trusted-selection.md` — the locked trust and FTC pattern.
+- `docs/pages/` — per-page improvement playbooks.
+
+A Cursor project rule at `.cursor/rules/truth-collective.mdc` makes every session
+read the above and follow the locked rules automatically.
 
 ## Environments
 
