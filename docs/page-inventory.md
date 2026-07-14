@@ -37,9 +37,14 @@ menus. From this point forward:
   `wp_term_relationships`.
 
 See `docs/hub-structure.md` for the authoritative 6 hub + 3 editorial hub
-breakdown confirmed directly by Daniel, and `docs/playbooks/02-menu-diagnosis-and-safe-rebuild.md`
-for why the menu keeps disappearing (caching, most likely) and how to rebuild it
-without SQL.
+breakdown confirmed directly by Daniel, with the exact child list for every hub
+and the open items that still need URL confirmation. See
+`docs/playbooks/02-menu-diagnosis-and-safe-rebuild.md` (resolved: the menu
+disappearing was LiteSpeed page cache, not corruption).
+
+Status: the menu described below has been rebuilt by Daniel and confirmed
+holding after a cache purge. This section is now a record of the target, not an
+outstanding task, except for the 8 trashed pages still pending reparent.
 
 ## Target menu structure (rebuild to this)
 
