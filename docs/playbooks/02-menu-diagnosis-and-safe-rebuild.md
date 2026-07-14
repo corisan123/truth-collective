@@ -1,16 +1,36 @@
 # Playbook 02 — Menu Diagnosis and Safe Rebuild (No SQL)
 
+## Status update, 2026-07-14
+
+Daniel confirmed he already purges the LiteSpeed Cache plugin inside WordPress
+after every day's changes. That rules out the WordPress-side plugin cache as the
+cause. It does not yet rule out the separate Hostinger hPanel edge cache layer,
+confirmed present via live server headers (`max-age=604800`), since that is a
+different purge button in a different location that a WordPress-only routine
+would not touch. One hPanel purge is the last caching check before treating this
+as data corruption. See Step 0 below.
+
 ## Diagnosis, ranked by likelihood
 
-1. Caching, most likely. Staging headers confirm Hostinger's server-level
-   LiteSpeed cache with `max-age=604800` (7 days), a layer separate from the
-   LiteSpeed Cache plugin inside WordPress. A menu that appears to disappear
-   after saving is a classic caching symptom. Two cache layers must both be
-   purged, not just one.
-2. Leftover corruption from the earlier SQL edits, the "ghosts." Possible if the
-   cache purge test below does not resolve it.
+1. Leftover corruption from the earlier SQL edits, the "ghosts." Now the leading
+   cause, since routine WordPress-side cache purging did not resolve it.
+2. The separate Hostinger hPanel edge cache layer, not purged by the WordPress
+   plugin's Purge All button. Rule this out with the single hPanel purge in
+   Step 0 before concluding corruption.
 3. A staging sync, backup, or migration tool silently restoring an older
-   database snapshot on a schedule. Confirm none is active before ruling this in.
+   database snapshot on a schedule. Confirm none is active if Steps 0 and the
+   new-menu rebuild both fail.
+
+## Step 0 — The one remaining cache check (do this first, once)
+
+1. Log into Hostinger hPanel directly, not WordPress admin.
+2. Websites → this site → Performance (or Speed) → Cache → Purge Cache.
+3. Create a one-item test menu in WordPress, save.
+4. Check it in a private browser window.
+
+If it fails even after this, move straight to Step 5, corruption path. Do not
+repeat Steps 1 through 4 below, they are the plugin-only purge Daniel already
+does routinely.
 
 ## Step 1 — Purge both cache layers now
 
