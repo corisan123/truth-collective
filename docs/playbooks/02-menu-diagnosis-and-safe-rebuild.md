@@ -12,25 +12,45 @@ as data corruption. See Step 0 below.
 
 ## Diagnosis, ranked by likelihood
 
-1. Leftover corruption from the earlier SQL edits, the "ghosts." Now the leading
-   cause, since routine WordPress-side cache purging did not resolve it.
-2. The separate Hostinger hPanel edge cache layer, not purged by the WordPress
-   plugin's Purge All button. Rule this out with the single hPanel purge in
-   Step 0 before concluding corruption.
-3. A staging sync, backup, or migration tool silently restoring an older
-   database snapshot on a schedule. Confirm none is active if Steps 0 and the
+1. LiteSpeed Object Cache, confirmed ON via LiteSpeed Cache Settings, Cache tab
+   (Public Cache ON, Private Cache ON, Object Cache ON, Cache REST API ON).
+   This is now the leading hypothesis. Unlike Public/Private page cache, which
+   never touches wp-admin, Object Cache intercepts WordPress's internal data
+   lookups everywhere, including the Appearance and Menus screen itself. If it
+   fails to invalidate on save, the admin screen can show stale, empty, or
+   reverted menu data. This is a stronger fit for "disappears inside wp-admin"
+   than any front-end cache layer.
+2. The separate Hostinger hPanel edge cache layer, confirmed present via live
+   server headers (`max-age=604800`), not purged by the WordPress plugin's
+   Purge All button. Secondary check, explains front-end staleness more than
+   the admin screen losing data.
+3. Leftover corruption from the earlier SQL edits, the "ghosts." Fall back to
+   this only if Step 0 below (Object Cache off) does not resolve it.
+4. A staging sync, backup, or migration tool silently restoring an older
+   database snapshot on a schedule. Confirm none is active if Step 0 and the
    new-menu rebuild both fail.
 
-## Step 0 — The one remaining cache check (do this first, once)
+## Step 0 — The decisive test (do this first)
+
+1. LiteSpeed Cache Settings → tab [7] Object.
+2. Turn Object Cache OFF. Save Changes.
+3. Toolbox → Purge All.
+4. Create a one-item test menu in WordPress, save.
+5. Open a private browser window, log in, check Appearance and Menus.
+
+If it holds now: Object Cache was the cause. Leave Object Cache off until
+launch. The small performance gain from object caching is not worth a caching
+layer that can silently erase admin work. Revisit after launch with a proper
+purge-on-save discipline if desired.
+
+If it still does not hold after Object Cache is off and cache is purged, this is
+corruption, not cache. Move straight to Step 5, corruption path.
+
+## Step 0b — Secondary cache check, only if Step 0 alone does not fully resolve it
 
 1. Log into Hostinger hPanel directly, not WordPress admin.
 2. Websites → this site → Performance (or Speed) → Cache → Purge Cache.
-3. Create a one-item test menu in WordPress, save.
-4. Check it in a private browser window.
-
-If it fails even after this, move straight to Step 5, corruption path. Do not
-repeat Steps 1 through 4 below, they are the plugin-only purge Daniel already
-does routinely.
+3. Repeat the one-item test menu check.
 
 ## Step 1 — Purge both cache layers now
 
