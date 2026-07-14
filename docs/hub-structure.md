@@ -149,6 +149,23 @@ Still genuinely open, do not guess:
 10. Self-Help item 5 (Mental Wellness Recovery/Resources non-monetized): confirm which of `mental-health-support-services-and-helplines` or `mental-wellness-support-resources` is the live page.
 11. Self-Help item 3 (Mental Wellness and Self-Help Curated Books, 16 books): confirm the live URL.
 
+## Non-monetized pages, count (confirmed by Daniel, 2026-07-14)
+
+Total non-monetized: 5 pages. These are protected. None ever receives a
+Pinterest pin, affiliate content, or a sales angle, and each is held to the same
+trust and technical quality as the money pages.
+
+Confirmed so far:
+- Self-Help hub: Mental Wellness Recovery and Resources (crisis lines, hotlines,
+  websites, plus Daniel's personal note).
+- Self-Help hub: Podcasts, Conversations, Community for Mental Wellness.
+- The Ones Who Gave Everything: the tribute editorial hub and its honoree pages.
+
+The precise mapping of all 5 (how many sit in Self-Help vs. how many under The
+Ones Who Gave Everything vs. the parent landing pages) still needs one final
+confirmation from Daniel so the count reconciles exactly to 5. Do not guess the
+split. Confirm before treating any page as monetizable.
+
 ## 3 editorial hubs (non-monetized or mixed, standalone from the 6)
 
 ### The Truth Untold
@@ -156,12 +173,20 @@ Still genuinely open, do not guess:
 Editorial series. Standalone. Theme: leadership done well versus poorly, AI
 exposing weak management. Primary LinkedIn content, secondary Pinterest.
 
-### The Ones Who Gave Everything
+### The Ones Who Gave Everything (`/ones-who-gave-everything/`)
 
-Non-monetized tribute editorial hub honoring men and women who helped make the
-world a better place. Parent page: The Ones Who Gave Everything. Child page
-pattern: one honoree per page. First child, live this month if launched:
-Reverend Billy Graham.
+Non-monetized tribute editorial hub honoring people, men, women, boys, or girls,
+who made the world better. Parent page: The Ones Who Gave Everything. Child page
+pattern: one honoree (or one tribute subject) per page.
+
+- Inaugural child, live this month if launched: Reverend Billy Graham
+  (`ones-who-gave-everything/reverend-billy-graham`).
+- Planned tributes named by Daniel, 2026-07-14: Nelson Mandela; a tribute to the
+  police officers and firefighters of the September 11 World Trade Center
+  attacks. More to follow.
+
+Non-monetized, locked: never receives Pinterest pins, never carries affiliate or
+salesy content, held to the same trust and technical quality as the money pages.
 
 ### AI Mastery Book Collection
 
