@@ -42,10 +42,13 @@ Known children (menu, URL-nested under the hub):
 - https://tcstaging.truth-collective.com/artificial-intelligence-books/foundational-ai-books/
 - https://tcstaging.truth-collective.com/artificial-intelligence-books/future-proof-the-ai-books-that-redefine-work-skill/
 
-Related AI pages that are top level in WordPress (URL not nested under the hub):
+AI book pages are now nested under the hub (verified 2026-07-14):
 
-- https://tcstaging.truth-collective.com/ai-books-for-business-leaders/ (page id 7739)
-- https://tcstaging.truth-collective.com/ai-books-for-beginners-2/ (page id 7721)
+- https://tcstaging.truth-collective.com/artificial-intelligence-books/ai-books-for-business-leaders/ (page id 7739; old top-level URL 301-redirects here)
+- https://tcstaging.truth-collective.com/artificial-intelligence-books/ai-books-for-beginners-2/
+
+See `docs/page-inventory.md` for the full 66-URL inventory, the eight
+`__trashed` office pages, and the safe menu rebuild target.
 
 ## Open issues on the AI hub (fix before publish)
 

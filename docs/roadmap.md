@@ -71,6 +71,9 @@ batch, BDM verifies against staging.
 
 ## Current verified status
 
-- Sitemap: healthy, HTTP 200, RankMath, updated today.
+- Sitemap: healthy, HTTP 200, RankMath, 66 page URLs.
 - Staging robots: `Disallow: /`, correct for staging, must flip at launch.
-- AI hub canonical: points to a 404, fix pending (see the AI hub playbook).
+- AI hub canonical: points to a 404, and the hub is missing from the sitemap because of it. Fix pending.
+- Eight office pages still live under `__trashed` URLs. Launch blocker.
+- Menus were crushed by prior SQL edits. Rebuild only via Appearance > Menus. Never SQL.
+- Full inventory and menu rebuild target: `docs/page-inventory.md`.

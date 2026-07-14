@@ -1,6 +1,7 @@
 # Page Improvement Playbook — AI Books for Leaders and Critical Thinkers
 
-- URL: https://tcstaging.truth-collective.com/ai-books-for-business-leaders/
+- URL (canonical, nested under AI hub): https://tcstaging.truth-collective.com/artificial-intelligence-books/ai-books-for-business-leaders/
+- Old top-level URL 301-redirects to the nested URL. Hierarchy is corrected.
 - WordPress page id: 7739
 - Focus keyword: AI books for leaders and critical thinkers
 - Status captured from staging on 2026-07-14. Reverify before applying.
@@ -66,7 +67,7 @@ editorial reviews once the books rubric is set.
   "@context": "https://schema.org",
   "@type": "CollectionPage",
   "name": "AI Books for Leaders and Critical Thinkers | 2026",
-  "url": "https://tcstaging.truth-collective.com/ai-books-for-business-leaders/",
+  "url": "https://tcstaging.truth-collective.com/artificial-intelligence-books/ai-books-for-business-leaders/",
   "about": "Curated AI books for business leaders and critical thinkers",
   "isPartOf": {
     "@type": "CollectionPage",
