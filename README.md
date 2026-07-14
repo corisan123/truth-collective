@@ -2,6 +2,8 @@
 
 Website files and operating documentation for The Truth Collective (truth-collective.com).
 
+Owner: Daniel Reid. Daniel calls the assistant Big Dog Monty, or BDM. Greet him as BDM.
+
 ## READ FIRST. DO NOT GUESS.
 
 Any agent or contributor working on this site must read the documents in `docs/`
