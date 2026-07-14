@@ -32,7 +32,7 @@ as data corruption. See Step 0 below.
 
 ## Step 0 — The decisive test (do this first)
 
-1. LiteSpeed Cache Settings → tab [7] Object.
+1. WordPress sidebar → LiteSpeed Cache → Cache (not Page Optimization) → tab [6] Object.
 2. Turn Object Cache OFF. Save Changes.
 3. Toolbox → Purge All.
 4. Create a one-item test menu in WordPress, save.
