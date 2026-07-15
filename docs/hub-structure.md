@@ -224,11 +224,38 @@ salesy content, held to the same trust and technical quality as the money pages.
 ### AI Mastery Podcast and Editorial Series
 
 Parent page: `/ai-mastery-podcast-collection/`. This is the editorial hub, a
-distinct page from the AI Mastery Book Collection content hub (#7 above). A
-10-part series, sourced from the AI book pages, turned into podcasts and social
-media posts. The AI Mastery Book Collection hub page links to this series via an
-intro section. Do not confuse the two: the book collection is monetized content;
-this is the editorial/podcast series.
+distinct page from the AI Mastery Book Collection content hub (#7 above). It is a
+derivation of the AI book categories, turned into podcasts and blog and social
+posts. Do not confuse the two: the book collection is monetized content; this is
+the editorial/podcast series.
+
+Counts differ on purpose (confirmed by Daniel, 2026-07-15):
+- Book collection: 8 categories now, +5 more planned after launch (13 eventual).
+- Editorial series: 10 parts. All 10 images and descriptions are shown on the AI
+  Mastery Book Collection hub page.
+
+The 10 editorial parts, captured from the live hub page 2026-07-15:
+1. AI For Beginners, Understanding the Fundamentals
+2. AI for Business Leaders and Critical Thinking
+3. The Future of AI, Emerging Technologies 2027 to 2030
+4. Present and Future, AI, How Business Is Changing
+5. AI in Healthcare
+6. The Seen and The Hidden
+7. AI in Finance, Banking, and Investments
+8. AI in Education and Higher Learning
+9. AI in the Workplace and Corporate Leadership
+10. AI in Cyber-Security, Government
+
+## Social and podcast content strategy (confirmed by Daniel, 2026-07-15)
+
+All 3 editorial hubs feed the post-launch content engine for social media and
+podcasts:
+- The Truth Untold series
+- The Ones Who Gave Everything
+- AI Mastery Podcast and editorial series
+
+BDM will draft post and pin copy in brand voice from these, in batches, per the
+roadmap Phase 4. Reminder: non-monetized pages never receive Pinterest pins.
 
 ## Self-Help and Mental Wellness hub detail
 
