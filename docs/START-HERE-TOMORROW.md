@@ -18,11 +18,16 @@ Big wins today, all verified live:
 
 ## Next, in order
 
-1. The three money pages (the real revenue work).
-   - Best Executive Desk Setup: `/office-workspace-products-and-tools/executive-desk-setup/`
-   - Best Executive Office Chairs and Seating: `/office-workspace-products-and-tools/executive-office-chairs-seating/`
-   - Best Monitors and Premium Displays: `/technology-hub/monitor-display/`
-   - BDM will audit each from staging and return a punch list per page.
+1. The three money-page punch lists are DONE and waiting (audited 2026-07-15):
+   - Summary + batch plan: `docs/pages/money-pages-summary.md`
+   - Chairs (do first, has an H1 gap): `docs/pages/money-02-executive-office-chairs.md`
+   - Desk: `docs/pages/money-01-executive-desk-setup.md`
+   - Monitors (cleanest): `docs/pages/money-03-monitors-and-displays.md`
+   Daniel executes the fixes; BDM verifies each against staging after.
+
+2. Truth Untold content paste: `docs/pages/truth-untold-series-prep.md`
+   - Parts 1, 3, 4, 5 are empty stubs ready for Daniel's content.
+   - Part 6 has a broken slug and wrong nesting; fix that BEFORE pasting.
 
 ## Small cleanups to fit in when convenient
 

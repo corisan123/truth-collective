@@ -28,8 +28,11 @@ reinvention.
 Group the pages by shared template and process each group as a unit. Order by ROI
 and speed to monetization:
 
-1. The three money pages: Best Standing Desks, Best Office Chairs Under 500,
-   Best Monitors for Productivity.
+1. The three money pages: Executive Desk Setup, Executive Office Chairs and
+   Seating, Monitors and Premium Displays. Punch lists complete 2026-07-15, see
+   `docs/pages/money-pages-summary.md`. (These are the built equivalents of the
+   Master Brief's original "standing desks / office chairs / monitors" launch
+   trio.)
 2. Recommended Books hub and its 12 category children (most templated).
 3. Office Workspace hub and children.
 4. Technology hub and children.
