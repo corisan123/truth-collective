@@ -8,6 +8,19 @@ alongside the Publish Gate in `MASTER-BRIEF.md`.
 - Roughly 65 pages optimized on staging, about 25 remaining at the time of the tips.
 - Protect the finished pages. Do not reparent or change slugs without a URL map.
 
+## Migration mechanics (staging to live)
+
+- Live truth-collective.com is being replaced by the staging build. Migration
+  does a database search-replace of `tcstaging.truth-collective.com` to
+  `truth-collective.com`.
+- Bugs travel with migration. A broken canonical, a hardcoded staging URL, or a
+  sitemap exclusion on staging becomes the same bug on live. Fix structural
+  issues before or at migration, not after.
+- Prefer empty/self-referencing canonicals over hardcoded URLs site-wide, so the
+  search-replace never leaves stale absolute URLs behind.
+- After migration: flip robots to allow crawling, uncheck Discourage search
+  engines, purge all caches, submit the sitemap in Google Search Console.
+
 ## Launch blockers (must be true before migrating to live)
 
 - robots is not blocking the site.

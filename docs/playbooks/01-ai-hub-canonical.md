@@ -1,59 +1,59 @@
-# Playbook 01 — Fix AI Hub Canonical (Urgent)
+# Playbook 01 — Fix AI Hub Canonical (Launch-Gate, Not an Emergency)
 
-This is the highest-priority site-wide fix. Do it first.
+## Corrected urgency (per Daniel, 2026-07-15)
 
-## Why
+Staging is noindexed (`robots.txt: Disallow: /`), so nothing here is indexed by
+Google today. This is NOT a live traffic emergency. It is a launch-gate item: it
+must be correct before or at migration, because the bug travels to live.
 
-`/artificial-intelligence-books/` returns HTTP 200, but its canonical is set to
-`/ai-mastery-collection-2026-editorial-series/`, which returns HTTP 404.
-Because of that, the hub is missing from the RankMath sitemap. Fixing the
-canonical puts the hub back into crawl and indexing readiness.
+## The problem
 
-## Exact steps (WordPress admin)
+`/artificial-intelligence-books/` sets its canonical to
+`/ai-mastery-collection-2026-editorial-series/`, which returns HTTP 404. The hub
+is excluded from the RankMath sitemap as a result.
 
-1. Go to Pages.
-2. Find and open **Artificial Intelligence Books** (or AI Mastery Book Collection).
-3. Open the RankMath panel on the page.
-4. Open the Advanced tab.
-5. In Canonical URL, replace the current value with exactly:
+## Why it still must be fixed, even though staging is not indexed
 
-```
-https://tcstaging.truth-collective.com/artificial-intelligence-books/
-```
+Migration to live does a search-replace of `tcstaging.truth-collective.com` to
+`truth-collective.com` across the database. The broken canonical does not fix
+itself; it becomes `https://truth-collective.com/ai-mastery-collection-2026-editorial-series/`,
+still a 404, now on the live site, and the sitemap exclusion carries over too. So
+if left alone, the site launches with one of six hubs canonicalizing to a dead
+URL and missing from the sitemap submitted to Google Search Console.
 
-Or clear the Canonical URL field so RankMath self-canonicals to the page URL.
-6. Save / Update the page.
-7. Open RankMath Schema on the same page. If a CollectionPage schema exists and
-   its URL field points to the editorial-series URL, change that URL to:
+## The correct fix (do NOT hardcode any URL)
 
-```
-https://tcstaging.truth-collective.com/artificial-intelligence-books/
-```
+Do not type a `tcstaging` URL into the canonical field. That URL disappears at
+migration. Instead, CLEAR the field so RankMath self-canonicals automatically.
+This is correct on staging (self-references the staging URL) and automatically
+correct after migration (self-references the live URL), with zero rework.
 
-8. Update again.
-9. Hard refresh the live staging page and confirm View Source shows:
+### Steps (requires WordPress login; BDM cannot do this, it is behind admin auth)
 
-```
-<link rel="canonical" href="https://tcstaging.truth-collective.com/artificial-intelligence-books/" />
-```
+1. WordPress admin, open the Artificial Intelligence Books page.
+2. Open the RankMath panel, Advanced tab.
+3. Canonical URL field: delete its contents, leave it EMPTY. Do not paste a URL.
+4. Update the page.
+5. Open RankMath Schema on the page. If a CollectionPage schema URL points to the
+   editorial-series 404 URL, clear or correct it the same way.
+6. Update.
+7. Tell BDM. BDM will re-check the live canonical and sitemap inclusion.
 
-10. Wait a few minutes, then open:
+## Broader migration principle (applies site-wide)
 
-```
-https://tcstaging.truth-collective.com/page-sitemap.xml
-```
+Prefer empty/self-referencing canonicals over hardcoded URLs everywhere, so the
+migration search-replace does not leave stale absolute URLs behind. Only hardcode
+a canonical when intentionally pointing one page at a different page.
 
-Confirm `/artificial-intelligence-books/` appears in the sitemap.
+## Do not
 
-## Do not do
-
-- Do not change the page slug.
+- Do not hardcode a `tcstaging` canonical.
+- Do not change the slug.
 - Do not point the canonical at `/ai-mastery-podcast-collection/`.
 - Do not use SQL.
 - Do not delete the editorial/podcast page.
 
 ## Done when
 
-- Canonical equals the hub URL.
+- Canonical is empty (self-referencing) or points to the hub's own URL.
 - Hub appears in `page-sitemap.xml`.
-- Editorial/podcast page remains separate at `/ai-mastery-podcast-collection/`.

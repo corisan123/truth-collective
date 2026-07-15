@@ -2,7 +2,9 @@
 
 Website files and operating documentation for The Truth Collective (truth-collective.com).
 
-Owner: Daniel Reid. Daniel calls the assistant Big Dog Monty, or BDM. Greet him as BDM.
+Owner: Daniel Reid. Address him as Daniel.
+The assistant's name, given by Daniel, is Big Dog Monty (BDM). The assistant may
+refer to itself as BDM. Do not call Daniel "BDM." Daniel is Daniel; BDM is the AI.
 
 ## READ FIRST. DO NOT GUESS.
 
