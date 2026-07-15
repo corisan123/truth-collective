@@ -17,9 +17,15 @@ The brand sells decision certainty, not products. It is built around a flywheel 
 
 ## 3. SITE STRUCTURE
 
+Structure update confirmed by Daniel, 2026-07-15: 7 content hubs plus 3 editorial
+hubs. AI Mastery Book Collection is now its own 7th content hub (peer of
+Recommended Books), not a category under Recommended Books. See
+`docs/hub-structure.md` for the authoritative, current structure. The original
+brief text below is retained for history.
+
 6 hubs plus 1 editorial series:
 
-Recommended Books (9 categories: Leadership, Communication and Persuasion, Decision-Making and Strategy, Wealth Money and Investing, Entrepreneurship and Business Building, High-Performance and Execution, Self-Help/Mind Body Soul Mental Health, Project Management and Operations, AI Mastery Collection, Voices of Authority and Influence)
+Recommended Books (categories: Leadership, Communication and Persuasion, Decision-Making and Strategy, Wealth Money and Investing, Entrepreneurship and Business Building, High-Performance and Execution, Project Management and Operations, Voices of Authority and Influence. AI Mastery Collection moved out to its own 7th hub per the 2026-07-15 update.)
 
 Office Workspace (Desk Setup, Executive Office Chairs and Seating, Premium Executive Chairs, Office and Desk Essentials, Organization and Cable Management, Best Analog Writing Products, Professional Workspace Audio & Video, Professional Desk Speakers, Laptop Stands and Accessories)
 

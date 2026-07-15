@@ -10,7 +10,29 @@ placement decision against this rule before asking or guessing.
 This supersedes any inference drawn from the sitemap alone. Confirmed directly by
 Daniel on 2026-07-14, including the full child list for all 6 major hubs.
 
-## 6 major hubs with confirmed children
+## Hub count (confirmed by Daniel, 2026-07-15)
+
+7 content hubs, plus 3 editorial hubs.
+
+The 6 definite content hubs:
+1. Recommended Books
+2. Technology Hub
+3. Office Workspace Products and Tools
+4. Self-Help and Mental Wellness
+5. Productivity Tools, Software and Systems
+6. Smart Lighting
+
+The 7th content hub:
+7. AI Mastery Book Collection (`/artificial-intelligence-books/`), a peer of
+   Recommended Books, not a category under it. Its URL is already top-level with
+   its 8 book categories nested beneath it. Monetized (affiliate book links).
+
+Note: the AI Mastery Podcast/editorial series (`/ai-mastery-podcast-collection/`)
+is a SEPARATE thing from the AI Mastery Book Collection hub. The book collection
+is the 7th content hub; the podcast series is one of the 3 editorial hubs below.
+This corrects an earlier conflation of the two under one name.
+
+## The 7 content hubs with confirmed children
 
 ### 1. Recommended Books (`/recommended-books-2026/`)
 
@@ -168,7 +190,16 @@ Ones Who Gave Everything vs. the parent landing pages) still needs one final
 confirmation from Daniel so the count reconciles exactly to 5. Do not guess the
 split. Confirm before treating any page as monetizable.
 
-## 3 editorial hubs (non-monetized or mixed, standalone from the 6)
+## 7th content hub — AI Mastery Book Collection
+
+`/artificial-intelligence-books/`. Monetized books hub, peer of Recommended
+Books. 8 book categories nested beneath it. The hub page also carries an intro
+section pointing to the separate AI Mastery Podcast series. Canonical fixed
+2026-07-15, now in the sitemap. See the AI hub playbook and page playbooks for
+detail. Confirm the exact 8 categories against the live page before wiring the
+hub's ItemList schema (open item).
+
+## 3 editorial hubs (non-monetized or mixed, standalone from the content hubs)
 
 ### The Truth Untold
 
@@ -190,14 +221,14 @@ pattern: one honoree (or one tribute subject) per page.
 Non-monetized, locked: never receives Pinterest pins, never carries affiliate or
 salesy content, held to the same trust and technical quality as the money pages.
 
-### AI Mastery Book Collection
+### AI Mastery Podcast and Editorial Series
 
-Parent page: AI Mastery Book Collection (the Artificial Intelligence Books hub,
-`/artificial-intelligence-books/`). Contains 8 book categories as children. The
-parent page also carries an intro section for a separate editorial and podcast
-series: 10 parts, sourced from the book pages, turned into podcasts and social
-media posts. That series lives on its own page,
-`/ai-mastery-podcast-collection/`, and is a distinct page from the hub.
+Parent page: `/ai-mastery-podcast-collection/`. This is the editorial hub, a
+distinct page from the AI Mastery Book Collection content hub (#7 above). A
+10-part series, sourced from the AI book pages, turned into podcasts and social
+media posts. The AI Mastery Book Collection hub page links to this series via an
+intro section. Do not confuse the two: the book collection is monetized content;
+this is the editorial/podcast series.
 
 ## Self-Help and Mental Wellness hub detail
 
