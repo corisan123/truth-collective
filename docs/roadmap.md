@@ -73,7 +73,7 @@ batch, BDM verifies against staging.
 
 - Sitemap: healthy, HTTP 200, RankMath, 66 page URLs.
 - Staging robots: `Disallow: /`, correct for staging, must flip at launch.
-- AI hub canonical: points to a 404, and the hub is missing from the sitemap because of it. Fix pending.
+- AI hub canonical: RESOLVED 2026-07-15. Daniel cleared the canonical field; hub now self-canonicals and is back in the sitemap. Verified live.
 - Eight office pages reparented and verified live, no broken links. All four placement questions resolved: Monitor Setup, Projectors/Microphones, and Audio and Video confirmed correct under Technology Hub; Cable Management confirmed needs to move to Office Workspace. Master Brief updated. See `docs/playbooks/04-reparent-trashed-office-pages.md`.
 - Hub placement rule locked in (plugged in or digital: Smart Lighting or Technology Hub; office furniture and analog: Office Workspace). All reparenting confirmed complete by Daniel: Smart Tablets, Interactive Displays, Desk Speakers to Technology Hub; Smart Bulbs to Smart Lighting; Cable Management stays in Productivity Tools (IT scope). Hub-to-child structure for all 6 hubs is now settled. See `docs/hub-structure.md`.
 - Remaining structural cleanups: remove the leftover "DRAFT 6 15 2026" title prefix on the Video Technology page; confirm two Self-Help URLs (the non-monetized Mental Wellness Recovery/Resources page, and the 16-book curated page).

@@ -12,15 +12,13 @@ Big wins today, all verified live:
 - Full hub-to-child reparenting across all 6 hubs: COMPLETE and verified.
 - Hub placement rule locked; hub structure for all 6 hubs settled.
 
-## Tomorrow, in order
+## Progress
 
-1. FIRST, quick win (5 minutes): Fix the AI hub canonical.
-   - Follow `docs/playbooks/01-ai-hub-canonical.md` exactly.
-   - Why first: the AI hub is invisible to Google right now because its canonical
-     points to a dead 404 URL. One field change fixes it and puts the hub back
-     in the sitemap.
+- AI hub canonical: DONE 2026-07-15. Fixed and verified, hub back in sitemap.
 
-2. THEN, the three money pages (the real revenue work).
+## Next, in order
+
+1. The three money pages (the real revenue work).
    - Best Executive Desk Setup: `/office-workspace-products-and-tools/executive-desk-setup/`
    - Best Executive Office Chairs and Seating: `/office-workspace-products-and-tools/executive-office-chairs-seating/`
    - Best Monitors and Premium Displays: `/technology-hub/monitor-display/`

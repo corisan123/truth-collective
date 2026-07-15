@@ -1,4 +1,12 @@
-# Playbook 01 — Fix AI Hub Canonical (Launch-Gate, Not an Emergency)
+# Playbook 01 — Fix AI Hub Canonical (RESOLVED 2026-07-15)
+
+## Resolved
+
+Daniel cleared the Canonical URL field in Quick Edit on the AI Mastery Book
+Collection page (slug `artificial-intelligence-books`). Verified live by BDM:
+canonical now self-references `https://tcstaging.truth-collective.com/artificial-intelligence-books/`,
+and the hub is back in `page-sitemap.xml`. The remaining content below is kept
+for history and for the site-wide migration principle.
 
 ## Corrected urgency (per Daniel, 2026-07-15)
 

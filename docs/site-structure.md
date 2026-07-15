@@ -52,14 +52,13 @@ See `docs/page-inventory.md` for the full 66-URL inventory, the eight
 
 ## Open issues on the AI hub (fix before publish)
 
-1. Canonical bug (urgent). `/artificial-intelligence-books/` sets its canonical to
-   `/ai-mastery-collection-2026-editorial-series/`, which returns HTTP 404.
-   Canonicalizing to a dead URL can remove the hub from Google's index entirely.
-   Fix now: set the canonical of `/artificial-intelligence-books/` to itself, and
-   set its RankMath CollectionPage schema `url` to itself. The editorial and
-   podcast page is a separate page and is self-canonical at
+1. Canonical bug: RESOLVED 2026-07-15. `/artificial-intelligence-books/` now
+   self-canonicals and is back in the sitemap (verified live). The editorial and
+   podcast page remains separate and self-canonical at
    `/ai-mastery-podcast-collection/`. Children `isPartOf` uses
    `https://tcstaging.truth-collective.com/artificial-intelligence-books/`.
+   Still to do when schema is added: confirm the hub's RankMath CollectionPage
+   schema `url` also references the hub itself, not the old editorial URL.
 2. Multiple H1s. The hub page renders more than one H1 (theme entry title plus two
    content H1s). Reduce to a single H1. Keep one hub H1, demote the rest to H2.
 3. Topic duplication. `/ai-books-for-business-leaders/` (7739) and
