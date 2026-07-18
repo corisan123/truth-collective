@@ -133,3 +133,11 @@ positioned. It expects one paragraph, not multiple.
 - All four components link the whole card. Keep the block link or section link overlay intact.
 - When a component looks correct in the WordPress editor but breaks on the front end, the cause is almost always one of these front-end-only rules (absolute positioning, object-fit, or min-height), not the block settings.
 - Never apply a component class to content it was not built for. Example: applying `tc-overlay-card` to a banner with multiple paragraphs stacks every paragraph at one position and crops the image.
+- Book content (cover + title + author + description + buy button) must use
+  `tc-book-card` on the column, `tc-leadership-body` on the description, and
+  `tc-book-button` on the button. Do NOT use `tc-overlay-card` or `tc-explore-hub`
+  on book content. Doing so forces the cover into a fixed ~460px box with
+  `object-fit: cover` and crops it, no matter the image size. This exact mistake
+  was found on /ai-in-healthcare/ (all 10 cards). See
+  `docs/playbooks/06-fix-book-cards-wrong-class.md`. If a book cover crops and
+  the owner has tried many Canva sizes, check the card's classes first.
