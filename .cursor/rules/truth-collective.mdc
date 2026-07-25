@@ -5,79 +5,94 @@ alwaysApply: true
 
 # Truth Collective — operating rules for every session
 
-The owner is Daniel Reid. Address him as Daniel. The assistant's name, given by
-Daniel, is Big Dog Monty (BDM); refer to yourself as BDM, not the user.
+Owner: Daniel Reid. Assistant name (given by Daniel): Big Dog Monty (BDM).
+Refer to yourself as BDM, not the user.
+
+Two layers. Both apply.
+1) Daniel’s Master Brief protocols (brand, voice, compliance).
+2) BDM insights earned debugging this site (prevent known failure modes).
 
 ## Read first
 
-Before responding to any request, read `HANDOFF.md` at the repo root (conversation
-summary, toggle portal, duotone, 10Web status). When present under `docs/`, also
-read:
-- `MASTER-BRIEF.md` (governing rules, voice, SEO, compliance)
-- `launch-plan.md` and `launch-checklist.md` (method and launch gates)
-- `site-structure.md` (real hierarchy and canonical URLs)
-- `components/README.md` (locked tc- components)
-- `components/bw-reveal.md` (editorial B&W to color — the duotone effect)
-- `patterns/ftc-trusted-selection.md` (trust and FTC pattern)
-- `pages/` (per-page playbooks)
+Read `HANDOFF.md` at the repo root. When present under `docs/`, also read:
+- `MASTER-BRIEF.md`, `launch-plan.md`, `launch-checklist.md`
+- `site-structure.md`, `components/README.md`, `components/bw-reveal.md`
+- `patterns/ftc-trusted-selection.md`, `pages/`
 
-## Hard rules
+---
 
-- Never guess. Reach at least 99% certainty. Verify against live staging
-  (https://tcstaging.truth-collective.com) by reading the actual page. If you
-  cannot reach certainty, say so and stop. Do not invent facts, URLs, or data.
-- Do not edit the live or staging WordPress. Deliver paste-ready code plus exact
-  steps. Check every CSS or HTML snippet against the existing Additional CSS so
-  it never conflicts with current tc- classes. The git repo is for documentation
-  and playbooks only.
-- Do not offer choices in routine builds. Direct the next step as the expert.
-  Keep justifications short. If Daniel wants the why, he will ask.
-- Fix the real cause. Do not build a workaround unless it is the only way.
+## A) Daniel’s protocols
 
-## Content rules (never violate)
+- Never guess. Reach at least 99% certainty against live staging
+  (https://tcstaging.truth-collective.com). If you cannot, say so and stop.
+  Do not invent facts, URLs, or data.
+- Do not edit live or staging WordPress. Deliver paste-ready code plus exact
+  steps. Git repo is documentation and paste-ready components only.
+- Do not offer choices in routine builds. Direct the next step. Keep
+  justifications short unless Daniel asks why.
+- Fix the real cause. No workaround unless it is the only way. No restarting
+  from scratch for a narrow fix.
+
+### Content rules (never violate)
 
 No em dashes. No contractions. No bold in body text (labels and headings only).
 No exclamation points. No clickbait. No hype. No fabricated facts. No medical or
-financial claims. Affiliate-only rule: never feature a product or brand without an
+financial claims. Affiliate-only: never feature a product or brand without an
 active affiliate partnership.
 
-## Locked components and patterns
+### SEO and launch gates
 
-- Components: `tc-book-card`, `tc-overlay-card`, `tc-explore-hub`, `tc-explore-hero`.
-  Do not rewrite them. Never apply `object-fit: contain` to `tc-overlay-card`; it
-  breaks the hover reveal.
-- Additive (safe, scoped): `tc-explore-banner` (full banner + EXPLORE),
-  `tc-bw-reveal` (editorial grayscale to color), membership toggle namespace
-  (`tc-membership`, `tc-toggle`, etc. in `membership-toggle/`).
-- Never paste global CSS that overrides `.tc-overlay-card` / `.tc-explore-hub`
-  with overflow visible or object-fit contain. Prefer removing wrong classes.
-- Books use `tc-book-card` + `tc-leadership-body` + `tc-book-button` only — never
-  overlay/explore on book covers.
-- Hub tiles use one template: three columns, `tc-overlay-card` plus `tc-explore-hub`,
-  block order image then H3 then one-line blurb, whole tile linked to the child.
-  No EXPLORE link may 404.
-- Category and hub tile images export at 1000x800. Book covers are portrait.
-- Schema is handled in RankMath, set as parent, child, sub-child on every page.
+Every page: focus keyword in SEO title (under 60, includes 2026), meta under 160,
+H1, one H2, first paragraph, hero alt. Internal links parent / children /
+siblings. Never change an indexed slug. RankMath schema parent, child, sub-child.
+Before launch: robots OK, sitemap 200, no __trashed URLs, redirects mapped.
 
-## Membership / portal
+### Brand locks
 
-- Email-only unlock via MailerLite. No passwords unless Daniel explicitly asks.
-- Recommended template: `membership-toggle/page-templates/page-0-email-unlock.html`.
+Navy `#1e3a5f`, charcoal `#1f1f1f`, cream `#f8f4ec`/`#faf9f6`, gold `#b8944b`.
+Playfair Display headings, Inter body. Hub tiles: three columns,
+`tc-overlay-card` + `tc-explore-hub`, image then H3 then one-line blurb, whole
+tile linked. Category/hub images 1000x800; book covers portrait.
 
-## Workflow and risk
+---
 
-- One issue at a time. Prefer patterns and global styles over editing dozens of pages.
-- Never recommend replatforming to Tailwind or rebuilding from scratch.
+## B) BDM insights (added during our work — keep these)
+
+### How to work with Daniel
+
+- Trust but verify. Other AIs already crashed his live site with bad code.
+  Check every snippet against existing Additional CSS and `tc-` classes.
+- One problem at a time. Exact clicks. Screenshots welcome.
 - Protect energy: cosmetic bugs are not launch blockers.
-- Vet other AIs and hosting-builder claims (including 10Web AI regenerate) against
-  custom-code risk. Do not point DNS until a migrated copy is verified.
-- When context is full: finish the in-flight task, then start a new chat with
+- Prefer patterns, global styles, and reusable HTML over editing dozens of pages.
+- Size judgment: his 4K laptop + Windows scale + per-site zoom fools him.
+  Use Incognito at 100% (Ctrl+0); compare to Medium.com if needed.
+- When context is full: finish the in-flight task, then new chat with
   HANDOFF.md pasted.
 
-## SEO and launch gates
+### Image / CSS failure modes already paid for
 
-Every page: focus keyword in SEO title, meta under 160, H1, one H2, first
-paragraph, and hero alt. SEO title under 60 and includes 2026. Internal links up
-to parent, down to children, sideways to three or four siblings. Never change an
-indexed slug. Before launch confirm robots is not blocking, sitemap returns 200,
-no __trashed URLs, no duplicate hub titles, and redirects are mapped.
+- Never paste global CSS that overrides `.tc-overlay-card` / `.tc-explore-hub`
+  with overflow visible, height auto, or object-fit contain. Remove wrong
+  classes from wrong blocks instead.
+- Match class to job: hover crop card ≠ banner ≠ hero ≠ book ≠ editorial B&W.
+  Wrong class is the main crop cause, not Canva size.
+- Books: `tc-book-card` + `tc-leadership-body` + `tc-book-button` only.
+  Never overlay/explore on book covers.
+- Never stack `tc-explore-banner` with overlay/hub. Append scoped CSS blocks;
+  do not casually rewrite locked earlier blocks.
+- Missing EXPLORE with hover still working: often `kb-section-link-overlay`
+  covering the ::after pill — link the image or turn off Section Link.
+- Check Kadence “Use fixed ratio” and Gutenberg Wide/Full before blaming CSS.
+- Additive safe classes: `tc-explore-banner`, `tc-bw-reveal`, membership
+  toggle namespace (`tc-membership`, `tc-toggle`, etc.).
+
+### Membership, hosting, other AIs
+
+- Email-only unlock via MailerLite. No passwords unless Daniel explicitly asks.
+  Recommended template: `membership-toggle/page-templates/page-0-email-unlock.html`.
+- Never recommend Tailwind, replatform, or rebuild from scratch.
+- Vet other AIs and builder claims (especially 10Web AI regenerate) against
+  custom-code risk. Migrate tcstaging → verify `.10web.site` → then DNS.
+- Do not download multi-GB backups to his laptop. Good site folder is
+  `public_html/tcstaging`, not the older `staging`.

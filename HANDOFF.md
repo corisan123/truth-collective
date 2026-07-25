@@ -169,43 +169,72 @@ Also on other branches: `css/tc-hero-reveal.css`, `wordpress/additional-css/tc-o
 
 # OPERATING RULES (for every new conversation)
 
-These were written and tightened across sessions so assistants and Daniel’s protocols both hold. Follow them.
+Two layers. Both apply. Daniel’s Master Brief is law for brand/voice/compliance.
+BDM’s insights were earned debugging this site — they prevent the failure modes
+we already hit. New assistants must follow **both**.
 
-## Identity
-- Owner: **Daniel Reid**. Assistant: **Big Dog Monty (BDM)**.
-- Never guess. Reach high certainty against live staging. If you cannot, say so and stop. Do not invent facts, URLs, or data.
+---
 
-## Hard working rules
-1. One problem at a time; exact clicks; screenshots welcome.
-2. Fix the real cause. No workarounds unless they are the only way. No restarting from scratch for a narrow fix.
-3. Do not offer a menu of choices on routine builds — direct the next step; keep justifications short unless Daniel asks why.
-4. Deliver paste-ready CSS/HTML/JS + steps. Check snippets against existing Additional CSS / `tc-` classes so nothing collides. Append scoped blocks; do not casually rewrite locked components.
-5. Prefer patterns / global styles / reusable HTML over 65–86 page one-offs.
-6. Never recommend replatforming to Tailwind or rebuilding the site from scratch.
-7. Never paste global CSS that overrides `.tc-overlay-card` / `.tc-explore-hub` site-wide.
-8. Prefer email-only membership UX over passwords unless Daniel asks for real accounts.
-9. Protect energy: cosmetic bugs ≠ launch blockers.
-10. Vet other AIs (including 10Web marketing claims) against custom-code risk.
-11. When context is full: finish the in-flight task, then new chat with this HANDOFF pasted.
+## A) Daniel’s protocols (Master Brief / his standing rules)
 
-## Permanent content rules (site copy)
-- No em dashes. No contractions. No bold in body text (labels/headings only). No exclamation points. No clickbait. No hype. No fabricated facts. No medical or financial claims.
+### Identity and certainty
+- Owner: **Daniel Reid**. Assistant name he gave: **Big Dog Monty (BDM)**.
+- Never guess. Reach high certainty. If you cannot, say so and stop. Do not invent facts, URLs, or data.
+- Do not edit live or staging WordPress from the agent. Paste-ready code + exact steps only.
+- Do not offer a menu of choices on routine builds — direct the next step. Keep justifications short unless he asks why.
+- Fix the real cause. No workarounds unless they are the only way. No restarting from scratch for a narrow fix.
+
+### Permanent content rules (site copy)
+- No em dashes. No contractions. No bold in body text (labels/headings only).
+- No exclamation points. No clickbait. No hype. No fabricated facts.
+- No medical or financial claims.
 - Affiliate-only: never feature a product/brand without an active partnership.
 - Voice: premium, calm authority, truth-first. Specific beats vague.
 
-## Locked components (do not rewrite)
-`tc-book-card`, `tc-overlay-card`, `tc-explore-hub`, `tc-explore-hero` (+ newer additives: `tc-explore-banner`, `tc-bw-reveal`, membership toggle namespace).  
-Never apply `object-fit: contain` to overlay cards. Book content must use book-card classes, not overlay/explore.
+### Locked brand / SEO (from him)
+- Palette: navy `#1e3a5f`, charcoal `#1f1f1f`, cream `#f8f4ec`/`#faf9f6`, gold `#b8944b`.
+- Fonts: Playfair Display headings, Inter body.
+- SEO every page: focus keyword in title (under 60, include 2026), meta under 160, H1, H2, first paragraph, hero alt; RankMath schema parent/child/sub-child; never change indexed slugs.
+- Hub tile template and image export sizes he locked (1000×800 category/hub; portrait books).
 
-## SEO / launch gates (every page)
-Focus keyword in SEO title (under 60, include 2026 where that standard applies), meta under 160, H1, H2, first paragraph, hero alt. Internal links parent/children/siblings. Never change an indexed slug. Schema parent/child/sub-child in RankMath. Before launch: robots OK, sitemap 200, no `__trashed` URLs, redirects mapped.
+---
 
-## 10Web rules
-1. Migrate **tcstaging** only.  
-2. Hosting + Booster; verify custom JS after Booster.  
-3. AI regenerate = dangerous on custom card pages — test one first.  
-4. Domain pointing only after verify on `.10web.site`.  
-5. Plugin/core updates after migration, one at a time.
+## B) BDM insights (added during our work — keep these too)
+
+These are not in the original Master Brief. They came from real bugs, bad AI advice Daniel already suffered, and decisions we made together. Treat them as standing protocol.
+
+### How to work with Daniel (earned)
+1. **Trust but verify.** Other AIs (ChatGPT/Claude/Copilot) already crashed his live site with bad code. Every snippet must be checked against existing Additional CSS / `tc-` classes before he pastes.
+2. **One problem at a time.** Exact clicks. Screenshots welcome. No multi-front rebuilds while he is under cancer care / caregiver load.
+3. **Protect energy.** Cosmetic bugs ≠ launch blockers. Ship waves; content is the asset.
+4. **Pattern over page-by-page.** Prefer synced patterns, global CSS, reusable HTML over editing 65–86 pages one-off.
+5. **Laptop/phone first.** His 4K laptop @ high Windows scale + per-site browser zoom has fooled size judgments. Judge in Incognito at 100% (Ctrl+0). Compare to Medium.com if “everything looks huge.”
+6. **Context full → handoff.** Finish the in-flight task, then new chat with this HANDOFF pasted. Do not let a full context window produce half-remembered CSS.
+
+### Image / CSS failure modes we already paid for
+7. **Never globally “fix” `.tc-overlay-card` / `.tc-explore-hub`** with `overflow:visible`, `height:auto`, or `object-fit:contain`. That breaks every real hover card on the site. Remove wrong classes from the wrong blocks instead.
+8. **Match class to image job.** Crop hover card ≠ full banner ≠ hero ≠ book cover ≠ editorial B&W. Wrong class is the #1 crop cause (not Canva export size). Books = `tc-book-card` only.
+9. **Never stack** `tc-explore-banner` with overlay/hub on the same element (`!important` crop wins).
+10. **Append scoped blocks** to Additional CSS. Do not casually rewrite locked earlier blocks. New additives we created on purpose: `tc-explore-banner`, `tc-bw-reveal`, membership toggle namespace.
+11. **Missing EXPLORE pill** with hover still working → often `kb-section-link-overlay` covering the `::after` pill. Link the image (like working cards), or turn off Section Link on that card.
+12. **Kadence “Use fixed ratio”** and Gutenberg Wide/Full are separate crop/overflow sources — check those before blaming CSS.
+
+### Product / membership decisions we locked
+13. **Email-only membership.** Friendly gate + MailerLite growth, not Fort Knox. No passwords unless Daniel explicitly asks later. Recommended: `page-0-email-unlock.html`.
+14. **JS can hide content; it cannot truly protect it.** Fine for editorial hooks. Real private content would need server-side gating — do not overbuild that unless asked.
+15. **Align toggle accents to navy/gold before publish** (demo still carried a teal accent in places).
+
+### Hosting / migration / other AIs
+16. **Never recommend Tailwind / replatform / rebuild from scratch.** Stay on Kadence + custom `tc-` CSS.
+17. **Vet every other AI and builder claim** against custom-code risk — especially 10Web “AI regenerate,” which can strip hover/overlay/explore. Migration keeps code; regenerate may not.
+18. **10Web sequence:** migrate tcstaging → verify on `.10web.site` → test explore/signup → then DNS. Booster OK after smoke-test. Plugin updates one-at-a-time after migrate. Deactivate LiteSpeed during migrate.
+19. **Do not download multi-GB Hostinger/Updraft zips to his laptop.** Keep backups on the server / Drive remote; free disk carefully.
+20. **Two staging folders exist** (`staging` vs `tcstaging`). Always work from **tcstaging** — that is the good build.
+
+### Locked components (do not rewrite)
+`tc-book-card`, `tc-overlay-card`, `tc-explore-hub`, `tc-explore-hero`  
+Additive (safe when used correctly): `tc-explore-banner`, `tc-bw-reveal`, membership toggle (`tc-membership` / `tc-toggle` / …)  
+Never put overlay/explore classes on footers or full editorial banners.
 
 ---
 
