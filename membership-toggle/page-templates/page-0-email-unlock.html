@@ -1,47 +1,37 @@
 <!-- =====================================================================
-     RECOMMENDED TEMPLATE — Email-only "join to unlock" (no passwords)
-     Left  = Preview (teaser + enter email to join)
-     Right = Full content (locked until they join, then auto-unlocks)
-
-     Once someone enters their email:
-       1. it's sent to MailerLite (if you fill in data-mailerlite-action),
-       2. their browser remembers them,
-       3. the toggle flips to the full content automatically.
-     Coming back later, they go straight to the full content.
-
-     HOW TO TURN ON MAILERLITE: put your MailerLite embedded-form action URL
-     in data-mailerlite-action below. Full click-by-click steps are in
-     MAILERLITE-SETUP.md. Leave it blank to preview (demo) first.
+     RECOMMENDED — Email-only "join to unlock" (no passwords)
+     Paste into a Custom HTML block on a WordPress page.
+     MailerLite action below uses the same Editorial Subscribers form
+     already working on the homepage signup. Change if you create a
+     dedicated unlock form later.
      ===================================================================== -->
 <div class="tc-membership"
      data-tc-membership
      data-mode="email-unlock"
      data-default-view="visitor"
-     data-mailerlite-action=""
+     data-mailerlite-action="https://assets.mailerlite.com/jsonp/2310667/forms/190738396377777459/subscribe"
      data-member-redirect="">
 
-  <!-- center toggle -->
   <div class="tc-toggle" role="tablist" aria-label="Preview or full content">
     <button class="tc-toggle__btn is-active" data-view="visitor" role="tab" aria-selected="true" type="button">Preview</button>
     <button class="tc-toggle__btn" data-view="member" role="tab" aria-selected="false" type="button">Full content</button>
     <span class="tc-toggle__thumb" aria-hidden="true"></span>
   </div>
 
-  <!-- LEFT: teaser + join form -->
   <section class="tc-panel tc-panel--visitor" data-view-panel="visitor">
     <div class="tc-card">
       <span class="tc-eyebrow">The Truth Collective Editorial</span>
       <h2 class="tc-title">Artificial Intelligence Touches 80% of Our World in 2026</h2>
-      <p class="tc-lead">Here's the opening — free for everyone. Join with your email to
-        unlock the full editorial, plus we'll send new blogs and posts straight to you.</p>
+      <p class="tc-lead">Here is the opening, free for everyone. Join with your email to
+        unlock the full editorial. We will also send new posts to you.</p>
 
-      <p>Artificial intelligence is no longer a future promise; in 2026 it quietly runs
-        the systems we use every day. In this piece we map where it's already taken hold…</p>
+      <p>Artificial intelligence is no longer a future promise. In 2026 it quietly runs
+        the systems we use every day. In this piece we map where it has already taken hold.</p>
 
       <ul class="tc-list">
         <li>The full editorial, unlocked instantly</li>
-        <li>New articles &amp; social posts by email</li>
-        <li>No password — just your email. Unsubscribe anytime.</li>
+        <li>New articles and social posts by email</li>
+        <li>No password. Just your email. Unsubscribe anytime.</li>
       </ul>
 
       <form class="tc-form" data-tc-join novalidate>
@@ -53,22 +43,20 @@
           <label for="tc-join-email-0">Email address</label>
           <input id="tc-join-email-0" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
         </div>
-        <button class="tc-btn" type="submit">Join free &amp; unlock</button>
+        <button class="tc-btn" type="submit">Join free and unlock</button>
         <p class="tc-msg"></p>
-        <p class="tc-fineprint">Already joined on this device? Tap “Full content” above.</p>
+        <p class="tc-fineprint">Already joined on this device? Tap Full content above.</p>
       </form>
     </div>
   </section>
 
-  <!-- RIGHT: full content (locked until joined) -->
   <section class="tc-panel tc-panel--member" data-view-panel="member">
     <div class="tc-card">
 
-      <!-- LOCKED state -->
       <div class="tc-gate tc-locked">
         <span class="tc-eyebrow">Members content</span>
         <h2 class="tc-title">Join to read the rest</h2>
-        <p class="tc-lead">Pop in your email and the full editorial opens right here — no password needed.</p>
+        <p class="tc-lead">Enter your email and the full editorial opens here. No password needed.</p>
         <form class="tc-form" data-tc-join novalidate>
           <div class="tc-field">
             <label for="tc-join-email-0b">Email address</label>
@@ -79,7 +67,6 @@
         </form>
       </div>
 
-      <!-- UNLOCKED state (shown after joining) -->
       <div class="tc-unlocked">
         <div class="tc-member-bar">
           <span>Unlocked for <strong data-tc-member-email>you</strong></span>
@@ -87,9 +74,9 @@
         </div>
         <span class="tc-eyebrow">AI Mastery Series · Full edition</span>
         <h1 class="tc-title">Artificial Intelligence Touches 80% of Our World in 2026</h1>
-        <p class="tc-lead">Thanks for joining — here's the complete editorial.</p>
+        <p class="tc-lead">Thank you for joining. Here is the complete editorial.</p>
 
-        <p>Replace everything inside this “unlocked” block with your deeper content:
+        <p>Replace everything inside this unlocked block with your deeper content:
           the full article, research notes, downloads, or embedded media.</p>
         <ul class="tc-list">
           <li>Section 1 — the data behind the 80% claim</li>

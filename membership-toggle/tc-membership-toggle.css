@@ -8,12 +8,12 @@
    ===================================================================== */
 
 .tc-membership {
-  --tc-accent: #0f7b6c;          /* primary brand color (buttons/active)  */
-  --tc-accent-2: #14b8a6;        /* gradient partner                      */
-  --tc-ink: #1f2933;             /* main text                             */
+  --tc-accent: #1e3a5f;          /* TC navy (buttons/active)              */
+  --tc-accent-2: #0a2540;        /* deeper navy for gradient              */
+  --tc-ink: #1f1f1f;             /* charcoal text                         */
   --tc-muted: #6b7280;           /* secondary text                        */
   --tc-bg: #ffffff;              /* card background                       */
-  --tc-bg-soft: #f3f6f8;         /* page / panel background               */
+  --tc-bg-soft: #faf9f6;         /* cream panel                           */
   --tc-border: #e2e8f0;
   --tc-radius: 16px;
   --tc-shadow: 0 18px 40px -18px rgba(15, 23, 42, .35);
