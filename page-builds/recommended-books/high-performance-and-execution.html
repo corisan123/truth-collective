@@ -1,0 +1,259 @@
+<!--
+  DROP-IN: High Performance and Execution (Recommended Books child)
+  Staging: /recommended-books-2026/high-performance-execution/
+  Paste into one Custom HTML block. Self-contained CSS (scoped .tc-page).
+  Source PDF: title + one-line mission only. Book shortlist not started.
+  When you have titles/ASIN links, we will add tc-book-card rows or HTML cards here.
+-->
+<div class="tc-page tc-page--hiperf">
+  <style>
+    .tc-page--hiperf {
+      --navy: #1e3a5f;
+      --navy-2: #2a4a73;
+      --gold: #b8944b;
+      --ink: #1f2937;
+      --muted: #64748b;
+      --cream: #faf9f6;
+      --line: rgba(30, 58, 95, 0.10);
+      --soft: #e8eef5;
+      max-width: 1100px;
+      margin: 0 auto 3rem;
+      padding: 0 1.25rem 2rem;
+      color: var(--ink);
+      font-family: Inter, system-ui, sans-serif;
+    }
+    .tc-page--hiperf * { box-sizing: border-box; }
+    .tc-page--hiperf .tc-crumb {
+      font-size: 0.85rem; color: var(--muted); margin: 0 0 1.25rem;
+    }
+    .tc-page--hiperf .tc-crumb a { color: var(--navy); text-decoration: none; }
+    .tc-page--hiperf .tc-crumb a:hover { color: var(--gold); }
+    .tc-page--hiperf .tc-hero {
+      text-align: center; padding: 1.75rem 0 2.25rem;
+    }
+    .tc-page--hiperf .tc-kicker {
+      display: inline-flex; align-items: center; gap: 0.75rem;
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--gold); margin: 0 0 1rem;
+    }
+    .tc-page--hiperf .tc-kicker::before,
+    .tc-page--hiperf .tc-kicker::after {
+      content: ""; width: 2rem; height: 1px; background: var(--gold); opacity: 0.7;
+    }
+    .tc-page--hiperf h1 {
+      font-family: "Playfair Display", Georgia, serif;
+      font-weight: 600; font-size: clamp(2rem, 4vw, 2.85rem);
+      line-height: 1.12; color: var(--navy); margin: 0 0 1rem;
+      letter-spacing: -0.01em;
+    }
+    .tc-page--hiperf .tc-lead {
+      max-width: 38rem; margin: 0 auto 1.5rem;
+      color: var(--muted); font-size: 1.1rem; line-height: 1.65;
+    }
+    .tc-page--hiperf .tc-rule {
+      width: 4.5rem; height: 1px; margin: 0 auto 2rem;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    }
+    .tc-page--hiperf .tc-body {
+      max-width: 40rem; margin: 0 auto 2.75rem;
+      color: var(--ink); font-size: 1.02rem; line-height: 1.7;
+    }
+    .tc-page--hiperf .tc-body p { margin: 0 0 1.1rem; }
+    .tc-page--hiperf .tc-panel {
+      background: var(--cream); border: 1px solid var(--line);
+      border-radius: 14px; padding: clamp(1.5rem, 3vw, 2rem);
+      margin: 0 0 2.75rem;
+    }
+    .tc-page--hiperf .tc-panel h2 {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 1.45rem; color: var(--navy); margin: 0 0 0.75rem; font-weight: 600;
+    }
+    .tc-page--hiperf .tc-panel p {
+      margin: 0 0 1rem; color: var(--ink); line-height: 1.65;
+    }
+    .tc-page--hiperf .tc-panel p:last-child { margin-bottom: 0; }
+    .tc-page--hiperf .tc-section-title {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: clamp(1.4rem, 2.4vw, 1.8rem);
+      color: var(--navy); text-align: center; margin: 0 0 0.55rem; font-weight: 600;
+    }
+    .tc-page--hiperf .tc-section-lead {
+      text-align: center; color: var(--muted); max-width: 36rem;
+      margin: 0 auto 1.75rem; line-height: 1.6;
+    }
+    .tc-page--hiperf .tc-explore {
+      display: grid; gap: 1rem;
+      grid-template-columns: 1fr;
+      margin: 0 0 2.75rem;
+    }
+    @media (min-width: 720px) {
+      .tc-page--hiperf .tc-explore { grid-template-columns: repeat(3, 1fr); }
+    }
+    .tc-page--hiperf .tc-tile {
+      position: relative; display: block; text-decoration: none; color: inherit;
+      border-radius: 12px; overflow: hidden; min-height: 200px;
+      border: 1px solid var(--line);
+      background: linear-gradient(165deg, var(--soft), #fff 55%);
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+    }
+    .tc-page--hiperf .tc-tile:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 36px -20px rgba(30, 58, 95, 0.35);
+    }
+    .tc-page--hiperf .tc-tile__inner {
+      position: absolute; inset: 0; display: flex; flex-direction: column;
+      justify-content: flex-end; padding: 1.2rem;
+      background: linear-gradient(to top, rgba(15, 35, 65, 0.78), transparent 60%);
+    }
+    .tc-page--hiperf .tc-tile h3 {
+      margin: 0 0 0.55rem; color: #fff;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 1.15rem; font-weight: 600; line-height: 1.25;
+    }
+    .tc-page--hiperf .tc-tile span {
+      align-self: flex-start;
+      display: inline-block; padding: 0.4rem 0.85rem;
+      background: rgba(90, 139, 184, 0.95); color: #fff;
+      font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; border-radius: 2px;
+      opacity: 0; transform: translateY(8px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    .tc-page--hiperf .tc-tile:hover span {
+      opacity: 1; transform: translateY(0);
+    }
+    .tc-page--hiperf .tc-note {
+      border: 1px dashed var(--line); border-radius: 12px;
+      padding: 1.25rem 1.4rem; background: #fff; margin: 0 0 2rem;
+    }
+    .tc-page--hiperf .tc-note h2 {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 1.25rem; color: var(--navy); margin: 0 0 0.5rem; font-weight: 600;
+    }
+    .tc-page--hiperf .tc-note p {
+      margin: 0; color: var(--muted); line-height: 1.6; font-size: 0.98rem;
+    }
+    .tc-page--hiperf .tc-pillars {
+      display: grid; gap: 0.9rem;
+      grid-template-columns: 1fr;
+      margin: 0 0 2.75rem;
+    }
+    @media (min-width: 720px) {
+      .tc-page--hiperf .tc-pillars { grid-template-columns: repeat(4, 1fr); }
+    }
+    .tc-page--hiperf .tc-pillar {
+      background: #fff; border: 1px solid var(--line); border-radius: 12px;
+      padding: 1.15rem 1.1rem; text-align: center;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .tc-page--hiperf .tc-pillar:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 24px -16px rgba(30, 58, 95, 0.28);
+    }
+    .tc-page--hiperf .tc-pillar strong {
+      display: block;
+      font-family: "Playfair Display", Georgia, serif;
+      color: var(--gold); font-size: 1.15rem; font-weight: 600; margin-bottom: 0.35rem;
+    }
+    .tc-page--hiperf .tc-pillar span {
+      display: block; color: var(--muted); font-size: 0.88rem; line-height: 1.45;
+    }
+    .tc-page--hiperf .tc-disclosure {
+      font-size: 0.82rem; color: var(--muted); line-height: 1.55;
+      border-top: 1px solid var(--line); padding-top: 1.25rem;
+    }
+  </style>
+
+  <p class="tc-crumb">
+    <a href="https://tcstaging.truth-collective.com/recommended-books-2026/">Recommended Books</a>
+    / High Performance and Execution
+  </p>
+
+  <header class="tc-hero">
+    <div class="tc-kicker">Recommended Books · 2026</div>
+    <h1>High Performance and Execution</h1>
+    <p class="tc-lead">
+      Books that strengthen focus, accountability, execution, and the disciplined
+      habits required to turn important goals into real results.
+    </p>
+    <div class="tc-rule" aria-hidden="true"></div>
+  </header>
+
+  <div class="tc-body">
+    <p>
+      High performance is not noise, motivation theater, or a longer to-do list.
+      It is the quiet ability to choose what matters, protect attention, and finish
+      the work that moves the organization forward.
+    </p>
+    <p>
+      This collection is for leaders, operators, and serious professionals who want
+      books that sharpen execution under pressure. Expect practical frameworks for
+      focus, habit design, accountability, and decision follow-through. Skip the
+      hype. Keep what compounds.
+    </p>
+  </div>
+
+  <div class="tc-pillars" aria-label="What this collection strengthens">
+    <div class="tc-pillar"><strong>Focus</strong><span>Protect attention against noise and shallow work.</span></div>
+    <div class="tc-pillar"><strong>Accountability</strong><span>Own outcomes with clear standards and ownership.</span></div>
+    <div class="tc-pillar"><strong>Execution</strong><span>Turn plans into finished work, not unfinished intent.</span></div>
+    <div class="tc-pillar"><strong>Discipline</strong><span>Build habits that hold when motivation fades.</span></div>
+  </div>
+
+  <section class="tc-panel" aria-labelledby="select-heading">
+    <h2 id="select-heading">How books earn a place here</h2>
+    <p>
+      Titles are selected for durable ideas, clear writing, and real-world use by
+      people who lead and operate. We look for books that improve judgment and
+      follow-through, not books that only sound impressive on a shelf.
+    </p>
+    <p>
+      Every recommendation is independently selected and aligned with Truth
+      Collective Trusted Selection Standards. If a book does not strengthen focus,
+      accountability, or execution in a meaningful way, it does not belong on this page.
+    </p>
+  </section>
+
+  <h2 class="tc-section-title">Explore Related Book Paths</h2>
+  <p class="tc-section-lead">
+    Move sideways into the collections closest to how you lead and decide.
+  </p>
+  <div class="tc-explore">
+    <a class="tc-tile" href="https://tcstaging.truth-collective.com/recommended-books-2026/leadership-books/">
+      <div class="tc-tile__inner">
+        <h3>Leadership Books</h3>
+        <span>Explore</span>
+      </div>
+    </a>
+    <a class="tc-tile" href="https://tcstaging.truth-collective.com/recommended-books-2026/decision-making-strategy/">
+      <div class="tc-tile__inner">
+        <h3>Decision Making and Strategy</h3>
+        <span>Explore</span>
+      </div>
+    </a>
+    <a class="tc-tile" href="https://tcstaging.truth-collective.com/recommended-books-2026/project-management-books/">
+      <div class="tc-tile__inner">
+        <h3>Project Management</h3>
+        <span>Explore</span>
+      </div>
+    </a>
+  </div>
+
+  <aside class="tc-note">
+    <h2>Book shortlist coming next</h2>
+    <p>
+      Your source file for this page is the foundation only: title and mission line.
+      Send the book list (titles, authors, affiliate links) and we will drop ranked
+      book cards into this section using your locked book-card pattern, without
+      rebuilding the page shell.
+    </p>
+  </aside>
+
+  <p class="tc-disclosure">
+    Affiliate Disclosure: Truth Collective participates in affiliate programs,
+    including Amazon Associates, CJ Affiliate, ShareASale, Awin, and PartnerStack.
+    When you click a link on this page and make a qualifying purchase, Truth
+    Collective may earn a commission at no added cost to you. Every recommendation
+    is independently selected, reviewed, and aligned with our Trusted Selection Standards.
+  </p>
+</div>

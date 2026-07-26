@@ -9,6 +9,9 @@ on the matching staging page.
 | `premium-interactive-digital-displays.html` | `/technology-hub/interactive-digital-displays-2/` |
 | Headphones (pending PDF upload) | `/technology-hub/headphones-for-work/` |
 
+Also see `../recommended-books/high-performance-and-execution.html` for the
+High Performance books child page.
+
 ## Install
 1. Edit the page in WordPress.
 2. Clear broken blocks if needed.
