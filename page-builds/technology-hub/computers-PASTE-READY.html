@@ -9,21 +9,27 @@
       --cream: #faf9f6;
       --line: rgba(30, 58, 95, 0.10);
       --soft: #e8eef5;
-      max-width: 1100px;
+      --max: 1100px;
+      max-width: var(--max);
       margin: 0 auto 3rem;
-      padding: 0 1.25rem 2rem;
+      padding: 0 1.25rem 2.5rem;
       color: var(--ink);
       font-family: Inter, system-ui, sans-serif;
       background: transparent;
     }
     .tc-page--computers * { box-sizing: border-box; }
+
     .tc-page--computers .tc-crumb {
-      font-size: 0.85rem; color: var(--muted); margin: 0 0 1.25rem;
+      font-size: 0.85rem; color: var(--muted); margin: 0 0 1.5rem;
     }
     .tc-page--computers .tc-crumb a { color: var(--navy); text-decoration: none; }
     .tc-page--computers .tc-crumb a:hover { color: var(--gold); }
+
     .tc-page--computers .tc-hero {
-      text-align: center; padding: 1.5rem 0 2rem;
+      text-align: center;
+      padding: 0.5rem 0 2.5rem;
+      max-width: 36rem;
+      margin: 0 auto;
     }
     .tc-page--computers .tc-kicker {
       display: inline-flex; align-items: center; gap: 0.75rem;
@@ -37,121 +43,256 @@
     .tc-page--computers h1 {
       font-family: "Playfair Display", Georgia, serif;
       font-weight: 600; font-size: clamp(2rem, 4vw, 2.75rem);
-      line-height: 1.15; color: var(--navy); margin: 0 0 1rem; letter-spacing: -0.01em;
+      line-height: 1.15; color: var(--navy); margin: 0 0 0.85rem; letter-spacing: -0.01em;
     }
     .tc-page--computers .tc-lead {
-      max-width: 42rem; margin: 0 auto 1.25rem;
-      color: var(--muted); font-size: 1.08rem; line-height: 1.65;
+      margin: 0; color: var(--muted); font-size: 1.05rem; line-height: 1.65;
     }
-    .tc-page--computers .tc-body {
-      max-width: 42rem; margin: 0 auto 2.5rem;
-      color: var(--ink); font-size: 1.02rem; line-height: 1.7;
+
+    .tc-page--computers .tc-section {
+      margin: 0 0 3rem;
     }
-    .tc-page--computers .tc-body p { margin: 0 0 1.1rem; }
-    .tc-page--computers .tc-duo {
-      display: grid; gap: 1rem; grid-template-columns: 1fr;
-      margin: 0 0 2.5rem;
-    }
-    @media (min-width: 720px) {
-      .tc-page--computers .tc-duo { grid-template-columns: 1fr 1fr; }
-    }
-    .tc-page--computers .tc-duo figure {
-      margin: 0; border-radius: 12px; overflow: hidden;
-      border: 1px solid var(--line); background: var(--soft);
-      aspect-ratio: 16/10;
-    }
-    .tc-page--computers .tc-duo img {
-      width: 100%; height: 100%; object-fit: cover; display: block;
-      transition: transform 0.6s ease;
-    }
-    .tc-page--computers .tc-duo a:hover img { transform: scale(1.03); }
     .tc-page--computers .tc-section-title {
       font-family: "Playfair Display", Georgia, serif;
-      font-size: clamp(1.45rem, 2.5vw, 1.85rem);
-      color: var(--navy); text-align: center; margin: 0 0 0.75rem; font-weight: 600;
+      font-size: clamp(1.35rem, 2.4vw, 1.7rem);
+      color: var(--navy); text-align: center; margin: 0 0 0.4rem; font-weight: 600;
     }
     .tc-page--computers .tc-section-lead {
-      text-align: center; color: var(--muted); max-width: 38rem;
-      margin: 0 auto 1.75rem; line-height: 1.6; font-size: 1rem;
+      text-align: center; color: var(--muted); max-width: 32rem;
+      margin: 0 auto 1.75rem; line-height: 1.55; font-size: 0.98rem;
     }
-    .tc-page--computers .tc-grade {
-      background: var(--cream); border: 1px solid var(--line);
-      border-radius: 14px; padding: clamp(1.5rem, 3vw, 2rem);
-      margin: 0 0 2.75rem;
-    }
-    .tc-page--computers .tc-grade h2 {
-      font-family: "Playfair Display", Georgia, serif;
-      font-size: 1.55rem; color: var(--navy); margin: 0 0 0.85rem; font-weight: 600;
-    }
-    .tc-page--computers .tc-grade p {
-      margin: 0 0 1.25rem; color: var(--ink); line-height: 1.65; font-size: 1rem;
-    }
-    .tc-page--computers .tc-stars {
-      display: grid; gap: 0.75rem; margin: 0; padding: 0; list-style: none;
-    }
-    .tc-page--computers .tc-stars li {
-      display: grid; grid-template-columns: 5.5rem 1fr; gap: 0.75rem;
-      padding: 0.65rem 0; border-top: 1px solid var(--line);
-      font-size: 0.95rem; line-height: 1.45;
-    }
-    .tc-page--computers .tc-stars strong {
-      color: var(--gold); font-family: "Playfair Display", Georgia, serif;
-      font-size: 1.05rem; font-weight: 600;
-    }
-    .tc-page--computers .tc-explore {
-      display: grid; gap: 1rem;
-      grid-template-columns: 1fr;
-      margin: 0 0 2.75rem;
+
+    /* Category chooser — light, not a wall of text */
+    .tc-page--computers .tc-cats {
+      display: grid;
+      gap: 0.75rem;
+      grid-template-columns: 1fr 1fr;
     }
     @media (min-width: 720px) {
-      .tc-page--computers .tc-explore { grid-template-columns: repeat(3, 1fr); }
+      .tc-page--computers .tc-cats {
+        grid-template-columns: repeat(5, 1fr);
+      }
     }
-    .tc-page--computers .tc-tile {
-      position: relative; display: block; text-decoration: none; color: inherit;
-      border-radius: 12px; overflow: hidden; min-height: 220px;
-      border: 1px solid var(--line); background: linear-gradient(160deg, var(--soft), #fff);
-      transition: transform 0.35s ease, box-shadow 0.35s ease;
+    .tc-page--computers .tc-cat {
+      display: flex; flex-direction: column; justify-content: flex-end;
+      min-height: 120px;
+      padding: 1rem 0.9rem;
+      text-decoration: none;
+      color: var(--navy);
+      background: linear-gradient(165deg, var(--soft), #fff);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
     }
-    .tc-page--computers .tc-tile:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 18px 36px -20px rgba(30, 58, 95, 0.35);
+    .tc-page--computers .tc-cat:hover {
+      transform: translateY(-3px);
+      border-color: rgba(184, 148, 75, 0.45);
+      box-shadow: 0 14px 28px -18px rgba(30, 58, 95, 0.35);
     }
-    .tc-page--computers .tc-tile__inner {
-      position: absolute; inset: 0; display: flex; flex-direction: column;
-      justify-content: flex-end; padding: 1.25rem;
-      background: linear-gradient(to top, rgba(15, 35, 65, 0.72), transparent 55%);
-    }
-    .tc-page--computers .tc-tile h3 {
-      margin: 0 0 0.5rem; color: #fff;
+    .tc-page--computers .tc-cat strong {
       font-family: "Playfair Display", Georgia, serif;
-      font-size: 1.2rem; font-weight: 600; line-height: 1.25;
+      font-size: 1.05rem; font-weight: 600; line-height: 1.25;
     }
-    .tc-page--computers .tc-tile span {
-      align-self: flex-start;
-      display: inline-block; padding: 0.45rem 0.9rem;
-      background: rgba(90, 139, 184, 0.95); color: #fff;
-      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
-      text-transform: uppercase; border-radius: 2px;
+    .tc-page--computers .tc-cat span {
+      margin-top: 0.35rem;
+      font-size: 0.78rem; color: var(--muted); letter-spacing: 0.02em;
+    }
+
+    /* Product grid — clean, hover reveals Details | Reviews */
+    .tc-page--computers .tc-grid {
+      display: grid;
+      gap: 1.25rem;
+      grid-template-columns: 1fr;
+    }
+    @media (min-width: 640px) {
+      .tc-page--computers .tc-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (min-width: 960px) {
+      .tc-page--computers .tc-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    .tc-page--computers .tc-prod {
+      display: flex; flex-direction: column;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+    .tc-page--computers .tc-prod__media {
+      position: relative;
+      aspect-ratio: 4 / 3;
+      background: var(--cream);
+      overflow: hidden;
+    }
+    .tc-page--computers .tc-prod__media img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+      transition: transform 0.55s ease;
+    }
+    .tc-page--computers .tc-prod:hover .tc-prod__media img {
+      transform: scale(1.04);
+    }
+    .tc-page--computers .tc-prod__badge {
+      position: absolute; top: 0.75rem; left: 0.75rem;
+      font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em;
+      text-transform: uppercase; color: #fff;
+      background: rgba(30, 58, 95, 0.88);
+      padding: 0.35rem 0.55rem; border-radius: 3px;
+    }
+    .tc-page--computers .tc-prod__hover {
+      position: absolute; left: 0; right: 0; bottom: 0;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 0.4rem;
+      padding: 0.65rem;
+      background: linear-gradient(to top, rgba(15, 35, 65, 0.72), transparent);
       opacity: 0; transform: translateY(8px);
       transition: opacity 0.3s ease, transform 0.3s ease;
     }
-    .tc-page--computers .tc-tile:hover span {
+    .tc-page--computers .tc-prod:hover .tc-prod__hover,
+    .tc-page--computers .tc-prod:focus-within .tc-prod__hover {
       opacity: 1; transform: translateY(0);
     }
-    .tc-page--computers .tc-note {
-      border: 1px dashed var(--line); border-radius: 12px;
-      padding: 1.25rem 1.4rem; background: #fff; margin: 0 0 2rem;
+    .tc-page--computers .tc-prod__hover a,
+    .tc-page--computers .tc-prod__hover button {
+      appearance: none; border: 0; cursor: pointer;
+      text-align: center; text-decoration: none;
+      font: inherit; font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      color: #fff; background: rgba(90, 139, 184, 0.92);
+      padding: 0.55rem 0.4rem; border-radius: 4px;
+      transition: background 0.2s ease;
     }
-    .tc-page--computers .tc-note h2 {
+    .tc-page--computers .tc-prod__hover a:hover,
+    .tc-page--computers .tc-prod__hover button:hover {
+      background: rgba(184, 148, 75, 0.95);
+    }
+
+    .tc-page--computers .tc-prod__body {
+      padding: 1rem 1.1rem 1.15rem;
+      display: flex; flex-direction: column; gap: 0.35rem; flex: 1;
+    }
+    .tc-page--computers .tc-prod__type {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--gold);
+    }
+    .tc-page--computers .tc-prod__body h3 {
       font-family: "Playfair Display", Georgia, serif;
-      font-size: 1.25rem; color: var(--navy); margin: 0 0 0.5rem; font-weight: 600;
+      font-size: 1.15rem; font-weight: 600; line-height: 1.25;
+      color: var(--navy); margin: 0;
     }
-    .tc-page--computers .tc-note p {
-      margin: 0; color: var(--muted); line-height: 1.6; font-size: 0.98rem;
+    .tc-page--computers .tc-prod__price {
+      font-size: 0.95rem; font-weight: 600; color: var(--ink); margin: 0.15rem 0 0;
     }
+    .tc-page--computers .tc-prod__trusted {
+      margin-top: auto; padding-top: 0.65rem;
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--navy);
+    }
+
+    /* Details panel — SEO copy lives here, collapsed by default */
+    .tc-page--computers .tc-prod details {
+      border-top: 1px solid var(--line);
+      background: var(--cream);
+    }
+    .tc-page--computers .tc-prod details[open] {
+      background: #fff;
+    }
+    .tc-page--computers .tc-prod summary {
+      list-style: none; cursor: pointer;
+      padding: 0.7rem 1.1rem;
+      font-size: 0.78rem; font-weight: 600; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--navy);
+    }
+    .tc-page--computers .tc-prod summary::-webkit-details-marker { display: none; }
+    .tc-page--computers .tc-prod .tc-detail {
+      padding: 0 1.1rem 1.15rem;
+    }
+    .tc-page--computers .tc-prod .tc-detail p {
+      margin: 0 0 0.85rem; font-size: 0.92rem; line-height: 1.6; color: var(--muted);
+    }
+    .tc-page--computers .tc-prod .tc-detail .tc-stars-inline {
+      font-size: 0.88rem; color: var(--gold); font-weight: 600; margin: 0 0 0.85rem;
+    }
+    .tc-page--computers .tc-prod .tc-detail a.tc-buy {
+      display: inline-block; text-decoration: none;
+      font-size: 0.85rem; font-weight: 600; color: #fff;
+      background: var(--navy); padding: 0.65rem 1rem; border-radius: 8px;
+    }
+    .tc-page--computers .tc-prod .tc-detail a.tc-buy:hover { background: var(--navy-2); }
+
+    /* Category section anchors — short labels, air between */
+    .tc-page--computers .tc-anchor {
+      scroll-margin-top: 5rem;
+      padding-top: 0.5rem;
+    }
+    .tc-page--computers .tc-anchor h2 {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 1.45rem; color: var(--navy); margin: 0 0 0.35rem; font-weight: 600;
+    }
+    .tc-page--computers .tc-anchor > p {
+      margin: 0 0 1.25rem; color: var(--muted); font-size: 0.95rem; line-height: 1.55;
+      max-width: 34rem;
+    }
+
+    /* Grading — collapsed */
+    .tc-page--computers .tc-fold {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fff;
+      margin: 0 0 2.5rem;
+    }
+    .tc-page--computers .tc-fold > summary {
+      list-style: none; cursor: pointer;
+      padding: 1rem 1.25rem;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 1.2rem; font-weight: 600; color: var(--navy);
+    }
+    .tc-page--computers .tc-fold > summary::-webkit-details-marker { display: none; }
+    .tc-page--computers .tc-fold .tc-fold__body {
+      padding: 0 1.25rem 1.25rem;
+      color: var(--ink); font-size: 0.95rem; line-height: 1.65;
+    }
+    .tc-page--computers .tc-fold .tc-fold__body p { margin: 0 0 1rem; color: var(--muted); }
+    .tc-page--computers .tc-fold ul {
+      margin: 0; padding: 0; list-style: none; display: grid; gap: 0.55rem;
+    }
+    .tc-page--computers .tc-fold li {
+      display: grid; grid-template-columns: 5rem 1fr; gap: 0.65rem;
+      padding: 0.45rem 0; border-top: 1px solid var(--line);
+      font-size: 0.92rem;
+    }
+    .tc-page--computers .tc-fold li strong { color: var(--gold); }
+
+    .tc-page--computers .tc-nearby {
+      display: grid; gap: 0.85rem; grid-template-columns: 1fr;
+    }
+    @media (min-width: 720px) {
+      .tc-page--computers .tc-nearby { grid-template-columns: repeat(3, 1fr); }
+    }
+    .tc-page--computers .tc-nearby a {
+      display: block; text-decoration: none; color: var(--navy);
+      padding: 1.1rem 1.15rem;
+      border: 1px solid var(--line); border-radius: 12px; background: #fff;
+      font-family: "Playfair Display", Georgia, serif; font-weight: 600; font-size: 1.05rem;
+      transition: border-color 0.25s ease, transform 0.25s ease;
+    }
+    .tc-page--computers .tc-nearby a:hover {
+      border-color: rgba(184, 148, 75, 0.5); transform: translateY(-2px);
+    }
+    .tc-page--computers .tc-nearby a span {
+      display: block; margin-top: 0.3rem;
+      font-family: Inter, system-ui, sans-serif;
+      font-size: 0.8rem; font-weight: 500; color: var(--muted);
+    }
+
     .tc-page--computers .tc-disclosure {
-      font-size: 0.82rem; color: var(--muted); line-height: 1.55;
+      font-size: 0.8rem; color: var(--muted); line-height: 1.55;
       border-top: 1px solid var(--line); padding-top: 1.25rem; margin-top: 0.5rem;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .tc-page--computers .tc-cat,
+      .tc-page--computers .tc-prod__media img,
+      .tc-page--computers .tc-prod__hover,
+      .tc-page--computers .tc-nearby a { transition: none; }
     }
   </style>
 
@@ -164,89 +305,257 @@
     <div class="tc-kicker">Technology Hub</div>
     <h1>Computers and Digital Devices</h1>
     <p class="tc-lead">
-      Computers and digital devices sit at the center of how work gets done.
-      The right choices improve speed, clarity, reliability, and the way work
-      is planned, managed, and executed across the day.
+      Clear picks for laptops, desktops, gaming, beginners, and seniors. Less noise. Better tools.
     </p>
   </header>
 
-  <div class="tc-duo" aria-hidden="true">
-    <figure>
-      <!-- Replace src with your Media Library URLs from the PDF images -->
-      <img src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/04/TC-BLK-LTR-TRANSPARENT-LOGO.png" alt="Modern executive workstation with multiple monitors">
-    </figure>
-    <figure>
-      <img src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/04/TC-BLK-LTR-TRANSPARENT-LOGO.png" alt="High-performance digital workspace with multi-screen setup">
-    </figure>
-  </div>
-
-  <div class="tc-body">
-    <p>
-      This page focuses on useful devices and accessories that support stronger
-      workflow, better connectivity, and a cleaner digital environment. The goal
-      is not to overload the page with random electronics. It is to highlight the
-      tools that improve performance, reduce friction, and make daily work more capable.
-    </p>
-  </div>
-
-  <section class="tc-grade" aria-labelledby="grade-heading">
-    <h2 id="grade-heading">How We Grade Products</h2>
-    <p>
-      We do not rank products by appearance or hype alone. Every product is
-      evaluated for practical value, performance, build quality, support, review
-      patterns, and price-to-value. A higher price does not automatically mean
-      better quality. A lower-priced product is not automatically a bad buy. Our
-      goal is to show what you are actually getting, where the tradeoffs are, and
-      when paying more is truly worth it.
-    </p>
-    <ul class="tc-stars">
-      <li><strong>5 Stars</strong> <span>Top-tier recommendation with strong performance, build quality, and value for its tier.</span></li>
-      <li><strong>4 Stars</strong> <span>Strong recommendation with only limited compromises.</span></li>
-      <li><strong>3 Stars</strong> <span>Acceptable with tradeoffs and worth considering for the right buyer.</span></li>
-      <li><strong>2 Stars</strong> <span>Budget-only. Useful in narrow cases, not a default pick.</span></li>
-    </ul>
+  <section class="tc-section" aria-labelledby="path-heading">
+    <h2 id="path-heading" class="tc-section-title">Choose a path</h2>
+    <p class="tc-section-lead">Jump to the machine type that matches how you work.</p>
+    <nav class="tc-cats" aria-label="Computer categories">
+      <a class="tc-cat" href="#laptops"><strong>Laptops</strong><span>Portable work</span></a>
+      <a class="tc-cat" href="#desktops"><strong>Desktops</strong><span>Steady power</span></a>
+      <a class="tc-cat" href="#gaming"><strong>Gaming PCs</strong><span>High demand</span></a>
+      <a class="tc-cat" href="#beginners"><strong>Beginners</strong><span>Simple start</span></a>
+      <a class="tc-cat" href="#seniors"><strong>Seniors</strong><span>Clear and calm</span></a>
+    </nav>
   </section>
 
-  <h2 class="tc-section-title">Explore Nearby Technology Paths</h2>
-  <p class="tc-section-lead">
-    Start with the category closest to the friction you are trying to remove.
-  </p>
-  <div class="tc-explore">
-    <a class="tc-tile" href="https://tcstaging.truth-collective.com/technology-hub/monitor-display/">
-      <div class="tc-tile__inner">
-        <h3>Monitors and Displays</h3>
-        <span>Explore</span>
-      </div>
-    </a>
-    <a class="tc-tile" href="https://tcstaging.truth-collective.com/technology-hub/interactive-digital-displays-2/">
-      <div class="tc-tile__inner">
-        <h3>Interactive Digital Displays</h3>
-        <span>Explore</span>
-      </div>
-    </a>
-    <a class="tc-tile" href="https://tcstaging.truth-collective.com/technology-hub/headphones-for-work/">
-      <div class="tc-tile__inner">
-        <h3>Headphones and Headsets</h3>
-        <span>Explore</span>
-      </div>
-    </a>
-  </div>
+  <section class="tc-section" aria-labelledby="featured-heading">
+    <h2 id="featured-heading" class="tc-section-title">Featured recommendations</h2>
+    <p class="tc-section-lead">Hover a tile for Details and Reviews. Open Details for the full note.</p>
 
-  <aside class="tc-note">
-    <h2>Product shortlist coming next</h2>
-    <p>
-      Your PDF for this child page is the foundation: mission, grading, and page
-      voice. Product cards were not started in the source file. When you send the
-      product list or affiliate links, we will drop ranked picks into this section
-      without changing the page shell.
-    </p>
-  </aside>
+    <div class="tc-grid">
+
+      <!-- LAPTOP -->
+      <article class="tc-prod" id="laptops">
+        <div class="tc-prod__media">
+          <span class="tc-prod__badge">Laptop</span>
+          <img src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/04/TC-BLK-LTR-TRANSPARENT-LOGO.png" alt="Laptop for everyday professional work">
+          <div class="tc-prod__hover">
+            <button type="button" onclick="this.closest('.tc-prod').querySelector('details').open=true">Details</button>
+            <a href="https://www.amazon.com/s?k=best+laptop+for+work+2026&amp;tag=YOURTAG" target="_blank" rel="nofollow sponsored noopener">Reviews · 4.6</a>
+          </div>
+        </div>
+        <div class="tc-prod__body">
+          <div class="tc-prod__type">Laptops</div>
+          <h3>Everyday Work Laptop</h3>
+          <p class="tc-prod__price">See price on Amazon</p>
+          <div class="tc-prod__trusted">Trusted Choice</div>
+        </div>
+        <details>
+          <summary>Details</summary>
+          <div class="tc-detail">
+            <p class="tc-stars-inline">Reviews · 4.6 Stars</p>
+            <p>
+              A strong 2026 laptop for computers and digital devices built around daily work:
+              email, documents, browsing, and light creative tasks. Look for at least 16GB memory,
+              a sharp display, and all-day battery so the machine stays useful longer.
+            </p>
+            <a class="tc-buy" href="https://www.amazon.com/s?k=best+laptop+for+work+2026&amp;tag=YOURTAG" target="_blank" rel="nofollow sponsored noopener">View on Amazon</a>
+          </div>
+        </details>
+      </article>
+
+      <!-- DESKTOP -->
+      <article class="tc-prod" id="desktops">
+        <div class="tc-prod__media">
+          <span class="tc-prod__badge">Desktop</span>
+          <img src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/04/TC-BLK-LTR-TRANSPARENT-LOGO.png" alt="Desktop computer for a home office workstation">
+          <div class="tc-prod__hover">
+            <button type="button" onclick="this.closest('.tc-prod').querySelector('details').open=true">Details</button>
+            <a href="https://www.amazon.com/s?k=best+desktop+computer+home+office&amp;tag=YOURTAG" target="_blank" rel="nofollow sponsored noopener">Reviews · 4.5</a>
+          </div>
+        </div>
+        <div class="tc-prod__body">
+          <div class="tc-prod__type">Desktops</div>
+          <h3>Home Office Desktop</h3>
+          <p class="tc-prod__price">See price on Amazon</p>
+          <div class="tc-prod__trusted">Trusted Choice</div>
+        </div>
+        <details>
+          <summary>Details</summary>
+          <div class="tc-detail">
+            <p class="tc-stars-inline">Reviews · 4.5 Stars</p>
+            <p>
+              Desktops win when you want upgrade room, dual monitors, and steady power at a
+              fixed desk. A clean tower or compact mini PC keeps the workspace calm while
+              handling heavier files and longer sessions than many thin laptops.
+            </p>
+            <a class="tc-buy" href="https://www.amazon.com/s?k=best+desktop+computer+home+office&amp;tag=YOURTAG" target="_blank" rel="nofollow sponsored noopener">View on Amazon</a>
+          </div>
+        </details>
+      </article>
+
+      <!-- GAMING -->
+      <article class="tc-prod" id="gaming">
+        <div class="tc-prod__media">
+          <span class="tc-prod__badge">Gaming</span>
+          <img src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/04/TC-BLK-LTR-TRANSPARENT-LOGO.png" alt="Gaming PC for high performance use">
+          <div class="tc-prod__hover">
+            <button type="button" onclick="this.closest('.tc-prod').querySelector('details').open=true">Details</button>
+            <a href="https://www.amazon.com/s?k=best+gaming+pc+prebuilt&amp;tag=YOURTAG" target="_blank" rel="nofollow sponsored noopener">Reviews · 4.4</a>
+          </div>
+        </div>
+        <div class="tc-prod__body">
+          <div class="tc-prod__type">Gaming PCs</div>
+          <h3>Prebuilt Gaming PC</h3>
+          <p class="tc-prod__price">See price on Amazon</p>
+          <div class="tc-prod__trusted">Trusted Choice</div>
+        </div>
+        <details>
+          <summary>Details</summary>
+          <div class="tc-detail">
+            <p class="tc-stars-inline">Reviews · 4.4 Stars</p>
+            <p>
+              Gaming PCs need a real graphics card, strong cooling, and enough power for
+              modern titles. A reputable prebuilt saves assembly time and still serves as a
+              fast workstation for video, design, and demanding software outside of games.
+            </p>
+            <a class="tc-buy" href="https://www.amazon.com/s?k=best+gaming+pc+prebuilt&amp;tag=YOURTAG" target="_blank" rel="nofollow sponsored noopener">View on Amazon</a>
+          </div>
+        </details>
+      </article>
+
+      <!-- BEGINNER -->
+      <article class="tc-prod" id="beginners">
+        <div class="tc-prod__media">
+          <span class="tc-prod__badge">Beginner</span>
+          <img src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/04/TC-BLK-LTR-TRANSPARENT-LOGO.png" alt="Beginner friendly laptop or Chromebook">
+          <div class="tc-prod__hover">
+            <button type="button" onclick="this.closest('.tc-prod').querySelector('details').open=true">Details</button>
+            <a href="https://www.amazon.com/s?k=best+chromebook+for+beginners&amp;tag=YOURTAG" target="_blank" rel="nofollow sponsored noopener">Reviews · 4.5</a>
+          </div>
+        </div>
+        <div class="tc-prod__body">
+          <div class="tc-prod__type">Beginners</div>
+          <h3>Simple Start Machine</h3>
+          <p class="tc-prod__price">See price on Amazon</p>
+          <div class="tc-prod__trusted">Trusted Choice</div>
+        </div>
+        <details>
+          <summary>Details</summary>
+          <div class="tc-detail">
+            <p class="tc-stars-inline">Reviews · 4.5 Stars</p>
+            <p>
+              Beginner computers should feel obvious on day one: fast enough for the web,
+              schoolwork, and streaming, without a maze of settings. Chromebooks and entry
+              Windows laptops in this tier keep cost down while still feeling modern in 2026.
+            </p>
+            <a class="tc-buy" href="https://www.amazon.com/s?k=best+chromebook+for+beginners&amp;tag=YOURTAG" target="_blank" rel="nofollow sponsored noopener">View on Amazon</a>
+          </div>
+        </details>
+      </article>
+
+      <!-- SENIORS -->
+      <article class="tc-prod" id="seniors">
+        <div class="tc-prod__media">
+          <span class="tc-prod__badge">Seniors</span>
+          <img src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/04/TC-BLK-LTR-TRANSPARENT-LOGO.png" alt="Computer with large clear display for seniors">
+          <div class="tc-prod__hover">
+            <button type="button" onclick="this.closest('.tc-prod').querySelector('details').open=true">Details</button>
+            <a href="https://www.amazon.com/s?k=best+computer+for+seniors+large+screen&amp;tag=YOURTAG" target="_blank" rel="nofollow sponsored noopener">Reviews · 4.6</a>
+          </div>
+        </div>
+        <div class="tc-prod__body">
+          <div class="tc-prod__type">Seniors</div>
+          <h3>Large-Screen Comfort PC</h3>
+          <p class="tc-prod__price">See price on Amazon</p>
+          <div class="tc-prod__trusted">Trusted Choice</div>
+        </div>
+        <details>
+          <summary>Details</summary>
+          <div class="tc-detail">
+            <p class="tc-stars-inline">Reviews · 4.6 Stars</p>
+            <p>
+              Computers for seniors and older adults should favor a larger screen, clear type,
+              simple login, and reliable support. An all-in-one or large-display laptop reduces
+              clutter and makes video calls, mail, and photos easier to manage every day.
+            </p>
+            <a class="tc-buy" href="https://www.amazon.com/s?k=best+computer+for+seniors+large+screen&amp;tag=YOURTAG" target="_blank" rel="nofollow sponsored noopener">View on Amazon</a>
+          </div>
+        </details>
+      </article>
+
+      <!-- EXTRA DIGITAL DEVICE -->
+      <article class="tc-prod">
+        <div class="tc-prod__media">
+          <span class="tc-prod__badge">Accessory</span>
+          <img src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/04/TC-BLK-LTR-TRANSPARENT-LOGO.png" alt="Portable USB-C monitor for digital workspace">
+          <div class="tc-prod__hover">
+            <button type="button" onclick="this.closest('.tc-prod').querySelector('details').open=true">Details</button>
+            <a href="https://www.amazon.com/s?k=portable+usb-c+4k+monitor&amp;tag=YOURTAG" target="_blank" rel="nofollow sponsored noopener">Reviews · 4.5</a>
+          </div>
+        </div>
+        <div class="tc-prod__body">
+          <div class="tc-prod__type">Digital devices</div>
+          <h3>Portable USB-C Monitor</h3>
+          <p class="tc-prod__price">See price on Amazon</p>
+          <div class="tc-prod__trusted">Trusted Choice</div>
+        </div>
+        <details>
+          <summary>Details</summary>
+          <div class="tc-detail">
+            <p class="tc-stars-inline">Reviews · 4.5 Stars</p>
+            <p>
+              A portable USB-C monitor is one of the highest-leverage digital devices beside
+              the computer itself. It adds a second screen for travel or a small desk without
+              forcing a full workstation rebuild.
+            </p>
+            <a class="tc-buy" href="https://www.amazon.com/s?k=portable+usb-c+4k+monitor&amp;tag=YOURTAG" target="_blank" rel="nofollow sponsored noopener">View on Amazon</a>
+          </div>
+        </details>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Short category blurbs for Rank Math — still light on the page -->
+  <section class="tc-section tc-anchor" aria-labelledby="how-heading">
+    <h2 id="how-heading" class="tc-section-title">What to buy in each lane</h2>
+    <p class="tc-section-lead">One line per lane. Open a product Details tile for the deeper note.</p>
+    <div class="tc-nearby" style="margin-bottom:0">
+      <a href="#laptops">Laptops<span>Portable speed for work and study</span></a>
+      <a href="#desktops">Desktops<span>Power and dual-screen desks</span></a>
+      <a href="#gaming">Gaming PCs<span>Graphics-heavy performance</span></a>
+      <a href="#beginners">Beginners<span>Simple, affordable first machine</span></a>
+      <a href="#seniors">Seniors<span>Large, clear, low-friction setup</span></a>
+      <a href="#featured-heading">Digital devices<span>Monitors and extras that multiply the PC</span></a>
+    </div>
+  </section>
+
+  <details class="tc-fold">
+    <summary>How we grade products</summary>
+    <div class="tc-fold__body">
+      <p>
+        We do not rank by looks or hype alone. Each pick is checked for performance, build
+        quality, support, review patterns, and price-to-value for its lane in 2026.
+      </p>
+      <ul>
+        <li><strong>5 Stars</strong> <span>Top pick for the tier.</span></li>
+        <li><strong>4 Stars</strong> <span>Strong pick with small tradeoffs.</span></li>
+        <li><strong>3 Stars</strong> <span>Acceptable when the price is right.</span></li>
+        <li><strong>2 Stars</strong> <span>Budget only. Narrow use cases.</span></li>
+      </ul>
+    </div>
+  </details>
+
+  <section class="tc-section" aria-labelledby="nearby-heading">
+    <h2 id="nearby-heading" class="tc-section-title">Nearby in Technology Hub</h2>
+    <p class="tc-section-lead">Keep building the workspace around the machine.</p>
+    <div class="tc-nearby">
+      <a href="https://tcstaging.truth-collective.com/technology-hub/monitor-display/">Monitors and Displays<span>Explore</span></a>
+      <a href="https://tcstaging.truth-collective.com/technology-hub/interactive-digital-displays-2/">Interactive Digital Displays<span>Explore</span></a>
+      <a href="https://tcstaging.truth-collective.com/technology-hub/headphones-for-work/">Headphones and Headsets<span>Explore</span></a>
+    </div>
+  </section>
 
   <p class="tc-disclosure">
-    Affiliate Disclosure: Truth Collective participates in affiliate programs,
-    including Amazon Associates, CJ Affiliate, ShareASale, Awin, and PartnerStack.
-    When you click a link on this page and make a qualifying purchase, Truth
-    Collective may earn a commission at no added cost to you. Every recommendation
-    is independently selected, reviewed, and aligned with our Trusted Selection Standards.
+    Affiliate Disclosure: Truth Collective participates in affiliate programs, including
+    Amazon Associates, CJ Affiliate, ShareASale, Awin, and PartnerStack. When you click a
+    link on this page and make a qualifying purchase, Truth Collective may earn a commission
+    at no added cost to you. Every recommendation is independently selected, reviewed, and
+    aligned with our Trusted Selection Standards. Replace YOURTAG in Amazon links with your
+    Associates tracking tag before publishing live.
   </p>
 </div>

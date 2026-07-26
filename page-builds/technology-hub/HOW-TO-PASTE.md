@@ -1,40 +1,41 @@
-# How to paste Technology Hub drop-ins (WordPress)
+# Computers page — clean layout (Vercel / 10Web style)
 
-If the front of the page shows raw tags like `<div class="tc-page...` or one plain sentence and nothing styled, the wrong block was used.
+## The Rank Math vs clean-page problem
 
-## Use this block only
+You do **not** need a wall of words on first view.
 
-**Custom HTML**
+- **Visible:** short headline, one lead line, category tiles, product tiles.
+- **Hidden until click:** longer product notes inside **Details** (`<details>` in the HTML).
+- Google / Rank Math can still read that text because it is in the page, just collapsed.
 
-Not:
+That is how the clean 10Web / Vercel samples stay light while still having enough content.
 
-- Code
-- Paragraph
-- Preformatted
-- Kadence Advanced Text
-- Classic
+## Paste steps
 
-## Exact steps
+1. Edit existing page: `/technology-hub/computers-digital-devices/` (do not change slug).
+2. Delete old Custom HTML / Code blocks for the previous drop-in.
+3. Add **Custom HTML** (not Code).
+4. Paste all of `computers-PASTE-READY.html`.
+5. Update / Publish. Incognito hard refresh.
 
-1. Edit the existing Computers page  
-   (`/technology-hub/computers-digital-devices/`).
-2. Delete the failed block that shows raw HTML or a lone sentence.
-3. Click **+** → search **`Custom HTML`** → insert that block.
-4. In the editor you should see a gray code box (source view), not a normal text paragraph.
-5. Open `computers-PASTE-READY.html` in Cursor (or download raw).
-6. Select all → copy.
-7. Paste into the Custom HTML box.
-8. Update / Publish.
-9. View the page in a private window and hard refresh.
+## Before it looks finished
 
-## Quick editor check
+1. Replace every `YOURTAG` with your Amazon Associates tag.
+2. Replace logo placeholder images with real product photos (Media Library or Amazon images).
+3. Optional: swap Amazon search URLs for exact product `/dp/ASIN` links when you pick winners.
 
-| What you see in the editor | Meaning |
+## Rank Math (same page)
+
+| Field | Value |
 |---|---|
-| Gray box with `<div class="tc-page tc-page--computers">` as code | Correct |
-| Normal paragraph / formatted words | Wrong block — delete and use Custom HTML |
-| Block labeled **Code** | Wrong — that prints source on the front |
+| Focus keyword | `computers and digital devices 2026` |
+| SEO title | `Computers and Digital Devices \| Truth Collective 2026` |
+| Meta description | `Laptops, desktops, gaming PCs, beginner and senior computers. Clean Trusted Choice picks with Amazon links.` |
 
-## Slug
+## What you should see
 
-Do not change the page URL. Paste onto the existing page.
+- Short hero (not a big essay)
+- Five path tiles: Laptops, Desktops, Gaming, Beginners, Seniors
+- Product grid; hover shows **Details** and **Reviews**
+- Click Details for the longer note + View on Amazon
+- Grading tucked behind a click-to-open row
