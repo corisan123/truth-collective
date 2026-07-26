@@ -1,0 +1,252 @@
+<div class="tc-page tc-page--computers">
+  <style>
+    .tc-page--computers {
+      --navy: #1e3a5f;
+      --navy-2: #2a4a73;
+      --gold: #b8944b;
+      --ink: #1f2937;
+      --muted: #64748b;
+      --cream: #faf9f6;
+      --line: rgba(30, 58, 95, 0.10);
+      --soft: #e8eef5;
+      max-width: 1100px;
+      margin: 0 auto 3rem;
+      padding: 0 1.25rem 2rem;
+      color: var(--ink);
+      font-family: Inter, system-ui, sans-serif;
+      background: transparent;
+    }
+    .tc-page--computers * { box-sizing: border-box; }
+    .tc-page--computers .tc-crumb {
+      font-size: 0.85rem; color: var(--muted); margin: 0 0 1.25rem;
+    }
+    .tc-page--computers .tc-crumb a { color: var(--navy); text-decoration: none; }
+    .tc-page--computers .tc-crumb a:hover { color: var(--gold); }
+    .tc-page--computers .tc-hero {
+      text-align: center; padding: 1.5rem 0 2rem;
+    }
+    .tc-page--computers .tc-kicker {
+      display: inline-flex; align-items: center; gap: 0.75rem;
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--gold); margin: 0 0 1rem;
+    }
+    .tc-page--computers .tc-kicker::before,
+    .tc-page--computers .tc-kicker::after {
+      content: ""; width: 2rem; height: 1px; background: var(--gold); opacity: 0.7;
+    }
+    .tc-page--computers h1 {
+      font-family: "Playfair Display", Georgia, serif;
+      font-weight: 600; font-size: clamp(2rem, 4vw, 2.75rem);
+      line-height: 1.15; color: var(--navy); margin: 0 0 1rem; letter-spacing: -0.01em;
+    }
+    .tc-page--computers .tc-lead {
+      max-width: 42rem; margin: 0 auto 1.25rem;
+      color: var(--muted); font-size: 1.08rem; line-height: 1.65;
+    }
+    .tc-page--computers .tc-body {
+      max-width: 42rem; margin: 0 auto 2.5rem;
+      color: var(--ink); font-size: 1.02rem; line-height: 1.7;
+    }
+    .tc-page--computers .tc-body p { margin: 0 0 1.1rem; }
+    .tc-page--computers .tc-duo {
+      display: grid; gap: 1rem; grid-template-columns: 1fr;
+      margin: 0 0 2.5rem;
+    }
+    @media (min-width: 720px) {
+      .tc-page--computers .tc-duo { grid-template-columns: 1fr 1fr; }
+    }
+    .tc-page--computers .tc-duo figure {
+      margin: 0; border-radius: 12px; overflow: hidden;
+      border: 1px solid var(--line); background: var(--soft);
+      aspect-ratio: 16/10;
+    }
+    .tc-page--computers .tc-duo img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+      transition: transform 0.6s ease;
+    }
+    .tc-page--computers .tc-duo a:hover img { transform: scale(1.03); }
+    .tc-page--computers .tc-section-title {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: clamp(1.45rem, 2.5vw, 1.85rem);
+      color: var(--navy); text-align: center; margin: 0 0 0.75rem; font-weight: 600;
+    }
+    .tc-page--computers .tc-section-lead {
+      text-align: center; color: var(--muted); max-width: 38rem;
+      margin: 0 auto 1.75rem; line-height: 1.6; font-size: 1rem;
+    }
+    .tc-page--computers .tc-grade {
+      background: var(--cream); border: 1px solid var(--line);
+      border-radius: 14px; padding: clamp(1.5rem, 3vw, 2rem);
+      margin: 0 0 2.75rem;
+    }
+    .tc-page--computers .tc-grade h2 {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 1.55rem; color: var(--navy); margin: 0 0 0.85rem; font-weight: 600;
+    }
+    .tc-page--computers .tc-grade p {
+      margin: 0 0 1.25rem; color: var(--ink); line-height: 1.65; font-size: 1rem;
+    }
+    .tc-page--computers .tc-stars {
+      display: grid; gap: 0.75rem; margin: 0; padding: 0; list-style: none;
+    }
+    .tc-page--computers .tc-stars li {
+      display: grid; grid-template-columns: 5.5rem 1fr; gap: 0.75rem;
+      padding: 0.65rem 0; border-top: 1px solid var(--line);
+      font-size: 0.95rem; line-height: 1.45;
+    }
+    .tc-page--computers .tc-stars strong {
+      color: var(--gold); font-family: "Playfair Display", Georgia, serif;
+      font-size: 1.05rem; font-weight: 600;
+    }
+    .tc-page--computers .tc-explore {
+      display: grid; gap: 1rem;
+      grid-template-columns: 1fr;
+      margin: 0 0 2.75rem;
+    }
+    @media (min-width: 720px) {
+      .tc-page--computers .tc-explore { grid-template-columns: repeat(3, 1fr); }
+    }
+    .tc-page--computers .tc-tile {
+      position: relative; display: block; text-decoration: none; color: inherit;
+      border-radius: 12px; overflow: hidden; min-height: 220px;
+      border: 1px solid var(--line); background: linear-gradient(160deg, var(--soft), #fff);
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+    }
+    .tc-page--computers .tc-tile:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 36px -20px rgba(30, 58, 95, 0.35);
+    }
+    .tc-page--computers .tc-tile__inner {
+      position: absolute; inset: 0; display: flex; flex-direction: column;
+      justify-content: flex-end; padding: 1.25rem;
+      background: linear-gradient(to top, rgba(15, 35, 65, 0.72), transparent 55%);
+    }
+    .tc-page--computers .tc-tile h3 {
+      margin: 0 0 0.5rem; color: #fff;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 1.2rem; font-weight: 600; line-height: 1.25;
+    }
+    .tc-page--computers .tc-tile span {
+      align-self: flex-start;
+      display: inline-block; padding: 0.45rem 0.9rem;
+      background: rgba(90, 139, 184, 0.95); color: #fff;
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; border-radius: 2px;
+      opacity: 0; transform: translateY(8px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    .tc-page--computers .tc-tile:hover span {
+      opacity: 1; transform: translateY(0);
+    }
+    .tc-page--computers .tc-note {
+      border: 1px dashed var(--line); border-radius: 12px;
+      padding: 1.25rem 1.4rem; background: #fff; margin: 0 0 2rem;
+    }
+    .tc-page--computers .tc-note h2 {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 1.25rem; color: var(--navy); margin: 0 0 0.5rem; font-weight: 600;
+    }
+    .tc-page--computers .tc-note p {
+      margin: 0; color: var(--muted); line-height: 1.6; font-size: 0.98rem;
+    }
+    .tc-page--computers .tc-disclosure {
+      font-size: 0.82rem; color: var(--muted); line-height: 1.55;
+      border-top: 1px solid var(--line); padding-top: 1.25rem; margin-top: 0.5rem;
+    }
+  </style>
+
+  <p class="tc-crumb">
+    <a href="https://tcstaging.truth-collective.com/technology-hub/">Technology Hub</a>
+    / Computers and Digital Devices
+  </p>
+
+  <header class="tc-hero">
+    <div class="tc-kicker">Technology Hub</div>
+    <h1>Computers and Digital Devices</h1>
+    <p class="tc-lead">
+      Computers and digital devices sit at the center of how work gets done.
+      The right choices improve speed, clarity, reliability, and the way work
+      is planned, managed, and executed across the day.
+    </p>
+  </header>
+
+  <div class="tc-duo" aria-hidden="true">
+    <figure>
+      <!-- Replace src with your Media Library URLs from the PDF images -->
+      <img src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/04/TC-BLK-LTR-TRANSPARENT-LOGO.png" alt="Modern executive workstation with multiple monitors">
+    </figure>
+    <figure>
+      <img src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/04/TC-BLK-LTR-TRANSPARENT-LOGO.png" alt="High-performance digital workspace with multi-screen setup">
+    </figure>
+  </div>
+
+  <div class="tc-body">
+    <p>
+      This page focuses on useful devices and accessories that support stronger
+      workflow, better connectivity, and a cleaner digital environment. The goal
+      is not to overload the page with random electronics. It is to highlight the
+      tools that improve performance, reduce friction, and make daily work more capable.
+    </p>
+  </div>
+
+  <section class="tc-grade" aria-labelledby="grade-heading">
+    <h2 id="grade-heading">How We Grade Products</h2>
+    <p>
+      We do not rank products by appearance or hype alone. Every product is
+      evaluated for practical value, performance, build quality, support, review
+      patterns, and price-to-value. A higher price does not automatically mean
+      better quality. A lower-priced product is not automatically a bad buy. Our
+      goal is to show what you are actually getting, where the tradeoffs are, and
+      when paying more is truly worth it.
+    </p>
+    <ul class="tc-stars">
+      <li><strong>5 Stars</strong> <span>Top-tier recommendation with strong performance, build quality, and value for its tier.</span></li>
+      <li><strong>4 Stars</strong> <span>Strong recommendation with only limited compromises.</span></li>
+      <li><strong>3 Stars</strong> <span>Acceptable with tradeoffs and worth considering for the right buyer.</span></li>
+      <li><strong>2 Stars</strong> <span>Budget-only. Useful in narrow cases, not a default pick.</span></li>
+    </ul>
+  </section>
+
+  <h2 class="tc-section-title">Explore Nearby Technology Paths</h2>
+  <p class="tc-section-lead">
+    Start with the category closest to the friction you are trying to remove.
+  </p>
+  <div class="tc-explore">
+    <a class="tc-tile" href="https://tcstaging.truth-collective.com/technology-hub/monitor-display/">
+      <div class="tc-tile__inner">
+        <h3>Monitors and Displays</h3>
+        <span>Explore</span>
+      </div>
+    </a>
+    <a class="tc-tile" href="https://tcstaging.truth-collective.com/technology-hub/interactive-digital-displays-2/">
+      <div class="tc-tile__inner">
+        <h3>Interactive Digital Displays</h3>
+        <span>Explore</span>
+      </div>
+    </a>
+    <a class="tc-tile" href="https://tcstaging.truth-collective.com/technology-hub/headphones-for-work/">
+      <div class="tc-tile__inner">
+        <h3>Headphones and Headsets</h3>
+        <span>Explore</span>
+      </div>
+    </a>
+  </div>
+
+  <aside class="tc-note">
+    <h2>Product shortlist coming next</h2>
+    <p>
+      Your PDF for this child page is the foundation: mission, grading, and page
+      voice. Product cards were not started in the source file. When you send the
+      product list or affiliate links, we will drop ranked picks into this section
+      without changing the page shell.
+    </p>
+  </aside>
+
+  <p class="tc-disclosure">
+    Affiliate Disclosure: Truth Collective participates in affiliate programs,
+    including Amazon Associates, CJ Affiliate, ShareASale, Awin, and PartnerStack.
+    When you click a link on this page and make a qualifying purchase, Truth
+    Collective may earn a commission at no added cost to you. Every recommendation
+    is independently selected, reviewed, and aligned with our Trusted Selection Standards.
+  </p>
+</div>
