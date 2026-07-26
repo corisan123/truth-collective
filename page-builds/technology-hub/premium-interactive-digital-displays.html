@@ -1,0 +1,307 @@
+<!--
+  DROP-IN: Premium Interactive Digital Displays 2026
+  Staging page: /technology-hub/interactive-digital-displays-2/
+  Paste into one Custom HTML block. Self-contained CSS (scoped .tc-page).
+  Source: Premium Interactive Digital Displays PDF.
+  IMPORTANT: Replace every href="#aff-..." with your real affiliate URLs.
+  NOTE: The source PDF reused the same review blurbs on several products.
+        Grades below match the PDF. Short copy is tightened to fit each product.
+        Confirm grades and final tradeoff language before publish.
+-->
+<div class="tc-page tc-page--displays">
+  <style>
+    .tc-page--displays {
+      --navy: #1e3a5f;
+      --navy-2: #2a4a73;
+      --gold: #b8944b;
+      --ink: #1f2937;
+      --muted: #64748b;
+      --cream: #faf9f6;
+      --line: rgba(30, 58, 95, 0.10);
+      --soft: #e8eef5;
+      max-width: 1100px;
+      margin: 0 auto 3rem;
+      padding: 0 1.25rem 2rem;
+      color: var(--ink);
+      font-family: Inter, system-ui, sans-serif;
+    }
+    .tc-page--displays * { box-sizing: border-box; }
+    .tc-page--displays .tc-crumb {
+      font-size: 0.85rem; color: var(--muted); margin: 0 0 1.25rem;
+    }
+    .tc-page--displays .tc-crumb a { color: var(--navy); text-decoration: none; }
+    .tc-page--displays .tc-crumb a:hover { color: var(--gold); }
+    .tc-page--displays .tc-hero { text-align: center; padding: 0.5rem 0 1.75rem; }
+    .tc-page--displays .tc-kicker {
+      display: inline-flex; align-items: center; gap: 0.75rem;
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--gold); margin: 0 0 1rem;
+    }
+    .tc-page--displays .tc-kicker::before,
+    .tc-page--displays .tc-kicker::after {
+      content: ""; width: 2rem; height: 1px; background: var(--gold); opacity: 0.7;
+    }
+    .tc-page--displays h1 {
+      font-family: "Playfair Display", Georgia, serif;
+      font-weight: 600; font-size: clamp(2rem, 4vw, 2.75rem);
+      line-height: 1.15; color: var(--navy); margin: 0 0 1rem;
+    }
+    .tc-page--displays .tc-lead {
+      max-width: 40rem; margin: 0 auto;
+      color: var(--muted); font-size: 1.05rem; line-height: 1.65;
+    }
+    .tc-page--displays .tc-band {
+      margin: 0 0 2.5rem; border-radius: 14px; overflow: hidden;
+      border: 1px solid var(--line); background: var(--soft);
+      aspect-ratio: 21/9; max-height: 320px;
+    }
+    .tc-page--displays .tc-band img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+    }
+    .tc-page--displays .tc-section-title {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: clamp(1.4rem, 2.4vw, 1.8rem);
+      color: var(--navy); margin: 0 0 0.5rem; font-weight: 600; text-align: center;
+    }
+    .tc-page--displays .tc-section-lead {
+      text-align: center; color: var(--muted); max-width: 36rem;
+      margin: 0 auto 1.75rem; line-height: 1.6;
+    }
+    .tc-page--displays .tc-grid {
+      display: grid; gap: 1.15rem;
+      grid-template-columns: 1fr;
+      margin: 0 0 2.75rem;
+    }
+    @media (min-width: 820px) {
+      .tc-page--displays .tc-grid { grid-template-columns: 1fr 1fr; }
+    }
+    .tc-page--displays .tc-card {
+      background: #fff; border: 1px solid var(--line); border-radius: 14px;
+      padding: 1.4rem 1.45rem 1.35rem;
+      box-shadow: 0 8px 24px -16px rgba(30, 58, 95, 0.22);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex; flex-direction: column; gap: 0.7rem;
+    }
+    .tc-page--displays .tc-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 16px 32px -18px rgba(30, 58, 95, 0.3);
+    }
+    .tc-page--displays .tc-card__meta {
+      display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center;
+      justify-content: space-between;
+    }
+    .tc-page--displays .tc-tag {
+      font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--navy); background: var(--cream);
+      border: 1px solid var(--line); border-radius: 999px; padding: 0.25rem 0.65rem;
+    }
+    .tc-page--displays .tc-grade-pill {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 0.95rem; font-weight: 600; color: var(--gold);
+    }
+    .tc-page--displays .tc-card h3 {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 1.2rem; line-height: 1.3; color: var(--navy);
+      margin: 0; font-weight: 600;
+    }
+    .tc-page--displays .tc-card p {
+      margin: 0; color: var(--ink); font-size: 0.96rem; line-height: 1.6;
+    }
+    .tc-page--displays .tc-trade {
+      color: var(--muted); font-size: 0.92rem; line-height: 1.55;
+      border-left: 2px solid var(--gold); padding-left: 0.85rem;
+    }
+    .tc-page--displays .tc-card a.tc-btn {
+      margin-top: auto; align-self: flex-start;
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 0.7rem 1.15rem; border-radius: 8px;
+      background: var(--navy); color: #fff; text-decoration: none;
+      font-size: 0.9rem; font-weight: 600;
+      transition: background 0.2s ease, transform 0.15s ease;
+    }
+    .tc-page--displays .tc-card a.tc-btn:hover {
+      background: var(--navy-2); transform: translateY(-1px);
+    }
+    .tc-page--displays .tc-disclosure {
+      font-size: 0.82rem; color: var(--muted); line-height: 1.55;
+      border-top: 1px solid var(--line); padding-top: 1.25rem;
+    }
+    .tc-page--displays .tc-flag {
+      font-size: 0.85rem; color: var(--muted); background: var(--cream);
+      border: 1px dashed var(--line); border-radius: 10px;
+      padding: 0.85rem 1rem; margin: 0 0 1.75rem; line-height: 1.5;
+    }
+  </style>
+
+  <p class="tc-crumb">
+    <a href="https://tcstaging.truth-collective.com/technology-hub/">Technology Hub</a>
+    / Premium Interactive Digital Displays
+  </p>
+
+  <header class="tc-hero">
+    <div class="tc-kicker">Technology Hub · 2026</div>
+    <h1>Premium Interactive Digital Displays</h1>
+    <p class="tc-lead">
+      Freestanding signage, interactive smart boards, and commercial displays
+      for lobbies, meeting rooms, and public-facing spaces. Selected for fit,
+      clarity, and real-world tradeoffs.
+    </p>
+  </header>
+
+  <div class="tc-band" aria-hidden="true">
+    <!-- Replace with your Media Library hero from the PDF -->
+    <img src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/04/TC-BLK-LTR-TRANSPARENT-LOGO.png" alt="Premium interactive digital displays in a modern office lobby">
+  </div>
+
+  <p class="tc-flag">
+    Paste affiliate URLs into each View product button (search for #aff- in this
+    HTML). Confirm any grade you want changed before this page goes public.
+  </p>
+
+  <h2 class="tc-section-title">Freestanding Digital Signage</h2>
+  <p class="tc-section-lead">Floor-standing LCD kiosks for reception and public spaces.</p>
+  <div class="tc-grid">
+    <article class="tc-card">
+      <div class="tc-card__meta">
+        <span class="tc-tag">Signage</span>
+        <span class="tc-grade-pill">4.4 Stars</span>
+      </div>
+      <h3>49&quot; Indoor Digital Signage LCD · Floor Standing Kiosk</h3>
+      <p>IPS screen with WiFi, HDMI/USB input, and auto ad player. A smaller-format freestanding display that fits reception areas, tighter lobbies, waiting spaces, and lighter-footprint commercial environments.</p>
+      <p class="tc-trade">Tradeoff: Easier to place, but less commanding presence than a larger-format display.</p>
+      <a class="tc-btn" href="#aff-49-signage">View product</a>
+    </article>
+
+    <article class="tc-card">
+      <div class="tc-card__meta">
+        <span class="tc-tag">Signage</span>
+        <span class="tc-grade-pill">3.5 Stars</span>
+      </div>
+      <h3>65&quot; 4K Indoor Digital Signage LCD · Floor Standing Kiosk</h3>
+      <p>Large freestanding digital signage for lobbies, reception areas, and public-facing business spaces. Strong category fit for impact and distance viewing.</p>
+      <p class="tc-trade">Tradeoff: Size and function are appealing, but brand confidence is weaker than we want at this price.</p>
+      <a class="tc-btn" href="#aff-65-signage">View product</a>
+    </article>
+  </div>
+
+  <h2 class="tc-section-title">Interactive Smart Boards</h2>
+  <p class="tc-section-lead">Touch collaboration displays for offices, hybrid rooms, and classrooms.</p>
+  <div class="tc-grid">
+    <article class="tc-card">
+      <div class="tc-card__meta">
+        <span class="tc-tag">Smart Board</span>
+        <span class="tc-grade-pill">4.4 Stars</span>
+      </div>
+      <h3>55&quot; 4K Smart Board · Google EDLA · Android 14</h3>
+      <p>Interactive whiteboard for office, hybrid work, and classrooms. Google EDLA-certified with a modern Android stack for app-driven meetings and teaching.</p>
+      <p class="tc-trade">Tradeoff: Strong collaboration fit; confirm mounting, software licensing, and support before a multi-room rollout.</p>
+      <a class="tc-btn" href="#aff-55-edla">View product</a>
+    </article>
+
+    <article class="tc-card">
+      <div class="tc-card__meta">
+        <span class="tc-tag">Smart Board</span>
+        <span class="tc-grade-pill">3.5 Stars</span>
+      </div>
+      <h3>75&quot; All-in-One Interactive Whiteboard · 4K Camera + AI Mics</h3>
+      <p>Google EDLA-certified all-in-one board with 48MP CMOS 4K camera and eight AI noise-canceling mics for professional business meetings.</p>
+      <p class="tc-trade">Tradeoff: Capability is high; validate brand support and long-term software updates against the price.</p>
+      <a class="tc-btn" href="#aff-75-aio">View product</a>
+    </article>
+
+    <article class="tc-card">
+      <div class="tc-card__meta">
+        <span class="tc-tag">Smart Board</span>
+        <span class="tc-grade-pill">4.4 Stars</span>
+      </div>
+      <h3>55&quot; 4K UHD Interactive Touchscreen · Wireless Smartboard</h3>
+      <p>Touch collaboration display with wireless workflow options for rooms that need a cleaner cable path and fast session start.</p>
+      <p class="tc-trade">Tradeoff: Convenient for smaller rooms; larger rooms may still want a dedicated camera and mic stack.</p>
+      <a class="tc-btn" href="#aff-55-wireless">View product</a>
+    </article>
+  </div>
+
+  <h2 class="tc-section-title">Commercial and Portable Displays</h2>
+  <p class="tc-section-lead">Bar monitors and travel screens for specialty placements.</p>
+  <div class="tc-grid">
+    <article class="tc-card">
+      <div class="tc-card__meta">
+        <span class="tc-tag">Commercial</span>
+        <span class="tc-grade-pill">4.4 Stars</span>
+      </div>
+      <h3>43&quot; Ultra-Wide Commercial Bar Monitor · 1000 nits</h3>
+      <p>Slim 1.02&quot; frameless design with Android OS, USB/HDMI/WiFi, and high brightness for bright indoor corridors and menu-style placements.</p>
+      <p class="tc-trade">Tradeoff: Excellent for stretch formats; not a substitute for a full interactive meeting board.</p>
+      <a class="tc-btn" href="#aff-43-bar">View product</a>
+    </article>
+
+    <article class="tc-card">
+      <div class="tc-card__meta">
+        <span class="tc-tag">Portable</span>
+        <span class="tc-grade-pill">3.5 Stars</span>
+      </div>
+      <h3>UPERFECT 15.6&quot; Touchscreen Portable Monitor · 1080p IPS</h3>
+      <p>Ultra-thin travel monitor with adjustable stand and HDMI/USB-C connectivity for executives who need a second screen on the road.</p>
+      <p class="tc-trade">Tradeoff: Highly portable, but not built for lobby presence or shared-room interaction.</p>
+      <a class="tc-btn" href="#aff-uperfect">View product</a>
+    </article>
+  </div>
+
+  <h2 class="tc-section-title">Related Presentation and Meeting Tech</h2>
+  <p class="tc-section-lead">
+    Included in your source PDF. Keep, move, or delete after you confirm category fit.
+  </p>
+  <div class="tc-grid">
+    <article class="tc-card">
+      <div class="tc-card__meta">
+        <span class="tc-tag">Projection</span>
+        <span class="tc-grade-pill">3.5 Stars</span>
+      </div>
+      <h3>HAPPRUN 2000 ANSI 4K-Decoding Projector</h3>
+      <p>WiFi/Bluetooth smart projector with auto focus and large throw for indoor/outdoor presentation use.</p>
+      <p class="tc-trade">Tradeoff: Flexible image size; ambient light and brand support still need room-by-room validation.</p>
+      <a class="tc-btn" href="#aff-happrun">View product</a>
+    </article>
+
+    <article class="tc-card">
+      <div class="tc-card__meta">
+        <span class="tc-tag">Screen</span>
+        <span class="tc-grade-pill">Review</span>
+      </div>
+      <h3>STR Series 120&quot; 16:9 Fixed-Frame Projection Screen</h3>
+      <p>Aluminum-frame wall-mounted screen (1.1 gain) for dedicated presentation rooms paired with a projector.</p>
+      <p class="tc-trade">Tradeoff: Clean fixed install; not flexible if the room layout changes often.</p>
+      <a class="tc-btn" href="#aff-str-screen">View product</a>
+    </article>
+
+    <article class="tc-card">
+      <div class="tc-card__meta">
+        <span class="tc-tag">Camera</span>
+        <span class="tc-grade-pill">3.5 Stars</span>
+      </div>
+      <h3>AVKANS AI Auto-Tracking NDI Camera · 20X</h3>
+      <p>Live streaming PTZ camera with HDMI, SDI, and USB 3.0 for rooms that need stronger camera control.</p>
+      <p class="tc-trade">Tradeoff: Powerful for production-style rooms; more complex than a simple board camera.</p>
+      <a class="tc-btn" href="#aff-avkans">View product</a>
+    </article>
+
+    <article class="tc-card">
+      <div class="tc-card__meta">
+        <span class="tc-tag">Conference</span>
+        <span class="tc-grade-pill">4.4 Stars</span>
+      </div>
+      <h3>TONGVEO 4K Conference Camera System · Gesture + Speakerphone</h3>
+      <p>AI auto-tracking PTZ with speakerphone set and wide-angle USB 3.0 path for Zoom/Teams-style rooms.</p>
+      <p class="tc-trade">Tradeoff: Strong meeting kit; confirm acoustic fit for larger boardrooms.</p>
+      <a class="tc-btn" href="#aff-tongveo">View product</a>
+    </article>
+  </div>
+
+  <p class="tc-disclosure">
+    Affiliate Disclosure: Truth Collective participates in affiliate programs,
+    including Amazon Associates, CJ Affiliate, ShareASale, Awin, and PartnerStack.
+    When you click a link on this page and make a qualifying purchase, Truth
+    Collective may earn a commission at no added cost to you. Every recommendation
+    is independently selected, reviewed, and aligned with our Trusted Selection Standards.
+  </p>
+</div>
