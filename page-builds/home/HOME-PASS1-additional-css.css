@@ -1,0 +1,95 @@
+/* =============================================================================
+   TC HOME PASS 1 — page-id-5 only (append to Additional CSS)
+   From Claude aesthetic brief + Cursor safe implementation.
+   Does NOT rewrite locked global .tc-explore-hub / .tc-overlay-card blocks.
+   Only strengthens readability on the Home page.
+   Date: 2026-08-04
+============================================================================= */
+
+/* Hide WP page title chrome — hero already carries the brand moment */
+body.home.page-id-5 .entry-header,
+body.home.page-id-5 h1.entry-title {
+  display: none !important;
+}
+
+/* More air under hero / between major bands */
+body.home.page-id-5 .entry-content > .wp-block-kadence-rowlayout {
+  margin-bottom: 1.25rem;
+}
+
+/* Trust strip: stop first-viewport cram — more padding + gap */
+body.home.page-id-5 .tc-trust-bar {
+  margin-top: 2rem !important;
+  margin-bottom: 2.5rem !important;
+  padding-top: 1.75rem !important;
+  padding-bottom: 1.75rem !important;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+  column-gap: 1.75rem !important;
+  row-gap: 1.25rem !important;
+}
+
+/* Guide tile row: breathing room between the three cards */
+body.home.page-id-5 .kb-row-layout-id5_b42706-92 .kt-row-column-wrap {
+  gap: 1.35rem !important;
+}
+
+/* How Products Earn: narrower readable measure */
+body.home.page-id-5 .tc-grade-block,
+body.home.page-id-5 .entry-content h2 + p.has-ast-global-color-4-color {
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7 !important;
+}
+
+/* -------------------------------------------------------------------------
+   HIGHEST LEVERAGE: Six-path / explore hub hover legibility on Home
+   Problem: hover dims image to 60% AND fades H2/H3 to 0.7 → unreadable.
+   Fix (Home only): gentler dim, full-opacity titles, stronger shadow,
+   keep EXPLORE pill.
+------------------------------------------------------------------------- */
+@media (hover: hover) and (pointer: fine) {
+  body.home.page-id-5 .tc-explore-hub:hover .kt-inside-inner-col > figure img,
+  body.home.page-id-5 .tc-explore-hub:hover .kt-inside-inner-col > .wp-block-image img,
+  body.home.page-id-5 .entry-content .tc-overlay-card:hover .tc-explore-hub .kt-inside-inner-col > figure img,
+  body.home.page-id-5 .entry-content .tc-overlay-card:hover .tc-explore-hub .kt-inside-inner-col > .wp-block-image img {
+    filter: brightness(68%) !important;
+  }
+
+  body.home.page-id-5 .tc-explore-hub:hover h2,
+  body.home.page-id-5 .tc-explore-hub:hover h3,
+  body.home.page-id-5 .entry-content .tc-overlay-card:hover .tc-explore-hub h2,
+  body.home.page-id-5 .entry-content .tc-overlay-card:hover .tc-explore-hub h3 {
+    opacity: 1 !important;
+    color: #ffffff !important;
+    text-shadow:
+      0 2px 14px rgba(0, 0, 0, 0.9),
+      0 1px 3px rgba(0, 0, 0, 0.95) !important;
+  }
+
+  body.home.page-id-5 .tc-explore-hub:hover::after {
+    opacity: 1 !important;
+    background: rgba(30, 58, 95, 0.92) !important; /* navy solid CTA feel */
+    border: 1px solid rgba(184, 148, 75, 0.55);
+  }
+}
+
+/* Hero EXPLORE: read as primary filled CTA (navy + gold edge) */
+body.home.page-id-5 .tc-explore-hero::after {
+  background: #1e3a5f !important;
+  border: 1px solid #b8944b !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35) !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.12em !important;
+}
+
+/* Soft depth behind hero type without a card */
+body.home.page-id-5 .tc-explore-hero h1,
+body.home.page-id-5 .tc-explore-hero p {
+  text-shadow:
+    0 2px 24px rgba(0, 0, 0, 0.55),
+    0 1px 2px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* End TC HOME PASS 1 */
