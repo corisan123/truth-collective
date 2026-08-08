@@ -12,36 +12,60 @@
 4. User pastes Angie’s plan back to Cursor if unsure; Approve only if it matches the allowlist below.
 5. After each approved change: user checks **one URL** and reports **worked / failed / worse**.
 
+## Hard lessons (Daniel — locked)
+
+- ChatGPT once had SQL lines deleted; Cursor+Daniel repaired some fallout. **Never** free-form SQL again.
+- Homepage links can look correct (slug/URL) but fail (“hidden ghosts”). Multi-day repair of corrupted blocks **failed**. **Policy: do not spend days repairing ghost blocks. Delete the corrupted block and rebuild** with Cursor HTML + Angie apply.
+- Computers revision hunt closed — no full finished revision. Same rule: rebuild page-by-page, not restore roulette.
+- Daniel will **not** repeat four-day ghost repair. Helpers must not ask him to.
+
+## Two phases (positive path — 2026-08-08)
+
+### Phase S — Stable (Angie + Cursor first)
+Prove control with small read-only / one-link tasks. No whole-page rewrites. No Hostinger restores. Leave 10Web alone unless Daniel asks.
+
+### Phase R — Rebuild (after Phase S proves stable)
+Page-by-page (or one card / one section at a time): Cursor supplies Custom HTML using locked `tc-*` classes; Claude may rewrite long copy; Angie or Daniel pastes. Corrupted blocks → **delete and replace**, not endless patch.
+
 ## Forbidden (Angie must not do)
 
-- Hostinger restores, Updraft Continue, DB imports
+- Hostinger restores, Updraft Continue, DB imports, SQL edits
 - Deactivate/delete **10WEB manager** (unless user later asks)
 - Edit live site
-- Rewrite whole pages or regenerate layouts
+- Rewrite whole pages or regenerate layouts in Phase S
 - Delete or rewrite all Additional CSS in one pass
-- “Improve” or replace product images
+- “Improve” or replace product images without Cursor naming the file
 - Bulk find-replace across the whole site without an explicit Cursor list
+- Multi-day “find the ghost” investigations
 
 ## Allowed (one at a time, Cursor-directed)
 
+**Phase S**
+- Report / list links on **one** page (read-only): href, visible label, works Y/N if Angie can tell
 - Change **one** block link URL on **one** page
-- Report / list stale links on one page (read-only)
-- Locate `tc-explore` / STAGING PATCH CSS in Additional CSS or Code Snippets (read-only first)
+- Confirm Additional CSS still only in Customizer (read-only)
 - Later: disable **one named CSS block** after Cursor names it
+
+**Phase R** (only after Cursor opens it)
+- Delete **one** named corrupted block
+- Insert **one** Cursor-provided Custom HTML / class fix on **one** section
+- Re-add locked classes on **one** Section or image (`tc-overlay-card`, `tc-explore-hub`, etc.)
 
 ## Task queue
 
 | # | Status | Task |
 |---|--------|------|
-| A0 | next | Read-only: confirm Office hub File Cabinets tile href |
-| A1 | queued | Fix that **one** link to the correct permalink |
-| A2 | done (Daniel 2026-08-08) | `tc-explore` / STAGING PATCH live in **Appearance → Customize → Additional CSS** only. Code Snippets never used. |
-| A3+ | later | More hub links / CSS — only after A1 proves control |
+| A2 | done | CSS lives in Appearance → Additional CSS only |
+| Computers | closed | Revision hunt stopped; rebuild later |
+| **S0** | **next** | Read-only: Homepage — list primary hub/child links (label + href). No edits. |
+| S1 | queued | From S0 list: pick **one** dead-but-pretty link; confirm correct Pages permalink |
+| S2 | queued | Fix that **one** homepage link OR delete/replace that **one** ghost block (Cursor decides after S0/S1) |
+| R0 | later | First rebuild page/card after Phase S feels stable to Daniel |
 
-## Correct File Cabinets permalink
+## Correct File Cabinets permalink (still valid)
 
 `https://tcstaging.truth-collective.com/office-workspace-products-and-tools/office-file-cabinets-credenzas-essentials/`
 
-## Wrong href currently on Office hub tile
+## Wrong href example (Office hub tile)
 
 `https://tcstaging.truth-collective.com/file-cabinets-credenza/`

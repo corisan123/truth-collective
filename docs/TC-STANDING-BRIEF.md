@@ -293,7 +293,9 @@ Top-1% quality is the destination. Order of work is non-negotiable:
 
 **Context:** ~5 weeks already spent repairing Claude / ChatGPT / Copilot Edge mistakes. Live site idle and broken. Daniel will not redo product catalogs for binder polish. Helpers must not invent parallel workstreams (binder SKUs, social strategy, Semrush) until step 1 is done.
 
-**Default next action until told otherwise:** staging recovery work order in `STAGING-RECOVERY-HANDOFF.md` (CSS disable → one hub link → more links).
+**Default next action (Daniel 2026-08-08):** **Angie Phase S (stable)** then **Phase R (rebuild page-by-page)**. See `diagnostics/ANGIE-CONTROL.md`. No more multi-day ghost-block repair; corrupted blocks are deleted and rebuilt. No Hostinger restore roulette. Computers revision hunt closed.
+
+**Ghost / wrong-link rule:** Slug and URL can look correct and still fail. Do not spend days hunting invisible corruption. Delete the bad block; rebuild with Cursor + Angie.
 
 **Global symptom:** staging **flickers badly on every page** (Daniel). Not limited to one hub. Likely stacked explore/overlay CSS — not a Hostinger restore issue.
 

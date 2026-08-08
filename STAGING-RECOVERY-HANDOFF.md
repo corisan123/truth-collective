@@ -139,11 +139,12 @@ Live HTML check: **no** `10web`/`tenweb` markers in page HTML. ~57KB of `tc-expl
 3. **10WEB manager is still Active** (v1.20.21). **User pause (2026-08-08):** do **not** deactivate/delete 10Web yet — user too sick/exhausted; wants 10Web to own fix via ticket **#375660**. Helpers: do not push plugin changes or page-by-page edits until user asks.
 4. Restores only if a later check proves missing media — not for this visual/link mess.
 
-### Angie-assisted path (started 2026-08-08 ~09:13)
-- User wants **Angie (Elementor)** to act inside WP, under **Cursor-written prompts only**.
-- Protocol + task queue: `diagnostics/ANGIE-CONTROL.md`
-- Still: no restore roulette; leave 10Web alone until user says otherwise.
-- First Angie work: **one Office hub link** (prove control), not site-wide rebuild.
+### Angie-assisted path (updated 2026-08-08)
+- **Phase S (stable) → Phase R (rebuild page-by-page).** Protocol: `diagnostics/ANGIE-CONTROL.md`
+- Cursor writes every Angie prompt. No free-form “fix the site.”
+- **No** multi-day ghost repair (ChatGPT/SQL/homepage lesson). Bad blocks → delete + rebuild.
+- **No** restore roulette; leave 10Web alone until user asks.
+- **Next Angie task S0:** read-only homepage hub/child link list — prompt in `diagnostics/angie-prompts/S0-homepage-links-readonly.md`
 
 ### Standing brief (source of truth)
 - `docs/TC-STANDING-BRIEF.md` — §§1–8 from Vercel/10Web PDF + Master Brief 2.0 + Migration Brief + Launch tips 6.
