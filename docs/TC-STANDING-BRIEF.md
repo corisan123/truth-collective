@@ -11,7 +11,7 @@ Update only with Daniel’s confirmation (Master Brief rule).
 - `HEARING_TRACKER_WEBSITE_TO_COMPARE_TC_WEBSITE.docx` + TechRadar screenshots (§9)
 - Membership toggle CSS (§11) + Copilot Task Master Binder archive (§12)
 
-**Session open line:** Read `docs/TC-STANDING-BRIEF.md` and `STAGING-RECOVERY-HANDOFF.md`, then continue.
+**Session open line:** Read `docs/TC-STANDING-BRIEF.md`, `STAGING-RECOVERY-HANDOFF.md`, and `docs/AI-PLATFORM-RULES-AND-PROMPTS.md`, then continue.
 
 ---
 
@@ -210,13 +210,15 @@ Confirmed from Daniel’s attachments (sample UI, not current WP staging):
 
 ## §10 — AI role split (mandatory)
 
+**Full rules + paste-ready prompts for every platform:** `docs/AI-PLATFORM-RULES-AND-PROMPTS.md` (Cursor / Claude / Copilot Task / Edge HOLD / Angie / parallel tickets). That sheet is the operating manual; this section is the summary.
+
 | Who | Role |
 |-----|------|
 | **Cursor + Daniel** | **Only** parties who write/edit/paste **Additional CSS**, and who **authorize** staging changes (hand edit, Application Password/REST, browser-in-admin, or Angie prompts). Cursor owns complex HTML using locked `tc-*` classes. Claude’s “don’t give Cursor the keys” advice is **overridden** for staging — Daniel trusts Cursor more; staging-only credentials OK under one-task Approve rules. |
 | **Claude** | Aesthetics judgment, long-paragraph rewrite, voice/formatting. **No** production CSS and no unreviewed full-page HTML for Daniel to paste. Specs → Cursor. |
-| **Copilot Task** | Strong **drafter** of structured Custom HTML / section scaffolds (matches DOM class names if told). **Cannot** wp-admin/FTP/Additional CSS. Drafts only → Cursor review. Tailwind apps **not** drop-in. **Paid** may be needed for ongoing Task use; do **not** pay during Phase S — wait until Phase R volume. |
+| **Copilot Task** | Strong **drafter** of structured Custom HTML / section scaffolds (matches DOM class names if told) + engineering/eval docs. **Cannot** wp-admin/FTP/Additional CSS. Drafts only → Cursor review. Tailwind apps **not** drop-in. **Not** the lead/orchestrator. Prep prompts now; run paid Task in Phase R+ under Cursor tickets. |
 | **Angie** | In-WP agent (beta). **Paused** on critical path — spins/fails edits. Optional later if stable. |
-| **ChatGPT / Copilot Edge** | Out of production CSS/HTML path (historical damage). |
+| **ChatGPT / Copilot Edge** | **HOLD** / out of production CSS/HTML path (historical damage). Edge must not retune roles. |
 | **Vercel / v0 / 10Web samples** | Visual reference only — not WP repair agents. |
 
 **Must:** No other generative AI puts code into Additional CSS. If Claude proposes CSS, Cursor reviews and implements or rejects. Daniel does not paste Claude, ChatGPT, or Copilot CSS into the site.
@@ -368,7 +370,7 @@ Cursor is the only assigner. **Never** both draft the same section.
 
 **One page family workflow:** Claude finishes copy first → Cursor (or Task) wraps that copy in HTML → Cursor hardens → API/paste.  
 **Do not:** Claude and Task both rewrite the same Computers product blurb.  
-**Do not:** Pay for Task during Phase S (stabilize links/CSS/API). Free Task already delivered Master Binder archive; next paid use = Phase R rebuild volume.
+**Do not:** Let Task or Edge become orchestrator. Prep paid Task with `docs/AI-PLATFORM-RULES-AND-PROMPTS.md` during REST setup; run Task tickets in Phase R+ (and DOC tickets anytime under Cursor). Phase S site writes stay Cursor + Daniel (REST / hand URL fixes).
 
 ### What we explicitly reject as “best”
 

@@ -15,6 +15,7 @@
 4. LiteSpeed: stay purged / off. Rename `object-cache.php` if present.
 5. Do **not** wait on 10Web for recovery. Ticket **#375660** = RCA/compensation only.
 6. Work in **short steps, one question at a time.**
+7. Multi-AI roles/prompts: `docs/AI-PLATFORM-RULES-AND-PROMPTS.md` — Cursor lead; Claude/Task draft only; Edge HOLD.
 
 ---
 
