@@ -130,7 +130,7 @@ Live HTML check: **no** `10web`/`tenweb` markers in page HTML. ~57KB of `tc-expl
 - Other hub hrefs still use dead old parent `best-office-workspace-products-tools/...` (404), e.g. desk-accessories.
 - Menus often have the correct nested URL; **image/block links inside page content are stale.** This is editable content, not unrecoverable corruption.
 
-**CSS location (Daniel confirmed 2026-08-08):** All Cursor/AI CSS is in **Appearance → Customize → Additional CSS** only. **Code Snippets was never used.** (Additional CSS holds stylesheets, not page HTML.)
+**CSS location / method (Daniel confirmed 2026-08-08):** Working method stays **Appearance → Customize → Additional CSS**. Code Snippets plugin has never been used (fact only — not a decision to switch). Additional CSS holds stylesheets, not page HTML.
 
 **Next work order:**
 1. Disable/remove conflicting Additional CSS (`tc-explore-hub`, product overlay patches) — crops/black bars.
