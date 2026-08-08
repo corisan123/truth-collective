@@ -295,4 +295,6 @@ Top-1% quality is the destination. Order of work is non-negotiable:
 
 **Default next action until told otherwise:** staging recovery work order in `STAGING-RECOVERY-HANDOFF.md` (CSS disable → one hub link → more links).
 
+**Global symptom:** staging **flickers badly on every page** (Daniel). Not limited to one hub. Likely stacked explore/overlay CSS — not a Hostinger restore issue.
+
 **Queued after desktop recovery (not now):** Mobile / phone layout is badly broken (Daniel spot-check; possible 10Web-migration overlap, unconfirmed). Address in polish phase — do not open a mobile workstream during CSS/link recovery.

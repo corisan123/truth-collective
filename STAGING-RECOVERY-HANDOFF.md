@@ -35,6 +35,7 @@
 - Hub tiles often link to **wrong short/old URLs** → 404. Example: `/file-cabinets-credenza/` instead of the nested path.
 - Working Office path example: `/office-workspace-products-and-tools/best-analog-writing-tools/`
 - Visual issues (still after Jul 24 rollback): EXPLORE split as `EXPLOR` / `E`, overlay flicker, cropped/grey-bar images, white-on-white Smart Lighting descriptions, Computers page scrambled. User: child blocks were never built this way — full image + bottom title rising on hover was intended.
+- **Sitewide flicker (Daniel; confirm locked 2026-08-08):** screen / pages **flicker really bad on every page**, not only hubs. Prior handoff only noted “overlay flicker” in passing — treat as a **global** symptom (likely competing hover/overlay CSS, absolute image layers, or stacked `tc-explore*` / STAGING PATCH rules). Do not chase with restores. Address after or with controlled Additional CSS layer disables; note separately from Computers class-stripping.
 - Likely cause: leftover **Cursor/custom `tc-explore*` CSS** (and/or mismatched block classes), not missing media. `10web_tmp` is **gone** on live after Jul 24 restore.
 
 ---
