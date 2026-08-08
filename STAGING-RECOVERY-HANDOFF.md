@@ -123,11 +123,18 @@ User inventory (2026-08-08 screenshots): Smart Lighting children, Technology Hub
 
 Live HTML check: **no** `10web`/`tenweb` markers in page HTML. ~57KB of `tc-explore*` / STAGING PATCH CSS still present. See `diagnostics/css-inventory-2026-08-08.md`.
 
+**Link pattern (confirmed, not “page deleted”):**
+- File Cabinets **page exists** and loads:  
+  `/office-workspace-products-and-tools/office-file-cabinets-credenzas-essentials/`
+- Office hub **tile still points to old short URL** → 404: `/file-cabinets-credenza/`
+- Other hub hrefs still use dead old parent `best-office-workspace-products-tools/...` (404), e.g. desk-accessories.
+- Menus often have the correct nested URL; **image/block links inside page content are stale.** This is editable content, not unrecoverable corruption.
+
 **Next work order:**
-1. Disable/remove conflicting Additional CSS (`tc-explore-hub`, product overlay patches).
-2. Fix wrong hub/product URLs in block content.
-3. Confirm Plugins list has no 10Web; rename `object-cache.php` if present.
-4. Restores only if a later check proves missing media — not for this visual mess.
+1. Disable/remove conflicting Additional CSS (`tc-explore-hub`, product overlay patches) — crops/black bars.
+2. On each hub page, update block link URLs to match **Pages → View** permalinks (start: Office hub File Cabinets tile).
+3. Confirm Plugins list has no 10Web; check **WPCode** snippets (admin bar shows WPCode); rename `object-cache.php` if present.
+4. Restores only if a later check proves missing media — not for this visual/link mess.
 
 ---
 
