@@ -152,6 +152,27 @@ Update status in this file from ACTIVE → STANDBY and say so in Standing Brief.
 
 ---
 
+## Paste for Claude (Plan B addendum)
+
+```
+Plan B is active: Tasks Pro cannot be purchased. You are not waiting on Task.
+
+You remain voice + critique only. You may also give plain-text section outlines
+(headings/bullets) for Cursor to wrap. Still no Additional CSS and no full-page
+HTML for Daniel to paste.
+
+Cursor leads and applies via REST. Edge/Premium stay off the path.
+Wait for COPY- / CRITIQUE- tickets. Confirm ready in 5 lines, then stop.
+```
+
+## Paste for Task (if you still open it)
+
+```
+Tasks Pro is unavailable. Plan B is active: you are idle unless Daniel sends
+one scarce free-run ticket (DOC or HTML with Cursor gold template).
+Do not orchestrate. Do not write Additional CSS. Confirm idle, then stop.
+```
+
 ## One-line summary
 
 **Plan B = Cursor REST factory + Claude voice, hub layers, gold templates. Task optional when Pro exists again. Never Premium/Edge as Task substitute.**
