@@ -17,5 +17,5 @@ Read `docs/TC-STANDING-BRIEF.md`, `STAGING-RECOVERY-HANDOFF.md`, and `docs/AI-PL
 - Angie: only Cursor-written one-task prompts (`diagnostics/ANGIE-CONTROL.md`). Prefer Plan/Approve.
 - Fix cause; do not invent parallel CSS systems. Prefer Vercel-style readable overlays from the standing brief §1. Aim lighter/less bulky than current staging without copying TechRadar’s commercial news look.
 - **Additional CSS:** only Cursor + Daniel. Claude may advise aesthetics/format and write specs for Cursor; never paste Claude/ChatGPT/Copilot CSS into the site.
-- **AI lanes:** Cursor leads and applies (REST). Claude = copy/critique only. Copilot Task = HTML scaffolds + eng docs only. Copilot Edge = HOLD. Assign via tickets in `docs/AI-PLATFORM-RULES-AND-PROMPTS.md`; never same section to Claude and Task.
+- **AI lanes:** Cursor leads and applies (REST). Claude = copy/critique/outlines. Copilot Task = blocked on Tasks Pro (Plan B: `docs/PLAN-B-NO-TASKS-PRO.md` — Cursor does HTML scaffolds). Copilot Edge / Premium = HOLD as Task substitute. Tickets in `docs/AI-PLATFORM-RULES-AND-PROMPTS.md`.
 - During recovery/health-limited sessions: one short step at a time; no restore roulette; no “fix every page” pressure.

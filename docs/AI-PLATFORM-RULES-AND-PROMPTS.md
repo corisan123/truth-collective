@@ -1,7 +1,8 @@
 # Truth Collective — AI Platform Rules & Prompt Sheet
 
 **Owner:** Daniel Reid + Cursor (lead)  
-**Purpose:** Prep for paid Copilot Task + parallel Claude work without duplication, damage, or wasted cycles.  
+**Purpose:** Parallel AI work without duplication, damage, or wasted cycles.  
+**Plan B (ACTIVE):** Tasks Pro cannot be purchased yet — see `docs/PLAN-B-NO-TASKS-PRO.md`. Cursor owns HTML scaffolds; Claude owns voice; Task idle/scarce; never Copilot Premium/Edge as Task substitute.  
 **Authority order:** This sheet implements `docs/TC-STANDING-BRIEF.md` (§10, §13, §14) and `STAGING-RECOVERY-HANDOFF.md`. If anything conflicts, Standing Brief wins until Daniel confirms an update.
 
 **Session rule for every AI:** Staging only. Fix → polish → Semrush → launch. No restore roulette. No live edits. No inventing parallel workstreams.
@@ -14,8 +15,8 @@
 |----------|------------|-----|----------------------|---------------------------|
 | **Cursor** | Active / lead | Architecture, conflict checks, final HTML/CSS, REST apply, veto | Yes (staging App Password) | Yes (with Daniel) |
 | **Daniel** | Approver | Taste, View-check, Hostinger media, revoke keys | Yes (admin) | Yes (with Cursor) |
-| **Claude** | Hold until Phase R / polish drafts | Voice, long copy, aesthetic critique notes | No | No |
-| **Copilot Task** | Prep now; use when paid starts (Phase R+) | Structured HTML scaffolds, engineering/eval docs, section systems | No | No |
+| **Claude** | **Active under Plan B** | Voice, long copy, aesthetic critique, plain-text outlines | No | No |
+| **Copilot Task** | **Blocked on Tasks Pro purchase** | When available: HTML scaffolds + eng docs. Until then: idle or one scarce free DOC/HTML ticket only | No | No |
 | **Copilot Edge** | **HOLD** | Not on recovery path | No | No |
 | **ChatGPT / Operator** | Banned from CSS/HTML path | Historical damage | No | No |
 | **Angie** | Paused | Optional later UI clicks only | Only via Cursor one-task prompts | No |
@@ -33,8 +34,8 @@
 |-----------|--------|--------|
 | Long body, intros, FAQs, editorial prose | **Claude** | Clean text only |
 | Voice / tone / “bulky vs Vercel-light?” critique | **Claude** | Notes for Cursor (not CSS to paste) |
-| Card grids, section scaffolds, Custom HTML shells using locked `tc-*` | **Copilot Task** | HTML draft |
-| Engineering evaluation docs / Master Binder systems (later) | **Copilot Task** | Documents + scaffolds |
+| Card grids, section scaffolds, Custom HTML shells using locked `tc-*` | **Cursor (Plan B)** / Task when Pro returns | HTML → REST |
+| Engineering evaluation docs / Master Binder systems (later) | Defer or scarce free Task DOC | Documents |
 | Final HTML, CSS, WP block surgery, REST apply | **Cursor** | Live on staging |
 | Hostinger file/media 404s | **Daniel** | Uploads / File Manager |
 

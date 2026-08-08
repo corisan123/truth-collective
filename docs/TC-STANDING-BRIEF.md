@@ -216,7 +216,7 @@ Confirmed from Daniel’s attachments (sample UI, not current WP staging):
 |-----|------|
 | **Cursor + Daniel** | **Only** parties who write/edit/paste **Additional CSS**, and who **authorize** staging changes (hand edit, Application Password/REST, browser-in-admin, or Angie prompts). Cursor owns complex HTML using locked `tc-*` classes. Claude’s “don’t give Cursor the keys” advice is **overridden** for staging — Daniel trusts Cursor more; staging-only credentials OK under one-task Approve rules. |
 | **Claude** | Aesthetics judgment, long-paragraph rewrite, voice/formatting. **No** production CSS and no unreviewed full-page HTML for Daniel to paste. Specs → Cursor. |
-| **Copilot Task** | Strong **drafter** of structured Custom HTML / section scaffolds (matches DOM class names if told) + engineering/eval docs. **Cannot** wp-admin/FTP/Additional CSS. Drafts only → Cursor review. Tailwind apps **not** drop-in. **Not** the lead/orchestrator. Prep prompts now; run paid Task in Phase R+ under Cursor tickets. |
+| **Copilot Task** | Strong **drafter** when available. **Cannot** wp-admin/FTP/Additional CSS. **Not** lead/orchestrator. **2026-08-08:** Tasks Pro **not for purchase** → **Plan B active** (`docs/PLAN-B-NO-TASKS-PRO.md`): Cursor takes HTML scaffolds; Claude voice/outlines; free Task scarce/optional; do **not** buy Copilot Premium as substitute. Resume Task factory when Pro is buyable. |
 | **Angie** | In-WP agent (beta). **Paused** on critical path — spins/fails edits. Optional later if stable. |
 | **ChatGPT / Copilot Edge** | **HOLD** / out of production CSS/HTML path (historical damage). Edge must not retune roles. |
 | **Vercel / v0 / 10Web samples** | Visual reference only — not WP repair agents. |
@@ -367,12 +367,12 @@ Cursor is the only assigner. **Never** both draft the same section.
 |------|--------|----------|
 | Long body copy, voice pass, FAQ/editorial prose | **Claude** | Clean text (TC rules: no em dashes, no bold body, no contractions) |
 | Aesthetic critique / “does this feel bulky vs Vercel-light?” | **Claude** | Notes for Cursor — not paste-in CSS |
-| Structured page scaffolds, card grids, binder-style sections, Custom HTML shells using locked `tc-*` | **Copilot Task** (when paid / Phase R) | HTML draft → Cursor |
+| Structured page scaffolds, card grids, binder-style sections, Custom HTML shells using locked `tc-*` | **Cursor (Plan B)**; Task when Pro returns | HTML → REST |
 | Final HTML + CSS + WP apply | **Cursor** | Ships |
 
 **One page family workflow:** Claude finishes copy first → Cursor (or Task) wraps that copy in HTML → Cursor hardens → API/paste.  
 **Do not:** Claude and Task both rewrite the same Computers product blurb.  
-**Do not:** Let Task or Edge become orchestrator. Prep paid Task with `docs/AI-PLATFORM-RULES-AND-PROMPTS.md` during REST setup; run Task tickets in Phase R+ (and DOC tickets anytime under Cursor). Phase S site writes stay Cursor + Daniel (REST / hand URL fixes).
+**Do not:** Let Task or Edge become orchestrator. **Do not** wait on Tasks Pro or buy Copilot Premium as a Task stand-in. Plan B: `docs/PLAN-B-NO-TASKS-PRO.md`.
 
 ### What we explicitly reject as “best”
 
