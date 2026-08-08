@@ -238,10 +238,24 @@ Confirmed from Daniel’s attachments (sample UI, not current WP staging):
 - Structure: Governance → Scoring (expectation gap, 80/10) → Technical Ref → Editorial FAQ → Ranked Top 20 → filterable Master Grid → Glossary
 - Tailwind sample only — **Cursor + Daniel** port to WP; never paste Copilot HTML into Additional CSS as-is
 
+**Copilot Task site audit (2026-08-08) — conflict framing (locked):**
+- Binder was built from four prior docs only — **not** from live/staging inventory.
+- Site = full curated TC-graded catalog. Binder = executive/premium editorial intelligence. Different jobs.
+- High conflicts if treated as one catalog: Amazon ★ vs TC Grade; many Top 20 SKUs not on site; some models differ (e.g. ASUS PA32UCXR vs site PA32UCDM; Samsung G9 variants).
+- That mismatch is OK if framed as companion editorial, not product inventory.
+
+**Launch decision (Daniel + Cursor — do not reopen during recovery):**
+- **Option 1 only for launch:** keep product pages; add a short CTA to a separate Master Binder child page after staging overlays/links are stable.
+- **Do not** Option 2/3 before launch (no SKU rewrite, no product-page redo, no full binder reconciliation).
+- **Do not** let Copilot Task paste its full Tailwind HTML into Gutenberg / Additional CSS / theme files.
+- Copilot may draft CTA copy only. **Cursor + Daniel** own any WP HTML/CSS and locked `tc-*` classes.
+- Animations stay safe by reusing locked classes or adding new unique classes — never editing the animation stylesheet during binder work.
+
 **Rules when resumed:**
 - Cursor owns implementation code (Additional CSS / custom HTML)
 - Claude may critique aesthetics only
 - Grades stay standards-driven (Selection Standards / SME governance), never vibe scoring
+- Site TC Grades are authoritative on product pages; binder star decoder is consumer-sentiment education unless later rewritten in TC Grade language (post-launch Option 3)
 
 ---
 

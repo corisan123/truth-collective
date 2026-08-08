@@ -67,6 +67,17 @@ Close to Master Brief locked palette (navy `#1e3a5f`, gold `#b8944b`, cream). Pr
 | **Qualitative** | Parallel track for books/editorials/scripts (not this artifact) |
 | **Cursor HTML goal** | Product URL/ID in → summary + grade out, driven by these governance docs |
 
+## Site vs binder (Copilot Task audit, 2026-08-08)
+
+| Reality | Implication |
+|---------|-------------|
+| Binder content from 4 docs, not site scrape | Not inventory truth |
+| Site uses **TC Grade**; binder uses Amazon ★ + decoder | Different methodologies — label clearly |
+| ~2 of Top 20 overlap site listings | Binder is broader premium landscape |
+| SKU mismatches (e.g. PA32UCXR vs PA32UCDM; G9 variants) | Do not treat binder ranks as site catalog |
+
+**Launch path (locked §12):** Option 1 — CTA + separate child page only. No product-page rewrite. No Copilot Tailwind paste. Cursor + Daniel implement after staging CSS/link recovery.
+
 ## Resume rule
 
 Do not rebuild this inside staging recovery. After overlays/links stabilize, Cursor ports patterns under Additional CSS / custom HTML ownership rules (§10).
