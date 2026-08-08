@@ -162,3 +162,5 @@ Live HTML check: **no** `10web`/`tenweb` markers in page HTML. ~57KB of `tc-expl
 ## Session note for helpers
 
 User is recovering from chemo/immunotherapy. Prefer **one short step**, **one question**, wait for the answer, then continue. No long checklists dumped at once in chat.
+
+**Business priority (standing brief §13):** Fix staging → polish → Semrush → launch → then social/Pinterest. Do not start binder integration, Semrush, or social work until staging recovery step 1 is done.

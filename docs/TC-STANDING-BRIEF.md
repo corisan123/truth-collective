@@ -259,5 +259,16 @@ Confirmed from Daniel’s attachments (sample UI, not current WP staging):
 
 ---
 
-## §13 — (open)
-Daniel may append more sections one at a time.
+## §13 — Priority order (locked; Daniel 2026-08-08)
+
+Top-1% quality is the destination. Order of work is non-negotiable:
+
+1. **Fix staging** — overlays, wrong hub links, leftover AI CSS damage. No new feature work that risks another break.
+2. **Improve / polish** — Vercel-level hover language, light commercial feel, locked `tc-*` classes only.
+3. **Semrush audit** — after staging looks launch-ready, not before.
+4. **Launch** — staging → live per Migration Brief preserve-only rules (§6).
+5. **Post-launch growth** — Pinterest boards/pins, resume posting on **8 Truth Collective business social accounts** (currently zero followers / idle because live has sat broken ~60+ days).
+
+**Context:** ~5 weeks already spent repairing Claude / ChatGPT / Copilot Edge mistakes. Live site idle and broken. Daniel will not redo product catalogs for binder polish. Helpers must not invent parallel workstreams (binder SKUs, social strategy, Semrush) until step 1 is done.
+
+**Default next action until told otherwise:** staging recovery work order in `STAGING-RECOVERY-HANDOFF.md` (CSS disable → one hub link → more links).
