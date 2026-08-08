@@ -136,10 +136,11 @@ Live HTML check: **no** `10web`/`tenweb` markers in page HTML. ~57KB of `tc-expl
 3. **10WEB manager is still Active** (v1.20.21). **User pause (2026-08-08):** do **not** deactivate/delete 10Web yet — user too sick/exhausted; wants 10Web to own fix via ticket **#375660**. Helpers: do not push plugin changes or page-by-page edits until user asks.
 4. Restores only if a later check proves missing media — not for this visual/link mess.
 
-### Pause / care boundary
-- Stop restore roulette. Stop “fix every page” pressure.
-- When user is ready later: one small action at a time (CSS disable **or** one hub link), never both at once.
-- 10Web ticket stays for RCA/compensation; local recovery can wait.
+### Angie-assisted path (started 2026-08-08 ~09:13)
+- User wants **Angie (Elementor)** to act inside WP, under **Cursor-written prompts only**.
+- Protocol + task queue: `diagnostics/ANGIE-CONTROL.md`
+- Still: no restore roulette; leave 10Web alone until user says otherwise.
+- First Angie work: **one Office hub link** (prove control), not site-wide rebuild.
 
 ---
 
