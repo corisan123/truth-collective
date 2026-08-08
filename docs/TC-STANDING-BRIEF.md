@@ -30,13 +30,24 @@ Update only with Daniel’s confirmation (Master Brief rule).
 - Large high-res images; full tile is the visual plane
 - **At rest:** title at **bottom** of image
 - **On hover:** image lifts and slightly darkens; title rises; transparent **EXPLORE** (hubs may use gold `>`). Entire image is linked
+- EXPLORE is **not a button** — look-alike label driven with JS/CSS; **the entire image is the link**
 - EXPLORE must never split (`EXPLOR` / `E`)
-- Add class **only on Section** block: `tc-explore-hub`
+- Target placement: class on the intentional block (historically image and/or Section — see layer history below). Do not invent a third class system.
 
 ### Overlay cards (`tc-overlay-card`)
 - Structure: Group (GTB) → often Row (KD) → Section (KD) → header + image + paragraph
 - Class **only on Section:** `tc-overlay-card` (product modifier `tc-overlay-card-product` sits **beside**, never replaces)
 - Hover: lift, slight darken, title moves up, description reveals in bright white; whole card linked
+
+### Overlay + Explore layer history (Daniel 2026-08-08 — recovery critical)
+
+1. **First:** `tc-overlay-card` on **Section** (Kadence) only.
+2. **Separately:** `tc-explore-hub` on **images** — EXPLORE look-alike + whole-image link (not a real button).
+3. **Later:** both used **together** on some pages → **CSS conflict → image crop** (one layer overriding another).
+4. Cursor then appended **many add-on patches** for each circumstance, each claiming no collision with locked classes — still stacked in Additional CSS.
+5. Images also had to be **specific sizes**; wrong dimensions made the CSS behave oddly.
+
+**Recovery rule:** Expect many Explore/Overlay add-ons. Do **not** delete the whole Explore system in one pass. Identify which **later add-on** fights the combo (both classes present) vs the original single-class behavior. Disable one named add-on block at a time and re-check the page that crops.
 
 ### Book cards (`tc-book-card`)
 - Section: `tc-book-card`; paragraphs: `tc-leadership-body`; parent button: `tc-book-button`
