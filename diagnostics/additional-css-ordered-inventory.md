@@ -20,3 +20,7 @@
 ## Paste log
 
 (Daniel will paste large chunks after book-page code. Store under `diagnostics/css-chunks/` as received.)
+
+**End of Customizer CSS (live homepage 2026-08-08):** after `End STAGING PATCH 02-GRADE` (+ mobile row padding) comes **only** `TC Membership Toggle — light / Vercel-aligned`. That is expected footer, not proof the rest was deleted. Live HTML still contains Explore Hub + 02A + overflow + grade **above** membership.
+
+**Missing-content check:** If Daniel’s 2-day-old save has blocks that search cannot find in Additional CSS now, restore from that save into a text file and diff — do not paste blindly over the working 02A/membership sections. Page **HTML** (Custom HTML blocks) is separate from this CSS file.
