@@ -296,10 +296,69 @@ Top-1% quality is the destination. Order of work is non-negotiable:
 
 **Context:** ~5 weeks already spent repairing Claude / ChatGPT / Copilot Edge mistakes. Live site idle and broken. Daniel will not redo product catalogs for binder polish. Helpers must not invent parallel workstreams (binder SKUs, social strategy, Semrush) until step 1 is done.
 
-**Default next action (Daniel 2026-08-08):** **Angie Phase S (stable)** then **Phase R (rebuild page-by-page)**. See `diagnostics/ANGIE-CONTROL.md`. No more multi-day ghost-block repair; corrupted blocks are deleted and rebuilt. No Hostinger restore roulette. Computers revision hunt closed.
+**Ghost / wrong-link rule:** Slug and URL can look correct and still fail. Do not spend days hunting invisible corruption. Delete the bad block; rebuild under Cursor.
 
-**Ghost / wrong-link rule:** Slug and URL can look correct and still fail. Do not spend days hunting invisible corruption. Delete the bad block; rebuild with Cursor + Angie.
+**Global symptom:** staging **flickers badly on every page** (Daniel). Likely stacked explore/overlay CSS — not a Hostinger restore issue.
 
-**Global symptom:** staging **flickers badly on every page** (Daniel). Not limited to one hub. Likely stacked explore/overlay CSS — not a Hostinger restore issue.
+**Queued after desktop recovery (not now):** Mobile polish — do not open mid-recovery.
 
-**Queued after desktop recovery (not now):** Mobile / phone layout is badly broken (Daniel spot-check; possible 10Web-migration overlap, unconfirmed). Address in polish phase — do not open a mobile workstream during CSS/link recovery.
+---
+
+## §14 — Best strategy stack (outcome-optimal; Daniel asked 2026-08-08)
+
+Not “easiest.” Not “what feels convenient.” **Best path to repair → polish → Semrush → launch.**
+
+### Does WordPress Application Password / REST API help Cursor do best work?
+
+**Yes — it is the highest-leverage authorized channel for this site.**
+
+| Why API is best for Cursor | Limit |
+|----------------------------|--------|
+| Pull exact `post_content` (Gutenberg/Kadence block HTML) | Must edit block markup carefully |
+| Surgical link/class/HTML fixes; push one page at a time | Not a visual design tool |
+| Repeatable, loggable, no Angie spin | Media uploads need Media API or Hostinger |
+| Matches Cursor strength (structure, conflicts, precision) | Taste still from Claude/Task drafts |
+| Staging-only password; revoke anytime | Never use on live until launch playbook |
+
+**API alone is not enough.** Best combination below.
+
+### Optimal combination (ranked roles)
+
+1. **Cursor (lead)** — Architecture, Additional CSS ownership, conflict checks, final HTML, **applies** changes via REST (primary) + browser-in-admin (exception) + named WP-CLI if SSH exists (backup/search-replace).
+2. **Staging Application Password** — Primary auth for Cursor writes to pages. One-task or small batches only after first proven edit.
+3. **SSH + WP-CLI** (if Hostinger allows) — **Backup page content before each API write**; occasional safe search-replace. Not for freestyle SQL.
+4. **Claude + Copilot Task** — Parallel **draft factories**: voice, aesthetics, section HTML using **only** locked `tc-*` classes. Cursor vetoes/merges. Neither gets Additional CSS or wp-admin keys.
+5. **Daniel** — Approve policy, View-check critical URLs, taste sign-off, Hostinger file/media when disk 404s. Minimal paste labor.
+6. **Angie** — Off critical path (beta unreliable). Optional later for trivial UI clicks if stable.
+7. **Vercel / v0** — Visual reference only.
+8. **Hostinger restores / Updraft Continue / ChatGPT Operator** — Excluded from strategy.
+
+### Phased execution (best order)
+
+**Phase S — Stabilize (API-first)**  
+- Inventory pages/links via REST (Cursor).  
+- Fix homepage/hub navigation: missing hrefs, wrong targets, 404 paths — prefer API content edit; Daniel can still hand-fix while password is set up.  
+- Ghost/corrupt blocks: **delete + replace** in `post_content`, not multi-day repair.  
+- Sitewide flicker: Cursor names one Additional CSS block to disable; Daniel comments it in Customizer **or** Cursor writes theme_mod only if safely identified — never wipe CSS.  
+- Media 404s: File Manager / selective uploads restore of missing `uploads/2026/07/` files — not Jul 24 full-site restore.
+
+**Phase R — Rebuild page families**  
+- Template per family (hub card, product overlay card, book card).  
+- Task/Claude draft → Cursor harden → API apply → spot-check one URL.  
+- Computers = rebuild-in-place from template (revision hunt closed).
+
+**Phase P — Polish**  
+- Vercel-level motion within locked classes; membership toggle pattern preserved; light commercial feel.  
+- Master Binder = Option 1 CTA child page only until stable.
+
+**Phase L — Semrush → launch**  
+- Audit only when staging navigation + key templates are trustworthy.  
+- Staging → live per Migration Brief preserve-only (§6).
+
+### What we explicitly reject as “best”
+
+- Waiting on Angie beta  
+- Hand-pasting 86 pages with no API  
+- Copilot Task as applicator (it cannot wp-admin)  
+- Claude owning credentials  
+- Another restore roulette to “find” the finished Computers page
