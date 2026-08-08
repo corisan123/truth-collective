@@ -125,9 +125,13 @@ Compare **28 Jul 2026 @ 10:06** → **@ 11:34** (UI may say 11:43):
 
 **First real Restore candidate family:** WordPress Revision **28 Jul 2026 ~11:34/11:43** (not stub, not Jul 24 Hostinger, not Updraft autosave of “product shortlist coming next”).
 
-**Before Restore:** use revision **Preview**. Confirm multiple `tc-overlay-card` / explore on product images. Expect **images may still 404** until `uploads/2026/07/` files are restored — markup/classes can come back while media is separate.
+**Before Restore:** Daniel’s UI may show **Compare** + **Restore Autosave** only (no Preview). That usually means the **autosave banner** or Updraft-adjacent UI — **not** the full Revisions screen.
 
-Editor “last edited ~11 days ago” from 2026-08-08 ≈ **Jul 28** — live may already be that save with later corruption, or classes stripped without a clean later revision. Preview 11:34 anyway; if Preview looks more correct than live, Restore that revision.
+**Correct path:** Page editor → right sidebar **Page** tab → **Revisions** (the number link, e.g. “20”) → opens compare UI with **Restore This Revision** (wording varies; must say **Revision**, not Autosave).
+
+**If no Preview:** Compare **is** the review. You already confirmed `tc-overlay-card` on **28 Jul ~11:34**. That is enough to Restore **that revision** from the Revisions screen. Expect **images may still 404** until uploads fixed.
+
+**Never click Restore Autosave** for Computers unless Cursor confirms that autosave is the full overlay build (the “product shortlist coming next” autosave was incomplete — skip it).
 
 ## Next recovery order (Computers only)
 1. **Preview** WP revision **28 Jul ~11:34/11:43**. If overlays/structure look right → **Restore This Revision** (WP Revisions only).
