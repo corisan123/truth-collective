@@ -85,6 +85,22 @@ Sample media in snippet: `…/uploads/2026/07/Facebook-Cover-AI-Agentic-Advances
 
 **Recovery implication:** 7/28 11:43 is the right **family** of revisions (post-stub). Still verify the **full** 7/28 revision includes product rows with `tc-overlay-card` / `tc-explore-hub` before Restore — do not stop at the intro-only portion of the compare view.
 
+### Mid-build markers Daniel found in same era (2026-08-08)
+
+**A. Page-scoped “explore tiles” CSS (not the later hub system)**  
+Added under `.tc-page--computers`:
+- `.tc-explore` — 1-col grid, 3-col from 720px
+- `.tc-tile` — min-height 220px, radius 12px, soft gradient, transform/shadow transition  
+
+This is an **earlier Computers-page pattern** (CSS tied to `.tc-page--computers` + `.tc-explore` / `.tc-tile`). It is **not** the same as locked **`tc-explore-hub` on Kadence images** + Customizer overlay stacks. Seeing “explore” here only proves mid-build experimentation, not that product overlay cards are complete.
+
+**B. Near bottom of same build wave**  
+- Placeholder: **“Product shortlist coming next”** + note that product cards were **not started** in the source PDF yet — waiting on product list / affiliate links.
+- Then more shell: disclosure, Kadence row, **“Latest Advancements in CPU Architecture”**, etc.
+- UI shows **UpdraftPlus** + **“Restore This Autosave”** — do **not** click that unless Cursor says so. Autosave/Updraft ≠ “restore finished Rank Math page.” Prefer WP **Revisions** of the finished build.
+
+**Meaning:** This snapshot is **page shell mid-flight** (intro cards + explore-tile CSS + CPU section), **before** product shortlist/cards. Keep scrolling to a **later** revision after products were dropped in (search `tc-overlay-card-product` or `amzn.to` + `tc-explore-hub`).
+
 **Hero+paragraphs revision = pre-build stub. DO NOT RESTORE IT.**  
 Restoring that would **delete** the finished Computers page and roll back to “just started.”
 
