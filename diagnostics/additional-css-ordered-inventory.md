@@ -13,6 +13,7 @@
 | STAGING PATCH 02A — overlay buttons + stars | **SKIP — known good** |
 | Protected extract: `.tc-overlay-card-product` aspect-ratio + button height | `css-chunks/02a-product-overlay-protected.css` |
 | STAGING PATCH 02-PRODUCT OVERFLOW FIX | `css-chunks/02-product-overflow-fix.css` — present but failing on site; diagnose before disable |
+| 02-PRODUCT POLISH + TC PRODUCT OVERLAY BUTTONS | `css-chunks/02-product-polish-and-buttons.css` — buttons SSoT; leave unless proven conflicting |
 | Later 02-PRODUCT / hero / grade patches | Awaiting paste |
 
 ## Paste log
