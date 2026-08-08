@@ -304,6 +304,8 @@ Top-1% quality is the destination. Order of work is non-negotiable:
 
 **Queued after desktop recovery (not now):** Mobile polish — do not open mid-recovery.
 
+**Queued pattern factory (not now):** Daniel has **23** WP Patterns (plus Word/PDF on his computer). Many pattern links broke in the crash; he correctly stopped hand-editing. Homepage links are View-good per Daniel (2026-08-08). Pattern repair/polish = Cursor REST batch later (`diagnostics/patterns-inventory-2026-08-08.md`), with Claude/Task only on tickets — not Daniel hand-work.
+
 ---
 
 ## §14 — Best strategy stack (outcome-optimal; Daniel asked 2026-08-08)
