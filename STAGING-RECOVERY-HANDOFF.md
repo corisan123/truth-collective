@@ -45,7 +45,8 @@ Answer these three, then stop.
 
 ### Q1 — Is `10web_tmp` still under staging uploads?
 
-**Where:** Hostinger → File Manager → `public_html/tcstaging/wp-content/uploads/`  
+**Where:** Hostinger → **File Manager** (live files, not Restore browser) →  
+`public_html/tcstaging/wp-content/uploads/`  
 **Look for:** folder named `10web_tmp`
 
 | Result | Meaning |
@@ -53,8 +54,10 @@ Answer these three, then stop.
 | Folder **still there** | Jul 24 uploads restore likely **merged**, did not fully replace |
 | Folder **gone** | That restore may have replaced uploads (or folder was removed another way) |
 
-**Public probe (2026-08-08):**  
-`/wp-content/uploads/10web_tmp/.htaccess` → **403** (not 404). That usually means the path still exists on disk. Confirm in File Manager before treating as final.
+**Status (2026-08-08):**
+- Jul 24 **backup** browser at `…/uploads` shows: `2026`, `backup`, `rank-math`, `wpforms` — **no** `10web_tmp`. That backup is clean. Good.
+- User reports after last night’s restore, 10Web is gone from their view.
+- Public probe still gets **403** on `/wp-content/uploads/10web_tmp/.htaccess` (and on `plugins/10web-manager/`). Needs a quick **live File Manager** confirm (not the Restore/backup file list) before closing Q1.
 
 ---
 
