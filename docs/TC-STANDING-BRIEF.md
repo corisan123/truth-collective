@@ -153,5 +153,32 @@ See `STAGING-RECOVERY-HANDOFF.md`. Short version:
 
 ---
 
-## §9 — (open)
-Daniel may append more sections one at a time.
+## §9 — Competitor polish references (feel, not clone)
+
+**Sources:** Hearing Tracker note + TechRadar screenshots (2026-08-08).  
+**File:** `docs/brand-references/HEARING_TRACKER_WEBSITE_TO_COMPARE_TC_WEBSITE.docx`  
+**Sites:** https://www.hearingtracker.com · https://www.techradar.com
+
+These are **polish / UX references**. Keep Truth Collective locked palette and type (§2). Do not import TechRadar magenta/dark-news skin as the TC brand system.
+
+### Shared feel targets
+- Polished, professional, **not heavy or blocky**
+- Generous spacing; clear hierarchy; high-quality imagery
+- Motion that invites exploration (hover, light lift) without crushing readability
+- Homepage can lead with **video or premium hero** (Hearing Tracker plays video on entry; Vercel samples also valued a video placeholder)
+
+### Hearing Tracker — match these three homepage jobs
+1. **Premium visual hero** — immediate premium signal (TC: curated workspace, book stack, or Truth Untold cover / video)
+2. **Clear intent routing** — “How can we help?” style paths (TC target: four paths such as Leadership, Workspace, Self-Development, Technology)
+3. **Authority signals** — lab-tested / counted proof badges (TC: 30+ years executive experience, research hours with leaders, named hubs and featured series)
+
+### TechRadar — borrow structure habits, not their brand colors
+- Modular editorial grids with strong contrast and readable type
+- Featured story + supporting grid + clear “latest / all” routes
+- Thin accent rules and rounded content planes that feel light, not stacked gray cards
+- Asymmetry and image quality over dense equal blocks
+
+### Explicit non-goals
+- Do not rebuild TC as a dark news portal
+- Do not add Magento/magenta TechRadar accents as brand gold replacement
+- Do not start a homepage redesign mid-recovery until staging links/CSS are stable enough to trust what you see
