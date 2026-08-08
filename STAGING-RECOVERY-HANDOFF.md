@@ -130,6 +130,8 @@ Live HTML check: **no** `10web`/`tenweb` markers in page HTML. ~57KB of `tc-expl
 - Other hub hrefs still use dead old parent `best-office-workspace-products-tools/...` (404), e.g. desk-accessories.
 - Menus often have the correct nested URL; **image/block links inside page content are stale.** This is editable content, not unrecoverable corruption.
 
+**CSS location (Daniel confirmed 2026-08-08):** All Cursor/AI CSS is in **Appearance → Customize → Additional CSS** only. **Code Snippets was never used.** (Additional CSS holds stylesheets, not page HTML.)
+
 **Next work order:**
 1. Disable/remove conflicting Additional CSS (`tc-explore-hub`, product overlay patches) — crops/black bars.
 2. On each hub page, update block link URLs to match **Pages → View** permalinks (start: Office hub File Cabinets tile).

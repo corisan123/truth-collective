@@ -35,7 +35,7 @@
 |---|--------|------|
 | A0 | next | Read-only: confirm Office hub File Cabinets tile href |
 | A1 | queued | Fix that **one** link to the correct permalink |
-| A2 | queued | Read-only: find where `tc-explore` CSS lives (Customizer vs Code Snippets) |
+| A2 | done (Daniel 2026-08-08) | `tc-explore` / STAGING PATCH live in **Appearance → Customize → Additional CSS** only. Code Snippets never used. |
 | A3+ | later | More hub links / CSS — only after A1 proves control |
 
 ## Correct File Cabinets permalink
