@@ -9,7 +9,7 @@ Update only with Daniel’s confirmation (Master Brief rule).
 - `TC_Cursor_Migration_Brief.docx` (§6)
 - `Cursor_tips_for_launch_6.docx` (§7)
 - `HEARING_TRACKER_WEBSITE_TO_COMPARE_TC_WEBSITE.docx` + TechRadar screenshots (§9)
-- Membership toggle CSS + evaluation-engine intent (§11–§12); Copilot Task share pending screenshot/export
+- Membership toggle CSS (§11) + Copilot Task Master Binder archive (§12)
 
 **Session open line:** Read `docs/TC-STANDING-BRIEF.md` and `STAGING-RECOVERY-HANDOFF.md`, then continue.
 
@@ -222,24 +222,26 @@ Confirmed from Daniel’s attachments (sample UI, not current WP staging):
 
 ## §12 — Technical evaluation engine (paused; resume later)
 
-**Intent (from prior Cursor + Copilot Edge work):**
-- Copilot Edge produced quantitative and qualitative technical engineering evaluation documents / SME governance spec sheets
-- Cursor wrote complex HTML so Daniel only enters a product URL or ID
-- Throughput: descriptive summary + expert grade/rank that is **technical, not subjective**
+**Intent (Cursor + Copilot Edge + Copilot Task):**
+- Copilot Edge: quantitative/qualitative engineering evaluation docs and SME governance spec sheets
+- Copilot Task: interactive **Master Binder** UI (example: Premium Display Intelligence)
+- Cursor: complex HTML so Daniel enters product URL or ID → descriptive summary + expert grade/rank that is **technical, not subjective**
 - Two tracks:
-  - **Quantitative** — physical products
+  - **Quantitative** — physical products (Master Binder pattern)
   - **Qualitative** — books, editorials, scripts, etc.
-- Work paused when “the dam broke” (site crash / recovery). Do not discard; resume after staging is stable
+- Paused when the site crash hit. Do not discard. Resume after staging is stable.
 
-**Copilot Task visual (not Copilot Edge):**
-- Share link (geo-blocked from this agent environment):  
-  https://copilot.microsoft.com/shares/artifacts/Z6LhgwiDPF9L2D8JPqHTd
-- Need Daniel to upload screenshot and/or HTML/export so Cursor can lock the UI pattern into `docs/brand-references/`
+**Captured artifact (2026-08-08):**
+- Docs: `docs/brand-references/master-binder-premium-display-intelligence.md`
+- Tokens: `docs/brand-references/master-binder-tc-tokens.css`
+- Share: https://copilot.microsoft.com/shares/artifacts/Z6LhgwiDPF9L2D8JPqHTd
+- Structure: Governance → Scoring (expectation gap, 80/10) → Technical Ref → Editorial FAQ → Ranked Top 20 → filterable Master Grid → Glossary
+- Tailwind sample only — **Cursor + Daniel** port to WP; never paste Copilot HTML into Additional CSS as-is
 
 **Rules when resumed:**
 - Cursor owns implementation code (Additional CSS / custom HTML)
 - Claude may critique aesthetics only
-- Grades must stay standards-driven (Selection Standards / SME governance), never vibe scoring
+- Grades stay standards-driven (Selection Standards / SME governance), never vibe scoring
 
 ---
 
