@@ -9,6 +9,7 @@ No `10web` / `tenweb` / `twbb` markers found in HTML of home, Technology Hub, Co
 - `STAGING PATCH 01A — TC BOOK CARD H5 TITLE CONTROL` — book cards / H5 spacing only; leave on for now
 - `STAGING PATCH 01C-PRODUCT — LOCK IMAGE HEIGHT ON PRODUCT CARDS ONLY` — `tc-product-card` image height; can crop products; candidate later, not first if hub EXPLORE is the symptom
 - `STAGING PATCH 01G — FORCE CARD LABEL ONTO ITS OWN LINE` — **intended fix** for title overlap; leave on. If overlap persists, later patches (Explore Hub / 02-PRODUCT) are likely overriding or fighting it.
+- `TC Explore Hub Overlay Animation, 2026-05-26` — targets explore/overlay on section/hub cards (`tc-explore-hub` / related). **Primary disable candidate** for EXPLORE crop/flicker once full block (start→end comment) is confirmed. Daniel notes intent around `tc-overlay-card` on SECTION in Kadence.
 
 ### From live HTML earlier
 - `/* End TC Row-Stretch Override */`
