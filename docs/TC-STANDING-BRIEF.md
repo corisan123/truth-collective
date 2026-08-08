@@ -201,13 +201,24 @@ Confirmed from Daniel’s attachments (sample UI, not current WP staging):
 
 | Who | Role |
 |-----|------|
-| **Cursor + Daniel** | **Only** parties who write, edit, or paste into **Additional CSS** / site CSS coding |
-| **Claude** | Standing by for aesthetics, formatting judgment, structure critique, copy/UX direction. **No production CSS/code** for Daniel to paste. May draft specs/instructions **for Cursor** |
-| **Angie** | Executes inside WP only via Cursor-written one-task prompts |
-| **ChatGPT / Copilot** | Not in the production CSS path (historical source of heavy/bulky direction) |
+| **Cursor + Daniel** | **Only** parties who write, edit, or paste into **Additional CSS** / site CSS coding. Cursor writes **page HTML** for Custom HTML blocks (reuse locked `tc-*` classes so hover/lift/overlay stay intact). |
+| **Claude** | Long-paragraph **rewrite**, voice/formatting, structure critique. **No production CSS** and no full-page HTML for Daniel to paste. Hands clean copy/specs **to Cursor**. |
+| **Angie** | Executes inside WP only via Cursor-written one-task prompts (paste/replace a block, fix one link, etc.). Alternative applicator to Daniel hand-pasting. |
+| **ChatGPT / Copilot** | Not in the production CSS/HTML path (historical source of heavy/bulky and broken direction) |
 | **V0 / Vercel / 10Web samples** | Visual reference only |
 
 **Must:** No other generative AI puts code into Additional CSS. If Claude proposes CSS, Cursor reviews and implements or rejects. Daniel does not paste Claude, ChatGPT, or Copilot CSS into the site.
+
+### 86-page polish pipeline (after staging is fixed — not during recovery)
+
+Goal: Daniel does **not** manually rebuild ~86 pages. Pipeline:
+
+1. **Claude** rewrites long body copy / formatting to TC voice (no em dashes, no bold body, no contractions, affiliate-only rules).
+2. **Cursor** builds one page (or one template family) as Custom HTML that reuses locked classes (`tc-book-card`, `tc-product-card`, `tc-explore-hub`, etc.) + existing media URLs — animations come from **existing Additional CSS**, not new invented systems.
+3. **Daniel or Angie** places that HTML in a Custom HTML block (one page at a time after a proven template).
+4. Repeat by page family (hubs → children), not a site-wide dump.
+
+**Honesty check:** One paste can ship structure, copy, and class-bound motion when classes already exist and media URLs are correct. It cannot “fix” broken Additional CSS or wrong hub links underneath — that is why recovery is step 1.
 
 ---
 
