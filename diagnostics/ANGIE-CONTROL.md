@@ -57,9 +57,10 @@ Page-by-page (or one card / one section at a time): Cursor supplies Custom HTML 
 |---|--------|------|
 | A2 | done | CSS lives in Appearance → Additional CSS only |
 | Computers | closed | Revision hunt stopped; rebuild later |
-| **S0** | **next** | Read-only: Homepage — list primary hub/child links (label + href). No edits. |
-| S1 | queued | From S0 list: pick **one** dead-but-pretty link; confirm correct Pages permalink |
-| S2 | queued | Fix that **one** homepage link OR delete/replace that **one** ghost block (Cursor decides after S0/S1) |
+| **S0** | **partial (Daniel)** | Homepage: first **three** major child blocks still had locked CSS classes; **hrefs were stripped**. Daniel re-linked all three — **they work now.** Pattern: classes can survive while links are removed. |
+| S0b | next (Angie) | Read-only: list remaining homepage hub/child links below those three (label + href). No edits. |
+| S1 | queued | From list: next dead/missing link — one only |
+| S2 | queued | Fix that **one** link OR delete/replace that **one** ghost block |
 | R0 | later | First rebuild page/card after Phase S feels stable to Daniel |
 
 ## Correct File Cabinets permalink (still valid)
