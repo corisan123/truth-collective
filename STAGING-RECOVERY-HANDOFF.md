@@ -178,4 +178,6 @@ User is recovering from chemo/immunotherapy. Prefer **one short step**, **one qu
 - Product-row snippet (Jul 24-era): Kadence image still had `tc-explore-hub` + affiliate link; overlay belongs on Section, not the image — matches original split architecture.
 - Detail: `diagnostics/computers-page-2026-08-08.md`
 - **Next:** try **Page Revisions** (prefer ~Jul 28-era) before rebuilding; never another Jul 24 full restore.
-- Revision ~12:42 (user “10/26”, likely 7/26): has hero/images in markup + book cards only; **no product overlay classes**. Hero file **exists** on `tcstaging.truth-collective.com` (HTTP 200); wrong host `tcstaging.collective.com` → 403. Do not Restore that revision until overlay classes found elsewhere.
+- **Computers was fully built** (Rank Math ~90, animated, images) **just before 10Web crash.** Hero+paragraphs revisions are the **early stub only — never Restore those** (would wipe the finished page).
+- Stub hero file still **200** on correct host. Product `/uploads/2026/07/` files often **404** after Jul 24 uploads path.
+- Hunt Revisions for the **full post-build** page with overlay classes; else repair current crushed full markup one card at a time.

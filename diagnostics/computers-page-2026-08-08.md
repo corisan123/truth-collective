@@ -65,22 +65,27 @@ Sample media in snippet: `…/uploads/2026/07/Facebook-Cover-AI-Agentic-Advances
 - Do not Hostinger restore again for this page
 - Do **not** re-apply Jul 24 backups hoping Computers improves
 
-## Revision note — user “10/26” 12:42 (Daniel 2026-08-08)
+## Build history (Daniel 2026-08-08 — critical)
 
-(Confirm calendar date: likely **7/26** given crash timeline; user typed 10/26.)
+1. **Early stub only:** hero image + a few paragraphs (what “7/26” / “3/26” revision tops look like — same hero size).
+2. **Then** Daniel built the page to ~**90/100 Rank Math**, fully animated, product images, overlays — **completed just before the 10Web crash**.
+3. Crash / restores damaged that finished build. **Jul 24** made it worse than the Jul 28 review.
 
-**In that revision:**
-- Hero + other **images present in markup** (e.g. core `wp:image` hero `uploads/2026/03/Untitled-3200-x-1040-px-…`)
-- Still **no overlay/explore product animation classes** beyond book-card pattern
-- Includes older page-scoped `.tc-page--computers` CSS tokens (navy/gold/cream) in content — separate from Customizer Additional CSS stacks
-- Watch image host: snippet showed `tcstaging.collective.com` (missing `truth-`) — if real, those URLs would 404 even when files exist on `tcstaging.truth-collective.com`
+**Hero+paragraphs revision = pre-build stub. DO NOT RESTORE IT.**  
+Restoring that would **delete** the finished Computers page and roll back to “just started.”
 
-**Live now:** Daniel — **no images anywhere** on Computers. Matches probed **404** on `/uploads/2026/07/…` product files after Jul 24 uploads path. Revision proves markup once pointed at images; crush = **classes stripped + media missing/wrong host**, not “CSS deleted.”
+Correct target: a revision (or current markup repair) of the **post-build** page — product grid + `tc-overlay-card` / `tc-overlay-card-product` + `tc-explore-hub` + working media.
 
-**Do not Restore that revision yet** if it lacks overlay classes — you would keep missing animations and may not bring media files back (files live on disk / Hostinger, not inside the revision HTML alone).
+**Live now:** full product copy still largely present but crushed; images 404 / classes stripped. Crush = **finished-page markup damaged + media missing**, not “page was never built.”
+
+## Revision note — stub at 12:42 / 7/26-style top
+
+- Hero URL (correct host): `…/uploads/2026/03/Untitled-3200-x-1040-px-1024x333.png` → **HTTP 200** on staging
+- No product overlay animation classes (expected for stub)
+- Optional older `.tc-page--computers` CSS in content — not the recovery gold
 
 ## Next recovery order (Computers only)
-1. **Revisions** — keep browsing; prefer a revision with **both** images in markup **and** `tc-overlay-card` / `tc-overlay-card-product` on product Sections. Do not Restore the 12:42 book-only revision yet.
-2. **Media check (Hostinger File Manager):** do `uploads/2026/03/` and `uploads/2026/07/` product/hero files exist on disk? Jul 24 uploads restore may have removed later July files.
-3. If no good revision: fix **one** product Section — re-add overlay class on Section + keep `tc-explore-hub` on image + point image at a file that returns HTTP 200.
+1. **Revisions** — skip all stub (hero + few paragraphs only). Hunt for a **fat** revision: many blocks, product rows, overlay classes. Never Restore the stub.
+2. **Media check (Hostinger File Manager):** `uploads/2026/07/` product files — Jul 24 uploads may have removed them; hero in `2026/03/` still on disk.
+3. If no good full revision: repair **current** finished page — one product Section at a time (re-add classes + fix image URL to a 200 file).
 4. Then repeat pattern; only then consider template HTML for the page family.
