@@ -131,7 +131,11 @@ Compare **28 Jul 2026 @ 10:06** → **@ 11:34** (UI may say 11:43):
 
 **If no Preview:** Compare **is** the review. You already confirmed `tc-overlay-card` on **28 Jul ~11:34**. That is enough to Restore **that revision** from the Revisions screen. Expect **images may still 404** until uploads fixed.
 
-**Never click Restore Autosave** for Computers unless Cursor confirms that autosave is the full overlay build (the “product shortlist coming next” autosave was incomplete — skip it).
+**Never restore the incomplete “product shortlist coming next” autosave.**
+
+**Exception (Daniel 2026-08-08):** On the **page Revisions** compare for **28 Jul ~11:43**, content shows `tc-overlay-card`, `tc-explore-hub` on Kadence image (id 8261, `amzn.to` link), grade blocks, and product titles (e.g. Dell Pro Tower). UI may still label the button **Restore This Autosave** even on that screen. If the **selected timestamp is 28 Jul ~11:43** and Compare shows those classes/images in the version you are restoring **to**, that restore is **allowed** — it is the product-build wave, not the stub.
+
+After restore: **View** the page on the front. Report: overlays better Y/N; images show Y/N (404s possible).
 
 ## Next recovery order (Computers only)
 1. **Preview** WP revision **28 Jul ~11:34/11:43**. If overlays/structure look right → **Restore This Revision** (WP Revisions only).
