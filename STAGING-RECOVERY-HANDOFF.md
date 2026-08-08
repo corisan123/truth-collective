@@ -180,4 +180,4 @@ User is recovering from chemo/immunotherapy. Prefer **one short step**, **one qu
 - **Next:** try **Page Revisions** (prefer ~Jul 28-era) before rebuilding; never another Jul 24 full restore.
 - **Computers was fully built** (Rank Math ~90, animated, images) **just before 10Web crash.** Hero+paragraphs revisions are the **early stub only — never Restore those** (would wipe the finished page).
 - Stub hero file still **200** on correct host. Product `/uploads/2026/07/` files often **404** after Jul 24 uploads path.
-- Hunt Revisions for the **full post-build** page with overlay classes; else repair current crushed full markup one card at a time.
+- **Jul 28 10:06 and ~11:34/11:43 revisions still have `tc-overlay-card`** (Daniel compare). First Restore candidate = Preview then WP-Restore **28 Jul ~11:34/11:43** only — not stub, not Jul 24 Hostinger, not Updraft incomplete autosave. Media 404s may remain after markup returns.

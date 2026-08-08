@@ -114,8 +114,23 @@ Correct target: a revision (or current markup repair) of the **post-build** page
 - No product overlay animation classes (expected for stub)
 - Optional older `.tc-page--computers` CSS in content — not the recovery gold
 
+### Overlay classes confirmed in Jul 28 revisions (Daniel 2026-08-08)
+
+Compare **28 Jul 2026 @ 10:06** → **@ 11:34** (UI may say 11:43):
+- Right side **adds** `"className":"tc-overlay-card"` on Kadence column `359_61964f-7e`
+- HTML: `… kadence-column359_61964f-7e tc-overlay-card`
+- Heading “Desktops For The Professionals” added in that column
+- Grade HTML (`tc-grade-block`) present on both sides
+- **Both morning Jul 28 revisions still contain overlay classes**
+
+**First real Restore candidate family:** WordPress Revision **28 Jul 2026 ~11:34/11:43** (not stub, not Jul 24 Hostinger, not Updraft autosave of “product shortlist coming next”).
+
+**Before Restore:** use revision **Preview**. Confirm multiple `tc-overlay-card` / explore on product images. Expect **images may still 404** until `uploads/2026/07/` files are restored — markup/classes can come back while media is separate.
+
+Editor “last edited ~11 days ago” from 2026-08-08 ≈ **Jul 28** — live may already be that save with later corruption, or classes stripped without a clean later revision. Preview 11:34 anyway; if Preview looks more correct than live, Restore that revision.
+
 ## Next recovery order (Computers only)
-1. **Revisions** — skip all stub (hero + few paragraphs only). Hunt for a **fat** revision: many blocks, product rows, overlay classes. Never Restore the stub.
-2. **Media check (Hostinger File Manager):** `uploads/2026/07/` product files — Jul 24 uploads may have removed them; hero in `2026/03/` still on disk.
-3. If no good full revision: repair **current** finished page — one product Section at a time (re-add classes + fix image URL to a 200 file).
-4. Then repeat pattern; only then consider template HTML for the page family.
+1. **Preview** WP revision **28 Jul ~11:34/11:43**. If overlays/structure look right → **Restore This Revision** (WP Revisions only).
+2. Recheck live Computers: count `tc-overlay-card` on product columns; note remaining 404 images.
+3. **Media:** File Manager / uploads-only for missing `2026/07/` files — do not Jul 24 full-site restore.
+4. If Preview is not better: repair one product Section on current page by hand.
