@@ -66,8 +66,9 @@ Page-by-page (or one card / one section at a time): Cursor supplies Custom HTML 
 | Computers | closed | Revision hunt stopped; rebuild later |
 | **S0** | **partial (Daniel)** | Homepage: first **three** major child blocks still had locked CSS classes; **hrefs were stripped**. Daniel re-linked all three — **they work now.** Pattern: classes can survive while links are removed. |
 | S0b | done (Cursor) | Angie could not see staging; Cursor inventoried homepage links → `homepage-links-S0b-2026-08-08.md` |
-| **BOOT** | **next** | Paste Angie bootstrap; get 5-bullet confirmation |
-| **S1** | queued | Leadership CTA → `/recommended-books-2026/leadership-books/` (plan → Approve) |
+| BOOT | attempted | Angie unstable / spinning |
+| **S1** | **Angie stalled** | Fetched homepage + ID, then hung on “Update Leadership Collection link.” **Do not wait.** Daniel or Cursor+App Password completes S1. |
+| Angie | **paused** | Beta cannot finish edits reliably. Revisit later; not on critical path. |
 | S2 | queued | Next one link from inventory (e.g. featured-productivity 404) |
 | R0 | later | First rebuild page/card after Phase S feels stable to Daniel |
 
