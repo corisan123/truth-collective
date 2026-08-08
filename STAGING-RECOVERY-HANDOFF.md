@@ -168,3 +168,10 @@ User is recovering from chemo/immunotherapy. Prefer **one short step**, **one qu
 **Business priority (standing brief §13):** Fix staging → polish → Semrush → launch → then social/Pinterest. Do not start binder integration, Semrush, or social work until staging recovery step 1 is done.
 
 **Later action (not now):** Mobile / cell-phone view is **horrible** (Daniel checked a few days ago; may overlap 10Web migration start — unconfirmed). Fix only after desktop overlay/link recovery is stable. Do not start a mobile redesign mid-recovery.
+
+### Computers page (2026-08-08) — markup, not CSS wipe
+- Live + editor destroyed: raw `tc-grade-block` HTML as text, broken images, overlaps.
+- Only classes left on page: intro `tc-book-card` + `tc-leadership-body`. **Product blocks lost overlay/explore/product classes.**
+- Additional CSS still loads sitewide — classes missing on blocks so rules never attach.
+- Detail: `diagnostics/computers-page-2026-08-08.md`
+- **Next:** try **Page Revisions** on Computers before rebuilding.
