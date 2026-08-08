@@ -8,6 +8,7 @@ Update only with Daniel’s confirmation (Master Brief rule).
 - `TC_Master_Brief_update_2.0_5_26_2026.docx` (§2–§5)
 - `TC_Cursor_Migration_Brief.docx` (§6)
 - `Cursor_tips_for_launch_6.docx` (§7)
+- `HEARING_TRACKER_WEBSITE_TO_COMPARE_TC_WEBSITE.docx` + TechRadar screenshots (§9)
 
 **Session open line:** Read `docs/TC-STANDING-BRIEF.md` and `STAGING-RECOVERY-HANDOFF.md`, then continue.
 
