@@ -34,11 +34,11 @@
 | Layer | Status |
 |-------|--------|
 | Additional CSS (sitewide) | Still present (not the sole cause) |
-| Locked classes on product blocks | **Stripped / missing** (Daniel confirmed) |
-| Grade Custom HTML | Escaped or degraded to visible source text |
-| Media | Broken refs or unloadable URLs on this page (check uploads before re-upload) |
+| Locked classes on product blocks | **Stripped / missing** — live markup probe 2026-08-08: **0×** `tc-overlay-card-product`, only **4×** `tc-explore-hub`, **4×** `tc-overlay-card`, **4×** `tc-book-card` |
+| Grade markup | Still in page as real HTML + leading `[4.7/5]` text nodes — but without parent overlay classes, layout collapses; editor shows Custom HTML as code boxes (expected in editor) |
+| Media | Image `src` URLs still in HTML, but sample product file **404**: `…/uploads/2026/07/61of3rzFYwL._AC_SL1200_-966x1024.jpg` — media missing or path wrong after uploads restores |
 
-This is **block markup damage** on this page (restore / 10Web / editor corruption), not “delete all Additional CSS.”
+This is **block markup damage** on this page (classes removed from product Sections/columns), not “delete all Additional CSS.”
 
 ## Do not do yet
 - Do not rebuild all 86 pages
