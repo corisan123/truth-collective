@@ -65,7 +65,22 @@ Sample media in snippet: `…/uploads/2026/07/Facebook-Cover-AI-Agentic-Advances
 - Do not Hostinger restore again for this page
 - Do **not** re-apply Jul 24 backups hoping Computers improves
 
+## Revision note — user “10/26” 12:42 (Daniel 2026-08-08)
+
+(Confirm calendar date: likely **7/26** given crash timeline; user typed 10/26.)
+
+**In that revision:**
+- Hero + other **images present in markup** (e.g. core `wp:image` hero `uploads/2026/03/Untitled-3200-x-1040-px-…`)
+- Still **no overlay/explore product animation classes** beyond book-card pattern
+- Includes older page-scoped `.tc-page--computers` CSS tokens (navy/gold/cream) in content — separate from Customizer Additional CSS stacks
+- Watch image host: snippet showed `tcstaging.collective.com` (missing `truth-`) — if real, those URLs would 404 even when files exist on `tcstaging.truth-collective.com`
+
+**Live now:** Daniel — **no images anywhere** on Computers. Matches probed **404** on `/uploads/2026/07/…` product files after Jul 24 uploads path. Revision proves markup once pointed at images; crush = **classes stripped + media missing/wrong host**, not “CSS deleted.”
+
+**Do not Restore that revision yet** if it lacks overlay classes — you would keep missing animations and may not bring media files back (files live on disk / Hostinger, not inside the revision HTML alone).
+
 ## Next recovery order (Computers only)
-1. **Revisions** — open Computers → Revisions; prefer a revision from **after Jul 25 / near Jul 28** if available; preview; restore only if product Section classes (`tc-overlay-card` / `tc-overlay-card-product`) return.
-2. If no good revision: fix **one** product Section — re-add overlay class on Section + keep `tc-explore-hub` on image + repair one image URL (Cursor-directed).
-3. Then repeat pattern; only then consider template HTML for the page family.
+1. **Revisions** — keep browsing; prefer a revision with **both** images in markup **and** `tc-overlay-card` / `tc-overlay-card-product` on product Sections. Do not Restore the 12:42 book-only revision yet.
+2. **Media check (Hostinger File Manager):** do `uploads/2026/03/` and `uploads/2026/07/` product/hero files exist on disk? Jul 24 uploads restore may have removed later July files.
+3. If no good revision: fix **one** product Section — re-add overlay class on Section + keep `tc-explore-hub` on image + point image at a file that returns HTTP 200.
+4. Then repeat pattern; only then consider template HTML for the page family.
