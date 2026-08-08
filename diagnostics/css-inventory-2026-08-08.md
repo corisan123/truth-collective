@@ -6,7 +6,8 @@ No `10web` / `tenweb` / `twbb` markers found in HTML of home, Technology Hub, Co
 ## Section headers found
 
 ### Confirmed in Customizer by Daniel (2026-08-08)
-- `STAGING PATCH 01A — TC BOOK CARD H5 TITLE CONTROL` — book cards / H5 spacing only; **not** first disable candidate (leave on for now)
+- `STAGING PATCH 01A — TC BOOK CARD H5 TITLE CONTROL` — book cards / H5 spacing only; leave on for now
+- `STAGING PATCH 01C-PRODUCT — LOCK IMAGE HEIGHT ON PRODUCT CARDS ONLY` — `tc-product-card` image height; can crop products; candidate later, not first if hub EXPLORE is the symptom
 
 ### From live HTML earlier
 - `/* End TC Row-Stretch Override */`
