@@ -112,7 +112,7 @@ Internal links: up to parent, down to children, sideways 3–4 siblings. Externa
 - Leave **10WEB manager** alone until Daniel asks.
 - No Hostinger restore roulette; never Website backup restore onto live by mistake.
 
-**AI stack roles (Master Brief):** Claude/strategy historically; Cursor for code under explicit instructions; V0/Vercel = visual reference; RankMath Pro; Canva; scheduling tools later. ChatGPT removed from direct production (research only).
+**AI stack roles:** See **§10**. Cursor + Daniel own all Additional CSS. Claude = aesthetics/formatting only (no paste-in CSS). Angie = Cursor-directed WP actions. V0/Vercel/10Web = visual reference. ChatGPT/Copilot out of CSS path.
 
 ---
 
@@ -173,13 +173,32 @@ These are **polish / UX references**. Keep Truth Collective locked palette and t
 2. **Clear intent routing** — “How can we help?” style paths (TC target: four paths such as Leadership, Workspace, Self-Development, Technology)
 3. **Authority signals** — lab-tested / counted proof badges (TC: 30+ years executive experience, research hours with leaders, named hubs and featured series)
 
-### TechRadar — borrow structure habits, not their brand colors
-- Modular editorial grids with strong contrast and readable type
-- Featured story + supporting grid + clear “latest / all” routes
-- Thin accent rules and rounded content planes that feel light, not stacked gray cards
-- Asymmetry and image quality over dense equal blocks
+### TechRadar — lighter commercial layout, not TC identity
+- TechRadar is **very commercial** — that is **not** Truth Collective.
+- Useful only as proof a pro site can feel **lighter and less bulky** than current TC staging.
+- Current TC heaviness came largely from earlier direction by ChatGPT, Copilot, and Claude (layout advice), not from Daniel’s brand intent.
+- Borrow: air, hierarchy, modular clarity. Do **not** borrow: news-portal commerce tone, dark magenta skin, or dense promo chrome.
 
 ### Explicit non-goals
-- Do not rebuild TC as a dark news portal
-- Do not add Magento/magenta TechRadar accents as brand gold replacement
+- Do not rebuild TC as a dark news portal or TechRadar clone
+- Do not replace TC navy/cream/gold with TechRadar accents
 - Do not start a homepage redesign mid-recovery until staging links/CSS are stable enough to trust what you see
+
+---
+
+## §10 — AI role split (mandatory)
+
+| Who | Role |
+|-----|------|
+| **Cursor + Daniel** | **Only** parties who write, edit, or paste into **Additional CSS** / site CSS coding |
+| **Claude** | Standing by for aesthetics, formatting judgment, structure critique, copy/UX direction. **No production CSS/code** for Daniel to paste. May draft specs/instructions **for Cursor** |
+| **Angie** | Executes inside WP only via Cursor-written one-task prompts |
+| **ChatGPT / Copilot** | Not in the production CSS path (historical source of heavy/bulky direction) |
+| **V0 / Vercel / 10Web samples** | Visual reference only |
+
+**Must:** No other generative AI puts code into Additional CSS. If Claude proposes CSS, Cursor reviews and implements or rejects. Daniel does not paste Claude, ChatGPT, or Copilot CSS into the site.
+
+---
+
+## §11 — (open)
+Daniel may append more sections one at a time.
