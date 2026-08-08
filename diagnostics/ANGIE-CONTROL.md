@@ -58,8 +58,8 @@ Page-by-page (or one card / one section at a time): Cursor supplies Custom HTML 
 | A2 | done | CSS lives in Appearance → Additional CSS only |
 | Computers | closed | Revision hunt stopped; rebuild later |
 | **S0** | **partial (Daniel)** | Homepage: first **three** major child blocks still had locked CSS classes; **hrefs were stripped**. Daniel re-linked all three — **they work now.** Pattern: classes can survive while links are removed. |
-| S0b | next (Angie) | Read-only: list remaining homepage hub/child links below those three (label + href). No edits. |
-| S1 | queued | From list: next dead/missing link — one only |
+| S0b | done (Cursor) | Angie could not see staging; Cursor inventoried homepage links → `homepage-links-S0b-2026-08-08.md` |
+| S1 | next | Fix **one** homepage issue: Leadership CTA → real leadership URL, **or** remove/fix `/featured-productivity-tools/` 404 |
 | S2 | queued | Fix that **one** link OR delete/replace that **one** ghost block |
 | R0 | later | First rebuild page/card after Phase S feels stable to Daniel |
 
