@@ -54,10 +54,10 @@ Answer these three, then stop.
 | Folder **still there** | Jul 24 uploads restore likely **merged**, did not fully replace |
 | Folder **gone** | That restore may have replaced uploads (or folder was removed another way) |
 
-**Status (2026-08-08):**
-- Jul 24 **backup** browser at `…/uploads` shows: `2026`, `backup`, `rank-math`, `wpforms` — **no** `10web_tmp`. That backup is clean. Good.
-- User reports after last night’s restore, 10Web is gone from their view.
-- Public probe still gets **403** on `/wp-content/uploads/10web_tmp/.htaccess` (and on `plugins/10web-manager/`). Needs a quick **live File Manager** confirm (not the Restore/backup file list) before closing Q1.
+**Answer: NO — gone (live File Manager, 2026-08-08).**
+- Jul 24 backup uploads was clean; live `…/uploads` also has no `10web_tmp` after last night’s restore.
+- So uploads restore did remove 10Web residue (not left behind by a merge).
+- Note: earlier public HTTP still returned 403 on `10web_tmp/.htaccess` — treat File Manager as source of truth; ignore stale web probes for this folder.
 
 ---
 
