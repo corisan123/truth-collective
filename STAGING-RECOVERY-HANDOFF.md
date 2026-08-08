@@ -142,9 +142,10 @@ Live HTML check: **no** `10web`/`tenweb` markers in page HTML. ~57KB of `tc-expl
 - Still: no restore roulette; leave 10Web alone until user says otherwise.
 - First Angie work: **one Office hub link** (prove control), not site-wide rebuild.
 
-### Standing brief (building one section at a time)
-- `docs/TC-STANDING-BRIEF.md` — §1 Visual/motion gold standard from Vercel/10Web PDF.  
-- Reference PDF: `docs/brand-references/vercel-and-10web-comparison.pdf`
+### Standing brief (source of truth)
+- `docs/TC-STANDING-BRIEF.md` — §§1–8 from Vercel/10Web PDF + Master Brief 2.0 + Migration Brief + Launch tips 6.
+- Cursor rule: `.cursor/rules/truth-collective.mdc`
+- References: `docs/brand-references/`
 
 ---
 
