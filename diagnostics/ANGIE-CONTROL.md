@@ -51,6 +51,13 @@ Page-by-page (or one card / one section at a time): Cursor supplies Custom HTML 
 - Insert **one** Cursor-provided Custom HTML / class fix on **one** section
 - Re-add locked classes on **one** Section or image (`tc-overlay-card`, `tc-explore-hub`, etc.)
 
+## Getting Angie up to speed
+
+1. Paste **bootstrap** once: `angie-prompts/ANGIE-BOOTSTRAP.md` (no edits; Angie confirms rules).
+2. Paste **S1** only after confirm: `angie-prompts/S1-leadership-cta-fix.md`.
+3. If fetch tools fail: Angie must use **WP editor**, not invent URLs. Cursor already has link inventory.
+4. Daniel relays: Angie plan → Cursor if unsure → Approve → View-check → next Cursor prompt.
+
 ## Task queue
 
 | # | Status | Task |
@@ -59,8 +66,9 @@ Page-by-page (or one card / one section at a time): Cursor supplies Custom HTML 
 | Computers | closed | Revision hunt stopped; rebuild later |
 | **S0** | **partial (Daniel)** | Homepage: first **three** major child blocks still had locked CSS classes; **hrefs were stripped**. Daniel re-linked all three — **they work now.** Pattern: classes can survive while links are removed. |
 | S0b | done (Cursor) | Angie could not see staging; Cursor inventoried homepage links → `homepage-links-S0b-2026-08-08.md` |
-| S1 | next | Fix **one** homepage issue: Leadership CTA → real leadership URL, **or** remove/fix `/featured-productivity-tools/` 404 |
-| S2 | queued | Fix that **one** link OR delete/replace that **one** ghost block |
+| **BOOT** | **next** | Paste Angie bootstrap; get 5-bullet confirmation |
+| **S1** | queued | Leadership CTA → `/recommended-books-2026/leadership-books/` (plan → Approve) |
+| S2 | queued | Next one link from inventory (e.g. featured-productivity 404) |
 | R0 | later | First rebuild page/card after Phase S feels stable to Daniel |
 
 ## Correct File Cabinets permalink (still valid)
