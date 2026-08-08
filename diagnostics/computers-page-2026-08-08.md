@@ -40,13 +40,32 @@
 
 This is **block markup damage** on this page (classes removed from product Sections/columns), not “delete all Additional CSS.”
 
+## Restore timeline (Daniel 2026-08-08 — critical)
+
+| When | What | Computers page |
+|------|------|----------------|
+| ~2026-07-28 content state | Reviewed yesterday during restore attempts | Damaged, **not this crushed** |
+| Hostinger files restore used **2026-08-01**; DB **2026-07-28**; uploads Jul 28 + **Jul 24** | Exhausted angles; never fully healthy | — |
+| After going to **2026-07-24** material | — | **Completely crushed** (worse than Jul 28 review) |
+
+**Conclusion:** Jul 24 rollback is what destroyed this page’s product markup/classes. Do **not** restore older than Jul 28 for Computers. Prefer WP **Revisions** or a **page-only** recovery toward Jul 28-era markup — never another full Jul 24 path.
+
+## Snippet from product row (Daniel — Jul 24-era block)
+
+Kadence Image with `className` / div class `tc-explore-hub`, Amazon `amzn.to` link, drop shadow, radius 15. **No** `tc-overlay-card` on the image block (expected: explore on image; overlay on Section/column).
+
+If parent Section lost `tc-overlay-card` / `tc-overlay-card-product`, you get exactly today’s pattern: explore class may remain on some images while product overlay behavior is dead.
+
+Sample media in snippet: `…/uploads/2026/07/Facebook-Cover-AI-Agentic-Advances-1200-x-900-px-4-1024x768.png` (verify 200 vs 404 separately).
+
 ## Do not do yet
 - Do not rebuild all 86 pages
 - Do not paste Copilot/Claude full-page HTML
 - Do not wipe Additional CSS to “fix” Computers
 - Do not Hostinger restore again for this page
+- Do **not** re-apply Jul 24 backups hoping Computers improves
 
 ## Next recovery order (Computers only)
-1. **Revisions** — open Computers → Revisions; try a revision from before visual collapse; preview; restore only if product classes (`tc-overlay-card-product` etc.) return.
-2. If no good revision: fix **one** product Section — re-add classes + one Custom HTML grade + one image URL (Cursor-directed).
+1. **Revisions** — open Computers → Revisions; prefer a revision from **after Jul 25 / near Jul 28** if available; preview; restore only if product Section classes (`tc-overlay-card` / `tc-overlay-card-product`) return.
+2. If no good revision: fix **one** product Section — re-add overlay class on Section + keep `tc-explore-hub` on image + repair one image URL (Cursor-directed).
 3. Then repeat pattern; only then consider template HTML for the page family.

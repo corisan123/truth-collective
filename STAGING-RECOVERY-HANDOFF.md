@@ -174,5 +174,7 @@ User is recovering from chemo/immunotherapy. Prefer **one short step**, **one qu
 - Live + editor destroyed: raw `tc-grade-block` HTML as text, broken images, overlaps.
 - Only classes left on page: intro `tc-book-card` + `tc-leadership-body`. **Product blocks lost overlay/explore/product classes.**
 - Additional CSS still loads sitewide — classes missing on blocks so rules never attach.
+- **Jul 24 restore crushed this page.** Jul 28 review yesterday was bad but not this bad. Do not re-run Jul 24.
+- Product-row snippet (Jul 24-era): Kadence image still had `tc-explore-hub` + affiliate link; overlay belongs on Section, not the image — matches original split architecture.
 - Detail: `diagnostics/computers-page-2026-08-08.md`
-- **Next:** try **Page Revisions** on Computers before rebuilding.
+- **Next:** try **Page Revisions** (prefer ~Jul 28-era) before rebuilding; never another Jul 24 full restore.
