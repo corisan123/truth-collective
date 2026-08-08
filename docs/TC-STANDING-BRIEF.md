@@ -213,8 +213,8 @@ Confirmed from Daniel’s attachments (sample UI, not current WP staging):
 | Who | Role |
 |-----|------|
 | **Cursor + Daniel** | **Only** parties who write/edit/paste **Additional CSS**, and who **authorize** staging changes (hand edit, Application Password/REST, browser-in-admin, or Angie prompts). Cursor owns complex HTML using locked `tc-*` classes. Claude’s “don’t give Cursor the keys” advice is **overridden** for staging — Daniel trusts Cursor more; staging-only credentials OK under one-task Approve rules. |
-| **Claude** | Aesthetics judgment, long-paragraph rewrite, formatting. **No** production CSS and no unreviewed full-page HTML for Daniel to paste. Specs → Cursor. |
-| **Copilot Task** | Strong **drafter** of Custom HTML / copy / page sections (matches DOM class names if told). **Cannot** log into wp-admin, FTP, or edit Additional CSS. Everything it writes is a **draft for Cursor review** before paste. Not a replacement for Angie. Tailwind/full-app HTML (e.g. Master Binder) is **not** drop-in WP. |
+| **Claude** | Aesthetics judgment, long-paragraph rewrite, voice/formatting. **No** production CSS and no unreviewed full-page HTML for Daniel to paste. Specs → Cursor. |
+| **Copilot Task** | Strong **drafter** of structured Custom HTML / section scaffolds (matches DOM class names if told). **Cannot** wp-admin/FTP/Additional CSS. Drafts only → Cursor review. Tailwind apps **not** drop-in. **Paid** may be needed for ongoing Task use; do **not** pay during Phase S — wait until Phase R volume. |
 | **Angie** | In-WP agent (beta). **Paused** on critical path — spins/fails edits. Optional later if stable. |
 | **ChatGPT / Copilot Edge** | Out of production CSS/HTML path (historical damage). |
 | **Vercel / v0 / 10Web samples** | Visual reference only — not WP repair agents. |
@@ -327,7 +327,7 @@ Not “easiest.” Not “what feels convenient.” **Best path to repair → po
 1. **Cursor (lead)** — Architecture, Additional CSS ownership, conflict checks, final HTML, **applies** changes via REST (primary) + browser-in-admin (exception) + named WP-CLI if SSH exists (backup/search-replace).
 2. **Staging Application Password** — Primary auth for Cursor writes to pages. One-task or small batches only after first proven edit.
 3. **SSH + WP-CLI** (if Hostinger allows) — **Backup page content before each API write**; occasional safe search-replace. Not for freestyle SQL.
-4. **Claude + Copilot Task** — Parallel **draft factories**: voice, aesthetics, section HTML using **only** locked `tc-*` classes. Cursor vetoes/merges. Neither gets Additional CSS or wp-admin keys.
+4. **Claude + Copilot Task** — Parallel **draft factories with non-overlapping lanes** (see below). Cursor assigns work; vetoes/merges. Neither gets Additional CSS or wp-admin keys.
 5. **Daniel** — Approve policy, View-check critical URLs, taste sign-off, Hostinger file/media when disk 404s. Minimal paste labor.
 6. **Angie** — Off critical path (beta unreliable). Optional later for trivial UI clicks if stable.
 7. **Vercel / v0** — Visual reference only.
@@ -355,10 +355,26 @@ Not “easiest.” Not “what feels convenient.” **Best path to repair → po
 - Audit only when staging navigation + key templates are trustworthy.  
 - Staging → live per Migration Brief preserve-only (§6).
 
+### Claude vs Copilot Task — no duplicate lanes
+
+Cursor is the only assigner. **Never** both draft the same section.
+
+| Lane | Owner | Delivers |
+|------|--------|----------|
+| Long body copy, voice pass, FAQ/editorial prose | **Claude** | Clean text (TC rules: no em dashes, no bold body, no contractions) |
+| Aesthetic critique / “does this feel bulky vs Vercel-light?” | **Claude** | Notes for Cursor — not paste-in CSS |
+| Structured page scaffolds, card grids, binder-style sections, Custom HTML shells using locked `tc-*` | **Copilot Task** (when paid / Phase R) | HTML draft → Cursor |
+| Final HTML + CSS + WP apply | **Cursor** | Ships |
+
+**One page family workflow:** Claude finishes copy first → Cursor (or Task) wraps that copy in HTML → Cursor hardens → API/paste.  
+**Do not:** Claude and Task both rewrite the same Computers product blurb.  
+**Do not:** Pay for Task during Phase S (stabilize links/CSS/API). Free Task already delivered Master Binder archive; next paid use = Phase R rebuild volume.
+
 ### What we explicitly reject as “best”
 
 - Waiting on Angie beta  
 - Hand-pasting 86 pages with no API  
 - Copilot Task as applicator (it cannot wp-admin)  
+- Paying for Task before Phase R need  
 - Claude owning credentials  
 - Another restore roulette to “find” the finished Computers page
