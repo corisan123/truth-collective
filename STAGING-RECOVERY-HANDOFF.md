@@ -34,8 +34,8 @@
 - Many “missing” pages still exist in **WP Pages**. Example: File Cabinets slug `office-file-cabinets-credenzas-essentials`, parent **Office Workspace Products and Tools**.
 - Hub tiles often link to **wrong short/old URLs** → 404. Example: `/file-cabinets-credenza/` instead of the nested path.
 - Working Office path example: `/office-workspace-products-and-tools/best-analog-writing-tools/`
-- Visual issues seen: EXPLORE split as `EXPLOR` / `E`, overlay flicker, cropped/grey-bar images, Computers page scrambled.
-- Uploads previously had `10web_tmp` (10Web evidence). Need to know if it survived the Jul 24 uploads restore (merge vs real replace).
+- Visual issues (still after Jul 24 rollback): EXPLORE split as `EXPLOR` / `E`, overlay flicker, cropped/grey-bar images, white-on-white Smart Lighting descriptions, Computers page scrambled. User: child blocks were never built this way — full image + bottom title rising on hover was intended.
+- Likely cause: leftover **Cursor/custom `tc-explore*` CSS** (and/or mismatched block classes), not missing media. `10web_tmp` is **gone** on live after Jul 24 restore.
 
 ---
 
@@ -86,19 +86,23 @@ Office hub HTML still contains a tile linking to the **wrong** short URL. Menus 
 
 ---
 
-### Q3 — Is EXPLORE a CSS issue (not a broken image)?
+### Q3 — Is EXPLORE / crop / white overlay a CSS issue (not media / not another restore)?
 
-**Check:** Appearance → Customize → Additional CSS (or page source).  
-Look for rules like `.tc-explore-hub::after` / `.tc-explore-hero::after` with `content: "EXPLORE"`.
+**Answer: YES — CSS (and CSS vs restored block markup). Not missing uploads.**
 
-**Public probe (2026-08-08):** Confirmed CSS, not media.
+User screenshots after Jul 24-era rollback still show:
+- Office / Analog Writing: `EXPLOR` / `E` split on hover pill
+- Hub child tiles: cropped images, grey bar overlays, titles in wrong place
+- Smart Lighting: some tiles full, some cropped; white-on-white description (unreadable)
+- Expected design: full-bleed image, title at bottom, rise + lift/darken on hover
 
-- Text comes from CSS `content: "EXPLORE"` on `::after`
-- `letter-spacing: 0.22em` (hub) / `0.2em` (hero)
-- Padding/`overflow` on the pill can make it look like `EXPLOR` + stray `E`
-- Overlay flicker is also CSS/animation related (`.tc-explore-hub` hover / `::before` / `::after`)
+**Public probe (2026-08-08):** Additional CSS still injects Cursor-era rules:
+- `.tc-explore-hub::after` / `.tc-explore-hero::after` → `content: "EXPLORE"` + `letter-spacing`
+- Absolute image fill / overlay / hover darken rules on `.tc-explore-hub`
 
-→ Fix later with CSS edits. **Not** an uploads restore problem.
+These patches can survive a “pre-10Web” content rollback if they live in **Customizer Additional CSS** (DB) or theme/file CSS. They are **not** fixed by another uploads restore.
+
+→ **Next phase (after Phase 1):** CSS / block cleanup — disable or remove conflicting `tc-explore*` rules, then fix hub tile links. **No more restores for this symptom set.**
 
 ---
 
