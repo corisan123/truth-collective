@@ -16,6 +16,7 @@ No `10web` / `tenweb` / `twbb` markers found in HTML of home, Technology Hub, Co
 - `TC PRODUCT OVERLAY BUTTONS - SINGLE SOURCE OF TRUTH` — final product two-button grid (View + TC Grade/stars); zeroes `.tc-grade-block` margin push-out. **Authoritative for product buttons** over earlier 02A button-height snippets if they still sit above in the file.
 - `TC OVERLAY-CARD + EXPLORE-HUB COMBINED FIX` — only when `tc-explore-hub` image sits inside `tc-overlay-card`; moves following `p` to bottom on desktop hover so it clears EXPLORE pill. **Core combo-conflict layer.** Archived `css-chunks/02-overlay-explore-combined-and-grade.css`.
 - `STAGING PATCH 02-GRADE` — hub `.tc-overlay-card` grade at top at rest; opacity 0 on hover. Leave until hub grade/EXPLORE overlap is re-tested.
+- **After 02-GRADE (mobile):** `@media (max-width: 767px)` forces `.entry-content .kt-row-column-wrap` left/right padding 20px. **Sitewide Kadence rows**, not overlay-scoped. Flag for later mobile fix; do not change now.
 - **02A / product-card settled behavior (Daniel paste 2026-08-08)** — do not regress:
   1. Card near-square for 600×600 product images, cover fill, slight crop  
   2. Title 18px bold navy at rest, white on hover, heavy shadow removed  

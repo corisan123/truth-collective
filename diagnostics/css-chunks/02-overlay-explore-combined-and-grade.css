@@ -42,3 +42,13 @@
   }
 }
 /* End STAGING PATCH 02-GRADE */
+
+/* Immediately after 02-GRADE in Additional CSS (Daniel 2026-08-08).
+   Broad mobile rule — NOT scoped to overlay/product. Queued for mobile
+   polish phase; do not edit during desktop recovery. */
+@media (max-width: 767px) {
+  .entry-content .kt-row-column-wrap {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
