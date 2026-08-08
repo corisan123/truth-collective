@@ -11,6 +11,7 @@
 | STAGING PATCH 01A / 01C / 01G | Seen headers; leave on |
 | TC Explore Hub Overlay Animation + add-ons | Awaiting full ordered chunk |
 | STAGING PATCH 02A — overlay buttons + stars | **SKIP — known good** |
+| Protected extract: `.tc-overlay-card-product` aspect-ratio + button height | `css-chunks/02a-product-overlay-protected.css` |
 | Later 02-PRODUCT / hero / grade patches | Awaiting paste |
 
 ## Paste log
