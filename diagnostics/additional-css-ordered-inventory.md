@@ -14,6 +14,7 @@
 | Protected extract: `.tc-overlay-card-product` aspect-ratio + button height | `css-chunks/02a-product-overlay-protected.css` |
 | STAGING PATCH 02-PRODUCT OVERFLOW FIX | `css-chunks/02-product-overflow-fix.css` — present but failing on site; diagnose before disable |
 | 02-PRODUCT POLISH + TC PRODUCT OVERLAY BUTTONS | `css-chunks/02-product-polish-and-buttons.css` — buttons SSoT; leave unless proven conflicting |
+| Overlay+Explore combined fix + 02-GRADE | `css-chunks/02-overlay-explore-combined-and-grade.css` — combo layer; high relevance to dual-class pages |
 | Later 02-PRODUCT / hero / grade patches | Awaiting paste |
 
 ## Paste log
