@@ -8,7 +8,7 @@
 | Issue | Detail | HTTP |
 |-------|--------|------|
 | Leadership CTA | Was “Explore the Leadership Collection” → `/`. **2026-08-08 REST recheck:** phrase gone; hub already → `/recommended-books-2026/leadership-books/` | **200** |
-| Featured Productivity | `/featured-productivity-tools/` (`data-id=109` invalid) still on homepage — propose → `/productivity-tools/` (`5680`) | **404** |
+| Featured Productivity | Was `/featured-productivity-tools/` 404. **Daniel: Productivity Tools linked / homepage links all work** (2026-08-08) | **OK** |
 | Podcast slug split | `/ai-mastery-podcast-collection/` (200) vs `/ai-mastery-collection-podcast/` (301) | split |
 | Old books path | `/recommended-books/` | 301 → newer |
 | Self-help old path | `/recommended-books/self-help-and-mental-wellness/` | 301 |

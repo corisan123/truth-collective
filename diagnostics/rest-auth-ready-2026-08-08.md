@@ -15,14 +15,10 @@
 ## Auth note
 Using the WP user **slug** with the App Password returned `rest_not_logged_in`. Using the **email** + App Password returns 200.
 
-## First proposed write (awaiting Daniel Approve)
-Homepage id `5` — only bad internal link found in current `post_content` scan:
-
-| Before | After | Why |
-|--------|-------|-----|
-| `/featured-productivity-tools/` (`data-id="109"` — invalid/deleted) | `/productivity-tools/` (`data-id="5680"`) | Target 404 → published Productivity Tools page 200 |
-
-**Leadership CTA:** prior inventory flagged “Explore the Leadership Collection” → `/`. Current raw + rendered homepage: that phrase is **gone**; leadership explore hub already points to `/recommended-books-2026/leadership-books/` (200). No Leadership REST edit needed unless Daniel still sees the old CTA in browser cache.
+## Homepage links (Daniel 2026-08-08)
+- **All homepage links work** (Daniel View confirm).
+- **Productivity Tools** linked (Daniel confirm) — ticket `REST-home-productivity-link` **cancelled / not needed**.
+- Leadership explore path already correct in content recheck earlier same day.
 
 ## Rule
-No REST writes until Daniel says **Approve** for a named ticket (e.g. `REST-home-productivity-link`).
+No REST writes until Daniel says **Approve** for a named ticket.
