@@ -212,24 +212,27 @@ Confirmed from Daniel’s attachments (sample UI, not current WP staging):
 
 | Who | Role |
 |-----|------|
-| **Cursor + Daniel** | **Only** parties who write, edit, or paste into **Additional CSS** / site CSS coding. Cursor writes **page HTML** for Custom HTML blocks (reuse locked `tc-*` classes so hover/lift/overlay stay intact). |
-| **Claude** | Long-paragraph **rewrite**, voice/formatting, structure critique. **No production CSS** and no full-page HTML for Daniel to paste. Hands clean copy/specs **to Cursor**. |
-| **Angie** | Executes inside WP only via Cursor-written one-task prompts (paste/replace a block, fix one link, etc.). Alternative applicator to Daniel hand-pasting. |
-| **ChatGPT / Copilot** | Not in the production CSS/HTML path (historical source of heavy/bulky and broken direction) |
-| **V0 / Vercel / 10Web samples** | Visual reference only |
+| **Cursor + Daniel** | **Only** parties who write/edit/paste **Additional CSS**, and who **authorize** staging changes (hand edit, Application Password/REST, browser-in-admin, or Angie prompts). Cursor owns complex HTML using locked `tc-*` classes. Claude’s “don’t give Cursor the keys” advice is **overridden** for staging — Daniel trusts Cursor more; staging-only credentials OK under one-task Approve rules. |
+| **Claude** | Aesthetics judgment, long-paragraph rewrite, formatting. **No** production CSS and no unreviewed full-page HTML for Daniel to paste. Specs → Cursor. |
+| **Copilot Task** | Strong **drafter** of Custom HTML / copy / page sections (matches DOM class names if told). **Cannot** log into wp-admin, FTP, or edit Additional CSS. Everything it writes is a **draft for Cursor review** before paste. Not a replacement for Angie. Tailwind/full-app HTML (e.g. Master Binder) is **not** drop-in WP. |
+| **Angie** | In-WP agent (beta). **Paused** on critical path — spins/fails edits. Optional later if stable. |
+| **ChatGPT / Copilot Edge** | Out of production CSS/HTML path (historical damage). |
+| **Vercel / v0 / 10Web samples** | Visual reference only — not WP repair agents. |
 
 **Must:** No other generative AI puts code into Additional CSS. If Claude proposes CSS, Cursor reviews and implements or rejects. Daniel does not paste Claude, ChatGPT, or Copilot CSS into the site.
 
-### 86-page polish pipeline (after staging is fixed — not during recovery)
+### 86-page polish pipeline (after staging is stable — Phase R)
 
-Goal: Daniel does **not** manually rebuild ~86 pages. Pipeline:
+Goal: Daniel does **not** manually rebuild ~86 pages by hand forever. Pipeline:
 
-1. **Claude** rewrites long body copy / formatting to TC voice (no em dashes, no bold body, no contractions, affiliate-only rules).
-2. **Cursor** builds one page (or one template family) as Custom HTML that reuses locked classes (`tc-book-card`, `tc-product-card`, `tc-explore-hub`, etc.) + existing media URLs — animations come from **existing Additional CSS**, not new invented systems.
-3. **Daniel or Angie** places that HTML in a Custom HTML block (one page at a time after a proven template).
-4. Repeat by page family (hubs → children), not a site-wide dump.
+1. **Claude and/or Copilot Task** draft long copy + optional HTML **using only locked `tc-*` classes** (Cursor supplies the class list). No Tailwind CDN apps. No Additional CSS.
+2. **Cursor** reviews/rewrites that draft into safe Custom HTML (genius at structure/conflict checks; weaker at pure aesthetics — so Claude/Task feed taste, Cursor ships code).
+3. **Applicator:** Daniel hand-paste, **or** Cursor via staging Application Password / browser-in-admin, **or** Angie if beta works — **one block/page family at a time**.
+4. Repeat by page family. Corrupted ghost blocks → delete + replace, not four-day repair.
 
-**Honesty check:** One paste can ship structure, copy, and class-bound motion when classes already exist and media URLs are correct. It cannot “fix” broken Additional CSS or wrong hub links underneath — that is why recovery is step 1.
+**Honesty check — Copilot Task’s own limits:** It can write paste-ready blocks and match classes; it **cannot** push to the server or open wp-admin. So it is **not** “anything and everything” alone. With Cursor in charge as reviewer + applicator, Task is a strong **content/HTML factory**. It is not Angie and not Additional CSS owner.
+
+**Division of taste vs code:** Cursor = problem-solving, complex HTML/CSS, WP auth changes. Claude/Copilot Task = aesthetics and content drafts under Cursor veto.
 
 ---
 
