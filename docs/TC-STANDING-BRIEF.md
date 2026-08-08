@@ -294,3 +294,5 @@ Top-1% quality is the destination. Order of work is non-negotiable:
 **Context:** ~5 weeks already spent repairing Claude / ChatGPT / Copilot Edge mistakes. Live site idle and broken. Daniel will not redo product catalogs for binder polish. Helpers must not invent parallel workstreams (binder SKUs, social strategy, Semrush) until step 1 is done.
 
 **Default next action until told otherwise:** staging recovery work order in `STAGING-RECOVERY-HANDOFF.md` (CSS disable → one hub link → more links).
+
+**Queued after desktop recovery (not now):** Mobile / phone layout is badly broken (Daniel spot-check; possible 10Web-migration overlap, unconfirmed). Address in polish phase — do not open a mobile workstream during CSS/link recovery.
