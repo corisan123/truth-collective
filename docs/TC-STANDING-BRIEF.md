@@ -1,60 +1,157 @@
 # Truth Collective — Standing Brief
 
-Living brief for Cursor/Angie. Add **one section at a time**.  
-Source of truth for look/feel until WordPress staging matches.
+Living brief for Cursor and Angie. Full source docs live in `docs/brand-references/`.  
+Update only with Daniel’s confirmation (Master Brief rule).
+
+**Sources ingested 2026-08-08:**
+- `vercel-and-10web-comparison.pdf` (§1)
+- `TC_Master_Brief_update_2.0_5_26_2026.docx` (§2–§5)
+- `TC_Cursor_Migration_Brief.docx` (§6)
+- `Cursor_tips_for_launch_6.docx` (§7)
+
+**Session open line:** Read `docs/TC-STANDING-BRIEF.md` and `STAGING-RECOVERY-HANDOFF.md`, then continue.
 
 ---
 
 ## §1 — Visual / motion gold standard (Vercel + 10Web samples)
 
-**Context:** After a live-site crash and failed recovery, Daniel explored AI builders **Vercel** and **10Web**. Both built short sample pages that taught the hover / lift / overlay language later named `tc-explore-hub`, `tc-explore-hero`, etc. At the time those samples used **Tailwind** (not WordPress-native). Cursor has already rebuilt the **membership/toggle page** to match the **Vercel** look.
+**Context:** After a live-site crash and failed recovery, Daniel explored **Vercel** and **10Web**. Their sample pages defined hover / lift / overlay language later named `tc-explore-hub`, `tc-explore-hero`, etc. Samples used Tailwind (reference only, not WP drop-in). Cursor already rebuilt the **membership/toggle page** toward **Vercel**.
 
-**Reference file:** `docs/brand-references/vercel-and-10web-comparison.pdf` (28 pages of annotated screenshots).
+**Reference:** `docs/brand-references/vercel-and-10web-comparison.pdf`
 
 ### Preference ranking (overlays)
+1. **Vercel overlays** — preferred polish (legible hover, not crushed dark)
+2. **10Web overlays** — strong (toggle UI sometimes preferred)
+3. **Broken WP staging** — not the target
 
-1. **Vercel overlays** — preferred for polish (legible hover, not too dark).  
-2. **10Web overlays** — strong, sometimes preferred for toggle UI.  
-3. **Current WordPress staging** — not the target (crops, black/white bars, broken EXPLORE, stale links).
+### Hub tiles (`tc-explore-hub`)
+- Large high-res images; full tile is the visual plane
+- **At rest:** title at **bottom** of image
+- **On hover:** image lifts and slightly darkens; title rises; transparent **EXPLORE** (hubs may use gold `>`). Entire image is linked
+- EXPLORE must never split (`EXPLOR` / `E`)
+- Add class **only on Section** block: `tc-explore-hub`
 
-### Hub tiles (6 hubs) — intended behavior
+### Overlay cards (`tc-overlay-card`)
+- Structure: Group (GTB) → often Row (KD) → Section (KD) → header + image + paragraph
+- Class **only on Section:** `tc-overlay-card` (product modifier `tc-overlay-card-product` sits **beside**, never replaces)
+- Hover: lift, slight darken, title moves up, description reveals in bright white; whole card linked
 
-- Large, high-resolution images; full tile is the visual plane (not a tiny cropped patch).  
-- **At rest:** title sits at the **bottom** of the image.  
-- **On hover:** image lifts / responds; title **rises toward middle**; a clean transparent **EXPLORE** control appears underneath.  
-- **Entire image is linked** to the hub landing page (click works even if EXPLORE is missed).  
-- EXPLORE must read as one word — never split (`EXPLOR` / `E`).
+### Book cards (`tc-book-card`)
+- Section: `tc-book-card`; paragraphs: `tc-leadership-body`; parent button: `tc-book-button`
+- At rest: cover + title + author only; hover: lift + descriptions roll down; leave hover: roll up
 
-### Guide / collection cards (Vercel “Start With a Guide…”)
+### Smaller product tiles
+- Hover: **Details | Reviews** (grades via `tc-grade-block`); equal sizes; no black/white bars
 
-- At rest: strong photo, title over image (usually bottom).  
-- On hover: soft dark translucent overlay (readable, **not** crushed black); title can move up; short description + “View Collection →” appear; subtle lift/shadow.
-
-### Membership / toggle (10Web vs Vercel)
-
-- Toggle changes the look and destination of the panels.  
-- **Four different looks** depending on toggle state.  
-- Cursor already aligned the WP toggle page toward **Vercel**. Prefer that direction unless Daniel says otherwise.
-
-### Smaller product tiles (sub-child grids)
-
-- Too small for long descriptions on the image.  
-- On hover: two transparent bottom controls — **Details** | **Reviews** (star grade for products/items; not the same pattern for books).  
-- Equal card sizes; no random black bars or white-out strips.
-
-### Hero / cover
-
-- **10Web “cover”:** image present on load; words + button animate into the center.  
-- **Vercel:** top placeholder for video called out as high value.  
-- Classes historically used on WP: `tc-explore-hero` (hero) and `tc-explore-hub` (hub/product tiles).
-
-### Explicit non-goals for §1
-
-- Do not treat Tailwind sample code as drop-in WP CSS.  
-- Do not use another Hostinger restore to “get the Vercel look.”  
-- Do not leave 10Web plugin changes to Angie unless Daniel asks.
+### Hero (`tc-explore-hero`)
+- Cover-style entrance; EXPLORE without gold arrow on pure heroes (arrow OK on hub tiles)
 
 ---
 
-## §2 — (next)
-*(Waiting for next section from Daniel.)*
+## §2 — Brand, voice, and permanent content rules
+
+**Who:** Premium affiliate site by Daniel Reid (Duke BS; Executive MBA Queens University of Charlotte; 30+ years national BD / construction; works through cancer treatment). Sells **decision certainty**, not products. Trust flywheel, not conversion funnel. Goal: top 1% affiliate authority.
+
+**Voice:** Premium, calm authority, truth-first. Confident, never loud. Direct, never abrasive. Specific beats vague.  
+On-brand: "Books that compound over years. Skip the noise."  
+Off-brand: "You won't believe what this book did for me!"
+
+**Permanent content rules (never violate):**
+- No em dashes (use periods, commas, or restructure)
+- No bold in body (headlines/labels only)
+- No contractions sitewide
+- No clickbait, no exclamation points, no hype
+- No fabricated facts/contacts
+- No medical/financial/clinical claims language
+- No guessing; no workarounds unless only option and approved
+- No rewriting approved structures without strong reason
+- **Affiliate-Only Rule:** never feature a product/brand without an active affiliate partnership
+- Current partners noted in Master Brief: AWIN, SwitchBot, Wayfair, Birch Lane, ShareASale, PartnerStack; CJ applied pending
+
+**Colors (locked):** navy `#1e3a5f` · charcoal `#1f1f1f` / `#1a1a1a` · cream `#f8f4ec` / `#faf9f6` · white `#ffffff` · gold `#b8944b`  
+**Type:** Playfair Display (headlines) · Inter (body)
+
+**Mission note:** Some Self-Help / Mental Wellness pages are non-monetized people-help resources (crisis lines, verified directories). Open door after launch for contact/help. If a product is not listed, it did not meet selection standards.
+
+---
+
+## §3 — Locked CSS classes (never rename, merge, or “improve”)
+
+`tc-book-card` · `tc-product-card` · `tc-leadership-body` · `tc-book-button` · `tc-card-row` · `tc-overlay-card` · `tc-overlay-card-product` · `tc-explore-hub` · `tc-grade-block` · `tc-rating` · `tc-tech-intro` · `tc-explore-hero`
+
+Uniform image sizing rules are intentional. Images must not spill outside their boxes.
+
+---
+
+## §4 — Site structure, SEO, product grade, launch intent
+
+**Hubs:** Recommended Books · Office Workspace · Technology · Smart (AI) Lighting · Featured Productivity Tools · Self-Help and Mental Wellness · plus editorial **The Truth Untold Series**
+
+**SEO (every page):** focus keyword in title, meta (&lt;160), H1, ≥1 H2, first paragraph, hero alt; density 0.5–1.5%; title &lt;60 chars and includes **2026**; RankMath Content AI during writing.  
+Title framework: `Best [category] for [audience] in 2026 | Truth Collective`  
+**Slug lock:** never change a published/indexed slug.  
+Internal links: up to parent, down to children, sideways 3–4 siblings. External FTC pattern paragraph locked.
+
+**Product standards:** ≥3.5/5 long-term reviews; pro daily-use quality; sensible returns; trusted retailer. Grade via `tc-grade-block` (may differ from retailer).
+
+**Launch money pages (historical target):** Best Standing Desks · Best Office Chairs Under 500 · Best Monitors for Productivity. Then SEMrush, fix proven issues, go live.
+
+**Publish gate:** technical render · trust · FTC disclosure · internal links · index-worthy · clear next step.
+
+---
+
+## §5 — Operating mode (how Cursor must work)
+
+- **99% certainty or stop.** Never guess. Look at uploads before commenting.
+- Prefer ranked expert next step over menus of choices (Master Brief). During **staging recovery / health-limited sessions**, still use **one short step** so Daniel is not overloaded.
+- Fix the issue and cause; do not invent parallel CSS systems per page.
+- Do not edit RankMath plugin PHP; configure schema in RankMath UI.
+- Staging work stays on staging until hierarchy, URLs, and hub tiles are locked.
+- Angie executes only Cursor-written one-task prompts (`diagnostics/ANGIE-CONTROL.md`).
+- Leave **10WEB manager** alone until Daniel asks.
+- No Hostinger restore roulette; never Website backup restore onto live by mistake.
+
+**AI stack roles (Master Brief):** Claude/strategy historically; Cursor for code under explicit instructions; V0/Vercel = visual reference; RankMath Pro; Canva; scheduling tools later. ChatGPT removed from direct production (research only).
+
+---
+
+## §6 — Staging → live migration (summary)
+
+Full plan: `docs/brand-references/TC_Cursor_Migration_Brief.docx`
+
+- Goal: exact working copy; **preserve**, do not improve/refactor animations or Additional CSS
+- Back up staging + live + export Additional CSS text before any live touch
+- Export GSC indexed URL inventory; build 301 map for path changes
+- Prefer Method A: full clone plugin package after live rollback backup confirmed
+- Serialization-safe replace `tcstaging.truth-collective.com` → `truth-collective.com`
+- Post-check: hover all card types, CSS line count, schema, no staging URLs left, FTC footer, sitemap submit
+- Stop at every stop point if certainty &lt; 99%
+
+**Do not run migration while staging recovery is incomplete.**
+
+---
+
+## §7 — Launch tips still in force (Jun 2026)
+
+Full note: `docs/brand-references/Cursor_tips_for_launch_6.docx`
+
+- Hubs need image + title + one line + EXPLORE; depth lives on children
+- Hub tiles: **3 columns**, not 4; block order image → title → brief
+- Before migrate: hub/child URL map, robots not blocking, sitemap 200, no `__trashed` URLs, no duplicate hub titles
+- Image export target often **1000×800** for category tiles (keeps rows even)
+- LiteSpeed purge after CSS/block changes
+- Speakers scope may broaden from office-desk to speakers-by-type — decide slug/parent before cloning many tiles
+
+---
+
+## §8 — Current recovery override (Aug 2026)
+
+See `STAGING-RECOVERY-HANDOFF.md`. Short version:
+- Crops / EXPLORE damage / uneven cards = leftover conflicting CSS + stale hub block URLs, not “delete all pages”
+- Fix with controlled Angie/Cursor edits; not more restores
+- File Cabinets page exists; Office hub tile still points at `/file-cabinets-credenza/` (wrong)
+
+---
+
+## §9 — (open)
+Daniel may append more sections one at a time.

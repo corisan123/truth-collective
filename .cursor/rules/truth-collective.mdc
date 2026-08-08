@@ -1,0 +1,19 @@
+---
+description: Truth Collective standing rules for staging and brand work
+alwaysApply: true
+---
+
+# Truth Collective
+
+Read `docs/TC-STANDING-BRIEF.md` and `STAGING-RECOVERY-HANDOFF.md` before acting.
+
+## Hard rules
+- Staging only unless Daniel explicitly asks for live work. Live path is `public_html` without `tcstaging`. Never Website backup restore for staging recovery.
+- No guessing. If below ~99% certainty, stop and say so.
+- Do not rename/merge/delete locked classes: `tc-book-card`, `tc-product-card`, `tc-leadership-body`, `tc-book-button`, `tc-card-row`, `tc-overlay-card`, `tc-overlay-card-product`, `tc-explore-hub`, `tc-grade-block`, `tc-rating`, `tc-tech-intro`, `tc-explore-hero`.
+- Do not change published/indexed slugs.
+- Content Cursor touches: no em dashes, no bold body, no contractions, no hype/clickbait.
+- Affiliate-only product mentions. Leave 10WEB manager alone until Daniel asks.
+- Angie: only Cursor-written one-task prompts (`diagnostics/ANGIE-CONTROL.md`). Prefer Plan/Approve.
+- Fix cause; do not invent parallel CSS systems. Prefer Vercel-style readable overlays from the standing brief §1.
+- During recovery/health-limited sessions: one short step at a time; no restore roulette; no “fix every page” pressure.
