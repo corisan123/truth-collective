@@ -137,8 +137,19 @@ Compare **28 Jul 2026 @ 10:06** → **@ 11:34** (UI may say 11:43):
 
 After restore: **View** the page on the front. Report: overlays better Y/N; images show Y/N (404s possible).
 
-## Next recovery order (Computers only)
-1. **Preview** WP revision **28 Jul ~11:34/11:43**. If overlays/structure look right → **Restore This Revision** (WP Revisions only).
-2. Recheck live Computers: count `tc-overlay-card` on product columns; note remaining 404 images.
-3. **Media:** File Manager / uploads-only for missing `2026/07/` files — do not Jul 24 full-site restore.
-4. If Preview is not better: repair one product Section on current page by hand.
+## Revision hunt CLOSED (Daniel 2026-08-08 — stop)
+
+**28 Jul 2026 @ 11:43** (page revision, not Hostinger Jul 24):
+- Looks nearly as ruined as Jul 24 visually
+- **Only ~4 of 30+** product cards still have `tc-overlay-card` on Section + `tc-explore-hub` on image (Dell/Cyber Power row confirmed in editor)
+- **Survived:** intro `tc-book-card` / `tc-leadership-body` hover drop-downs; Custom HTML grade / star markup
+- **Dead:** most product overlay classes; images missing/404 in editor placeholders
+
+**Conclusion:** No WP revision found that is the finished Rank Math ~90 fully classed page. Jul 28 11:43 is a **partial** overlay pass, not a restore-to-glory target. **Stop revision browsing.** Do not Restore hoping 11:43 fixes the page.
+
+## Next recovery order (Computers only) — when Daniel has energy
+
+1. **Stop Hostinger/WP revision roulette** for this page.
+2. Repair from **current** markup as a rebuild-in-place: Cursor writes one product-card template (Section `tc-overlay-card` or `tc-overlay-card-product` + image `tc-explore-hub` + grade Custom HTML); Daniel or Angie applies **one card**, then repeat.
+3. **Media:** fix/re-upload 404 product images separately (File Manager / library) — classes will not bring missing files back.
+4. Sitewide flicker / Additional CSS layers remain a parallel track — not solved by Computers revisions.
