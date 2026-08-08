@@ -7,8 +7,8 @@
 
 | Issue | Detail | HTTP |
 |-------|--------|------|
-| Leadership CTA | “Explore the Leadership Collection” → site root `/` (should likely be leadership books) | loops home |
-| Featured Productivity | `/featured-productivity-tools/` linked in content | **404** |
+| Leadership CTA | Was “Explore the Leadership Collection” → `/`. **2026-08-08 REST recheck:** phrase gone; hub already → `/recommended-books-2026/leadership-books/` | **200** |
+| Featured Productivity | `/featured-productivity-tools/` (`data-id=109` invalid) still on homepage — propose → `/productivity-tools/` (`5680`) | **404** |
 | Podcast slug split | `/ai-mastery-podcast-collection/` (200) vs `/ai-mastery-collection-podcast/` (301) | split |
 | Old books path | `/recommended-books/` | 301 → newer |
 | Self-help old path | `/recommended-books/self-help-and-mental-wellness/` | 301 |
