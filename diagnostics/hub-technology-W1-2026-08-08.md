@@ -19,9 +19,24 @@
 | `/technology-2/` | verify target |
 | `/smart-lighting/` | likely OK |
 
+## REST-hub-technology-S — DONE (Daniel Approve 2026-08-08)
+
+Backup: `diagnostics/backups/page-111-technology-hub-before-REST-hub-technology-S-2026-08-08.html`
+
+| Before | After |
+|--------|--------|
+| `/recommended-books/` | `/recommended-books-2026/` (id 38) |
+| `/best-office-workspace-products-tools/` (107 gone) | `/office-workspace-products-and-tools/` (5939) |
+| `/featured-productivity-tools/` (109 gone) | `/productivity-tools/` (5680) |
+| `/technology-2/` | `/technology-hub/` (111) |
+| `/recommended-books/self-help-and-mental-wellness/` | `/self-help-and-mental-wellness/` (86) |
+| `/smart-lighting/` | unchanged (already good) |
+
+Public targets all **200**.
+
 ## Next
-1. Daniel: 10Web **mock only** (prompts below) → screenshot to Cursor/Claude  
-2. Cursor: propose `REST-hub-technology-S` link fixes (Approve)  
-3. Then gold template + Claude voice for hub intro  
+1. Daniel: 10Web mock using **combined page-specific prompt** (not generic) → screenshots  
+2. Cursor: gold template extract from healthiest Technology tile  
+3. Claude: hub intro voice when ticketed  
 
 **Do not:** connect 10Web builder to overwrite staging/live.
