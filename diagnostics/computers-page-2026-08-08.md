@@ -71,6 +71,20 @@ Sample media in snippet: `…/uploads/2026/07/Facebook-Cover-AI-Agentic-Advances
 2. **Then** Daniel built the page to ~**90/100 Rank Math**, fully animated, product images, overlays — **completed just before the 10Web crash**.
 3. Crash / restores damaged that finished build. **Jul 24** made it worse than the Jul 28 review.
 
+### Diff locked: 7/26 stub → 7/28 11:43 (Daniel compare)
+
+| | **7/26 (Removed)** | **7/28 11:43 (Added)** |
+|--|--------------------|-------------------------|
+| Hero | Core `wp:image` id 856, `Untitled-3200-x-1040-px-…`, width 1173px | New image id **8233**, wide/full, `Facebook-Cover-AI-Agentic-Advances-and-Emerging-Technologies-1000-x-1000-px-1.png`, alt set |
+| Intro copy | Loose 17px paragraphs | Centered **h1** + colored **h2** banner (“Tools That Keep Up…”) |
+| Structure | Almost none | Kadence **rowlayout** 3 columns |
+| Classes | None of the locked card system | **`tc-book-card`** on columns + **`tc-leadership-body`** on paragraphs (hover drop-down intro cards) |
+| Below | — | Kadence spacer/stripes divider; next row starts product section titles (“Gaming Computers”, “Desktops For Professionals”) |
+
+**What occurred:** This is the jump from **stub → real page build start** (hero swap, H1/H2, intro book-cards, divider, product section headings). Overlay/product animation classes are **not** in this slice of the diff yet — they come further down the 7/28 page (or a later revision the same day) as product rows were filled in.
+
+**Recovery implication:** 7/28 11:43 is the right **family** of revisions (post-stub). Still verify the **full** 7/28 revision includes product rows with `tc-overlay-card` / `tc-explore-hub` before Restore — do not stop at the intro-only portion of the compare view.
+
 **Hero+paragraphs revision = pre-build stub. DO NOT RESTORE IT.**  
 Restoring that would **delete** the finished Computers page and roll back to “just started.”
 
