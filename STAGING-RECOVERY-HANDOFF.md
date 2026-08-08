@@ -115,9 +115,19 @@ These patches can survive a “pre-10Web” content rollback if they live in **C
 
 ---
 
-## After Phase 1 (only when all three answers are clear)
+## After Phase 1 (answers clear enough to proceed)
 
-Likely next focus (not today): fix **wrong hub tile URLs** in block content so they match real page permalinks — starting with File Cabinets on the Office hub. CSS cleanup for EXPLORE/overlays after that. Restores only if Phase 1 proves media was never actually replaced.
+**Do not restore again for crops / EXPLORE / black bars / uneven cards.** That symptom set is CSS + block markup.
+
+User inventory (2026-08-08 screenshots): Smart Lighting children, Technology Hub (16 tiles, links dead, heavy crop), Tablets (uneven cards / unwanted buttons), Speakers (black bars), Audio & Video (mixed; some links work), Computers (**worst** — overlays collapsed, ratings raw, images gone). Feels worse after Jul 24-era restore because **old Cursor “STAGING PATCH / tc-explore” CSS** is still applied on top of rolled-back blocks.
+
+Live HTML check: **no** `10web`/`tenweb` markers in page HTML. ~57KB of `tc-explore*` / STAGING PATCH CSS still present. See `diagnostics/css-inventory-2026-08-08.md`.
+
+**Next work order:**
+1. Disable/remove conflicting Additional CSS (`tc-explore-hub`, product overlay patches).
+2. Fix wrong hub/product URLs in block content.
+3. Confirm Plugins list has no 10Web; rename `object-cache.php` if present.
+4. Restores only if a later check proves missing media — not for this visual mess.
 
 ---
 
