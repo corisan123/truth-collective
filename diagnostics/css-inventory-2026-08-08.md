@@ -11,6 +11,12 @@ No `10web` / `tenweb` / `twbb` markers found in HTML of home, Technology Hub, Co
 - `STAGING PATCH 01G — FORCE CARD LABEL ONTO ITS OWN LINE` — **intended fix** for title overlap; leave on. If overlap persists, later patches (Explore Hub / 02-PRODUCT) are likely overriding or fighting it.
 - `TC Explore Hub Overlay Animation, 2026-05-26` — start of Explore Hub stack (many follow-on add-ons). Not “delete all explore.” Crop often = **overlay + explore used together** + later patches overriding each other. Disable **one add-on layer** at a time after end markers are known.
 - `STAGING PATCH 02A — OVERLAY BUTTON ANCHOR + INLINE STAR RENDER FIX` — **KNOWN GOOD. SKIP.** Two-button overlay system (`.tc-overlay-buttons` / `.tc-affiliate-btn` / `.tc-grade-btn`); days to perfect; product page still fine after 10Web crash. Do not disable or “improve.”
+- **02A / product-card settled behavior (Daniel paste 2026-08-08)** — do not regress:
+  1. Card near-square for 600×600 product images, cover fill, slight crop  
+  2. Title 18px bold navy at rest, white on hover, heavy shadow removed  
+  3. Grade button stacked: “TC Grade” (Playfair) over gold stars, no numeral  
+  4. Both buttons matching transparent blue, reduced height  
+  5. Buttons hidden at rest, fade up on hover (desktop); always shown on mobile
 
 ### Architecture note (Daniel 2026-08-08)
 - Originally: `tc-overlay-card` = Section; `tc-explore-hub` = images (EXPLORE is JS/CSS look-alike; whole image linked).
