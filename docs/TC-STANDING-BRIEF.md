@@ -9,6 +9,7 @@ Update only with Daniel’s confirmation (Master Brief rule).
 - `TC_Cursor_Migration_Brief.docx` (§6)
 - `Cursor_tips_for_launch_6.docx` (§7)
 - `HEARING_TRACKER_WEBSITE_TO_COMPARE_TC_WEBSITE.docx` + TechRadar screenshots (§9)
+- Membership toggle CSS + evaluation-engine intent (§11–§12); Copilot Task share pending screenshot/export
 
 **Session open line:** Read `docs/TC-STANDING-BRIEF.md` and `STAGING-RECOVERY-HANDOFF.md`, then continue.
 
@@ -200,5 +201,37 @@ These are **polish / UX references**. Keep Truth Collective locked palette and t
 
 ---
 
-## §11 — (open)
+## §11 — Membership toggle (known-good Cursor CSS)
+
+- Vercel-aligned light toggle using TC navy/gold/cream tokens
+- Reference file: `docs/brand-references/tc-membership-toggle.css`
+- Scoped page id in CSS: `body.page-id-8176`
+- Preserve this pattern; do not “improve” into a heavier card system
+
+---
+
+## §12 — Technical evaluation engine (paused; resume later)
+
+**Intent (from prior Cursor + Copilot Edge work):**
+- Copilot Edge produced quantitative and qualitative technical engineering evaluation documents / SME governance spec sheets
+- Cursor wrote complex HTML so Daniel only enters a product URL or ID
+- Throughput: descriptive summary + expert grade/rank that is **technical, not subjective**
+- Two tracks:
+  - **Quantitative** — physical products
+  - **Qualitative** — books, editorials, scripts, etc.
+- Work paused when “the dam broke” (site crash / recovery). Do not discard; resume after staging is stable
+
+**Copilot Task visual (not Copilot Edge):**
+- Share link (geo-blocked from this agent environment):  
+  https://copilot.microsoft.com/shares/artifacts/Z6LhgwiDPF9L2D8JPqHTd
+- Need Daniel to upload screenshot and/or HTML/export so Cursor can lock the UI pattern into `docs/brand-references/`
+
+**Rules when resumed:**
+- Cursor owns implementation code (Additional CSS / custom HTML)
+- Claude may critique aesthetics only
+- Grades must stay standards-driven (Selection Standards / SME governance), never vibe scoring
+
+---
+
+## §13 — (open)
 Daniel may append more sections one at a time.
