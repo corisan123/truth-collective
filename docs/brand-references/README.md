@@ -7,6 +7,7 @@
 | `TC_Cursor_Migration_Brief.docx` | Staging → live migration rules |
 | `Cursor_tips_for_launch_6.docx` | Launch week tips |
 | `HEARING_TRACKER_WEBSITE_TO_COMPARE_TC_WEBSITE.docx` | Hearing Tracker homepage jobs |
+| `../AI-PLATFORM-RULES-AND-PROMPTS.md` | Per-AI rules + paste-ready prompts (Cursor / Claude / Task / Edge HOLD) |
 | `tc-membership-toggle.css` | Known-good Vercel-aligned membership toggle CSS |
 | `master-binder-premium-display-intelligence.md` | Copilot Task Master Binder structure (Quantitative track) |
 | `master-binder-tc-tokens.css` | Tokens/layout extracts from that binder |
