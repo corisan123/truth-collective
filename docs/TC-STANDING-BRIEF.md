@@ -164,10 +164,20 @@ See `STAGING-RECOVERY-HANDOFF.md`. Short version:
 These are **polish / UX references**. Keep Truth Collective locked palette and type (§2). Do not import TechRadar magenta/dark-news skin as the TC brand system.
 
 ### Shared feel targets
-- Polished, professional, **not heavy or blocky**
+- Polished, professional, **not heavy or blocky** / not big bulky blocks
 - Generous spacing; clear hierarchy; high-quality imagery
 - Motion that invites exploration (hover, light lift) without crushing readability
 - Homepage can lead with **video or premium hero** (Hearing Tracker plays video on entry; Vercel samples also valued a video placeholder)
+
+### 10Web / Vercel sample patterns to reach (screenshots 2026-08-08)
+Confirmed from Daniel’s attachments (sample UI, not current WP staging):
+1. **Air and lightness** — soft backgrounds, rounded light product cards, navy/gold CTAs, no stacked gray slabs
+2. **Category tiles: grayscale at rest → full color on hover** — non-hovered neighbors stay B/W; hovered tile gains color, short blurb, bullets, “View Collection →”
+3. **Editorial cards** — outlined titles, greyscale imagery at rest, color on hover; “Read Feature”
+4. **About / newsletter** — clean two-column light or dark navy footers; Playfair + Inter; gold accents; not bulky form blocks
+5. **Hero** — bright workspace photo, simple “Explore the Hubs” CTA, light motion on load (Vercel/10Web samples)
+
+**Gap:** Current WP staging is heavier/bulkier than these samples. Direction is toward this lightness while keeping locked TC tokens and classes. Cursor CSS for the B/W→color effect was written for the 10Web sample; paste that CSS into the repo when available (`docs/brand-references/`).
 
 ### Hearing Tracker — match these three homepage jobs
 1. **Premium visual hero** — immediate premium signal (TC: curated workspace, book stack, or Truth Untold cover / video)

@@ -1,0 +1,14 @@
+# Brand references
+
+| File | What it is |
+|------|------------|
+| `vercel-and-10web-comparison.pdf` | Annotated Vercel vs 10Web hover/overlay samples |
+| `TC_Master_Brief_update_2.0_5_26_2026.docx` | Master Brief 2.0 |
+| `TC_Cursor_Migration_Brief.docx` | Staging → live migration rules |
+| `Cursor_tips_for_launch_6.docx` | Launch week tips |
+| `HEARING_TRACKER_WEBSITE_TO_COMPARE_TC_WEBSITE.docx` | Hearing Tracker homepage jobs |
+| `tc-membership-toggle.css` | Known-good Vercel-aligned membership toggle CSS |
+
+## Pending from Daniel
+- Cursor CSS that drives **grayscale → color on hover** (10Web sample). Screenshots received 2026-08-08; code file not yet in repo.
+- Copilot Task artifact screenshot/export (share link geo-blocked for agent).
