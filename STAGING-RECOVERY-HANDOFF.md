@@ -133,7 +133,7 @@ Live HTML check: **no** `10web`/`tenweb` markers in page HTML. ~57KB of `tc-expl
 **Next work order:**
 1. Disable/remove conflicting Additional CSS (`tc-explore-hub`, product overlay patches) — crops/black bars.
 2. On each hub page, update block link URLs to match **Pages → View** permalinks (start: Office hub File Cabinets tile).
-3. Confirm Plugins list has no 10Web; check **WPCode** snippets (admin bar shows WPCode); rename `object-cache.php` if present.
+3. **10WEB manager is still Active** (v1.20.21) — deactivate first, then delete after a front-end check. Also check **Code Snippets** / WPCode for `tc-explore` CSS; rename `object-cache.php` if present.
 4. Restores only if a later check proves missing media — not for this visual/link mess.
 
 ---
