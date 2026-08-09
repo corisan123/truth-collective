@@ -19,7 +19,8 @@ Update only with Daniel’s confirmation (Master Brief rule).
 
 **Context:** After a live-site crash and failed recovery, Daniel explored **Vercel** and **10Web**. Their sample pages defined hover / lift / overlay language later named `tc-explore-hub`, `tc-explore-hero`, etc. Samples used Tailwind (reference only, not WP drop-in). Cursor already rebuilt the **membership/toggle page** toward **Vercel**.
 
-**Reference:** `docs/brand-references/vercel-and-10web-comparison.pdf`
+**Reference:** `docs/brand-references/vercel-and-10web-comparison.pdf`  
+**(File on disk 2026-08-09.** Same pack as Daniel Drive `vercel and 10web smaple images.pdf`. Image-heavy annotated samples: 10Web hover overlay, product details frame, Details\|Reviews on small tiles, Vercel editorial greyscale→color, cover entrance + video placeholder. Map: `diagnostics/vercel-10web-sample-pdf-ingested-2026-08-09.md`.)
 
 ### Preference ranking (overlays)
 1. **Vercel overlays** — preferred polish (legible hover, not crushed dark)
