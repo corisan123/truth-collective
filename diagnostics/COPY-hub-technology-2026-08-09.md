@@ -1,7 +1,8 @@
 # COPY-hub-technology — Claude draft (2026-08-09)
 
-**Status:** Accepted for Cursor implement (await Daniel Approve on REST ticket)  
-**Voice check:** No em dashes; no contractions; no bold body; no hype. Possessive “Collective's” OK.
+**Status:** `REST-hub-technology-R1` **APPLIED** 2026-08-09 via staging REST (Cursor approved + Daniel approved).  
+**Voice / SEO check (Cursor):** Pass — keeps Technology Hub + Trusted Selection Standards entities; tighter; no hype. Possessive “Collective's” OK.  
+**Backup:** `diagnostics/backups/page-111-before-REST-hub-technology-R1-2026-08-09.html`
 
 ## Approved intro (replace staging Technology Hub intro paragraphs)
 
