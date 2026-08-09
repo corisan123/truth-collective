@@ -188,8 +188,8 @@ User is recovering from chemo/immunotherapy. Prefer **one short step**, **one qu
 
 ## Session status (2026-08-09 evening)
 
-**Technology Hub:** R1–R3 applied (cream split hero). Daniel: better, but still **vertically stacked / old** below the hero — old Categories essay stack still live. **R4 scaffold ready** (cream 3-col grid of 8 real children). See `diagnostics/REST-hub-technology-R4-2026-08-09.md` and `diagnostics/hub-technology-layout-vertical-stack-2026-08-09.md`.
+**Technology Hub:** R1–R4 applied. R4 (2026-08-09): cream **3-col** grid of 8 real children; old Categories essay stack removed. See `diagnostics/REST-hub-technology-R4-2026-08-09.md`. Still transitional: How-To boxes + Title-1 banner above hero.
 
-**REST auth:** Application Password now returns **401**. R4 cannot apply until Daniel creates a new staging Application Password (Users → Profile).
+**REST auth:** Application Password **Cursor Staging Recovery II** working (2026-08-09). Session-only; do not commit.
 
 **Images:** Sitewide “crop / sizes wrong” is mostly **CSS** (Explore + Overlay combo in Additional CSS), not missing files. **Computers** child is an exception — most product uploads **404** (selective File Manager restore later; no Jul 24 full restore).

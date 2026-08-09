@@ -331,7 +331,7 @@ Not “easiest.” Not “what feels convenient.” **Best path to repair → po
 ### Optimal combination (ranked roles)
 
 1. **Cursor (lead)** — Architecture, Additional CSS ownership, conflict checks, final HTML, **applies** changes via REST (primary) + browser-in-admin (exception) + named WP-CLI if SSH exists (backup/search-replace).
-2. **Staging Application Password** — Primary auth for Cursor writes to pages. One-task or small batches only after first proven edit. **(2026-08-09:** prior App Password returns 401 — renew in Users → Profile before next REST apply; use email as username.)
+2. **Staging Application Password** — Primary auth for Cursor writes to pages. One-task or small batches only after first proven edit. **(2026-08-09:** use email as username; active App Password name **Cursor Staging Recovery II**. Revoke older ones in Users → Profile.)
 3. **SSH + WP-CLI** (if Hostinger allows) — **Backup page content before each API write**; occasional safe search-replace. Not for freestyle SQL.
 4. **Claude + Copilot Task** — Parallel **draft factories with non-overlapping lanes** (see below). Cursor assigns work; vetoes/merges. Neither gets Additional CSS or wp-admin keys.
 5. **Daniel** — Approve policy, View-check critical URLs, taste sign-off, Hostinger file/media when disk 404s. Minimal paste labor.

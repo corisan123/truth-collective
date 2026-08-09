@@ -1,6 +1,6 @@
 # Technology Hub — vertical stack / old look (2026-08-09)
 
-**Status:** Diagnosed. R4 scaffold ready. REST apply blocked until Application Password renewed.
+**Status:** Diagnosed. **R4 APPLIED** 2026-08-09 via REST (Cursor Staging Recovery II).
 
 ## What Daniel reported
 - Cream / navy work is getting better

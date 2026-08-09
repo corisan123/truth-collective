@@ -1,36 +1,30 @@
-# REST-hub-technology-R4 — READY (blocked on auth) 2026-08-09
+# REST-hub-technology-R4 — APPLIED 2026-08-09
 
 **Page:** Technology Hub `111`  
-**Goal:** Stop the tall old vertical category stack. Keep cream split hero. Install a cream **3-column** grid of the **eight real children** only.
+**Backup:** `diagnostics/backups/page-111-before-REST-hub-technology-R4-2026-08-09.html`  
+**Auth:** Application Password named **Cursor Staging Recovery II** (session only; not in git)
 
-## Why
-Daniel: getting better, but still vertically stacked and old looking. 10Web mood board moved things around; we borrow the airy horizontal feel, not 10Web HTML.
+## What changed
+1. Upgraded page-scoped CSS `TECH-HUB-CREAM-R3` → `TECH-HUB-CREAM-R4`
+2. Replaced old **Technology Hub Categories** essay stack (Printers, Robots, Smart Home, etc.) through just before **Final Thoughts**
+3. Installed cream **3-column** grid of the **eight real children** only (`tc-tech-cat-tile`)
+4. No `tc-overlay-card` on new tiles (avoids Explore+Overlay crop combo)
+5. Gold text Explore; gentle lift; tile rise motion; hero split kept
 
-## What R4 does
-1. Upgrades page-scoped CSS `TECH-HUB-CREAM-R3` → `TECH-HUB-CREAM-R4` (hero rules kept + grid rules).
-2. Replaces **Technology Hub Categories** through just before **Final Thoughts** with the cream tile grid.
-3. Tiles use `tc-tech-cat-tile` (page-scoped). **No** `tc-overlay-card` on these tiles (avoids Explore+Overlay crop combo).
-4. Gold text **Explore** label; gentle lift + image darken; scroll rise motion (respects reduced motion).
-5. One distinct working image per tile (Computers child media is mostly 404 — tile uses a working hub image until selective uploads restore).
+## Public verify (2026-08-09)
+- `tc-tech-hub-cream-r4` present; R3 id gone
+- `tc-tech-cat-grid` present; 8 tile images HTTP 200
+- Old “Office Printers” / “Robots & AI Assistants” headings gone
+- Final Thoughts kept
+- View: https://tcstaging.truth-collective.com/technology-hub/ (hard refresh)
+
+## Still transitional (later tickets)
+- Blue-border “How To Use / What You Will Find Here” blocks still sit between hero and grid (add vertical length)
+- Title-1 banner image above hero still present
+- Computers child page media 404s remain a separate selective-uploads issue
+- Sitewide Explore+Overlay crop CSS still in Additional CSS for other pages
 
 ## Files
-- `diagnostics/scaffolds/REST-hub-technology-R4-category-grid.html`
-- `diagnostics/scaffolds/REST-hub-technology-R4-section-only.html`
-- `diagnostics/scaffolds/REST-hub-technology-R4.css`
-- `diagnostics/scaffolds/REST-hub-technology-R4-tiles.json`
 - `diagnostics/scaffolds/apply-REST-hub-technology-R4.py`
+- `diagnostics/scaffolds/REST-hub-technology-R4-*.html|css|json`
 - Diagnosis: `diagnostics/hub-technology-layout-vertical-stack-2026-08-09.md`
-
-## Apply (when App Password works)
-```bash
-export TC_WP_USER='dreid1253@yahoo.com'
-export TC_WP_APP_PASSWORD='xxxx xxxx xxxx xxxx xxxx xxxx'
-python3 diagnostics/scaffolds/apply-REST-hub-technology-R4.py
-```
-
-## Blocked
-Staging Application Password currently returns **401** on `/wp-json/wp/v2/users/me` and `pages/111?context=edit`. Need a new Application Password from Users → Profile (staging only).
-
-## View-check after apply
-Hard refresh: https://tcstaging.truth-collective.com/technology-hub/  
-Expect: navy/cream hero unchanged in spirit; below it a 3-col cream grid (2-col tablet, 1-col phone) of eight categories — not the old Printers/Robots/Smart Home essay stack.
