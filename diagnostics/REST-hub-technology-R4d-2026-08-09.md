@@ -1,7 +1,7 @@
 # REST-hub-technology-R4d — APPLIED 2026-08-09
 
 **Page:** Technology Hub `111`  
-**Backup:** `diagnostics/backups/page-111-before-REST-hub-technology-R4d-2026-08-09.md` wait html
+**Backup:** `diagnostics/backups/page-111-before-REST-hub-technology-R4d-2026-08-09.html`
 
 Daniel: three-across grid works; tiles still cropping.
 
