@@ -188,7 +188,7 @@ User is recovering from chemo/immunotherapy. Prefer **one short step**, **one qu
 
 ## Session status (2026-08-09 evening)
 
-**Technology Hub:** R1–R5 applied. R5: roomier **2-across** category tiles (less boxed/squished); How-To chrome quieted. Still transitional vs 10Web airy horizontal compositions; Title banner + How-To copy remain. See `diagnostics/REST-hub-technology-R5-2026-08-09.md`.
+**Technology Hub:** R1–**R6** applied. **R6 delete-first (Claude SPEC):** removed Title-1 banner + duplicate intro/How-To stack; kept navy Welcome hero + three light stats + eight-tile grid; Final Thoughts “13” → “eight”. Process lock: delete before add on every hub. See `diagnostics/REST-hub-technology-R6-2026-08-09.md`.
 
 **REST auth:** Application Password **Cursor Staging Recovery II** working (2026-08-09). Session-only; do not commit.
 

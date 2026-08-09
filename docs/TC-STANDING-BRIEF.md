@@ -308,6 +308,8 @@ Top-1% quality is the destination. Order of work is non-negotiable:
 
 **Hub boundary rule (Daniel 2026-08-09 — locked):** Hub pages must **not** commingle other hubs’ topics or CTAs (e.g. ERP/CRM / client-profitability copy belongs on **Productivity**, not Technology; Leadership Collection CTA stays off Technology Hub). Slight topic overlap is OK on **child** pages only. 10Web/Claude drafts that bleed across hubs are rejected. Staging Technology Hub checked clean of ERP/CRM bleed after R1; the bleed was in the 10Web sandbox mock.
 
+**Delete-before-add rule (Daniel + Claude 2026-08-09 — locked):** On hub rebuilds, do a full top-to-bottom read first. If a new section replaces an old job (hero, intro, category grid), **delete the old block before or as you add the new one**. Never leave two sections competing for the same job. Technology Hub R6 is the reference fix for “six stacked heroes.”
+
 ---
 
 ## §14 — Best strategy stack (outcome-optimal; Daniel asked 2026-08-08)
