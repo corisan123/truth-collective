@@ -188,7 +188,7 @@ User is recovering from chemo/immunotherapy. Prefer **one short step**, **one qu
 
 ## Session status (2026-08-09 evening)
 
-**Technology Hub:** R1–R4c applied. R4 grid of 8 children; **R4b** orphan-close fix; **R4c** neutralize alignfull/100vw breakouts that left-stuck desktop layout (`diagnostics/REST-hub-technology-R4c-2026-08-09.md`). Still transitional: How-To boxes + Title banner.
+**Technology Hub:** R1–R5 applied. R5: roomier **2-across** category tiles (less boxed/squished); How-To chrome quieted. Still transitional vs 10Web airy horizontal compositions; Title banner + How-To copy remain. See `diagnostics/REST-hub-technology-R5-2026-08-09.md`.
 
 **REST auth:** Application Password **Cursor Staging Recovery II** working (2026-08-09). Session-only; do not commit.
 
