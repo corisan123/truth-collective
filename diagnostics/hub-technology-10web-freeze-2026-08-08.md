@@ -1,22 +1,24 @@
 # Technology Hub — 10Web mood board FREEZE (2026-08-08)
 
-**Status:** FREEZE. Restored lite version is the visual target. No more 10Web rebuild prompts unless Daniel asks.
+**Status:** FREEZE confirmed 2026-08-09. Daniel’s cream editor screenshots are the visual target. Public `kind-louse.10web.cloud` preview may stay stale/dark — ignore it. No more 10Web rebuild prompts unless Daniel asks.
 
 ## What we borrow (look / motion only)
 - Cream / off-white field, navy + gold hierarchy
 - Large serif title with **Hub** in gold italic
-- Airy editorial hero, generous whitespace
+- Split hero option: navy side rail + cream copy column (“Welcome to the”)
+- Airy editorial sections, generous whitespace
 - Light professional feel (not bulky card chrome)
 - Smooth **scroll slide-up** on sections/images
-- Child tiles: lift, hover, EXPLORE language
-- Quiet gold rules / meta lines sparingly
+- Quiet gold rules / meta lines; EXPLORE as gold text link (or translucent label), not fat buttons
+- Soft white cards on cream OK when sparse; prefer image-first tiles for real hub children
 
 ## What we do not port
 - 10Web page code, Tailwind, or publish/migrate
-- Invented nav / fake category trees
-- Rainbow infographics, dense 12-up crowded grids from rejected passes
-- Final Thoughts / badge / stat chrome unless Cursor tickets later
+- Invented nav / fake category trees (Robotics mega-menu, etc.)
+- Rainbow 6-column product infographic on the hero (blue/teal/purple/orange)
+- Dense repeated collage chapters / Final Thoughts chrome unless later ticketed
 - Fonts other than site stack (Playfair + Inter on real WP)
+- Admin URLs with `twb_wp_login_token` (revoke if shared)
 
 ## Real staging IA (authoritative)
 Hub: id `111` · `/technology-hub/`
