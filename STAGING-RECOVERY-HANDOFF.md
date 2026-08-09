@@ -183,3 +183,13 @@ User is recovering from chemo/immunotherapy. Prefer **one short step**, **one qu
 - **Computers was fully built** (Rank Math ~90, animated, images) **just before 10Web crash.** Hero+paragraphs revisions are the **early stub only — never Restore those** (would wipe the finished page).
 - Stub hero file still **200** on correct host. Product `/uploads/2026/07/` files often **404** after Jul 24 uploads path.
 - **Computers revision hunt CLOSED (2026-08-08):** Jul 28 11:43 only has **~4/30+** cards with `tc-overlay-card` + `tc-explore-hub`; rest ruined like Jul 24. Book-cards + grade HTML survived. **No full finished-page revision found. Stop browsing revisions.** Next = repair-in-place one card at a time when Daniel has energy (see `diagnostics/computers-page-2026-08-08.md`).
+
+---
+
+## Session status (2026-08-09 evening)
+
+**Technology Hub:** R1–R3 applied (cream split hero). Daniel: better, but still **vertically stacked / old** below the hero — old Categories essay stack still live. **R4 scaffold ready** (cream 3-col grid of 8 real children). See `diagnostics/REST-hub-technology-R4-2026-08-09.md` and `diagnostics/hub-technology-layout-vertical-stack-2026-08-09.md`.
+
+**REST auth:** Application Password now returns **401**. R4 cannot apply until Daniel creates a new staging Application Password (Users → Profile).
+
+**Images:** Sitewide “crop / sizes wrong” is mostly **CSS** (Explore + Overlay combo in Additional CSS), not missing files. **Computers** child is an exception — most product uploads **404** (selective File Manager restore later; no Jul 24 full restore).
