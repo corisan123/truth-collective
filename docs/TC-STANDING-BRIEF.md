@@ -306,6 +306,8 @@ Top-1% quality is the destination. Order of work is non-negotiable:
 
 **Queued pattern factory (not now):** Daniel has **23** WP Patterns (plus Word/PDF on his computer). Many pattern links broke in the crash; he correctly stopped hand-editing. Homepage links are View-good per Daniel (2026-08-08). Pattern repair/polish = Cursor REST batch later (`diagnostics/patterns-inventory-2026-08-08.md`), with Claude/Task only on tickets — not Daniel hand-work.
 
+**Hub boundary rule (Daniel 2026-08-09 — locked):** Hub pages must **not** commingle other hubs’ topics or CTAs (e.g. ERP/CRM / client-profitability copy belongs on **Productivity**, not Technology; Leadership Collection CTA stays off Technology Hub). Slight topic overlap is OK on **child** pages only. 10Web/Claude drafts that bleed across hubs are rejected. Staging Technology Hub checked clean of ERP/CRM bleed after R1; the bleed was in the 10Web sandbox mock.
+
 ---
 
 ## §14 — Best strategy stack (outcome-optimal; Daniel asked 2026-08-08)
