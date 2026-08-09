@@ -188,7 +188,7 @@ User is recovering from chemo/immunotherapy. Prefer **one short step**, **one qu
 
 ## Session status (2026-08-09 evening)
 
-**Technology Hub:** R1–**R6** applied. **R6 delete-first (Claude SPEC):** removed Title-1 banner + duplicate intro/How-To stack; kept navy Welcome hero + three light stats + eight-tile grid; Final Thoughts “13” → “eight”. Process lock: delete before add on every hub. See `diagnostics/REST-hub-technology-R6-2026-08-09.md`.
+**Technology Hub:** R1–**R7** applied. R6 delete-first; **R7** scroll slide-up reveal + cover fill in 16:10 tiles. Image export guide: **1600×1000** (`diagnostics/IMAGE-SIZES-hub-tiles-2026-08-09.md`). Rank Math score: Daniel check in editor after save (not in REST). Orphan `#` links: none.
 
 **REST auth:** Application Password **Cursor Staging Recovery II** working (2026-08-09). Session-only; do not commit.
 
