@@ -13,8 +13,8 @@
 | 2 | Smart Home Automation | Canva/editorial slot **#2 = AI Series Part 6** (separate pack) |
 | 3 | Smart Lighting Hero image | |
 | 4 | AI Wearables | |
-| 5 | *(not named — gap)* | Confirm |
-| 6 | Audio/Video | |
+| 5 | Audio Video Hero Image | Confirmed Daniel 2026-08-10 |
+| 6 | Audio/Video | Distinct from #5 hero — category/tile use |
 | 7 | Office Speakers | |
 | 8 | Digital Tablets | |
 | 9 | Technologies and rapid changes (AR, VR, Holographics, etc.) | |
@@ -36,7 +36,6 @@
 | Vercel/10Web PDF | brand-reference | Motion/hover/layout gold — **not** WP HTML to port |
 
 ## Next (when Daniel is ready)
-1. Optional: name **#5** if it exists.  
-2. Optional: clarify **#16 TC Books** type.  
-3. For the page in progress: extract reachable PNG/JPG, then REST-swap matching tiles only.  
-4. Do **not** invent Tech Hub categories from this future-tech pack (hub children stay the locked eight).
+1. Optional: clarify **#16 TC Books** type.  
+2. For the page in progress: extract reachable PNG/JPG, then REST-swap matching tiles only.  
+3. Do **not** invent Tech Hub categories from this future-tech pack (hub children stay the locked eight).
