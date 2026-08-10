@@ -1,14 +1,15 @@
 # Canva remade image inventory (Daniel 2026-08-10)
 
-**Source:** Chat left→right labels for the remade pack (sitewide, not Tech Hub–only).  
-**Files:** Intended in staging `uploads/hub-tiles/` (`tiles.zip` still **403** to Cursor until extracted as public `.png`/`.jpg`).
+**Source:** Daniel chat left→right labels (confirmed again same day).  
+**Scope:** Sitewide remade pack — not Tech Hub–only.  
+**Files:** Staging `uploads/hub-tiles/` — `tiles.zip` still **403** to Cursor until extracted as public `.png`/`.jpg`.
 
-## Locked order / labels
+## Locked order / labels (confirmed)
 
 | # | Daniel label |
 |---|--------------|
 | 1 | Analog Writing Tools |
-| 2 | *(not named in message — confirm)* |
+| 2 | *(still not named — gap between #1 and #3)* |
 | 3 | Audio |
 | 4 | The Ones Who Gave Everything — Featured Billy Graham |
 | 5 | Computers |
@@ -35,13 +36,26 @@
 | 26 | Interactive Displays *(third / alt)* |
 | 27 | Computer Workspace |
 
-## Notes
-- Earlier in the same day Daniel also ordered **8 AI Mastery / AI Series** editorial graphics separately (`diagnostics/AI-mastery-tile-order-2026-08-10.md`). Keep that pack distinct from this #1–#27 remade set.
-- Claude rule still applies for product/hub tiles: prefer **no baked-in ad captions**; editorial covers may keep designed title art.
-- Do **not** mass-apply across the site until Daniel names the first page/URLs to update and zip contents are web-reachable.
+## Tech Hub eight-tile draft map (when files reachable)
 
-## Next (when Daniel is ready)
-1. Confirm **#2** label.  
-2. File Manager: **Extract** `hub-tiles/tiles.zip` (or ensure each file is a public PNG/JPG).  
-3. Pick **one** page family first (e.g. Technology Hub eight categories → map #5, #13/#20, #3, #22, #6, #25, #23, #8/#9/#26).  
-4. Cursor swaps those URLs via REST.
+| Hub category | Prefer from pack |
+|---|---|
+| Computers | #5 (alt #21 / #27) |
+| Monitors | #13 or #20 |
+| Audio & Video | #3 (alt #24 / #25) |
+| Headphones | #22 |
+| Speakers | #6 (alt #19) |
+| Projectors & Mics | #25 |
+| Tablets | #23 |
+| Interactive Displays | #8 / #9 / #26 |
+
+## Notes
+- Separate pack: **8 AI Mastery / AI Series** graphics → `diagnostics/AI-mastery-tile-order-2026-08-10.md`.
+- Prefer **no baked-in ad captions** on product/hub tiles; editorial covers may keep designed title art.
+- Do **not** mass-apply until Daniel picks the first page and files are web-reachable.
+
+## Next (blocked on files)
+1. Confirm **#2** label (or confirm there is no #2).  
+2. File Manager: **Extract** `hub-tiles/tiles.zip` → public PNG/JPG.  
+3. Pick **one** page first (Tech Hub eight vs another).  
+4. Cursor REST-swaps those `src` URLs only.
