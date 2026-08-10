@@ -1,7 +1,8 @@
 # Canva remade image inventory (Daniel 2026-08-10)
 
 **Source:** Daniel chat left→right labels (confirmed again same day).  
-**Scope:** Sitewide remade pack — not Tech Hub–only.  
+**Scope:** Salvage/replacement pics for broken or wrong site images — **not** a forced sitewide remake.  
+**Apply rule:** Use only the appropriate tiles for the **page currently in progress**.  
 **Files:** Staging `uploads/hub-tiles/` — `tiles.zip` still **403** to Cursor until extracted as public `.png`/`.jpg`.
 
 ## Locked order / labels (confirmed)
@@ -9,7 +10,7 @@
 | # | Daniel label |
 |---|--------------|
 | 1 | Analog Writing Tools |
-| 2 | *(still not named — gap between #1 and #3)* |
+| 2 | AI Series Part 6 *(editorial — see AI Mastery pack)* |
 | 3 | Audio |
 | 4 | The Ones Who Gave Everything — Featured Billy Graham |
 | 5 | Computers |
@@ -50,12 +51,11 @@
 | Interactive Displays | #8 / #9 / #26 |
 
 ## Notes
-- Separate pack: **8 AI Mastery / AI Series** graphics → `diagnostics/AI-mastery-tile-order-2026-08-10.md`.
+- **AI Mastery** = one of four Editorial Sections; **AI Mastery Book Collections** = child of **Recommended Books**.  
+- AI Series / AI Mastery graphics → `diagnostics/AI-mastery-tile-order-2026-08-10.md` (includes Part 6).  
 - Prefer **no baked-in ad captions** on product/hub tiles; editorial covers may keep designed title art.
-- Do **not** mass-apply until Daniel picks the first page and files are web-reachable.
 
 ## Next (blocked on files)
-1. Confirm **#2** label (or confirm there is no #2).  
-2. File Manager: **Extract** `hub-tiles/tiles.zip` → public PNG/JPG.  
-3. Pick **one** page first (Tech Hub eight vs another).  
-4. Cursor REST-swaps those `src` URLs only.
+1. File Manager: **Extract** `hub-tiles/tiles.zip` → public PNG/JPG.  
+2. Stay on the page in progress (Technology Hub eight tiles unless Daniel switches).  
+3. Cursor REST-swaps only the matching `src` URLs for that page.
