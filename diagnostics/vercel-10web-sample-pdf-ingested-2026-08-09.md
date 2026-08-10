@@ -21,3 +21,7 @@
 ## Not from this PDF
 - Fake mega category trees / Robotics invent for Technology Hub  
 - Publishing or migrating 10Web pages into Hostinger staging  
+
+## Related (2026-08-10)
+Daniel also labeled a separate chat tile set (#1 Robotics … #16 TC Books).  
+→ `diagnostics/vercel-10web-tile-labels-2026-08-10.md` (keep distinct from Canva #1–#27).  
