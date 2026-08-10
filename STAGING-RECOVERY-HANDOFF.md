@@ -193,3 +193,16 @@ User is recovering from chemo/immunotherapy. Prefer **one short step**, **one qu
 **REST auth:** Application Password **Cursor Staging Recovery II** working (2026-08-09). Session-only; do not commit.
 
 **Images:** Sitewide “crop / sizes wrong” is mostly **CSS** (Explore + Overlay combo in Additional CSS), not missing files. **Computers** child is an exception — most product uploads **404** (selective File Manager restore later; no Jul 24 full restore).
+
+---
+
+## Throughput reset (2026-08-10) — LOCKED
+
+Daniel: multi-day half pages are not acceptable. 10Web is out of the critical path.
+
+**New factory:** Cursor one structure pass → Daniel replaces 1600×1000 images → Cursor verifies Done → next page.  
+**No** more image-labeling chat loops. **No** zip handoff theater.  
+Full write-up: `diagnostics/THROUGHPUT-RESET-2026-08-10.md`  
+Insert names: `diagnostics/INSERT-GUIDE-images-1600x1000-2026-08-10.md`
+
+**Tech Hub closeout:** only the **8 tile image replaces** remain before that page is Done.
