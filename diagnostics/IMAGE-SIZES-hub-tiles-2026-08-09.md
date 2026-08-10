@@ -8,9 +8,11 @@
 ## Export size for Daniel (use this)
 | Use | Pixels | Aspect | Format | Notes |
 |-----|--------|--------|--------|-------|
-| **Hub category tile (standard)** | **1600 × 1000** | 16:10 | JPG or WebP | One distinct photo per category; subject centered; keep important content away from edges |
+| **Hub category tile (standard)** | **1600 × 1000** | 16:10 | JPG or WebP | **Daniel’s remade pack already uses this size** — no re-export needed |
 | Retina optional | 1920 × 1200 | 16:10 | JPG/WebP | Only if file stays under ~400KB |
 | Do not use | Random collage dumps / mixed ratios | — | — | Current `Untitled-…` mix (1188 tall, 2552 wide, etc.) is why boxes look wrong |
+
+**Insert checklist + placeholder filenames:** `diagnostics/INSERT-GUIDE-images-1600x1000-2026-08-10.md`
 
 ### How to prep from your 5000+ library
 1. Pick **one** clear photo per category (8 total for Tech Hub).  
