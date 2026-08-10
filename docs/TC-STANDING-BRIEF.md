@@ -99,7 +99,10 @@ Uniform image sizing rules are intentional. Images must not spill outside their 
 
 ## §4 — Site structure, SEO, product grade, launch intent
 
-**Hubs:** Recommended Books · Office Workspace · Technology · Smart (AI) Lighting · Featured Productivity Tools · Self-Help and Mental Wellness · plus editorial **The Truth Untold Series**
+**Hubs:** Recommended Books · Office Workspace · Technology · Smart (AI) Lighting · Featured Productivity Tools · Self-Help and Mental Wellness  
+
+**Editorial sections (four):** include **AI Mastery** (Daniel 2026-08-10); also **The Truth Untold Series** (others confirm as named).  
+**Books child:** **AI Mastery Book Collections** lives under **Recommended Books** (not under Technology Hub).
 
 **SEO (every page):** focus keyword in title, meta (&lt;160), H1, ≥1 H2, first paragraph, hero alt; density 0.5–1.5%; title &lt;60 chars and includes **2026**; RankMath Content AI during writing.  
 Title framework: `Best [category] for [audience] in 2026 | Truth Collective`  
