@@ -206,3 +206,10 @@ Full write-up: `diagnostics/THROUGHPUT-RESET-2026-08-10.md`
 Insert names: `diagnostics/INSERT-GUIDE-images-1600x1000-2026-08-10.md`
 
 **Tech Hub closeout:** only the **8 tile image replaces** remain before that page is Done.
+
+## R8 applied (2026-08-10 evening)
+
+**Technology Hub** rebuilt toward locked gold: full-bleed **cover hero** + eight **`tc-explore-hub`** tiles (title on image, EXPLORE on hover). Old under-image card grid removed. Ticket: `diagnostics/REST-hub-technology-R8-2026-08-10.md`.
+
+Still open on that page: final 1600×1000 image swaps; lighten lower reusable patterns; then clone factory to next hub.
+
