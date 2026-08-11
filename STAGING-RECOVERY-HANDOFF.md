@@ -218,3 +218,4 @@ Still open on that page: final 1600×1000 image swaps; lighten lower reusable pa
 **R9c:** Restored fuller Claude Tech Hub Welcome prose (4 paragraphs) under cover; cover lead removed.
 **R9d:** Fixed invalid Kadence blocks → core columns/images; Claude Welcome restored (4 paras).
 **R9e:** Hero converted from invalid wp:cover to valid wp:image (Replace works).
+**R9f:** Editor CSS so hero/tile images are selectable (Replace visible).
