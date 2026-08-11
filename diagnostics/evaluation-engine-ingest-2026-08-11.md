@@ -10,6 +10,7 @@ Daniel uploaded the summary pack Cursor / Copilot used for the weighted grading 
 | Multistage Engineering Evaluation Overview.docx | `docs/brand-references/selection-standards/Multistage-Engineering-Evaluation-Overview.docx` |
 | Multistage PDF (earlier) | `docs/brand-references/selection-standards/multistage-engineering-overview-II.pdf` |
 | **Governance Binder Part I v2 (authority)** | `docs/brand-references/selection-standards/TC_Governance_Binder_PartI_v2.docx` (mirrored as `TC_Governance_Binder_PartI_edited.docx`) — see `diagnostics/governance-binder-part-I-ingest-2026-08-11.md`. Hub-Level Stage II/III corrected to Quantitative / Qualitative. |
+| **Governance Binder Part III (editorial)** | `docs/brand-references/selection-standards/TC_Governance_Binder_PartIII_edited.docx` — see `diagnostics/governance-binder-part-III-ingest-2026-08-11.md`. Stage III / 21-point qualitative authority. |
 
 ## What the xlsx is
 Manual Copilot workbook (9 sheets), not the automated engine:
