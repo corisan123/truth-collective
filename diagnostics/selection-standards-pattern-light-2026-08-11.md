@@ -23,9 +23,10 @@ Governing bodies / process docs support the claim: rankings use **several weight
 ## Duplicates not updated yet
 Synced/copy patterns **8152** and **8156** still hold the old heavy markup. Update after Daniel confirms 2847 look, or sync intentionally.
 
-## Ranking automation (pending Daniel uploads)
-Prior Cursor work: input **UL # / ID #** → weighted factors + governance content → brief summary + TC grade.  
-Copilot spreadsheets were too manual. **Code/docs not in this repo yet** — wait for Daniel downloads before wiring the engine.
+## Ranking automation
+Ingested 2026-08-11: Master Summary xlsx + Governance + Multistage Overview docs.  
+See `diagnostics/evaluation-engine-ingest-2026-08-11.md`.  
+**Cursor UL/ID engine code still missing from repo** (paused §12). Spreadsheet = manual Copilot path to replace.
 
 ## Appearance rule
 All patterns in this family should share this **professional light** look: white/cream ground, navy panels, gold accents, Playfair + Inter, soft shadow — not heavy dark WP chrome.
