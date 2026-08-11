@@ -13,12 +13,24 @@
 
 Governing bodies / process docs support the claim: rankings use **several weighted factors**, not copied retailer recommendations. Advanced TC grading.
 
-## Stage buttons (current targets)
-| Stage | Target |
-|-------|--------|
-| I Technical Benchmarking Whitepaper | PDF `uploads/2026/07/TC-TEchnical-Benchmarking-Whitepaper-Vol-XII.pdf` (200) |
-| II Quantitative Engineering Evaluation | `/6751-2/` Technical Selection Benchmarking Overview (was unlinked) |
-| III Qualitative Literature and Editorial | Interim → `/product-selection-standards/` (old qualitative slug 404s) |
+## Document architecture (Daniel, 2026-08-11)
+- **Master document** = overview + summaries (Claude rewriting; ~189 pages). **Not** shown as a full public dump of the binder.
+- **Per-hub documents** = one standards/benchmarking doc per hub.
+- Master (and hub docs when ready) become **linked items** on the Stage II benchmarking page / pattern — readers click through; we do not paste the master into the pattern body.
+- Pattern keeps the **Stage I / II / III** button row as the public entry points.
+
+## Stage buttons (live on pattern 2847 after light refresh)
+| Stage | Live target on 2847 | Notes |
+|-------|---------------------|--------|
+| I Technical Benchmarking Whitepaper | PDF `uploads/2026/07/TC-TEchnical-Benchmarking-Whitepaper-Vol-XII.pdf` (200) | Working |
+| II Quantitative Engineering Evaluation | `/6751-2/` — Technical Selection Benchmarking Overview (page 6751) | Page exists; **no master / hub doc links on that page yet**. Old patterns 8152/8156 still have Stage II **unlinked**. |
+| III Qualitative Literature and Editorial | Interim → `/product-selection-standards/` (page 1455) | Placeholder. Old slug `lqualitative-literature-evaluation-metrics-processes` 404s. Needs real qualitative destination when ready. |
+
+## Pending link work (when Daniel paces uploads)
+1. On Stage II page (`/6751-2/`): add linked item for **master document** (PDF or WP media/page), not full body paste.
+2. Same page (or child list): add **per-hub** document links as those docs are ready.
+3. Point Stage III at the real qualitative literature / editorial standards page (replace interim).
+4. Sync duplicates **8152** / **8156** after 2847 look + links are approved.
 
 ## Duplicates not updated yet
 Synced/copy patterns **8152** and **8156** still hold the old heavy markup. Update after Daniel confirms 2847 look, or sync intentionally.
