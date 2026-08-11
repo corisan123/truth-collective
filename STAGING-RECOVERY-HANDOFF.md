@@ -212,4 +212,5 @@ Insert names: `diagnostics/INSERT-GUIDE-images-1600x1000-2026-08-10.md`
 **Technology Hub** rebuilt toward locked gold: full-bleed **cover hero** + eight **`tc-explore-hub`** tiles (title on image, EXPLORE on hover). Old under-image card grid removed. Ticket: `diagnostics/REST-hub-technology-R8-2026-08-10.md`.
 
 Still open on that page: final 1600×1000 image swaps; lighten lower reusable patterns; then clone factory to next hub.
+**R8b (2026-08-11):** Restored Claude Welcome prose under cover. Explore-hub tiles kept. Patterns inventory: `diagnostics/wp-patterns-inventory-2026-08-11.md`.
 
