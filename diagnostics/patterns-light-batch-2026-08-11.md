@@ -20,3 +20,5 @@ Applied while Claude fixed Part I stage map. Pattern R10 Selection Standards lef
 - Truth Untold page (`7648`, `7532`) — series pattern `7827` wherever inserted
 
 Claude can polish copy next; structure/CSS is Cursor-owned `tc-*` classes (no inline flex).
+
+| 7836 | Ones Who Gave Everything | `pattern-7836-ones-who-gave-light.html` | August 2026 featured: Rev. Billy Graham |
