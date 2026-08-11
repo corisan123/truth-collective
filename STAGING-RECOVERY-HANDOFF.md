@@ -216,3 +216,4 @@ Still open on that page: final 1600×1000 image swaps; lighten lower reusable pa
 **R9 (2026-08-11):** Tech Hub media converted to native `wp:cover` / `wp:image` blocks so Daniel can Replace in editor. CSS-only Custom HTML remains.
 **R9b:** Restored Tech Hub 2-across tile grid (bugfix; Media Replace kept).
 **R9c:** Restored fuller Claude Tech Hub Welcome prose (4 paragraphs) under cover; cover lead removed.
+**R9d:** Fixed invalid Kadence blocks → core columns/images; Claude Welcome restored (4 paras).
