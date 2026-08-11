@@ -42,3 +42,6 @@ See `diagnostics/evaluation-engine-ingest-2026-08-11.md`.
 
 ## Appearance rule
 All patterns in this family should share this **professional light** look: white/cream ground, navy panels, gold accents, Playfair + Inter, soft shadow — not heavy dark WP chrome.
+
+## Superseded by R10
+Claude SPEC applied 2026-08-11: see `diagnostics/selection-standards-pattern-R10-2026-08-11.md` (no navy banner duplicate, sequential stages, sectioned copy, synced 8152/8156).
