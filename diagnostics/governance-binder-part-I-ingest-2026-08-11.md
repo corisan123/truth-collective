@@ -1,8 +1,7 @@
 # Governance Binder Part I ingest (2026-08-11)
 
-**Authority file (use this):** `docs/brand-references/selection-standards/TC_Governance_Binder_PartI_v2.docx`  
-**Also mirrored as:** `docs/brand-references/selection-standards/TC_Governance_Binder_PartI_edited.docx` (same v2 bytes)  
-**Supersedes:** first Part I upload (`TC_Governance_Binder_PartI_edited` pre-v2)
+**Superseded for indexing by:** `docs/brand-references/selection-standards/TC_Governance_Binder_CURRENT.docx` (Claude combined I+II+III).  
+**This Part I v2 file kept for history:** `TC_Governance_Binder_PartI_v2.docx` / `TC_Governance_Binder_PartI_edited.docx`
 
 Daniel / Claude: Part I v2 replaces v1. Same document with one Hub-Level stage-map correction. Re-ingest in place; everything else unchanged.
 
