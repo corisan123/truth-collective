@@ -9,6 +9,7 @@ Daniel uploaded the summary pack Cursor / Copilot used for the weighted grading 
 | Standards, Governance & Compliance Division.docx | `docs/brand-references/selection-standards/Standards-Governance-Compliance-Division.docx` |
 | Multistage Engineering Evaluation Overview.docx | `docs/brand-references/selection-standards/Multistage-Engineering-Evaluation-Overview.docx` |
 | Multistage PDF (earlier) | `docs/brand-references/selection-standards/multistage-engineering-overview-II.pdf` |
+| **Governance Binder Part I (finished evaluations)** | `docs/brand-references/selection-standards/TC_Governance_Binder_PartI_edited.docx` — see `diagnostics/governance-binder-part-I-ingest-2026-08-11.md` |
 
 ## What the xlsx is
 Manual Copilot workbook (9 sheets), not the automated engine:
@@ -55,12 +56,8 @@ Likely locations if it still exists elsewhere:
 
 Triple-stage: Standards bodies → Category scoring → Page-specific metrics.
 
-## Full master document (~189 pages) — do not dump yet
-Daniel has **not** downloaded the full master document. Claude is rewriting much of it.  
-He is holding it on purpose so a single huge paste does not crash or slow this agent.
-
-**When he is ready:** ingest in **chunks** (section / chapter / PDF slice), not the whole 189 pages at once.  
-Do not ask him to upload the full master until he offers a paced plan.
+## Full master document — paced chunks
+Part I received 2026-08-11 (`TC_Governance_Binder_PartI_edited.docx`). Continue in chunks only (Part II+, hub docs). Do not request the entire unfinished binder at once.
 
 ## Next (when Daniel is ready)
 1. Keep uploading if the Cursor code zip/file turns up.  
