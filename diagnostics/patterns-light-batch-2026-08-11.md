@@ -23,3 +23,4 @@ Claude can polish copy next; structure/CSS is Cursor-owned `tc-*` classes (no in
 
 | 7836 | Ones Who Gave Everything | `pattern-7836-ones-who-gave-light.html` | August 2026 featured: Rev. Billy Graham |
 | 5542 | Truth Box | `pattern-5542-truth-box-light.html` | Four pillars + grade scale; removed inline flex; stats from Daniel screenshot (7000+/680) |
+| 2870 | Explore More Template | `pattern-2870-explore-more-light.html` | Claude rewrite; all six CTAs say Explore |
