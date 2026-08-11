@@ -9,7 +9,7 @@ Daniel uploaded the summary pack Cursor / Copilot used for the weighted grading 
 | Standards, Governance & Compliance Division.docx | `docs/brand-references/selection-standards/Standards-Governance-Compliance-Division.docx` |
 | Multistage Engineering Evaluation Overview.docx | `docs/brand-references/selection-standards/Multistage-Engineering-Evaluation-Overview.docx` |
 | Multistage PDF (earlier) | `docs/brand-references/selection-standards/multistage-engineering-overview-II.pdf` |
-| **Governance Binder CURRENT (Parts I–III combined, authority)** | `docs/brand-references/selection-standards/TC_Governance_Binder_CURRENT.docx` — see `diagnostics/governance-binder-CURRENT-ingest-2026-08-11.md`. Includes Part II Engineering. |
+| **Governance Binder CURRENT (Parts I–V, authority)** | `docs/brand-references/selection-standards/TC_Governance_Binder_CURRENT.docx` — see `diagnostics/governance-binder-CURRENT-ingest-2026-08-11.md`. Full master through hub + series governance. |
 | Governance Binder Part I v2 (superseded split) | `TC_Governance_Binder_PartI_v2.docx` |
 | Governance Binder Part III (superseded split) | `TC_Governance_Binder_PartIII_edited.docx` |
 
