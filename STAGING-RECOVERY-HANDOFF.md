@@ -219,3 +219,5 @@ Still open on that page: final 1600×1000 image swaps; lighten lower reusable pa
 **R9d:** Fixed invalid Kadence blocks → core columns/images; Claude Welcome restored (4 paras).
 **R9e:** Hero converted from invalid wp:cover to valid wp:image (Replace works).
 **R9f:** Editor CSS so hero/tile images are selectable (Replace visible).
+**Patterns (2026-08-11):** Started Selection Standards pattern **2847** light refresh. Quantitative=products; Qualitative=books/podcasts/editorial. PDF stored under `docs/brand-references/selection-standards/`. Ranking UL/ID engine pending Daniel file uploads. Dup patterns 8152/8156 not synced yet.
+
