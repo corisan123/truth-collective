@@ -1,0 +1,87 @@
+
+body.page-id-111 .site-content,
+body.page-id-111 .ast-container,
+body.page-id-111 .entry-content {
+  background: #f8f4ec !important;
+}
+body.page-id-111 .tc-tech-hero-shell {
+  background: #f8f4ec !important;
+  max-width: none !important;
+}
+body.page-id-111 .tc-tech-hero-split {
+  align-items: stretch !important;
+  gap: 0 !important;
+  margin: 0 !important;
+  min-height: 420px;
+}
+body.page-id-111 .tc-tech-hero-rail {
+  background: #1e3a5f !important;
+  padding: 2.75rem 1.75rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+}
+body.page-id-111 .tc-tech-hero-rail__brand {
+  position: relative;
+  padding-bottom: 0.85rem;
+}
+body.page-id-111 .tc-tech-hero-rail__brand::after {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 2px;
+  background: #b8944b;
+  margin-top: 0.85rem;
+}
+body.page-id-111 .tc-tech-hero-copy {
+  background: #f8f4ec !important;
+  padding: 2.75rem 2.5rem !important;
+}
+body.page-id-111 .tc-hub-hero-title {
+  color: #1e3a5f !important;
+  font-family: "Playfair Display", serif !important;
+  font-weight: 600 !important;
+}
+body.page-id-111 .tc-hub-hero-title em,
+body.page-id-111 .tc-hub-hero-title__hub {
+  color: #b8944b !important;
+  font-style: italic !important;
+}
+body.page-id-111 .tc-hub-hero-lead {
+  color: #334155 !important;
+  max-width: 38rem;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  margin: 0 0 1rem !important;
+}
+body.page-id-111 .tc-tech-meta-row {
+  border-top: 1px solid rgba(30,58,95,0.12);
+  padding: 0.85rem 1.5rem 1.25rem !important;
+  gap: 0.75rem;
+}
+body.page-id-111 .tc-tech-meta-row a {
+  color: #1e3a5f !important;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+body.page-id-111 .tc-tech-secondary {
+  background: #f8f4ec !important;
+}
+body.page-id-111 .tc-hub-secondary-title {
+  font-family: "Playfair Display", serif !important;
+  color: #1e3a5f !important;
+}
+/* Lighter category hover on this hub only — do not touch global 02A product patch */
+body.page-id-111 .tc-explore-hub:hover,
+body.page-id-111 .tc-overlay-card:hover {
+  transform: translateY(-4px);
+}
+body.page-id-111 .tc-explore-hub::after,
+body.page-id-111 .tc-explore-hero::after {
+  opacity: 0.55 !important;
+  letter-spacing: 0.12em !important;
+}
+@media (max-width: 781px) {
+  body.page-id-111 .tc-tech-hero-split { min-height: 0; }
+  body.page-id-111 .tc-tech-hero-rail { min-height: 140px; }
+}
