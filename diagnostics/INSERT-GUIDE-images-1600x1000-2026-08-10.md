@@ -61,3 +61,5 @@ Hold until those child pages exist: Robotics **#1**, Smart Home **#2**, AI Weara
 4. Or paste the 8 Tech Hub Media URLs here and Cursor will REST-swap them.
 
 No zip handoff needed if you replace in the editor yourself.
+
+| `smart-lighting-*-1600x1000.jpg` | Smart Lighting Hub tiles/hero — page 115 light rebuild 2026-08-12 |
