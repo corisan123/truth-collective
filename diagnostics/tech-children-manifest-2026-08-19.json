@@ -1,0 +1,50 @@
+[
+  {
+    "page_id": 359,
+    "slug": "computers",
+    "scaffold": "diagnostics/scaffolds/REST-page-359-computers-light.html",
+    "h1": "Computers and Digital Devices"
+  },
+  {
+    "page_id": 121,
+    "slug": "monitors",
+    "scaffold": "diagnostics/scaffolds/REST-page-121-monitors-light.html",
+    "h1": "Monitors and Displays"
+  },
+  {
+    "page_id": 117,
+    "slug": "audio-video",
+    "scaffold": "diagnostics/scaffolds/REST-page-117-audio-video-light.html",
+    "h1": "Audio and Video"
+  },
+  {
+    "page_id": 1420,
+    "slug": "headphones",
+    "scaffold": "diagnostics/scaffolds/REST-page-1420-headphones-light.html",
+    "h1": "Headphones and Headsets"
+  },
+  {
+    "page_id": 1449,
+    "slug": "speakers",
+    "scaffold": "diagnostics/scaffolds/REST-page-1449-speakers-light.html",
+    "h1": "Desk Speakers"
+  },
+  {
+    "page_id": 5940,
+    "slug": "projectors-mics",
+    "scaffold": "diagnostics/scaffolds/REST-page-5940-projectors-mics-light.html",
+    "h1": "Projectors and Microphones"
+  },
+  {
+    "page_id": 1098,
+    "slug": "tablets",
+    "scaffold": "diagnostics/scaffolds/REST-page-1098-tablets-light.html",
+    "h1": "Digital Smart Tablets"
+  },
+  {
+    "page_id": 5784,
+    "slug": "interactive-displays",
+    "scaffold": "diagnostics/scaffolds/REST-page-5784-interactive-displays-light.html",
+    "h1": "Interactive Digital Displays"
+  }
+]
