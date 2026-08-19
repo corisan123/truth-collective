@@ -3,9 +3,16 @@
 Static rebuild of [www.isiconsults.com](https://www.isiconsults.com) (currently an unfinished Squarespace page).
 
 ## Files
-- `index.html` — complete one-page site
+- `index.html` — complete one-page site (resume + logo integrated)
 - `styles.css` — brand system (charcoal / iron gold / Syne + Source Serif 4)
 - `main.js` — nav solid state + scroll reveal
+- `assets/isi-logo.png` — full logo mark (hero / OG)
+- `assets/isi-mark.png` — square mark for nav / footer
+- `assets/favicon.ico` (+ 16/32/192/512 PNG) — browser favicon from logo
+
+## Source docs (Daniel 2026-08-19)
+- Resume: `Daniel Reid Resume 7 18 2026.docx`
+- Logo: `LOGO PIC FEVICON.docx`
 
 ## Deploy options
 1. **Hostinger / any static host:** upload this folder as the site root; point `isiconsults.com` DNS away from Squarespace when ready.
