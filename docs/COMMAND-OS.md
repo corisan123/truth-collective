@@ -1,98 +1,104 @@
 # COMMAND OS — Living board (Truth Collective + ISI)
 
-**Authority:** Daniel Reid (owner) · Cursor lead (quarterback) · Cursor worker (Block A apply)  
+**Authority:** Daniel Reid (owner) · Cursor lead (quarterback) · specialized workers/helpers  
 **Parent law:** `docs/COMMAND-CHARTER-2026-08-19.md` + `docs/TC-STANDING-BRIEF.md`  
-**Cursor enforcement:** `.cursor/rules/*.mdc` (alwaysApply) — these are the written “page rules.”
+**Paste dashboard:** `docs/SWARM-LAUNCH-PACK.md`  
+**Cursor enforcement:** `.cursor/rules/*.mdc` · skills in `.cursor/skills/`
 
-This file is the **big-picture board**. Agents must update the **Current assignment** section when a family ships or a ticket moves. Do not invent parallel plans in chat.
+**Doctrine:** Many hands lightens the load. Parallel by default across different blocks. Serial only inside one page family.
 
 ---
 
-## 1 — Why this exists (anti-drift)
+## 1 — Anti-drift
 
-Daniel spent real time on Environment secrets, App Passwords, and a **dedicated worker agent**. That investment is wasted if:
-
-- Lead does the worker’s page family
-- Worker idles on auth while lead freelances
-- Rules live only in chat memory
-- Tickets are ad-hoc one-liners with no board
-
-**Rule:** Process is product. Prefer written OS + rules over clever improvisation.
+Secrets + new agents are investments. Lead does not steal Block A. Rules live in `.cursor/rules/`, not chat memory. Board section 3 is truth.
 
 ---
 
 ## 2 — Roles (locked)
 
-| Role | Agent | Does | Does not |
-|------|-------|------|----------|
-| Owner | Daniel | Approve, keys, media, paste tickets to Claude, post social | Expect lead to “just do everything” without board updates |
-| Lead | Cursor command chat / lead agent | Tickets, veto, unblock auth/ops, architecture, Claude/governance/growth lanes | Steal Block A page families when a worker is assigned |
-| Worker | One Cursor Cloud agent on Block A branch | Hub → children REST apply per handoff | Governance binder, social calendar, ISI prose, inventing new lanes |
-| Specialist | Claude | Copy, calendars, evaluation/governance docs | HTML, CSS, WP, secrets |
-
-**Secrets / new-agent rule:** If Daniel creates or refreshes `TC_WP_*` secrets for a worker, the **next Block A family belongs to that worker**. Lead may diagnose auth once, then returns the lane.
-
----
-
-## 3 — Current assignment (UPDATE EVERY SHIP)
-
-**Date:** 2026-08-19
-
-| Lane | Owner | Status | Ticket / handoff |
-|------|-------|--------|------------------|
-| A — Staging pages | **Worker** | NEXT: Office children | `diagnostics/WORKER-HANDOFF-2026-08-19.md` |
-| A — Lighting children | Done (staging) | Do not redo | `diagnostics/REST-smart-lighting-children-apply-2026-08-19.md` |
-| A — Tech children | Done (staging) | Do not redo | prior REST ticket |
-| Auth | Shared | Working when USER = email | `diagnostics/REST-AUTH-GATE-2026-08-19.md` |
-| B — ISI whitepaper | Claude | Paste ready | `diagnostics/CLAUDE-TICKET-isi-whitepaper-2026-08-19.md` |
-| C — Social from built pages | Claude | Paste ready | `diagnostics/CLAUDE-TICKET-tc-social-from-built-pages-2026-08-19.md` |
-| G — Governance / evaluations | Claude | Paste ready | `diagnostics/CLAUDE-TICKET-governance-and-evaluations-2026-08-19.md` |
-| D — Email forward / Formspree | Daniel | Pending | ISI docs |
-
-**Block A order (do not reorder without board edit):**  
-Office children → Books children → Self-Help / Productivity children → Home / About / Contact → Daniel image Replace → Semrush.
+| Role | Who | Does | Does not |
+|------|-----|------|----------|
+| Owner | Daniel | Approves, keys, media, pastes many tickets at once | Wait for one AI to finish all work |
+| Lead | Cursor command (fresh OK) | Tee swarm, update board, veto, unblock | Steal Worker A page families |
+| Worker A | One Cloud agent | TC Block A pages | ISI, Claude, social, governance |
+| Worker B | Second Cloud agent (optional) | ISI Block B only | TC REST pages |
+| Claude | Multiple chats OK | One topic per chat | HTML/CSS/WP |
+| Social AI | After Claude masters | Captions/threads | Site code |
+| Edge/research | Docs only | Semrush/research checklists | Theme/CSS |
+| Angie | One-task prompts | Hostinger clicks | Freestyle site edits |
+| Copilot Task | IDLE until Pro | DOC skeletons later | Site HTML lead |
 
 ---
 
-## 4 — Session open checklist (every Cursor agent)
+## 3 — Current assignment — SWARM (2026-08-19)
 
-1. Read Standing Brief + Staging Handoff + this COMMAND OS + Command Charter.  
-2. Identify role: **lead** or **worker** (from prompt / branch / handoff).  
-3. Read **Current assignment** above. Do that, not a new idea.  
-4. REST: prove `users/me` 200 with `TC_WP_USER` email before any page write.  
-5. If blocked: write a short diagnostics note + stop. Do not invent a second plan.  
-6. After ship: update section 3, commit, push.
+### Running / READY (start in parallel)
+
+| ID | Lane | Owner | Status | Ticket |
+|----|------|-------|--------|--------|
+| A1 | TC Office children → then Books… | **Worker A** | READY | `diagnostics/WORKER-HANDOFF-2026-08-19.md` |
+| B1 | ISI deploy checklist + Formspree map | **Worker B** | READY | `diagnostics/WORKER-B-ISI-HANDOFF-2026-08-19.md` |
+| C1 | TC social calendar from built pages | Claude chat B | READY | `diagnostics/CLAUDE-TICKET-tc-social-from-built-pages-2026-08-19.md` |
+| C2 | Membership email sequence | Claude chat D | READY | `diagnostics/CLAUDE-TICKET-membership-email-sequence-2026-08-19.md` |
+| C3 | Office/Books intro copy pack | Claude chat E | READY | `diagnostics/CLAUDE-TICKET-office-books-intro-copy-2026-08-19.md` |
+| G1 | Governance + evaluation engine | Claude chat C | READY | `diagnostics/CLAUDE-TICKET-governance-and-evaluations-2026-08-19.md` |
+| G2 | Public Selection Standards summary | Claude chat F | READY | `diagnostics/CLAUDE-TICKET-selection-standards-public-summary-2026-08-19.md` |
+| B2 | ISI whitepaper prose | Claude chat A | READY | `diagnostics/CLAUDE-TICKET-isi-whitepaper-2026-08-19.md` |
+| R1 | Semrush staging setup checklist | Edge/research | READY | `diagnostics/EDGE-TICKET-semrush-staging-setup-2026-08-19.md` |
+| D1 | ISI email forward | Angie | READY | `diagnostics/angie-prompts/ANGIE-ISI-EMAIL-FORWARD-2026-08-19.md` |
+| D2 | Keys, Formspree, media, Approves | Daniel | READY | `diagnostics/DANIEL-OPS-CHECKLIST-2026-08-19.md` |
+| L0 | Swarm coordination | **Lead** | ACTIVE | this file + `docs/SWARM-LAUNCH-PACK.md` |
+
+### After dependency
+
+| ID | Lane | Owner | Wait for | Ticket |
+|----|------|-------|----------|--------|
+| C4 | Social platform variants | Social AI | C1 Claude return | `diagnostics/SOCIAL-AI-TICKET-format-variants-2026-08-19.md` |
+| T1 | Operator binder skeleton | Copilot Task | Tasks Pro + G1 | `diagnostics/TASK-TICKET-operator-binder-skeleton-WHEN-PRO.md` |
+
+### Done (do not redo)
+
+| Lane | Note |
+|------|------|
+| Tech children | Staging applied |
+| Smart Lighting children | Staging applied |
+| Dual H1 on Prod / Ones / AI Podcast | `site-post-title=disabled` |
+
+### Block A order (Worker A only; do not reorder without board edit)
+
+Office children → Books children → Self-Help / Productivity children → Home / About / Contact → Daniel image Replace → Semrush crawl.
 
 ---
 
-## 5 — Written rule files (the “page rules”)
+## 4 — Session open (every agent)
 
-| File | Purpose |
+1. Role? Lead / Worker A / Worker B / other.  
+2. Read this board §3 + matching handoff/ticket.  
+3. REST only if Worker A (email user).  
+4. Ship → update §3 → commit.  
+5. If blocked, short diagnostics note; do not invent a new lane.
+
+---
+
+## 5 — Rule + skill index
+
+| Path | Purpose |
 |------|---------|
-| `.cursor/rules/truth-collective.mdc` | Hard site locks (staging, classes, voice, CSS) |
-| `.cursor/rules/lead-worker-no-drift.mdc` | Lead vs worker; secrets investment; no lane theft |
-| `.cursor/rules/command-os.mdc` | Must follow living board; update Current assignment |
-| `.cursor/rules/rest-and-secrets.mdc` | Auth probe, backup-before-write, no secrets in git |
-| `docs/COMMAND-CHARTER-2026-08-19.md` | Full multi-AI authority sheet |
-| `docs/COMMAND-OS.md` | This board |
-| `docs/AI-PLATFORM-RULES-AND-PROMPTS.md` | Paste prompts; defer role split to Charter + OS |
-
-If chat contradicts a rule file or this board, **rule file / board wins**.
+| `.cursor/rules/truth-collective.mdc` | Site locks |
+| `.cursor/rules/lead-worker-no-drift.mdc` | No lane theft |
+| `.cursor/rules/command-os.mdc` | Obey board |
+| `.cursor/rules/rest-and-secrets.mdc` | Auth hygiene |
+| `.cursor/rules/parallel-by-default.mdc` | Many hands |
+| `.cursor/skills/cursor-lead/` | Lead skill |
+| `.cursor/skills/cursor-block-a-worker/` | Worker A skill |
+| `.cursor/skills/claude-specialist/` | Claude lane skill |
+| `docs/CURSOR-RULES-INDEX.md` | Human index |
+| `docs/SWARM-LAUNCH-PACK.md` | Paste dashboard |
 
 ---
 
-## 6 — Definition of locked-in (quality bar)
+## 6 — Quality bar (boss standard)
 
-Lead is “best” when:
-
-- Worker has a clear next family and does it
-- Claude has paste-ready tickets for parallel non-site work
-- Board section 3 matches reality after every ship
-- No two agents on the same page family
-- No ad-hoc “while I’m here” redesigns outside the order
-
-Lead is failing when:
-
-- Doing Office/Books while a worker was spun up for that
-- Writing more chat than rules
-- Parking governance forever while claiming to lead platforms
+**Winning:** many READY tickets; Worker A and B both busy; Claude chats A–F pasteable; Daniel checklist in motion; board matches reality.  
+**Failing:** one-at-a-time; lead doing Office; empty specialist lanes; rules only in chat.

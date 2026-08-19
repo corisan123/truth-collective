@@ -1,0 +1,24 @@
+---
+description: Parallel by default across different blocks; never same-family
+alwaysApply: true
+---
+
+# Parallel by default (many hands)
+
+Doctrine: **Many hands lightens the load.** Prefer many non-overlapping tickets at once over serial one-at-a-time.
+
+## Allowed in parallel
+- Block A worker (TC pages) + Block B (ISI) + Claude docs + social AI + Angie clicks + Daniel keys/media
+- Multiple Claude tickets in different chats (whitepaper, social, governance, membership) as long as topics do not overlap
+- Lead writing tickets while worker applies pages
+
+## Forbidden in parallel
+- Two agents on the same hub family / same page IDs
+- Two agents editing Additional CSS
+- Claude + anyone both drafting the same post
+- Lead applying Office while worker is assigned Office
+
+## Lead duty every session
+1. Keep `docs/COMMAND-OS.md` Current assignment filled with **many** READY tickets
+2. Point Daniel to `docs/SWARM-LAUNCH-PACK.md` for paste targets
+3. Do not wait for one lane to finish before teeing the next non-overlapping lane

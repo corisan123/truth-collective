@@ -134,7 +134,9 @@ Email forwards, App Passwords, Cursor secrets, media uploads, domain DNS.
 
 ### Ticket W1 — Cursor worker agent (site)
 Paste from: `diagnostics/WORKER-HANDOFF-2026-08-19.md` (bottom prompt).  
-Next family: **Office children only**. Skip Smart Lighting.
+Next family: **Office children only**. Skip Smart Lighting.  
+Parallel: Worker B may run ISI (`diagnostics/WORKER-B-ISI-HANDOFF-2026-08-19.md`) at the same time.  
+Full swarm paste list: `docs/SWARM-LAUNCH-PACK.md`.
 
 ### Ticket C1 — Claude (ISI whitepaper)
 `diagnostics/CLAUDE-TICKET-isi-whitepaper-2026-08-19.md`
