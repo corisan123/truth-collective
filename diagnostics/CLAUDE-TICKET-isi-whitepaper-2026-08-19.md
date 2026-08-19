@@ -28,7 +28,7 @@ Audience: founders, PE operators, C-suite in AEC, manufacturing, building produc
 - Engagement types: fractional monthly, project 90–180 days, advisory quarterly, on-site intensives
 - Brand lines: Iron Sharpens Iron / Truth Creates Clarity / Clarity Drives Action / Action Produces Results
 - Based in North Carolina; remote; nationwide
-- Contact: info@isiconsults.com
+- Contact: daniel@isiconsults.com
 
 ## Voice
 Direct, diagnostic, premium, no hype, no exclamation points, no clickbait. Prefer periods over em dashes. Specific over vague.
