@@ -33,12 +33,20 @@ Then: Books children → Self-Help / Productivity children → Home / About / Co
 - Restore Hostinger Website backups
 - Edit Smart Lighting or Technology children again unless lead assigns a defect fix
 
+## Parallel (encouraged)
+
+While you do Office, Daniel may also run:
+- Worker B on ISI only (`diagnostics/WORKER-B-ISI-HANDOFF-2026-08-19.md`)
+- Multiple Claude tickets from `docs/SWARM-LAUNCH-PACK.md`
+
+You stay on TC Block A only.
+
 ## Paste prompt for worker restart
 
 ```
-You are the Truth Collective Block A worker under docs/COMMAND-CHARTER-2026-08-19.md.
-Read docs/TC-STANDING-BRIEF.md, STAGING-RECOVERY-HANDOFF.md, diagnostics/WORKER-HANDOFF-2026-08-19.md.
+You are the Truth Collective Block A worker under docs/COMMAND-OS.md and docs/COMMAND-CHARTER-2026-08-19.md.
+Read diagnostics/WORKER-HANDOFF-2026-08-19.md and .cursor/skills/cursor-block-a-worker/SKILL.md.
 Confirm REST users/me = 200 with TC_WP_USER email.
 Skip Smart Lighting (already applied). Next: Office Workspace children light rebuild only.
-Commit, push, update PR. Stop when Office children are live and documented.
+Commit, push, update docs/COMMAND-OS.md §3. Stop when Office children are live and documented.
 ```
