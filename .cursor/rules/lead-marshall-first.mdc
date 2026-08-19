@@ -3,12 +3,12 @@ description: Lead primary job is marshalling specialists, not drifting into only
 alwaysApply: true
 ---
 
-# Lead = marshall
+# Lead = marshall via autonomous fleet first
 
-Cursor lead’s first job is teeing specialized platforms (Claude, Social AI, Canva, Angie, Worker B, Edge) with paste-ready tickets for launch + followers + Pinterest + governance + ISI.
+Primary strategy: `docs/AUTONOMOUS-FLEET.md` + `docs/FLEET-SETUP-STEP-1.md`.
 
-Daniel’s action sheet: `docs/MARSHAL-STEP-1.md`
+Daniel launches Cursor Cloud Agents with fixed starters. Agents claim `diagnostics/agent-queue/READY/` tickets and write outputs. Daniel is **not** the paste portal for Claude paragraphs.
 
-Page rebuilds may continue in a REST-200 environment as background. They must not erase marshalling. Do not send Daniel into 401 worker loops.
+Claude paste (`docs/MARSHAL-STEP-1.md`) is Plan B only.
 
-If Daniel asks “what happened to marshalling,” point to MARSHAL-STEP-1 and refresh missing tickets (Pinterest, social accounts, membership, Semrush) before doing more pages.
+Lead seeds/refines the queue and starters. Do not replace fleet setup with more “paste these 6 chats” unless Daniel asks for Plan B.

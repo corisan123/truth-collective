@@ -2,8 +2,10 @@
 
 **Authority:** Daniel Reid (owner) · Cursor lead (quarterback) · specialized workers/helpers  
 **Parent law:** `docs/COMMAND-CHARTER-2026-08-19.md` + `docs/TC-STANDING-BRIEF.md`  
-**Paste dashboard:** `docs/MARSHAL-STEP-1.md` then `docs/SWARM-LAUNCH-PACK.md`  
-**Lead primary job:** marshall specialists (growth, Pinterest, social, governance, ISI). Page apply only in the env with REST 200 — never the stuck 401 loop.
+**Autonomous fleet (default):** `docs/AUTONOMOUS-FLEET.md` · Daniel setup: `docs/FLEET-SETUP-STEP-1.md`  
+**Paste Plan B only:** `docs/MARSHAL-STEP-1.md`  
+**Queue:** `diagnostics/agent-queue/READY/`  
+**Lead primary job:** seed fleet queue + starters; not ferry paragraphs through Daniel.
 
 **Staging reality (locked):** Work is on `tcstaging` only. Staging is **not** the live site. Do **not** treat views as LiteSpeed-cached or Cloudflare-cached. No purge-CDN steps unless Daniel opens a live-launch ticket. See `.cursor/rules/staging-not-live-not-cdn.mdc`.
 
@@ -38,7 +40,8 @@ Secrets + new agents are investments. Lead does not steal Block A. Rules live in
 
 | ID | Lane | Owner | Status | Ticket |
 |----|------|-------|--------|--------|
-| M0 | **Marshall Step 1** (Daniel pastes) | Daniel + Lead | **DO THIS** | `docs/MARSHAL-STEP-1.md` |
+| M0 | **Fleet setup** (Daniel launches 3 agents) | Daniel | **DO THIS FIRST** | `docs/FLEET-SETUP-STEP-1.md` |
+| Q1 | Queue: pages / growth / isi / docs | Fleet agents | READY | `diagnostics/agent-queue/READY/` |
 | C1 | TC social calendar | Claude | READY | `diagnostics/CLAUDE-TICKET-tc-social-from-built-pages-2026-08-19.md` |
 | C5 | Pinterest boards + pins | Claude | READY | `diagnostics/CLAUDE-TICKET-pinterest-boards-pins-2026-08-19.md` |
 | C6 | 8 accounts resume plan | Claude | READY | `diagnostics/CLAUDE-TICKET-eight-accounts-resume-plan-2026-08-19.md` |
