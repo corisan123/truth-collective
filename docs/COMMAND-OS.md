@@ -2,8 +2,8 @@
 
 **Authority:** Daniel Reid (owner) · Cursor lead (quarterback) · specialized workers/helpers  
 **Parent law:** `docs/COMMAND-CHARTER-2026-08-19.md` + `docs/TC-STANDING-BRIEF.md`  
-**Paste dashboard:** `docs/SWARM-LAUNCH-PACK.md`  
-**Cursor enforcement:** `.cursor/rules/*.mdc` · skills in `.cursor/skills/`
+**Paste dashboard:** `docs/MARSHAL-STEP-1.md` then `docs/SWARM-LAUNCH-PACK.md`  
+**Lead primary job:** marshall specialists (growth, Pinterest, social, governance, ISI). Page apply only in the env with REST 200 — never the stuck 401 loop.
 
 **Staging reality (locked):** Work is on `tcstaging` only. Staging is **not** the live site. Do **not** treat views as LiteSpeed-cached or Cloudflare-cached. No purge-CDN steps unless Daniel opens a live-launch ticket. See `.cursor/rules/staging-not-live-not-cdn.mdc`.
 
@@ -38,18 +38,21 @@ Secrets + new agents are investments. Lead does not steal Block A. Rules live in
 
 | ID | Lane | Owner | Status | Ticket |
 |----|------|-------|--------|--------|
-| A1 | TC Self-Help / Productivity children → Home/About/Contact | **Lead (this env has REST 200)** | NEXT | continue Block A here until a new worker proves auth |
-| B1 | ISI deploy checklist + Formspree map | **Worker B** | READY | `diagnostics/WORKER-B-ISI-HANDOFF-2026-08-19.md` |
-| C1 | TC social calendar from built pages | Claude chat B | READY | `diagnostics/CLAUDE-TICKET-tc-social-from-built-pages-2026-08-19.md` |
-| C2 | Membership email sequence | Claude chat D | READY | `diagnostics/CLAUDE-TICKET-membership-email-sequence-2026-08-19.md` |
-| C3 | Office/Books intro copy pack | Claude chat E | READY (still useful for polish) | `diagnostics/CLAUDE-TICKET-office-books-intro-copy-2026-08-19.md` |
-| G1 | Governance + evaluation engine | Claude chat C | READY | `diagnostics/CLAUDE-TICKET-governance-and-evaluations-2026-08-19.md` |
-| G2 | Public Selection Standards summary | Claude chat F | READY | `diagnostics/CLAUDE-TICKET-selection-standards-public-summary-2026-08-19.md` |
-| B2 | ISI whitepaper prose | Claude chat A | READY | `diagnostics/CLAUDE-TICKET-isi-whitepaper-2026-08-19.md` |
-| R1 | Semrush staging setup checklist | Edge/research | READY | `diagnostics/EDGE-TICKET-semrush-staging-setup-2026-08-19.md` |
+| M0 | **Marshall Step 1** (Daniel pastes) | Daniel + Lead | **DO THIS** | `docs/MARSHAL-STEP-1.md` |
+| C1 | TC social calendar | Claude | READY | `diagnostics/CLAUDE-TICKET-tc-social-from-built-pages-2026-08-19.md` |
+| C5 | Pinterest boards + pins | Claude | READY | `diagnostics/CLAUDE-TICKET-pinterest-boards-pins-2026-08-19.md` |
+| C6 | 8 accounts resume plan | Claude | READY | `diagnostics/CLAUDE-TICKET-eight-accounts-resume-plan-2026-08-19.md` |
+| C2 | Membership email sequence | Claude | READY | `diagnostics/CLAUDE-TICKET-membership-email-sequence-2026-08-19.md` |
+| C4 | Social platform variants | Social AI | Wait C1 | `diagnostics/SOCIAL-AI-TICKET-format-variants-2026-08-19.md` |
+| C7 | Canva pin/social templates | Canva | Wait C5 | `diagnostics/CANVA-TICKET-pin-social-templates-2026-08-19.md` |
+| G1 | Governance + evaluations | Claude | READY | `diagnostics/CLAUDE-TICKET-governance-and-evaluations-2026-08-19.md` |
+| G2 | Public Selection Standards | Claude | READY | `diagnostics/CLAUDE-TICKET-selection-standards-public-summary-2026-08-19.md` |
+| B2 | ISI whitepaper | Claude | READY | `diagnostics/CLAUDE-TICKET-isi-whitepaper-2026-08-19.md` |
+| B1 | ISI deploy / Formspree map | Worker B | READY | `diagnostics/WORKER-B-ISI-HANDOFF-2026-08-19.md` |
+| R1 | Semrush staging checklist | Edge | READY | `diagnostics/EDGE-TICKET-semrush-staging-setup-2026-08-19.md` |
 | D1 | ISI email forward | Angie | READY | `diagnostics/angie-prompts/ANGIE-ISI-EMAIL-FORWARD-2026-08-19.md` |
-| D2 | Keys, Formspree, media, Approves | Daniel | READY | `diagnostics/DANIEL-OPS-CHECKLIST-2026-08-19.md` |
-| L0 | Swarm coordination + Block A unblock | **Lead** | ACTIVE | `diagnostics/BREAK-AUTH-LOOP-2026-08-19.md` |
+| D2 | Ops / media / Approves | Daniel | READY | `diagnostics/DANIEL-OPS-CHECKLIST-2026-08-19.md` |
+| A1 | Self-Help / Productivity → Home cleanup | Lead (REST 200 env) | Background | COMMAND OS Block A order |
 
 ### After dependency
 
