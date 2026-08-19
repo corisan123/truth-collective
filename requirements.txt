@@ -1,0 +1,4 @@
+# Python dependencies for the Truth Collective staging tooling.
+# The diagnostics/scaffolds/apply-*.py REST scripts use requests; the rest of the
+# repository (docs, CSS, HTML scaffolds) needs no third-party packages.
+requests==2.33.1
