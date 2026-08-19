@@ -38,18 +38,18 @@ Secrets + new agents are investments. Lead does not steal Block A. Rules live in
 
 | ID | Lane | Owner | Status | Ticket |
 |----|------|-------|--------|--------|
-| A1 | TC Office children → then Books… | **Worker A** | READY | `diagnostics/WORKER-HANDOFF-2026-08-19.md` |
+| A1 | TC Self-Help / Productivity children → Home/About/Contact | **Lead (this env has REST 200)** | NEXT | continue Block A here until a new worker proves auth |
 | B1 | ISI deploy checklist + Formspree map | **Worker B** | READY | `diagnostics/WORKER-B-ISI-HANDOFF-2026-08-19.md` |
 | C1 | TC social calendar from built pages | Claude chat B | READY | `diagnostics/CLAUDE-TICKET-tc-social-from-built-pages-2026-08-19.md` |
 | C2 | Membership email sequence | Claude chat D | READY | `diagnostics/CLAUDE-TICKET-membership-email-sequence-2026-08-19.md` |
-| C3 | Office/Books intro copy pack | Claude chat E | READY | `diagnostics/CLAUDE-TICKET-office-books-intro-copy-2026-08-19.md` |
+| C3 | Office/Books intro copy pack | Claude chat E | READY (still useful for polish) | `diagnostics/CLAUDE-TICKET-office-books-intro-copy-2026-08-19.md` |
 | G1 | Governance + evaluation engine | Claude chat C | READY | `diagnostics/CLAUDE-TICKET-governance-and-evaluations-2026-08-19.md` |
 | G2 | Public Selection Standards summary | Claude chat F | READY | `diagnostics/CLAUDE-TICKET-selection-standards-public-summary-2026-08-19.md` |
 | B2 | ISI whitepaper prose | Claude chat A | READY | `diagnostics/CLAUDE-TICKET-isi-whitepaper-2026-08-19.md` |
 | R1 | Semrush staging setup checklist | Edge/research | READY | `diagnostics/EDGE-TICKET-semrush-staging-setup-2026-08-19.md` |
 | D1 | ISI email forward | Angie | READY | `diagnostics/angie-prompts/ANGIE-ISI-EMAIL-FORWARD-2026-08-19.md` |
 | D2 | Keys, Formspree, media, Approves | Daniel | READY | `diagnostics/DANIEL-OPS-CHECKLIST-2026-08-19.md` |
-| L0 | Swarm coordination | **Lead** | ACTIVE | this file + `docs/SWARM-LAUNCH-PACK.md` |
+| L0 | Swarm coordination + Block A unblock | **Lead** | ACTIVE | `diagnostics/BREAK-AUTH-LOOP-2026-08-19.md` |
 
 ### After dependency
 
@@ -64,11 +64,18 @@ Secrets + new agents are investments. Lead does not steal Block A. Rules live in
 |------|------|
 | Tech children | Staging applied |
 | Smart Lighting children | Staging applied |
+| Office children (6) | Staging applied 2026-08-19 — `REST-office-children-apply-2026-08-19.md` |
+| Books children under hub 38 (7) | Staging applied 2026-08-19 — `REST-books-children-apply-2026-08-19.md` |
 | Dual H1 on Prod / Ones / AI Podcast | `site-post-title=disabled` |
 
-### Block A order (Worker A only; do not reorder without board edit)
+### Stuck agent
 
-Office children → Books children → Self-Help / Productivity children → Home / About / Contact → Daniel image Replace → Semrush crawl.
+GPT worker reporting endless 401: **stop it**. Secrets work in this lead env. See `diagnostics/BREAK-AUTH-LOOP-2026-08-19.md`.
+
+### Block A order
+
+~~Office~~ → ~~Books (hub 38)~~ → Self-Help / Productivity children → Home / About / Contact → Daniel image Replace → Semrush crawl.
+
 
 ---
 

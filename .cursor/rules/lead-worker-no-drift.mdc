@@ -27,5 +27,5 @@ Lead may **not**:
 ## Same-family ban
 Never two agents on the same hub family, same Additional CSS, or same page IDs at once.
 
-## After any ship
-Update `docs/COMMAND-OS.md` § Current assignment. Commit the board with the work.
+## Exception — auth loop break
+If the assigned worker reports repeated **401** while this Environment proves REST **200**, lead **must** take the next Block A family and update COMMAND OS. Do not idle. Stop the stuck agent (Daniel). See `diagnostics/BREAK-AUTH-LOOP-2026-08-19.md`.
