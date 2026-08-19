@@ -32,7 +32,7 @@ Never two AIs on the same page family, same CSS file, or same PR at once.
 
 Keep these even if other rules get trimmed:
 
-1. **Staging only** for Truth Collective until Daniel says live.  
+1. **Staging only** for Truth Collective until Daniel says live. Staging is **not** live, **not** LiteSpeed-cached, **not** Cloudflare-cached for this workflow (see `.cursor/rules/staging-not-live-not-cdn.mdc`).  
 2. **No Hostinger Website backup restore** for staging recovery. No restore roulette.  
 3. **Locked `tc-*` classes** — do not rename/merge/delete.  
 4. **Vercel / 10Web PDF** = visual gold standard (reference), already in repo: `docs/brand-references/vercel-and-10web-comparison.pdf`. No re-download required unless Daniel wants fresher screenshots.  

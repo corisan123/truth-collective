@@ -12,10 +12,10 @@
 1. **Never** use Website backup restore (that targets live).
 2. **No restore roulette.** Diagnosis first. No new restores until Phase 1 answers are written down.
 3. **Do not Continue** any unfinished Updraft restore (Jul 28 `db.gz` was missing from disk — dismiss it).
-4. LiteSpeed: stay purged / off. Rename `object-cache.php` if present.
+4. **LiteSpeed / Cloudflare:** Staging work is **not** live and is **not** treated as LiteSpeed- or Cloudflare-cached. Do not add purge-cache steps for staging Views. (Historical note: if `object-cache.php` appears under staging, rename only with Daniel Approve; do not invent CDN rituals.)
 5. Do **not** wait on 10Web for recovery. Ticket **#375660** = RCA/compensation only.
 6. Work in **short steps, one question at a time.**
-7. Multi-AI roles/prompts: `docs/AI-PLATFORM-RULES-AND-PROMPTS.md` — Cursor lead; Claude/Task draft only; Edge HOLD.
+7. Multi-AI roles/prompts: `docs/AI-PLATFORM-RULES-AND-PROMPTS.md` — Cursor lead; Claude/Task draft only; Edge HOLD. Living board: `docs/COMMAND-OS.md`.
 
 ---
 

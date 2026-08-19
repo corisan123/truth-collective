@@ -5,7 +5,8 @@
 **Paste dashboard:** `docs/SWARM-LAUNCH-PACK.md`  
 **Cursor enforcement:** `.cursor/rules/*.mdc` · skills in `.cursor/skills/`
 
-**Doctrine:** Many hands lightens the load. Parallel by default across different blocks. Serial only inside one page family.
+**Staging reality (locked):** Work is on `tcstaging` only. Staging is **not** the live site. Do **not** treat views as LiteSpeed-cached or Cloudflare-cached. No purge-CDN steps unless Daniel opens a live-launch ticket. See `.cursor/rules/staging-not-live-not-cdn.mdc`.
+
 
 ---
 

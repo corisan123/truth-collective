@@ -1,0 +1,23 @@
+---
+description: Staging reality — not live, not LiteSpeed, not Cloudflare
+alwaysApply: true
+---
+
+# Staging reality (Daniel correction — lock this)
+
+Truth Collective work in this repo targets **staging only**:
+
+- URL: `https://tcstaging.truth-collective.com`
+- Path: `public_html/tcstaging`
+
+## Facts agents must not confuse
+
+1. **Not live.** Live is a separate tree under `public_html` without `tcstaging`. Do not speak or plan as if edits are on the public live site unless Daniel explicitly orders live work.
+2. **Not LiteSpeed-cached for this workflow.** Do not tell Daniel to purge LiteSpeed, wait on cache, or blame LiteSpeed for staging view results.
+3. **Not Cloudflare-cached for this workflow.** Do not tell Daniel to purge Cloudflare, wait on CDN, or blame Cloudflare for staging view results.
+4. After REST or CSS changes on staging, verify with a normal public GET / View. Do not add cache-bust rituals as required steps.
+
+## Language
+
+Prefer: “on staging,” “staging View URL,” “staging REST.”  
+Avoid: “go live with this change,” “purge cache so it shows,” “Cloudflare may be stale,” unless Daniel opens a live-launch or cache ticket.
