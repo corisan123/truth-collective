@@ -9,6 +9,7 @@ These files in `.cursor/rules/` **always apply** to Cloud and IDE agents in this
 | `command-os.mdc` | Obey and update `docs/COMMAND-OS.md` Current assignment |
 | `rest-and-secrets.mdc` | Auth email user, backup-before-write, no secrets in git |
 | `parallel-by-default.mdc` | Many hands; parallel across blocks; never same family |
+| `staging-not-live-not-cdn.mdc` | Staging only; not live; not LiteSpeed/Cloudflare cache rituals |
 
 **Skills (`.cursor/skills/`):** `cursor-lead` · `cursor-block-a-worker` · `claude-specialist`
 

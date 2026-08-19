@@ -156,7 +156,7 @@ Full note: `docs/brand-references/Cursor_tips_for_launch_6.docx`
 - Hub tiles: **3 columns**, not 4; block order image → title → brief
 - Before migrate: hub/child URL map, robots not blocking, sitemap 200, no `__trashed` URLs, no duplicate hub titles
 - Image export target often **1000×800** for category tiles (keeps rows even)
-- LiteSpeed purge after CSS/block changes
+- **Staging override (Aug 2026):** do **not** require LiteSpeed or Cloudflare purge for staging Views. Staging is not live and is not treated as CDN-cached in this workflow (see `.cursor/rules/staging-not-live-not-cdn.mdc`). Live-launch tips may differ later.
 - Speakers scope may broaden from office-desk to speakers-by-type — decide slug/parent before cloning many tiles
 
 ---

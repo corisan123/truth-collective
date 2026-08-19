@@ -9,6 +9,7 @@ Session open: read `docs/COMMAND-OS.md`, `docs/COMMAND-CHARTER-2026-08-19.md`, `
 
 ## Hard site locks
 - Staging only unless Daniel explicitly asks for live work. Live path is `public_html` without `tcstaging`. Never Website backup restore for staging recovery.
+- **Staging is not live, not LiteSpeed-cached, not Cloudflare-cached** for this workflow. Do not prescribe CDN/LiteSpeed purge steps for staging Views (`.cursor/rules/staging-not-live-not-cdn.mdc`).
 - No guessing. If below ~99% certainty, stop and say so.
 - Do not rename/merge/delete locked classes: `tc-book-card`, `tc-product-card`, `tc-leadership-body`, `tc-book-button`, `tc-card-row`, `tc-overlay-card`, `tc-overlay-card-product`, `tc-explore-hub`, `tc-grade-block`, `tc-rating`, `tc-tech-intro`, `tc-explore-hero`.
 - Do not change published/indexed slugs.
