@@ -1,0 +1,14 @@
+---
+description: Follow and update the living Command OS board
+alwaysApply: true
+---
+
+# Command OS board
+
+Before choosing work, read `docs/COMMAND-OS.md` and obey **Current assignment**.
+
+- Big picture lives in COMMAND OS + `docs/COMMAND-CHARTER-2026-08-19.md`.
+- Do not invent ad-hoc priorities that contradict the board.
+- After completing a family or ticket: update COMMAND OS § Current assignment in the same commit when possible.
+- Paste-ready specialist tickets live under `diagnostics/CLAUDE-TICKET-*.md` and worker handoffs under `diagnostics/WORKER-HANDOFF-*.md`.
+- If the board is stale vs reality, fix the board first, then act.

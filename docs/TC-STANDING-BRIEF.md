@@ -11,7 +11,7 @@ Update only with Daniel’s confirmation (Master Brief rule).
 - `HEARING_TRACKER_WEBSITE_TO_COMPARE_TC_WEBSITE.docx` + TechRadar screenshots (§9)
 - Membership toggle CSS (§11) + Copilot Task Master Binder archive (§12)
 
-**Session open line:** Read `docs/TC-STANDING-BRIEF.md`, `STAGING-RECOVERY-HANDOFF.md`, and `docs/AI-PLATFORM-RULES-AND-PROMPTS.md`, then continue.
+**Session open line:** Read `docs/COMMAND-OS.md` (Current assignment), `docs/COMMAND-CHARTER-2026-08-19.md`, `docs/TC-STANDING-BRIEF.md`, `STAGING-RECOVERY-HANDOFF.md`, and `docs/AI-PLATFORM-RULES-AND-PROMPTS.md`, then continue from the board.
 
 ---
 

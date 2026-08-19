@@ -3,7 +3,7 @@
 **Owner:** Daniel Reid + Cursor (lead)  
 **Purpose:** Parallel AI work without duplication, damage, or wasted cycles.  
 **Plan B (ACTIVE):** Tasks Pro cannot be purchased yet — see `docs/PLAN-B-NO-TASKS-PRO.md`. Cursor owns HTML scaffolds; Claude owns voice; Task idle/scarce; never Copilot Premium/Edge as Task substitute.  
-**Authority order:** This sheet implements `docs/TC-STANDING-BRIEF.md` (§10, §13, §14) and `STAGING-RECOVERY-HANDOFF.md`. If anything conflicts, Standing Brief wins until Daniel confirms an update.
+**Authority order:** Living board `docs/COMMAND-OS.md` + `docs/COMMAND-CHARTER-2026-08-19.md` for process/lanes. `docs/TC-STANDING-BRIEF.md` for brand/visual locks. `STAGING-RECOVERY-HANDOFF.md` for recovery constraints. Cursor enforces via `.cursor/rules/*.mdc`. If process conflicts with this older sheet, Charter + COMMAND OS win until Daniel rejects them.
 
 **Session rule for every AI:** Staging only. Fix → polish → Semrush → launch. No restore roulette. No live edits. No inventing parallel workstreams.
 
@@ -13,9 +13,9 @@
 
 | Platform | Status now | Job | May touch staging WP? | May write Additional CSS? |
 |----------|------------|-----|----------------------|---------------------------|
-| **Cursor** | Active / lead | Architecture, conflict checks, final HTML/CSS, REST apply, veto | Yes (staging App Password) | Yes (with Daniel) |
-| **Daniel** | Approver | Taste, View-check, Hostinger media, revoke keys | Yes (admin) | Yes (with Cursor) |
-| **Claude** | **Active under Plan B** | Voice, long copy, aesthetic critique, plain-text outlines | No | No |
+| **Cursor** | Active / lead **or** worker (see COMMAND OS) | Lead: tickets/veto/unblock. Worker: Block A REST apply | Worker + lead only as assigned | Lead + Daniel only |
+| **Daniel** | Approver | Taste, View-check, Hostinger media, revoke keys, paste Claude tickets | Yes (admin) | Yes (with Cursor lead) |
+| **Claude** | **Active specialist** | Voice, social calendars, governance/evaluation docs | No | No |
 | **Copilot Task** | **Blocked on Tasks Pro purchase** | When available: HTML scaffolds + eng docs. Until then: idle or one scarce free DOC/HTML ticket only | No | No |
 | **Copilot Edge** | **HOLD** | Not on recovery path | No | No |
 | **ChatGPT / Operator** | Banned from CSS/HTML path | Historical damage | No | No |

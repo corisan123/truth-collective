@@ -3,7 +3,8 @@
 **Effective:** 2026-08-19  
 **Authority:** Cursor (lead / quarterback) under Daniel Reid (owner / final taste)  
 **Scope:** Truth Collective (staging → Semrush → launch) + ISI Consulting (finish → deploy) + growth content (followers / members)  
-**Status:** This charter **supersedes stale parallel-AI instructions** in older docs where they conflict. Hard technical locks below still stand.
+**Status:** This charter **supersedes stale parallel-AI instructions** in older docs where they conflict. Hard technical locks below still stand.  
+**Daily board:** `docs/COMMAND-OS.md` (Current assignment). Cursor project rules: `.cursor/rules/*.mdc`.
 
 ---
 

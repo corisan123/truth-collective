@@ -1,0 +1,31 @@
+---
+description: Lead vs worker lanes — no drift after secrets/new-agent investment
+alwaysApply: true
+---
+
+# Lead vs worker — no drift
+
+## Roles
+- **Daniel:** owner, Approves, holds keys/media, pastes Claude tickets.
+- **Cursor lead:** quarterback. Writes tickets, updates `docs/COMMAND-OS.md`, unblocks auth/ops, assigns Claude/governance/growth. Does **not** take the next Block A page family when a worker agent is assigned.
+- **Cursor worker (one):** owns Block A staging page rebuilds per `diagnostics/WORKER-HANDOFF-*.md`.
+- **Claude:** text/docs only. Never HTML/CSS/WP apply.
+
+## Secrets and new-agent investment (hard)
+If Daniel spent time adding or refreshing `TC_WP_USER` / `TC_WP_APP_PASSWORD` and/or launching a **new Cursor agent for staging work**, that agent owns the next Block A family.
+
+Lead may:
+1. Prove REST auth once
+2. Point the worker at the handoff
+3. Clear a true blocker (auth note, missing ticket)
+
+Lead may **not**:
+- Rebuild Office / Books / Lighting / Tech children “because REST works here”
+- Invent a parallel page plan in chat
+- Leave the worker with nothing while lead ships the same family
+
+## Same-family ban
+Never two agents on the same hub family, same Additional CSS, or same page IDs at once.
+
+## After any ship
+Update `docs/COMMAND-OS.md` § Current assignment. Commit the board with the work.
