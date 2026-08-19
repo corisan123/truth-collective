@@ -43,9 +43,15 @@ Technology Hub, Smart Lighting, Office, Books, Self-Help, Productivity, Ones Who
 - Crawl: all subfolders; include `/technology-hub/`, `/recommended-books-2026/`, `/office-workspace-products-and-tools/`
 - After apply + image replace, re-crawl before treating scores as launch-ready
 
-## Next page batches after Technology children
+## Applied 2026-08-19 (staging REST)
+
+- Technology children (Computers + monitors / AV / headphones / speakers / projectors / tablets / interactive displays)
+- Smart Lighting children (4863, 4877, 4896, 5099, 4886) — see `REST-smart-lighting-children-apply-2026-08-19.md`
+- Dual H1 cleared on Productivity, Ones Who Gave, AI Podcast via Astra `site-post-title=disabled`
+
+## Next page batches
 
 1. Office children (chairs, desks, analog writing, essentials, laptop stands, filing)
 2. Book category children
-3. Smart Lighting children
-4. Home + About + Contact H1 cleanup
+3. Self-Help / Productivity children
+4. Home + About + Contact cleanup
