@@ -80,19 +80,20 @@ def public_status(url: str) -> int:
         return e.code
 
 
-def one(pat: str, html: str, flags=0) -> str:
-    m = re.search(pat, html, flags)
-    if not m:
-        die(f"Could not extract: {pat[:80]}")
-    return m.group(1) if m.lastindex else m.group(0)
+def slice_from_to(html: str, start: str, end: str) -> str:
+    i = html.find(start)
+    j = html.find(end, i + 1 if i >= 0 else 0)
+    if i < 0 or j < 0:
+        die(f"Could not slice from {start[:60]!r} to {end[:60]!r}")
+    return html[i:j].rstrip()
 
 
 def build(live: str) -> str:
     css = CSS_PATH.read_text()
-    hero = one(
-        r'(<!-- wp:group \{"align":"full","className":"tc-tech-cover".*?<!-- /wp:group -->\s*<!-- /wp:group -->)',
+    hero = slice_from_to(
         live,
-        re.S,
+        '<!-- wp:group {"align":"full","className":"tc-tech-cover"',
+        '<!-- wp:group {"className":"tc-tech-intro-prose"',
     )
     hero = hero.replace('alt="" class="wp-image-8311"', 'alt="Technology Hub" class="wp-image-8311"')
 
@@ -104,13 +105,14 @@ def build(live: str) -> str:
     if len(leads) < 4:
         die(f"Expected 4 intro leads, found {len(leads)}")
     leads[0] = leads[0].replace(
+        "the largest of Truth Collective's nine hubs",
         "the largest of the six product hubs at Truth Collective",
     )
 
-    cat = one(
-        r'(<!-- wp:group \{"className":"tc-tech-cat-section".*?<!-- /wp:columns -->\s*<!-- /wp:group -->)',
+    cat = slice_from_to(
         live,
-        re.S,
+        '<!-- wp:group {"className":"tc-tech-cat-section"',
+        '<!-- wp:heading {"style":{"elements":{"link":{"color":{"text":"var:preset|color|ast-global-color-4"}}}}',
     )
     cat = cat.replace(
         "Eight paths. Each one reviewed against the Truth Collective Trusted Selection Standards before it earns a place here.",
@@ -134,12 +136,14 @@ def build(live: str) -> str:
         inner = re.sub(r"</p>$", "", inner)
         eval_body.append(f"<p>{inner}</p>")
 
-    final_p = one(
+    final_p = re.search(
         r'<p class="has-ast-global-color-4-color has-text-color has-link-color">The Technology Hub holds eight trusted paths,.*?</p>',
         live,
         re.S,
     )
-    final_inner = re.sub(r"^<p[^>]*>", "", final_p)
+    if not final_p:
+        die("Could not extract Final Thoughts paragraph.")
+    final_inner = re.sub(r"^<p[^>]*>", "", final_p.group(0))
     final_inner = re.sub(r"</p>$", "", final_inner)
 
     def shell(eyebrow: str, heading: str, class_name: str) -> str:
