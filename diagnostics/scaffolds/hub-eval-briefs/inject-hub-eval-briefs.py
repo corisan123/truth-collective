@@ -23,7 +23,7 @@ from datetime import date
 from pathlib import Path
 
 BASE = os.environ.get("STAGING", "https://tcstaging.truth-collective.com").rstrip("/")
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[3]
 BACKUP_DIR = ROOT / "diagnostics" / "backups"
 BRIEF_DIR = Path(__file__).resolve().parent
 TICKET = "REST-hub-eval-briefs-v1"
