@@ -4,7 +4,7 @@
 
 | File | What it is |
 |------|------------|
-| `vercel-and-10web-comparison.pdf` | **Governing** Standing Brief PDF. Tile title on image, EXPLORE look-alike, overlay language. |
+| `vercel-and-10web-comparison.pdf` | **Governing** Standing Brief PDF. Tile title on the image at rest, EXPLORE look-alike, overlay language. |
 | `vercel-and-10web-comparison-2026-09-02.pdf` | Same comparison family, fuller 28-page scan. Not a second brief. Ingest: `diagnostics/vercel-10web-comparison-2026-09-02-ingest.md`. |
 | `TC_Master_Brief_update_2.0_5_26_2026.docx` | Master Brief 2.0 |
 | `TC_Cursor_Migration_Brief.docx` | Staging → live migration rules |

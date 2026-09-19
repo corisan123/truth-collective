@@ -122,6 +122,8 @@ def build(live: str) -> str:
     cat = cat.replace('alt="" class="wp-image-8316"', 'alt="Headphones and Headsets" class="wp-image-8316"')
     cat = cat.replace('alt="" class="wp-image-8319"', 'alt="Emerging Technologies" class="wp-image-8319"')
     cat = cat.replace('alt="" class="wp-image-8320"', 'alt="AI Wearables" class="wp-image-8320"')
+    cat = cat.replace(' loading="lazy"', "")
+    cat = re.sub(r"<img(?![^>]*loading=)", '<img loading="eager"', cat)
 
     eval_ps = re.findall(
         r'(<p style="font-family:\'Inter\',sans-serif;font-size:15px;color:#374151;line-height:1\.8;margin-bottom:\d+px;">.*?</p>)',

@@ -8,7 +8,7 @@ alwaysApply: true
 Read `docs/TC-STANDING-BRIEF.md`, `docs/TC-LOCK-2026-09-19.md`, `STAGING-RECOVERY-HANDOFF.md`, and `docs/AI-PLATFORM-RULES-AND-PROMPTS.md` before acting.
 
 ## Visual hierarchy (do not drift)
-1. Tier 1 PDF: `docs/brand-references/vercel-and-10web-comparison.pdf`. Description vs PDF → PDF wins. Title on image bottom. EXPLORE is a look-alike, not a native button.
+1. Tier 1 PDF: `docs/brand-references/vercel-and-10web-comparison.pdf`. Description vs PDF → PDF wins. Title on the image at the bottom at rest. EXPLORE is a look-alike, not a native button. Hover: title rises, EXPLORE appears. Black-bar / title-below-image is damage, not a model.
 2. Tier 2 (19 Sep): cream-forward; navy `#1e3a5f` and gold `#b8944b` accents only; no blue/pastel/gray tiles; boxes only in evaluation, governance, Explore More, stat strip; unequal-column intro; grayscale later on Truth Untold, Ones Who Gave Everything, AI Mastery Collection only.
 3. Tier 3 evidence only. Do not port 10Web/kind-louse/staging looks, invented taxonomy, fabricated stats, or fabricated founder credentials.
 4. Drift: styling not traceable to Tier 1 or 2 is reported, not implemented.

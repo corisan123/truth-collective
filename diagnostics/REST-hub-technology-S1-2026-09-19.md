@@ -12,7 +12,9 @@ Tier 1 PDF. Tier 2 cream / navy `#1e3a5f` / gold `#b8944b` / unequal-column intr
 Hero → intro (38/62 columns) → stat strip (three factual items, boxed) → Who This Is For / Why This Matters / Best Uses (eyebrow + heading shells) → 10 explore tiles → governance pattern `2847` → evaluation brief (boxed, existing copy) → Final Word → Explore More `2870` → social `7532`.
 
 ## Tiles
-Eight child URLs HEAD 200. Emerging Technologies and AI Wearables stay unlinked (no child pages). `tc-explore-hub` on columns. Title on image. CSS EXPLORE look-alike from Additional CSS plus page hover (title rises, lighter darken). No `tc-overlay-card` on this page.
+Eight child URLs HEAD 200. Emerging Technologies and AI Wearables stay unlinked (no child pages). `tc-explore-hub` on columns. **At rest:** title on the image at the bottom (PDF + pre-damage overlay). Not under the image. Not on a black bar below a crop. S1b: image link fills the tile (`figure a` absolute), min-height matches locked explore-hub 460px, category images `loading="eager"`. Hover: title rises, EXPLORE look-alike. No `tc-overlay-card` on this page.
+
+Office Workspace staging capture (Chairs / Analog Writing black bars) is Tier 3 damage. Not a model.
 
 ## Removed
 Heavy boxed “The Truth Collective” pattern 5544 (hub-boundary bleed; not a permitted box). Fabricated “nine hubs” phrasing.

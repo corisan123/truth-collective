@@ -9,7 +9,7 @@
 
 ## Visual hierarchy (locked 2026-09-19 evening)
 
-1. Tier 1 PDF: `docs/brand-references/vercel-and-10web-comparison.pdf`. PDF wins.
+1. Tier 1 PDF: `docs/brand-references/vercel-and-10web-comparison.pdf`. PDF wins. Tile title on the image at the bottom **at rest**. Black-bar / title-below-image is damage, not a model.
 2. Tier 2 direction: cream-forward, navy/gold accents only, boxes only in evaluation / governance / Explore More / stats, unequal-column intro, grayscale later on Truth Untold, Ones Who Gave Everything, AI Mastery Collection.
 3. Tier 3: damage/kind-louse/staging = evidence. Do not port. No fabricated founder credentials.
 4. Assembly: Hero → intro → stats → Who This Is For → Why This Matters → Best Uses → listings → selected patterns → evaluation above Final Word → Final Word → Explore Other Hubs → social last.

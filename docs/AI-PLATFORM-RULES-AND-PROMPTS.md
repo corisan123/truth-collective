@@ -3,7 +3,7 @@
 **Owner:** Daniel Reid + Cursor (lead)  
 **Purpose:** Parallel AI work without duplication, damage, or wasted cycles.  
 **Plan B (ACTIVE):** Tasks Pro cannot be purchased yet — see `docs/PLAN-B-NO-TASKS-PRO.md`. Cursor owns HTML scaffolds; Claude owns voice; Task idle/scarce; never Copilot Premium/Edge as Task substitute.  
-**Authority order:** This sheet implements `docs/TC-STANDING-BRIEF.md` (§10, §13, §14), `docs/TC-LOCK-2026-09-19.md`, and `STAGING-RECOVERY-HANDOFF.md`. Visual hierarchy: Standing Brief PDF first, 19 Sep direction second, damage/staging captures are evidence not a model. If anything conflicts, Standing Brief PDF wins until Daniel confirms an update.
+**Authority order:** This sheet implements `docs/TC-STANDING-BRIEF.md` (§10, §13, §14), `docs/TC-LOCK-2026-09-19.md`, and `STAGING-RECOVERY-HANDOFF.md`. Visual hierarchy: Standing Brief PDF first, 19 Sep direction second, damage/staging captures are evidence not a model. Tile titles sit on the image at the bottom at rest. If anything conflicts, Standing Brief PDF wins until Daniel confirms an update.
 
 **Session rule for every AI:** Staging only. Fix → polish → Semrush → launch. No restore roulette. No live edits. No inventing parallel workstreams.
 

@@ -17,7 +17,7 @@ Update only with Daniel’s confirmation (Master Brief rule).
 
 **Drift rule:** styling not traceable to Tier 1 or Tier 2 is reported, not implemented. Full text: `docs/TC-LOCK-2026-09-19.md`.
 
-1. **Tier 1 — Standing Brief PDF.** `docs/brand-references/vercel-and-10web-comparison.pdf`. Claude or Daniel description vs PDF → **PDF wins**. Tile titles on the image at the bottom. EXPLORE is a styled look-alike, not a native button.
+1. **Tier 1 — Standing Brief PDF.** `docs/brand-references/vercel-and-10web-comparison.pdf`. Claude or Daniel description vs PDF → **PDF wins**. Tile titles on the image at the bottom **at rest**. EXPLORE is a styled look-alike, not a native button. Hover: title rises, EXPLORE appears.
 2. **Tier 2 — Daniel 19 Sep direction.** Cream-forward. Navy `#1e3a5f` and gold `#b8944b` accents only. No blue, no pastel, no gray tiles. More whitespace. Boxes only in evaluation block, governance pattern, Explore More grid, and stat strip. Larger serif headings with uppercase letter-spaced eyebrows. Asymmetric intro (unequal columns). Grayscale later, Additional CSS, on **Truth Untold, The Ones Who Gave Everything, AI Mastery Collection** only.
 3. **Tier 3 — evidence, not models.** 10Web damage, kind-louse Technology, staging captures. Do not port blue/pastel, gray tiles, invented taxonomy, fabricated stats, fabricated founder name or credentials.
 
@@ -49,7 +49,7 @@ Blue and pastel palettes, gray tiles, invented taxonomy, fabricated statistics, 
 
 ### Hub tiles (`tc-explore-hub`)
 - Large high-res images; full tile is the visual plane
-- **At rest:** title at **bottom** of image
+- **At rest:** title at **bottom of the image** (on the photo, not under it, not on a black bar below a crop)
 - **On hover:** image lifts and slightly darkens; title rises; transparent **EXPLORE** (hubs may use gold `>`). Entire image is linked
 - EXPLORE on hub tiles is **not a button** — CSS `::after` look-alike; **the entire image is the link**. Homepage entrance EXPLORE is CSS keyframes on `.tc-explore-hero::after` (coded look-alike, not JS, not a class button). Seldom.
 - EXPLORE must never split (`EXPLOR` / `E`)
