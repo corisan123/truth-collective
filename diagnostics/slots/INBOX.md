@@ -11,34 +11,38 @@ Cursor wraps these strings in locked `tc-*` HTML after that page’s skeleton is
 [page title or slug]
 
 ===INTRO===
-[welcome / hub prose]
+[welcome / hub prose for the intro column]
 
-===EVAL_BRIEF===
-[How We Evaluate block]
+===STATS===
+[three short stat labels/values, facts only]
+
+===WHO_THIS_IS_FOR===
+===WHY_THIS_MATTERS===
+===BEST_USES===
 
 ===TILE_LABELS===
 [one line per tile, in visual order]
 
+===EVAL_BRIEF===
+[How We Evaluate block]
+
 ===FINAL_THOUGHTS===
-[closing prose]
+[Final Word prose]
 
 ===END===
-```
-
-Optional later, same packet, only if that page needs them:
-
-```
-===HERO_KICKER===
-===STATS===
 ```
 
 ## Wrapping (Cursor)
 
 | Slot | Lands in |
 | --- | --- |
-| INTRO | Constrained prose under the cover (`tc-tech-intro-prose` / `tc-leadership-body` as the skeleton already uses). Not a second hero. |
-| EVAL_BRIEF | Existing evaluation brief region. Do not duplicate if the 19 Sep brief is already on that hub. |
+| INTRO | Right column of the asymmetric intro (heading stays in the left column). |
+| STATS | Stat strip under intro. Boxed, permitted. |
+| WHO_THIS_IS_FOR / WHY_THIS_MATTERS / BEST_USES | Named regions under the stat strip, before listings. |
 | TILE_LABELS | Title **on** the tile image (bottom). One label per `tc-explore-hub` tile, same order as the grid. |
-| FINAL_THOUGHTS | Closing region already on the skeleton. |
+| EVAL_BRIEF | Evaluation region **directly above Final Word**. Boxed, permitted. Do not duplicate. |
+| FINAL_THOUGHTS | Final Word region. |
 
 Do not wrap until the skeleton on that URL is stable. One paste per hub, not per section.
+
+Page order is locked in `docs/TC-LOCK-2026-09-19.md`.

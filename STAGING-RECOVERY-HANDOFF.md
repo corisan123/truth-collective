@@ -7,11 +7,12 @@
 
 ---
 
-## Visual hierarchy (locked 2026-09-19)
+## Visual hierarchy (locked 2026-09-19 evening)
 
-1. Standing Brief PDF first: `docs/brand-references/vercel-and-10web-comparison.pdf`. PDF wins.
-2. 19 Sep direction second (cream-forward, whitespace, eyebrows, asymmetric intro, grayscale on the three editorial hubs only).
-3. 10Web damage / kind-louse / staging screenshots = evidence, not a style target. Do not port blue, pastel cards, gray tiles, invented taxonomy, or fabricated stats.
+1. Tier 1 PDF: `docs/brand-references/vercel-and-10web-comparison.pdf`. PDF wins.
+2. Tier 2 direction: cream-forward, navy/gold accents only, boxes only in evaluation / governance / Explore More / stats, unequal-column intro, grayscale later on Truth Untold, Ones Who Gave Everything, AI Mastery Collection.
+3. Tier 3: damage/kind-louse/staging = evidence. Do not port. No fabricated founder credentials.
+4. Assembly: Hero → intro → stats → Who This Is For → Why This Matters → Best Uses → listings → selected patterns → evaluation above Final Word → Final Word → Explore Other Hubs → social last.
 
 Full lock: `docs/TC-LOCK-2026-09-19.md`.
 

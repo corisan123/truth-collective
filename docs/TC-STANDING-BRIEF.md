@@ -13,11 +13,15 @@ Update only with Daniel’s confirmation (Master Brief rule).
 
 **Session open line:** Read `docs/TC-STANDING-BRIEF.md`, `docs/TC-LOCK-2026-09-19.md`, `STAGING-RECOVERY-HANDOFF.md`, and `docs/AI-PLATFORM-RULES-AND-PROMPTS.md`, then continue.
 
-### Visual hierarchy (locked 2026-09-19 — do not drift)
+### Visual hierarchy (locked 2026-09-19 evening — do not drift)
 
-1. **Standing Brief PDF first.** `docs/brand-references/vercel-and-10web-comparison.pdf`. If a description, ticket, or Claude directive disagrees with this PDF, **the PDF wins**. That is already settled by the 19 Sep conflict table. Same comparison family: `vercel-and-10web-comparison-2026-09-02.pdf` (fuller 28-page scan). Not a second brief.
-2. **Stated direction from 19 Sep, second.** Narrow. Layers on the PDF. Does not replace it. See §1 “Direction on top of the PDF.”
-3. **Everything else is evidence, not a model.** 10Web damage captures, kind-louse Technology builds, staging screenshots: current state and what went wrong. **Do not port** from those: the blue, pastel yellow and blue category cards, gray tiles, invented taxonomy, fabricated stats.
+**Drift rule:** styling not traceable to Tier 1 or Tier 2 is reported, not implemented. Full text: `docs/TC-LOCK-2026-09-19.md`.
+
+1. **Tier 1 — Standing Brief PDF.** `docs/brand-references/vercel-and-10web-comparison.pdf`. Claude or Daniel description vs PDF → **PDF wins**. Tile titles on the image at the bottom. EXPLORE is a styled look-alike, not a native button.
+2. **Tier 2 — Daniel 19 Sep direction.** Cream-forward. Navy `#1e3a5f` and gold `#b8944b` accents only. No blue, no pastel, no gray tiles. More whitespace. Boxes only in evaluation block, governance pattern, Explore More grid, and stat strip. Larger serif headings with uppercase letter-spaced eyebrows. Asymmetric intro (unequal columns). Grayscale later, Additional CSS, on **Truth Untold, The Ones Who Gave Everything, AI Mastery Collection** only.
+3. **Tier 3 — evidence, not models.** 10Web damage, kind-louse Technology, staging captures. Do not port blue/pastel, gray tiles, invented taxonomy, fabricated stats, fabricated founder name or credentials.
+
+**Page assembly order:** Hero → intro → stat strip → Who This Is For → Why This Matters → Best Uses → listings → selected patterns → evaluation criteria directly above Final Word → Final Word → Explore Other Hubs → social media last.
 
 ---
 
@@ -29,14 +33,14 @@ Update only with Daniel’s confirmation (Master Brief rule).
 **(File on disk 2026-08-09.** Same pack as Daniel Drive `vercel and 10web smaple images.pdf`. Image-heavy annotated samples: 10Web hover overlay, product details frame, Details\|Reviews on small tiles, Vercel editorial greyscale→color, cover entrance + video placeholder. Map: `diagnostics/vercel-10web-sample-pdf-ingested-2026-08-09.md`. Fuller scan: `vercel-and-10web-comparison-2026-09-02.pdf`.)
 
 ### Direction on top of the PDF (19 Sep — not a competing brief)
-- Lighter, **cream-forward** page background. Navy and gold as **accents only**.
-- More whitespace. Fewer boxed cards in **editorial** sections.
-- Larger serif headings with small uppercase **eyebrow** labels.
-- **Asymmetric** intro layout, not centered full-width text.
-- Grayscale → color on hover: **the three editorial hubs only**. Later Additional CSS pass. Not heroes. Not smaller in-page images. Not product tiles. Not book covers. Seldom.
+- Cream-forward page background. Navy `#1e3a5f` and gold `#b8944b` as **accents only**. No blue, no pastel, no gray tiles.
+- More whitespace. Boxes **only** in the evaluation block, governance pattern, Explore More grid, and stat strip.
+- Larger serif headings with small uppercase letter-spaced eyebrow labels above them.
+- Asymmetric intro: heading and body in **unequal columns**.
+- Grayscale → color on hover: **Truth Untold, The Ones Who Gave Everything, AI Mastery Collection** only. Deferred until structure passes complete. Additional CSS only. Not product hubs, major child tiles, product cards, or book covers.
 
 ### Rejected as style targets (evidence only)
-Blue skins, pastel yellow/blue category cards, gray tiles, invented taxonomy, fabricated stats from 10Web / kind-louse / damaged staging captures. None of it gets ported.
+Blue and pastel palettes, gray tiles, invented taxonomy, fabricated statistics, fabricated founder name and credentials. None of it gets ported.
 
 ### Preference ranking (overlays)
 1. **Vercel overlays** — preferred polish (legible hover, not crushed dark)
@@ -117,7 +121,7 @@ Uniform image sizing rules are intentional. Images must not spill outside their 
 
 **Hubs:** Recommended Books · Office Workspace · Technology · Smart (AI) Lighting · Featured Productivity Tools · Self-Help and Mental Wellness  
 
-**Editorial sections:** include **AI Mastery** (Daniel 2026-08-10) and **The Truth Untold Series**. Grayscale hover is locked to **the three editorial hubs only** (19 Sep). Do not gray the six product hubs.  
+**Editorial hubs (grayscale, later):** **The Truth Untold**, **The Ones Who Gave Everything**, **AI Mastery Collection**. Not the six product hubs.  
 **Books child:** **AI Mastery Book Collections** lives under **Recommended Books** (not under Technology Hub).
 
 **SEO (every page):** focus keyword in title, meta (&lt;160), H1, ≥1 H2, first paragraph, hero alt; density 0.5–1.5%; title &lt;60 chars and includes **2026**; RankMath Content AI during writing.  

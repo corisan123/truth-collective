@@ -8,9 +8,11 @@ alwaysApply: true
 Read `docs/TC-STANDING-BRIEF.md`, `docs/TC-LOCK-2026-09-19.md`, `STAGING-RECOVERY-HANDOFF.md`, and `docs/AI-PLATFORM-RULES-AND-PROMPTS.md` before acting.
 
 ## Visual hierarchy (do not drift)
-1. Standing Brief PDF first: `docs/brand-references/vercel-and-10web-comparison.pdf`. Description vs PDF → PDF wins.
-2. 19 Sep direction second: cream-forward, navy/gold accents only, more whitespace, fewer boxed editorial cards, large serif + uppercase eyebrows, asymmetric intro, grayscale on the three editorial hubs only.
-3. 10Web damage / kind-louse / staging captures are evidence, not a model. Do not port blue, pastel yellow/blue cards, gray tiles, invented taxonomy, or fabricated stats.
+1. Tier 1 PDF: `docs/brand-references/vercel-and-10web-comparison.pdf`. Description vs PDF → PDF wins. Title on image bottom. EXPLORE is a look-alike, not a native button.
+2. Tier 2 (19 Sep): cream-forward; navy `#1e3a5f` and gold `#b8944b` accents only; no blue/pastel/gray tiles; boxes only in evaluation, governance, Explore More, stat strip; unequal-column intro; grayscale later on Truth Untold, Ones Who Gave Everything, AI Mastery Collection only.
+3. Tier 3 evidence only. Do not port 10Web/kind-louse/staging looks, invented taxonomy, fabricated stats, or fabricated founder credentials.
+4. Drift: styling not traceable to Tier 1 or 2 is reported, not implemented.
+5. Assembly: Hero → intro → stats → Who This Is For → Why This Matters → Best Uses → listings → selected patterns → evaluation above Final Word → Final Word → Explore Other Hubs → social last.
 
 ## Hard rules
 - Staging only unless Daniel explicitly asks for live work. Live path is `public_html` without `tcstaging`. Never Website backup restore for staging recovery.
