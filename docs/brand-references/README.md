@@ -2,7 +2,8 @@
 
 | File | What it is |
 |------|------------|
-| `vercel-and-10web-comparison.pdf` | **LOCKED** Vercel + 10Web sample pack (Daniel Drive: `vercel and 10web smaple images.pdf`). Ingested 2026-08-09. Hover/overlay/editorial/cover motion gold. Reference only. |
+| `vercel-and-10web-comparison-2026-09-02.pdf` | **LOCKED** fuller 28-page pack Daniel re-sent 2026-09-19. Captions are the motion spec. Ingest: `diagnostics/vercel-10web-comparison-2026-09-02-ingest.md`. |
+| `vercel-and-10web-comparison.pdf` | Earlier 8-page pack (ingested 2026-08-09). Keep as subset. |
 | `TC_Master_Brief_update_2.0_5_26_2026.docx` | Master Brief 2.0 |
 | `TC_Cursor_Migration_Brief.docx` | Staging → live migration rules |
 | `Cursor_tips_for_launch_6.docx` | Launch week tips |
