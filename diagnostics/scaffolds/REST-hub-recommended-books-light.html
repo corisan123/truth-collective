@@ -1,0 +1,487 @@
+<!-- wp:html -->
+<!-- TC STAGING: recommended-books hub light factory clone. Images native for Media Replace. -->
+<style id="tc-recommended-books-light">
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&display=swap");
+
+body.page-id-38 .entry-content > .alignfull {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  max-width: none !important;
+  width: 100% !important;
+}
+body.page-id-38 .tc-tech-intro-prose {
+  background: #f8f4ec;
+  padding: clamp(2rem, 4vw, 3rem) clamp(1.25rem, 4vw, 3rem) 0.25rem;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+body.page-id-38 .tc-tech-intro-prose .tc-hub-eyebrow {
+  margin: 0 0 0.5rem !important;
+  font-family: Inter, sans-serif !important;
+  font-size: 0.78rem !important;
+  letter-spacing: 0.16em !important;
+  text-transform: uppercase !important;
+  color: #b8944b !important;
+}
+body.page-id-38 .tc-tech-intro-prose .tc-hub-hero-title {
+  margin: 0 0 1rem !important;
+  font-family: "Playfair Display", serif !important;
+  font-size: clamp(1.9rem, 3vw, 2.6rem) !important;
+  font-weight: 600 !important;
+  color: #1e3a5f !important;
+}
+body.page-id-38 .tc-tech-intro-prose .tc-hub-hero-title em {
+  color: #b8944b !important;
+  font-style: italic !important;
+}
+body.page-id-38 .tc-tech-intro-prose .tc-hub-hero-lead {
+  margin: 0 0 1rem !important;
+  max-width: 42rem;
+  font-family: Inter, sans-serif !important;
+  font-size: 1.05rem !important;
+  line-height: 1.65 !important;
+  color: #334155 !important;
+}
+body.page-id-38 .tc-tech-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+  padding: 0.85rem 0 1.25rem;
+  border-top: 1px solid rgba(30,58,95,0.12);
+}
+body.page-id-38 .tc-tech-meta-row p {
+  margin: 0 !important;
+  font-family: Inter, sans-serif !important;
+  font-size: 0.8rem !important;
+  color: #64748b !important;
+}
+body.page-id-38 .tc-tech-meta-row a { color: #1e3a5f !important; }
+
+body.page-id-38 .tc-tech-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  padding: 1.35rem clamp(1.25rem, 4vw, 3rem);
+  background: #f8f4ec;
+  border-bottom: 1px solid rgba(30,58,95,0.08);
+}
+body.page-id-38 .tc-tech-stats__item::before {
+  content: "";
+  display: block;
+  width: 1.5rem;
+  height: 2px;
+  background: #b8944b;
+  margin-bottom: 0.65rem;
+}
+body.page-id-38 .tc-tech-stats__label {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #b8944b;
+}
+body.page-id-38 .tc-tech-stats__value {
+  margin: 0.35rem 0 0;
+  font-family: "Playfair Display", serif;
+  font-size: 1.15rem;
+  color: #1e3a5f;
+}
+@media (max-width: 700px) {
+  body.page-id-38 .tc-tech-stats { grid-template-columns: 1fr; }
+}
+
+body.page-id-38 .tc-tech-cat-section {
+  background: #f8f4ec;
+  padding: clamp(2.25rem, 4vw, 3.5rem) clamp(1.25rem, 4vw, 3rem) clamp(2.5rem, 5vw, 4rem);
+  max-width: 1180px;
+  margin: 0 auto;
+}
+body.page-id-38 .tc-tech-cat-section .tc-tech-cat-kicker {
+  margin: 0 0 0.65rem !important;
+  font-family: Inter, sans-serif !important;
+  font-size: 0.75rem !important;
+  letter-spacing: 0.16em !important;
+  text-transform: uppercase !important;
+  color: #b8944b !important;
+}
+body.page-id-38 .tc-tech-cat-section .tc-tech-cat-heading {
+  margin: 0 0 0.75rem !important;
+  font-family: "Playfair Display", serif !important;
+  font-size: clamp(1.8rem, 3vw, 2.35rem) !important;
+  color: #1e3a5f !important;
+}
+body.page-id-38 .tc-tech-cat-section .tc-tech-cat-lead {
+  margin: 0 0 1.75rem !important;
+  max-width: 40rem;
+  font-family: Inter, sans-serif !important;
+  color: #475569 !important;
+  line-height: 1.6 !important;
+}
+
+body.page-id-38 .tc-tech-explore-row {
+  display: flex !important;
+  gap: 1.35rem !important;
+  margin: 0 0 1.35rem !important;
+  align-items: stretch !important;
+}
+body.page-id-38 .tc-tech-explore-row > .tc-explore-hub {
+  flex: 1 1 50% !important;
+  position: relative !important;
+  min-height: 300px !important;
+  overflow: hidden !important;
+  box-shadow: 0 8px 22px rgba(30, 58, 95, 0.10);
+  margin: 0 !important;
+}
+body.page-id-38 .tc-tech-explore-row > .tc-explore-hub > .wp-block-image,
+body.page-id-38 .tc-tech-explore-row > .tc-explore-hub > figure {
+  position: absolute !important;
+  inset: 0 !important;
+  margin: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 1 !important;
+}
+body.page-id-38 .tc-tech-explore-row > .tc-explore-hub > .wp-block-image img,
+body.page-id-38 .tc-tech-explore-row > .tc-explore-hub > figure img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+body.page-id-38 .tc-tech-explore-row > .tc-explore-hub > h3,
+body.page-id-38 .tc-tech-explore-row > .tc-explore-hub > .wp-block-heading {
+  position: absolute !important;
+  left: 50% !important;
+  bottom: 28px !important;
+  z-index: 3 !important;
+  width: calc(100% - 48px) !important;
+  margin: 0 !important;
+  transform: translateX(-50%) !important;
+  color: #fff !important;
+  font-family: "Playfair Display", serif !important;
+  font-weight: 400 !important;
+  text-align: center !important;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.65) !important;
+  pointer-events: none !important;
+}
+body.page-id-38 .tc-tech-explore-row > .tc-explore-hub::after,
+body.page-id-38 .tc-tech-explore-row > .tc-explore-hub::before {
+  z-index: 4 !important;
+}
+@media (max-width: 780px) {
+  body.page-id-38 .tc-tech-explore-row { flex-direction: column !important; }
+  body.page-id-38 .tc-tech-explore-row > .tc-explore-hub { min-height: 260px !important; }
+}
+body.page-id-38 .tc-tech-intro-prose {
+  padding-top: clamp(2.5rem, 5vw, 3.75rem) !important;
+  padding-bottom: 1.25rem !important;
+  border-top: 1px solid rgba(30,58,95,0.08);
+}
+
+body.page-id-38 .tc-tech-cover.wp-block-group {
+  position: relative !important;
+  min-height: min(72vh, 640px) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  background: #1e3a5f;
+}
+body.page-id-38 .tc-tech-cover > .tc-tech-cover__media,
+body.page-id-38 .tc-tech-cover > figure.tc-tech-cover__media {
+  position: absolute !important;
+  inset: 0 !important;
+  margin: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 1 !important;
+}
+body.page-id-38 .tc-tech-cover > .tc-tech-cover__media img,
+body.page-id-38 .tc-tech-cover > figure.tc-tech-cover__media img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  filter: brightness(0.55);
+}
+body.page-id-38 .tc-tech-cover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(120deg, rgba(30,58,95,0.72) 0%, rgba(30,58,95,0.35) 55%, rgba(30,58,95,0.15) 100%);
+}
+body.page-id-38 .tc-tech-cover > .tc-tech-cover__content {
+  position: relative !important;
+  z-index: 3 !important;
+  max-width: 720px !important;
+  margin: 0 !important;
+  padding: clamp(3.5rem, 8vw, 6.5rem) clamp(1.5rem, 5vw, 4rem) !important;
+  min-height: min(72vh, 640px) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-end !important;
+}
+body.page-id-38 .tc-tech-cover__brand {
+  margin: 0 0 1rem !important;
+  font-family: Inter, sans-serif !important;
+  font-size: 0.8rem !important;
+  letter-spacing: 0.22em !important;
+  text-transform: uppercase !important;
+  color: #b8944b !important;
+}
+body.page-id-38 .tc-tech-cover .wp-block-heading,
+body.page-id-38 .tc-tech-cover h1 {
+  margin: 0 0 1.25rem !important;
+  font-family: "Playfair Display", serif !important;
+  font-size: clamp(2.4rem, 5vw, 3.6rem) !important;
+  font-weight: 600 !important;
+  line-height: 1.1 !important;
+  color: #fff !important;
+}
+body.page-id-38 .tc-tech-cover__cta {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 0.45rem;
+  width: fit-content;
+  padding: 0.85rem 1.35rem !important;
+  border: 1px solid rgba(255,255,255,0.55) !important;
+  color: #fff !important;
+  text-decoration: none !important;
+  font-family: Inter, sans-serif !important;
+  font-size: 0.78rem !important;
+  letter-spacing: 0.16em !important;
+  text-transform: uppercase !important;
+  background: transparent !important;
+}
+body.page-id-38 .tc-tech-cover__cta:hover {
+  border-color: #b8944b !important;
+  background: rgba(184,148,75,0.22) !important;
+}
+
+.editor-styles-wrapper .tc-tech-explore-row > .tc-explore-hub > .wp-block-image,
+.editor-styles-wrapper .tc-tech-explore-row > .tc-explore-hub > figure {
+  position: relative !important;
+  inset: auto !important;
+  height: auto !important;
+}
+.editor-styles-wrapper .tc-tech-explore-row > .tc-explore-hub > .wp-block-image img,
+.editor-styles-wrapper .tc-tech-explore-row > .tc-explore-hub > figure img {
+  height: auto !important;
+  max-height: 280px !important;
+  object-fit: cover !important;
+}
+.editor-styles-wrapper .tc-tech-explore-row > .tc-explore-hub > h3,
+.editor-styles-wrapper .tc-tech-explore-row > .tc-explore-hub > .wp-block-heading {
+  position: static !important;
+  transform: none !important;
+  width: auto !important;
+  color: #1e3a5f !important;
+  text-shadow: none !important;
+  pointer-events: auto !important;
+  margin: 0.75rem 0 0 !important;
+}
+.editor-styles-wrapper .tc-tech-cover > .tc-tech-cover__media,
+.editor-styles-wrapper .tc-tech-cover > figure.tc-tech-cover__media {
+  position: relative !important;
+  inset: auto !important;
+  height: auto !important;
+}
+.editor-styles-wrapper .tc-tech-cover > .tc-tech-cover__media img {
+  height: auto !important;
+  max-height: 360px !important;
+  filter: none !important;
+}
+.editor-styles-wrapper .tc-tech-cover > .tc-tech-cover__content {
+  position: static !important;
+  min-height: 0 !important;
+  padding: 1.25rem 0 !important;
+}
+.editor-styles-wrapper .tc-tech-cover .wp-block-heading,
+.editor-styles-wrapper .tc-tech-cover h1 {
+  color: #1e3a5f !important;
+}
+</style>
+<!-- /wp:html -->
+
+
+<!-- wp:group {"align":"full","className":"tc-tech-cover","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull tc-tech-cover"><!-- wp:image {"id":4782,"sizeSlug":"full","linkDestination":"none","align":"full","className":"tc-tech-cover__media"} -->
+<figure class="wp-block-image alignfull size-full tc-tech-cover__media"><img src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/06/Untitled-design-10.png" alt="Recommended Books hub" class="wp-image-4782"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:group {"className":"tc-tech-cover__content","layout":{"type":"constrained"}} -->
+<div class="wp-block-group tc-tech-cover__content"><!-- wp:paragraph {"className":"tc-tech-cover__brand"} -->
+<p class="tc-tech-cover__brand">Truth Collective</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">Recommended Books</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><a class="tc-tech-cover__cta" href="#tc-books-categories">Explore the categories ›</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"tc-tech-intro-prose","layout":{"type":"constrained"}} -->
+<div class="wp-block-group tc-tech-intro-prose"><!-- wp:paragraph {"className":"tc-hub-eyebrow"} -->
+<p class="tc-hub-eyebrow">Welcome to the</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"className":"tc-hub-hero-title"} -->
+<h2 class="wp-block-heading tc-hub-hero-title">Recommended <em>Books</em></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"tc-hub-hero-lead"} -->
+<p class="tc-hub-hero-lead">Books earn a place here by usefulness, clarity, and lasting value, not by marketing volume. Categories below organize titles for leaders, builders, and readers who want sharper judgment.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"tc-hub-hero-lead"} -->
+<p class="tc-hub-hero-lead">Start with the category that matches the skill you need next. Every path is reviewed against the Truth Collective Trusted Selection Standards.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className":"tc-tech-meta-row","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group tc-tech-meta-row"><!-- wp:paragraph -->
+<p>By Truth Collective Editorial · Updated 2026</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><a href="https://tcstaging.truth-collective.com/product-selection-standards/">Reviewed against our Trusted Selection Standards →</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:html -->
+<div class="tc-tech-stats" aria-label="Recommended Books highlights">
+  <div class="tc-tech-stats__item">
+    <p class="tc-tech-stats__label">Reviewed and Graded</p>
+    <p class="tc-tech-stats__value">Trusted Selection Standards</p>
+  </div>
+  <div class="tc-tech-stats__item">
+    <p class="tc-tech-stats__label">Eight Categories</p>
+    <p class="tc-tech-stats__value">Leadership through wellness</p>
+  </div>
+  <div class="tc-tech-stats__item">
+    <p class="tc-tech-stats__label">Always Current</p>
+    <p class="tc-tech-stats__value">Continuously updated</p>
+  </div>
+</div>
+<!-- /wp:html -->
+
+<!-- wp:group {"className":"tc-tech-cat-section","layout":{"type":"constrained"}} -->
+<div id="tc-books-categories" class="wp-block-group tc-tech-cat-section"><!-- wp:paragraph {"className":"tc-tech-cat-kicker"} -->
+<p class="tc-tech-cat-kicker">Browse by category</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"className":"tc-tech-cat-heading"} -->
+<h2 class="wp-block-heading tc-tech-cat-heading">Book Categories</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"tc-tech-cat-lead"} -->
+<p class="tc-tech-cat-lead">Eight paths. Each one curated for readers who want substance over noise.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:columns {"className":"tc-tech-explore-row is-layout-flex wp-block-columns-is-layout-flex"} -->
+<div class="wp-block-columns tc-tech-explore-row is-layout-flex wp-block-columns-is-layout-flex"><!-- wp:column {"width":"50%","className":"tc-explore-hub"} -->
+<div class="wp-block-column tc-explore-hub" style="flex-basis:50%"><!-- wp:image {"lightbox":{"enabled":false},"id":6002,"sizeSlug":"full","linkDestination":"custom"} -->
+<figure class="wp-block-image size-full"><a href="https://tcstaging.truth-collective.com/recommended-books-2026/leadership-books/"><img src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/06/Untitled-design-7.png" alt="Leadership Books" class="wp-image-6002"/></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Leadership Books</h3>
+<!-- /wp:heading --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"50%","className":"tc-explore-hub"} -->
+<div class="wp-block-column tc-explore-hub" style="flex-basis:50%"><!-- wp:image {"lightbox":{"enabled":false},"id":6003,"sizeSlug":"full","linkDestination":"custom"} -->
+<figure class="wp-block-image size-full"><a href="https://tcstaging.truth-collective.com/recommended-books-2026/communication-and-persuasion/"><img src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/06/Untitled-design-8.png" alt="Communication and Persuasion" class="wp-image-6003"/></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Communication and Persuasion</h3>
+<!-- /wp:heading --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+<!-- wp:columns {"className":"tc-tech-explore-row is-layout-flex wp-block-columns-is-layout-flex"} -->
+<div class="wp-block-columns tc-tech-explore-row is-layout-flex wp-block-columns-is-layout-flex"><!-- wp:column {"width":"50%","className":"tc-explore-hub"} -->
+<div class="wp-block-column tc-explore-hub" style="flex-basis:50%"><!-- wp:image {"lightbox":{"enabled":false},"id":6019,"sizeSlug":"full","linkDestination":"custom"} -->
+<figure class="wp-block-image size-full"><a href="https://tcstaging.truth-collective.com/recommended-books-2026/decision-making-strategy/"><img src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/06/Wealth-Money-and-Investing-6-1.png" alt="Decision-Making and Strategy" class="wp-image-6019"/></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Decision-Making and Strategy</h3>
+<!-- /wp:heading --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"50%","className":"tc-explore-hub"} -->
+<div class="wp-block-column tc-explore-hub" style="flex-basis:50%"><!-- wp:image {"lightbox":{"enabled":false},"id":6020,"sizeSlug":"full","linkDestination":"custom"} -->
+<figure class="wp-block-image size-full"><a href="https://tcstaging.truth-collective.com/recommended-books-2026/voices-of-influence-2/"><img src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/06/Body-1.png" alt="Voices of Influence" class="wp-image-6020"/></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Voices of Influence</h3>
+<!-- /wp:heading --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+<!-- wp:columns {"className":"tc-tech-explore-row is-layout-flex wp-block-columns-is-layout-flex"} -->
+<div class="wp-block-columns tc-tech-explore-row is-layout-flex wp-block-columns-is-layout-flex"><!-- wp:column {"width":"50%","className":"tc-explore-hub"} -->
+<div class="wp-block-column tc-explore-hub" style="flex-basis:50%"><!-- wp:image {"lightbox":{"enabled":false},"id":6022,"sizeSlug":"full","linkDestination":"custom"} -->
+<figure class="wp-block-image size-full"><a href="https://tcstaging.truth-collective.com/recommended-books-2026/wealth-money-and-investing/"><img src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/06/Wealth-Money-and-Investing-5-1.png" alt="Wealth, Money, and Investing" class="wp-image-6022"/></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Wealth, Money, and Investing</h3>
+<!-- /wp:heading --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"50%","className":"tc-explore-hub"} -->
+<div class="wp-block-column tc-explore-hub" style="flex-basis:50%"><!-- wp:image {"lightbox":{"enabled":false},"id":6023,"sizeSlug":"full","linkDestination":"custom"} -->
+<figure class="wp-block-image size-full"><a href="https://tcstaging.truth-collective.com/recommended-books-2026/project-management-books/"><img src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/06/Body-2.png" alt="Project Management and Operations" class="wp-image-6023"/></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Project Management and Operations</h3>
+<!-- /wp:heading --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+<!-- wp:columns {"className":"tc-tech-explore-row is-layout-flex wp-block-columns-is-layout-flex"} -->
+<div class="wp-block-columns tc-tech-explore-row is-layout-flex wp-block-columns-is-layout-flex"><!-- wp:column {"width":"50%","className":"tc-explore-hub"} -->
+<div class="wp-block-column tc-explore-hub" style="flex-basis:50%"><!-- wp:image {"lightbox":{"enabled":false},"id":6027,"sizeSlug":"full","linkDestination":"custom"} -->
+<figure class="wp-block-image size-full"><a href="https://tcstaging.truth-collective.com/artificial-intelligence-books/"><img src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/06/Untitled-design-9.png" alt="AI Mastery Book Collection" class="wp-image-6027"/></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">AI Mastery Book Collection</h3>
+<!-- /wp:heading --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"50%","className":"tc-explore-hub"} -->
+<div class="wp-block-column tc-explore-hub" style="flex-basis:50%"><!-- wp:image {"lightbox":{"enabled":false},"id":6024,"sizeSlug":"full","linkDestination":"custom"} -->
+<figure class="wp-block-image size-full"><a href="https://tcstaging.truth-collective.com/self-help-and-mental-wellness/mental-wellness-books/"><img src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/06/Body-3.png" alt="Mind, Body, and Mental Wellness" class="wp-image-6024"/></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Mind, Body, and Mental Wellness</h3>
+<!-- /wp:heading --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Final Thoughts</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The Recommended Books hub holds eight trusted paths. Read for judgment, not for shelf decoration. Titles earn a place by proving useful across seasons of work and life.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:block {"ref":2870} /-->
+
+<!-- wp:block {"ref":2847} /-->

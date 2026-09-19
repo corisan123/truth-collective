@@ -1,0 +1,550 @@
+<!-- wp:image {"id":2369,"sizeSlug":"full","linkDestination":"none","align":"wide","style":{"border":{"radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"shadow":"var:preset|shadow|natural"}} -->
+<figure class="wp-block-image alignwide size-full has-custom-border"><img src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/04/Title-1.png" alt="Technology Hub" class="wp-image-2369" style="border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;box-shadow:var(--wp--preset--shadow--natural)"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:html -->
+<!-- TC STAGING PATCH TECH-HUB-CREAM-R5: cream hero + 3-col category grid; migrate style to Additional CSS later -->
+<style id="tc-tech-hub-cream-r5">
+
+body.page-id-111 .site-content,
+body.page-id-111 .ast-container,
+body.page-id-111 .entry-content {
+  background: #f8f4ec !important;
+}
+body.page-id-111 .tc-tech-hero-shell {
+  background: #f8f4ec !important;
+  max-width: none !important;
+}
+body.page-id-111 .tc-tech-hero-split {
+  align-items: stretch !important;
+  gap: 0 !important;
+  margin: 0 !important;
+  min-height: 420px;
+}
+body.page-id-111 .tc-tech-hero-rail {
+  background: #1e3a5f !important;
+  padding: 2.75rem 1.75rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+}
+body.page-id-111 .tc-tech-hero-rail__brand {
+  position: relative;
+  padding-bottom: 0.85rem;
+}
+body.page-id-111 .tc-tech-hero-rail__brand::after {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 2px;
+  background: #b8944b;
+  margin-top: 0.85rem;
+}
+body.page-id-111 .tc-tech-hero-copy {
+  background: #f8f4ec !important;
+  padding: 2.75rem 2.5rem !important;
+}
+body.page-id-111 .tc-hub-hero-title {
+  color: #1e3a5f !important;
+  font-family: "Playfair Display", serif !important;
+  font-weight: 600 !important;
+}
+body.page-id-111 .tc-hub-hero-title em,
+body.page-id-111 .tc-hub-hero-title__hub {
+  color: #b8944b !important;
+  font-style: italic !important;
+}
+body.page-id-111 .tc-hub-hero-lead {
+  color: #334155 !important;
+  max-width: 38rem;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  margin: 0 0 1rem !important;
+}
+body.page-id-111 .tc-tech-meta-row {
+  border-top: 1px solid rgba(30,58,95,0.12);
+  padding: 0.85rem 1.5rem 1.25rem !important;
+  gap: 0.75rem;
+}
+body.page-id-111 .tc-tech-meta-row a {
+  color: #1e3a5f !important;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+body.page-id-111 .tc-tech-secondary {
+  background: #f8f4ec !important;
+}
+body.page-id-111 .tc-hub-secondary-title {
+  font-family: "Playfair Display", serif !important;
+  color: #1e3a5f !important;
+}
+/* Lighter category hover on this hub only — do not touch global 02A product patch */
+body.page-id-111 .tc-explore-hub:hover,
+body.page-id-111 .tc-overlay-card:hover {
+  transform: translateY(-4px);
+}
+body.page-id-111 .tc-explore-hub::after,
+body.page-id-111 .tc-explore-hero::after {
+  opacity: 0.55 !important;
+  letter-spacing: 0.12em !important;
+}
+@media (max-width: 781px) {
+  body.page-id-111 .tc-tech-hero-split { min-height: 0; }
+  body.page-id-111 .tc-tech-hero-rail { min-height: 140px; }
+}
+
+/* R4 — cream 3-col category grid (page 111 only). No tc-overlay-card on these tiles. */
+body.page-id-111 .tc-tech-cat-section {
+  background: #f8f4ec !important;
+  padding: 3rem 1.75rem 4rem !important;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+body.page-id-111 .tc-tech-cat-kicker {
+  color: #b8944b !important;
+  letter-spacing: 0.16em;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  font-family: Inter, sans-serif;
+  margin: 0 0 0.75rem !important;
+}
+body.page-id-111 .tc-tech-cat-heading {
+  font-family: "Playfair Display", serif !important;
+  color: #1e3a5f !important;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 0 0.75rem !important;
+  line-height: 1.15;
+}
+body.page-id-111 .tc-tech-cat-lead {
+  color: #334155 !important;
+  max-width: 38rem;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  margin: 0 0 2.5rem !important;
+}
+body.page-id-111 .tc-tech-cat-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem 1.75rem;
+}
+body.page-id-111 .tc-tech-cat-tile {
+  position: relative;
+  display: block;
+  text-decoration: none !important;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  overflow: hidden;
+  min-height: 0;
+  transition: transform 320ms ease;
+  animation: tcTechCatRise 700ms ease both;
+}
+body.page-id-111 .tc-tech-cat-tile:nth-child(2) { animation-delay: 60ms; }
+body.page-id-111 .tc-tech-cat-tile:nth-child(3) { animation-delay: 120ms; }
+body.page-id-111 .tc-tech-cat-tile:nth-child(4) { animation-delay: 180ms; }
+body.page-id-111 .tc-tech-cat-tile:nth-child(5) { animation-delay: 240ms; }
+body.page-id-111 .tc-tech-cat-tile:nth-child(6) { animation-delay: 300ms; }
+body.page-id-111 .tc-tech-cat-tile:nth-child(7) { animation-delay: 360ms; }
+body.page-id-111 .tc-tech-cat-tile:nth-child(8) { animation-delay: 420ms; }
+@keyframes tcTechCatRise {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  body.page-id-111 .tc-tech-cat-tile { animation: none; }
+}
+body.page-id-111 .tc-tech-cat-tile:hover {
+  transform: translateY(-4px);
+}
+body.page-id-111 .tc-tech-cat-tile__media {
+  display: block;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #f3eee4;
+  margin-bottom: 1rem;
+}
+body.page-id-111 .tc-tech-cat-tile__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  transition: transform 400ms ease, filter 400ms ease;
+}
+body.page-id-111 .tc-tech-cat-tile:hover .tc-tech-cat-tile__media img {
+  transform: scale(1.02);
+  filter: brightness(0.96);
+}
+body.page-id-111 .tc-tech-cat-tile__body {
+  padding: 0.15rem 0.15rem 0.5rem;
+}
+body.page-id-111 .tc-tech-cat-tile__title {
+  font-family: "Playfair Display", serif !important;
+  color: #1e3a5f !important;
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0 0 0.55rem !important;
+}
+body.page-id-111 .tc-tech-cat-tile__blurb {
+  color: #475569 !important;
+  font-size: 0.98rem;
+  line-height: 1.55;
+  margin: 0 0 0.9rem !important;
+  max-width: 28rem;
+}
+body.page-id-111 .tc-tech-cat-tile__explore {
+  color: #b8944b !important;
+  font-family: Inter, sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+body.page-id-111 .tc-tech-cat-tile:hover .tc-tech-cat-tile__explore {
+  color: #1e3a5f !important;
+}
+@media (max-width: 780px) {
+  body.page-id-111 .tc-tech-cat-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.25rem;
+  }
+  body.page-id-111 .tc-tech-cat-section {
+    padding: 2rem 1.1rem 3rem !important;
+  }
+}
+
+/* R4b — fix left-shift / overlap from alignfull breakout + orphan wrappers */
+body.page-id-111 {
+  overflow-x: clip;
+}
+body.page-id-111 .site,
+body.page-id-111 .site-content,
+body.page-id-111 .ast-container,
+body.page-id-111 .entry-content {
+  max-width: 100% !important;
+  overflow-x: clip;
+}
+body.page-id-111 .tc-tech-hero-shell.alignfull,
+body.page-id-111 .alignfull.tc-tech-hero-shell {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  position: relative !important;
+  left: auto !important;
+  right: auto !important;
+}
+body.page-id-111 .tc-tech-hero-split {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+body.page-id-111 .tc-tech-cat-section {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* R4c — neutralize ALL full-bleed breakouts on this page (fixes left-stuck desktop layout) */
+body.page-id-111,
+body.page-id-111 .site,
+body.page-id-111 #page,
+body.page-id-111 #content,
+body.page-id-111 .site-content,
+body.page-id-111 .ast-container,
+body.page-id-111 .entry-content,
+body.page-id-111 article {
+  overflow-x: clip !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+body.page-id-111 .entry-content .alignfull,
+body.page-id-111 .entry-content .alignwide,
+body.page-id-111 .wp-block-group.alignfull,
+body.page-id-111 .wp-block-image.alignfull,
+body.page-id-111 .wp-block-kadence-column.alignfull,
+body.page-id-111 .tc-tech-hero-shell,
+body.page-id-111 .tc-tech-intro.alignfull,
+body.page-id-111 .site-content .ast-article-image-container--full {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  left: auto !important;
+  right: auto !important;
+  position: relative !important;
+  transform: none !important;
+}
+body.page-id-111 .wp-block-columns.tc-tech-hero-split,
+body.page-id-111 .tc-tech-hero-split {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+body.page-id-111 .tc-tech-cat-section {
+  width: 100% !important;
+  max-width: 1100px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  box-sizing: border-box !important;
+}
+body.page-id-111 .tc-tech-cat-grid {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+/* R4d — category tile images show in full (contain), no hard cover crop */
+
+/* R5 — roomier 2-across category tiles; less boxed / less squished */
+
+/* R5 — quiet the old stacked How-To boxes (keep copy, remove bulky card chrome) */
+body.page-id-111 .tc-tech-intro.kb-section-dir-vertical,
+body.page-id-111 .tc-tech-intro.kb-section-dir-horizontal {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: 0 !important;
+  padding-top: 1.25rem !important;
+  padding-bottom: 1.25rem !important;
+}
+body.page-id-111 .tc-tech-intro .kt-inside-inner-col {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+</style>
+<!-- /wp:html -->
+
+<!-- wp:kadence/spacer {"spacerHeight":129,"dividerColor":"#1e4d7c","dividerWidth":60,"dividerHeight":3,"uniqueID":"111_cbe458-7f"} -->
+<div class="wp-block-kadence-spacer aligncenter kt-block-spacer-111_cbe458-7f"><div class="kt-block-spacer kt-block-spacer-halign-center"><hr class="kt-divider"/></div></div>
+<!-- /wp:kadence/spacer -->
+
+<!-- wp:group {"align":"full","className":"tc-tech-hero-shell","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}},"color":{"background":"#f8f4ec"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull tc-tech-hero-shell has-background" style="background-color:#f8f4ec;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
+
+<!-- wp:columns {"align":"wide","className":"tc-tech-hero-split"} -->
+<div class="wp-block-columns alignwide tc-tech-hero-split"><!-- wp:column {"width":"30%","className":"tc-tech-hero-rail"} -->
+<div class="wp-block-column tc-tech-hero-rail" style="flex-basis:30%"><!-- wp:paragraph {"className":"tc-tech-hero-rail__brand"} -->
+<p class="tc-tech-hero-rail__brand" style="color:#f8f4ec;letter-spacing:0.14em;text-transform:uppercase;font-size:0.72rem;font-family:Inter,sans-serif;">Truth Collective</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"tc-tech-hero-rail__label"} -->
+<p class="tc-tech-hero-rail__label" style="color:#f8f4ec;letter-spacing:0.2em;text-transform:uppercase;font-size:0.85rem;font-family:Inter,sans-serif;margin-top:1.25rem;">Hub</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"70%","className":"tc-tech-hero-copy"} -->
+<div class="wp-block-column tc-tech-hero-copy" style="flex-basis:70%"><!-- wp:paragraph {"className":"tc-hub-eyebrow"} -->
+<p class="tc-hub-eyebrow" style="margin:0;color:#b8944b;letter-spacing:0.16em;font-size:0.78rem;line-height:1.4;text-transform:uppercase;font-family:Inter,sans-serif;">Welcome to the</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"className":"tc-hub-hero-title","style":{"typography":{"fontSize":"3.25rem","lineHeight":"1.05"},"spacing":{"margin":{"top":"0.35rem","bottom":"1rem"}}}} -->
+<h2 class="wp-block-heading tc-hub-hero-title" style="margin-top:0.35rem;margin-bottom:1rem;font-size:3.25rem;line-height:1.05;color:#1e3a5f;font-family:'Playfair Display',serif;font-weight:600;">Technology <em class="tc-hub-hero-title__hub" style="color:#b8944b;font-style:italic;font-family:'Playfair Display',serif;">Hub</em></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"tc-hub-hero-lead"} -->
+<p class="tc-hub-hero-lead">The Technology Hub is the largest of Truth Collective's six hubs. It brings together the digital products that shape how people work, create, and live, from computers and displays to the tools just now reaching everyday use. Every category below has been reviewed and graded against the Truth Collective Trusted Selection Standards before it earns a place here.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"tc-hub-hero-lead"} -->
+<p class="tc-hub-hero-lead">Each category leads to a dedicated page where the top products are ranked, graded, and explained in full. A closing section looks at the technologies still ahead, framed as what is worth watching, not as speculation.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:group {"className":"tc-tech-meta-row","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group tc-tech-meta-row"><!-- wp:paragraph -->
+<p style="margin:0;font-size:0.8rem;letter-spacing:0.04em;color:#64748b;font-family:Inter,sans-serif;">By Truth Collective Editorial · Updated 2026</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p style="margin:0;font-size:0.8rem;color:#1e3a5f;font-family:Inter,sans-serif;"><a href="https://tcstaging.truth-collective.com/product-selection-standards/">Reviewed against our Trusted Selection Standards →</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"tc-tech-secondary","style":{"color":{"background":"#f8f4ec"},"spacing":{"padding":{"top":"2rem","bottom":"2rem"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group tc-tech-secondary has-background" style="background-color:#f8f4ec;padding-top:2rem;padding-bottom:2rem"><!-- wp:paragraph {"className":"tc-hub-kicker"} -->
+<p class="tc-hub-kicker" style="margin:0;color:#b8944b;letter-spacing:0.14em;text-transform:uppercase;font-size:0.75rem;font-family:Inter,sans-serif;">The Best Digital Products of 2026</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"className":"tc-hub-secondary-title","style":{"typography":{"fontSize":"2.1rem","lineHeight":"1.15"}}} -->
+<h2 class="wp-block-heading tc-hub-secondary-title" style="font-size:2.1rem;line-height:1.15;color:#1e3a5f;font-family:'Playfair Display',serif;">The Technology <em style="color:#b8944b;font-style:italic;">Hub.</em></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p style="color:#475569;max-width:40rem;">Organized by use, not by brand. Each category below leads to a dedicated page where products are ranked, graded, and explained in full.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+<!-- TC: closed tc-tech-hero-shell after secondary (R4b) -->
+
+
+<!-- wp:kadence/spacer {"uniqueID":"111_1d738c-58"} -->
+<div class="wp-block-kadence-spacer aligncenter kt-block-spacer-111_1d738c-58"><div class="kt-block-spacer kt-block-spacer-halign-center"><hr class="kt-divider"/></div></div>
+<!-- /wp:kadence/spacer -->
+
+<!-- wp:kadence/column {"background":"#f0f5fa","backgroundOpacity":0.36,"borderWidth":["","","",""],"borderRadius":[12,12,12,12],"uniqueID":"111_542478-3e","displayShadow":true,"shadow":[{"color":"#153a5f","opacity":1,"spread":-5,"blur":30,"hOffset":0,"vOffset":35,"inset":false}],"direction":["vertical","",""],"justifyContent":[null,"",""],"rowGap":[0,"",""],"rowGapVariable":["none","",""],"backgroundHover":"var(\u002d\u002dast-global-color-4)","borderHoverRadius":[12,12,12,7],"displayHoverShadow":true,"shadowHover":[{"color":"#000000","opacity":0.2,"spread":-5,"blur":30,"hOffset":0,"vOffset":35,"inset":false}],"align":"full","padding":["0","0","0","0"],"borderStyle":[{"top":["var(\u002d\u002dast-global-color-1)","",4],"right":["var(\u002d\u002dast-global-color-1)","",4],"bottom":["var(\u002d\u002dast-global-color-1)","",4],"left":["var(\u002d\u002dast-global-color-1)","",4],"unit":"px"}],"borderHoverStyle":[{"top":["#b8960a","",2],"right":["#b8960a","",2],"bottom":["#b8960a","",2],"left":["#b8960a","",2],"unit":"px"}],"kbVersion":2,"className":"tc-tech-intro"} -->
+<div class="wp-block-kadence-column kadence-column111_542478-3e kb-section-dir-vertical tc-tech-intro"><div class="kt-inside-inner-col"><!-- wp:heading {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|70","right":"var:preset|spacing|70"}}}} -->
+<h2 class="wp-block-heading alignwide" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--70)">Technology Hub and How To Use This Page</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"spacing":{"padding":{"right":"2rem","left":"2rem","top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}}} -->
+<p style="padding-top:var(--wp--preset--spacing--50);padding-right:2rem;padding-bottom:var(--wp--preset--spacing--50);padding-left:2rem">Start with the category that matches what you need most, then move outward to the supporting tools that complete your setup. Every product across this hub was selected for build quality, daily usefulness, and long term value. We do not list everything available. We list what we trust, and we say so plainly.</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:kadence/column -->
+
+<!-- wp:kadence/spacer {"spacerHeight":102,"dividerColor":"var(\u002d\u002dast-global-color-1)","dividerWidth":60,"dividerHeight":3,"uniqueID":"111_a61080-bd"} -->
+<div class="wp-block-kadence-spacer aligncenter kt-block-spacer-111_a61080-bd"><div class="kt-block-spacer kt-block-spacer-halign-center"><hr class="kt-divider"/></div></div>
+<!-- /wp:kadence/spacer -->
+
+<!-- wp:kadence/column {"background":"#f0f5fa","backgroundOpacity":0.35,"borderWidth":["","","",""],"borderRadius":[12,12,12,12],"uniqueID":"111_390b5b-a3","displayShadow":true,"shadow":[{"color":"#000000","opacity":0.2,"spread":-5,"blur":30,"hOffset":0,"vOffset":35,"inset":false}],"direction":["horizontal","",""],"justifyContent":["center","",""],"gutter":[32,"",""],"gutterVariable":["md","",""],"verticalAlignment":"top","backgroundHover":"var(\u002d\u002dast-global-color-4)","borderHoverRadius":[12,12,12,12],"displayHoverShadow":true,"shadowHover":[{"color":"#000000","opacity":0.2,"spread":0,"blur":0,"hOffset":15,"vOffset":15,"inset":false}],"align":"full","padding":["xxs","xxs","xxs","xxs"],"borderStyle":[{"top":["var(\u002d\u002dast-global-color-1)","",4],"right":["var(\u002d\u002dast-global-color-1)","",4],"bottom":["var(\u002d\u002dast-global-color-1)","",4],"left":["var(\u002d\u002dast-global-color-1)","",4],"unit":"px"}],"borderHoverStyle":[{"top":["#c59611","",4],"right":["#c59611","",4],"bottom":["#c59611","",4],"left":["#c59611","",4],"unit":"px"}],"kbVersion":2,"className":"tc-tech-intro"} -->
+<div class="wp-block-kadence-column kadence-column111_390b5b-a3 kb-section-dir-horizontal tc-tech-intro"><div class="kt-inside-inner-col"><!-- wp:heading {"align":"wide","style":{"spacing":{"padding":{"top":"1rem","bottom":"1rem"}}}} -->
+<h2 class="wp-block-heading alignwide" style="padding-top:1rem;padding-bottom:1rem">Technology Hub and What You Will Find Here</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"spacing":{"padding":{"right":"2rem","left":"2rem","top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}}} -->
+<p style="padding-top:var(--wp--preset--spacing--60);padding-right:2rem;padding-bottom:var(--wp--preset--spacing--60);padding-left:2rem">The Technology Hub is organized by use, not by brand. Some categories cover the daily essentials that hold your work together. Others highlight the products that lift performance, simplify a space, or open up new ways of working. Each category card leads to a dedicated page where the top products are ranked, graded, and explained in full.</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:kadence/column -->
+
+<!-- wp:group {"metadata":{"categories":["books"],"patternName":"core/block/4028","name":"Trust Bar"},"style":{"border":{"radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"shadow":"var:preset|shadow|natural"},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;box-shadow:var(--wp--preset--shadow--natural)"><!-- wp:kadence/spacer {"dividerColor":"#af9b0d","dividerHeight":3,"uniqueID":"111_e71a0b-39"} -->
+<div class="wp-block-kadence-spacer aligncenter kt-block-spacer-111_e71a0b-39"><div class="kt-block-spacer kt-block-spacer-halign-center"><hr class="kt-divider"/></div></div>
+<!-- /wp:kadence/spacer -->
+
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="wp-block-heading has-text-align-center">By: Truth Collective Editorial | Updated June 2026 | Reviewed against our Trusted Selection Standards →</h2>
+<!-- /wp:heading -->
+
+<!-- wp:kadence/spacer {"dividerColor":"#b49b0b","dividerHeight":3,"uniqueID":"111_c5c156-1c"} -->
+<div class="wp-block-kadence-spacer aligncenter kt-block-spacer-111_c5c156-1c"><div class="kt-block-spacer kt-block-spacer-halign-center"><hr class="kt-divider"/></div></div>
+<!-- /wp:kadence/spacer --></div>
+<!-- /wp:group -->
+
+<!-- wp:kadence/spacer {"spacerHeight":106,"uniqueID":"111_741738-e9"} -->
+<div class="wp-block-kadence-spacer aligncenter kt-block-spacer-111_741738-e9"><div class="kt-block-spacer kt-block-spacer-halign-center"><hr class="kt-divider"/></div></div>
+<!-- /wp:kadence/spacer -->
+
+<!-- wp:html -->
+<section class="tc-tech-cat-section" aria-label="Technology Hub categories">
+  <p class="tc-tech-cat-kicker">Browse by category</p>
+  <h2 class="tc-tech-cat-heading">Technology Hub Categories</h2>
+  <p class="tc-tech-cat-lead">Eight paths. Each one reviewed against the Truth Collective Trusted Selection Standards before it earns a place here.</p>
+  <div class="tc-tech-cat-grid">
+  <a class="tc-tech-cat-tile" href="https://tcstaging.truth-collective.com/technology-hub/computers-digital-devices/">
+    <span class="tc-tech-cat-tile__media"><img src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/06/Untitled-1000-x-1188-px-1000-x-1188-px-1900-x-1080-px-1000-x-800-px-400-x-400-px-270-x-270-px-1000-x-1188-px-1.png" alt="Computers and Digital Devices" loading="lazy" decoding="async" /></span>
+    <span class="tc-tech-cat-tile__body">
+      <span class="tc-tech-cat-tile__title">Computers and Digital Devices</span>
+      <span class="tc-tech-cat-tile__blurb">Laptops, desktops, and the devices that carry the day.</span>
+      <span class="tc-tech-cat-tile__explore">Explore</span>
+    </span>
+  </a>
+  <a class="tc-tech-cat-tile" href="https://tcstaging.truth-collective.com/technology-hub/monitor-display/">
+    <span class="tc-tech-cat-tile__media"><img src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/06/Untitled-1200-x-628-px-1200-x-628-px-1200-x-628-px-1200-x-628-px-1000-x-628-px-1000-x-628-px-1900-x-1080-px-1920-x-1350-px-1200-x-900-px-1200-x-900-px-600-x-600-px-1080-x-13-41.png" alt="Monitors and Displays" loading="lazy" decoding="async" /></span>
+    <span class="tc-tech-cat-tile__body">
+      <span class="tc-tech-cat-tile__title">Monitors and Displays</span>
+      <span class="tc-tech-cat-tile__blurb">Displays graded for clarity, comfort, and long work sessions.</span>
+      <span class="tc-tech-cat-tile__explore">Explore</span>
+    </span>
+  </a>
+  <a class="tc-tech-cat-tile" href="https://tcstaging.truth-collective.com/technology-hub/audio-and-video/">
+    <span class="tc-tech-cat-tile__media"><img src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/04/Untitled-2552-x-1280-px-1024x514.png" alt="Audio and Video" loading="lazy" decoding="async" /></span>
+    <span class="tc-tech-cat-tile__body">
+      <span class="tc-tech-cat-tile__title">Audio and Video</span>
+      <span class="tc-tech-cat-tile__blurb">Workspace audio and video selected for clear signal, not clutter.</span>
+      <span class="tc-tech-cat-tile__explore">Explore</span>
+    </span>
+  </a>
+  <a class="tc-tech-cat-tile" href="https://tcstaging.truth-collective.com/technology-hub/headphones-for-work/">
+    <span class="tc-tech-cat-tile__media"><img src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/04/Untitled-2552-x-1280-px-2552-x-1080-px.png" alt="Headphones and Headsets" loading="lazy" decoding="async" /></span>
+    <span class="tc-tech-cat-tile__body">
+      <span class="tc-tech-cat-tile__title">Headphones and Headsets</span>
+      <span class="tc-tech-cat-tile__blurb">Headphones, headsets, and hearing protection for focused work.</span>
+      <span class="tc-tech-cat-tile__explore">Explore</span>
+    </span>
+  </a>
+  <a class="tc-tech-cat-tile" href="https://tcstaging.truth-collective.com/technology-hub/speakers-home-office-outdoors/">
+    <span class="tc-tech-cat-tile__media"><img src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/04/Untitled-800-x-2000-px-1200-x-1800-px-1400-x-600-px-1400-x-600-px-1800-x-800-px-1400-x-800-px-1200-x-1000-px-1.png" alt="Desk Speakers" loading="lazy" decoding="async" /></span>
+    <span class="tc-tech-cat-tile__body">
+      <span class="tc-tech-cat-tile__title">Desk Speakers</span>
+      <span class="tc-tech-cat-tile__blurb">Desk and office speakers chosen for clean, controlled sound.</span>
+      <span class="tc-tech-cat-tile__explore">Explore</span>
+    </span>
+  </a>
+  <a class="tc-tech-cat-tile" href="https://tcstaging.truth-collective.com/technology-hub/projectors-and-microphones/">
+    <span class="tc-tech-cat-tile__media"><img src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/06/Untitled-1000-x-800-px-1000-x-650-px-1900-x-1080-px-2.png" alt="Projectors and Microphones" loading="lazy" decoding="async" /></span>
+    <span class="tc-tech-cat-tile__body">
+      <span class="tc-tech-cat-tile__title">Projectors and Microphones</span>
+      <span class="tc-tech-cat-tile__blurb">Projection and microphone tools for rooms that need to be heard.</span>
+      <span class="tc-tech-cat-tile__explore">Explore</span>
+    </span>
+  </a>
+  <a class="tc-tech-cat-tile" href="https://tcstaging.truth-collective.com/technology-hub/best-digital-smart-tablets/">
+    <span class="tc-tech-cat-tile__media"><img src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/03/Untitled-design-85.png" alt="Digital Smart Tablets" loading="lazy" decoding="async" /></span>
+    <span class="tc-tech-cat-tile__body">
+      <span class="tc-tech-cat-tile__title">Digital Smart Tablets</span>
+      <span class="tc-tech-cat-tile__blurb">Tablets for writing, planning, and portable creative work.</span>
+      <span class="tc-tech-cat-tile__explore">Explore</span>
+    </span>
+  </a>
+  <a class="tc-tech-cat-tile" href="https://tcstaging.truth-collective.com/technology-hub/interactive-digital-displays-2/">
+    <span class="tc-tech-cat-tile__media"><img src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/06/Untitled-1000-x-1188-px-1000-x-1188-px-1900-x-1080-px.png" alt="Interactive Digital Displays" loading="lazy" decoding="async" /></span>
+    <span class="tc-tech-cat-tile__body">
+      <span class="tc-tech-cat-tile__title">Interactive Digital Displays</span>
+      <span class="tc-tech-cat-tile__blurb">Interactive displays built for shared work and clear presentation.</span>
+      <span class="tc-tech-cat-tile__explore">Explore</span>
+    </span>
+  </a>
+  </div>
+</section>
+<!-- /wp:html -->
+
+<!-- wp:heading {"style":{"elements":{"link":{"color":{"text":"var:preset|color|ast-global-color-4"}}}},"textColor":"ast-global-color-4"} -->
+<h2 class="wp-block-heading has-ast-global-color-4-color has-text-color has-link-color">Final Thoughts</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|ast-global-color-4"}}}},"textColor":"ast-global-color-4"} -->
+<p class="has-ast-global-color-4-color has-text-color has-link-color">The Technology Hub holds 13 trusted paths, each one a category selected, scored, and reviewed against the same standard. Every product featured across these paths earns its place against the Truth Collective Trusted Selection Standards, so whichever path you follow, it holds to the same level of scrutiny. Nothing makes the list by popularity or price alone. It earns it by proving useful, reliable, and worth your trust.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:kadence/spacer {"uniqueID":"111_db1124-f8"} -->
+<div class="wp-block-kadence-spacer aligncenter kt-block-spacer-111_db1124-f8"><div class="kt-block-spacer kt-block-spacer-halign-center"><hr class="kt-divider"/></div></div>
+<!-- /wp:kadence/spacer -->
+
+<!-- wp:group {"metadata":{"categories":[],"patternName":"core/block/5544","name":"The Truth Collective"},"style":{"border":{"radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"},"width":"2px"},"shadow":"var:preset|shadow|natural"},"borderColor":"ast-global-color-1","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-ast-global-color-1-border-color" style="border-width:2px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;box-shadow:var(--wp--preset--shadow--natural)"><!-- wp:heading {"textAlign":"center","style":{"elements":{"link":{"color":{"text":"#1e5285"}}},"color":{"text":"#1e5285"},"typography":{"fontSize":"38px"}}} -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color" style="color:#1e5285;font-size:38px">The Truth Collective</h2>
+<!-- /wp:heading -->
+
+<!-- wp:kadence/spacer {"dividerColor":"#caad1f","dividerWidth":34,"dividerHeight":3,"uniqueID":"111_52fffd-22"} -->
+<div class="wp-block-kadence-spacer aligncenter kt-block-spacer-111_52fffd-22"><div class="kt-block-spacer kt-block-spacer-halign-center"><hr class="kt-divider"/></div></div>
+<!-- /wp:kadence/spacer -->
+
+<!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"right":"0","left":"var:preset|spacing|40","top":"0","bottom":"0"},"padding":{"right":"var:preset|spacing|60","left":"var:preset|spacing|60"}},"elements":{"link":{"color":{"text":"#be9219"}}}},"textColor":"ast-global-color-2"} -->
+<p class="has-text-align-center has-ast-global-color-2-color has-text-color has-link-color" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60)">The Truth Collective is a curated and trusted site, sharing real-life recommendations making helpful recommendations across <a href="https://tcstaging.truth-collective.com/recommended-books-2026/" data-type="page" data-id="38">recommended books</a>, <a href="https://tcstaging.truth-collective.com/office-workspace-products-and-tools/" data-type="page" data-id="5939">office workspace essentials,</a> <a href="https://tcstaging.truth-collective.com/productivity-tools/" data-type="page" data-id="5680">productivity tools</a>, <a href="https://tcstaging.truth-collective.com/technology-hub/" data-type="page" data-id="111">technology hub</a>, and <a href="https://tcstaging.truth-collective.com/smart-lighting/" data-type="page" data-id="115">smart lighting</a>, <a href="https://tcstaging.truth-collective.com/self-help-and-mental-wellness/" data-type="page" data-id="86">self-help and mental wellness</a> and useful technology.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:kadence/spacer {"dividerColor":"#113a63","dividerHeight":3,"uniqueID":"111_6c8797-0f"} -->
+<div class="wp-block-kadence-spacer aligncenter kt-block-spacer-111_6c8797-0f"><div class="kt-block-spacer kt-block-spacer-halign-center"><hr class="kt-divider"/></div></div>
+<!-- /wp:kadence/spacer -->
+
+<!-- wp:paragraph {"className":"has\u002d\u002dfont-size"} -->
+<p class="has--font-size">Every product featured is researched, reviewed, evaluated, and quite often personally used. We hold ourselves to a strict set of standards and processes that most affiliates do not. If the product or item does not perform well predicated to applying the 21-point metrics in our standards, it simply does not make it on Truth Collective.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:kadence/advancedheading {"uniqueID":"111_fe8791-d9","markBorder":"","markBorderStyles":[{"top":[null,"",""],"right":[null,"",""],"bottom":[null,"",""],"left":[null,"",""],"unit":"px"}],"tabletMarkBorderStyles":[{"top":[null,"",""],"right":[null,"",""],"bottom":[null,"",""],"left":[null,"",""],"unit":"px"}],"mobileMarkBorderStyles":[{"top":[null,"",""],"right":[null,"",""],"bottom":[null,"",""],"left":[null,"",""],"unit":"px"}],"htmlTag":"p"} -->
+<p class="kt-adv-heading111_fe8791-d9 wp-block-kadence-advancedheading" data-kb-block="kb-adv-heading111_fe8791-d9">Truth Collective exists to cut through what everyone else has been doing, the same chaos, noise, and undependable recommendations. This saves our viewers time, and helps guide you to products, books, and items that actually work and perform like it should. So, you can build systems that scale, lead with greater certainty, focus and live with clarity. Our research is aligned with FTC Guidelines of Consumer Protection, and chosen to help you think, work, and lead with greater focus.</p>
+<!-- /wp:kadence/advancedheading -->
+
+</div>
+<!-- /wp:group -->
+
+<!-- wp:block {"ref":2870} /-->
+
+<!-- wp:kadence/spacer {"spacerHeight":98,"dividerColor":"#c5aa09","dividerHeight":3,"uniqueID":"111_f7ba38-d4"} -->
+<div class="wp-block-kadence-spacer aligncenter kt-block-spacer-111_f7ba38-d4"><div class="kt-block-spacer kt-block-spacer-halign-center"><hr class="kt-divider"/></div></div>
+<!-- /wp:kadence/spacer -->
+
+<!-- wp:block {"ref":2847} /-->

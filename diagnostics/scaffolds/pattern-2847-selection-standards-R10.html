@@ -1,0 +1,313 @@
+<!-- wp:html -->
+<!-- TC PATTERN: selection-standards-R10 (2847). Claude SPEC 2026-08-11: no duplicate navy title, sequential stages, sectioned copy, tc-* only (no inline flex). -->
+<style>
+.tc-standards-pattern {
+  --tc-navy: #1e3a5f;
+  --tc-gold: #b8944b;
+  --tc-cream: #f8f4ec;
+  --tc-text: #1f1f1f;
+  --tc-muted: #475569;
+  --tc-line: rgba(30, 58, 95, 0.14);
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 1.75rem 1.25rem 2.5rem;
+  background: #ffffff;
+  color: var(--tc-text);
+  font-family: Inter, system-ui, sans-serif;
+}
+.tc-standards-pattern__kicker {
+  margin: 0 0 0.55rem;
+  text-align: center;
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--tc-gold);
+}
+.tc-standards-pattern__title {
+  margin: 0 0 1.75rem;
+  text-align: center;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.55rem, 2.8vw, 2.05rem);
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--tc-navy);
+}
+.tc-standards-pattern__subhead {
+  margin: 0 0 1rem;
+  text-align: center;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--tc-text);
+}
+.tc-standards-pattern__stages {
+  position: relative;
+  display: grid;
+  gap: 0.75rem;
+  margin: 0 0 1.85rem;
+  padding-left: 0.35rem;
+}
+.tc-standards-pattern__stages::before {
+  content: "";
+  position: absolute;
+  left: 1.55rem;
+  top: 1.4rem;
+  bottom: 1.4rem;
+  width: 2px;
+  background: linear-gradient(180deg, var(--tc-gold), rgba(184, 148, 75, 0.25));
+  border-radius: 2px;
+}
+.tc-standards-pattern__stage {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.95rem 1.05rem;
+  background: var(--tc-cream);
+  color: var(--tc-navy) !important;
+  text-decoration: none !important;
+  border: 1px solid var(--tc-line);
+  border-radius: 12px;
+  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+}
+.tc-standards-pattern__stage:hover {
+  transform: translateY(-2px);
+  border-color: rgba(184, 148, 75, 0.55);
+  box-shadow: 0 12px 26px rgba(30, 58, 95, 0.10);
+  color: var(--tc-navy) !important;
+}
+.tc-standards-pattern__num {
+  flex: 0 0 auto;
+  width: 2.35rem;
+  height: 2.35rem;
+  border-radius: 999px;
+  background: var(--tc-navy);
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  z-index: 1;
+}
+.tc-standards-pattern__stage-copy {
+  display: grid;
+  gap: 0.15rem;
+  min-width: 0;
+}
+.tc-standards-pattern__stage-label {
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--tc-gold);
+}
+.tc-standards-pattern__stage-title {
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 0.98rem;
+  font-weight: 500;
+  line-height: 1.35;
+  color: var(--tc-navy);
+}
+.tc-standards-pattern__arrow {
+  flex: 0 0 auto;
+  width: 1.85rem;
+  height: 1.85rem;
+  border-radius: 999px;
+  background: rgba(30, 58, 95, 0.08);
+  color: var(--tc-navy);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.05rem;
+  line-height: 1;
+}
+.tc-standards-pattern__tracks {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 0 0 1.5rem;
+}
+.tc-standards-pattern__track {
+  background: #ffffff;
+  border: 1px solid var(--tc-line);
+  border-radius: 12px;
+  padding: 1.1rem 1.15rem;
+}
+.tc-standards-pattern__track h4 {
+  margin: 0 0 0.45rem;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.1rem;
+  color: var(--tc-navy);
+}
+.tc-standards-pattern__track p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--tc-muted);
+}
+.tc-standards-pattern__body {
+  display: grid;
+  gap: 1rem;
+  margin: 0 0 0.25rem;
+}
+.tc-standards-pattern__body p {
+  margin: 0;
+  font-size: 1.02rem;
+  line-height: 1.65;
+  color: var(--tc-muted);
+}
+.tc-standards-pattern__body a {
+  color: var(--tc-navy);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.tc-standards-pattern__quote {
+  margin: 0.25rem 0;
+  padding: 1.15rem 1.25rem;
+  background: var(--tc-cream);
+  border-left: 3px solid var(--tc-gold);
+  border-radius: 0 10px 10px 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.15rem;
+  line-height: 1.45;
+  color: var(--tc-navy);
+}
+.tc-standards-pattern__stat {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.85rem;
+  align-items: center;
+  padding: 0.95rem 1.1rem;
+  border: 1px solid var(--tc-line);
+  border-radius: 12px;
+  background: #fff;
+}
+.tc-standards-pattern__stat strong {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.55rem;
+  font-weight: 600;
+  color: var(--tc-navy);
+  line-height: 1;
+}
+.tc-standards-pattern__stat span {
+  font-size: 0.92rem;
+  line-height: 1.45;
+  color: var(--tc-muted);
+}
+.tc-standards-pattern__divider {
+  height: 1px;
+  margin: 0.35rem 0;
+  background: linear-gradient(90deg, transparent, var(--tc-line), transparent);
+  border: 0;
+}
+.tc-standards-pattern__grades {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 1.35rem 0 0.25rem;
+}
+.tc-standards-pattern__grade {
+  text-align: center;
+  padding: 0.85rem 0.5rem;
+  border: 1px solid var(--tc-line);
+  border-radius: 10px;
+  background: #fff;
+}
+.tc-standards-pattern__grade strong {
+  display: block;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.35rem;
+  color: var(--tc-navy);
+  margin-bottom: 0.2rem;
+}
+.tc-standards-pattern__grade span {
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--tc-gold);
+}
+@media (max-width: 720px) {
+  .tc-standards-pattern__tracks,
+  .tc-standards-pattern__grades { grid-template-columns: 1fr 1fr; }
+  .tc-standards-pattern__stages::before { left: 1.45rem; }
+}
+@media (max-width: 520px) {
+  .tc-standards-pattern__tracks,
+  .tc-standards-pattern__grades { grid-template-columns: 1fr; }
+  .tc-standards-pattern__stage {
+    grid-template-columns: auto 1fr;
+  }
+  .tc-standards-pattern__arrow { display: none; }
+}
+</style>
+<div class="tc-standards-pattern" aria-label="Trusted Selection Standards">
+  <p class="tc-standards-pattern__kicker">Multi-Stage Selection Standards</p>
+  <h2 class="tc-standards-pattern__title">Trusted Selection Standards Governance</h2>
+
+  <p class="tc-standards-pattern__subhead">Three stages. One framework.</p>
+  <div class="tc-standards-pattern__stages" aria-label="Selection standards stages">
+    <a class="tc-standards-pattern__stage" href="https://tcstaging.truth-collective.com/wp-content/uploads/2026/07/TC-TEchnical-Benchmarking-Whitepaper-Vol-XII.pdf">
+      <span class="tc-standards-pattern__num" aria-hidden="true">01</span>
+      <span class="tc-standards-pattern__stage-copy">
+        <span class="tc-standards-pattern__stage-label">Stage I</span>
+        <span class="tc-standards-pattern__stage-title">Technical Benchmarking Metrics Whitepaper</span>
+      </span>
+      <span class="tc-standards-pattern__arrow" aria-hidden="true">›</span>
+    </a>
+    <a class="tc-standards-pattern__stage" href="https://tcstaging.truth-collective.com/6751-2/">
+      <span class="tc-standards-pattern__num" aria-hidden="true">02</span>
+      <span class="tc-standards-pattern__stage-copy">
+        <span class="tc-standards-pattern__stage-label">Stage II</span>
+        <span class="tc-standards-pattern__stage-title">Master and Per Category Quantitative Engineering Evaluation</span>
+      </span>
+      <span class="tc-standards-pattern__arrow" aria-hidden="true">›</span>
+    </a>
+    <a class="tc-standards-pattern__stage" href="https://tcstaging.truth-collective.com/product-selection-standards/">
+      <span class="tc-standards-pattern__num" aria-hidden="true">03</span>
+      <span class="tc-standards-pattern__stage-copy">
+        <span class="tc-standards-pattern__stage-label">Stage III</span>
+        <span class="tc-standards-pattern__stage-title">Qualitative Literature and Editorial Evaluation</span>
+      </span>
+      <span class="tc-standards-pattern__arrow" aria-hidden="true">›</span>
+    </a>
+  </div>
+
+  <div class="tc-standards-pattern__tracks">
+    <div class="tc-standards-pattern__track">
+      <h4>Quantitative track</h4>
+      <p>Used for products and tools. Weighted engineering factors, category metrics, and independent scoring. Not a copy of Amazon or retailer rankings.</p>
+    </div>
+    <div class="tc-standards-pattern__track">
+      <h4>Qualitative track</h4>
+      <p>Used for books, podcasts, and editorial scripts. Literature and editorial evaluation against Truth Collective governance standards.</p>
+    </div>
+  </div>
+
+  <div class="tc-standards-pattern__body">
+    <p>Every product featured across Truth Collective is reviewed against these trusted selection processes before it earns a place on the page.</p>
+    <p class="tc-standards-pattern__quote">Rankings use several weighted quality factors and documented governing standards, not marketplace popularity alone.</p>
+    <div class="tc-standards-pattern__stat">
+      <strong>2</strong>
+      <span>Evaluation tracks. Quantitative for products. Qualitative for books, podcasts, and editorial scripts.</span>
+    </div>
+    <hr class="tc-standards-pattern__divider" />
+    <p>Truth Collective grades reflect our independent review processes. Retailer stars may differ. Our grades come from testing, research, and editorial review under the Multi-Stage Quantitative and Qualitative evaluation framework.</p>
+    <p>We stand behind those rankings for the long-term trust of our readers. Truth Collective also follows the Federal Trade Commission endorsement and testimonial guidelines. Every recommendation is honest, every affiliate relationship is disclosed, and no product receives a placement it did not earn.</p>
+    <p>Review the <a href="https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking">FTC Endorsement Guides for Consumer Protection</a>.</p>
+  </div>
+
+  <div class="tc-standards-pattern__grades" aria-label="Truth Collective grade scale">
+    <div class="tc-standards-pattern__grade"><strong>5.0</strong><span>TC Grade</span></div>
+    <div class="tc-standards-pattern__grade"><strong>4.5</strong><span>TC Grade</span></div>
+    <div class="tc-standards-pattern__grade"><strong>4.0</strong><span>TC Grade</span></div>
+    <div class="tc-standards-pattern__grade"><strong>3.5</strong><span>TC Grade</span></div>
+  </div>
+</div>
+<!-- /wp:html -->

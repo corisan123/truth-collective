@@ -1,0 +1,207 @@
+<!-- wp:html -->
+<!-- TC PATTERN: truth-box-light (5542). Four trust pillars + TC grade scale. No inline flex. -->
+<style>
+.tc-truthbox {
+  --tc-navy: #1e3a5f;
+  --tc-gold: #b8944b;
+  --tc-cream: #f8f4ec;
+  --tc-muted: #475569;
+  --tc-line: rgba(30,58,95,0.12);
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 2rem;
+  font-family: Inter, system-ui, sans-serif;
+  color: #1f1f1f;
+}
+.tc-truthbox__kicker {
+  margin: 0 0 0.85rem;
+  text-align: center;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--tc-gold);
+}
+.tc-truthbox__panel {
+  background: var(--tc-cream);
+  border: 1px solid var(--tc-line);
+  border-radius: 16px;
+  padding: 1.25rem;
+  box-shadow: 0 12px 28px rgba(30,58,95,0.07);
+}
+.tc-truthbox__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+.tc-truthbox__item {
+  background: #fff;
+  border: 1px solid var(--tc-line);
+  border-radius: 12px;
+  padding: 1.1rem 1rem 1.15rem;
+}
+.tc-truthbox__item h3 {
+  margin: 0 0 0.45rem;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--tc-navy);
+}
+.tc-truthbox__item p {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--tc-muted);
+}
+.tc-truthbox__divider {
+  height: 1px;
+  margin: 1.15rem 0 1rem;
+  border: 0;
+  background: linear-gradient(90deg, transparent, var(--tc-line), transparent);
+}
+.tc-truthbox__grades {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+.tc-truthbox__grade {
+  display: grid;
+  justify-items: center;
+  gap: 0.35rem;
+  padding: 0.85rem 0.5rem;
+  background: #fff;
+  border: 1px solid var(--tc-line);
+  border-radius: 12px;
+  text-align: center;
+}
+.tc-truthbox__grade-label {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 0.82rem;
+  font-style: italic;
+  color: var(--tc-navy);
+}
+.tc-truthbox__grade-score {
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+.tc-truthbox__stars {
+  display: inline-flex;
+  gap: 2px;
+  align-items: center;
+  line-height: 0;
+}
+.tc-truthbox__stars svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+.tc-truthbox__star-half {
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  line-height: 0;
+}
+.tc-truthbox__star-half svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.tc-truthbox__star-half-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+@media (max-width: 900px) {
+  .tc-truthbox__grid,
+  .tc-truthbox__grades { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 520px) {
+  .tc-truthbox__grid,
+  .tc-truthbox__grades { grid-template-columns: 1fr; }
+}
+</style>
+<div class="tc-truthbox" aria-label="Truth Box">
+  <p class="tc-truthbox__kicker">Truth Box</p>
+  <div class="tc-truthbox__panel">
+    <div class="tc-truthbox__grid">
+      <div class="tc-truthbox__item">
+        <h3>More than 7000+ Books Reviewed | 680 Books made it</h3>
+        <p>Across leadership, growth, strategy, productivity, and professional development. 12 different categories filled with carefully chosen literature.</p>
+      </div>
+      <div class="tc-truthbox__item">
+        <h3>Quality baseline</h3>
+        <p>Every recommendation must meet a defined quality baseline before it is considered. Every book, product, and item must qualify through testing, research, and primary conversations with subject-matter experts.</p>
+      </div>
+      <div class="tc-truthbox__item">
+        <h3>No Paid Placements</h3>
+        <p>Selections are independent, curated, and not sold to advertisers.</p>
+      </div>
+      <div class="tc-truthbox__item">
+        <h3>Curated by Experience</h3>
+        <p>Built by a 30+ year executive with an MBA and real-world leadership background. Truth Collective is grounded in honesty, integrity, and people helping people.</p>
+      </div>
+    </div>
+    <hr class="tc-truthbox__divider" />
+    <div class="tc-truthbox__grades" aria-label="Truth Collective grade scale">
+      <div class="tc-truthbox__grade">
+        <span class="tc-truthbox__grade-label">Truth Collective Grade</span>
+        <span class="tc-truthbox__grade-score">5/5</span>
+        <span class="tc-truthbox__stars" aria-label="5 out of 5 stars">
+          <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M11 1.5l2.85 6.4 6.95.62-5.27 4.7 1.6 6.78L11 16.5l-6.13 3.5 1.6-6.78L1.2 8.52l6.95-.62z" fill="#b8944b" stroke="#b8944b" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M11 1.5l2.85 6.4 6.95.62-5.27 4.7 1.6 6.78L11 16.5l-6.13 3.5 1.6-6.78L1.2 8.52l6.95-.62z" fill="#b8944b" stroke="#b8944b" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M11 1.5l2.85 6.4 6.95.62-5.27 4.7 1.6 6.78L11 16.5l-6.13 3.5 1.6-6.78L1.2 8.52l6.95-.62z" fill="#b8944b" stroke="#b8944b" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M11 1.5l2.85 6.4 6.95.62-5.27 4.7 1.6 6.78L11 16.5l-6.13 3.5 1.6-6.78L1.2 8.52l6.95-.62z" fill="#b8944b" stroke="#b8944b" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M11 1.5l2.85 6.4 6.95.62-5.27 4.7 1.6 6.78L11 16.5l-6.13 3.5 1.6-6.78L1.2 8.52l6.95-.62z" fill="#b8944b" stroke="#b8944b" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        </span>
+      </div>
+      <div class="tc-truthbox__grade">
+        <span class="tc-truthbox__grade-label">Truth Collective Grade</span>
+        <span class="tc-truthbox__grade-score">4.5/5</span>
+        <span class="tc-truthbox__stars" aria-label="4.5 out of 5 stars">
+          <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M11 1.5l2.85 6.4 6.95.62-5.27 4.7 1.6 6.78L11 16.5l-6.13 3.5 1.6-6.78L1.2 8.52l6.95-.62z" fill="#b8944b" stroke="#b8944b" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M11 1.5l2.85 6.4 6.95.62-5.27 4.7 1.6 6.78L11 16.5l-6.13 3.5 1.6-6.78L1.2 8.52l6.95-.62z" fill="#b8944b" stroke="#b8944b" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M11 1.5l2.85 6.4 6.95.62-5.27 4.7 1.6 6.78L11 16.5l-6.13 3.5 1.6-6.78L1.2 8.52l6.95-.62z" fill="#b8944b" stroke="#b8944b" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M11 1.5l2.85 6.4 6.95.62-5.27 4.7 1.6 6.78L11 16.5l-6.13 3.5 1.6-6.78L1.2 8.52l6.95-.62z" fill="#b8944b" stroke="#b8944b" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <span class="tc-truthbox__star-half">
+            <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M11 1.5l2.85 6.4 6.95.62-5.27 4.7 1.6 6.78L11 16.5l-6.13 3.5 1.6-6.78L1.2 8.52l6.95-.62z" fill="none" stroke="#b8944b" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            <span class="tc-truthbox__star-half-fill"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M11 1.5l2.85 6.4 6.95.62-5.27 4.7 1.6 6.78L11 16.5l-6.13 3.5 1.6-6.78L1.2 8.52l6.95-.62z" fill="#b8944b" stroke="#b8944b" stroke-width="1.5" stroke-linejoin="round"/></svg></span>
+          </span>
+        </span>
+      </div>
+      <div class="tc-truthbox__grade">
+        <span class="tc-truthbox__grade-label">Truth Collective Grade</span>
+        <span class="tc-truthbox__grade-score">4/5</span>
+        <span class="tc-truthbox__stars" aria-label="4 out of 5 stars">
+          <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M11 1.5l2.85 6.4 6.95.62-5.27 4.7 1.6 6.78L11 16.5l-6.13 3.5 1.6-6.78L1.2 8.52l6.95-.62z" fill="#b8944b" stroke="#b8944b" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M11 1.5l2.85 6.4 6.95.62-5.27 4.7 1.6 6.78L11 16.5l-6.13 3.5 1.6-6.78L1.2 8.52l6.95-.62z" fill="#b8944b" stroke="#b8944b" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M11 1.5l2.85 6.4 6.95.62-5.27 4.7 1.6 6.78L11 16.5l-6.13 3.5 1.6-6.78L1.2 8.52l6.95-.62z" fill="#b8944b" stroke="#b8944b" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M11 1.5l2.85 6.4 6.95.62-5.27 4.7 1.6 6.78L11 16.5l-6.13 3.5 1.6-6.78L1.2 8.52l6.95-.62z" fill="#b8944b" stroke="#b8944b" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M11 1.5l2.85 6.4 6.95.62-5.27 4.7 1.6 6.78L11 16.5l-6.13 3.5 1.6-6.78L1.2 8.52l6.95-.62z" fill="none" stroke="#b8944b" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        </span>
+      </div>
+      <div class="tc-truthbox__grade">
+        <span class="tc-truthbox__grade-label">Truth Collective Grade</span>
+        <span class="tc-truthbox__grade-score">3.5/5</span>
+        <span class="tc-truthbox__stars" aria-label="3.5 out of 5 stars">
+          <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M11 1.5l2.85 6.4 6.95.62-5.27 4.7 1.6 6.78L11 16.5l-6.13 3.5 1.6-6.78L1.2 8.52l6.95-.62z" fill="#b8944b" stroke="#b8944b" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M11 1.5l2.85 6.4 6.95.62-5.27 4.7 1.6 6.78L11 16.5l-6.13 3.5 1.6-6.78L1.2 8.52l6.95-.62z" fill="#b8944b" stroke="#b8944b" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M11 1.5l2.85 6.4 6.95.62-5.27 4.7 1.6 6.78L11 16.5l-6.13 3.5 1.6-6.78L1.2 8.52l6.95-.62z" fill="#b8944b" stroke="#b8944b" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <span class="tc-truthbox__star-half">
+            <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M11 1.5l2.85 6.4 6.95.62-5.27 4.7 1.6 6.78L11 16.5l-6.13 3.5 1.6-6.78L1.2 8.52l6.95-.62z" fill="none" stroke="#b8944b" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            <span class="tc-truthbox__star-half-fill"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M11 1.5l2.85 6.4 6.95.62-5.27 4.7 1.6 6.78L11 16.5l-6.13 3.5 1.6-6.78L1.2 8.52l6.95-.62z" fill="#b8944b" stroke="#b8944b" stroke-width="1.5" stroke-linejoin="round"/></svg></span>
+          </span>
+          <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M11 1.5l2.85 6.4 6.95.62-5.27 4.7 1.6 6.78L11 16.5l-6.13 3.5 1.6-6.78L1.2 8.52l6.95-.62z" fill="none" stroke="#b8944b" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /wp:html -->

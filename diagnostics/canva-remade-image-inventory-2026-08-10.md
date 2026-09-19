@@ -1,0 +1,61 @@
+# Canva remade image inventory (Daniel 2026-08-10)
+
+**Source:** Daniel chat left→right labels (confirmed again same day).  
+**Scope:** Salvage/replacement pics for broken or wrong site images — **not** a forced sitewide remake.  
+**Apply rule:** Use only the appropriate tiles for the **page currently in progress**.  
+**Files:** Staging `uploads/hub-tiles/` — `tiles.zip` still **403** to Cursor until extracted as public `.png`/`.jpg`.
+
+## Locked order / labels (confirmed)
+
+| # | Daniel label |
+|---|--------------|
+| 1 | Analog Writing Tools |
+| 2 | AI Series Part 6 *(editorial — see AI Mastery pack)* |
+| 3 | Audio |
+| 4 | The Ones Who Gave Everything — Featured Billy Graham |
+| 5 | Computers |
+| 6 | Office Desk Speakers |
+| 7 | Future of Computers |
+| 8 | Interactive Displays |
+| 9 | Interactive Displays *(second / alt)* |
+| 10 | Leadership Books |
+| 11 | Mental Wellness and Support |
+| 12 | Office Workspace Hero image |
+| 13 | Monitors |
+| 14 | Monitors and/or Executive Speakers and Mics |
+| 15 | Executive Chairs and Seating |
+| 16 | Office Workspace #2 |
+| 17 | Podcast (Self-Help and Mental Wellness Podcasts) |
+| 18 | Printer |
+| 19 | Office Speakers, Mics, and Setup |
+| 20 | Monitors *(third / alt)* |
+| 21 | Computer |
+| 22 | Headphones, Earbuds |
+| 23 | Digital Tablets |
+| 24 | Video Cameras for the Professionals |
+| 25 | Mics, Projectors |
+| 26 | Interactive Displays *(third / alt)* |
+| 27 | Computer Workspace |
+
+## Tech Hub eight-tile draft map (when files reachable)
+
+| Hub category | Prefer from pack |
+|---|---|
+| Computers | #5 (alt #21 / #27) |
+| Monitors | #13 or #20 |
+| Audio & Video | #3 (alt #24 / #25) |
+| Headphones | #22 |
+| Speakers | #6 (alt #19) |
+| Projectors & Mics | #25 |
+| Tablets | #23 |
+| Interactive Displays | #8 / #9 / #26 |
+
+## Notes
+- **AI Mastery** = one of four Editorial Sections; **AI Mastery Book Collections** = child of **Recommended Books**.  
+- AI Series / AI Mastery graphics → `diagnostics/AI-mastery-tile-order-2026-08-10.md` (includes Part 6).  
+- Prefer **no baked-in ad captions** on product/hub tiles; editorial covers may keep designed title art.
+
+## Next (blocked on files)
+1. File Manager: **Extract** `hub-tiles/tiles.zip` → public PNG/JPG.  
+2. Stay on the page in progress (Technology Hub eight tiles unless Daniel switches).  
+3. Cursor REST-swaps only the matching `src` URLs for that page.
