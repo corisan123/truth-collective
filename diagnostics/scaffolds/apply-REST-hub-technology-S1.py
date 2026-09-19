@@ -280,6 +280,23 @@ def build(live: str) -> str:
     return "\n".join(parts)
 
 
+def patch_existing(live: str, css: str) -> str:
+    start = live.find('<style id="tc-tech-hub-s1">')
+    end = live.find("</style>", start)
+    if start < 0 or end < 0:
+        die("S1 style block missing on an already-patched page.")
+    new = live[:start] + f'<style id="tc-tech-hub-s1">\n{css.strip()}\n</style>' + live[end + 8 :]
+
+    def eager(tag: str) -> str:
+        if "loading=" in tag:
+            return tag
+        return tag.replace("<img ", '<img loading="eager" ', 1)
+
+    new = new.replace(' loading="lazy"', "")
+    new = re.sub(r"<img[^>]*>", lambda m: eager(m.group(0)), new)
+    return new
+
+
 def main() -> None:
     ctx, headers = client()
     status, page = api(
@@ -290,17 +307,29 @@ def main() -> None:
     )
     live = page["content"]["raw"]
     BACKUP_DIR.mkdir(parents=True, exist_ok=True)
-    backup = BACKUP_DIR / f"page-{PAGE_ID}-before-{TICKET}-{TODAY}.html"
-    backup.write_text(live)
-    print(f"backup {backup} chars={len(live)}")
+    suffix = "S1b" if MARKER in live else TICKET
+    backup = BACKUP_DIR / f"page-{PAGE_ID}-before-REST-hub-technology-{suffix}-{TODAY}.html"
+    if not backup.exists():
+        backup.write_text(live)
+        print(f"backup {backup} chars={len(live)}")
+    else:
+        print(f"backup exists {backup} (left in place)")
 
-    new = build(live)
+    css = CSS_PATH.read_text()
+    if MARKER in live:
+        new = patch_existing(live, css)
+        print("mode patch-existing")
+    else:
+        new = build(live)
+        print("mode full-rebuild")
     if MARKER not in new:
         die("Marker missing from built HTML.")
     if "tc-explore-hub" not in new or "tc-eval-brief" not in new:
         die("Required classes missing from built HTML.")
     if new.count("tc-explore-hub") < 10:
         die("Explore tiles missing.")
+    if "figure a" not in css or "loading=\"eager\"" not in new:
+        die("S1b tile-fill markers missing.")
 
     _, updated = api(
         "POST",
@@ -312,6 +341,8 @@ def main() -> None:
     raw = updated.get("content", {}).get("raw") or ""
     if MARKER not in raw:
         die("POST succeeded but marker not in saved content.")
+    if "inset: 0" not in raw or "figure a" not in raw:
+        die("Tile-fill CSS not in saved content.")
 
     view = f"{BASE}/technology-hub/"
     print(f"public {view} HEAD {public_status(view)}")
