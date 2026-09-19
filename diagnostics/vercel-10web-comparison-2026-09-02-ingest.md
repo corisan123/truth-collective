@@ -2,8 +2,9 @@
 
 **Upload:** `vercel AND 10weB COMPARISON (2026_09_02 19_57_57 UTC).pdf`  
 **Repo copy:** `docs/brand-references/vercel-and-10web-comparison-2026-09-02.pdf` (28 pages)  
-**Older 8-page pack kept as:** `docs/brand-references/vercel-and-10web-comparison.pdf`  
-**Role:** Visual / motion gold. Reference only. Do not port Tailwind, v0, or 10Web markup.
+**Governing Standing Brief PDF:** `docs/brand-references/vercel-and-10web-comparison.pdf`  
+**This 28-page file:** same comparison family, fuller scan. Not a second brief.  
+**Role:** Visual / motion gold. Reference only. Do not port Tailwind, v0, or 10Web markup. Damage/kind-louse/staging screenshots are evidence, not a model.
 
 Daniel’s own captions in this file override Claude’s 2026-09 visual ticket where they disagree.
 
@@ -51,4 +52,4 @@ Daniel’s own captions in this file override Claude’s 2026-09 visual ticket w
 | Title below the image at rest | Title on the image, bottom at rest | **PDF** |
 | EXPLORE is a real button | Transparent EXPLORE; whole image linked | **PDF** |
 | Overlay too dark must lighten | p.1: staging hover still too dark | **Agree — lighten via Additional CSS** |
-| Grayscale from ISI | pp. 18–19 editorial only | **PDF** (hubs/editorial, not products/books) |
+| Grayscale from ISI | pp. 18–19 editorial only | **PDF + 19 Sep lock:** three editorial hubs only; not product hubs, heroes, small images, or covers |

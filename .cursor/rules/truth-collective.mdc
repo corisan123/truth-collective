@@ -5,7 +5,12 @@ alwaysApply: true
 
 # Truth Collective
 
-Read `docs/TC-STANDING-BRIEF.md`, `STAGING-RECOVERY-HANDOFF.md`, and `docs/AI-PLATFORM-RULES-AND-PROMPTS.md` before acting.
+Read `docs/TC-STANDING-BRIEF.md`, `docs/TC-LOCK-2026-09-19.md`, `STAGING-RECOVERY-HANDOFF.md`, and `docs/AI-PLATFORM-RULES-AND-PROMPTS.md` before acting.
+
+## Visual hierarchy (do not drift)
+1. Standing Brief PDF first: `docs/brand-references/vercel-and-10web-comparison.pdf`. Description vs PDF → PDF wins.
+2. 19 Sep direction second: cream-forward, navy/gold accents only, more whitespace, fewer boxed editorial cards, large serif + uppercase eyebrows, asymmetric intro, grayscale on the three editorial hubs only.
+3. 10Web damage / kind-louse / staging captures are evidence, not a model. Do not port blue, pastel yellow/blue cards, gray tiles, invented taxonomy, or fabricated stats.
 
 ## Hard rules
 - Staging only unless Daniel explicitly asks for live work. Live path is `public_html` without `tcstaging`. Never Website backup restore for staging recovery.

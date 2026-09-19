@@ -11,7 +11,13 @@ Update only with Daniel’s confirmation (Master Brief rule).
 - `HEARING_TRACKER_WEBSITE_TO_COMPARE_TC_WEBSITE.docx` + TechRadar screenshots (§9)
 - Membership toggle CSS (§11) + Copilot Task Master Binder archive (§12)
 
-**Session open line:** Read `docs/TC-STANDING-BRIEF.md`, `STAGING-RECOVERY-HANDOFF.md`, and `docs/AI-PLATFORM-RULES-AND-PROMPTS.md`, then continue.
+**Session open line:** Read `docs/TC-STANDING-BRIEF.md`, `docs/TC-LOCK-2026-09-19.md`, `STAGING-RECOVERY-HANDOFF.md`, and `docs/AI-PLATFORM-RULES-AND-PROMPTS.md`, then continue.
+
+### Visual hierarchy (locked 2026-09-19 — do not drift)
+
+1. **Standing Brief PDF first.** `docs/brand-references/vercel-and-10web-comparison.pdf`. If a description, ticket, or Claude directive disagrees with this PDF, **the PDF wins**. That is already settled by the 19 Sep conflict table. Same comparison family: `vercel-and-10web-comparison-2026-09-02.pdf` (fuller 28-page scan). Not a second brief.
+2. **Stated direction from 19 Sep, second.** Narrow. Layers on the PDF. Does not replace it. See §1 “Direction on top of the PDF.”
+3. **Everything else is evidence, not a model.** 10Web damage captures, kind-louse Technology builds, staging screenshots: current state and what went wrong. **Do not port** from those: the blue, pastel yellow and blue category cards, gray tiles, invented taxonomy, fabricated stats.
 
 ---
 
@@ -19,19 +25,29 @@ Update only with Daniel’s confirmation (Master Brief rule).
 
 **Context:** After a live-site crash and failed recovery, Daniel explored **Vercel** and **10Web**. Their sample pages defined hover / lift / overlay language later named `tc-explore-hub`, `tc-explore-hero`, etc. Samples used Tailwind (reference only, not WP drop-in). Cursor already rebuilt the **membership/toggle page** toward **Vercel**.
 
-**Reference:** `docs/brand-references/vercel-and-10web-comparison.pdf`  
-**(File on disk 2026-08-09.** Same pack as Daniel Drive `vercel and 10web smaple images.pdf`. Image-heavy annotated samples: 10Web hover overlay, product details frame, Details\|Reviews on small tiles, Vercel editorial greyscale→color, cover entrance + video placeholder. Map: `diagnostics/vercel-10web-sample-pdf-ingested-2026-08-09.md`.)
+**Governing reference:** `docs/brand-references/vercel-and-10web-comparison.pdf`  
+**(File on disk 2026-08-09.** Same pack as Daniel Drive `vercel and 10web smaple images.pdf`. Image-heavy annotated samples: 10Web hover overlay, product details frame, Details\|Reviews on small tiles, Vercel editorial greyscale→color, cover entrance + video placeholder. Map: `diagnostics/vercel-10web-sample-pdf-ingested-2026-08-09.md`. Fuller scan: `vercel-and-10web-comparison-2026-09-02.pdf`.)
+
+### Direction on top of the PDF (19 Sep — not a competing brief)
+- Lighter, **cream-forward** page background. Navy and gold as **accents only**.
+- More whitespace. Fewer boxed cards in **editorial** sections.
+- Larger serif headings with small uppercase **eyebrow** labels.
+- **Asymmetric** intro layout, not centered full-width text.
+- Grayscale → color on hover: **the three editorial hubs only**. Later Additional CSS pass. Not heroes. Not smaller in-page images. Not product tiles. Not book covers. Seldom.
+
+### Rejected as style targets (evidence only)
+Blue skins, pastel yellow/blue category cards, gray tiles, invented taxonomy, fabricated stats from 10Web / kind-louse / damaged staging captures. None of it gets ported.
 
 ### Preference ranking (overlays)
 1. **Vercel overlays** — preferred polish (legible hover, not crushed dark)
 2. **10Web overlays** — strong (toggle UI sometimes preferred)
-3. **Broken WP staging** — not the target
+3. **Broken WP staging** — not the target. Evidence of damage, not a look to copy.
 
 ### Hub tiles (`tc-explore-hub`)
 - Large high-res images; full tile is the visual plane
 - **At rest:** title at **bottom** of image
 - **On hover:** image lifts and slightly darkens; title rises; transparent **EXPLORE** (hubs may use gold `>`). Entire image is linked
-- EXPLORE is **not a button** — look-alike label driven with JS/CSS; **the entire image is the link**
+- EXPLORE on hub tiles is **not a button** — CSS `::after` look-alike; **the entire image is the link**. Homepage entrance EXPLORE is CSS keyframes on `.tc-explore-hero::after` (coded look-alike, not JS, not a class button). Seldom.
 - EXPLORE must never split (`EXPLOR` / `E`)
 - Target placement: class on the intentional block (historically image and/or Section — see layer history below). Do not invent a third class system.
 
@@ -101,7 +117,7 @@ Uniform image sizing rules are intentional. Images must not spill outside their 
 
 **Hubs:** Recommended Books · Office Workspace · Technology · Smart (AI) Lighting · Featured Productivity Tools · Self-Help and Mental Wellness  
 
-**Editorial sections (four):** include **AI Mastery** (Daniel 2026-08-10); also **The Truth Untold Series** (others confirm as named).  
+**Editorial sections:** include **AI Mastery** (Daniel 2026-08-10) and **The Truth Untold Series**. Grayscale hover is locked to **the three editorial hubs only** (19 Sep). Do not gray the six product hubs.  
 **Books child:** **AI Mastery Book Collections** lives under **Recommended Books** (not under Technology Hub).
 
 **SEO (every page):** focus keyword in title, meta (&lt;160), H1, ≥1 H2, first paragraph, hero alt; density 0.5–1.5%; title &lt;60 chars and includes **2026**; RankMath Content AI during writing.  
@@ -187,8 +203,8 @@ These are **polish / UX references**. Keep Truth Collective locked palette and t
 ### 10Web / Vercel sample patterns to reach (screenshots 2026-08-08)
 Confirmed from Daniel’s attachments (sample UI, not current WP staging):
 1. **Air and lightness** — soft backgrounds, rounded light product cards, navy/gold CTAs, no stacked gray slabs
-2. **Category tiles: grayscale at rest → full color on hover** — non-hovered neighbors stay B/W; hovered tile gains color, short blurb, bullets, “View Collection →”
-3. **Editorial cards** — outlined titles, greyscale imagery at rest, color on hover; “Read Feature”
+2. **Category tiles in the 10Web sample** showed grayscale at rest → color on hover. That sample motion is **not** a license to gray product-hub tiles. TC grayscale is **the three editorial hubs only** (lock 19 Sep).
+3. **Editorial cards** — outlined titles, greyscale imagery at rest, color on hover; “Read Feature” (editorial hubs only, not products or book covers)
 4. **About / newsletter** — clean two-column light or dark navy footers; Playfair + Inter; gold accents; not bulky form blocks
 5. **Hero** — bright workspace photo, simple “Explore the Hubs” CTA, light motion on load (Vercel/10Web samples)
 

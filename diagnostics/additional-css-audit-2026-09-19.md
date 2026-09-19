@@ -54,7 +54,7 @@ One append-only stack. Later patches override earlier ones with `!important` (48
 | Unnamed mobile row padding | Later | Sitewide `.kt-row-column-wrap` at `max-width:767px`. Not overlay-scoped. |
 | TC Membership Toggle | Keep | `body.page-id-8176` only |
 
-**Grayscale:** **zero** rules in Additional CSS. Correct. Editorial B/W → color is a later Additional CSS pass, Truth Untold + AI Mastery editorial only.
+**Grayscale:** **zero** rules in Additional CSS. Correct. Editorial B/W → color is a later Additional CSS pass, **the three editorial hubs only**.
 
 ---
 
