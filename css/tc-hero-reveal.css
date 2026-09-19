@@ -1,0 +1,104 @@
+/* ================================================================
+   TC HERO REVEAL
+   Truth Collective home page hero section
+   At rest: only the H1 headline is visible
+   On hover: paragraph fades in, then EXPLORE button fades in
+   Mobile: all elements visible at rest (no hover available)
+   The EXPLORE button is a CSS pseudo-element on the Section
+   Added: 2026-05-25
+   Removable by deleting the .tc-hero-reveal class from the
+   hero Section block
+   ================================================================ */
+
+.tc-hero-reveal {
+  position: relative;
+  cursor: default;
+  padding-bottom: 120px;
+}
+
+.tc-hero-reveal h1 {
+  opacity: 1;
+  transition: opacity 350ms ease;
+}
+
+.tc-hero-reveal p {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 500ms ease 100ms, transform 500ms ease 100ms;
+}
+
+.tc-hero-reveal::after {
+  content: "EXPLORE";
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  z-index: 4;
+  padding: 14px 60px 14px 32px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #ffffff;
+  background: linear-gradient(135deg, rgba(30, 58, 95, 0.85) 0%, rgba(15, 30, 50, 0.85) 100%);
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 500ms ease 300ms, transform 500ms ease 300ms;
+  pointer-events: none;
+  white-space: nowrap;
+  backdrop-filter: blur(2px);
+}
+
+.tc-hero-reveal::before {
+  content: "\203A";
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translate(38px, 6px);
+  z-index: 5;
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #b8944b;
+  opacity: 0;
+  transition: opacity 500ms ease 300ms, transform 500ms ease 300ms;
+  pointer-events: none;
+  line-height: 1;
+}
+
+@media (hover: hover) {
+  .tc-hero-reveal:hover p {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .tc-hero-reveal:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  .tc-hero-reveal:hover::before {
+    opacity: 1;
+    transform: translate(38px, -2px);
+  }
+}
+
+@media (max-width: 767px), (hover: none) {
+  .tc-hero-reveal p {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .tc-hero-reveal::after,
+  .tc-hero-reveal::before {
+    opacity: 1;
+  }
+
+  .tc-hero-reveal::after {
+    transform: translateX(-50%) translateY(0);
+  }
+
+  .tc-hero-reveal::before {
+    transform: translate(38px, -2px);
+  }
+}
