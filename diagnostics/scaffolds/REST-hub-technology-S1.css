@@ -353,7 +353,7 @@ body.page-id-111 .tc-tech-explore-row > .tc-overlay-card > figure.tc-explore-hub
 body.page-id-111 .tc-tech-explore-row > .tc-overlay-card > figure.tc-explore-hub::before {
   z-index: 4 !important;
 }
-@media (hover: hover) and (pointer: fine) {
+@media (hover: hover) {
   body.page-id-111 .tc-tech-explore-row > .tc-overlay-card:hover {
     box-shadow: 0 12px 34px rgba(0,0,0,0.20) !important;
     transform: translateY(-4px) !important;
