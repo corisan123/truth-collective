@@ -1,0 +1,650 @@
+<!-- wp:html -->
+<!-- TC STAGING PATCH HUB-PARENT-S1: CSS only. Native images for Media Replace. 2026-09-23. -->
+<style id="tc-hub-parent-s1">
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&display=swap");
+/* REST-hub-parents-S1. Page chrome only. Additional CSS untouched.
+   Native Gutenberg tiles: Additional CSS still keys off .kt-inside-inner-col. */
+
+body.page-id-115 {
+  background: #f8f4ec;
+}
+body.page-id-115 .entry-content > .alignfull {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  max-width: none !important;
+  width: 100% !important;
+}
+
+body.page-id-115 .tc-tech-cover.wp-block-group {
+  position: relative !important;
+  min-height: min(72vh, 640px) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  background: #1e3a5f;
+}
+body.page-id-115 .tc-tech-cover > .tc-tech-cover__media,
+body.page-id-115 .tc-tech-cover > figure.tc-tech-cover__media {
+  position: absolute !important;
+  inset: 0 !important;
+  margin: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 1 !important;
+}
+body.page-id-115 .tc-tech-cover > .tc-tech-cover__media img,
+body.page-id-115 .tc-tech-cover > figure.tc-tech-cover__media img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  filter: brightness(0.62);
+}
+body.page-id-115 .tc-tech-cover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(120deg, rgba(30,58,95,0.55) 0%, rgba(30,58,95,0.22) 60%, rgba(30,58,95,0.08) 100%);
+}
+body.page-id-115 .tc-tech-cover > .tc-tech-cover__content {
+  position: relative !important;
+  z-index: 3 !important;
+  max-width: 720px !important;
+  margin: 0 !important;
+  padding: clamp(3.5rem, 8vw, 6.5rem) clamp(1.5rem, 5vw, 4rem) !important;
+  min-height: min(72vh, 640px) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-end !important;
+}
+body.page-id-115 .tc-tech-cover__brand {
+  margin: 0 0 1rem !important;
+  font-family: Inter, sans-serif !important;
+  font-size: 0.78rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.22em !important;
+  text-transform: uppercase !important;
+  color: #b8944b !important;
+}
+body.page-id-115 .tc-tech-cover .wp-block-heading,
+body.page-id-115 .tc-tech-cover h1 {
+  margin: 0 0 1.25rem !important;
+  font-family: "Playfair Display", serif !important;
+  font-size: clamp(2.4rem, 5vw, 3.6rem) !important;
+  font-weight: 600 !important;
+  line-height: 1.1 !important;
+  color: #fff !important;
+}
+body.page-id-115 .tc-tech-cover__cta {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 0.45rem;
+  width: fit-content;
+  padding: 0.85rem 1.35rem !important;
+  border: 1px solid rgba(255,255,255,0.55) !important;
+  color: #fff !important;
+  text-decoration: none !important;
+  font-family: Inter, sans-serif !important;
+  font-size: 0.78rem !important;
+  letter-spacing: 0.16em !important;
+  text-transform: uppercase !important;
+  background: transparent !important;
+}
+body.page-id-115 .tc-tech-cover__cta:hover {
+  border-color: #b8944b !important;
+  background: rgba(184,148,75,0.22) !important;
+}
+
+body.page-id-115 .tc-tech-intro-prose {
+  background: #f8f4ec;
+  padding: clamp(2.75rem, 5vw, 4.25rem) clamp(1.25rem, 4vw, 3rem) 1.5rem;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+body.page-id-115 .tc-tech-intro-split {
+  display: flex !important;
+  gap: clamp(2rem, 5vw, 4.5rem) !important;
+  align-items: flex-start !important;
+  margin: 0 !important;
+}
+body.page-id-115 .tc-tech-intro-split > .wp-block-column:first-child {
+  flex-basis: 38% !important;
+}
+body.page-id-115 .tc-tech-intro-split > .wp-block-column:last-child {
+  flex-basis: 62% !important;
+}
+body.page-id-115 .tc-tech-intro-prose .tc-hub-eyebrow,
+body.page-id-115 .tc-section-eyebrow {
+  margin: 0 0 0.65rem !important;
+  font-family: Inter, sans-serif !important;
+  font-size: 0.75rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+  color: #b8944b !important;
+}
+body.page-id-115 .tc-tech-intro-prose .tc-hub-hero-title {
+  margin: 0 !important;
+  font-family: "Playfair Display", serif !important;
+  font-size: clamp(2.4rem, 4.2vw, 3.4rem) !important;
+  font-weight: 600 !important;
+  line-height: 1.08 !important;
+  color: #1e3a5f !important;
+}
+body.page-id-115 .tc-tech-intro-prose .tc-hub-hero-title em {
+  color: #b8944b !important;
+  font-style: italic !important;
+}
+body.page-id-115 .tc-tech-intro-prose .tc-hub-hero-lead {
+  margin: 0 0 1.15rem !important;
+  max-width: 38rem;
+  font-family: Inter, sans-serif !important;
+  font-size: 1.05rem !important;
+  line-height: 1.7 !important;
+  color: #1f1f1f !important;
+}
+body.page-id-115 .tc-tech-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  padding: 0.85rem 0 0;
+  border-top: 1px solid rgba(30,58,95,0.12);
+}
+body.page-id-115 .tc-tech-meta-row p {
+  margin: 0 !important;
+  font-family: Inter, sans-serif !important;
+  font-size: 0.8rem !important;
+  color: #1e3a5f !important;
+}
+body.page-id-115 .tc-tech-meta-row a { color: #1e3a5f !important; }
+
+body.page-id-115 .tc-tech-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 1.5rem clamp(1.25rem, 4vw, 3rem) 2rem;
+  background: #f8f4ec;
+  border-bottom: 1px solid rgba(30,58,95,0.08);
+}
+body.page-id-115 .tc-tech-stats__item {
+  background: #fff;
+  border: 1px solid rgba(30,58,95,0.12);
+  padding: 1.15rem 1.2rem 1.2rem;
+}
+body.page-id-115 .tc-tech-stats__item::before {
+  content: "";
+  display: block;
+  width: 1.5rem;
+  height: 2px;
+  background: #b8944b;
+  margin-bottom: 0.65rem;
+}
+body.page-id-115 .tc-tech-stats__label {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #b8944b;
+}
+body.page-id-115 .tc-tech-stats__value {
+  margin: 0.35rem 0 0;
+  font-family: "Playfair Display", serif;
+  font-size: 1.15rem;
+  color: #1e3a5f;
+}
+
+body.page-id-115 .tc-hub-prose-section {
+  background: #f8f4ec;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 clamp(1.25rem, 4vw, 3rem) 2.25rem;
+}
+body.page-id-115 .tc-hub-prose-section .wp-block-heading {
+  margin: 0 0 0.35rem !important;
+  font-family: "Playfair Display", serif !important;
+  font-size: clamp(1.7rem, 2.6vw, 2.15rem) !important;
+  font-weight: 600 !important;
+  color: #1e3a5f !important;
+}
+
+body.page-id-115 .tc-tech-cat-section {
+  background: #f8f4ec;
+  padding: clamp(1.5rem, 3vw, 2.5rem) clamp(1.25rem, 4vw, 3rem) clamp(2.5rem, 5vw, 4rem);
+  max-width: 1180px;
+  margin: 0 auto;
+}
+body.page-id-115 .tc-tech-cat-section .tc-tech-cat-kicker {
+  margin: 0 0 0.65rem !important;
+  font-family: Inter, sans-serif !important;
+  font-size: 0.75rem !important;
+  letter-spacing: 0.16em !important;
+  text-transform: uppercase !important;
+  color: #b8944b !important;
+}
+body.page-id-115 .tc-tech-cat-section .tc-tech-cat-heading {
+  margin: 0 0 0.75rem !important;
+  font-family: "Playfair Display", serif !important;
+  font-size: clamp(1.9rem, 3vw, 2.5rem) !important;
+  color: #1e3a5f !important;
+}
+body.page-id-115 .tc-tech-cat-section .tc-tech-cat-lead {
+  margin: 0 0 1.75rem !important;
+  max-width: 40rem;
+  font-family: Inter, sans-serif !important;
+  color: #1f1f1f !important;
+  line-height: 1.65 !important;
+}
+body.page-id-115 .tc-tech-explore-row {
+  display: flex !important;
+  gap: 1.35rem !important;
+  margin: 0 0 1.35rem !important;
+  align-items: stretch !important;
+  max-width: none !important;
+}
+body.page-id-115 .tc-tech-explore-row > .tc-explore-hub {
+  flex: 1 1 50% !important;
+  position: relative !important;
+  min-height: 460px !important;
+  overflow: hidden !important;
+  box-shadow: 0 8px 22px rgba(30, 58, 95, 0.10);
+  margin: 0 !important;
+}
+body.page-id-115 .tc-tech-explore-row > .tc-explore-hub > .wp-block-image,
+body.page-id-115 .tc-tech-explore-row > .tc-explore-hub > figure {
+  position: absolute !important;
+  inset: 0 !important;
+  margin: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 1 !important;
+}
+body.page-id-115 .tc-tech-explore-row > .tc-explore-hub > .wp-block-image a,
+body.page-id-115 .tc-tech-explore-row > .tc-explore-hub > figure a {
+  display: block !important;
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+body.page-id-115 .tc-tech-explore-row > .tc-explore-hub > .wp-block-image img,
+body.page-id-115 .tc-tech-explore-row > .tc-explore-hub > figure img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+body.page-id-115 .tc-tech-explore-row > .tc-explore-hub > h3,
+body.page-id-115 .tc-tech-explore-row > .tc-explore-hub > .wp-block-heading {
+  position: absolute !important;
+  left: 50% !important;
+  bottom: 28px !important;
+  z-index: 3 !important;
+  width: calc(100% - 48px) !important;
+  margin: 0 !important;
+  transform: translateX(-50%) !important;
+  color: #fff !important;
+  font-family: "Playfair Display", serif !important;
+  font-weight: 400 !important;
+  text-align: center !important;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.65) !important;
+  pointer-events: none !important;
+  opacity: 1 !important;
+}
+body.page-id-115 .tc-tech-explore-row > .tc-explore-hub::after,
+body.page-id-115 .tc-tech-explore-row > .tc-explore-hub::before {
+  z-index: 4 !important;
+}
+@media (hover: hover) and (pointer: fine) {
+  body.page-id-115 .tc-tech-explore-row > .tc-explore-hub:hover > .wp-block-image img,
+  body.page-id-115 .tc-tech-explore-row > .tc-explore-hub:hover > figure img {
+    filter: brightness(0.82) !important;
+  }
+  body.page-id-115 .tc-tech-explore-row > .tc-explore-hub:hover > h3,
+  body.page-id-115 .tc-tech-explore-row > .tc-explore-hub:hover > .wp-block-heading {
+    bottom: 46% !important;
+    opacity: 1 !important;
+  }
+}
+
+body.page-id-115 .tc-eval-brief {
+  max-width: 1180px;
+  margin: 0 auto 0.5rem;
+  padding: 2.25rem clamp(1.25rem, 4vw, 3rem);
+  background: #fff;
+  border: 1px solid rgba(30,58,95,0.12);
+  border-top: 3px solid #b8944b;
+}
+body.page-id-115 .tc-eval-brief__inner { max-width: 42rem; }
+body.page-id-115 .tc-eval-brief p,
+body.page-id-115 .tc-eval-brief h3,
+body.page-id-115 .tc-eval-brief a {
+  font-family: Inter, sans-serif;
+}
+body.page-id-115 .tc-eval-brief h3 {
+  font-family: "Playfair Display", serif !important;
+  font-size: 1.7rem !important;
+  font-weight: 600 !important;
+  color: #1e3a5f !important;
+  margin: 0 0 1rem !important;
+}
+body.page-id-115 .tc-eval-brief p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #1f1f1f;
+  margin: 0 0 0.9rem;
+}
+body.page-id-115 .tc-eval-brief__link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #1e3a5f !important;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  border-bottom: 1px solid #b8944b;
+}
+
+body.page-id-115 .tc-final-word {
+  background: #f8f4ec;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 2.5rem clamp(1.25rem, 4vw, 3rem) 3rem;
+}
+body.page-id-115 .tc-final-word .wp-block-heading {
+  margin: 0 0 1rem !important;
+  font-family: "Playfair Display", serif !important;
+  font-size: clamp(1.8rem, 3vw, 2.35rem) !important;
+  color: #1e3a5f !important;
+}
+body.page-id-115 .tc-final-word p {
+  max-width: 42rem;
+  font-family: Inter, sans-serif !important;
+  font-size: 1.05rem !important;
+  line-height: 1.7 !important;
+  color: #1f1f1f !important;
+}
+
+@media (max-width: 780px) {
+  body.page-id-115 .tc-tech-intro-split { flex-direction: column !important; }
+  body.page-id-115 .tc-tech-intro-split > .wp-block-column:first-child,
+  body.page-id-115 .tc-tech-intro-split > .wp-block-column:last-child {
+    flex-basis: 100% !important;
+  }
+  body.page-id-115 .tc-tech-stats { grid-template-columns: 1fr; }
+  body.page-id-115 .tc-tech-explore-row { flex-direction: column !important; }
+  body.page-id-115 .tc-tech-explore-row > .tc-explore-hub { min-height: 320px !important; }
+}
+
+.editor-styles-wrapper .tc-tech-explore-row > .tc-explore-hub > .wp-block-image,
+.editor-styles-wrapper .tc-tech-explore-row > .tc-explore-hub > figure {
+  position: relative !important;
+  inset: auto !important;
+  height: auto !important;
+}
+.editor-styles-wrapper .tc-tech-explore-row > .tc-explore-hub > .wp-block-image img,
+.editor-styles-wrapper .tc-tech-explore-row > .tc-explore-hub > figure img {
+  height: auto !important;
+  max-height: 280px !important;
+  object-fit: cover !important;
+}
+.editor-styles-wrapper .tc-tech-explore-row > .tc-explore-hub > h3,
+.editor-styles-wrapper .tc-tech-explore-row > .tc-explore-hub > .wp-block-heading {
+  position: static !important;
+  transform: none !important;
+  width: auto !important;
+  color: #1e3a5f !important;
+  text-shadow: none !important;
+  pointer-events: auto !important;
+  margin: 0.75rem 0 0 !important;
+}
+.editor-styles-wrapper .tc-tech-cover > .tc-tech-cover__media,
+.editor-styles-wrapper .tc-tech-cover > figure.tc-tech-cover__media {
+  position: relative !important;
+  inset: auto !important;
+  height: auto !important;
+}
+.editor-styles-wrapper .tc-tech-cover > .tc-tech-cover__media img {
+  height: auto !important;
+  max-height: 360px !important;
+  filter: none !important;
+}
+.editor-styles-wrapper .tc-tech-cover > .tc-tech-cover__content {
+  position: static !important;
+  min-height: 0 !important;
+  padding: 1.25rem 0 !important;
+}
+.editor-styles-wrapper .tc-tech-cover .wp-block-heading,
+.editor-styles-wrapper .tc-tech-cover h1 {
+  color: #1e3a5f !important;
+}
+</style>
+<!-- /wp:html -->
+
+<!-- wp:group {"align":"full","className":"tc-tech-cover","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull tc-tech-cover"><!-- wp:image {"id":4830,"sizeSlug":"full","linkDestination":"none","align":"full","className":"tc-tech-cover__media"} -->
+<figure class="wp-block-image alignfull size-full tc-tech-cover__media"><img loading="eager" src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/06/Untitled-1200-x-800-px-1900-x-1080-px-1900-x-1080-px-1.png" alt="Smart Lighting hub" class="wp-image-4830"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:group {"className":"tc-tech-cover__content","layout":{"type":"constrained"}} -->
+<div class="wp-block-group tc-tech-cover__content"><!-- wp:paragraph {"className":"tc-tech-cover__brand"} -->
+<p class="tc-tech-cover__brand">Truth Collective</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">Smart Lighting</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><a class="tc-tech-cover__cta" href="#tc-light-categories">Explore the categories ›</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"tc-tech-intro-prose","layout":{"type":"constrained"}} -->
+<div class="wp-block-group tc-tech-intro-prose"><!-- wp:paragraph {"className":"tc-hub-eyebrow"} -->
+<p class="tc-hub-eyebrow">Welcome to the</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"className":"tc-hub-hero-title"} -->
+<h2 class="wp-block-heading tc-hub-hero-title">Smart <em>Lighting</em></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"tc-hub-hero-lead"} -->
+<p class="tc-hub-hero-lead">Lighting is one of the most underestimated upgrades a home or office can make. The right light, at the right time, in the right color removes friction from how you work, rest, recover, and live. Every category below has been reviewed against the Truth Collective Trusted Selection Standards before it earns a place here.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"tc-hub-hero-lead"} -->
+<p class="tc-hub-hero-lead">Circadian systems, smart bulbs, controls, security lighting, and advanced indoor and outdoor fixtures are organized by use, not by brand. Start with the category that matches what you need most, then build outward.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"className":"tc-tech-meta-row","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+<div class="wp-block-group tc-tech-meta-row"><!-- wp:paragraph -->
+<p>By Truth Collective Editorial · Updated 2026</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><a href="https://tcstaging.truth-collective.com/product-selection-standards/">Reviewed against our Trusted Selection Standards →</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:html -->
+<div class="tc-tech-stats" aria-label="Smart Lighting highlights">
+  <div class="tc-tech-stats__item">
+    <p class="tc-tech-stats__label">Reviewed and Graded</p>
+    <p class="tc-tech-stats__value">Trusted Selection Standards</p>
+  </div>
+  <div class="tc-tech-stats__item">
+    <p class="tc-tech-stats__label">Five Categories</p>
+    <p class="tc-tech-stats__value">Home, office, and wellness</p>
+  </div>
+  <div class="tc-tech-stats__item">
+    <p class="tc-tech-stats__label">Always Current</p>
+    <p class="tc-tech-stats__value">Continuously updated</p>
+  </div>
+</div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<!-- TC EVALUATION STANDARDS - SMART LIGHTING HUB -->
+<section style="background:#f8f9fa;border-top:3px solid #b8944b;padding:48px 24px;margin:48px 0;">
+  <div style="max-width:860px;margin:0 auto;">
+    <p style="font-family:'Inter',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.25em;text-transform:uppercase;color:#b8944b;margin-bottom:12px;">
+      How We Evaluate Smart Lighting
+    </p>
+    <h3 style="font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:#1e3a5f;margin-bottom:16px;">
+      Light Is Not an Aesthetic Decision. It Is an Engineering One.
+    </h3>
+    <p style="font-family:'Inter',sans-serif;font-size:15px;color:#374151;line-height:1.8;margin-bottom:14px;">
+      Every product in the Smart Lighting hub is evaluated against IES photometric standards and CIE circadian lighting criteria. A minimum Color Rendering Index of 90+ is required for recommendation, without exception. Products are assessed for color temperature accuracy, dimming compatibility, smart protocol support, and electrical safety compliance under UL, ETL, FCC, and DOE ENERGY STAR frameworks.
+    </p>
+    <p style="font-family:'Inter',sans-serif;font-size:15px;color:#374151;line-height:1.8;margin-bottom:14px;">
+      Stage I disqualifies any product that cannot document photometric accuracy or that fails basic electrical safety certification. Stage II scores performance numerically across circadian alignment, driver quality, color accuracy, and integration capability. The scoring model weights component engineering at 30%. In lighting, that means driver materials, dimmer circuit quality, and semiconductor grade.
+    </p>
+    <p style="font-family:'Inter',sans-serif;font-size:15px;color:#374151;line-height:1.8;margin-bottom:28px;">
+      What is marketed as smart lighting and what meets IES and CIE standards are frequently different products. This hub only contains the ones that passed both.
+    </p>
+    <a href="https://tcstaging.truth-collective.com/6751-2/" rel="noopener" style="display:inline-block;background:#1e3a5f;color:#b8944b;font-family:'Inter',sans-serif;font-size:13px;font-weight:700;padding:11px 26px;border-radius:5px;text-decoration:none;letter-spacing:0.04em;">
+      View Full Evaluation Standards
+    </a>
+  </div>
+</section>
+<!-- /wp:html -->
+
+<!-- wp:group {"className":"tc-hub-prose-section tc-who","layout":{"type":"constrained"}} -->
+<div class="wp-block-group tc-hub-prose-section tc-who"><!-- wp:paragraph {"className":"tc-section-eyebrow"} -->
+<p class="tc-section-eyebrow">Audience</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Who This Is For</h2>
+<!-- /wp:heading --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"tc-hub-prose-section tc-why","layout":{"type":"constrained"}} -->
+<div class="wp-block-group tc-hub-prose-section tc-why"><!-- wp:paragraph {"className":"tc-section-eyebrow"} -->
+<p class="tc-section-eyebrow">Purpose</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Why This Matters</h2>
+<!-- /wp:heading --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"tc-hub-prose-section tc-best-uses","layout":{"type":"constrained"}} -->
+<div class="wp-block-group tc-hub-prose-section tc-best-uses"><!-- wp:paragraph {"className":"tc-section-eyebrow"} -->
+<p class="tc-section-eyebrow">When to use this hub</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Best Uses</h2>
+<!-- /wp:heading --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"tc-tech-cat-section","layout":{"type":"constrained"}} -->
+<div id="tc-light-categories" class="wp-block-group tc-tech-cat-section"><!-- wp:paragraph {"className":"tc-tech-cat-kicker"} -->
+<p class="tc-tech-cat-kicker">Browse by category</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"className":"tc-tech-cat-heading"} -->
+<h2 class="wp-block-heading tc-tech-cat-heading">Smart Lighting Categories</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"tc-tech-cat-lead"} -->
+<p class="tc-tech-cat-lead">Five paths. Each one reviewed against the Truth Collective Trusted Selection Standards before it earns a place here.</p>
+<!-- /wp:paragraph -->
+
+
+<!-- wp:columns {"className":"tc-tech-explore-row is-layout-flex wp-block-columns-is-layout-flex"} -->
+<div class="wp-block-columns tc-tech-explore-row is-layout-flex wp-block-columns-is-layout-flex"><!-- wp:column {"width":"50%","className":"tc-explore-hub"} -->
+<div class="wp-block-column tc-explore-hub" style="flex-basis:50%"><!-- wp:image {"lightbox":{"enabled":false},"id":4864,"sizeSlug":"full","linkDestination":"custom"} -->
+<figure class="wp-block-image size-full"><a href="https://tcstaging.truth-collective.com/smart-lighting/smart-bulbs-light-strips/"><img loading="eager" src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/06/Untitled-1200-x-800-px-1900-x-1080-px-1900-x-1080-px-1200-x-800-px-1900-x-1080-px.png" alt="Smart bulbs and light strips" class="wp-image-4864"/></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Smart Bulbs and Light Strips</h3>
+<!-- /wp:heading --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"50%","className":"tc-explore-hub"} -->
+<div class="wp-block-column tc-explore-hub" style="flex-basis:50%"><!-- wp:image {"lightbox":{"enabled":false},"id":4836,"sizeSlug":"full","linkDestination":"custom"} -->
+<figure class="wp-block-image size-full"><a href="https://tcstaging.truth-collective.com/smart-lighting/smart-ai-lighting-devices/"><img loading="eager" src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/06/Untitled-1200-x-800-px-1900-x-1080-px-1900-x-1080-px-1200-x-800-px-1200-x-800-px-1.png" alt="Smart AI lighting and rechargeable devices" class="wp-image-4836"/></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Smart AI Lighting Devices</h3>
+<!-- /wp:heading --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+<!-- wp:columns {"className":"tc-tech-explore-row is-layout-flex wp-block-columns-is-layout-flex"} -->
+<div class="wp-block-columns tc-tech-explore-row is-layout-flex wp-block-columns-is-layout-flex"><!-- wp:column {"width":"50%","className":"tc-explore-hub"} -->
+<div class="wp-block-column tc-explore-hub" style="flex-basis:50%"><!-- wp:image {"lightbox":{"enabled":false},"id":5051,"sizeSlug":"full","linkDestination":"custom"} -->
+<figure class="wp-block-image size-full"><a href="https://tcstaging.truth-collective.com/smart-lighting/smart-lighting-controls/"><img loading="eager" src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/06/Untitled-800-x-1000-px-1264-x-1264-px-1264-x-1264-px-1900-x-1080-px.png" alt="Smart lighting controls" class="wp-image-5051"/></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Smart Lighting Controls</h3>
+<!-- /wp:heading --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"50%","className":"tc-explore-hub"} -->
+<div class="wp-block-column tc-explore-hub" style="flex-basis:50%"><!-- wp:image {"lightbox":{"enabled":false},"id":5102,"sizeSlug":"full","linkDestination":"custom"} -->
+<figure class="wp-block-image size-full"><a href="https://tcstaging.truth-collective.com/smart-lighting/smart-security-lighting-and-cameras/"><img loading="eager" src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/06/Untitled-design-16.png" alt="Smart security lighting and cameras" class="wp-image-5102"/></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Smart Security Lighting and Cameras</h3>
+<!-- /wp:heading --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+<!-- wp:columns {"className":"tc-tech-explore-row is-layout-flex wp-block-columns-is-layout-flex"} -->
+<div class="wp-block-columns tc-tech-explore-row is-layout-flex wp-block-columns-is-layout-flex"><!-- wp:column {"width":"50%","className":"tc-explore-hub"} -->
+<div class="wp-block-column tc-explore-hub" style="flex-basis:50%"><!-- wp:image {"lightbox":{"enabled":false},"id":5444,"sizeSlug":"full","linkDestination":"custom"} -->
+<figure class="wp-block-image size-full"><a href="https://tcstaging.truth-collective.com/smart-lighting/advanced-lighting/"><img loading="eager" src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/06/Meditative-Circadian-Lighting-1380-x-1080-px-1380-x-1080-px.png" alt="Advanced indoor and outdoor lighting" class="wp-image-5444"/></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Advanced Lighting</h3>
+<!-- /wp:heading --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:block {"ref":2847} /-->
+
+<!-- wp:html -->
+<section class="tc-eval-brief" id="tc-eval-brief">
+  <div class="tc-eval-brief__inner">
+    <p class="tc-section-eyebrow">How We Evaluate Smart Lighting</p>
+    <h3>Nothing Here Got In Because It Was Popular.</h3>
+    <p>Every path on this page is reviewed against the Truth Collective Trusted Selection Standards. Lighting earns a place by supporting work, rest, and safety, not by novelty.</p>
+    <a class="tc-eval-brief__link" href="https://tcstaging.truth-collective.com/6751-2/" rel="noopener">View Full Evaluation Standards</a>
+  </div>
+</section>
+<!-- /wp:html -->
+
+<!-- wp:group {"className":"tc-final-word","layout":{"type":"constrained"}} -->
+<div class="wp-block-group tc-final-word"><!-- wp:paragraph {"className":"tc-section-eyebrow"} -->
+<p class="tc-section-eyebrow">Closing</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Final Word</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The Smart Lighting hub holds five trusted paths, each selected and reviewed against the same standard. Better light supports clearer work, calmer evenings, and safer spaces. Nothing makes the list by novelty alone. It earns a place by proving useful, reliable, and worth your trust.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:block {"ref":2870} /-->
+
+<!-- wp:block {"ref":7532} /-->
