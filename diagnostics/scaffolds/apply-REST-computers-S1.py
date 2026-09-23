@@ -454,11 +454,12 @@ def build(live: str, mapping: dict[str, tuple[int, str]]) -> str:
     print(f"replaced_cards {n}")
     html = split_intro(html)
 
-    hero_src = "https://tcstaging.truth-collective.com/wp-content/uploads/2026/07/Facebook-Cover-AI-Agentic-Advances-and-Emerging-Technologies-1000-x-1000-px-1.png"
-    hero = f"""<!-- wp:image {{"id":8233,"sizeSlug":"full","linkDestination":"none","align":"full","className":"tc-tech-cover__media"}} -->
-<figure class="wp-block-image alignfull size-full tc-tech-cover__media"><img src="{hero_src}" alt="Computers and Digital Devices" class="wp-image-8233"/></figure>
+    hero_src = "https://tcstaging.truth-collective.com/wp-content/uploads/2026/08/Untitled-1600-x-1000-px-13.png"
+    hero = f"""<!-- wp:image {{"id":8313,"sizeSlug":"full","linkDestination":"none","align":"full","className":"tc-tech-cover__media"}} -->
+<figure class="wp-block-image alignfull size-full tc-tech-cover__media"><img src="{hero_src}" alt="Computers and Digital Devices" class="wp-image-8313" loading="eager"/></figure>
 <!-- /wp:image -->"""
     html = re.sub(
+        r"<!-- wp:image \{[^}]*\"id\":8233[\s\S]*?<!-- /wp:image -->|"
         r"<!-- wp:html -->\s*<figure class=\"tc-tech-cover__media\">.*?</figure>\s*<!-- /wp:html -->\s*\n\n<!-- wp:paragraph \{\"className\":\"tc-dim-note\"\} -->\s*<p class=\"tc-dim-note\">.*?</p>\s*<!-- /wp:paragraph -->",
         hero,
         html,
@@ -607,14 +608,34 @@ def main() -> None:
         backup.write_text(live)
         print(f"backup {backup} chars={len(live)}")
 
-    new = build(live, mapping)
+    if MARKER in live:
+        # Idempotent: refresh CSS + hero only on an already-S1 page.
+        css_live = live
+        start = css_live.find('<style id="tc-computers-s1">')
+        end = css_live.find("</style>", start)
+        if start < 0 or end < 0:
+            die("S1 style block missing on an already-patched page.")
+        new = css_live[:start] + f'<style id="tc-computers-s1">\n{CSS.strip()}\n</style>' + css_live[end + 8 :]
+        hero_src = "https://tcstaging.truth-collective.com/wp-content/uploads/2026/08/Untitled-1600-x-1000-px-13.png"
+        new = re.sub(
+            r'<!-- wp:image \{[^}]*"id":8233[\s\S]*?<!-- /wp:image -->',
+            f'<!-- wp:image {{"id":8313,"sizeSlug":"full","linkDestination":"none","align":"full","className":"tc-tech-cover__media"}} -->\n'
+            f'<figure class="wp-block-image alignfull size-full tc-tech-cover__media"><img src="{hero_src}" alt="Computers and Digital Devices" class="wp-image-8313" loading="eager"/></figure>\n'
+            f'<!-- /wp:image -->',
+            new,
+            count=1,
+        )
+        print("mode patch-existing")
+    else:
+        new = build(live, mapping)
+        print("mode full-rebuild")
     if MARKER not in new:
         die("Marker missing.")
     if "tc-explore-hub" in new:
         die("explore-hub leaked onto Computers products.")
     if new.count("tc-overlay-card-product") < 20:
         die("Product overlay classes missing.")
-    if "wp-image-8233" not in new:
+    if "wp-image-8313" not in new and "wp-image-8233" not in new:
         die("Hero photo missing.")
     if 'ref":7532' not in new:
         die("Social pattern missing.")
