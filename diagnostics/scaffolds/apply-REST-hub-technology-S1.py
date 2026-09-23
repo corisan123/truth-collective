@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
-"""REST-hub-technology-S1: Technology Hub parent structure pass.
+"""REST-hub-technology-S1c: Technology Hub parent until this page is correct.
 
-Assembly order (locked): hero, intro, stats, Who This Is For, Why This Matters,
-Best Uses, listings, governance pattern, evaluation above Final Word, Final Word,
-Explore Other Hubs, social last.
-
-No Additional CSS write. No grayscale. Staging only.
+Follows website-settings Additional CSS: overlay-card on the column,
+explore-hub on the image, title rises to top 28px above centered EXPLORE.
+Fills Who / Why / Best from existing hub copy. Staging only. No Additional CSS write.
 """
 from __future__ import annotations
 
@@ -24,9 +22,28 @@ BASE = os.environ.get("STAGING", "https://tcstaging.truth-collective.com").rstri
 ROOT = Path(__file__).resolve().parents[2]
 BACKUP_DIR = ROOT / "diagnostics" / "backups"
 CSS_PATH = Path(__file__).with_name("REST-hub-technology-S1.css")
-TICKET = "REST-hub-technology-S1"
+TICKET = "REST-hub-technology-S1c"
 TODAY = date.today().isoformat()
 MARKER = "TC STAGING PATCH TECH-HUB-S1"
+COMPUTERS_URL = f"{BASE}/technology-hub/computers-digital-devices/"
+
+# Pre-10Web / existing hub copy. No invented stats.
+TILE_BLURBS = {
+    "Computers and Digital Devices": "Laptops, desktops, and the devices that carry the day.",
+    "Monitors and Displays": "Displays graded for clarity, comfort, and long work sessions.",
+    "Audio and Video": "Workspace audio and video selected for clear signal, not clutter.",
+    "Headphones and Headsets": "From deep work focus to clear communication to hearing safety, the right audio gear matters. Reviewed and ranked across studio, office, and active environments.",
+    "Desk Speakers": "Desk and office speakers chosen for clean, controlled sound.",
+    "Projectors and Microphones": "Projection and microphone tools for rooms that need to be heard.",
+    "Digital Smart Tablets": "For thinkers, artists, planners, and professionals. Tablets, digital writing devices, and creative tools that capture ideas the moment they arrive.",
+    "Interactive Digital Displays": "Beyond standard monitors, digital displays for presentations, conference rooms, video walls, and creative installations. Built for scale and visual impact.",
+    "Emerging Technologies": "Tools still in their early days. A curated look at the real technologies entering the market and reshaping how work, learning, and creativity will happen next.",
+    "AI Wearables": "The wearable layer of artificial intelligence. AR glasses, smart rings, AI pins, biometric sensors, and the devices quietly changing how we work and live.",
+}
+HOLD_TITLES = {
+    "Emerging Technologies": COMPUTERS_URL,
+    "AI Wearables": COMPUTERS_URL,
+}
 
 CHILD_URLS = [
     f"{BASE}/technology-hub/computers-digital-devices/",
@@ -124,6 +141,7 @@ def build(live: str) -> str:
     cat = cat.replace('alt="" class="wp-image-8320"', 'alt="AI Wearables" class="wp-image-8320"')
     cat = cat.replace(' loading="lazy"', "")
     cat = re.sub(r"<img(?![^>]*loading=)", '<img loading="eager"', cat)
+    cat = rewrite_tiles(cat)
 
     eval_ps = re.findall(
         r'(<p style="font-family:\'Inter\',sans-serif;font-size:15px;color:#374151;line-height:1\.8;margin-bottom:\d+px;">.*?</p>)',
@@ -148,7 +166,13 @@ def build(live: str) -> str:
     final_inner = re.sub(r"^<p[^>]*>", "", final_p.group(0))
     final_inner = re.sub(r"</p>$", "", final_inner)
 
-    def shell(eyebrow: str, heading: str, class_name: str) -> str:
+    def shell(eyebrow: str, heading: str, class_name: str, body: str) -> str:
+        paras = "\n\n".join(
+            f"""<!-- wp:paragraph -->
+<p>{p}</p>
+<!-- /wp:paragraph -->"""
+            for p in body
+        )
         return f"""<!-- wp:group {{"className":"tc-hub-prose-section {class_name}","layout":{{"type":"constrained"}}}} -->
 <div class="wp-block-group tc-hub-prose-section {class_name}"><!-- wp:paragraph {{"className":"tc-section-eyebrow"}} -->
 <p class="tc-section-eyebrow">{eyebrow}</p>
@@ -156,7 +180,9 @@ def build(live: str) -> str:
 
 <!-- wp:heading -->
 <h2 class="wp-block-heading">{heading}</h2>
-<!-- /wp:heading --></div>
+<!-- /wp:heading -->
+
+{paras}</div>
 <!-- /wp:group -->"""
 
     intro = f"""<!-- wp:group {{"className":"tc-tech-intro-prose","layout":{{"type":"constrained"}}}} -->
@@ -258,11 +284,35 @@ def build(live: str) -> str:
         "",
         stats,
         "",
-        shell("Audience", "Who This Is For", "tc-who"),
+        shell(
+            "Audience",
+            "Who This Is For",
+            "tc-who",
+            [
+                "This hub is for people choosing computers, displays, audio, and the supporting tools that shape daily work and creative life.",
+                "Start with the category that matches what you need most, then move outward to the tools that complete the setup.",
+            ],
+        ),
         "",
-        shell("Purpose", "Why This Matters", "tc-why"),
+        shell(
+            "Purpose",
+            "Why This Matters",
+            "tc-why",
+            [
+                "Every category on this page has been reviewed and graded against the Truth Collective Trusted Selection Standards before it earns a place here.",
+                "We do not list everything available. We list what we trust, selected for build quality, daily usefulness, and long term value.",
+            ],
+        ),
         "",
-        shell("When to use this hub", "Best Uses", "tc-best-uses"),
+        shell(
+            "When to use this hub",
+            "Best Uses",
+            "tc-best-uses",
+            [
+                "Use this hub by need, not by brand. Daily essentials that hold work together sit beside tools that lift performance or open a new way of working.",
+                "Each published category leads to a dedicated page where products are ranked, graded, and explained. Emerging Technologies and AI Wearables stay on this grid and currently open the Computers page, where those listings already live, until dedicated child pages exist.",
+            ],
+        ),
         "",
         cat,
         "",
@@ -280,12 +330,182 @@ def build(live: str) -> str:
     return "\n".join(parts)
 
 
+def filled_shell(eyebrow: str, heading: str, class_name: str, body: list[str]) -> str:
+    paras = "\n\n".join(
+        f"""<!-- wp:paragraph -->
+<p>{p}</p>
+<!-- /wp:paragraph -->"""
+        for p in body
+    )
+    return f"""<!-- wp:group {{"className":"tc-hub-prose-section {class_name}","layout":{{"type":"constrained"}}}} -->
+<div class="wp-block-group tc-hub-prose-section {class_name}"><!-- wp:paragraph {{"className":"tc-section-eyebrow"}} -->
+<p class="tc-section-eyebrow">{eyebrow}</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">{heading}</h2>
+<!-- /wp:heading -->
+
+{paras}</div>
+<!-- /wp:group -->"""
+
+
+def rewrite_tiles(html: str) -> str:
+    """Move explore-hub onto the image, overlay-card onto the column, restore blurbs."""
+
+    def add_explore_on_image(block: str) -> str:
+        if '"className":"tc-explore-hub"' not in block:
+            block = block.replace(
+                '"linkDestination":"custom"} -->',
+                '"linkDestination":"custom","className":"tc-explore-hub"} -->',
+                1,
+            )
+            block = block.replace(
+                '"linkDestination":"none"} -->',
+                '"linkDestination":"custom","className":"tc-explore-hub"} -->',
+                1,
+            )
+        if "tc-explore-hub" not in block.split("<!-- /wp:image -->")[0]:
+            die("Could not put tc-explore-hub on the image comment")
+        block = block.replace(
+            '<figure class="wp-block-image size-full">',
+            '<figure class="wp-block-image size-full tc-explore-hub">',
+            1,
+        )
+        block = block.replace(
+            '<figure class="wp-block-image size-full tc-explore-hub tc-explore-hub">',
+            '<figure class="wp-block-image size-full tc-explore-hub">',
+        )
+        return block
+
+    def add_blurb(block: str, title: str) -> str:
+        blurb = TILE_BLURBS.get(title)
+        if not blurb:
+            die(f"No existing blurb mapped for tile {title!r}")
+        if blurb in block:
+            return block
+        heading_end = block.find("<!-- /wp:heading -->")
+        if heading_end < 0:
+            die(f"Tile heading close missing for {title!r}")
+        insert_at = heading_end + len("<!-- /wp:heading -->")
+        para = f"""
+
+<!-- wp:paragraph -->
+<p>{blurb}</p>
+<!-- /wp:paragraph -->"""
+        return block[:insert_at] + para + block[insert_at:]
+
+    def link_hold(block: str, title: str) -> str:
+        url = HOLD_TITLES.get(title)
+        if not url:
+            return block
+        if f'href="{url}"' in block:
+            return block
+        img = re.search(r"<img\b[^>]*>", block)
+        if not img:
+            die(f"Hold tile {title!r} has no img")
+        if "<a " in block[img.start() - 80 : img.end() + 20]:
+            return block
+        wrapped = f'<a href="{url}">{img.group(0)}</a>'
+        return block[: img.start()] + wrapped + block[img.end() :]
+
+    pattern = re.compile(
+        r'<!-- wp:column \{"width":"50%","className":"tc-(?:explore-hub|overlay-card)"\} -->'
+        r".*?"
+        r"<!-- /wp:column -->",
+        re.S,
+    )
+
+    def one(m: re.Match) -> str:
+        block = m.group(0)
+        title_m = re.search(
+            r'<h3 class="wp-block-heading has-text-align-center">(.*?)</h3>',
+            block,
+        )
+        if not title_m:
+            die("Explore tile missing h3 title")
+        title = title_m.group(1)
+        block = block.replace(
+            '{"width":"50%","className":"tc-explore-hub"}',
+            '{"width":"50%","className":"tc-overlay-card"}',
+        )
+        block = block.replace(
+            '<div class="wp-block-column tc-explore-hub"',
+            '<div class="wp-block-column tc-overlay-card"',
+        )
+        block = add_explore_on_image(block)
+        block = link_hold(block, title)
+        block = add_blurb(block, title)
+        if "tc-overlay-card" not in block or "tc-explore-hub" not in block:
+            die(f"Class split failed for {title!r}")
+        return block
+
+    new, n = pattern.subn(one, html)
+    if n != 10:
+        die(f"Expected 10 hub tiles, rewrote {n}")
+    return new
+
+
+def replace_shells(html: str) -> str:
+    shells = [
+        (
+            "tc-who",
+            filled_shell(
+                "Audience",
+                "Who This Is For",
+                "tc-who",
+                [
+                    "This hub is for people choosing computers, displays, audio, and the supporting tools that shape daily work and creative life.",
+                    "Start with the category that matches what you need most, then move outward to the tools that complete the setup.",
+                ],
+            ),
+        ),
+        (
+            "tc-why",
+            filled_shell(
+                "Purpose",
+                "Why This Matters",
+                "tc-why",
+                [
+                    "Every category on this page has been reviewed and graded against the Truth Collective Trusted Selection Standards before it earns a place here.",
+                    "We do not list everything available. We list what we trust, selected for build quality, daily usefulness, and long term value.",
+                ],
+            ),
+        ),
+        (
+            "tc-best-uses",
+            filled_shell(
+                "When to use this hub",
+                "Best Uses",
+                "tc-best-uses",
+                [
+                    "Use this hub by need, not by brand. Daily essentials that hold work together sit beside tools that lift performance or open a new way of working.",
+                    "Each published category leads to a dedicated page where products are ranked, graded, and explained. Emerging Technologies and AI Wearables stay on this grid and currently open the Computers page, where those listings already live, until dedicated child pages exist.",
+                ],
+            ),
+        ),
+    ]
+    new = html
+    for class_name, replacement in shells:
+        pat = re.compile(
+            rf'<!-- wp:group \{{"className":"tc-hub-prose-section {class_name}".*?'
+            rf"<!-- /wp:group -->",
+            re.S,
+        )
+        new, n = pat.subn(replacement, new, count=1)
+        if n != 1:
+            die(f"Could not replace {class_name} shell ({n})")
+    return new
+
+
 def patch_existing(live: str, css: str) -> str:
     start = live.find('<style id="tc-tech-hub-s1">')
     end = live.find("</style>", start)
     if start < 0 or end < 0:
         die("S1 style block missing on an already-patched page.")
     new = live[:start] + f'<style id="tc-tech-hub-s1">\n{css.strip()}\n</style>' + live[end + 8 :]
+    new = replace_shells(new)
+    new = rewrite_tiles(new)
 
     def eager(tag: str) -> str:
         if "loading=" in tag:
@@ -326,8 +546,18 @@ def main() -> None:
         die("Marker missing from built HTML.")
     if "tc-explore-hub" not in new or "tc-eval-brief" not in new:
         die("Required classes missing from built HTML.")
+    if new.count("className\":\"tc-overlay-card\"") != 10:
+        die(f"Expected 10 overlay columns, got {new.count('className\":\"tc-overlay-card\"')}")
     if new.count("tc-explore-hub") < 10:
         die("Explore tiles missing.")
+    if "bottom: 46% !important" in new or "bottom:46% !important" in new:
+        die("Invented 46 percent hover still present.")
+    if "top: 28px" not in new:
+        die("Overlay hover top:28px missing from page CSS.")
+    if "We do not list everything available" not in new:
+        die("Who/Why/Best still empty.")
+    if 'href="' + COMPUTERS_URL + '"' not in new:
+        die("Emerging/AI Wearables hold link to Computers missing.")
     if "figure a" not in css or "loading=\"eager\"" not in new:
         die("S1b tile-fill markers missing.")
 

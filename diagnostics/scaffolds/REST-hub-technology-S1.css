@@ -213,6 +213,14 @@ body.page-id-111 .tc-hub-prose-section .wp-block-heading {
   font-weight: 600 !important;
   color: #1e3a5f !important;
 }
+body.page-id-111 .tc-hub-prose-section p:not(.tc-section-eyebrow) {
+  max-width: 42rem;
+  font-family: Inter, sans-serif !important;
+  font-size: 1.02rem !important;
+  line-height: 1.7 !important;
+  color: #1f1f1f !important;
+  margin: 0.65rem 0 0 !important;
+}
 
 /* Listings */
 body.page-id-111 .tc-tech-cat-section {
@@ -249,47 +257,65 @@ body.page-id-111 .tc-tech-explore-row {
   align-items: stretch !important;
   max-width: none !important;
 }
-body.page-id-111 .tc-tech-explore-row > .tc-explore-hub {
+/*
+  Gutenberg adapter for Additional CSS (website settings), page 111 only.
+  Pre-10Web markup: tc-overlay-card on the column, tc-explore-hub on the image.
+  Kadence .kt-inside-inner-col is absent here, so these selectors mirror:
+    STAGING TEST 02 overlay title (rest bottom, hover top:28px)
+    TC Explore Hub ::after EXPLORE on the image
+    Combined overlay+explore: following p rolls to bottom:26px, not onto the pill
+  Do not park the title on the centered EXPLORE pill. Overlay hover is top 28px.
+*/
+body.page-id-111 .tc-tech-explore-row > .tc-overlay-card {
   flex: 1 1 50% !important;
   position: relative !important;
   min-height: 460px !important;
   overflow: hidden !important;
-  box-shadow: 0 8px 22px rgba(30, 58, 95, 0.10);
+  background: #1f1f1f !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.10) !important;
   margin: 0 !important;
+  transition: box-shadow 300ms ease, transform 300ms ease !important;
 }
-body.page-id-111 .tc-tech-explore-row > .tc-explore-hub > .wp-block-image,
-body.page-id-111 .tc-tech-explore-row > .tc-explore-hub > figure {
+body.page-id-111 .tc-tech-explore-row > .tc-overlay-card > .wp-block-image,
+body.page-id-111 .tc-tech-explore-row > .tc-overlay-card > figure {
   position: absolute !important;
   inset: 0 !important;
   margin: 0 !important;
   width: 100% !important;
   height: 100% !important;
   z-index: 1 !important;
+  overflow: hidden !important;
+  min-height: 0 !important;
+  box-shadow: none !important;
+  transform: none !important;
 }
-body.page-id-111 .tc-tech-explore-row > .tc-explore-hub > .wp-block-image a,
-body.page-id-111 .tc-tech-explore-row > .tc-explore-hub > figure a {
+body.page-id-111 .tc-tech-explore-row > .tc-overlay-card > .wp-block-image a,
+body.page-id-111 .tc-tech-explore-row > .tc-overlay-card > figure a {
   display: block !important;
   position: absolute !important;
   inset: 0 !important;
   width: 100% !important;
   height: 100% !important;
 }
-body.page-id-111 .tc-tech-explore-row > .tc-explore-hub > .wp-block-image img,
-body.page-id-111 .tc-tech-explore-row > .tc-explore-hub > figure img {
+body.page-id-111 .tc-tech-explore-row > .tc-overlay-card > .wp-block-image img,
+body.page-id-111 .tc-tech-explore-row > .tc-overlay-card > figure img {
   display: block !important;
   width: 100% !important;
   height: 100% !important;
   object-fit: cover !important;
+  transition: transform 600ms ease, filter 350ms ease !important;
 }
-body.page-id-111 .tc-tech-explore-row > .tc-explore-hub > h3,
-body.page-id-111 .tc-tech-explore-row > .tc-explore-hub > .wp-block-heading {
+body.page-id-111 .tc-tech-explore-row > .tc-overlay-card > h3,
+body.page-id-111 .tc-tech-explore-row > .tc-overlay-card > .wp-block-heading {
   position: absolute !important;
-  left: 50% !important;
-  bottom: 28px !important;
-  z-index: 3 !important;
-  width: calc(100% - 48px) !important;
+  left: 24px !important;
+  right: 24px !important;
+  bottom: 24px !important;
+  top: auto !important;
+  z-index: 5 !important;
+  width: auto !important;
   margin: 0 !important;
-  transform: translateX(-50%) !important;
+  transform: none !important;
   color: #fff !important;
   font-family: "Playfair Display", serif !important;
   font-weight: 400 !important;
@@ -297,20 +323,69 @@ body.page-id-111 .tc-tech-explore-row > .tc-explore-hub > .wp-block-heading {
   text-shadow: 0 2px 12px rgba(0,0,0,0.65) !important;
   pointer-events: none !important;
   opacity: 1 !important;
+  transition: bottom 350ms ease, top 350ms ease, opacity 350ms ease !important;
 }
-body.page-id-111 .tc-tech-explore-row > .tc-explore-hub::after,
-body.page-id-111 .tc-tech-explore-row > .tc-explore-hub::before {
+body.page-id-111 .tc-tech-explore-row > .tc-overlay-card > p {
+  position: absolute !important;
+  left: 28px !important;
+  right: 28px !important;
+  top: auto !important;
+  bottom: 26px !important;
+  transform: none !important;
+  z-index: 3 !important;
+  margin: 0 !important;
+  color: #ffffff !important;
+  font-family: Inter, system-ui, sans-serif !important;
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+  text-align: center !important;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.6) !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  display: block !important;
+  transition: opacity 300ms ease 80ms !important;
+}
+body.page-id-111 .tc-tech-explore-row > .tc-overlay-card > .tc-explore-hub::after,
+body.page-id-111 .tc-tech-explore-row > .tc-overlay-card > .tc-explore-hub::before,
+body.page-id-111 .tc-tech-explore-row > .tc-overlay-card > .wp-block-image.tc-explore-hub::after,
+body.page-id-111 .tc-tech-explore-row > .tc-overlay-card > .wp-block-image.tc-explore-hub::before,
+body.page-id-111 .tc-tech-explore-row > .tc-overlay-card > figure.tc-explore-hub::after,
+body.page-id-111 .tc-tech-explore-row > .tc-overlay-card > figure.tc-explore-hub::before {
   z-index: 4 !important;
 }
 @media (hover: hover) and (pointer: fine) {
-  body.page-id-111 .tc-tech-explore-row > .tc-explore-hub:hover > .wp-block-image img,
-  body.page-id-111 .tc-tech-explore-row > .tc-explore-hub:hover > figure img {
-    filter: brightness(0.82) !important;
+  body.page-id-111 .tc-tech-explore-row > .tc-overlay-card:hover {
+    box-shadow: 0 12px 34px rgba(0,0,0,0.20) !important;
+    transform: translateY(-4px) !important;
   }
-  body.page-id-111 .tc-tech-explore-row > .tc-explore-hub:hover > h3,
-  body.page-id-111 .tc-tech-explore-row > .tc-explore-hub:hover > .wp-block-heading {
-    bottom: 46% !important;
+  body.page-id-111 .tc-tech-explore-row > .tc-overlay-card:hover > .wp-block-image,
+  body.page-id-111 .tc-tech-explore-row > .tc-overlay-card:hover > figure,
+  body.page-id-111 .tc-tech-explore-row > .tc-overlay-card:hover > .tc-explore-hub {
+    transform: none !important;
+  }
+  body.page-id-111 .tc-tech-explore-row > .tc-overlay-card:hover > .wp-block-image img,
+  body.page-id-111 .tc-tech-explore-row > .tc-overlay-card:hover > figure img {
+    transform: scale(1.05) !important;
+    filter: brightness(0.6) !important;
+  }
+  body.page-id-111 .tc-tech-explore-row > .tc-overlay-card:hover > h3,
+  body.page-id-111 .tc-tech-explore-row > .tc-overlay-card:hover > .wp-block-heading {
+    bottom: auto !important;
+    top: 28px !important;
     opacity: 1 !important;
+  }
+  body.page-id-111 .tc-tech-explore-row > .tc-overlay-card:hover > p {
+    opacity: 1 !important;
+  }
+}
+@media (max-width: 767px), (hover: none) {
+  body.page-id-111 .tc-tech-explore-row > .tc-overlay-card > p {
+    opacity: 1 !important;
+  }
+  body.page-id-111 .tc-tech-explore-row > .tc-overlay-card > h3,
+  body.page-id-111 .tc-tech-explore-row > .tc-overlay-card > .wp-block-heading {
+    bottom: 18px !important;
+    top: auto !important;
   }
 }
 
@@ -383,24 +458,24 @@ body.page-id-111 .tc-final-word p {
   }
   body.page-id-111 .tc-tech-stats { grid-template-columns: 1fr; }
   body.page-id-111 .tc-tech-explore-row { flex-direction: column !important; }
-  body.page-id-111 .tc-tech-explore-row > .tc-explore-hub { min-height: 320px !important; }
+  body.page-id-111 .tc-tech-explore-row > .tc-overlay-card { min-height: 320px !important; }
 }
 
 /* Editor: images selectable for Replace */
-.editor-styles-wrapper .tc-tech-explore-row > .tc-explore-hub > .wp-block-image,
-.editor-styles-wrapper .tc-tech-explore-row > .tc-explore-hub > figure {
+.editor-styles-wrapper .tc-tech-explore-row > .tc-overlay-card > .wp-block-image,
+.editor-styles-wrapper .tc-tech-explore-row > .tc-overlay-card > figure {
   position: relative !important;
   inset: auto !important;
   height: auto !important;
 }
-.editor-styles-wrapper .tc-tech-explore-row > .tc-explore-hub > .wp-block-image img,
-.editor-styles-wrapper .tc-tech-explore-row > .tc-explore-hub > figure img {
+.editor-styles-wrapper .tc-tech-explore-row > .tc-overlay-card > .wp-block-image img,
+.editor-styles-wrapper .tc-tech-explore-row > .tc-overlay-card > figure img {
   height: auto !important;
   max-height: 280px !important;
   object-fit: cover !important;
 }
-.editor-styles-wrapper .tc-tech-explore-row > .tc-explore-hub > h3,
-.editor-styles-wrapper .tc-tech-explore-row > .tc-explore-hub > .wp-block-heading {
+.editor-styles-wrapper .tc-tech-explore-row > .tc-overlay-card > h3,
+.editor-styles-wrapper .tc-tech-explore-row > .tc-overlay-card > .wp-block-heading {
   position: static !important;
   transform: none !important;
   width: auto !important;
@@ -408,6 +483,12 @@ body.page-id-111 .tc-final-word p {
   text-shadow: none !important;
   pointer-events: auto !important;
   margin: 0.75rem 0 0 !important;
+}
+.editor-styles-wrapper .tc-tech-explore-row > .tc-overlay-card > p {
+  position: static !important;
+  opacity: 1 !important;
+  color: #1f1f1f !important;
+  text-shadow: none !important;
 }
 .editor-styles-wrapper .tc-tech-cover > .tc-tech-cover__media,
 .editor-styles-wrapper .tc-tech-cover > figure.tc-tech-cover__media {
