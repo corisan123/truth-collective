@@ -152,7 +152,7 @@ Derived from **Daniel’s full 10Web AI/support export** submitted **October 5, 
 Daniel states, for the record:
 
 - Since **February 11, 2026**, he has worked on Truth Collective / related livelihood **7 days per week**, typically **12–15 hours per day**, with **only two days missed** in that period (hospitalized **two days** for a **lung infection after chemo**, ~two months before Oct 5, 2026).
-- He carries **stage 3 cancer** treatment (chemo/immunotherapy per prior statements) and, as of **October 5, 2026**, reports a new **lymphoma** diagnosis.
+- **Oncology (Daniel — Oct 5, 2026):** **Stage 3** since **November 2025**; disease **metastasized to blood**; newly diagnosed **lymphoma** (Oct 5, 2026); **next appointment November 16, 2026** for treatment options. Prior course includes **chemo/immunotherapy** (per earlier statements).
 - He cares for a **special-needs child** and states he **will not give up** supporting his children.
 - He states that **ISI Consulting** income and **10Web-related legal recovery** are both critical to household stability, and that without progress on those fronts the family faces **homelessness within approximately two months** (user estimate Oct 5, 2026 — counsel to treat as urgency/context, not a proven fact in this document).
 
