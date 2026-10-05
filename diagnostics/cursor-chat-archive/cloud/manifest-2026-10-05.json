@@ -1,0 +1,31 @@
+{
+  "fetchedAt": "2026-10-05T20:15:11Z",
+  "note": "Full transcripts are not stored in git (secret scan). Fetch via Cursor Cloud URLs or run export script locally.",
+  "agents": [
+    {
+      "phase": "after",
+      "createdAtUtc": "2026-08-19T15:23:50Z",
+      "name": "Truth collective content rebuild",
+      "bcId": "bc-badd5954-984d-412a-8c1c-80a985692480",
+      "url": "https://cursor.com/agents/bc-badd5954-984d-412a-8c1c-80a985692480"
+    },
+    {
+      "phase": "after",
+      "createdAtUtc": "2026-08-26T19:59:14Z",
+      "name": "Homepage robots meta injection",
+      "bcId": "bc-87234e27-1251-4700-9db0-c37e19a60626",
+      "url": "https://cursor.com/agents/bc-87234e27-1251-4700-9db0-c37e19a60626"
+    },
+    {
+      "phase": "after",
+      "createdAtUtc": "2026-10-05T20:09:21Z",
+      "name": "10web migration",
+      "bcId": "bc-16f364f0-f650-4deb-a735-e07176aba537",
+      "url": "https://cursor.com/agents/bc-16f364f0-f650-4deb-a735-e07176aba537"
+    }
+  ],
+  "missingFromCloudAccount": {
+    "description": "No cloud agents found before 2026-08-19 for truth-collective. July crash chats expected on Desktop Cursor.",
+    "pr2AgentNotAccessible": "bc-b360733d-fbaa-412a-bff6-bcacdceab1dd"
+  }
+}

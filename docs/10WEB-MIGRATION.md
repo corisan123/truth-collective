@@ -86,6 +86,8 @@ Full step list: **`docs/TC-STAGING-TO-LIVE-MIGRATION.md`**.
 
 ## Related files
 
+- **`docs/CURSOR-CHAT-PRESERVATION-10WEB-CRASH.md`** — how to find/save Before/During/After Cursor chats (July crash + ticket #375660)
+- `diagnostics/cursor-chat-archive/` — redacted Cloud Agent transcripts; Desktop exports go under `desktop/`
 - `STAGING-RECOVERY-HANDOFF.md` — crash recovery, `10web_tmp`, CSS layer history
 - `docs/TC-LAUNCH-ROADMAP.md` — master phase order
 - `docs/TC-STANDING-BRIEF.md` — §1 (10Web/Vercel visual reference), §6 (migration summary), §13–14
