@@ -23,7 +23,7 @@ Read first (repo):
 HISTORY (locked facts Daniel confirmed):
 - Earlier LIVE disaster (months before July 2026): non-Cursor AI converted overlay/Tailwind-style work into WordPress/CSS badly; live truth-collective.com still idle/broken; ~17 URLs indexed in GSC from an older version.
 - Rebuild on STAGING: Daniel rebuilt at scale on tcstaging (thousands of pages/items in inventory; hub/page repair is incremental).
-- 10Web (from ~7/25/2026): sold polish + WordPress migration; migration failed/disconnected; AI Builder produced wrong/fake site; user explicitly required real WP migration from https://tcstaging.truth-collective.com — not AI Builder (see docs/10WEB-SUPPORT-TRANSCRIPT-TIMELINE.md). Early August 2026: 10Web-related damage + restores (handoff: uploads Jul 24 era, DB Jul 28, files Aug 1). Ticket #375660 — do not block recovery on 10Web.
+- 10Web (from ~7/25/2026): sold polish + WordPress migration; migration failed/disconnected; AI Builder produced wrong/fake site; user explicitly required real WP migration from https://tcstaging.truth-collective.com — not AI Builder (see docs/10WEB-SUPPORT-TRANSCRIPT-TIMELINE.md). Early August 2026: 10Web-related damage inside WordPress; Daniel (8/9/26) states damage could not be rolled back and affected even pre-10Web backups — forward repair only (see docs/exhibits/CLAUDE-2026-08-09-10WEB-DAMAGE-AND-SPECS.md). Handoff also logs restores Jul 24 / Jul 28 / Aug 1. Ticket #375660 — do not block recovery on 10Web.
 
 SCOPE — staging only:
 - URL: https://tcstaging.truth-collective.com
