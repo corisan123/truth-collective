@@ -102,6 +102,95 @@ Email support with approximate dates (Jul 2026), “Truth Collective WordPress,�
 - Major Cursor upgrades without a **full User folder zip** first (community reports DB format changes)  
 - **Continuing** the July agent session and letting it apply CSS/HTML changes again  
 
+### Windows + ISI Consulting + lawsuit preservation (Daniel)
+
+**Will this break ISI Consulting Desktop?** Not if you follow **copy-only, read-only** steps. ISI and Truth Collective live in **separate** subfolders under `workspaceStorage\<hash>\`. Searching or exporting Truth Collective chats does **not** modify ISI’s folder. The risky actions are deleting folders, editing `state.vscdb` in place, or **continuing** old agent chats—not opening history or exporting.
+
+**Windows paths (live — do not edit files here during forensic copy):**
+
+| Item | Path |
+|------|------|
+| All workspaces + chat DB | `%APPDATA%\Cursor\User\` |
+| Per-project chat storage | `%APPDATA%\Cursor\User\workspaceStorage\<hash>\` |
+| Which folder is which project | `%APPDATA%\Cursor\User\workspaceStorage\<hash>\workspace.json` |
+
+Typical full path: `C:\Users\<YourName>\AppData\Roaming\Cursor\User\`
+
+#### Step W1 — Forensic snapshot first (best for litigation chain of custody)
+
+Do this **before** any searching. **Quit Cursor** (File → Exit; confirm no Cursor in Task Manager → Processes).
+
+1. Copy the entire folder `%APPDATA%\Cursor\User\` to e.g.  
+   `D:\Legal-Exhibits\2026-10-05-cursor-user-FORENSIC-COPY\`  
+   (external drive or separate partition—not inside the live Roaming tree).
+2. Zip that copy: `2026-10-05-cursor-user-FORENSIC.zip`.
+3. Record a hash (PowerShell):
+
+   ```powershell
+   certutil -hashfile "D:\Legal-Exhibits\2026-10-05-cursor-user-FORENSIC.zip" SHA256
+   ```
+
+   Save the SHA256 line in a text file `hash-manifest.txt` with date and your name. Give your attorney **the zip + hash**; treat the zip as **read-only** (do not unzip back over live Cursor).
+
+4. Re-open Cursor normally. ISI Consulting should behave exactly as before.
+
+#### Step W2 — Find Truth Collective vs ISI workspace folders (on the **copy only**)
+
+PowerShell (point `$root` at your **forensic copy**, not live `%APPDATA%`):
+
+```powershell
+$root = "D:\Legal-Exhibits\2026-10-05-cursor-user-FORENSIC-COPY\workspaceStorage"
+Get-ChildItem $root -Directory | ForEach-Object {
+  $wj = Join-Path $_.FullName "workspace.json"
+  if (Test-Path $wj) {
+    $json = Get-Content $wj -Raw
+    if ($json -match "truth-collective|truth-collective.com|tcstaging|ISI|isi") {
+      [PSCustomObject]@{ Hash = $_.Name; workspaceJson = $json.Substring(0, [Math]::Min(200, $json.Length)) }
+    }
+  }
+}
+```
+
+Truth Collective / Hostinger / WordPress chats are usually under the hash whose `workspace.json` mentions your site repo, Hostinger path, or `public_html`. ISI Consulting will be a **different** hash—leave it untouched.
+
+Search chat text on the **copy**:
+
+```powershell
+$copy = "D:\Legal-Exhibits\2026-10-05-cursor-user-FORENSIC-COPY\workspaceStorage"
+Get-ChildItem $copy -Recurse -Filter "state.vscdb" | ForEach-Object { $_.FullName }
+# Then search strings in that workspace folder (not SQLite write):
+findstr /s /i /m "10web tenweb migration 375660 Hostinger overlay tc-explore" "$copy\*.*"
+```
+
+#### Step W3 — In-app export (safest for day-to-day; do on live Cursor)
+
+1. Open Cursor (ISI can stay your current workspace—switch workspace only to open Truth Collective **if** you still have that folder on disk).
+2. **File → Open Recent** or open the Truth Collective repo folder if it exists locally.
+3. Chat history → search: `10web`, `375660`, `migration`, `10WEB Manager`, `Hostinger`, `overlay`, `Jul 24`, `restore`, `truth-collective`.
+4. Open each thread → scroll only → **Export Transcript** → save to  
+   `D:\Legal-Exhibits\cursor-exports\YYYY-MM-DD__BEFORE|DURING|AFTER__title.md`  
+   **Do not send a new message** in those threads.
+
+Repeat for **three phases** you care about for 10Web:
+
+| Phase | What to look for in titles / first messages |
+|-------|---------------------------------------------|
+| **Before** | 10Web signup, subdomain, datacenter, Manager plugin, “migrate your website,” DNS, comparing Vercel/10Web |
+| **During** | Migration running, plugin steps, Cursor drafting emails/tickets to 10Web, Hostinger vs 10Web |
+| **After** | Broken site, EXPLORE/crop, Jul 24 restore, ticket #375660, “crash,” overlay/CSS damage |
+
+#### Step W4 — Windows File History / Previous Versions
+
+If enabled: right-click `%APPDATA%\Cursor\User` → **Properties → Previous Versions** (or File History). Restore a **July 2026** snapshot to `D:\Legal-Exhibits\cursor-user-from-July-2026\`, not over today’s folder.
+
+#### Step W5 — Cursor support (litigation supplement)
+
+Email support: request retention/export for Desktop chats **June–August 2026**, keywords Truth Collective, 10Web migration. Keep the ticket number in your exhibit index.
+
+**Not legal advice:** Confirm exhibit format and chain-of-custody rules with your attorney. This doc is a technical preservation checklist only.
+
+---
+
 ### Step A — Search chat history in the app
 
 1. On the **same machine** you used for WordPress work in July 2026, open **Cursor**.
