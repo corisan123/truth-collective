@@ -68,6 +68,19 @@ This document is a **chronological index** for counsel. Full verbatim transcript
 
 ---
 
+## Cursor relay evidence (separate exhibits)
+
+Daniel needs **Cursor Desktop** transcripts (not this file) where Cursor:
+
+- Drafted **prompts to paste to 10Web** (pre-migration checklist + **do not** instructions).
+- Reacted to **migration failure** (~8 days, disconnect, reconnect).
+- Documented **damage after migration appeared complete** (~2 weeks post–7/25).
+
+Search playbook: **`docs/CURSOR-10WEB-RELAY-EVIDENCE-SEARCH.md`**.  
+Legal theory: **Cursor instructed → user relayed → 10Web chat shows disregard** (pair Exhibit C-* with Exhibit T-*).
+
+---
+
 ## Cursor’s role (for separation of claims)
 
 | Topic | Note |
