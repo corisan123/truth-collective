@@ -254,6 +254,7 @@ Bundle these with chat exports for 10Web ticket **#375660**:
 | CSS inventory | `diagnostics/css-inventory-2026-08-08.md` |
 | Computers page notes | `diagnostics/computers-page-2026-08-08.md` |
 | Page HTML before REST edits | `diagnostics/backups/page-*-2026-08-*.html` |
+| 10Web ticket + AI chat | **`docs/10WEB-SUPPORT-TRANSCRIPT-TIMELINE.md`** + full export in `J:\…\10web-correspondence\` |
 | 10Web ticket | Hostinger/10Web portal **#375660** emails and attachments |
 | Hostinger backups | hPanel backup logs around **Jul 24–28, 2026** |
 
