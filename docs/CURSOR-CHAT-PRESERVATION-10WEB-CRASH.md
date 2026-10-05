@@ -33,12 +33,74 @@ These are **after** the July crash, but save them anyway for a complete record.
 
 1. Open each URL while logged in as Daniel.
 2. Scroll the full thread (Cloud UI is the source of truth).
-3. **Redacted JSON mirrors** (no raw secrets) live in `diagnostics/cursor-chat-archive/cloud/*.transcript.redacted.json` after you merge the preservation PR.
+3. **Do not push raw transcripts to GitHub** — they embed tokens. Use `diagnostics/cursor-chat-archive/redact-transcript.py`, then store redacted files on **Google Drive** (or a private repo). See `diagnostics/cursor-chat-archive/cloud/manifest-2026-10-05.json` for agent URLs.
 4. **Note:** Desktop **Export Transcript** does **not** work for Cloud Agent chats (Cursor shows a message to that effect). Use the web UI + JSON archive above, or ask Cursor support for a full export if you need tool-call detail.
 
 ---
 
 ## Part 2 — Desktop Cursor chats (where the July session likely lives)
+
+### Policy vs. forensic search (Truth Collective rules)
+
+Your operating rules say **new work** = **Cloud Agents** on the `truth-collective` repo + **staging WP REST only**. That still allows **read-only** recovery of old **Desktop** threads:
+
+| Allowed (forensic) | Not allowed (risk repeating the crash) |
+|--------------------|----------------------------------------|
+| Open old Desktop chats **read-only**, scroll, **Export Transcript** | **Continue** an old Desktop thread and ask it to edit live WP, Additional CSS, or run restores |
+| Search history by keyword; copy text to Google Drive | Paste old Desktop instructions into wp-admin or Hostinger without Cloud + REST gates |
+| Copy `Cursor/User/` to a zip **while Cursor is quit**; search the **copy** | Edit, vacuum, or “repair” `state.vscdb` **in place** while Cursor is running |
+| New fixes via Cloud Agent + Standing Brief + REST | Treat Desktop export as authority to bypass §13 order or Migration Brief stop points |
+
+**Rule of thumb:** Desktop July chats are **evidence** for ticket #375660. **Cloud + REST** is **execution** for anything that touches the site today.
+
+### Safe desktop search (lowest corruption risk → higher effort)
+
+**Option 1 — In-app only (safest)**  
+1. Open Cursor on the **same machine** as July 2026.  
+2. Use **chat history** (clock/history icon or command palette: search for “history” / “previous chats”).  
+3. Search keywords (below); open a thread **without** sending a new message.  
+4. **Export Transcript** (right-click chat tab or `⋯` on tab → Export Transcript).  
+5. **Quit that chat**; do not click Continue / resend / run agent on it.
+
+Does not touch SQLite on disk. Does not conflict with cloud-only **new** work.
+
+**Option 2 — Filesystem backup, then search the copy (still safe)**  
+1. **Quit Cursor completely** (check no Cursor icon in menu bar / system tray).  
+2. Copy (do **not** move) the whole folder:  
+   - macOS: `~/Library/Application Support/Cursor/User/`  
+   - Windows: `%APPDATA%\Cursor\User\`  
+3. Paste to e.g. `~/Desktop/cursor-user-readonly-copy-2026-10-05/`.  
+4. On the **copy only**, search with read-only tools, e.g. macOS/Linux:
+
+   ```bash
+   grep -ril "10web\|tc-explore\|Jul 24\|migration" \
+     ~/Desktop/cursor-user-readonly-copy-2026-10-05/workspaceStorage/
+   ```
+
+   Or open a copy of `state.vscdb` with SQLite **read-only**:
+
+   ```bash
+   sqlite3 "file:/path/to/copy/state.vscdb?mode=ro" "SELECT name FROM sqlite_master WHERE type='table';"
+   ```
+
+5. Note which `workspaceStorage/<hash>/` folder hits; open **that** chat in Cursor via history (Option 1) using the title/date you infer—do not rename or delete workspace folders in the **live** Cursor directory.
+
+**Option 3 — Time Machine / File History (safe if you restore to a new path)**  
+Restore `Cursor/User` from **July or August 2026** to a **different folder** (not over your current `User`). Search that tree like Option 2. Never replace today’s only copy without a fresh backup of today first.
+
+**Option 4 — Third-party exporters (use only on a copy)**  
+Tools such as **cursor-history** or **cursor-chat-export** read `state.vscdb`. Forum reports some break on Cursor 3.x. If you use them: **only on the Option 2 copy**, never on live `User` while Cursor is open.
+
+**Option 5 — Cursor support**  
+Email support with approximate dates (Jul 2026), “Truth Collective WordPress,” and request whether Desktop chat retention/export is available for your account/plan.
+
+### What corrupts or loses Desktop history (avoid)
+
+- Deleting chats or “clearing” workspace storage in the live `User` tree  
+- Editing `state.vscdb` with DB browsers on the **live** file  
+- Running Cursor twice against a **moved** (not copied) `User` folder  
+- Major Cursor upgrades without a **full User folder zip** first (community reports DB format changes)  
+- **Continuing** the July agent session and letting it apply CSS/HTML changes again  
 
 ### Step A — Search chat history in the app
 
