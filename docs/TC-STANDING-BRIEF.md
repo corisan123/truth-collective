@@ -134,7 +134,7 @@ Internal links: up to parent, down to children, sideways 3–4 siblings. Externa
 
 ## §6 — Staging → live migration (summary)
 
-Full plan: `docs/brand-references/TC_Cursor_Migration_Brief.docx`
+Full plan: `docs/TC-STAGING-TO-LIVE-MIGRATION.md` (mirror of `docs/brand-references/TC_Cursor_Migration_Brief.docx`). 10Web exit gates: `docs/10WEB-MIGRATION.md`.
 
 - Goal: exact working copy; **preserve**, do not improve/refactor animations or Additional CSS
 - Back up staging + live + export Additional CSS text before any live touch

@@ -119,6 +119,14 @@ Goal: run the audit only when navigation and templates are trustworthy.
 
 Gate: audit clean enough for launch per Daniel.
 
+## Phase H0 — 10Web decommission (optional, Daniel-gated)
+
+Goal: remove 10Web Manager and hosting residue on Hostinger once Daniel approves. Does not replace staging repair.
+
+See **`docs/10WEB-MIGRATION.md` Track A**. Do not deactivate 10WEB Manager until Daniel explicitly asks (historical ticket #375660). Confirm live vs staging plugin state in wp-admin before removal.
+
+Gate: Daniel approval; staging spot-checks pass after 24–48h stable post-deactivate.
+
 ## Phase H — Pre migration freeze and backups
 
 Goal: a safe, reversible migration starting point.
