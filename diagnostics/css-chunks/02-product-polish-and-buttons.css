@@ -1,0 +1,92 @@
+/* =============================================================================
+   STAGING PATCH 02-PRODUCT POLISH - TITLE LEGIBILITY + BUTTON HEIGHT MATCH
+   Append-only. Sits BELOW the overflow fix and does not alter it.
+   Scoped to .tc-overlay-card-product only.
+   1. Resting title white with soft shadow, readable on any product image
+   2. View and TC Grade forced to equal height, content centered, no slack
+
+   NOTE vs earlier 02A protected extract: that used align-items:end on buttons;
+   this polish uses align-items:stretch. Later "TC PRODUCT OVERLAY BUTTONS"
+   is intended as single source of truth for product buttons.
+============================================================================= */
+/* 1. Title readable at rest on any image (overrides the navy rule above) */
+.entry-content .tc-overlay-card-product .kt-inside-inner-col > h3.wp-block-heading,
+.entry-content .tc-overlay-card-product .kt-inside-inner-col > h3.wp-block-heading a {
+  color: #ffffff !important;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.80), 0 0 2px rgba(0,0,0,0.55) !important;
+}
+/* Optional reliability boost: soft bottom scrim behind the resting title.
+   Delete these three lines if you want shadow only. Scoped to product, does
+   not touch the base .tc-overlay-card scrim used on hub pages. */
+.tc-overlay-card-product::before {
+  background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 42%) !important;
+}
+/* 2. Equal-height buttons, content centered, no empty space below stars */
+.tc-overlay-card-product .tc-overlay-buttons {
+  align-items: stretch !important;
+}
+.tc-overlay-card-product .tc-overlay-buttons > .tc-affiliate-btn,
+.tc-overlay-card-product .tc-overlay-buttons > .tc-grade-btn {
+  min-height: 0 !important;
+  height: auto !important;
+  align-self: stretch !important;
+}
+.tc-overlay-card-product .tc-overlay-buttons > .tc-affiliate-btn {
+  align-items: center !important;
+  justify-content: center !important;
+}
+.tc-overlay-card-product .tc-overlay-buttons > .tc-grade-btn {
+  justify-content: center !important;
+}
+/* End STAGING PATCH 02-PRODUCT POLISH */
+/* =============================================================================
+   TC PRODUCT OVERLAY BUTTONS - SINGLE SOURCE OF TRUTH
+   Replaces every earlier product button block. Does NOT touch the overflow
+   fix or base .tc-overlay-card. The stars sat above the box because the base
+   ".tc-grade-block { margin:14px 0 }" pushes them out; this zeroes it and lets
+   the box grow to fit so content can never overflow upward.
+============================================================================= */
+.entry-content .tc-overlay-card-product .tc-overlay-buttons {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  align-items: stretch !important;
+  gap: 6px !important;
+}
+.entry-content .tc-overlay-card-product .tc-overlay-buttons > .tc-affiliate-btn,
+.entry-content .tc-overlay-card-product .tc-overlay-buttons > .tc-grade-btn {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  align-self: stretch !important;
+  height: auto !important;
+  min-height: 36px !important;
+  padding: 4px 8px !important;
+  margin: 0 !important;
+  font-size: 11px !important;
+  line-height: 1 !important;
+  box-sizing: border-box !important;
+  overflow: visible !important;
+}
+.entry-content .tc-overlay-card-product .tc-overlay-buttons > .tc-grade-btn {
+  flex-direction: column !important;
+  gap: 2px !important;
+}
+.entry-content .tc-overlay-card-product .tc-overlay-buttons > .tc-grade-btn > * {
+  margin: 0 !important;
+}
+.entry-content .tc-overlay-card-product .tc-overlay-buttons > .tc-grade-btn > span:not(.tc-grade-block) {
+  font-size: 10px !important;
+  line-height: 1 !important;
+}
+.entry-content .tc-overlay-card-product .tc-overlay-buttons > .tc-grade-btn > .tc-grade-block {
+  height: 10px !important;
+  width: 58px !important;
+  min-width: 58px !important;
+  flex: 0 0 58px !important;
+  margin: 0 !important;
+  background-size: 11.6px 10px !important;
+}
+.entry-content .tc-overlay-card-product .tc-overlay-buttons > .tc-grade-btn > .tc-grade-block::after {
+  background-size: 11.6px 10px !important;
+}
+/* End TC PRODUCT OVERLAY BUTTONS */

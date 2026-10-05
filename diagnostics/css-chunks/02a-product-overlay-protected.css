@@ -1,0 +1,29 @@
+/* PROTECTED — STAGING PATCH 02A family / product overlay settled behavior
+   Daniel 2026-08-08: important; do not disable or “improve” during recovery.
+   Source: Appearance → Customize → Additional CSS (partial extract)
+*/
+
+/* --- 1. CARD SHAPE: near-square, cover fill --- */
+.tc-overlay-card-product {
+  min-height: 0 !important;
+  aspect-ratio: 1 / 1 !important;
+  background: #1f1f1f !important;
+  align-self: start !important;
+  z-index: 1 !important;
+}
+
+.tc-overlay-card-product:hover {
+  z-index: 5 !important;
+}
+
+/* --- 3b. BUTTON HEIGHT: size to content, stop stretch --- */
+.tc-overlay-card-product .tc-overlay-buttons {
+  align-items: end !important;
+}
+
+.tc-overlay-card-product .tc-overlay-buttons > .tc-affiliate-btn,
+.tc-overlay-card-product .tc-overlay-buttons > .tc-grade-btn {
+  min-height: 0 !important;
+  height: auto !important;
+  align-self: end !important;
+}

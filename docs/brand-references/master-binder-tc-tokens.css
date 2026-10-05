@@ -1,0 +1,58 @@
+/* Extracted tokens/layout from Copilot Task "Master Binder" artifact.
+   Reference only — do not paste wholesale into WP Additional CSS.
+   Prefer Master Brief locked hex when conflicting:
+   navy #1e3a5f · gold #b8944b · cream #f8f4ec / #faf9f6
+*/
+:root {
+  --navy: #0d1f3c;
+  --navy-light: #1a3a5c;
+  --gold: #c9a84c;
+  --gold-light: #fffbf0;
+  --white: #ffffff;
+  --alt-bg: #f4f6f9;
+  --border: #b0b8c4;
+  --text: #1a1a1a;
+  --muted: #5a6577;
+  --red: #a93226;
+  --green: #117a65;
+}
+
+/* Signature UI pieces in the binder */
+.doc-panel {
+  max-width: 920px;
+  margin: 0 auto 32px;
+  background: white;
+  border-radius: 8px;
+  padding: 40px 48px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+h1.doc-title {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  color: var(--navy);
+  font-weight: 800;
+}
+h2.section-title {
+  font-size: 19px;
+  color: var(--navy);
+  font-weight: 700;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--gold);
+}
+hr.gold-rule {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+.callout-gold {
+  border-left: 4px solid var(--gold);
+  background: var(--gold-light);
+}
+.monitor-card .card-header {
+  background: var(--navy);
+  color: white;
+}
+.monitor-card .card-rank {
+  background: var(--gold);
+  color: var(--navy);
+}

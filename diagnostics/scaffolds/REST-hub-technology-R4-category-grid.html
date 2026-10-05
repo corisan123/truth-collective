@@ -1,0 +1,288 @@
+<!-- wp:html -->
+<!-- TC STAGING PATCH TECH-HUB-CREAM-R4: cream 3-col category grid; migrate style to Additional CSS later -->
+<style id="tc-tech-hub-cream-r4">
+
+body.page-id-111 .site-content,
+body.page-id-111 .ast-container,
+body.page-id-111 .entry-content {
+  background: #f8f4ec !important;
+}
+body.page-id-111 .tc-tech-hero-shell {
+  background: #f8f4ec !important;
+  max-width: none !important;
+}
+body.page-id-111 .tc-tech-hero-split {
+  align-items: stretch !important;
+  gap: 0 !important;
+  margin: 0 !important;
+  min-height: 420px;
+}
+body.page-id-111 .tc-tech-hero-rail {
+  background: #1e3a5f !important;
+  padding: 2.75rem 1.75rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+}
+body.page-id-111 .tc-tech-hero-rail__brand {
+  position: relative;
+  padding-bottom: 0.85rem;
+}
+body.page-id-111 .tc-tech-hero-rail__brand::after {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 2px;
+  background: #b8944b;
+  margin-top: 0.85rem;
+}
+body.page-id-111 .tc-tech-hero-copy {
+  background: #f8f4ec !important;
+  padding: 2.75rem 2.5rem !important;
+}
+body.page-id-111 .tc-hub-hero-title {
+  color: #1e3a5f !important;
+  font-family: "Playfair Display", serif !important;
+  font-weight: 600 !important;
+}
+body.page-id-111 .tc-hub-hero-title em,
+body.page-id-111 .tc-hub-hero-title__hub {
+  color: #b8944b !important;
+  font-style: italic !important;
+}
+body.page-id-111 .tc-hub-hero-lead {
+  color: #334155 !important;
+  max-width: 38rem;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  margin: 0 0 1rem !important;
+}
+body.page-id-111 .tc-tech-meta-row {
+  border-top: 1px solid rgba(30,58,95,0.12);
+  padding: 0.85rem 1.5rem 1.25rem !important;
+  gap: 0.75rem;
+}
+body.page-id-111 .tc-tech-meta-row a {
+  color: #1e3a5f !important;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+body.page-id-111 .tc-tech-secondary {
+  background: #f8f4ec !important;
+}
+body.page-id-111 .tc-hub-secondary-title {
+  font-family: "Playfair Display", serif !important;
+  color: #1e3a5f !important;
+}
+/* Lighter category hover on this hub only — do not touch global 02A product patch */
+body.page-id-111 .tc-explore-hub:hover,
+body.page-id-111 .tc-overlay-card:hover {
+  transform: translateY(-4px);
+}
+body.page-id-111 .tc-explore-hub::after,
+body.page-id-111 .tc-explore-hero::after {
+  opacity: 0.55 !important;
+  letter-spacing: 0.12em !important;
+}
+@media (max-width: 781px) {
+  body.page-id-111 .tc-tech-hero-split { min-height: 0; }
+  body.page-id-111 .tc-tech-hero-rail { min-height: 140px; }
+}
+
+/* R4 — cream 3-col category grid (page 111 only). No tc-overlay-card on these tiles. */
+body.page-id-111 .tc-tech-cat-section {
+  background: #f8f4ec !important;
+  padding: 2.5rem 1.25rem 3.5rem !important;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+body.page-id-111 .tc-tech-cat-kicker {
+  color: #b8944b !important;
+  letter-spacing: 0.16em;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  font-family: Inter, sans-serif;
+  margin: 0 0 0.75rem !important;
+}
+body.page-id-111 .tc-tech-cat-heading {
+  font-family: "Playfair Display", serif !important;
+  color: #1e3a5f !important;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 0 0.75rem !important;
+  line-height: 1.15;
+}
+body.page-id-111 .tc-tech-cat-lead {
+  color: #334155 !important;
+  max-width: 36rem;
+  font-size: 1.02rem;
+  line-height: 1.6;
+  margin: 0 0 2rem !important;
+}
+body.page-id-111 .tc-tech-cat-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.35rem;
+}
+body.page-id-111 .tc-tech-cat-tile {
+  position: relative;
+  display: block;
+  text-decoration: none !important;
+  color: inherit;
+  background: #fffef9;
+  border: 1px solid rgba(30, 58, 95, 0.08);
+  overflow: hidden;
+  min-height: 0;
+  transition: transform 320ms ease, box-shadow 320ms ease;
+  animation: tcTechCatRise 700ms ease both;
+}
+body.page-id-111 .tc-tech-cat-tile:nth-child(2) { animation-delay: 60ms; }
+body.page-id-111 .tc-tech-cat-tile:nth-child(3) { animation-delay: 120ms; }
+body.page-id-111 .tc-tech-cat-tile:nth-child(4) { animation-delay: 180ms; }
+body.page-id-111 .tc-tech-cat-tile:nth-child(5) { animation-delay: 240ms; }
+body.page-id-111 .tc-tech-cat-tile:nth-child(6) { animation-delay: 300ms; }
+body.page-id-111 .tc-tech-cat-tile:nth-child(7) { animation-delay: 360ms; }
+body.page-id-111 .tc-tech-cat-tile:nth-child(8) { animation-delay: 420ms; }
+@keyframes tcTechCatRise {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  body.page-id-111 .tc-tech-cat-tile { animation: none; }
+}
+body.page-id-111 .tc-tech-cat-tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 28px rgba(30, 58, 95, 0.12);
+}
+body.page-id-111 .tc-tech-cat-tile__media {
+  display: block;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: #e8e2d6;
+}
+body.page-id-111 .tc-tech-cat-tile__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 400ms ease, filter 400ms ease;
+}
+body.page-id-111 .tc-tech-cat-tile:hover .tc-tech-cat-tile__media img {
+  transform: scale(1.03);
+  filter: brightness(0.92);
+}
+body.page-id-111 .tc-tech-cat-tile__body {
+  padding: 1rem 1.05rem 1.15rem;
+}
+body.page-id-111 .tc-tech-cat-tile__title {
+  font-family: "Playfair Display", serif !important;
+  color: #1e3a5f !important;
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0 0 0.4rem !important;
+}
+body.page-id-111 .tc-tech-cat-tile__blurb {
+  color: #475569 !important;
+  font-size: 0.92rem;
+  line-height: 1.45;
+  margin: 0 0 0.75rem !important;
+}
+body.page-id-111 .tc-tech-cat-tile__explore {
+  color: #b8944b !important;
+  font-family: Inter, sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+body.page-id-111 .tc-tech-cat-tile:hover .tc-tech-cat-tile__explore {
+  color: #1e3a5f !important;
+}
+@media (max-width: 900px) {
+  body.page-id-111 .tc-tech-cat-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 560px) {
+  body.page-id-111 .tc-tech-cat-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  body.page-id-111 .tc-tech-cat-section {
+    padding: 1.75rem 1rem 2.5rem !important;
+  }
+}
+
+</style>
+<section class="tc-tech-cat-section" aria-label="Technology Hub categories">
+  <p class="tc-tech-cat-kicker">Browse by category</p>
+  <h2 class="tc-tech-cat-heading">Technology Hub Categories</h2>
+  <p class="tc-tech-cat-lead">Eight paths. Each one reviewed against the Truth Collective Trusted Selection Standards before it earns a place here.</p>
+  <div class="tc-tech-cat-grid">
+  <a class="tc-tech-cat-tile" href="https://tcstaging.truth-collective.com/technology-hub/computers-digital-devices/">
+    <span class="tc-tech-cat-tile__media"><img src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/06/Untitled-1000-x-1188-px-1000-x-1188-px-1900-x-1080-px-1000-x-800-px-400-x-400-px-270-x-270-px-1000-x-1188-px-1.png" alt="Computers and Digital Devices" loading="lazy" decoding="async" /></span>
+    <span class="tc-tech-cat-tile__body">
+      <span class="tc-tech-cat-tile__title">Computers and Digital Devices</span>
+      <span class="tc-tech-cat-tile__blurb">Laptops, desktops, and the devices that carry the day.</span>
+      <span class="tc-tech-cat-tile__explore">Explore</span>
+    </span>
+  </a>
+  <a class="tc-tech-cat-tile" href="https://tcstaging.truth-collective.com/technology-hub/monitor-display/">
+    <span class="tc-tech-cat-tile__media"><img src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/06/Untitled-1200-x-628-px-1200-x-628-px-1200-x-628-px-1200-x-628-px-1000-x-628-px-1000-x-628-px-1900-x-1080-px-1920-x-1350-px-1200-x-900-px-1200-x-900-px-600-x-600-px-1080-x-13-41.png" alt="Monitors and Displays" loading="lazy" decoding="async" /></span>
+    <span class="tc-tech-cat-tile__body">
+      <span class="tc-tech-cat-tile__title">Monitors and Displays</span>
+      <span class="tc-tech-cat-tile__blurb">Displays graded for clarity, comfort, and long work sessions.</span>
+      <span class="tc-tech-cat-tile__explore">Explore</span>
+    </span>
+  </a>
+  <a class="tc-tech-cat-tile" href="https://tcstaging.truth-collective.com/technology-hub/audio-and-video/">
+    <span class="tc-tech-cat-tile__media"><img src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/04/Untitled-2552-x-1280-px-1024x514.png" alt="Audio and Video" loading="lazy" decoding="async" /></span>
+    <span class="tc-tech-cat-tile__body">
+      <span class="tc-tech-cat-tile__title">Audio and Video</span>
+      <span class="tc-tech-cat-tile__blurb">Workspace audio and video selected for clear signal, not clutter.</span>
+      <span class="tc-tech-cat-tile__explore">Explore</span>
+    </span>
+  </a>
+  <a class="tc-tech-cat-tile" href="https://tcstaging.truth-collective.com/technology-hub/headphones-for-work/">
+    <span class="tc-tech-cat-tile__media"><img src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/04/Untitled-2552-x-1280-px-2552-x-1080-px.png" alt="Headphones and Headsets" loading="lazy" decoding="async" /></span>
+    <span class="tc-tech-cat-tile__body">
+      <span class="tc-tech-cat-tile__title">Headphones and Headsets</span>
+      <span class="tc-tech-cat-tile__blurb">Headphones, headsets, and hearing protection for focused work.</span>
+      <span class="tc-tech-cat-tile__explore">Explore</span>
+    </span>
+  </a>
+  <a class="tc-tech-cat-tile" href="https://tcstaging.truth-collective.com/technology-hub/speakers-home-office-outdoors/">
+    <span class="tc-tech-cat-tile__media"><img src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/04/Untitled-800-x-2000-px-1200-x-1800-px-1400-x-600-px-1400-x-600-px-1800-x-800-px-1400-x-800-px-1200-x-1000-px-1.png" alt="Desk Speakers" loading="lazy" decoding="async" /></span>
+    <span class="tc-tech-cat-tile__body">
+      <span class="tc-tech-cat-tile__title">Desk Speakers</span>
+      <span class="tc-tech-cat-tile__blurb">Desk and office speakers chosen for clean, controlled sound.</span>
+      <span class="tc-tech-cat-tile__explore">Explore</span>
+    </span>
+  </a>
+  <a class="tc-tech-cat-tile" href="https://tcstaging.truth-collective.com/technology-hub/projectors-and-microphones/">
+    <span class="tc-tech-cat-tile__media"><img src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/06/Untitled-1000-x-800-px-1000-x-650-px-1900-x-1080-px-2.png" alt="Projectors and Microphones" loading="lazy" decoding="async" /></span>
+    <span class="tc-tech-cat-tile__body">
+      <span class="tc-tech-cat-tile__title">Projectors and Microphones</span>
+      <span class="tc-tech-cat-tile__blurb">Projection and microphone tools for rooms that need to be heard.</span>
+      <span class="tc-tech-cat-tile__explore">Explore</span>
+    </span>
+  </a>
+  <a class="tc-tech-cat-tile" href="https://tcstaging.truth-collective.com/technology-hub/best-digital-smart-tablets/">
+    <span class="tc-tech-cat-tile__media"><img src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/03/Untitled-design-85.png" alt="Digital Smart Tablets" loading="lazy" decoding="async" /></span>
+    <span class="tc-tech-cat-tile__body">
+      <span class="tc-tech-cat-tile__title">Digital Smart Tablets</span>
+      <span class="tc-tech-cat-tile__blurb">Tablets for writing, planning, and portable creative work.</span>
+      <span class="tc-tech-cat-tile__explore">Explore</span>
+    </span>
+  </a>
+  <a class="tc-tech-cat-tile" href="https://tcstaging.truth-collective.com/technology-hub/interactive-digital-displays-2/">
+    <span class="tc-tech-cat-tile__media"><img src="https://tcstaging.truth-collective.com/wp-content/uploads/2026/06/Untitled-1000-x-1188-px-1000-x-1188-px-1900-x-1080-px.png" alt="Interactive Digital Displays" loading="lazy" decoding="async" /></span>
+    <span class="tc-tech-cat-tile__body">
+      <span class="tc-tech-cat-tile__title">Interactive Digital Displays</span>
+      <span class="tc-tech-cat-tile__blurb">Interactive displays built for shared work and clear presentation.</span>
+      <span class="tc-tech-cat-tile__explore">Explore</span>
+    </span>
+  </a>
+  </div>
+</section>
+<!-- /wp:html -->

@@ -1,0 +1,243 @@
+/* TC Membership Toggle — light / Vercel-aligned */
+.tc-membership {
+  --tc-accent: #1e3a5f;
+  --tc-accent-2: #2a4a73;
+  --tc-gold: #b8944b;
+  --tc-ink: #1f2937;
+  --tc-muted: #64748b;
+  --tc-bg: #ffffff;
+  --tc-bg-soft: #faf9f6;
+  --tc-track: #e8eef5;
+  --tc-border: rgba(30, 58, 95, 0.10);
+  --tc-radius: 14px;
+  --tc-shadow: 0 8px 24px -12px rgba(30, 58, 95, 0.18);
+  --tc-maxw: 720px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: var(--tc-maxw);
+  margin: 2rem auto 3rem;
+  padding: 0 1.25rem;
+  color: var(--tc-ink);
+  font-family: inherit;
+  background: transparent;
+}
+.tc-membership *,
+.tc-membership *::before,
+.tc-membership *::after { box-sizing: border-box; }
+.tc-membership .tc-toggle {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: min(340px, 88%);
+  margin: 0 auto 2.25rem;
+  padding: 5px;
+  background: var(--tc-track);
+  border: 1px solid var(--tc-border);
+  border-radius: 999px;
+  isolation: isolate;
+  box-shadow: none;
+}
+.tc-toggle__btn {
+  position: relative;
+  z-index: 2;
+  appearance: none;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  padding: 0.65rem 1rem;
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--tc-muted);
+  border-radius: 999px;
+  transition: color 0.25s ease;
+  white-space: nowrap;
+}
+.tc-toggle__btn.is-active { color: #fff; }
+.tc-toggle__btn:focus-visible {
+  outline: 2px solid var(--tc-gold);
+  outline-offset: 3px;
+}
+.tc-toggle__thumb {
+  position: absolute;
+  z-index: 1;
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  width: calc(50% - 5px);
+  border-radius: 999px;
+  background: var(--tc-accent);
+  box-shadow: 0 4px 12px -4px rgba(30, 58, 95, 0.45);
+  transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.tc-membership[data-view="member"] .tc-toggle__thumb {
+  transform: translateX(100%);
+}
+.tc-panel { display: none; animation: tc-fade 0.35s ease both; }
+.tc-membership[data-view="visitor"] .tc-panel--visitor { display: block; }
+.tc-membership[data-view="member"]  .tc-panel--member  { display: block; }
+@keyframes tc-fade {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.tc-card {
+  background: var(--tc-bg);
+  border: 1px solid var(--tc-border);
+  border-radius: var(--tc-radius);
+  box-shadow: var(--tc-shadow);
+  padding: clamp(1.75rem, 4vw, 2.5rem);
+}
+.tc-eyebrow {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--tc-gold);
+  margin: 0 0 0.75rem;
+}
+.tc-title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.65rem, 3.2vw, 2.15rem);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: var(--tc-accent);
+  margin: 0 0 0.75rem;
+}
+.tc-lead {
+  color: var(--tc-muted);
+  font-size: 1.05rem;
+  line-height: 1.65;
+  margin: 0 0 1.35rem;
+}
+.tc-card > p {
+  color: var(--tc-ink);
+  line-height: 1.65;
+  margin: 0 0 1.1rem;
+}
+.tc-form { display: grid; gap: 0.85rem; max-width: 420px; }
+.tc-field { display: grid; gap: 0.3rem; }
+.tc-field label {
+  font-weight: 500;
+  font-size: 0.88rem;
+  color: var(--tc-ink);
+}
+.tc-field input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font: inherit;
+  color: var(--tc-ink);
+  background: var(--tc-bg-soft);
+  border: 1px solid var(--tc-border);
+  border-radius: 10px;
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+}
+.tc-field input:focus {
+  outline: 0;
+  background: #fff;
+  border-color: var(--tc-accent);
+  box-shadow: 0 0 0 3px rgba(30, 58, 95, 0.12);
+}
+.tc-btn {
+  appearance: none;
+  cursor: pointer;
+  border: 0;
+  border-radius: 10px;
+  padding: 0.85rem 1.35rem;
+  font: inherit;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #fff;
+  background: var(--tc-accent);
+  transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+  box-shadow: none;
+}
+.tc-btn:hover {
+  background: var(--tc-accent-2);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px -12px rgba(30, 58, 95, 0.45);
+}
+.tc-btn:active { transform: translateY(0); }
+.tc-btn[disabled] { opacity: 0.6; cursor: progress; transform: none; box-shadow: none; }
+.tc-btn--ghost {
+  background: transparent;
+  color: var(--tc-accent);
+  border: 1px solid var(--tc-border);
+  box-shadow: none;
+  font-weight: 500;
+  padding: 0.45rem 0.9rem;
+  font-size: 0.85rem;
+}
+.tc-btn--ghost:hover {
+  background: var(--tc-bg-soft);
+  box-shadow: none;
+}
+.tc-fineprint { font-size: 0.82rem; color: var(--tc-muted); margin: 0.35rem 0 0; }
+.tc-msg { font-size: 0.92rem; margin: 0.25rem 0 0; min-height: 1.2em; }
+.tc-msg--error   { color: #b42318; }
+.tc-msg--success { color: var(--tc-accent); }
+.tc-locked  { display: block; }
+.tc-unlocked{ display: none; }
+.tc-membership[data-member="in"] .tc-locked   { display: none; }
+.tc-membership[data-member="in"] .tc-unlocked { display: block; animation: tc-fade 0.35s ease both; }
+.tc-member-bar {
+  display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1.35rem;
+  background: var(--tc-bg-soft);
+  border: 1px solid var(--tc-border);
+  border-radius: 10px;
+  font-size: 0.9rem;
+  color: var(--tc-muted);
+}
+.tc-member-bar strong { color: var(--tc-accent); font-weight: 600; }
+.tc-list {
+  list-style: none;
+  margin: 0 0 1.35rem;
+  padding: 0;
+  display: grid;
+  gap: 0.55rem;
+}
+.tc-list li {
+  position: relative;
+  padding-left: 1.6rem;
+  line-height: 1.5;
+  color: var(--tc-ink);
+  font-size: 0.98rem;
+}
+.tc-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.45em;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: var(--tc-accent);
+}
+@media (prefers-reduced-motion: reduce) {
+  .tc-panel, .tc-unlocked { animation: none; }
+  .tc-toggle__thumb, .tc-btn { transition: none; }
+}
+/* Toggle page — stronger lighten */
+body.page-id-8176 .site-content,
+body.page-id-8176 .ast-container {
+  background: #faf9f6 !important;
+}
+body.page-id-8176 .entry-header,
+body.page-id-8176 h1.entry-title {
+  display: none !important;
+}
+body.page-id-8176 .tc-membership .tc-card {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 0.5rem 0 0 !important;
+}
+body.page-id-8176 .tc-membership .tc-toggle {
+  width: min(300px, 86%) !important;
+  background: #e8eef5 !important;
+}

@@ -1,0 +1,106 @@
+<!-- wp:html -->
+<!-- TC PATTERN: quarterly-review-signup (6747). Vercel/10Web-style MailerLite subscribe. Keep this look. -->
+<div class="tcj-signup" data-ml-action="https://assets.mailerlite.com/jsonp/2310667/forms/190738396377777459/subscribe">
+  <div class="tcj-card">
+    <span class="tcj-eyebrow">The Truth Collective</span>
+    <h3 class="tcj-title">Join the Quarterly Review</h3>
+    <p class="tcj-sub">Four times a year. The best new additions, updated guides, and honest reassessments. No spam. No filler. No noise.</p>
+
+    <form class="tcj-form" novalidate>
+      <div class="tcj-row">
+        <input class="tcj-input" type="email" name="email" placeholder="Enter your email" autocomplete="email" required>
+        <button class="tcj-btn" type="submit">
+          <span>Subscribe</span><span class="tcj-arrow" aria-hidden="true">&rarr;</span>
+        </button>
+      </div>
+      <p class="tcj-msg" role="status" aria-live="polite"></p>
+      <p class="tcj-trust">Your email stays private. Unsubscribe anytime.</p>
+    </form>
+
+    <div class="tcj-success" hidden>
+      <div class="tcj-check" aria-hidden="true">&#10003;</div>
+      <h4 class="tcj-stitle">You are on the list.</h4>
+      <p class="tcj-stext">Welcome to The Truth Collective. Watch your inbox for the next Quarterly Review.</p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .tcj-signup{max-width:560px;margin:0 auto;}
+  .tcj-signup *{box-sizing:border-box;}
+  .tcj-card{position:relative;background:#faf9f6;border-top:3px solid #b8944b;border-radius:4px;
+    padding:38px 36px 32px;box-shadow:0 10px 34px rgba(0,0,0,.10);text-align:center;}
+  .tcj-eyebrow{display:block;font-family:"Inter",system-ui,sans-serif!important;font-size:12px!important;
+    font-weight:600!important;letter-spacing:.22em!important;text-transform:uppercase!important;
+    color:#b8944b!important;margin:0 0 10px!important;}
+  .tcj-title{font-family:"Playfair Display",Georgia,serif!important;font-size:30px!important;
+    font-weight:600!important;line-height:1.2!important;color:#1e3a5f!important;margin:0 0 12px!important;}
+  .tcj-sub{font-family:"Inter",system-ui,sans-serif!important;font-size:15px!important;line-height:1.65!important;
+    color:#5b6470!important;max-width:440px;margin:0 auto 24px!important;}
+  .tcj-form{margin:0;}
+  .tcj-row{display:flex;gap:10px;}
+  .tcj-input{flex:1 1 auto;width:100%!important;padding:14px 16px!important;font-family:"Inter",system-ui,sans-serif!important;
+    font-size:15px!important;color:#1f1f1f!important;background:#fff!important;border:1px solid #d6cdbb!important;
+    border-radius:6px!important;transition:border-color .2s,box-shadow .2s!important;}
+  .tcj-input::placeholder{color:#9aa0a8!important;}
+  .tcj-input:focus{outline:0!important;border-color:#b8944b!important;box-shadow:0 0 0 3px rgba(184,148,75,.22)!important;}
+  .tcj-btn{flex:0 0 auto;display:inline-flex;align-items:center;gap:9px;padding:14px 26px!important;
+    font-family:"Inter",system-ui,sans-serif!important;font-size:14px!important;font-weight:700!important;
+    letter-spacing:.06em!important;color:#fff!important;background:linear-gradient(180deg,#27486f,#1e3a5f)!important;
+    border:0!important;border-radius:6px!important;cursor:pointer!important;white-space:nowrap;
+    transition:transform .15s ease,box-shadow .15s ease,opacity .2s!important;box-shadow:0 8px 18px rgba(30,58,95,.28)!important;}
+  .tcj-btn:hover{transform:translateY(-1px)!important;box-shadow:0 11px 22px rgba(30,58,95,.34)!important;}
+  .tcj-btn:disabled{opacity:.6!important;cursor:progress!important;transform:none!important;}
+  .tcj-arrow{color:#cdab63!important;font-size:17px;line-height:1;transition:transform .2s ease;}
+  .tcj-btn:hover .tcj-arrow{transform:translateX(4px);}
+  .tcj-msg{min-height:1.1em;margin:14px 0 0;font-family:"Inter",system-ui,sans-serif;font-size:13.5px;}
+  .tcj-msg.is-error{color:#b42318;}
+  .tcj-msg.is-ok{color:#1e6f4e;}
+  .tcj-trust{font-family:"Inter",system-ui,sans-serif!important;font-size:12.5px!important;color:#8a8f98!important;
+    margin:16px 0 0!important;letter-spacing:.01em;}
+  .tcj-success{animation:tcj-fade .4s ease both;}
+  .tcj-check{width:56px;height:56px;margin:0 auto 14px;display:flex;align-items:center;justify-content:center;
+    font-size:26px;color:#fff;background:linear-gradient(135deg,#b8944b,#cdab63);border-radius:50%;
+    box-shadow:0 8px 18px rgba(184,148,75,.4);}
+  .tcj-stitle{font-family:"Playfair Display",Georgia,serif!important;font-size:24px!important;font-weight:600!important;
+    color:#1e3a5f!important;margin:0 0 8px!important;}
+  .tcj-stext{font-family:"Inter",system-ui,sans-serif!important;font-size:15px!important;line-height:1.6!important;
+    color:#5b6470!important;max-width:380px;margin:0 auto!important;}
+  @keyframes tcj-fade{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:translateY(0);}}
+  @media (max-width:540px){
+    .tcj-card{padding:30px 22px 26px;}
+    .tcj-title{font-size:25px!important;}
+    .tcj-row{flex-direction:column;}
+    .tcj-btn{justify-content:center;width:100%!important;}
+  }
+</style>
+
+<script>
+(function(){
+  document.querySelectorAll('.tcj-signup').forEach(function(box){
+    if(box.__wired)return; box.__wired=true;
+    var form=box.querySelector('.tcj-form'),
+        msg=box.querySelector('.tcj-msg'),
+        success=box.querySelector('.tcj-success'),
+        action=(box.getAttribute('data-ml-action')||'').trim();
+    function show(t,cls){msg.textContent=t;msg.className='tcj-msg'+(cls?' '+cls:'');}
+    function win(){form.style.display='none';if(success){success.hidden=false;}}
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var input=form.querySelector('input[type=email]'),
+          email=(input.value||'').trim(),
+          btn=form.querySelector('button');
+      if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){show('Please enter a valid email address.','is-error');input.focus();return;}
+      btn.disabled=true; show('Subscribing\u2026','');
+      if(action.indexOf('http')!==0){setTimeout(function(){show('Preview only. Add your MailerLite link to go live.','is-ok');btn.disabled=false;},400);return;}
+      var fd=new FormData();
+      fd.append('fields[email]',email); fd.append('email',email);
+      fd.append('ml-submit','1'); fd.append('anticsrf','true');
+      fetch(action,{method:'POST',body:fd,mode:'no-cors'})
+        .then(function(){win();})
+        .catch(function(){show('That did not go through. Please try again.','is-error');btn.disabled=false;});
+    });
+  });
+})();
+</script>
+<!-- /wp:html -->

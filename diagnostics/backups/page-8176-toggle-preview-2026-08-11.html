@@ -1,0 +1,223 @@
+<!-- wp:html -->
+<div class="tc-membership"
+     data-tc-membership
+     data-mode="email-unlock"
+     data-default-view="visitor"
+     data-view="visitor"
+     data-mailerlite-action="https://assets.mailerlite.com/jsonp/2310667/forms/190738396377777459/subscribe"
+     data-member-redirect="">
+  <div class="tc-toggle" role="tablist" aria-label="Preview or full content">
+    <button class="tc-toggle__btn is-active" data-view="visitor" role="tab" aria-selected="true" type="button">Preview</button>
+    <button class="tc-toggle__btn" data-view="member" role="tab" aria-selected="false" type="button">Full content</button>
+    <span class="tc-toggle__thumb" aria-hidden="true"></span>
+  </div>
+  <section class="tc-panel tc-panel--visitor" data-view-panel="visitor">
+    <div class="tc-card">
+      <span class="tc-eyebrow">The Truth Collective Editorial</span>
+      <h2 class="tc-title">Artificial Intelligence Touches 80% of Our World in 2026</h2>
+      <p class="tc-lead">Here is the opening, free for everyone. Join with your email to
+        unlock the full editorial. We will also send new posts to you.</p>
+      <p>Artificial intelligence is no longer a future promise. In 2026 it quietly runs
+        the systems we use every day. In this piece we map where it has already taken hold.</p>
+      <ul class="tc-list">
+        <li>The full editorial, unlocked instantly</li>
+        <li>New articles and social posts by email</li>
+        <li>No password. Just your email. Unsubscribe anytime.</li>
+      </ul>
+      <form class="tc-form" data-tc-join novalidate>
+        <div class="tc-field">
+          <label for="tc-join-name-0">First name (optional)</label>
+          <input id="tc-join-name-0" name="name" type="text" autocomplete="given-name" placeholder="Your name">
+        </div>
+        <div class="tc-field">
+          <label for="tc-join-email-0">Email address</label>
+          <input id="tc-join-email-0" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+        </div>
+        <button class="tc-btn" type="submit">Join free and unlock</button>
+        <p class="tc-msg"></p>
+        <p class="tc-fineprint">Already joined on this device? Tap Full content above.</p>
+      </form>
+    </div>
+  </section>
+  <section class="tc-panel tc-panel--member" data-view-panel="member">
+    <div class="tc-card">
+      <div class="tc-gate tc-locked">
+        <span class="tc-eyebrow">Members content</span>
+        <h2 class="tc-title">Join to read the rest</h2>
+        <p class="tc-lead">Enter your email and the full editorial opens here. No password needed.</p>
+        <form class="tc-form" data-tc-join novalidate>
+          <div class="tc-field">
+            <label for="tc-join-email-0b">Email address</label>
+            <input id="tc-join-email-0b" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+          </div>
+          <button class="tc-btn" type="submit">Unlock the full editorial</button>
+          <p class="tc-msg"></p>
+        </form>
+      </div>
+      <div class="tc-unlocked">
+        <div class="tc-member-bar">
+          <span>Unlocked for <strong data-tc-member-email>you</strong></span>
+          <button class="tc-btn tc-btn--ghost" type="button" data-tc-signout>Reset</button>
+        </div>
+        <span class="tc-eyebrow">AI Mastery Series · Full edition</span>
+        <h1 class="tc-title">Artificial Intelligence Touches 80% of Our World in 2026</h1>
+        <p class="tc-lead">Thank you for joining. Here is the complete editorial.</p>
+        <p>Replace everything inside this unlocked block with your deeper content:
+          the full article, research notes, downloads, or embedded media.</p>
+        <ul class="tc-list">
+          <li>Section 1: the data behind the 80% claim</li>
+          <li>Section 2: where it shows up in daily life</li>
+          <li>Section 3: what to do about it</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+<!-- /wp:html -->
+
+<!-- wp:html -->
+<script>
+(function () {
+  "use strict";
+  var GLOBAL = window.TC_MEMBERSHIP_CONFIG || {};
+  var SESSION_KEY = GLOBAL.sessionKey || "tc_member_session";
+  var VIEW_KEY = "tc_membership_view";
+  function $(sel, ctx) { return (ctx || document).querySelector(sel); }
+  function $all(sel, ctx) { return Array.prototype.slice.call((ctx || document).querySelectorAll(sel)); }
+  function store(key, val) {
+    try { window.localStorage.setItem(key, val); } catch (e) {}
+  }
+  function read(key) {
+    try { return window.localStorage.getItem(key); } catch (e) { return null; }
+  }
+  function remove(key) {
+    try { window.localStorage.removeItem(key); } catch (e) {}
+  }
+  function validEmail(v) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(v || "").trim());
+  }
+  function setMsg(el, text, type) {
+    if (!el) return;
+    el.textContent = text || "";
+    el.className = "tc-msg" + (type ? " tc-msg--" + type : "");
+  }
+  function cfg(root) {
+    return {
+      defaultView: root.getAttribute("data-default-view") || "visitor",
+      signupEndpoint: root.getAttribute("data-signup-endpoint") || GLOBAL.signupEndpoint || "",
+      signinEndpoint: root.getAttribute("data-signin-endpoint") || GLOBAL.signinEndpoint || "",
+      memberRedirect: root.getAttribute("data-member-redirect") || GLOBAL.memberRedirect || "",
+      mailerliteAction: root.getAttribute("data-mailerlite-action") || GLOBAL.mailerliteAction || ""
+    };
+  }
+  function setView(root, view) {
+    view = view === "member" ? "member" : "visitor";
+    root.setAttribute("data-view", view);
+    store(VIEW_KEY, view);
+    $all(".tc-toggle__btn", root).forEach(function (btn) {
+      var on = btn.getAttribute("data-view") === view;
+      btn.classList.toggle("is-active", on);
+      btn.setAttribute("aria-selected", on ? "true" : "false");
+    });
+  }
+  function getSession() {
+    var raw = read(SESSION_KEY);
+    if (!raw) return null;
+    try { return JSON.parse(raw); } catch (e) { return null; }
+  }
+  function setSession(data) { store(SESSION_KEY, JSON.stringify(data || {})); }
+  function clearSession() { remove(SESSION_KEY); }
+  function reflectSession(root) {
+    var session = getSession();
+    root.setAttribute("data-member", session ? "in" : "out");
+    var who = $("[data-tc-member-email]", root);
+    if (who && session && session.email) who.textContent = session.email;
+  }
+  function postMailerLite(action, email, name) {
+    if (!action) return Promise.resolve();
+    var fd = new FormData();
+    fd.append("fields[email]", email);
+    fd.append("email", email);
+    if (name) { fd.append("fields[name]", name); fd.append("name", name); }
+    fd.append("ml-submit", "1");
+    fd.append("anticsrf", "true");
+    return fetch(action, { method: "POST", body: fd, mode: "no-cors" })
+      .catch(function () {});
+  }
+  function wireJoin(root, conf) {
+    var forms = $all("[data-tc-join]", root);
+    if (!forms.length) return;
+    forms.forEach(function (form) {
+      var msg = $(".tc-msg", form);
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var emailInput = form.querySelector('input[type="email"], input[name="email"]');
+        var email = emailInput ? emailInput.value.trim() : "";
+        var name = (form.querySelector('input[name="name"]') || {}).value || "";
+        if (!validEmail(email)) {
+          setMsg(msg, "Please enter a valid email address.", "error");
+          if (emailInput) emailInput.focus();
+          return;
+        }
+        var btn = form.querySelector('button[type="submit"], .tc-btn');
+        if (btn) btn.disabled = true;
+        setMsg(msg, "One second…");
+        postMailerLite(conf.mailerliteAction, email, name).then(function () {
+          setSession({ email: email, joined: true, at: Date.now() });
+          reflectSession(root);
+          setView(root, "member");
+          setMsg(msg, "You are in. Enjoy the full content.", "success");
+          form.reset();
+          if (btn) btn.disabled = false;
+          if (conf.memberRedirect) window.location.href = conf.memberRedirect;
+        });
+      });
+    });
+  }
+  function wireSignin(root, conf) {
+    $all("[data-tc-signout]", root).forEach(function (b) {
+      b.addEventListener("click", function (e) {
+        e.preventDefault();
+        clearSession();
+        reflectSession(root);
+        setView(root, "visitor");
+      });
+    });
+  }
+  function init(root) {
+    if (root.__tcReady) return;
+    root.__tcReady = true;
+    var conf = cfg(root);
+    $all(".tc-toggle__btn", root).forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        setView(root, btn.getAttribute("data-view"));
+      });
+    });
+    var saved = read(VIEW_KEY);
+    var startView = saved || conf.defaultView;
+    if (getSession() && !saved) startView = "member";
+    setView(root, startView);
+    reflectSession(root);
+    wireJoin(root, conf);
+    wireSignin(root, conf);
+  }
+  function boot() { $all("[data-tc-membership]").forEach(init); }
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", boot);
+  } else {
+    boot();
+  }
+  window.TCMembership = {
+    init: init,
+    boot: boot,
+    isJoined: function () { return !!getSession(); },
+    markJoined: function (email) {
+      var prev = getSession() || {};
+      setSession({ email: email || prev.email || "", joined: true, at: Date.now() });
+      boot();
+    },
+    signOut: function () { clearSession(); boot(); }
+  };
+})();
+</script>
+<!-- /wp:html -->

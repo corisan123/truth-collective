@@ -1,0 +1,61 @@
+/* STAGING PATCH 02-PRODUCT OVERFLOW FIX
+   Append only. Scoped to .tc-overlay-card-product.
+   Cause: base .tc-overlay-card sets height:100%, the product variant adds
+   aspect-ratio:1/1, and the grid item keeps min-width:auto. The aspect ratio
+   transfers the tall height into an automatic minimum WIDTH, so each card
+   demands more than its 1/4 grid track and spills over its neighbor.
+   Fix: zero the automatic minimum and let the 1/4 column width drive height.
+   Does not affect .tc-overlay-card on non-product pages.
+
+   Daniel 2026-08-08: currently NOT working properly on site; later symptoms
+   include cards tall-not-wide. Do not delete yet — diagnose whether markup
+   is missing .tc-overlay-card-product / Kadence wrappers, or a later patch
+   overrides this. Protected 02A shape rules must stay consistent with this.
+============================================================================= */
+.tc-overlay-card-product,
+.wp-block-kadence-column.tc-overlay-card-product {
+  min-width: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  aspect-ratio: 1 / 1 !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  align-self: start !important;
+  overflow: hidden !important;
+  z-index: 1 !important;
+}
+.tc-overlay-card-product:hover {
+  z-index: 5 !important;
+}
+.tc-overlay-card-product > .kt-inside-inner-col {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  height: 100% !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+}
+.tc-overlay-card-product .kt-inside-inner-col > figure,
+.tc-overlay-card-product .kt-inside-inner-col > .wp-block-image {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+}
+.tc-overlay-card-product .kt-inside-inner-col > figure img,
+.tc-overlay-card-product .kt-inside-inner-col > .wp-block-image img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  border-width: 0 !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+}
+/* End STAGING PATCH 02-PRODUCT OVERFLOW FIX */

@@ -1,0 +1,54 @@
+/* =============================================================================
+   TC OVERLAY-CARD (column) + EXPLORE-HUB (image) COMBINED FIX
+   Only matches a description paragraph that comes AFTER a tc-explore-hub image
+   inside a tc-overlay-card. Cards without the explore-hub image are untouched,
+   and mobile is left alone. Moves the description to the bottom on hover so it
+   no longer sits on top of the EXPLORE pill.
+
+   Daniel history: using both classes together caused crop/overlap conflicts;
+   this is one of the append-only combo fixes. Inventory carefully before disable.
+============================================================================= */
+@media (hover: hover) and (pointer: fine) {
+  .entry-content .tc-overlay-card .kt-inside-inner-col > .tc-explore-hub ~ p {
+    top: auto !important;
+    bottom: 26px !important;
+    transform: none !important;
+  }
+}
+/* End combined fix */
+/* =============================================================================
+   STAGING PATCH 02-GRADE — Hub overlay cards
+   Stars/grade at top at rest; hidden on hover so title + EXPLORE + description
+   don't overlap. Does not change your Custom HTML blocks.
+============================================================================= */
+.entry-content .tc-overlay-card .kt-inside-inner-col > .tc-grade-block {
+  position: absolute !important;
+  top: 14px !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 4 !important;
+  margin: 0 !important;
+  pointer-events: none;
+  transition: opacity 300ms ease;
+}
+.entry-content .tc-overlay-card .kt-inside-inner-col > .tc-grade-block .tc-grade-label,
+.entry-content .tc-overlay-card .kt-inside-inner-col > .tc-grade-block .tc-score {
+  color: #fff !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.85);
+}
+@media (hover: hover) {
+  .entry-content .tc-overlay-card:hover .kt-inside-inner-col > .tc-grade-block {
+    opacity: 0 !important;
+  }
+}
+/* End STAGING PATCH 02-GRADE */
+
+/* Immediately after 02-GRADE in Additional CSS (Daniel 2026-08-08).
+   Broad mobile rule — NOT scoped to overlay/product. Queued for mobile
+   polish phase; do not edit during desktop recovery. */
+@media (max-width: 767px) {
+  .entry-content .kt-row-column-wrap {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
