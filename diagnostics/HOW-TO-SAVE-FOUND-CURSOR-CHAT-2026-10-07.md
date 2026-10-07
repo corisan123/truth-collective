@@ -112,6 +112,8 @@ Desktop **Export Transcript does not work** on Cloud runs. Cursor says export is
 
 Do **not** paste the full transcript into GitHub. If a redacted excerpt is needed later, strip Application Passwords, Hostinger logins, and 10Web payment details first.
 
+**BDM testimony GitHub copy is already on PR #6.** Three-place save (PC + Drive + that zip): `diagnostics/TC-10WEB-LAWSUIT-THREE-PLACE-SAVE-2026-10-07.md`. Put the Cloud Agent Print-PDF in `Documents\TC-10WEB-LAWSUIT\05-cursor-cloud-thread\`.
+
 Optional index line:
 
 ```
