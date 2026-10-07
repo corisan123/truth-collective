@@ -216,7 +216,7 @@ Last Cursor REST writes: **23 September 2026**.
 | `diagnostics/backups/page-359-rev8273-2026-08-08-raw.html` | Computers catalog revision used as recovery source |
 | `docs/TC-LOCK-2026-09-19.md` | Visual lock; 10Web captures = evidence not a model |
 
-Owner-held items **not in this repo** that counsel typically needs: 10Web contract, ticket `#375660` thread, Hostinger backup timestamps, pre-25-Jul full-site backup, Rank Math screenshots, medical/work log, Semrush/analytics, and the `kind-louse` / 10Web builder project export.
+Owner-held items **not in this repo** that counsel typically needs: 10Web contract, ticket `#375660` thread, Hostinger backup timestamps, pre-25-Jul full-site backup, Rank Math screenshots, medical/work log, Semrush/analytics, the `kind-louse` / 10Web builder project export, and the **July Cursor conversation** (prep / during / after). This Sep 19 Cloud run does **not** hold that transcript. Hunt result: `diagnostics/cursor-10web-conversation-hunt-2026-10-07.md`. Strongest Cloud URL to try: `bc-b360733d-fbaa-412a-bff6-bcacdceab1dd` (PR #2, 14 Jul 2026).
 
 ---
 
