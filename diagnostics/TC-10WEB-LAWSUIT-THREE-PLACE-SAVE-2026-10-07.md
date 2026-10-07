@@ -3,6 +3,8 @@
 **Recorded:** 7 October 2026 in Cloud run `bc-3c3a1616-bd53-407e-8562-11da050498f8`.  
 **Owner instruction:** save in **PC**, **cloud drive**, and **GitHub**. GitHub is already done.
 
+**Provenance (owner 7 Oct ~20:11 UTC):** this checklist was given **directly from the Cursor Cloud conversation** covering the 10Web destruction (same work as PR #6 / branch `cursor/10web-lawsuit-testimony-2672`). It is a **save protocol**, not a new finding of fact. Follow it as written.
+
 This is a preservation checklist, not legal advice.
 
 ---
