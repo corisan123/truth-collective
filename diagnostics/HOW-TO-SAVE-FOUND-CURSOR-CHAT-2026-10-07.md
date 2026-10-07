@@ -21,6 +21,8 @@ Do **not**:
 
 Safe: open, scroll, export, screenshot, copy the URL, copy folders **after Cursor is fully quit**.
 
+**If you already asked that old thread for a summary** (pre-state / during / 10Web directives / post destruction): that turn is useful. **Export now** so the summary is in the file. Then **stop**. Do not ask it to fix WordPress. Paste **only the summary** into this Sep 19 Cloud Agent. Details: `diagnostics/JULY-CURSOR-SUMMARY-INGEST-2026-10-07.md`.
+
 ---
 
 ## Step 0 — Decide which kind you found
