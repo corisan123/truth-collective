@@ -2,6 +2,8 @@
 
 **Status:** FREEZE confirmed 2026-08-09. Daniel’s cream editor screenshots are the visual target. Public `kind-louse.10web.cloud` preview may stay stale/dark — ignore it. No more 10Web rebuild prompts unless Daniel asks.
 
+**Owner correction 2026-10-07:** `kind-louse` was **10Web’s fake Builder website** from failed/disconnected migrations, not a TC design mock. Do not treat it as gold. Full statement: `diagnostics/10web-kind-louse-wp-access-testimony-2026-10-07.md`.
+
 ## What we borrow (look / motion only)
 - Cream / off-white field, navy + gold hierarchy
 - Large serif title with **Hub** in gold italic

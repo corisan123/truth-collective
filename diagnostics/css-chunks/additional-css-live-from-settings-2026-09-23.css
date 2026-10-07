@@ -1,0 +1,1682 @@
+
+			
+/* =============================================================================
+   STAGING TEST 01 — BOOK CARD HOVER REVEAL
+   For Gutenberg/Kadence columns using:
+   Column class: tc-book-card
+   Description paragraph class: tc-leadership-body
+   Buttons block class: tc-book-button
+   Test only in TC staging.
+============================================================================= */
+
+.tc-book-card,
+.wp-block-kadence-column.tc-book-card {
+  background: #ffffff !important;
+  border-top: 4px solid #1e3a5f !important;
+  padding: 24px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+  transition: box-shadow 0.2s ease, transform 0.2s ease !important;
+  height: 100% !important;
+  min-height: 360px !important;
+  box-sizing: border-box !important;
+  min-width: 0 !important;
+}
+
+.tc-book-card > .kt-inside-inner-col,
+.tc-book-card .kt-inside-inner-col {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+  gap: 12px !important;
+  box-sizing: border-box !important;
+  min-width: 0 !important;
+}
+
+@media (hover: hover) {
+  .tc-book-card:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12) !important;
+    transform: translateY(-2px);
+  }
+}
+
+.tc-book-card .wp-block-image,
+.tc-book-card figure {
+  overflow: hidden !important;
+  margin: 0 !important;
+  border-radius: 2px !important;
+}
+
+.tc-book-card .wp-block-image img,
+.tc-book-card figure img {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+}
+
+.tc-book-card h2,
+.tc-book-card h3,
+.tc-book-card h4,
+.tc-book-card .wp-block-heading {
+  font-family: "Playfair Display", Georgia, serif !important;
+  font-size: 22px !important;
+  font-weight: 500 !important;
+  color: #1f1f1f !important;
+  line-height: 1.2 !important;
+  margin: 8px 0 4px 0 !important;
+  transition: color 0.2s ease !important;
+}
+
+@media (hover: hover) {
+  .tc-book-card:hover h2,
+  .tc-book-card:hover h3,
+  .tc-book-card:hover h4,
+  .tc-book-card:hover .wp-block-heading {
+    color: #1e3a5f !important;
+  }
+}
+
+.tc-book-card .tc-leadership-body p {
+  font-family: "Inter", system-ui, sans-serif !important;
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+  color: #1f1f1f !important;
+}
+
+.tc-book-card p.tc-leadership-body {
+  font-family: "Inter", system-ui, sans-serif !important;
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+  color: #1f1f1f !important;
+}
+
+@media (hover: hover) {
+  .tc-book-card p.tc-leadership-body {
+    max-height: 0 !important;
+    opacity: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    transition: max-height 250ms ease, opacity 200ms ease, margin 250ms ease, padding 250ms ease !important;
+  }
+
+  .tc-book-card:hover p.tc-leadership-body {
+    max-height: min(2200px, 92vh) !important;
+    opacity: 1 !important;
+    margin: 8px 0 12px 0 !important;
+  }
+}
+
+.tc-book-card .tc-book-button,
+.tc-book-card .wp-block-buttons.tc-book-button {
+  margin-top: auto !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+  width: 100% !important;
+}
+
+@media (hover: hover) {
+  .tc-book-card .tc-book-button,
+  .tc-book-card .wp-block-buttons.tc-book-button {
+    max-height: 0 !important;
+    opacity: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    transition: max-height 280ms ease, opacity 200ms ease 80ms, padding 280ms ease !important;
+  }
+
+  .tc-book-card:hover .tc-book-button,
+  .tc-book-card:hover .wp-block-buttons.tc-book-button {
+    max-height: 220px !important;
+    opacity: 1 !important;
+    padding-top: 8px !important;
+  }
+}
+
+.tc-book-card .tc-book-button .wp-block-button,
+.tc-book-card .wp-block-buttons.tc-book-button .wp-block-button {
+  flex: 1 1 auto !important;
+  min-width: 120px !important;
+  margin: 0 !important;
+}
+
+.tc-book-card .tc-book-button .wp-block-button__link,
+.tc-book-card .tc-book-button .wp-element-button,
+.tc-book-card .tc-book-button a.kt-button,
+.tc-book-card .wp-block-buttons.tc-book-button .wp-block-button__link,
+.tc-book-card .wp-block-buttons.tc-book-button .wp-element-button,
+.tc-book-card .wp-block-buttons.tc-book-button a.kt-button {
+  width: 100% !important;
+  text-align: center !important;
+  padding: 10px 14px !important;
+  font-size: 13px !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+  text-decoration: none !important;
+}
+
+.tc-book-card .tc-book-button .wp-block-button__link:hover,
+.tc-book-card .tc-book-button .wp-element-button:hover,
+.tc-book-card .tc-book-button a.kt-button:hover,
+.tc-book-card .wp-block-buttons.tc-book-button .wp-block-button__link:hover,
+.tc-book-card .wp-block-buttons.tc-book-button .wp-element-button:hover,
+.tc-book-card .wp-block-buttons.tc-book-button a.kt-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(30, 58, 95, 0.2) !important;
+}
+
+@media (max-width: 767px), (hover: none) {
+  .tc-book-card,
+  .wp-block-kadence-column.tc-book-card {
+    min-height: auto !important;
+    padding: 20px !important;
+  }
+
+  .tc-book-card h2,
+  .tc-book-card h3,
+  .tc-book-card h4,
+  .tc-book-card .wp-block-heading {
+    font-size: 20px !important;
+  }
+
+  .tc-book-card p.tc-leadership-body {
+    max-height: none !important;
+    opacity: 1 !important;
+    margin: 8px 0 12px 0 !important;
+    overflow: visible !important;
+  }
+
+  .tc-book-card .tc-book-button,
+  .tc-book-card .wp-block-buttons.tc-book-button {
+    max-height: none !important;
+    opacity: 1 !important;
+    overflow: visible !important;
+    padding-top: 8px !important;
+  }
+
+  .tc-book-card .tc-book-button .wp-block-button,
+  .tc-book-card .wp-block-buttons.tc-book-button .wp-block-button {
+    flex: 1 1 100% !important;
+  }
+}
+/* =============================================================================
+   STAGING PATCH 01A — TC BOOK CARD H5 TITLE CONTROL
+   Purpose: fixes front-end H5 book title spacing only inside tc-book-card.
+   Scope: book cards only. Does not affect paragraphs, authors, menus, headers,
+   product cards, homepage overlays, or hub cards.
+============================================================================= */
+
+.tc-book-card h5.wp-block-heading {
+  font-family: "Playfair Display", Georgia, serif !important;
+  font-size: 22px !important;
+  font-weight: 500 !important;
+  line-height: 1.2 !important;
+  letter-spacing: 1px !important;
+  word-spacing: normal !important;
+  text-transform: none !important;
+  text-align: center !important;
+  color: #1f1f1f !important;
+  margin: 8px 0 4px 0 !important;
+  white-space: normal !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+}
+
+@media (hover: hover) {
+  .tc-book-card:hover h5.wp-block-heading {
+    color: #1e3a5f !important;
+  }
+}
+
+@media (max-width: 767px), (hover: none) {
+  .tc-book-card h5.wp-block-heading {
+    font-size: 20px !important;
+    letter-spacing: 0.5px !important;
+  }
+	 }
+/* =============================================================================
+   STAGING TEST 02 — OVERLAY CARD (Option A)
+   Card: Kadence column, class tc-overlay-card
+   Inside: figure image, h3 heading (linked), p paragraph
+   Rest: image + white title at bottom
+   Hover: card lifts, image darkens, title moves to top, description appears
+============================================================================= */
+
+.tc-overlay-card,
+.wp-block-kadence-column.tc-overlay-card {
+  position: relative !important;
+  overflow: hidden !important;
+  min-height: 460px !important;
+  height: 100% !important;
+  background: #1f1f1f !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.10) !important;
+  transition: box-shadow 300ms ease, transform 300ms ease !important;
+  box-sizing: border-box !important;
+}
+
+.tc-overlay-card > .kt-inside-inner-col {
+  position: static !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  height: 100% !important;
+}
+
+/* image fills the whole card */
+.tc-overlay-card .kt-inside-inner-col > figure,
+.tc-overlay-card .kt-inside-inner-col > .wp-block-image {
+  position: absolute !important;
+  inset: 0 !important;
+  margin: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden !important;
+  z-index: 1 !important;
+}
+
+.tc-overlay-card .kt-inside-inner-col > figure img,
+.tc-overlay-card .kt-inside-inner-col > .wp-block-image img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+  transition: transform 600ms ease, filter 350ms ease !important;
+}
+
+/* dark gradient bottom, for title readability at rest */
+.tc-overlay-card::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 2 !important;
+  pointer-events: none !important;
+   background: transparent !important;
+  transition: background 350ms ease !important;
+}
+
+/* title: white, sits at bottom at rest */
+.entry-content .tc-overlay-card .kt-inside-inner-col > h3.wp-block-heading {
+  position: absolute !important;
+  left: 24px !important;
+  right: 24px !important;
+  bottom: 24px !important;
+  top: auto !important;
+  z-index: 3 !important;
+  margin: 0 !important;
+  color: #ffffff !important;
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  line-height: 1.25 !important;
+  text-align: center !important;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.7) !important;
+  transition: bottom 350ms ease, top 350ms ease !important;
+}
+
+.entry-content .tc-overlay-card .kt-inside-inner-col > h3.wp-block-heading a {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+/* description: white, hidden at rest */
+.entry-content .tc-overlay-card .kt-inside-inner-col > p {
+  position: absolute !important;
+  left: 28px !important;
+  right: 28px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  z-index: 3 !important;
+  margin: 0 !important;
+  color: #ffffff !important;
+  font-family: 'Inter', system-ui, sans-serif !important;
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+  text-align: center !important;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.6) !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transition: opacity 300ms ease 80ms !important;
+}
+
+@media (hover: hover) {
+  .tc-overlay-card:hover {
+    box-shadow: 0 12px 34px rgba(0,0,0,0.20) !important;
+    transform: translateY(-4px) !important;
+  }
+  .tc-overlay-card:hover .kt-inside-inner-col > figure img,
+  .tc-overlay-card:hover .kt-inside-inner-col > .wp-block-image img {
+    transform: scale(1.05) !important;
+    filter: brightness(0.7) !important;
+  }
+  .tc-overlay-card:hover::before {
+    background: linear-gradient(180deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.30) 100%) !important;
+  }
+  .entry-content .tc-overlay-card:hover .kt-inside-inner-col > h3.wp-block-heading {
+    bottom: auto !important;
+    top: 28px !important;
+  }
+  .entry-content .tc-overlay-card:hover .kt-inside-inner-col > p {
+    opacity: 1 !important;
+  }
+}
+
+@media (max-width: 767px), (hover: none) {
+  .tc-overlay-card,
+  .wp-block-kadence-column.tc-overlay-card {
+    min-height: 340px !important;
+  }
+  .tc-overlay-card::before {
+    background: linear-gradient(180deg, rgba(0,0,0,0.15) 40%, rgba(0,0,0,0.70) 100%) !important;
+  }
+  .entry-content .tc-overlay-card .kt-inside-inner-col > p {
+    opacity: 1 !important;
+  }
+  .entry-content .tc-overlay-card .kt-inside-inner-col > h3.wp-block-heading {
+    bottom: 18px !important;
+    left: 18px !important;
+    right: 18px !important;
+    font-size: 20px !important;
+  }
+}
+/* =============================================================================
+   TC ROW-STRETCH OVERRIDE — FINAL VERSION
+   Cancels STAGING TEST 01 height:100% / min-height:360px conflict.
+   Forces .wp-block-columns.tc-card-row into true flex row behavior with
+   stretched children. Higher specificity wins the cascade.
+   Does not touch tc-leadership-body or tc-book-button hover-reveal rules.
+============================================================================= */
+
+div.wp-block-columns.tc-card-row {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: stretch !important;
+  flex-wrap: wrap !important;
+}
+
+div.wp-block-columns.tc-card-row > div.wp-block-column.tc-book-card {
+  display: flex !important;
+  flex-direction: column !important;
+  align-self: stretch !important;
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+div.wp-block-columns.tc-card-row > div.wp-block-column.tc-book-card > .wp-block-buttons.tc-book-button {
+  margin-top: auto !important;
+}
+
+/* End TC Row-Stretch Override */
+
+
+/* =============================================================================
+   TC GOLD STAR RATING — BASE64 SVG VERSION
+   Uses base64-encoded SVG to bypass WordPress Customizer markup validation.
+   No font dependency. Renders identically across every browser.
+   Brand gold #b8944b.
+============================================================================= */
+
+.tc-grade-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin: 14px 0;
+}
+
+.tc-grade-label {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 14px;
+  font-style: italic;
+  color: #1e3a5f;
+  letter-spacing: 0.3px;
+}
+
+.tc-rating-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tc-score {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 15px;
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+.tc-stars {
+  --fill: 0%;
+  display: inline-block;
+  position: relative;
+  width: 110px;
+  height: 20px;
+  vertical-align: middle;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAyMiAyMic+PHBhdGggZD0nTTExIDEuNWwyLjg1IDYuNCA2Ljk1LjYyLTUuMjcgNC43IDEuNiA2Ljc4TDExIDE2LjVsLTYuMTMgMy41IDEuNi02Ljc4TDEuMiA4LjUybDYuOTUtLjYyeicgZmlsbD0nbm9uZScgc3Ryb2tlPScjYjg5NDRiJyBzdHJva2Utd2lkdGg9JzEuNicgc3Ryb2tlLWxpbmVqb2luPSdyb3VuZCcvPjwvc3ZnPg==");
+  background-repeat: repeat-x;
+  background-size: 22px 20px;
+  background-position: 0 0;
+}
+
+.tc-stars::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--fill);
+  height: 100%;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAyMiAyMic+PHBhdGggZD0nTTExIDEuNWwyLjg1IDYuNCA2Ljk1LjYyLTUuMjcgNC43IDEuNiA2Ljc4TDExIDE2LjVsLTYuMTMgMy41IDEuNi02Ljc4TDEuMiA4LjUybDYuOTUtLjYyeicgZmlsbD0nI2I4OTQ0Yicgc3Ryb2tlPScjYjg5NDRiJyBzdHJva2Utd2lkdGg9JzEuNicgc3Ryb2tlLWxpbmVqb2luPSdyb3VuZCcvPjwvc3ZnPg==");
+  background-repeat: repeat-x;
+  background-size: 22px 20px;
+  background-position: 0 0;
+}
+
+.tc-rating-35 { --fill: 70%; }
+.tc-rating-40 { --fill: 80%; }
+.tc-rating-45 { --fill: 90%; }
+.tc-rating-50 { --fill: 100%; }
+
+/* End TC Gold Star Rating Base64*/
+	/* =============================================================================
+   TC TECHNOLOGY HUB — EXPLORE BUTTON WRAPPER CONTROL
+   Targets the .wp-block-html wrapper that holds the EXPLORE anchor inside
+   each tc-book-card. Constrains the wrapper width and centers the anchor.
+   Pins the wrapper to the bottom of the card.
+============================================================================= */
+
+.tc-book-card .wp-block-html {
+  width: 100% !important;
+  margin-top: auto !important;
+  text-align: center !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.tc-book-card .wp-block-html .tc-explore-link {
+  display: inline-block !important;
+  width: auto !important;
+  max-width: max-content !important;
+  flex: 0 0 auto !important;
+}
+
+/* End TC Technology Hub Explore Button Wrapper Control */
+
+/* =============================================================================
+   TC TECHNOLOGY HUB — EDITORIAL INTRO SECTIONS (4 PANELS, FINAL)
+   Targets the 4 Kadence Section blocks at the top of the Technology Hub
+   carrying the tc-tech-intro class. Frames each as a centered editorial
+   panel. Cream background. Brand-gold top accent rule. Premium and quiet.
+============================================================================= */
+
+.entry-content .wp-block-kadence-column.tc-tech-intro,
+.entry-content .tc-tech-intro {
+  max-width: 780px !important;
+  margin: 32px auto !important;
+  padding: 40px 44px !important;
+  background-color: #faf9f6 !important;
+  border-top: 3px solid #b8944b !important;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.05) !important;
+  text-align: center !important;
+  box-sizing: border-box !important;
+}
+
+.entry-content .tc-tech-intro > .kt-inside-inner-col {
+  align-items: center !important;
+  padding: 0 !important;
+  width: 100% !important;
+}
+
+.entry-content .tc-tech-intro h2,
+.entry-content .tc-tech-intro h2.wp-block-heading {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 28px !important;
+  font-weight: 600 !important;
+  line-height: 1.25 !important;
+  letter-spacing: 0.5px !important;
+  color: #1e3a5f !important;
+  margin: 0 0 20px 0 !important;
+  text-align: center !important;
+}
+
+.entry-content .tc-tech-intro p {
+  font-family: 'Inter', Arial, sans-serif !important;
+  font-size: 16px !important;
+  line-height: 1.75 !important;
+  color: #1a1a1a !important;
+  max-width: 660px !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+}
+
+@media (max-width: 767px) {
+  .entry-content .wp-block-kadence-column.tc-tech-intro,
+  .entry-content .tc-tech-intro {
+    padding: 28px 22px !important;
+    margin: 20px auto !important;
+  }
+  .entry-content .tc-tech-intro h2,
+  .entry-content .tc-tech-intro h2.wp-block-heading {
+    font-size: 22px !important;
+  }
+  .entry-content .tc-tech-intro p {
+    font-size: 15px !important;
+  }
+}
+
+/* End TC Technology Hub Editorial Intro Sections Final */
+/* =============================================================================
+   STAGING PATCH 01B — STOP SIBLING STRETCH ON HOVER
+   Append only. Adds to STAGING TEST 01. Deletes nothing.
+============================================================================= */
+
+@media (hover: hover) {
+  .tc-book-card,
+  .wp-block-kadence-column.tc-book-card {
+    height: auto !important;
+    align-self: start !important;
+  }
+}
+
+/* =============================================================================
+   STAGING PATCH 01D — CENTER EXPLORE BUTTON IN ALL CARDS
+   Append only. Deletes nothing.
+============================================================================= */
+
+.tc-book-card .tc-book-button {
+  display: flex !important;
+  justify-content: center !important;
+  width: 100% !important;
+}
+/* =============================================================================
+   STAGING PATCH 01C-PRODUCT — LOCK IMAGE HEIGHT ON PRODUCT CARDS ONLY
+   Fires only on cards carrying tc-product-card. Books never crop.
+   Append only. Deletes nothing.
+============================================================================= */
+
+.tc-product-card .wp-block-image img,
+.tc-product-card figure img {
+ width: 100% !important;
+  aspect-ratio: 1 / 1 !important;
+  height: auto !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  object-position: center !important;
+}
+/* =============================================================================
+   STAGING PATCH 01E — INNER PADDING FOR CARD TEXT
+   Append only. Deletes nothing. Adds breathing room so headings and
+   paragraphs do not sit on the card edge on the live front end.
+============================================================================= */
+
+.tc-book-card .kt-inside-inner-col > h2,
+.tc-book-card .kt-inside-inner-col > h3,
+.tc-book-card .kt-inside-inner-col > h4,
+.tc-book-card .kt-inside-inner-col > h5,
+.tc-book-card .kt-inside-inner-col > .wp-block-heading,
+.tc-book-card .kt-inside-inner-col > p,
+.tc-book-card .kt-inside-inner-col > .tc-leadership-body {
+  padding-left: 14px !important;
+  padding-right: 14px !important;
+}
+/* =============================================================================
+   STAGING PATCH 01G — FORCE CARD LABEL ONTO ITS OWN LINE
+   Append only. Deletes nothing.
+============================================================================= */
+
+.tc-book-card p.tc-leadership-body strong,
+.tc-book-card p.tc-leadership-body b {
+  display: block !important;
+  margin-bottom: 2px !important;
+}
+/* TC Explore Hub Overlay Animation, 2026-05-26.
+   No collisions with locked classes.
+   Paste at the bottom of Astra Additional CSS. */
+.tc-explore-hub {
+  position: relative;
+  min-height: 460px;
+  overflow: hidden;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+  transition: transform 350ms ease, box-shadow 350ms ease;
+}
+.tc-explore-hub .kt-inside-inner-col {
+  position: relative;
+  min-height: 460px;
+  overflow: hidden;
+}
+.tc-explore-hub .kt-inside-inner-col > figure,
+.tc-explore-hub .kt-inside-inner-col > .wp-block-image {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+.tc-explore-hub .kt-inside-inner-col > figure img,
+.tc-explore-hub .kt-inside-inner-col > .wp-block-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(100%);
+  transition: filter 350ms ease;
+}
+.tc-explore-hub h2,
+.tc-explore-hub h3 {
+  position: absolute;
+  left: 50%;
+  bottom: 28px;
+  z-index: 3;
+  width: calc(100% - 48px);
+  margin: 0;
+  transform: translateX(-50%);
+  color: #ffffff !important; /* Required to neutralize Kadence or theme heading color rules. */
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none !important; /* Required to neutralize residual heading link underline rules. */
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.65);
+  opacity: 1;
+  pointer-events: none;
+  transition: opacity 350ms ease;
+}
+.tc-explore-hub h2 a,
+.tc-explore-hub h3 a,
+.tc-explore-hub h2 a:hover,
+.tc-explore-hub h3 a:hover,
+.tc-explore-hub h2 a:focus,
+.tc-explore-hub h3 a:focus {
+  color: #ffffff !important; /* Required to neutralize inline or inherited heading link colors. */
+  text-decoration: none !important; /* Required to neutralize inline or inherited heading link underlines. */
+  pointer-events: none;
+}
+.tc-explore-hub p {
+  display: none;
+}
+.tc-explore-hub::after {
+  content: "EXPLORE";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 4;
+  padding: 13px 48px 13px 28px;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(135deg, rgba(31, 31, 31, 0.84), rgba(26, 26, 26, 0.68));
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.22em;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 350ms ease;
+}
+.tc-explore-hub::before {
+  content: "›";
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 52px);
+  z-index: 5;
+  transform: translate(-50%, -54%);
+  color: #b8944b;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 350ms ease;
+}
+@media (hover: hover) and (pointer: fine) {
+  .tc-explore-hub:hover {
+    cursor: pointer;
+    transform: translateY(-6px);
+    box-shadow: 0 20px 44px rgba(0, 0, 0, 0.28);
+  }
+  .tc-explore-hub:hover .kt-inside-inner-col > figure img,
+  .tc-explore-hub:hover .kt-inside-inner-col > .wp-block-image img {
+    filter: brightness(60%);
+  }
+  .tc-explore-hub:hover h2,
+  .tc-explore-hub:hover h3 {
+    opacity: 0.7;
+  }
+  .tc-explore-hub:hover::after,
+  .tc-explore-hub:hover::before {
+    opacity: 1;
+  }
+}
+@media (max-width: 767px), (hover: none) {
+  .tc-explore-hub .kt-inside-inner-col > figure img,
+  .tc-explore-hub .kt-inside-inner-col > .wp-block-image img {
+    filter: brightness(75%);
+  }
+  .tc-explore-hub::after,
+  .tc-explore-hub::before {
+    opacity: 1;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tc-explore-hub,
+  .tc-explore-hub .kt-inside-inner-col > figure img,
+  .tc-explore-hub .kt-inside-inner-col > .wp-block-image img,
+  .tc-explore-hub h2,
+  .tc-explore-hub h3,
+  .tc-explore-hub::after,
+  .tc-explore-hub::before {
+    transition: none !important; /* Required to respect reduced motion preferences. */
+  }
+}
+/* TC Explore Hero Animation, 2026-06-01. Class: tc-explore-hero. Append at bottom of Additional CSS. */ html { scroll-behavior: smooth; }
+
+.tc-explore-hero { position: relative; overflow: hidden; }
+
+.tc-explore-hero .kt-row-layout-inner, .tc-explore-hero .kt-row-column-wrap, .tc-explore-hero .wp-block-kadence-column, .tc-explore-hero .kt-inside-inner-col { position: static; }
+
+.tc-explore-hero .wp-block-image, .tc-explore-hero h1, .tc-explore-hero p, .tc-explore-hero::after { pointer-events: none; }
+
+.tc-explore-hero .kt-blocks-section-link-overlay { position: absolute; inset: 0; z-index: 2; display: block; background: transparent; }
+
+.tc-explore-hero .wp-block-image { position: absolute; inset: 0; z-index: 1; width: 100%; height: 100%; margin: 0; overflow: hidden; }
+
+.tc-explore-hero .wp-block-image img { width: 100%; height: 100%; object-fit: cover; object-position: center top; filter: brightness(1); transform: translateY(0); animation-name: tc-hero-image-reveal; animation-duration: 400ms; animation-delay: 0ms; animation-timing-function: ease-out; animation-fill-mode: forwards; animation-iteration-count: 1; pointer-events: none; }
+
+.tc-explore-hero h1 { position: absolute; top: 42%; left: 50%; z-index: 2; width: 90%; max-width: 900px; margin: 0; color: #ffffff; font-family: "Playfair Display", serif; font-size: clamp(28px, 4vw, 56px); font-weight: 600; line-height: 1.15; letter-spacing: 0.02em; text-align: center; text-shadow: 0 2px 8px rgba(0,0,0,0.4); opacity: 0; transform: translateX(-50%) translateY(-20px); animation-name: tc-hero-heading-drop; animation-duration: 500ms; animation-delay: 150ms; animation-timing-function: ease-out; animation-fill-mode: forwards; animation-iteration-count: 1; }
+
+.tc-explore-hero p { position: absolute; top: 58%; left: 50%; z-index: 2; width: 90%; max-width: 720px; margin: 0; color: #ffffff; font-family: "Inter", sans-serif; font-size: clamp(15px, 1.4vw, 18px); line-height: 1.65; text-align: center; text-shadow: 0 1px 4px rgba(0,0,0,0.3); opacity: 0; transform: translateX(calc(-50% + 40px)); animation-name: tc-hero-paragraph-slide-right; animation-duration: 500ms; animation-delay: 350ms; animation-timing-function: ease-out; animation-fill-mode: forwards; animation-iteration-count: 1; }
+
+.tc-explore-hero::after { content: "EXPLORE"; position: absolute; left: 50%; bottom: 80px; z-index: 3; padding: 18px 40px; border: 0; border-radius: 8px; color: #ffffff; background: linear-gradient(180deg, rgba(26,26,26,0.85) 0%, rgba(13,13,13,0.85) 100%); box-shadow: 0 4px 14px rgba(0,0,0,0.35); font-family: "Inter", sans-serif; font-size: 16px; font-weight: 600; line-height: 1; letter-spacing: 0.2em; text-transform: uppercase; opacity: 0; transform: translateX(calc(-50% - 40px)); animation-name: tc-hero-pill-slide-left; animation-duration: 500ms; animation-delay: 550ms; animation-timing-function: ease-out; animation-fill-mode: forwards; animation-iteration-count: 1; }
+
+@keyframes tc-hero-image-reveal { from { filter: brightness(1); transform: translateY(0); }
+
+to { filter: brightness(0.6); transform: translateY(-4px); } }
+
+@keyframes tc-hero-heading-drop { from { opacity: 0; transform: translateX(-50%) translateY(-20px); }
+
+to { opacity: 1; transform: translateX(-50%) translateY(0); } }
+
+@keyframes tc-hero-paragraph-slide-right { from { opacity: 0; transform: translateX(calc(-50% + 40px)); }
+
+to { opacity: 1; transform: translateX(-50%); } }
+
+@keyframes tc-hero-pill-slide-left { from { opacity: 0; transform: translateX(calc(-50% - 40px)); }
+
+to { opacity: 1; transform: translateX(-50%); } }
+
+@media (max-width: 1024px) { .tc-explore-hero h1 { top: 40%; transform: translateX(-50%) translateY(-20px); }
+
+.tc-explore-hero p { top: 60%; transform: translateX(calc(-50% + 20px)); }
+
+.tc-explore-hero::after { padding: 14px 32px; transform: translateX(calc(-50% - 20px)); }
+
+@keyframes tc-hero-paragraph-slide-right { from { opacity: 0; transform: translateX(calc(-50% + 20px)); }
+
+to {
+  opacity: 1;
+  transform: translateX(-50%);
+}
+}
+
+@keyframes tc-hero-pill-slide-left { from { opacity: 0; transform: translateX(calc(-50% - 20px)); }
+
+to {
+  opacity: 1;
+  transform: translateX(-50%);
+}
+} }
+
+@media (max-width: 767px) { .tc-explore-hero .wp-block-image img { animation-duration: 350ms; }
+
+.tc-explore-hero h1 { top: 38%; transform: translateX(-50%); animation-duration: 350ms; }
+
+.tc-explore-hero p { top: 58%; transform: translateX(-50%); animation-duration: 350ms; }
+
+.tc-explore-hero::after { bottom: 50px; padding: 12px 28px; font-size: 14px; transform: translateX(-50%); animation-duration: 350ms; }
+
+@keyframes tc-hero-heading-drop { from { opacity: 0; transform: translateX(-50%); }
+
+to {
+  opacity: 1;
+  transform: translateX(-50%);
+}
+}
+
+@keyframes tc-hero-paragraph-slide-right { from { opacity: 0; transform: translateX(-50%); }
+
+to {
+  opacity: 1;
+  transform: translateX(-50%);
+}
+}
+
+@keyframes tc-hero-pill-slide-left { from { opacity: 0; transform: translateX(-50%); }
+
+to {
+  opacity: 1;
+  transform: translateX(-50%);
+}
+} }
+
+@media (prefers-reduced-motion: reduce) { .tc-explore-hero , .tc-explore-hero::after, .tc-explore-hero .wp-block-image img { animation: none !important; transition: none !important; transform: none !important; opacity: 1 !important; filter: none !important; } } /* End TC Explore Hero */
+/* TC Explore Hero render fix, 2026-06-01. Append-only. Gives the absolutely positioned hero image a containing-block height. Overlay selector corrected to live class. Scoped to tc-explore-hero only. */
+.tc-explore-hero {
+  min-height: 80vh;
+}
+.tc-explore-hero .kb-section-link-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: block;
+  background: transparent;
+}
+@media (max-width: 1024px) {
+  .tc-explore-hero {
+    min-height: 60vh;
+  }
+}
+@media (max-width: 767px) {
+  .tc-explore-hero {
+    min-height: 50vh;
+  }
+}
+/* End TC Explore Hero render fix */
+/* TC Explore Hero tuning, 2026-06-01. Append-only. Whole scene no crop via 16:9 ratio, H1 sized down (tag kept), text re-spaced under the sconces, reveal slowed and staggered. Scoped to tc-explore-hero only. */
+
+.tc-explore-hero {
+  aspect-ratio: 16 / 9;
+  min-height: 0;
+  height: auto;
+}
+
+.tc-explore-hero .wp-block-image img {
+  object-position: center center;
+  animation-duration: 900ms;
+  animation-delay: 0ms;
+}
+
+.tc-explore-hero h1 {
+  top: 30%;
+  font-size: clamp(24px, 3vw, 42px);
+  animation-duration: 800ms;
+  animation-delay: 400ms;
+}
+
+.tc-explore-hero p {
+  top: 50%;
+  animation-duration: 800ms;
+  animation-delay: 700ms;
+}
+
+.tc-explore-hero::after {
+  animation-duration: 800ms;
+  animation-delay: 1000ms;
+}
+
+@keyframes tc-hero-image-reveal {
+  from { filter: brightness(1); transform: translateY(0); }
+  to { filter: brightness(0.6); transform: translateY(0); }
+}
+/* End TC Explore Hero tuning */
+/* =============================================================================
+   STAGING PATCH 02A — OVERLAY BUTTON ANCHOR + INLINE STAR RENDER FIX
+   Append-only. Scoped to .tc-overlay-buttons / .tc-affiliate-btn / .tc-grade-btn.
+   Purpose:
+   - Anchor two-button system to card image area bottom
+   - Render tc-rating stars inside .tc-grade-btn using existing tc-rating-* classes
+   - Preserve existing tc-overlay-card hover/lift/darken/title behaviors
+============================================================================= */
+.tc-overlay-buttons {
+  position: absolute !important;
+  left: 16px !important;
+  right: 16px !important;
+  bottom: 16px !important;
+  z-index: 4 !important;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 8px !important;
+  align-items: stretch !important;
+  pointer-events: auto !important;
+}
+.tc-overlay-buttons > .tc-affiliate-btn,
+.tc-overlay-buttons > .tc-grade-btn {
+  min-height: 42px !important;
+  border-radius: 6px !important;
+  transition: transform 250ms ease, box-shadow 250ms ease, background 250ms ease !important;
+}
+.tc-overlay-buttons > .tc-affiliate-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  padding: 10px 14px !important;
+  background: linear-gradient(180deg, rgba(30,58,95,0.94), rgba(20,42,75,0.94)) !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  text-align: center !important;
+  font-family: "Inter", sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+}
+.tc-overlay-buttons > .tc-affiliate-btn::after {
+  content: "›";
+  color: #b8944b;
+  font-size: 16px;
+  line-height: 1;
+}
+.tc-overlay-buttons > .tc-grade-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px !important;
+  padding: 10px 12px !important;
+  background: linear-gradient(180deg, rgba(26,26,26,0.92), rgba(13,13,13,0.92)) !important;
+  color: #ffffff !important;
+  text-align: center !important;
+  font-family: "Inter", sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.02em !important;
+  white-space: nowrap !important;
+}
+.tc-overlay-buttons > .tc-grade-btn > span:not(.tc-grade-block) {
+  display: inline-block !important;
+  line-height: 1.1 !important;
+}
+/* Inline star renderer for tc-grade-block when used inside grade button */
+.tc-overlay-buttons > .tc-grade-btn > .tc-grade-block {
+  --fill: 0%;
+  position: relative !important;
+  display: inline-block !important;
+  width: 80px !important;
+  min-width: 80px !important;
+  height: 14px !important;
+  margin: 0 !important;
+  flex: 0 0 80px !important;
+  vertical-align: middle !important;
+  font-size: 0 !important;
+  line-height: 1 !important;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAyMiAyMic+PHBhdGggZD0nTTExIDEuNWwyLjg1IDYuNCA2Ljk1LjYyLTUuMjcgNC43IDEuNiA2Ljc4TDExIDE2LjVsLTYuMTMgMy41IDEuNi02Ljc4TDEuMiA4LjUybDYuOTUtLjYyeicgZmlsbD0nbm9uZScgc3Ryb2tlPScjYjg5NDRiJyBzdHJva2Utd2lkdGg9JzEuNicgc3Ryb2tlLWxpbmVqb2luPSdyb3VuZCcvPjwvc3ZnPg==") !important;
+  background-repeat: repeat-x !important;
+  background-size: 16px 14px !important;
+  background-position: 0 0 !important;
+}
+.tc-overlay-buttons > .tc-grade-btn > .tc-grade-block::after {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: var(--fill) !important;
+  height: 100% !important;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAyMiAyMic+PHBhdGggZD0nTTExIDEuNWwyLjg1IDYuNCA2Ljk1LjYyLTUuMjcgNC43IDEuNiA2Ljc4TDExIDE2LjVsLTYuMTMgMy41IDEuNi02Ljc4TDEuMiA4LjUybDYuOTUtLjYyeicgZmlsbD0nI2I4OTQ0Yicgc3Ryb2tlPScjYjg5NDRiJyBzdHJva2Utd2lkdGg9JzEuNicgc3Ryb2tlLWxpbmVqb2luPSdyb3VuZCcvPjwvc3ZnPg==") !important;
+  background-repeat: repeat-x !important;
+  background-size: 16px 14px !important;
+  background-position: 0 0 !important;
+}
+/* Keep compatibility with existing rating modifiers */
+.tc-overlay-buttons > .tc-grade-btn > .tc-grade-block.tc-rating-30 { --fill: 60%; }
+.tc-overlay-buttons > .tc-grade-btn > .tc-grade-block.tc-rating-35 { --fill: 70%; }
+.tc-overlay-buttons > .tc-grade-btn > .tc-grade-block.tc-rating-40 { --fill: 80%; }
+.tc-overlay-buttons > .tc-grade-btn > .tc-grade-block.tc-rating-45 { --fill: 90%; }
+.tc-overlay-buttons > .tc-grade-btn > .tc-grade-block.tc-rating-50 { --fill: 100%; }
+@media (hover: hover) and (pointer: fine) {
+  .tc-overlay-buttons > .tc-affiliate-btn:hover,
+  .tc-overlay-buttons > .tc-grade-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  }
+}
+.tc-overlay-buttons > .tc-affiliate-btn:focus-visible,
+.tc-overlay-buttons > .tc-grade-btn:focus-visible {
+  outline: 2px solid #b8944b !important;
+  outline-offset: 2px !important;
+}
+/* Tablet */
+@media (max-width: 1024px) {
+  .tc-overlay-buttons {
+    left: 14px !important;
+    right: 14px !important;
+    bottom: 14px !important;
+    gap: 7px !important;
+  }
+  .tc-overlay-buttons > .tc-affiliate-btn,
+  .tc-overlay-buttons > .tc-grade-btn {
+    min-height: 40px !important;
+    padding: 9px 10px !important;
+    font-size: 12px !important;
+  }
+  .tc-overlay-buttons > .tc-grade-btn > .tc-grade-block {
+    width: 76px !important;
+    min-width: 76px !important;
+    height: 13px !important;
+    background-size: 15.2px 13px !important;
+  }
+  .tc-overlay-buttons > .tc-grade-btn > .tc-grade-block::after {
+    background-size: 15.2px 13px !important;
+  }
+}
+/* Mobile */
+@media (max-width: 767px) {
+  .tc-overlay-buttons {
+    left: 12px !important;
+    right: 12px !important;
+    bottom: 12px !important;
+    grid-template-columns: 1fr !important;
+    gap: 6px !important;
+  }
+  .tc-overlay-buttons > .tc-affiliate-btn,
+  .tc-overlay-buttons > .tc-grade-btn {
+    min-height: 38px !important;
+    font-size: 12px !important;
+  }
+  .tc-overlay-buttons > .tc-grade-btn > .tc-grade-block {
+    width: 80px !important;
+    min-width: 80px !important;
+    height: 14px !important;
+    background-size: 16px 14px !important;
+  }
+  .tc-overlay-buttons > .tc-grade-btn > .tc-grade-block::after {
+    background-size: 16px 14px !important;
+  }
+}
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .tc-overlay-buttons > .tc-affiliate-btn,
+  .tc-overlay-buttons > .tc-grade-btn {
+    transition: none !important;
+  }
+}
+/* End STAGING PATCH 02A */
+/* =============================================================================
+   STAGING PATCH 02-PRODUCT CONSOLIDATED — OVERLAY PRODUCT CARD FINAL
+   Append-only. REPLACES retired patches 02B, 02C, 02D (now deleted).
+   Builds on STAGING PATCH 02A (button structure + star renderer, still active).
+   Scoped entirely to .tc-overlay-card-product modifier. Does NOT affect
+   tc-overlay-card on large-image pages. Requires both classes on each card:
+   class="tc-overlay-card tc-overlay-card-product"
+
+   Settled behavior:
+   1. Card near-square to match 600x600 product images, cover fill, slight crop
+   2. Title 18px bold navy at rest, white on hover, heavy shadow removed
+   3. Grade button stacked: TC Grade (Playfair) over gold stars, no numeral
+   4. Both buttons matching transparent blue, reduced height
+   5. Buttons hidden at rest, fade up on hover (desktop); always shown mobile
+============================================================================= */
+
+/* --- 1. CARD SHAPE: near-square, cover fill --- */
+.tc-overlay-card-product {
+  min-height: 0 !important;
+  aspect-ratio: 1 / 1 !important;
+  background: #1f1f1f !important;
+}
+
+.tc-overlay-card-product .kt-inside-inner-col > figure img,
+.tc-overlay-card-product .kt-inside-inner-col > .wp-block-image img {
+  object-fit: cover !important;
+  object-position: center !important;
+}
+
+/* --- 2. TITLE: 18px bold navy at rest, white on hover --- */
+.entry-content .tc-overlay-card-product .kt-inside-inner-col > h3.wp-block-heading {
+  font-size: 18px !important;
+  line-height: 1.3 !important;
+  font-weight: 700 !important;
+ }
+
+.entry-content .tc-overlay-card-product .kt-inside-inner-col > h3.wp-block-heading a {
+  color: #1e3a5f !important;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .entry-content .tc-overlay-card-product:hover .kt-inside-inner-col > h3.wp-block-heading,
+  .entry-content .tc-overlay-card-product:hover .kt-inside-inner-col > h3.wp-block-heading a {
+    color: #ffffff !important;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.55) !important;
+  }
+}
+
+@media (max-width: 767px), (hover: none) {
+  .entry-content .tc-overlay-card-product .kt-inside-inner-col > h3.wp-block-heading {
+    font-size: 16px !important;
+    line-height: 1.3 !important;
+  }
+}
+
+/* --- 3. GRADE BUTTON: stacked, Playfair label over stars --- */
+.tc-overlay-card-product .tc-overlay-buttons > .tc-affiliate-btn,
+.tc-overlay-card-product .tc-overlay-buttons > .tc-grade-btn {
+  min-width: 0 !important;
+  min-height: 30px !important;
+}
+
+.tc-overlay-card-product .tc-overlay-buttons > .tc-grade-btn {
+  flex-direction: column !important;
+  gap: 4px !important;
+  padding: 6px 10px !important;
+  white-space: normal !important;
+}
+
+.tc-overlay-card-product .tc-overlay-buttons > .tc-grade-btn > span:not(.tc-grade-block) {
+  font-family: "Playfair Display", Georgia, serif !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.02em !important;
+  text-transform: none !important;
+}
+
+/* --- 4. BOTH BUTTONS: matching transparent blue --- */
+.tc-overlay-card-product .tc-overlay-buttons > .tc-affiliate-btn,
+.tc-overlay-card-product .tc-overlay-buttons > .tc-grade-btn {
+  background: linear-gradient(180deg, rgba(58,107,158,0.82), rgba(38,74,120,0.82)) !important;
+}
+
+.tc-overlay-card-product .tc-overlay-buttons > .tc-affiliate-btn {
+  padding: 7px 14px !important;
+}
+
+/* --- 5. BUTTONS: hidden at rest, fade up on hover (desktop only) --- */
+@media (hover: hover) and (pointer: fine) {
+  .tc-overlay-card-product .tc-overlay-buttons {
+    opacity: 0 !important;
+    transform: translateY(8px) !important;
+    pointer-events: none !important;
+    transition: opacity 300ms ease, transform 300ms ease !important;
+  }
+  .tc-overlay-card-product:hover .tc-overlay-buttons {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    pointer-events: auto !important;
+  }
+}
+/* End STAGING PATCH 02-PRODUCT CONSOLIDATED */
+/* --- 1. CARD SHAPE: near-square, cover fill --- */
+.tc-overlay-card-product {
+  min-height: 0 !important;
+  aspect-ratio: 1 / 1 !important;
+  background: #1f1f1f !important;
+  align-self: start !important;
+  z-index: 1 !important;
+}
+
+.tc-overlay-card-product:hover {
+  z-index: 5 !important;
+}
+/* --- 3b. BUTTON HEIGHT: size to content, stop stretch --- */
+.tc-overlay-card-product .tc-overlay-buttons {
+  align-items: end !important;
+}
+
+.tc-overlay-card-product .tc-overlay-buttons > .tc-affiliate-btn,
+.tc-overlay-card-product .tc-overlay-buttons > .tc-grade-btn {
+  min-height: 0 !important;
+  height: auto !important;
+  align-self: end !important;
+}
+/* =============================================================================
+   STAGING PATCH 02-PRODUCT OVERFLOW FIX
+   Append only. Scoped to .tc-overlay-card-product.
+   Cause: base .tc-overlay-card sets height:100%, the product variant adds
+   aspect-ratio:1/1, and the grid item keeps min-width:auto. The aspect ratio
+   transfers the tall height into an automatic minimum WIDTH, so each card
+   demands more than its 1/4 grid track and spills over its neighbor.
+   Fix: zero the automatic minimum and let the 1/4 column width drive height.
+   Does not affect .tc-overlay-card on non-product pages.
+============================================================================= */
+.tc-overlay-card-product,
+.wp-block-kadence-column.tc-overlay-card-product {
+  min-width: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  aspect-ratio: 1 / 1 !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  align-self: start !important;
+  overflow: hidden !important;
+  z-index: 1 !important;
+}
+.tc-overlay-card-product:hover {
+  z-index: 5 !important;
+}
+.tc-overlay-card-product > .kt-inside-inner-col {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  height: 100% !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+}
+.tc-overlay-card-product .kt-inside-inner-col > figure,
+.tc-overlay-card-product .kt-inside-inner-col > .wp-block-image {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+}
+.tc-overlay-card-product .kt-inside-inner-col > figure img,
+.tc-overlay-card-product .kt-inside-inner-col > .wp-block-image img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  border-width: 0 !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+}
+/* End STAGING PATCH 02-PRODUCT OVERFLOW FIX */
+/* =============================================================================
+   STAGING PATCH 02-PRODUCT POLISH - TITLE LEGIBILITY + BUTTON HEIGHT MATCH
+   Append-only. Sits BELOW the overflow fix and does not alter it.
+   Scoped to .tc-overlay-card-product only.
+   1. Resting title white with soft shadow, readable on any product image
+   2. View and TC Grade forced to equal height, content centered, no slack
+============================================================================= */
+
+/* 1. Title readable at rest on any image (overrides the navy rule above) */
+.entry-content .tc-overlay-card-product .kt-inside-inner-col > h3.wp-block-heading,
+.entry-content .tc-overlay-card-product .kt-inside-inner-col > h3.wp-block-heading a {
+  color: #ffffff !important;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.80), 0 0 2px rgba(0,0,0,0.55) !important;
+}
+
+/* Optional reliability boost: soft bottom scrim behind the resting title.
+   Delete these three lines if you want shadow only. Scoped to product, does
+   not touch the base .tc-overlay-card scrim used on hub pages. */
+.tc-overlay-card-product::before {
+  background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 42%) !important;
+}
+
+/* 2. Equal-height buttons, content centered, no empty space below stars */
+.tc-overlay-card-product .tc-overlay-buttons {
+  align-items: stretch !important;
+}
+.tc-overlay-card-product .tc-overlay-buttons > .tc-affiliate-btn,
+.tc-overlay-card-product .tc-overlay-buttons > .tc-grade-btn {
+  min-height: 0 !important;
+  height: auto !important;
+  align-self: stretch !important;
+}
+.tc-overlay-card-product .tc-overlay-buttons > .tc-affiliate-btn {
+  align-items: center !important;
+  justify-content: center !important;
+}
+.tc-overlay-card-product .tc-overlay-buttons > .tc-grade-btn {
+  justify-content: center !important;
+}
+/* End STAGING PATCH 02-PRODUCT POLISH */
+/* =============================================================================
+   TC PRODUCT OVERLAY BUTTONS - SINGLE SOURCE OF TRUTH
+   Replaces every earlier product button block. Does NOT touch the overflow
+   fix or base .tc-overlay-card. The stars sat above the box because the base
+   ".tc-grade-block { margin:14px 0 }" pushes them out; this zeroes it and lets
+   the box grow to fit so content can never overflow upward.
+============================================================================= */
+
+.entry-content .tc-overlay-card-product .tc-overlay-buttons {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  align-items: stretch !important;
+  gap: 6px !important;
+}
+
+.entry-content .tc-overlay-card-product .tc-overlay-buttons > .tc-affiliate-btn,
+.entry-content .tc-overlay-card-product .tc-overlay-buttons > .tc-grade-btn {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  align-self: stretch !important;
+  height: auto !important;
+  min-height: 36px !important;
+  padding: 4px 8px !important;
+  margin: 0 !important;
+  font-size: 11px !important;
+  line-height: 1 !important;
+  box-sizing: border-box !important;
+  overflow: visible !important;
+}
+
+.entry-content .tc-overlay-card-product .tc-overlay-buttons > .tc-grade-btn {
+  flex-direction: column !important;
+  gap: 2px !important;
+}
+
+.entry-content .tc-overlay-card-product .tc-overlay-buttons > .tc-grade-btn > * {
+  margin: 0 !important;
+}
+
+.entry-content .tc-overlay-card-product .tc-overlay-buttons > .tc-grade-btn > span:not(.tc-grade-block) {
+  font-size: 10px !important;
+  line-height: 1 !important;
+}
+
+.entry-content .tc-overlay-card-product .tc-overlay-buttons > .tc-grade-btn > .tc-grade-block {
+  height: 10px !important;
+  width: 58px !important;
+  min-width: 58px !important;
+  flex: 0 0 58px !important;
+  margin: 0 !important;
+  background-size: 11.6px 10px !important;
+}
+.entry-content .tc-overlay-card-product .tc-overlay-buttons > .tc-grade-btn > .tc-grade-block::after {
+  background-size: 11.6px 10px !important;
+}
+/* End TC PRODUCT OVERLAY BUTTONS */
+/* =============================================================================
+   TC PRODUCT GRADE STARS - REAL BUG FIX
+   Grade button is flex-direction:column, so "flex: 0 0 58px" on the stars was
+   setting their HEIGHT to 58px (main axis), not width. That stretched the
+   button tall and parked the 10px star image at the top with empty space below.
+   Fix: stop forcing the stars' main-axis size; size them explicitly.
+   Append-only, last. Scoped to the product modifier.
+============================================================================= */
+.entry-content .tc-overlay-card-product .tc-overlay-buttons > .tc-grade-btn > .tc-grade-block {
+  flex: 0 0 auto !important;
+  width: 58px !important;
+  min-width: 58px !important;
+  height: 10px !important;
+  background-size: 11.6px 10px !important;
+}
+.entry-content .tc-overlay-card-product .tc-overlay-buttons > .tc-grade-btn > .tc-grade-block::after {
+  background-size: 11.6px 10px !important;
+}
+/* End TC PRODUCT GRADE STARS - REAL BUG FIX */
+/* =============================================================================
+   TC OVERLAY-CARD (column) + EXPLORE-HUB (image) COMBINED FIX
+   Only matches a description paragraph that comes AFTER a tc-explore-hub image
+   inside a tc-overlay-card. Cards without the explore-hub image are untouched,
+   and mobile is left alone. Moves the description to the bottom on hover so it
+   no longer sits on top of the EXPLORE pill.
+============================================================================= */
+@media (hover: hover) and (pointer: fine) {
+  .entry-content .tc-overlay-card .kt-inside-inner-col > .tc-explore-hub ~ p {
+    top: auto !important;
+    bottom: 26px !important;
+    transform: none !important;
+  }
+}
+/* End combined fix */
+
+/* =============================================================================
+   STAGING PATCH 02-GRADE — Hub overlay cards
+   Stars/grade at top at rest; hidden on hover so title + EXPLORE + description
+   don't overlap. Does not change your Custom HTML blocks.
+============================================================================= */
+
+.entry-content .tc-overlay-card .kt-inside-inner-col > .tc-grade-block {
+  position: absolute !important;
+  top: 14px !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 4 !important;
+  margin: 0 !important;
+  pointer-events: none;
+  transition: opacity 300ms ease;
+}
+
+.entry-content .tc-overlay-card .kt-inside-inner-col > .tc-grade-block .tc-grade-label,
+.entry-content .tc-overlay-card .kt-inside-inner-col > .tc-grade-block .tc-score {
+  color: #fff !important;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.85);
+}
+
+@media (hover: hover) {
+  .entry-content .tc-overlay-card:hover .kt-inside-inner-col > .tc-grade-block {
+    opacity: 0 !important;
+  }
+}
+
+/* End STAGING PATCH 02-GRADE */
+@media (max-width: 767px) {
+  .entry-content .kt-row-column-wrap {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+/* TC Membership Toggle — light / Vercel-aligned */
+.tc-membership {
+  --tc-accent: #1e3a5f;
+  --tc-accent-2: #2a4a73;
+  --tc-gold: #b8944b;
+  --tc-ink: #1f2937;
+  --tc-muted: #64748b;
+  --tc-bg: #ffffff;
+  --tc-bg-soft: #faf9f6;
+  --tc-track: #e8eef5;
+  --tc-border: rgba(30, 58, 95, 0.10);
+  --tc-radius: 14px;
+  --tc-shadow: 0 8px 24px -12px rgba(30, 58, 95, 0.18);
+  --tc-maxw: 720px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: var(--tc-maxw);
+  margin: 2rem auto 3rem;
+  padding: 0 1.25rem;
+  color: var(--tc-ink);
+  font-family: inherit;
+  background: transparent;
+}
+.tc-membership *,
+.tc-membership *::before,
+.tc-membership *::after { box-sizing: border-box; }
+.tc-membership .tc-toggle {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: min(340px, 88%);
+  margin: 0 auto 2.25rem;
+  padding: 5px;
+  background: var(--tc-track);
+  border: 1px solid var(--tc-border);
+  border-radius: 999px;
+  isolation: isolate;
+  box-shadow: none;
+}
+.tc-toggle__btn {
+  position: relative;
+  z-index: 2;
+  appearance: none;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  padding: 0.65rem 1rem;
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--tc-muted);
+  border-radius: 999px;
+  transition: color 0.25s ease;
+  white-space: nowrap;
+}
+.tc-toggle__btn.is-active { color: #fff; }
+.tc-toggle__btn:focus-visible {
+  outline: 2px solid var(--tc-gold);
+  outline-offset: 3px;
+}
+.tc-toggle__thumb {
+  position: absolute;
+  z-index: 1;
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  width: calc(50% - 5px);
+  border-radius: 999px;
+  background: var(--tc-accent);
+  box-shadow: 0 4px 12px -4px rgba(30, 58, 95, 0.45);
+  transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.tc-membership[data-view="member"] .tc-toggle__thumb {
+  transform: translateX(100%);
+}
+.tc-panel { display: none; animation: tc-fade 0.35s ease both; }
+.tc-membership[data-view="visitor"] .tc-panel--visitor { display: block; }
+.tc-membership[data-view="member"]  .tc-panel--member  { display: block; }
+@keyframes tc-fade {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.tc-card {
+  background: var(--tc-bg);
+  border: 1px solid var(--tc-border);
+  border-radius: var(--tc-radius);
+  box-shadow: var(--tc-shadow);
+  padding: clamp(1.75rem, 4vw, 2.5rem);
+}
+.tc-eyebrow {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--tc-gold);
+  margin: 0 0 0.75rem;
+}
+.tc-title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.65rem, 3.2vw, 2.15rem);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: var(--tc-accent);
+  margin: 0 0 0.75rem;
+}
+.tc-lead {
+  color: var(--tc-muted);
+  font-size: 1.05rem;
+  line-height: 1.65;
+  margin: 0 0 1.35rem;
+}
+.tc-card > p {
+  color: var(--tc-ink);
+  line-height: 1.65;
+  margin: 0 0 1.1rem;
+}
+.tc-form { display: grid; gap: 0.85rem; max-width: 420px; }
+.tc-field { display: grid; gap: 0.3rem; }
+.tc-field label {
+  font-weight: 500;
+  font-size: 0.88rem;
+  color: var(--tc-ink);
+}
+.tc-field input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font: inherit;
+  color: var(--tc-ink);
+  background: var(--tc-bg-soft);
+  border: 1px solid var(--tc-border);
+  border-radius: 10px;
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+}
+.tc-field input:focus {
+  outline: 0;
+  background: #fff;
+  border-color: var(--tc-accent);
+  box-shadow: 0 0 0 3px rgba(30, 58, 95, 0.12);
+}
+.tc-btn {
+  appearance: none;
+  cursor: pointer;
+  border: 0;
+  border-radius: 10px;
+  padding: 0.85rem 1.35rem;
+  font: inherit;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #fff;
+  background: var(--tc-accent);
+  transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+  box-shadow: none;
+}
+.tc-btn:hover {
+  background: var(--tc-accent-2);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px -12px rgba(30, 58, 95, 0.45);
+}
+.tc-btn:active { transform: translateY(0); }
+.tc-btn[disabled] { opacity: 0.6; cursor: progress; transform: none; box-shadow: none; }
+.tc-btn--ghost {
+  background: transparent;
+  color: var(--tc-accent);
+  border: 1px solid var(--tc-border);
+  box-shadow: none;
+  font-weight: 500;
+  padding: 0.45rem 0.9rem;
+  font-size: 0.85rem;
+}
+.tc-btn--ghost:hover {
+  background: var(--tc-bg-soft);
+  box-shadow: none;
+}
+.tc-fineprint { font-size: 0.82rem; color: var(--tc-muted); margin: 0.35rem 0 0; }
+.tc-msg { font-size: 0.92rem; margin: 0.25rem 0 0; min-height: 1.2em; }
+.tc-msg--error   { color: #b42318; }
+.tc-msg--success { color: var(--tc-accent); }
+.tc-locked  { display: block; }
+.tc-unlocked{ display: none; }
+.tc-membership[data-member="in"] .tc-locked   { display: none; }
+.tc-membership[data-member="in"] .tc-unlocked { display: block; animation: tc-fade 0.35s ease both; }
+.tc-member-bar {
+  display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1.35rem;
+  background: var(--tc-bg-soft);
+  border: 1px solid var(--tc-border);
+  border-radius: 10px;
+  font-size: 0.9rem;
+  color: var(--tc-muted);
+}
+.tc-member-bar strong { color: var(--tc-accent); font-weight: 600; }
+.tc-list {
+  list-style: none;
+  margin: 0 0 1.35rem;
+  padding: 0;
+  display: grid;
+  gap: 0.55rem;
+}
+.tc-list li {
+  position: relative;
+  padding-left: 1.6rem;
+  line-height: 1.5;
+  color: var(--tc-ink);
+  font-size: 0.98rem;
+}
+.tc-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.45em;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: var(--tc-accent);
+}
+@media (prefers-reduced-motion: reduce) {
+  .tc-panel, .tc-unlocked { animation: none; }
+  .tc-toggle__thumb, .tc-btn { transition: none; }
+}
+/* Toggle page — stronger lighten */
+body.page-id-8176 .site-content,
+body.page-id-8176 .ast-container {
+  background: #faf9f6 !important;
+}
+body.page-id-8176 .entry-header,
+body.page-id-8176 h1.entry-title {
+  display: none !important;
+}
+body.page-id-8176 .tc-membership .tc-card {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 0.5rem 0 0 !important;
+}
+body.page-id-8176 .tc-membership .tc-toggle {
+  width: min(300px, 86%) !important;
+  background: #e8eef5 !important;
+}		
