@@ -125,3 +125,5 @@ Those preservation docs are **not** on this `cursor/wp-rest-repair-98f8` branch 
 If the July Cloud URL is dead, the recoverable record for counsel is: **PR #2 + Jul 14–26 git commits + Aug 8 handoff + 10Web chat export + Cursor support export request for the bcIds above.**
 
 **Owner 7 Oct 2026 (later same day):** the full conversation was found in Cursor. Save without corrupting: `diagnostics/HOW-TO-SAVE-FOUND-CURSOR-CHAT-2026-10-07.md`.
+
+**Owner ~18:56 UTC same day:** cloud icon at top of that page → recovered thread is **Cloud Agent** (Path B). Desktop Export Transcript will not work. Paste the `bc-` URL here when copied.

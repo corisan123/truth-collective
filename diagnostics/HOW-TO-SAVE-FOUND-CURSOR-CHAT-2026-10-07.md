@@ -37,6 +37,8 @@ Look at the window.
 
 If unsure: copy the URL from the browser or from **Open in Web**. If it contains `/agents/bc-`, it is Cloud.
 
+**Owner 7 Oct 2026 ~18:56 UTC:** confirmed a **cloud icon at the top of the page**. The recovered 10Web thread is a **Cloud Agent**. Use **Path B** only. Desktop **Export Transcript will fail** (Cursor says export is not available for Cloud Agent chats).
+
 ---
 
 ## Path A — Desktop chat (Export Transcript works)

@@ -15,7 +15,7 @@ That summary is high-value **prior-agent testimony**. It is not the same as this
 
 A summary **request** is not the same as Continue / Apply / edit WordPress. Still: **do not ask that old thread anything else.**
 
-1. **Export Transcript** (Desktop) or **Print → PDF** (Cloud) **now**, so the new summary turn is included.  
+1. This thread is **Cloud Agent** (cloud icon at top). **Print → Save as PDF** now so the new summary turn is included. Desktop Export Transcript will not work. Copy the full `https://cursor.com/agents/bc-…` URL into `EXHIBIT-INDEX.txt` and send **only that URL** to this Sep 19 Cloud Agent.  
 2. If you have not already made the forensic `Cursor\User` zip, do Path A1 in `diagnostics/HOW-TO-SAVE-FOUND-CURSOR-CHAT-2026-10-07.md` after a full Cursor Exit.  
 3. Save as:
 
