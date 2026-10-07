@@ -18,7 +18,7 @@ This memo is a technical compilation of contemporaneous recovery notes, public H
 - WordPress page IDs, revision IDs, class counts, `amzn.to` counts, and media 404s recorded in dated diagnostic files.
 - That Additional CSS (Appearance → Customize) survived byte-identical from 8 August through 23 September 2026.
 - That a 10Web working folder `10web_tmp` existed under uploads (HTTP 403 on `.htaccess`) and was later gone from File Manager after a 24 July uploads restore.
-- That a 10Web sandbox host `kind-louse.10web.cloud` was used as a visual mock and was frozen as “do not port.”
+- That a 10Web host `kind-louse.10web.cloud` existed; 8–9 Aug recovery froze it as “do not port.” Owner testimony on 7 Oct 2026: that host was **10Web’s fake Builder website** from the failed migrations, not a Truth Collective design mock.
 - That recovery work after the crash (Hostinger restores; Cursor “light rebuilds”) caused **additional** measurable data loss. Those later acts are **not** 10Web acts and must be listed separately.
 
 **Cannot prove from this workspace alone**
@@ -27,6 +27,7 @@ This memo is a technical compilation of contemporaneous recovery notes, public H
 - A verified unique SKU count of “4000+ products.” That figure is owner testimony. REST inventory in September 2026 counted affiliate codes and revisions in the **hundreds** on published/draft pages plus **2324** media items; it did not complete a SKU census.
 - Lost revenue, SEO ranking dollars, or medical damages.
 - That every visual defect after July is caused only by 10Web (CSS vs markup vs restore vs later rebuilds are mixed).
+- From this VM: the inside-WordPress “pull through” session itself (no 10Web staff chat attached here). Owner testimony of that step is recorded in `diagnostics/10web-kind-louse-wp-access-testimony-2026-10-07.md`.
 
 ---
 
@@ -42,7 +43,7 @@ This memo is a technical compilation of contemporaneous recovery notes, public H
 | Products | In-page Gutenberg/Kadence blocks. **No WooCommerce product CPT** | lock 19 Sep; REST 23 Sep |
 | 10Web plugin | 10WEB manager **Active v1.20.21** as of 8 Aug 2026 | handoff |
 | 10Web ticket | `#375660` | handoff |
-| 10Web sandbox | `kind-louse.10web.cloud` (stale/dark preview; freeze 8–9 Aug) | `diagnostics/hub-technology-10web-freeze-2026-08-08.md` |
+| 10Web sandbox | `kind-louse.10web.cloud` (8–9 Aug freeze: do not port; owner 7 Oct: fake Builder site from failed migrations) | freeze note; 7 Oct testimony |
 
 ---
 
@@ -133,10 +134,23 @@ The **19 Aug** row is Cursor recovery, not 10Web. The **28 Jul / 8 Aug** rows ar
 
 `diagnostics/media-library-broken-thumbs-2026-08-09.md`: newest attachments under `uploads/2026/07/` returned **HTTP 404** for both full file and thumbnail. Standing note: July-era uploads path damage after restores. **Do not** treat this as “all media deleted”; Media Library entries can remain while disk files 404.
 
-### 4.6 10Web residue
+### 4.6 10Web residue and owner account of how the mash happened
 
+**Owner testimony (7 Oct 2026, this Cloud run)** — not independently timed from this VM:
+
+1. Several 10Web migrations returned **failed / disconnected**.
+2. 10Web **humans** then said they needed **access inside WordPress** to pull the site through to their side.
+3. **That** is when the damage occurred: **fragments of the real Hostinger WP the owner had provided, mashed with portions of the fake Builder site** hosted as `kind-louse.10web.cloud`.
+4. `kind-louse` was **not** a Truth Collective design sample. It was 10Web’s **fake website** created during those migrations.
+
+**Engineering that already sat in the repo (does not prove the WP-access hour, does not disprove it):**
+
+- 8–9 Aug freeze: public `kind-louse.10web.cloud` preview; **do not port** 10Web page code, Tailwind, invented nav / fake category trees (Robotics mega-menu), rainbow infographic. That reject list is the same class of content as an AI Builder “fake site.”
+- 3 Aug 10Web chat index (PR #5 timeline, owner-supplied export): owner told 10Web **“AI Builder created fake site again”** and asked for **human** migration of `tcstaging` with **no AI Builder / do not publish AI site**.
+- 8 Aug Tech Hub screenshot inventory: **16 tiles** on a hub whose real published children were **8**. Extra tiles are consistent with foreign IA mixed onto the page; they are **not** a signed proof of a specific 10Web staff login.
 - Folder `wp-content/uploads/10web_tmp` was probed (HTTP 403 on `.htaccess`) then **absent** in File Manager on 8 Aug after the 24 Jul uploads restore.
-- Public page HTML on 8 Aug had **no** `10web` / `tenweb` / `twbb` markers. Damage presented as **WordPress block markup + media path + CSS/markup mismatch**, not leftover 10Web tags in the HTML.
+- Public page HTML on 8 Aug had **no** `10web` / `tenweb` / `twbb` markers. A mash can still exist as **wrong blocks, wrong links, invented categories, and CSS/markup mismatch** without leftover 10Web tags in the HTML.
+- 10WEB **Manager plugin still Active v1.20.21** on 8 Aug (the usual WP-side install for 10Web to reach the site).
 
 ### 4.7 Production vs staging (still true 7 Oct 2026)
 
@@ -210,7 +224,9 @@ Last Cursor REST writes: **23 September 2026**.
 | `diagnostics/homepage-audit-2026-08-08.md` | Home not empty; same CSS payload |
 | `diagnostics/homepage-links-S0b-2026-08-08.md` | 404 vs 200 link table |
 | `diagnostics/patterns-inventory-2026-08-08.md` | 23 patterns; broken pattern URLs |
-| `diagnostics/hub-technology-10web-freeze-2026-08-08.md` | `kind-louse.10web.cloud` |
+| `diagnostics/hub-technology-10web-freeze-2026-08-08.md` | `kind-louse.10web.cloud`; 7 Oct owner correction: fake Builder site |
+| `diagnostics/10web-kind-louse-wp-access-testimony-2026-10-07.md` | Owner: failed/disconnected migrations → WP access → mash with kind-louse |
+| `diagnostics/cursor-10web-conversation-hunt-2026-10-07.md` | July Cursor was Cloud Agent; this run does not hold that transcript |
 | `diagnostics/THROUGHPUT-RESET-2026-08-10.md` | 10Web not responding; out of critical path |
 | `diagnostics/backups/page-111-technology-hub-before-REST-hub-technology-S-2026-08-08.html` | Pre-rebuild Tech Hub markup with overlay+explore split |
 | `diagnostics/backups/page-359-rev8273-2026-08-08-raw.html` | Computers catalog revision used as recovery source |

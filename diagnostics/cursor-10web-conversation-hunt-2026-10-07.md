@@ -11,6 +11,18 @@ This note answers: does **this** Cloud Agent hold the Cursor conversation that p
 
 ---
 
+## What *kind* of Cursor it was
+
+Daniel does not have to remember the product name. The July Truth Collective git is **Cloud Agent** (GitHub footers also say **Background Agent**). That is the **same kind** as this chat: `cursor.com/agents`, commits from `Cursor Agent`, branches `cursor/<name>-xxxx`.
+
+It was **not** proven as Desktop Composer, and it was **not** Copilot/Cursor Task.
+
+Same *kind* is not the same *thread*. This run started 19 Sep 2026. The July IDs are listed below.
+
+Owner 7 Oct: damage was **not** “Cursor chose kind-louse as a mock.” kind-louse was **10Web’s fake Builder site**; mash happened after **failed/disconnected** migrations when **10Web humans required WordPress access**. Full write-up: `diagnostics/10web-kind-louse-wp-access-testimony-2026-10-07.md`.
+
+---
+
 ## Direct answer
 
 **This chat does not contain that July conversation as a loaded transcript.**
@@ -83,7 +95,7 @@ These commits are contemporaneous **work product**. They are not a substitute fo
 | Window | Evidence |
 | --- | --- |
 | **Before (May–18 Jul)** | First repo commit 18 May. Overlay/hero CSS May–Jun. PR #2 **14 Jul**: Master Brief, hub structure, menu/LiteSpeed, page inventory. **18 Jul:** `tc-bw-reveal`, book-cover crop playbook 06 (“Page image cropping”). |
-| **During (25–26 Jul)** | **25 Jul** commits: session operating rules, toggle portals, duotone reveal. **26 Jul:** Computers drop-in HTML, Interactive Displays, High Performance books, **Rebuild Computers page as a clean Amazon hub**. |
+| **During (25–26 Jul)** | Cloud Agent branch `cursor/image-fix-and-membership-toggle-2672` (**no PR, so no bcId in git**). **25 Jul** commits: session operating rules, toggle portals, duotone reveal. **26 Jul:** Computers drop-in HTML, Interactive Displays, High Performance books, **Rebuild Computers page as a clean Amazon hub**. |
 | **After (from 8 Aug)** | First recovery handoff `bf1749c` **8 Aug** (`STAGING-RECOVERY-HANDOFF.md`). Continuous Cloud recovery from then through this run. |
 
 PR #1 (25 May 2026, `cursor/tc-hero-reveal-42be`) is earlier CSS work, not the migration thread.
