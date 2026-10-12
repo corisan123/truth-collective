@@ -94,6 +94,8 @@ Literature uses the 21-point qualitative track. Engineered products use ISO/UL/B
 
 **What is still not in this snapshot:** the executable JavaScript/HTML engine Daniel describes (thousands of lines, ~110 days). An 11 August ingest on this repo already recorded that the automated UL/ID → grade engine was **not found** in git and was **paused** after the crash (`diagnostics/evaluation-engine-ingest-2026-08-11.md`). These six files are the **specification and public standards**. They prove the system was written as category-specific governance, not a guess-and-copy affiliate script. They do not let this agent compile the JS.
 
+**12 Oct repo scan (see `08-EVALUATION-ENGINE-REPO-SCAN-2026-10-12.md`):** the six Stage files Daniel pointed at as `unified-governance-system_files` are already in `source-pdfs/` (byte-identical). Git **does** hold Evaluation Engine v1 as an **Excel** workbook (`evaluation-engine/TC_Evaluation_Engine_v1.xlsx`, ~180 formulas, copied from the 3 Aug Cloud branch). Git does **not** hold thousands of JS lines. The word “quantum” is not in the CURRENT binder text. If the runtime is a browser save named `unified-governance-system_files`, send the `.html` plus that folder as one zip.
+
 If the site cannot be rebuilt, or is rebuilt without that engine, Daniel’s statement: those **110 days are worthless**. That is a damages category: lost evaluation engine, not only lost product cards.
 
 ---
