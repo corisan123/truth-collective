@@ -7,7 +7,7 @@
 **Not a legal opinion, not an expert affidavit, not a damages model.**  
 Every sentence below is either a document this agent has seen, a measurement logged in this repo, or labeled **owner testimony**. If a fact is not in those three buckets, it is not stated as fact.
 
-**12 Oct correction (controlling):** Do not use “65 pages” as the size of the site. Use US Letter scale (about 3,575 to 6,500-plus letter pages). Do not treat Technology Hub as the bound of destruction. Child and sub-child pages remain missing or gutted; REST cannot revive posts that are gone. The only vendor documented inside WordPress during the migrate is 10Web. Full replacement language: `03-CORRECTIONS-SCALE-MISSING-PAGES-ACTOR-2026-10-12.md`.
+**12 Oct correction (controlling):** Do not use “65 pages” as the size of the site. Use US Letter scale (about 3,575 to 6,500-plus letter pages). Do not treat Technology Hub as the bound of destruction. Child and sub-child pages remain missing or gutted; REST cannot revive posts that are gone. The only vendor documented inside WordPress during the migrate is 10Web. Do not say CSS classes were intact: Additional CSS **text** remained; class-to-Gutenberg/Kadence **binding** broke. Full replacement language: `03-CORRECTIONS-SCALE-MISSING-PAGES-ACTOR-2026-10-12.md` and `04-CSS-CLASS-BINDING-VS-STYLESHEET-2026-10-12.md`.
 
 ---
 
@@ -58,7 +58,7 @@ Use these in this order. Do not lead with SKU counts or medical facts. Lead with
 | 5 | 8 Aug measured staging: Computers **0** product overlay classes; July upload files **404**; hub hrefs 404 while pages still existed; Tech Hub **16** tiles vs **8** real children | Condition after the access window, before Cursor August rebuilds | 8 Aug diagnostics on this branch |
 | 6 | 30 Sep letter: migrate **not successfully completed**; refund refused; DNS-unchanged used as a shield | Incomplete service plus a defense that does not address staging-file writes | T-03 |
 | 7 | Backup safety net failed **and** 10Web admits they used Updraft while holding WP admin | Restores did not return the migrate-source; they had the backup plugin | Handoff restore table; BDM testimony; T-03; local PC listing 12 Oct |
-| 8 | Additional CSS **survived** (~57,615 chars, SHA identical 8 Aug-23 Sep) | Damage is **markup, classes, links, media** - not "the customer wiped CSS" | `additional-css-audit-2026-09-19.md` |
+| 8 | Customizer **stylesheet text** still 57,615 chars (SHA identical 8 Aug-23 Sep). That is **not** intact class binding. Remaining `tc-*` names often sit on the wrong Gutenberg or Kadence node, so hover/overlay does not fire. About three pages still work. | Stops the defense “CSS was fine.” Pairs with Kadence fatal + 10Web Manager on 7 Aug | `04-CSS-CLASS-BINDING-VS-STYLESHEET-2026-10-12.md` |
 
 Rank 1 plus Rank 2 plus Rank 3 plus Rank 6 is the strongest **document** package. Rank 5 is the strongest **condition** package. Rank 7 is the backup theory. Rank 7 is **not** closed as "10Web deleted every Hostinger file." See §4.
 

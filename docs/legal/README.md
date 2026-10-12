@@ -9,11 +9,12 @@
 ## Start here (read in this order)
 
 1. **`03-CORRECTIONS-SCALE-MISSING-PAGES-ACTOR-2026-10-12.md`** — read first. Replaces “65 pages” with US Letter scale; sitewide missing children; 10Web as the only migrate-window WP vendor.  
-2. **`00-DEMONSTRATIVE-PROOF-OUTLINE.md`** — what is proven, what is not, 10Web fault vs other actors, gaps.  
-3. **`02-COUNSEL-ARGUMENT-BACKUPS-AND-REBUTTALS-2026-10-12.md`** — ranked damaging evidence, 30 Sep letter rebuttals, backup-wipe theory. Scale language in that file is superseded by `03-`.  
-4. **`01-EVIDENCE-INDEX.md`** — every file this repo holds, plus empty slots for PDFs still on the PC. Neutral summary of each.  
-5. **PR #6** — BDM narrative + Nazeli screenshots: https://github.com/corisan123/truth-collective/pull/6  
-6. **PR #5** — 10Web chat timeline + Cursor preservation playbooks: https://github.com/corisan123/truth-collective/pull/5  
-7. **`source-pdfs/`** — five PDFs ingested 12 Oct 2026 (BDM testimony, Site Health, two error-log exports, Updraft known-backups dump).  
+2. **`04-CSS-CLASS-BINDING-VS-STYLESHEET-2026-10-12.md`** — Additional CSS text surviving is not classes intact. Remaining classes pointed at wrong Gutenberg/Kadence HTML. About 1000 books to about 200 remaining, Gutenberg-only.  
+3. **`00-DEMONSTRATIVE-PROOF-OUTLINE.md`** — what is proven, what is not, 10Web fault vs other actors, gaps.  
+4. **`02-COUNSEL-ARGUMENT-BACKUPS-AND-REBUTTALS-2026-10-12.md`** — ranked damaging evidence, 30 Sep letter rebuttals, backup-wipe theory. Scale and CSS-intact language superseded by `03-` and `04-`.  
+5. **`01-EVIDENCE-INDEX.md`** — every file this repo holds, plus empty slots for PDFs still on the PC. Neutral summary of each.  
+6. **PR #6** — BDM narrative + Nazeli screenshots: https://github.com/corisan123/truth-collective/pull/6  
+7. **PR #5** — 10Web chat timeline + Cursor preservation playbooks: https://github.com/corisan123/truth-collective/pull/5  
+8. **`source-pdfs/`** — five PDFs ingested 12 Oct 2026 (BDM testimony, Site Health, two error-log exports, Updraft known-backups dump).  
 
 PC / Drive layout: `diagnostics/TC-10WEB-LAWSUIT-THREE-PLACE-SAVE-2026-10-07.md`.
