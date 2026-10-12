@@ -94,6 +94,13 @@ Do **not** restore these into staging or live.
 | P-06 | `docs/legal/03-CORRECTIONS-SCALE-MISSING-PAGES-ACTOR-2026-10-12.md` | 12 Oct 2026 | Replaces understated “65 pages / Tech Hub only” language. US Letter scale; missing children; 10Web-only migrate-window vendor. |
 | P-07 | `docs/legal/04-CSS-CLASS-BINDING-VS-STYLESHEET-2026-10-12.md` | 12 Oct 2026 | Splits stylesheet text vs class names vs class-to-Kadence/Gutenberg binding. “Classes intact” withdrawn. Book census owner figures. Kadence fatal + 10Web Manager same 7 Aug log. |
 | P-08 | `docs/legal/05-BACKUP-RETENTION-REPLACEMENT-2026-10-12.md` | 12 Oct 2026 | Three layers: checklist deletion of older plugin backups; 10Web’s admitted new Updraft saves dropping oldest slots; post-3 Aug damaged-site automation. Off-server July copies remain. |
+| P-09 | `docs/legal/06-SCALE-LABOR-ENGINE-AND-EDITORIAL-2026-10-12.md` | 12 Oct 2026 | Corrects 4,000 vs affiliate-link confusion. Editorial/Ones Who. Stage I–VI engine snapshot. 110-day engine as a damages category. |
+| E-01 | `source-pdfs/II-Master-Engineering-Driven-Evaluation-System-update-2026-08-02.pdf` | July 2026 / updated 2 Aug 2026 | Master engineering evaluation whitepaper Draft 2.1.1. ISO/UL/IEEE/JEDEC. Tiers 1–4. Per-category addenda. |
+| E-02 | `source-pdfs/Stage-I-Evaluation-Benchmarking-and-Governing-Bodies.docx` | Ingested 12 Oct 2026 | Stage I: map products to governing bodies before scoring. |
+| E-03 | `source-pdfs/Stage-III-Qualitative-Eval-Process.pdf` | v2.1, Aug 2026 | 21-point qualitative track for books and **non-monetized** editorial (Ones Who, wellness, podcasts). Research 5–6 per 1 selected in this doc; owner later said 10-plus for products. |
+| E-04 | `source-pdfs/Stage-V-Technology-Hub-Evaluation-System.pdf` | v2.1 | Technology Hub engineering process. Mission-critical weight 50–60%. |
+| E-05 | `source-pdfs/Stage-VI-Workspace-Evaluation-Standards.docx` | Ingested 12 Oct 2026 | Workspace hub: BIFMA/ANSI desks, chairs, monitor arms. |
+| E-06 | `source-pdfs/Standards-Governance-Compliance-Division-2026-10-12.docx` | Ingested 12 Oct 2026 | Top-level hub governance. Three layers. Evidence over opinion. Same bar for non-monetized content. |
 
 ---
 

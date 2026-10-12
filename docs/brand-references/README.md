@@ -14,6 +14,7 @@
 | `tc-membership-toggle.css` | Known-good Vercel-aligned membership toggle CSS |
 | `master-binder-premium-display-intelligence.md` | Copilot Task Master Binder structure (Quantitative track) |
 | `master-binder-tc-tokens.css` | Tokens/layout extracts from that binder |
+| `selection-standards/ingest-2026-10-12/` | Stage I / III / V / VI and master engineering PDFs Daniel sent 12 Oct 2026. Counsel write-up: `docs/legal/06-SCALE-LABOR-ENGINE-AND-EDITORIAL-2026-10-12.md`. |
 
 ## Pending from Daniel
 - Cursor CSS that drives **grayscale → color on hover** (10Web sample). Screenshots received 2026-08-08; code file not yet in repo.

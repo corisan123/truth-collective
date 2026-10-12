@@ -175,7 +175,7 @@ Explanation A from the prior draft still holds in parallel: some Hostinger resto
 - "10Web deleted Hostinger's own snapshot system" (not shown; Hostinger restore is a separate product from Updraft).
 - "No copies exist anywhere" (false: they exist on the PC).
 - "The 24 July 392 MB files are proven healthy migrate-source" (not opened).
-- "Cursor counted 4000 unique SKUs destroyed" (owner testimony; this agent did not census 4000).
+- "Cursor counted 4000 unique SKUs destroyed" or "only X Amazon links so the catalog was small" (4,000 is on-page items at 24 Jul, many unlinked after image remakes; see `06-SCALE-LABOR-ENGINE-AND-EDITORIAL-2026-10-12.md`).
 - "Every defect on staging today is a 10Web write" (Cursor 12 Aug / 19 Aug light rebuilds and the 24 July uploads restore must be listed separately).
 
 ---
