@@ -19,6 +19,7 @@
 9. **`01-EVIDENCE-INDEX.md`** — every file this repo holds.  
 10. **PR #6** — BDM narrative + Nazeli screenshots: https://github.com/corisan123/truth-collective/pull/6  
 11. **PR #5** — 10Web chat timeline.  
-12. **`source-pdfs/`** — Hostinger/10Web/Cursor PDFs plus Stage I–VI files.
+12. **`source-pdfs/`** — Hostinger/10Web/Cursor PDFs plus Stage I–VI files.  
+13. **`diagnostics/LOCAL-BACKUP-REVIEW-VS-STAGING-RESTORE-2026-10-12.md`** — local CPU backups: review first; staging restore only after a matching set; Cloud vs Desktop lanes.
 
 PC / Drive layout: `diagnostics/TC-10WEB-LAWSUIT-THREE-PLACE-SAVE-2026-10-07.md`.
