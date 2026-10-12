@@ -134,12 +134,12 @@ Treat Layers 2–3 as the 10Web-side mechanism. Disclose Layer 1.
 
 1. **Local copies still exist on the PC.** Windows listing 12 October 2026 shows dated Updraft sets:
 
-   | Timestamp on disk | Visible sizes (KB) | Likely Updraft role (by size, names truncated) |
+   | Timestamp on disk | Visible sizes (KB) | Named suffix (Drive PowerShell 12 Oct) |
    | --- | --- | --- |
-   | 24 Jul 2026 5:00-5:01 PM (`1659`) | 392,197; 392,691; **10,774 (boxed)**; 50,111 | two ~383 MB = uploads splits; 50 MB = likely `db`; 10.5 MB = likely `plugins` (not this 174 KB `others`) |
-   | 23 Jul 2026 7:30 PM | 19,827 | **named:** Drive `-db.gz` `c9570a105596` (see F17) |
-   | 12 Jul 2026 7:30 PM | 17,391 | **named:** Drive `-db.gz` `a2f57e449b46` (see F17) |
-   | 30 Jun 2026 7:30-8:00 PM (`1930`) | several 330,566-406,397; 10,774; 47,132 | uploads splits; 10.5 MB likely `plugins`; ~46 MB likely `db` |
+   | 24 Jul 2026 5:00-5:01 PM (`1659`) | 392,197; 392,691; **10,773 (boxed)**; 50,110 | uploads / uploads2; **themes**; **plugins**. **No `-db` on Drive.** Nonce `93bbf2b8c244`. Earlier size-guess “50 MB = db” is withdrawn. |
+   | 23 Jul 2026 7:30 PM | 19,827 | Drive `-db.gz` `c9570a105596` (see F17). **Db only.** |
+   | 12 Jul 2026 7:30 PM | 17,390 | Drive `-db.gz` `a2f57e449b46` (see F17). **Db only.** |
+   | 30 Jun 2026 7:30-8:00 PM (`1930`) | uploads×6; 10,773; 47,132; 174; 11 | uploads 1–6; **themes**; **plugins**; others; mu-plugins. **No `-db` on Drive.** Nonce `11b0badf493f`. |
 
    Exhibit: `docs/legal/exhibits/exhibit-pc-updraft-folder-2026-10-12.png`.
 

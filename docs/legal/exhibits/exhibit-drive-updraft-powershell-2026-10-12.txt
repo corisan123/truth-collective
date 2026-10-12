@@ -1,0 +1,23 @@
+Owner-pasted PowerShell, 12 October 2026.
+Drives: C D F G H I J.
+Hits: C:\Users\dreid\My Drive\UpdraftPlus\ only (each path duplicated in the paste).
+
+Deduped names and KB:
+backup_2026-06-30-1930_The_Truth_Collective_11b0badf493f-mu-plugins.zip     11
+backup_2026-06-30-1930_The_Truth_Collective_11b0badf493f-others.zip        174
+backup_2026-06-30-1930_The_Truth_Collective_11b0badf493f-plugins.zip     47132
+backup_2026-06-30-1930_The_Truth_Collective_11b0badf493f-themes.zip      10773
+backup_2026-06-30-1930_The_Truth_Collective_11b0badf493f-uploads.zip    406397
+backup_2026-06-30-1930_The_Truth_Collective_11b0badf493f-uploads2.zip   391223
+backup_2026-06-30-1930_The_Truth_Collective_11b0badf493f-uploads3.zip   391589
+backup_2026-06-30-1930_The_Truth_Collective_11b0badf493f-uploads4.zip   391358
+backup_2026-06-30-1930_The_Truth_Collective_11b0badf493f-uploads5.zip   391455
+backup_2026-06-30-1930_The_Truth_Collective_11b0badf493f-uploads6.zip   330565
+backup_2026-07-12-1930_The_Truth_Collective_a2f57e449b46-db.gz           17390
+backup_2026-07-23-1930_The_Truth_Collective_c9570a105596-db.gz           19827
+backup_2026-07-24-1659_The_Truth_Collective_93bbf2b8c244-plugins.zip     50110
+backup_2026-07-24-1659_The_Truth_Collective_93bbf2b8c244-themes.zip      10773
+backup_2026-07-24-1659_The_Truth_Collective_93bbf2b8c244-uploads.zip    392691
+backup_2026-07-24-1659_The_Truth_Collective_93bbf2b8c244-uploads2.zip   392197
+
+No 24 Jul -db. No 23 Jul uploads. No 30 Jun -db. No extra hits on D F G H I J in this run.

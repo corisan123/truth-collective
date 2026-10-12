@@ -25,8 +25,7 @@ A **clean night** is every suffix with the **same** `YYYY-MM-DD-HHMM` stamp. Bes
 
 | Place | What it is |
 | --- | --- |
-| Drive `C:\Users\dreid\My Drive\UpdraftPlus\` | 12 Jul and **23 Jul** `-db.gz` (hashed). 23 Jul SHA256 `03FD3A90…4284A` |
-| CPU Explorer shot | Four **24 Jul 16:59** files: 50,111 / 10,774 / 392,691 / 392,197 KB plus the 23 Jul 19,827 KB db |
+| Drive `C:\Users\dreid\My Drive\UpdraftPlus\` | **Named 12 Oct:** 23 Jul `-db.gz` only; 24 Jul plugins/themes/uploads (**no db**); 12 Jul `-db.gz` only; 30 Jun files **no db**. See `diagnostics/DRIVE-UPDRAFT-POWERSHELL-INVENTORY-2026-10-12.md`. |
 | Hostinger Updraft list 10 Oct | Oldest **15 Sep 2026**. July is gone from the **server** slot. Local copies are the remaining originals. |
 
 ## 3. Not a website backup (skip these folders)

@@ -4,7 +4,7 @@
 
 To **find** copies on the CPU, Drive, and jump drive, use `diagnostics/FIND-CLEAN-JULY-BACKUPS-ON-CPU-AND-USB-2026-10-12.md`. Notepad++ themes and Code Snippets CSS are not backups.
 
-Updraft does not save extra websites when a date has more than two files. It saves **one night as several slices**: `-db`, `-uploads` (sometimes two), `-plugins`, `-themes`, `-others`. The 12 Oct Explorer shot of 24 July is four files with the **same** stamp `backup_2026-07-24-1659_`: two ~392 MB uploads, one 10,774 KB plugins zip, one 50,111 KB database zip. 23 July in that shot is one 19,827 KB archive; matching slices may still sit in Drive as `.gz`. Mix 23 July database with 24 July photos and you get the same class of damage as the August uploads-only restore.
+Updraft does not save extra websites when a date has more than two files. It saves **one night as several slices**: `-db`, `-uploads` (sometimes two), `-plugins`, `-themes`, `-others`. PowerShell on Drive (12 Oct) **named** the 24 July files: two ~392 MB `-uploads`/`-uploads2`, **10,773 KB `-themes.zip`** (the boxed file), **50,110 KB `-plugins.zip`**. There is **no 24 July `-db` on Drive**. 23 July is **`-db.gz` only** (19,827 KB, nonce `c9570a105596`). Mix 23 July database with 24 July photos and you get the same class of damage as the August uploads-only restore. Full table: `diagnostics/DRIVE-UPDRAFT-POWERSHELL-INVENTORY-2026-10-12.md`.
 
 **Group by the full timestamp in the filename** (`2026-07-23-1930` vs `2026-07-24-1659`), not by the calendar day Explorer shows.
 
@@ -51,28 +51,28 @@ The **end** of the name is the slice:
 
 | Suffix | What it is | Typical size in your listing |
 | --- | --- | --- |
-| `-db.gz` or `-db.zip` | WordPress database (pages, CSS in options, catalogs) | 7/23 ~19,827 KB; 7/24 ~50,111 KB |
-| `-uploads.zip` / `-uploads2.zip` | Media | ~392 MB each on 7/24 |
-| `-plugins.zip` | Plugins | ~10,774 KB on 7/24 (the boxed file) |
-| `-themes.zip` | Themes | often tens of MB |
-| `-others.zip` | Leftovers (fonts, object-cache). Not the site. | ~174 KB on 6/30 |
+| `-db.gz` or `-db.zip` | WordPress database (pages, CSS in options, catalogs) | 7/23 **19,827 KB** (`c9570a105596-db.gz`). **No 7/24 `-db` on Drive.** |
+| `-uploads.zip` / `-uploads2.zip` | Media | 7/24 392,691 KB and 392,197 KB (`93bbf2b8c244`) |
+| `-plugins.zip` | Plugins | 7/24 **50,110 KB** (was guessed as db; it is plugins) |
+| `-themes.zip` | Themes | 7/24 **10,773 KB** (the boxed file; was guessed as plugins) |
+| `-others.zip` | Leftovers (fonts, object-cache). Not the site. | 174 KB on 6/30 |
 
 A complete night is **all of those suffixes with the same date-time prefix**. Treat a group as incomplete until `-db` plus at least one `-uploads` are present. If 7/23 only has a `-db` (the 19,827 KB row in the 12 Oct shot, and the hashed Drive `.gz`), do not pair it with 7/24 uploads. Look in Drive and in the screenshot folder for other `2026-07-23-1930` slices first. If none exist, peek the 7/23 database alone (step 3) and keep 7/24 as its own night.
 
 Expected groups from the 12 Oct Explorer shot (names were truncated; suffixes come from size):
 
 ```
-==== 2026-07-24-1659  (4 files) ====
-     392,197 KB  backup_2026-07-24-1659_…-uploads.zip   (or uploads2)
-     392,691 KB  backup_2026-07-24-1659_…-uploads2.zip  (or uploads)
-      10,774 KB  backup_2026-07-24-1659_…-plugins.zip   (the boxed file)
-      50,111 KB  backup_2026-07-24-1659_…-db.zip
+==== 2026-07-24-1659  (4 files on Drive; nonce 93bbf2b8c244; NO db) ====
+     392,691 KB  …-uploads.zip
+     392,197 KB  …-uploads2.zip
+      50,110 KB  …-plugins.zip
+      10,773 KB  …-themes.zip   (the boxed file)
 
-==== 2026-07-23-1930  (1 file in that shot) ====
-      19,827 KB  backup_2026-07-23-1930_…-db.gz
+==== 2026-07-23-1930  (1 file on Drive; nonce c9570a105596) ====
+      19,827 KB  …-db.gz
 ```
 
-Those four 24 July files are one website backup, not four sites. The 23 July row is database-only in that window until other `1930` slices are found.
+Those four 24 July files are **one night’s files without a database**. The 23 July row is database-only. Do not glue them together. Hunt USB (D, F, G, H, I, J) for a 24 July `-db` before any Local WP restore of `1659`.
 
 ---
 
@@ -167,20 +167,20 @@ What this does **not** require: a proof that 10Web clicked Delete on each Hostin
 
 **Why the sizes differ (this exact window)**
 
-| Row | Date in Explorer | Size | What it is | Open as a website? |
+| Row | Date in Explorer | Size | What it is (named 12 Oct) | Open as a website? |
 | --- | --- | --- | --- | --- |
-| Highlighted | 7/23/2026 7:30 PM | 19,827 KB | **Database** (`-db.gz`) for `2026-07-23-1930` | No. Peek SQL only. |
-| 2 | 7/24/2026 5:00 PM | 50,111 KB | **Database** for `2026-07-24-1659` | Only together with the three files below. |
-| 3 | 7/24/2026 5:00 PM | 10,774 KB | **Plugins** | No, not alone. |
-| 4 | 7/24/2026 5:01 PM | 392,691 KB | **Uploads** (photos) | No, not alone. |
+| Highlighted | 7/23/2026 7:30 PM | 19,827 KB | **Database** `c9570a105596-db.gz` | No. Peek SQL only. |
+| 2 | 7/24/2026 5:00 PM | 50,110 KB | **Plugins** `93bbf2b8c244-plugins.zip` (not db) | No. Night has no db on Drive. |
+| 3 | 7/24/2026 5:00 PM | 10,773 KB | **Themes** `93bbf2b8c244-themes.zip` (boxed file) | No. |
+| 4 | 7/24/2026 5:01 PM | 392,691 KB | **Uploads** | No, not alone. |
 | 5 | 7/24/2026 5:01 PM | 392,197 KB | **Uploads** part 2 | No, not alone. |
 
-They are different sizes because they are different **parts** of a backup, the way a database is smaller than a photo library. The two ~392 MB files are almost the same size because they are two halves of media, not two sites.
+They are different sizes because they are different **parts** of a backup. The two ~392 MB files are two halves of media. The ~50 MB file is plugins, not the database.
 
 **Which one to open**
 
-1. **First:** the highlighted 19,827 KB file (`c9570a105596-db.gz`). 7-Zip → inner `.sql` → search `tc-overlay-card` / `amzn.to`. That answers “are catalogs in the last hashed night before migrate.”
-2. **To see a website:** all **four** 24 July rows together in Local WP (50,111 + 10,774 + 392,691 + 392,197). Same stamp `1659`. Never one of the 392 MB files by itself.
-3. **Do not** pour the 23 July database into the 24 July photos. That mix already crushed Computers once.
+1. **First:** the highlighted 19,827 KB file (`c9570a105596-db.gz`). 7-Zip → inner `.sql` → search `tc-overlay-card` / `amzn.to`.
+2. **Do not** restore the four 24 July files as a website. Drive has **no 24 July `-db`**. Hunt USB for `backup_2026-07-24-1659_*db*` first.
+3. **Do not** pour the 23 July database into the 24 July photos. Different nonce (`c9570a105596` vs `93bbf2b8c244`). That mix already crushed Computers once.
 
 If 23 July SQL is dense, attach that one 19,827 KB file here. Leave the 392 MB files on the PC.
