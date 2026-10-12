@@ -38,8 +38,10 @@ Numbered findings. Each has a source. If a finding has no source in this repo, i
 | F12 | 8 Aug staging was **not** a healthy pre-migration site: overlay classes stripped on Computers, stale hub 404s, flicker, EXPLORE split, July media 404s | Cursor probes 8 Aug | handoff; `computers-page-2026-08-08.md`; `css-inventory-2026-08-08.md`; `media-library-broken-thumbs-2026-08-09.md` |
 | F13 | 30 Sep letter: 10Web **admits** migrate **not successfully completed**; **denies** destroy/delete backups; **reframes** admin access as Daniel “provided” and “expressly authorized” Migration Assistant; **refuses** 3-month refund | Nazeli 30 Sep | PR #6 `exhibit-10web-sept30-denial.png` |
 | F14 | F6 vs F13 is a **documentary contradiction** on who required WP access | Same two exhibit sets | `diagnostics/WHAT-SEPT30-VS-JULY-EMAILS-PROVE-2026-10-07.md` |
+| F15 | Local PC still holds dated Updraft sets from **30 Jun, 12 Jul, 23 Jul, and 24 Jul 2026** (before owner-stated 25 Jul migrate start). 24 Jul 16:59 set includes two ~392 MB zips plus 10,774 KB and 50,111 KB slices | Owner screenshot 12 Oct 2026 | `docs/legal/exhibits/exhibit-pc-updraft-folder-2026-10-12.png` |
+| F16 | Uploaded `backup_2026-06-30-1930_…-others.zip` is a complete Updraft **others** slice (174 KB; LiteSpeed/Jetpack/fonts/object-cache only). Proves the local folder is real Updraft naming. Does **not** contain DB, uploads, pages, or Additional CSS | Zip opened 12 Oct 2026 | `diagnostics/updraft-others-2026-06-30-review.md` |
 
-**F6 + F3 + F4 + F13 is the strongest 10Web-fault package this agent has actually seen.** It is not “no fault.” It is also not a signed confession that they restored over source or deleted Hostinger backups (they deny that; see §4).
+**F6 + F3 + F4 + F13 is the strongest 10Web-fault package this agent has actually seen.** Ranked argument and 30 Sep rebuttals: `02-COUNSEL-ARGUMENT-BACKUPS-AND-REBUTTALS-2026-10-12.md`. It is not “no fault.” It is also not a signed confession that they restored over source or deleted Hostinger backups (they deny that; see §4). F15/F16 prove **local copies exist**. They do not by themselves prove 10Web deleted the **server** copies.
 
 ---
 
@@ -135,3 +137,15 @@ Priority order:
 8. GSC / live 404 evidence (production Tech Hub 404 on 7 Oct).  
 
 Each new file gets one row in `01-EVIDENCE-INDEX.md` (ID, date, source, 4-line summary). Do not rewrite this outline until those land; append.
+
+---
+
+## 8. Appendix — 12 October 2026 backup uploads (do not restore)
+
+Owner started sending local Updraft / backup-folder files to test whether healthy pre-25 Jul copies still exist **off** the server.
+
+- First 20 files: Code Snippets **plugin admin** CSS/JS, not TC Additional CSS (`diagnostics/backup-folder-first-batch-2026-10-12.md`).
+- Next: 30 Jun 19:30 `-others` zip (F16) plus Explorer screenshot of the folder (F15).
+- Owner testimony the same day: 10Web used Updraft; server restore copies were not the migrate-source site; that is why Hostinger restores looked like the damaged site. 10Web’s 30 Sep letter **admits** Updraft use. Server actor for the missing 28 Jul `db.gz` remains GAP G-59.
+
+Counsel argument that folds this in: `docs/legal/02-COUNSEL-ARGUMENT-BACKUPS-AND-REBUTTALS-2026-10-12.md`.

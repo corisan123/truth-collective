@@ -70,6 +70,20 @@ IDs: **T-** 10Web vendor · **C-** Cursor/repo · **S-** staging technical 8 Aug
 | O-02 | `diagnostics/WHAT-SEPT30-VS-JULY-EMAILS-PROVE-2026-10-07.md` | 7 Oct 2026 | Technical read of T-01–T-03: access demand vs later denial. Lists what those images do and do not prove. |
 | O-03 | PR #5 `docs/legal/TC-10WEB-MIGRATION-INCIDENT-BRIEF-2026-10-05.md` | 5 Oct 2026 | Draft factual brief from Daniel’s submissions that day. Includes medical/housing context in later commits on that branch — **privilege/sensitivity: counsel review before wide share**. |
 | O-04 | PR #5 `docs/exhibits/CLAUDE-2026-08-09-10WEB-DAMAGE-AND-SPECS.md` | 9 Aug 2026 statements, filed 5 Oct | Claude’s 9 Aug record of owner: destroyed inside WP; cannot roll back; pre-10Web backups damaged. Separate AI, not 10Web. |
+| O-05 | Owner 12 Oct 2026 (this Cloud run) | 12 Oct 2026 | Testimony: 10Web accessed Updraft; healthy pre-25 Jul backups were not what later remained on the server; Hostinger restores therefore replayed damaged copies. Local PC still holds dated Updraft zips. |
+
+---
+
+## Group B — Local Updraft / backup-folder files (12 Oct 2026)
+
+Do **not** restore these into staging or live.
+
+| ID | File | Date | Neutral summary |
+| --- | --- | --- | --- |
+| B-01 | First 20 files from alleged 24 Jul backup folder (Code Snippets `menu.scss`, `manage.css`, webpack `editor.js`, etc.) | Uploaded 12 Oct 2026; plugin bytes dated in-plugin | Code Snippets plugin **admin** assets. Zero `tc-*` / `amzn.to`. Not Additional CSS. Review: `diagnostics/backup-folder-first-batch-2026-10-12.md`. |
+| B-02 | `backup_2026-06-30-1930_The_Truth_Collective_11b0badf493f-others.zip` | Archive time 30 Jun 2026 23:46 UTC | Complete Updraft **others** slice, 174 KB / 30 entries. LiteSpeed, Jetpack WAF, Montserrat, `object-cache.php`, Hostinger Tools `mcp.log`. No DB, uploads, themes, plugins, or pages. Listing: `diagnostics/backup-listings/backup_2026-06-30-1930-others-listing.txt`. |
+| B-03 | `docs/legal/exhibits/exhibit-pc-updraft-folder-2026-10-12.png` | Screenshot 12 Oct 2026 of files dated 30 Jun-24 Jul 2026 | Windows Explorer: Updraft-named zips including 24 Jul 16:59 two ~392 MB files, boxed 10,774 KB, 50,111 KB; 23 Jul 19,827 KB; 12 Jul 17,391 KB; 30 Jun several ~330-406 MB plus 10,774 KB and 47,132 KB. Names truncated in the shot. |
+| B-04 | `docs/legal/02-COUNSEL-ARGUMENT-BACKUPS-AND-REBUTTALS-2026-10-12.md` | 12 Oct 2026 | Ranked damaging evidence, 30 Sep rebuttals, backup-wipe theory with truth limits. Not a verdict. |
 
 ---
 
@@ -92,5 +106,7 @@ Put files in `Documents\TC-10WEB-LAWSUIT\01-source-pdfs\` then add ID, date, 4-l
 | G-62 | 10Web contract / invoices / plan screenshots | **GAP** |
 | G-63 | Pre-migration Computers / Tech Hub screenshots or Rank Math | **GAP** |
 | G-64 | GSC live index / production 404 captures | **GAP** |
+| G-65 | 24 Jul 16:59 boxed 10,774 KB zip (or `-db` / `-plugins` / `-themes` from that timestamp) | **GAP** — screenshot exists (B-03); file not yet uploaded |
+| G-66 | 30 Jun 19:30 matching `-db` to pair with B-02 | **GAP** |
 
 When a GAP file is saved, do not rewrite the proof outline’s theory. Add the row and, if it **changes** a finding number in `00-DEMONSTRATIVE-PROOF-OUTLINE.md` §2, append a dated note.

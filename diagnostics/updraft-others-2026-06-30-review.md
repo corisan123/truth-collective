@@ -1,7 +1,9 @@
 # Updraft `others` zip — 30 June 2026 19:30
 
 **Reviewed:** 12 October 2026  
-**File received:** `backup_2026-06-30-1930_The_Truth_Collective_11b0badf493f-others.zip` (174 KB on disk; 181,420 bytes uncompressed; 30 entries).
+**File received:** `backup_2026-06-30-1930_The_Truth_Collective_11b0badf493f-others.zip` (178,006 bytes / 174 KB on disk; 181,420 bytes uncompressed; 30 entries; zip is complete).  
+**Listing:** `diagnostics/backup-listings/backup_2026-06-30-1930-others-listing.txt`  
+**Folder exhibit:** `docs/legal/exhibits/exhibit-pc-updraft-folder-2026-10-12.png`
 
 ## What this archive is
 
@@ -16,7 +18,7 @@ Contents:
 | `fonts/montserrat/*.woff2` | Montserrat webfonts (May 18 2026) |
 | `object-cache.php` | LiteSpeed object-cache drop-in |
 | `.litespeed_conf.dat` | LiteSpeed config blob |
-| `mcp.log` | Hostinger Tools MCP: `wordpress.website.updated` (June 7 2026) |
+| `mcp.log` | Hostinger Tools MCP: `wordpress.website.updated` (7 June 2026 15:28). Two identical events. Not a 10Web log. |
 | `upgrade-temp-backup/` | Empty WordPress upgrade temp |
 | `index.php` | Standard silence file |
 
@@ -33,7 +35,7 @@ Windows listing shows **sets** of Updraft zips, not one file:
 - **12 Jul 2026 7:30 PM** — 17,391 KB
 - **30 Jun 2026 7:30–8:00 PM** — several ~330–406 MB zips plus a 10,774 KB zip (same size as the boxed 24 Jul file) and a 47,132 KB zip
 
-Those ~392 MB archives are the ones that would hold media. This `-others` file is the small leftover slice from the **30 Jun 19:30** set.
+Those ~392 MB archives are the ones that would hold media. This `-others` file is the small leftover slice from the **30 Jun 19:30** set. It is **not** the boxed 10,774 KB file (that file is from **24 Jul 16:59** and is the size of a typical `plugins` slice, not `others`). The 10,774 KB size also appears on the 30 Jun row; same size does not mean same bytes.
 
 ## Truth limits
 
