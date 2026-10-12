@@ -36,6 +36,7 @@ A **clean night** is every suffix with the **same** `YYYY-MM-DD-HHMM` stamp. Bes
 | Code Snippets `menu.scss` / `manage.css` / webpack js | WP plugin admin assets |
 | 7/25 `10web-manager.php` + CSS + EvergrowSans fonts | 10Web Manager v1.20.21 (vendor tool, useful; not catalogs) |
 | `nppPluginList.dll` `Monokai.xml` `Hello Kitty.xml` | **Notepad++** plugins and color themes. Path is usually `AppData\Roaming\Notepad++` or `Program Files\Notepad++` |
+| `pasted confirmed clean css code_files\` (`frame.html`, `root-*.css`, `sdk.js.download`) | **ChatGPT.com** “Webpage, Complete” chrome. Not Additional CSS. |
 
 Notepad++ is the **editor** you use to peek SQL. Its themes folder is not the backup. A 7/24 date on those files only means that copy of Notepad++ data was touched or saved that day.
 
