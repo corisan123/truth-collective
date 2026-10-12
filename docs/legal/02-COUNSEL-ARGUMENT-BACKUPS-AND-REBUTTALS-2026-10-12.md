@@ -7,7 +7,7 @@
 **Not a legal opinion, not an expert affidavit, not a damages model.**  
 Every sentence below is either a document this agent has seen, a measurement logged in this repo, or labeled **owner testimony**. If a fact is not in those three buckets, it is not stated as fact.
 
-**12 Oct correction (controlling):** Do not use “65 pages” as the size of the site. Use US Letter scale (about 3,575 to 6,500-plus letter pages). Do not treat Technology Hub as the bound of destruction. Child and sub-child pages remain missing or gutted; REST cannot revive posts that are gone. The only vendor documented inside WordPress during the migrate is 10Web. Do not say CSS classes were intact: Additional CSS **text** remained; class-to-Gutenberg/Kadence **binding** broke. Full replacement language: `03-CORRECTIONS-SCALE-MISSING-PAGES-ACTOR-2026-10-12.md` and `04-CSS-CLASS-BINDING-VS-STYLESHEET-2026-10-12.md`.
+**12 Oct correction (controlling):** Do not use “65 pages” as the size of the site. Use US Letter scale (about 3,575 to 6,500-plus letter pages). Do not treat Technology Hub as the bound of destruction. Child and sub-child pages remain missing or gutted across Technology, Office, Lighting, Productivity, Books, Self-Help, and editorial hubs; REST cannot revive posts that are gone. The only vendor documented inside WordPress during the migrate is 10Web. Full replacement language: `07-DAMAGES-SITEWIDE-LETTER-SCALE-2026-10-12.md`.
 
 ---
 
@@ -37,11 +37,15 @@ Review note: `diagnostics/updraft-others-2026-06-30-review.md`.
 
 ---
 
-## 1. The case in six sentences (use this as the cover)
+## 1. The case (use this as the cover)
 
-10Web was hired to polish and copy an existing Hostinger staging WordPress site (`tcstaging.truth-collective.com`), not to regenerate it with AI Builder. Their automated migrator failed and disconnected; their AI flow created fake Builder sites (`active-bluegill.10web.cloud`, later `kind-louse.10web.cloud`) after Daniel forbade AI Website Builder in writing. Nazeli Sargsyan then **required** a temporary WordPress admin (`support@10web.io`) so 10Web could migrate **from our end** (27-28 July 2026 emails). After that access window, staging was not the pre-migration build (8 August 2026 diagnosis: overlay classes stripped, July media 404s, stale hub permalinks, `10web_tmp`, 10WEB Manager still Active). Hostinger and Updraft restores logged success but **did not return** the working migrate-source site; a 24 July uploads restore made Computers worse; an Updraft 28 July `db.gz` was **missing from disk**. On 30 September 2026 10Web admitted the migration was not completed, recast the access **they had demanded** as Daniel providing and authorizing Migration Assistant, admitted they **used Updraft**, denied destroying the site or backups, and refused a three-month refund.
+10Web was hired to polish and copy an existing Hostinger staging WordPress site (`tcstaging.truth-collective.com`), not to regenerate it with AI Builder. That site was 65-plus WordPress URLs (hub / sub-parent / child / sub-child). Each URL held about 55 to more than 100 US Letter pages of products, descriptions, and editorial copy: about **3,575 to 6,500-plus letter-size pages**, plus about 6.73 GB of files and a 235 MB database, and about 4,000 on-page items.
 
-That is the 10Web case this file can support. It is documentary and technical. It is not a verdict.
+Their automated migrator failed and disconnected. Their AI flow created fake Builder sites after Daniel forbade AI Website Builder. Nazeli then **required** a temporary WordPress admin (`support@10web.io`) so 10Web could migrate **from our end**. The only vendor inside WordPress in that window is 10Web. Error logs show 10Web Manager executing on 25 July and 3 August, and Kadence/Rank Math fatals on 7 August with 10Web still on the include path.
+
+After that window, destruction was **sitewide**, not Technology Hub alone: Office, Smart Lighting, Productivity, Books, Self-Help, editorial hubs, media, overlay/explore systems, menus, and backups. Some child and sub-child pages are still missing from WordPress. REST cannot rebuild posts that are gone. Pages that still return 200 are often gutted. Daniel emailed daily asking 10Web to repair. They went silent, then on 30 September denied destroying the site, recast the access they had demanded, admitted the migrate was not completed, and refused a three-month refund.
+
+Documentary and technical. Controlling damages language: `07-DAMAGES-SITEWIDE-LETTER-SCALE-2026-10-12.md`.
 
 ---
 
