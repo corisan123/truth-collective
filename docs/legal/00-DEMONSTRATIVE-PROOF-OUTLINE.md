@@ -47,6 +47,7 @@ Numbered findings. Each has a source. If a finding has no source in this repo, i
 | F21 | 10WEB Manager **still Active v1.20.21** on staging Site Health **10 Oct 2026 13:07 UTC** | Site Health PDF | `source-pdfs/Systems-copied-with-10web-found-2026-10-10.pdf` |
 | F22 | Server Updraft known-backups dump 10 Oct 2026: 16 timestamps, **oldest 15 Sep 2026**. No June/July/August filenames. Drive 12 Jul / 23 Jul SHA256 **not** in that dump | Raw backup history PDF | `diagnostics/pdf-extracts-2026-10-12/hostinger-raw-backup-history-dates.txt` |
 | F23 | Customizer CSS **text** present; class-to-structure binding broken on most pages. Feb–Apr pages = Gutenberg only; later = Kadence + Gutenberg (section/column/image). ~20+ book categories, ~1000 books pre-migrate, ~200 remaining (Gutenberg-only, all damaged). Three pages still have working binding (URLs not yet listed) | Owner 12 Oct 2026 plus 8 Aug Computers class counts | `04-CSS-CLASS-BINDING-VS-STYLESHEET-2026-10-12.md` |
+| F24 | Backup loss on the **server** is retention replacement: (1) Daniel deleted older automated copies after verifying new checklist backups; (2) 10Web admits new Updraft saves while in WP, which drop the oldest slot; (3) after ~3 Aug automated backups of the damaged site filled remaining slots. 10 Oct dump oldest = 15 Sep | Owner 12 Oct 2026 + T-03 + P-05 | `05-BACKUP-RETENTION-REPLACEMENT-2026-10-12.md` |
 
 **F6 + F3 + F4 + F13 is the strongest 10Web-fault package this agent has actually seen.** Ranked argument and 30 Sep rebuttals: `02-COUNSEL-ARGUMENT-BACKUPS-AND-REBUTTALS-2026-10-12.md`. It is not “no fault.” It is also not a signed confession that they restored over source or deleted Hostinger backups (they deny that; see §4). F15/F16 prove **local copies exist**. They do not by themselves prove 10Web deleted the **server** copies.
 
@@ -80,7 +81,7 @@ Counsel will be hurt if these are billed as 10Web.
 | Cursor hub-parent **light rebuild** 12 Aug | This recovery project, **after** 8 Aug diagnosis | Later recovery writes. Not a migrate-window WP login. Do not use as a 10Web defense. |
 | Cursor Computers **light rebuild** 19 Aug | Same, after diagnosis | Photos → SVG placeholders. Tagged in page. **Further catalog stripping after the crash.** Not a competing migrate actor. |
 | “4000+ products destroyed” | Owner testimony | This agent did not count 4000 unique SKUs. Revisions show large in-page catalogs in the **tens to low hundreds** of Amazon codes per page, plus 2324 media items. |
-| 10Web **restored over source** or **deleted all backups** | 10Web **denies** (F13) | Not proven by the four screenshots. Need restore-history export. |
+| 10Web **restored over source** or **hand-deleted every backup file** | 10Web **denies** (F13) | Do not claim a Delete click. Do claim: they admit new Updraft saves; a cap of X drops the oldest; post-3 Aug damaged dailies finished the rotation (F24). |
 | Legal guilt / “culpability” | Fact-finder | This outline supports **failed service, required access, AI fake sites, unrepaired staging, and a denial that omits their demand.** It does not close damages or liability. |
 
 If asked “is there no fault on 10Web?”: **No.** Findings F3–F8, F9–F11, and F13–F14 are 10Web-side. If asked “is destruction 100% 10Web with nothing else in the chain?”: **No.** See the table.

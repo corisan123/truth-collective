@@ -93,6 +93,7 @@ Do **not** restore these into staging or live.
 | P-05 | `docs/legal/source-pdfs/Hostinger-raw-backup-history-2026-10-10.pdf` | Dump 10 Oct 2026 | Updraft known backups: 16 timestamps, oldest 15 Sep 2026. No June/July/August. Drive Jul hashes absent. |
 | P-06 | `docs/legal/03-CORRECTIONS-SCALE-MISSING-PAGES-ACTOR-2026-10-12.md` | 12 Oct 2026 | Replaces understated “65 pages / Tech Hub only” language. US Letter scale; missing children; 10Web-only migrate-window vendor. |
 | P-07 | `docs/legal/04-CSS-CLASS-BINDING-VS-STYLESHEET-2026-10-12.md` | 12 Oct 2026 | Splits stylesheet text vs class names vs class-to-Kadence/Gutenberg binding. “Classes intact” withdrawn. Book census owner figures. Kadence fatal + 10Web Manager same 7 Aug log. |
+| P-08 | `docs/legal/05-BACKUP-RETENTION-REPLACEMENT-2026-10-12.md` | 12 Oct 2026 | Three layers: checklist deletion of older plugin backups; 10Web’s admitted new Updraft saves dropping oldest slots; post-3 Aug damaged-site automation. Off-server July copies remain. |
 
 ---
 
@@ -122,5 +123,7 @@ Put files in `Documents\TC-10WEB-LAWSUIT\01-source-pdfs\` then add ID, date, 4-l
 | G-69 | Pre-migration list of all 65-plus WordPress titles and parents (sitemap or Pages export) | **GAP** — asked 12 Oct |
 | G-70 | Permalinks of the three pages that still have full working CSS class binding | **GAP** — asked 12 Oct |
 | G-71 | Pre-migration book-category list (20-plus URLs) to support ~1000 → ~200 remaining | **GAP** |
+| G-72 | Updraft “retain this many backups” setting (the number X) | **GAP** — asked 12 Oct |
+| G-73 | July Cursor Print-PDF page instructing deletion of older plugin backups for migrate storage | **GAP** |
 
 When a GAP file is saved, do not rewrite the proof outline’s theory. Add the row and, if it **changes** a finding number in `00-DEMONSTRATIVE-PROOF-OUTLINE.md` §2, append a dated note.
