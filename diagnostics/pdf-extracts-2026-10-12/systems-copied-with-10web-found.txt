@@ -1,0 +1,165 @@
+
+--- page 1 ---
+` 
+### rank-math ### 
+ 
+version: 1.0.279 
+pro_version: 3.0.113 
+database_version: 1 
+plugin_plan: Pro 
+active_modules: link-counter, analytics, seo-analysis, sitemap, rich-snippet, bbpress, 404-
+monitor, image-seo, instant-indexing, local-seo, redirections, content-ai, ai-visibility 
+refresh_token: Token exists 
+permissions: Search Console: Given, AdSense: Not Given, Analytics: Given 
+rank_math_404_logs: 32 KB 
+rank_math_redirections: 80 KB 
+rank_math_redirections_cache: 32 KB 
+rank_math_internal_links: 592 KB 
+rank_math_internal_meta: 16 KB 
+rank_math_analytics_gsc: 112 KB 
+rank_math_analytics_objects: 32 KB 
+rank_math_analytics_ga: 32 KB 
+rank_math_analytics_adsense: Not found 
+rank_math_analytics_keyword_manager: 16 KB 
+rank_math_analytics_inspections: 176 KB 
+ 
+### wp-core ### 
+ 
+version: 6.9.10 
+
+--- page 2 ---
+site_language: en_US 
+user_language: en_US 
+timezone: America/New_York 
+permalink: /%postname%/ 
+https_status: true 
+multisite: false 
+user_registration: 0 
+blog_public: 1 
+default_comment_status: open 
+environment_type: production 
+user_count: 1 
+dotorg_communication: true 
+ 
+### wp-dropins (1) ### 
+ 
+object-cache.php: true 
+ 
+### wp-active-theme ### 
+ 
+name: Astra (astra) 
+version: 4.13.2 (latest version: 4.14.0) 
+author: Brainstorm Force 
+author_website: 
+https://wpastra.com/about/?utm_source=theme_preview&#038;utm_medium=author_link
+&#038;utm_campaign=astra_theme 
+parent_theme: none 
+
+--- page 3 ---
+theme_features: core-block-patterns, astra_hooks, widgets-block-editor, align-wide, 
+automatic-feed-links, title-tag, post-thumbnails, starter-content, html5, post-formats, 
+custom-logo, customize-selective-refresh-widgets, editor-style, responsive-embeds, 
+woocommerce, rank-math-breadcrumbs, amp, editor-color-palette, widgets, menus 
+theme_path: /home/u867403816/domains/truth-
+collective.com/public_html/tcstaging/wp-content/themes/astra 
+ 
+### wp-mu-plugins (2) ### 
+ 
+Hostinger Smart Auto Updates: version: 1.0.8, author: Hostinger 
+Troubleshooting Mode: author: (undefined), version: 1.0.1 
+ 
+### wp-plugins-active (19) ### 
+ 
+10WEB manager: version: 1.20.21, author: 10Web 
+Angie: version: 1.1.11, author: Elementor.com (latest version: 1.1.19) 
+bbPress: version: 2.6.18, author: The bbPress Contributors (latest version: 2.6.19) 
+Code Snippets: version: 3.9.6, author: Code Snippets Pro (latest version: 3.10.2) 
+Duplicate Page: version: 4.5.7, author: mndpsingh287 (latest version: 4.5.9) 
+Hostinger Tools: version: 3.0.67, author: Hostinger (latest version: 3.0.79) 
+Imagify: version: 2.2.7, author: Imagify Image Optimizer – Optimize Images &amp; Convert 
+WebP &amp; Avif (latest version: 2.3.4) 
+Kadence Blocks — Page Builder Toolkit for Gutenberg Editor: version: 3.7.2, author: 
+Kadence WP (latest version: 3.7.12.1) 
+LiteSpeed Cache: version: 7.8.1, author: LiteSpeed Technologies (latest version: 7.9.1) 
+MailerLite - Signup forms (official): version: 1.7.26, author: MailerLite 
+Post Type Switcher: version: 4.0.1, author: Triple J Software, Inc. 
+Rank Math SEO: version: 1.0.279, author: Rank Math SEO (latest version: 1.0.280) 
+
+--- page 4 ---
+Rank Math SEO PRO: version: 3.0.113, author: Rank Math SEO (latest version: 3.0.123) 
+Site Kit by Google: version: 1.175.0, author: Google (latest version: 1.189.0) 
+Troubleshooting: version: 1.0.2, author: Clorith 
+UpdraftPlus - Backup/Restore: version: 1.26.4, author: TeamUpdraft, DavidAnderson 
+(latest version: 1.26.8) 
+WPCode Lite: version: 2.3.8, author: WPCode (latest version: 2.4.0) 
+WPForms Lite: version: 1.10.0.4, author: WPForms (latest version: 2.0.2.2) 
+WP Mail SMTP: version: 4.7.1, author: WP Mail SMTP (latest version: 4.10.2) 
+ 
+### wp-server ### 
+ 
+server_architecture: Linux 4.18.0-553.157.1.lve.el8.x86_64 x86_64 
+httpd_software: LiteSpeed 
+php_version: 8.3.35 64bit 
+php_sapi: litespeed 
+max_input_variables: 5000 
+time_limit: 360 
+memory_limit: 2048M 
+max_input_time: 360 
+upload_max_filesize: 2048M 
+php_post_max_size: 2048M 
+curl_version: 8.14.1 OpenSSL/1.1.1w 
+suhosin: false 
+imagick_availability: true 
+pretty_permalinks: true 
+htaccess_extra_rules: true 
+
+--- page 5 ---
+static_robotstxt_file: true 
+current: 2026-10-10T13:07:17+00:00 
+utc-time: Saturday, 10-Oct-26 13:07:17 UTC 
+server-time: 2026-10-10T09:07:16-04:00 
+ 
+### wp-database ### 
+ 
+extension: mysqli 
+server_version: 11.8.9-MariaDB-log 
+client_version: mysqlnd 8.3.35 
+max_allowed_packet: 1073741824 
+max_connections: 2000 
+ 
+### wp-constants ### 
+ 
+WP_HOME: undefined 
+WP_SITEURL: undefined 
+WP_CONTENT_DIR: /home/u867403816/domains/truth-
+collective.com/public_html/tcstaging/wp-content 
+WP_PLUGIN_DIR: /home/u867403816/domains/truth-
+collective.com/public_html/tcstaging/wp-content/plugins 
+WP_MEMORY_LIMIT: 40M 
+WP_MAX_MEMORY_LIMIT: 2048M 
+WP_DEBUG: false 
+WP_DEBUG_DISPLAY: false 
+WP_DEBUG_LOG: false 
+SCRIPT_DEBUG: false 
+
+--- page 6 ---
+WP_CACHE: false 
+CONCATENATE_SCRIPTS: undefined 
+COMPRESS_SCRIPTS: undefined 
+COMPRESS_CSS: undefined 
+WP_ENVIRONMENT_TYPE: undefined 
+WP_DEVELOPMENT_MODE: undefined 
+DB_CHARSET: utf8 
+DB_COLLATE: undefined 
+ 
+### wp-filesystem ### 
+ 
+wordpress: writable 
+wp-content: writable 
+uploads: writable 
+plugins: writable 
+themes: writable 
+fonts: does not exist 
+mu-plugins: writable 
+ 
+` 
