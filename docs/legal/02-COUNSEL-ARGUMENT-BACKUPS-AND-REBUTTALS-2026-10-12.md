@@ -7,6 +7,8 @@
 **Not a legal opinion, not an expert affidavit, not a damages model.**  
 Every sentence below is either a document this agent has seen, a measurement logged in this repo, or labeled **owner testimony**. If a fact is not in those three buckets, it is not stated as fact.
 
+**12 Oct correction (controlling):** Do not use “65 pages” as the size of the site. Use US Letter scale (about 3,575 to 6,500-plus letter pages). Do not treat Technology Hub as the bound of destruction. Child and sub-child pages remain missing or gutted; REST cannot revive posts that are gone. The only vendor documented inside WordPress during the migrate is 10Web. Full replacement language: `03-CORRECTIONS-SCALE-MISSING-PAGES-ACTOR-2026-10-12.md`.
+
 ---
 
 ## 0. What arrived today (the zip you just sent)

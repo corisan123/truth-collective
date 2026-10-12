@@ -1,0 +1,383 @@
+
+--- page 1 ---
+[03-Jul-2026 18:11:15 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[03-Jul-2026 18:11:44 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[03-Jul-2026 18:12:14 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[03-Jul-2026 18:12:39 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[03-Jul-2026 18:13:01 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[03-Jul-2026 18:13:32 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[03-Jul-2026 18:13:55 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[03-Jul-2026 18:14:16 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[03-Jul-2026 18:19:06 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[03-Jul-2026 18:19:17 UTC] WordPress database error Commands out of sync; you can't 
+run this command now for query SELECT option_value FROM wp_options WHERE 
+option_name = 'action_scheduler_lock_async-request-runner' made by 
+shutdown_action_hook, do_action('shutdown'), WP_Hook->do_action, WP_Hook-
+>apply_filters, ActionScheduler_QueueRunner->maybe_dispatch_async_request, 
+ActionScheduler_Lock->is_locked, ActionScheduler_OptionLock->get_expiration, 
+ActionScheduler_OptionLock->get_existing_lock 
+
+--- page 2 ---
+[03-Jul-2026 18:19:17 UTC] WordPress database error Commands out of sync; you can't 
+run this command now for query SELECT option_value FROM wp_options WHERE 
+option_name = 'action_scheduler_lock_async-request-runner' made by 
+shutdown_action_hook, do_action('shutdown'), WP_Hook->do_action, WP_Hook-
+>apply_filters, ActionScheduler_QueueRunner->maybe_dispatch_async_request, 
+ActionScheduler_OptionLock->set, ActionScheduler_OptionLock->get_existing_lock 
+[03-Jul-2026 18:19:17 UTC] WordPress database error Commands out of sync; you can't 
+run this command now for query INSERT INTO `wp_options` (`option_name`, 
+`option_value`, `autoload`) VALUES ('action_scheduler_lock_async-request-runner' , 
+'6a47fd25dd6003.67268710|1783102817' , 'no') made by shutdown_action_hook, 
+do_action('shutdown'), WP_Hook->do_action, WP_Hook->apply_filters, 
+ActionScheduler_QueueRunner->maybe_dispatch_async_request, 
+ActionScheduler_OptionLock->set 
+[03-Jul-2026 18:20:33 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[03-Jul-2026 18:22:17 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[03-Jul-2026 18:28:15 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[03-Jul-2026 18:28:46 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[03-Jul-2026 18:29:29 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[03-Jul-2026 18:29:49 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[03-Jul-2026 18:29:52 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+
+--- page 3 ---
+[03-Jul-2026 18:30:25 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[03-Jul-2026 18:30:26 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[03-Jul-2026 18:56:48 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[03-Jul-2026 18:56:48 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[03-Jul-2026 20:05:11 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[03-Jul-2026 20:05:11 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[03-Jul-2026 20:05:49 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[03-Jul-2026 20:20:07 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[10-Jul-2026 02:45:01 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[10-Jul-2026 03:00:19 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[14-Jul-2026 21:33:13 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+
+--- page 4 ---
+[14-Jul-2026 21:35:47 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[14-Jul-2026 21:37:23 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[14-Jul-2026 21:43:59 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[14-Jul-2026 21:49:45 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[14-Jul-2026 21:50:42 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[14-Jul-2026 21:51:00 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[14-Jul-2026 21:54:26 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[14-Jul-2026 22:05:06 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[14-Jul-2026 22:15:16 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[14-Jul-2026 22:15:35 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[14-Jul-2026 22:31:15 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+
+--- page 5 ---
+[14-Jul-2026 22:36:22 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[14-Jul-2026 22:37:33 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[14-Jul-2026 22:38:51 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[21-Jul-2026 15:07:59 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[21-Jul-2026 15:09:53 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[21-Jul-2026 15:11:35 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[21-Jul-2026 15:15:04 UTC] PHP Warning:  Attempt to read property "name" on false in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-admin/nav-
+menus.php on line 1219 
+[25-Jul-2026 20:00:05 UTC] PHP Warning:  Undefined array key "sftp_credentials" in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-
+content/plugins/10web-manager/includes/class-rest-api.php on line 444 
+[03-Aug-2026 15:57:07 UTC] PHP Warning:  Undefined array key "sftp_credentials" in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-
+content/plugins/10web-manager/includes/class-rest-api.php on line 444 
+[07-Aug-2026 14:15:06 UTC] PHP Warning:  
+file_get_contents(/home/u867403816/domains/truth-
+collective.com/public_html/tcstaging/wp-content/plugins/seo-by-rank-math-pro/rank-
+math-pro.php): Failed to open stream: No such file or directory in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-
+includes/functions.php on line 6910 
+
+--- page 6 ---
+[07-Aug-2026 14:15:07 UTC] PHP Warning:  
+file_get_contents(/home/u867403816/domains/truth-
+collective.com/public_html/tcstaging/wp-content/plugins/seo-by-rank-math-pro/rank-
+math-pro.php): Failed to open stream: No such file or directory in 
+/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-
+includes/functions.php on line 6910 
+[07-Aug-2026 14:15:07 UTC] PHP Fatal error:  Uncaught Error: Class 
+"ActionScheduler_Compatibility" not found in /home/u867403816/domains/truth-
+collective.com/public_html/tcstaging/wp-
+content/plugins/hostinger/vendor/woocommerce/action-
+scheduler/classes/ActionScheduler_QueueRunner.php:149 
+Stack trace: 
+#0 /home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-
+includes/class-wp-hook.php(341): ActionScheduler_QueueRunner->run() 
+#1 /home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-
+includes/class-wp-hook.php(365): WP_Hook->apply_filters() 
+#2 /home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-
+includes/plugin.php(570): WP_Hook->do_action() 
+#3 /home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-
+cron.php(191): do_action_ref_array() 
+#4 {main} 
+  thrown in /home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-
+content/plugins/hostinger/vendor/woocommerce/action-
+scheduler/classes/ActionScheduler_QueueRunner.php on line 149 
+[07-Aug-2026 14:15:07 UTC] PHP Warning:  include(/home/u867403816/domains/truth-
+collective.com/public_html/tcstaging/wp-content/plugins/kadence-
+blocks/includes/resources/Shutdown/Shutdown_Collection.php): Failed to open stream: 
+No such file or directory in /home/u867403816/domains/truth-
+collective.com/public_html/tcstaging/wp-content/plugins/code-
+snippets/vendor/composer/ClassLoader.php on line 576 
+[07-Aug-2026 14:15:07 UTC] PHP Warning:  include(): Failed opening 
+'/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-
+content/plugins/kadence-
+
+--- page 7 ---
+blocks/vendor/composer/../../includes/resources/Shutdown/Shutdown_Collection.php' 
+for inclusion (include_path='/home/u867403816/domains/truth-
+collective.com/public_html/tcstaging/wp-content/plugins/10web-
+manager/vendor/pear/pear_exception:/home/u867403816/domains/truth-
+collective.com/public_html/tcstaging/wp-content/plugins/10web-
+manager/vendor/pear/console_getopt:/home/u867403816/domains/truth-
+collective.com/public_html/tcstaging/wp-content/plugins/10web-
+manager/vendor/pear/pear-core-minimal/src:/home/u867403816/domains/truth-
+collective.com/public_html/tcstaging/wp-content/plugins/10web-
+manager/vendor/pear/archive_tar:.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share
+/php:/usr/share/pear:/usr/share/php') in /home/u867403816/domains/truth-
+collective.com/public_html/tcstaging/wp-content/plugins/code-
+snippets/vendor/composer/ClassLoader.php on line 576 
+[07-Aug-2026 14:15:07 UTC] PHP Warning:  include(/home/u867403816/domains/truth-
+collective.com/public_html/tcstaging/wp-content/plugins/kadence-
+blocks/includes/resources/Shutdown/Shutdown_Collection.php): Failed to open stream: 
+No such file or directory in /home/u867403816/domains/truth-
+collective.com/public_html/tcstaging/wp-content/plugins/code-
+snippets/vendor/composer/ClassLoader.php on line 576 
+[07-Aug-2026 14:15:07 UTC] PHP Warning:  include(): Failed opening 
+'/home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-
+content/plugins/kadence-
+blocks/vendor/composer/../../includes/resources/Shutdown/Shutdown_Collection.php' 
+for inclusion (include_path='/home/u867403816/domains/truth-
+collective.com/public_html/tcstaging/wp-content/plugins/10web-
+manager/vendor/pear/pear_exception:/home/u867403816/domains/truth-
+collective.com/public_html/tcstaging/wp-content/plugins/10web-
+manager/vendor/pear/console_getopt:/home/u867403816/domains/truth-
+collective.com/public_html/tcstaging/wp-content/plugins/10web-
+manager/vendor/pear/pear-core-minimal/src:/home/u867403816/domains/truth-
+collective.com/public_html/tcstaging/wp-content/plugins/10web-
+manager/vendor/pear/archive_tar:.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share
+/php:/usr/share/pear:/usr/share/php') in /home/u867403816/domains/truth-
+collective.com/public_html/tcstaging/wp-content/plugins/code-
+snippets/vendor/composer/ClassLoader.php on line 576 
+
+--- page 8 ---
+[07-Aug-2026 14:15:07 UTC] PHP Fatal error:  Uncaught 
+KadenceWP\KadenceBlocks\lucatume\DI52\ContainerException: Parameter $collection is 
+not optional and its type (KadenceWP\KadenceBlocks\Shutdown\Shutdown_Collection) 
+cannot be resolved to a concrete class. in /home/u867403816/domains/truth-
+collective.com/public_html/tcstaging/wp-content/plugins/kadence-blocks/vendor/vendor-
+prefixed/lucatume/di52/src/Builders/Parameter.php:156 
+Stack trace: 
+#0 /home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-
+content/plugins/kadence-blocks/vendor/vendor-
+prefixed/lucatume/di52/src/Builders/ClassBuilder.php(204): 
+KadenceWP\KadenceBlocks\lucatume\DI52\Builders\Parameter->getDefaultValueOrFail() 
+#1 /home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-
+content/plugins/kadence-blocks/vendor/vendor-
+prefixed/lucatume/di52/src/Builders/ClassBuilder.php(127): 
+KadenceWP\KadenceBlocks\lucatume\DI52\Builders\ClassBuilder->resolveParameter() 
+#2 /home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-
+content/plugins/kadence-blocks/vendor/vendor-
+prefixed/lucatume/di52/src/Builders/ClassBuilder.php(98): 
+KadenceWP\KadenceBlocks\lucatume\DI52\Builders\ClassBuilder-
+>resolveConstructorParameters() 
+#3 /home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-
+content/plugins/kadence-blocks/vendor/vendor-
+prefixed/lucatume/di52/src/Builders/Resolver.php(212): 
+KadenceWP\KadenceBlocks\lucatume\DI52\Builders\ClassBuilder->build() 
+#4 /home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-
+content/plugins/kadence-blocks/vendor/vendor-
+prefixed/lucatume/di52/src/Builders/Resolver.php(192): 
+KadenceWP\KadenceBlocks\lucatume\DI52\Builders\Resolver->resolveUnbound() 
+#5 /home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-
+content/plugins/kadence-blocks/vendor/vendor-
+prefixed/lucatume/di52/src/Container.php(703): 
+KadenceWP\KadenceBlocks\lucatume\DI52\Builders\Resolver->resolve() 
+
+--- page 9 ---
+#6 /home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-
+includes/class-wp-hook.php(341): KadenceWP\KadenceBlocks\lucatume\DI52\Container-
+>KadenceWP\KadenceBlocks\lucatume\DI52\{closure}() 
+#7 /home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-
+includes/class-wp-hook.php(365): WP_Hook->apply_filters() 
+#8 /home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-
+includes/plugin.php(522): WP_Hook->do_action() 
+#9 /home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-
+includes/load.php(1308): do_action() 
+#10 [internal function]: shutdown_action_hook() 
+#11 {main} 
+  thrown in /home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-
+content/plugins/kadence-blocks/vendor/vendor-
+prefixed/lucatume/di52/src/Builders/Parameter.php on line 156 
+[07-Aug-2026 15:31:32 UTC] PHP Fatal error:  Uncaught InvalidArgumentException: 
+Unidentified action 27828: we were unable to mark this action as having failed. It may may 
+have been deleted by another process. in /home/u867403816/domains/truth-
+collective.com/public_html/tcstaging/wp-
+content/plugins/hostinger/vendor/woocommerce/action-scheduler/classes/data-
+stores/ActionScheduler_DBStore.php:1232 
+Stack trace: 
+#0 /home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-
+content/plugins/hostinger/vendor/woocommerce/action-
+scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(135): 
+ActionScheduler_DBStore->mark_failure() 
+#1 /home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-
+content/plugins/hostinger/vendor/woocommerce/action-
+scheduler/classes/abstracts/ActionScheduler_Abstract_QueueRunner.php(113): 
+ActionScheduler_Abstract_QueueRunner->handle_action_error() 
+#2 /home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-
+content/plugins/hostinger/vendor/woocommerce/action-
+scheduler/classes/ActionScheduler_QueueRunner.php(188): 
+ActionScheduler_Abstract_QueueRunner->process_action() 
+
+--- page 10 ---
+#3 /home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-
+content/plugins/hostinger/vendor/woocommerce/action-
+scheduler/classes/ActionScheduler_QueueRunner.php(158): 
+ActionScheduler_QueueRunner->do_batch() 
+#4 /home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-
+includes/class-wp-hook.php(341): ActionScheduler_QueueRunner->run() 
+#5 /home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-
+includes/class-wp-hook.php(365): WP_Hook->apply_filters() 
+#6 /home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-
+includes/plugin.php(522): WP_Hook->do_action() 
+#7 /home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-
+content/plugins/hostinger/vendor/woocommerce/action-
+scheduler/classes/ActionScheduler_AsyncRequest_QueueRunner.php(48): do_action() 
+#8 /home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-
+content/plugins/seo-by-rank-math/vendor/a5hleyrich/wp-background-
+processing/classes/wp-async-request.php(170): 
+ActionScheduler_AsyncRequest_QueueRunner->handle() 
+#9 /home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-
+includes/class-wp-hook.php(341): WP_Async_Request->maybe_handle() 
+#10 /home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-
+includes/class-wp-hook.php(365): WP_Hook->apply_filters() 
+#11 /home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-
+includes/plugin.php(522): WP_Hook->do_action() 
+#12 /home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-
+admin/admin-ajax.php(192): do_action() 
+#13 {main} 
+  thrown in /home/u867403816/domains/truth-collective.com/public_html/tcstaging/wp-
+content/plugins/hostinger/vendor/woocommerce/action-scheduler/classes/data-
+stores/ActionScheduler_DBStore.php on line 1232 
+[08-Aug-2026 17:29:01 UTC] WordPress database error Unknown column 'meta_id' in 
+'SELECT' for query SELECT meta_id, meta_value FROM wp_usermeta WHERE post_id = 1 
+AND meta_key LIKE 'rank\\_math\\_schema%' made by require('wp-blog-header.php'), wp, 
+
+--- page 11 ---
+WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook-
+>do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, 
+WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, 
+RankMath\Rest\Shared->update_metadata, RankMath\Schema\DB::get_schemas, 
+RankMath\Admin\Database\Query_Builder->get, 
+RankMath\Admin\Database\Query_Builder->get_results, 
+RankMath\Admin\Database\Query_Builder->run 
+[19-Aug-2026 14:28:11 UTC] WordPress database error Unknown column 'meta_id' in 
+'SELECT' for query SELECT meta_id, meta_value FROM wp_usermeta WHERE post_id = 1 
+AND meta_key LIKE 'rank\\_math\\_schema%' made by require('wp-blog-header.php'), wp, 
+WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook-
+>do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, 
+WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, 
+RankMath\Rest\Shared->update_metadata, RankMath\Schema\DB::get_schemas, 
+RankMath\Admin\Database\Query_Builder->get, 
+RankMath\Admin\Database\Query_Builder->get_results, 
+RankMath\Admin\Database\Query_Builder->run 
+[01-Oct-2026 14:15:13 UTC] Cron reschedule event error for hook: 
+mnx_versions_cron_event, Error code: invalid_schedule, Error message: Event schedule 
+does not exist., Data: {"schedule":"mnx_ten_minutes" , "args":[], "interval":600} 
+[10-Oct-2026 12:05:40 UTC] WordPress database error Unknown column 'meta_id' in 
+'SELECT' for query SELECT meta_id, meta_value FROM wp_usermeta WHERE user_id = 1 
+AND meta_key LIKE 'rank\\_math\\_schema%' made by require('wp-blog-header.php'), wp, 
+WP->main, WP->parse_request, do_action_ref_array('parse_request'), WP_Hook-
+>do_action, WP_Hook->apply_filters, rest_api_loaded, WP_REST_Server->serve_request, 
+WP_REST_Server->dispatch, WP_REST_Server->respond_to_request, 
+RankMath\Rest\Shared->update_metadata, RankMath\Schema\DB::get_schemas, 
+RankMath\Admin\Database\Query_Builder->get, 
+RankMath\Admin\Database\Query_Builder->get_results, RankMath\Admin\Databa 

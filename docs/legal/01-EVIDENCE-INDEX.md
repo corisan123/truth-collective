@@ -86,6 +86,12 @@ Do **not** restore these into staging or live.
 | B-04 | `docs/legal/02-COUNSEL-ARGUMENT-BACKUPS-AND-REBUTTALS-2026-10-12.md` | 12 Oct 2026 | Ranked damaging evidence, 30 Sep rebuttals, backup-wipe theory with truth limits. Not a verdict. |
 | B-05 | Drive `backup_2026-07-12-1930_The_Truth_Collective_a2f57e449b46-db.gz` | Filename date 12 Jul 2026 19:30 | Updraft **database** `.gz`. SHA256 `D2F31A9413BE076C04028C79C3BF2A0B875DEBD7545CA6DDE2E36296C777D581`. Path `C:\Users\dreid\My Drive\UpdraftPlus\`. File not opened in this run. |
 | B-06 | Drive `backup_2026-07-23-1930_The_Truth_Collective_c9570a105596-db.gz` | Filename date 23 Jul 2026 19:30 | Updraft **database** `.gz`, last hashed DB before 25 Jul migrate. SHA256 `03FD3A90954285632778C47B0B033E66171C3263117114971EE4D85DAD04284A`. File not opened in this run. Transcript: `docs/legal/exhibits/exhibit-updraft-db-gz-powershell-hashes-2026-10-12.txt`. |
+| P-01 | `docs/legal/source-pdfs/Cursor-BDM-summary-of-10web-destruction-2026-10-07.pdf` | 7 Oct 2026 | Same BDM testimony as PR #6 T-05. 65-plus hub/child/sub-child URLs; sitewide damages; 10Web demanded WP admin. |
+| P-02 | `docs/legal/source-pdfs/Systems-copied-with-10web-found-2026-10-10.pdf` | 10 Oct 2026 13:07 UTC | WordPress Site Health for `tcstaging`. **10WEB manager v1.20.21 Active.** 19 plugins. Not a CSS-copy dump. |
+| P-03 | `docs/legal/source-pdfs/WP-error-debug-log-2026-10-10.pdf` | Export 10 Oct 2026 | `tcstaging` error_log. 10Web Manager REST 25 Jul and 3 Aug; 7 Aug missing Rank Math Pro / Kadence files. |
+| P-04 | `docs/legal/source-pdfs/Hostinger-error-log-2026-10-10.pdf` | Export 10 Oct 2026 | Same log family as P-03 (11 pages). |
+| P-05 | `docs/legal/source-pdfs/Hostinger-raw-backup-history-2026-10-10.pdf` | Dump 10 Oct 2026 | Updraft known backups: 16 timestamps, oldest 15 Sep 2026. No June/July/August. Drive Jul hashes absent. |
+| P-06 | `docs/legal/03-CORRECTIONS-SCALE-MISSING-PAGES-ACTOR-2026-10-12.md` | 12 Oct 2026 | Replaces understated “65 pages / Tech Hub only” language. US Letter scale; missing children; 10Web-only migrate-window vendor. |
 
 ---
 
@@ -111,5 +117,7 @@ Put files in `Documents\TC-10WEB-LAWSUIT\01-source-pdfs\` then add ID, date, 4-l
 | G-65 | 24 Jul 16:59 boxed 10,774 KB zip (or `-db` / `-plugins` / `-themes` from that timestamp) | **GAP** — screenshot exists (B-03); file not yet uploaded |
 | G-66 | 30 Jun 19:30 matching `-db` to pair with B-02 | **GAP** |
 | G-67 | Hostinger `wp-content/updraft/` listing to compare SHA256 of B-05 / B-06 | **GAP** |
+| G-68 | Print-to-PDF of one heavy pre-migration catalog URL (Computers) to count US Letter pages | **GAP** — asked 12 Oct |
+| G-69 | Pre-migration list of all 65-plus WordPress titles and parents (sitemap or Pages export) | **GAP** — asked 12 Oct |
 
 When a GAP file is saved, do not rewrite the proof outline’s theory. Add the row and, if it **changes** a finding number in `00-DEMONSTRATIVE-PROOF-OUTLINE.md` §2, append a dated note.
