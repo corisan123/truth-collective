@@ -1,0 +1,16 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+PS C:\WINDOWS\system32> Get-ChildItem "C:\Users\dreid\My Drive\UpdraftPlus\*.gz" | Get-FileHash -Algorithm SHA256 | Format-List
+
+
+Algorithm : SHA256
+Hash      : D2F31A9413BE076C04028C79C3BF2A0B875DEBD7545CA6DDE2E36296C777D581
+Path      : C:\Users\dreid\My Drive\UpdraftPlus\backup_2026-07-12-1930_The_Truth_Collective_a2f57e449b46-db.gz
+
+Algorithm : SHA256
+Hash      : 03FD3A90954285632778C47B0B033E66171C3263117114971EE4D85DAD04284A
+Path      : C:\Users\dreid\My Drive\UpdraftPlus\backup_2026-07-23-1930_The_Truth_Collective_c9570a105596-db.gz
+
+Transcribed 12 October 2026 from owner paste into Cloud Agent bc-3c3a1616-bd53-407e-8562-11da050498f8.
+Do not restore these archives into staging or live.

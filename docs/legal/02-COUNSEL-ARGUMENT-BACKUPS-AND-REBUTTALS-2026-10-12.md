@@ -130,8 +130,8 @@ Treat as **owner testimony** until File Manager listings or restore-history expo
    | Timestamp on disk | Visible sizes (KB) | Likely Updraft role (by size, names truncated) |
    | --- | --- | --- |
    | 24 Jul 2026 5:00-5:01 PM (`1659`) | 392,197; 392,691; **10,774 (boxed)**; 50,111 | two ~383 MB = uploads splits; 50 MB = likely `db`; 10.5 MB = likely `plugins` (not this 174 KB `others`) |
-   | 23 Jul 2026 7:30 PM | 19,827 | one slice of a smaller set |
-   | 12 Jul 2026 7:30 PM | 17,391 | one slice of a smaller set |
+   | 23 Jul 2026 7:30 PM | 19,827 | **named:** Drive `-db.gz` `c9570a105596` (see F17) |
+   | 12 Jul 2026 7:30 PM | 17,391 | **named:** Drive `-db.gz` `a2f57e449b46` (see F17) |
    | 30 Jun 2026 7:30-8:00 PM (`1930`) | several 330,566-406,397; 10,774; 47,132 | uploads splits; 10.5 MB likely `plugins`; ~46 MB likely `db` |
 
    Exhibit: `docs/legal/exhibits/exhibit-pc-updraft-folder-2026-10-12.png`.
@@ -146,17 +146,25 @@ Treat as **owner testimony** until File Manager listings or restore-history expo
 
 5. **10Web had the tools.** WP admin + Updraft + 10WEB Manager is enough to create new archives, run restores, and write `wp-content`. Their letter confirms Updraft use.
 
+6. **Drive copies of two pre-migrate databases are now fingerprinted.** PowerShell SHA256 on `C:\Users\dreid\My Drive\UpdraftPlus\*.gz` found only:
+
+   - 12 Jul 19:30 `-db.gz` `a2f57e449b46` → `D2F31A9413BE076C04028C79C3BF2A0B875DEBD7545CA6DDE2E36296C777D581`
+   - 23 Jul 19:30 `-db.gz` `c9570a105596` → `03FD3A90954285632778C47B0B033E66171C3263117114971EE4D85DAD04284A`
+
+   Those hashes are how counsel later compares Drive vs Hostinger. Same hash = same bytes. Different hash = rewritten file. Missing server file = Drive copy is the remaining original for that night. The `.gz` files themselves have **not** been opened in this run, so page/SKU content inside them is not yet counted. 30 Jun and 24 Jul DB slices did not appear in `*.gz` (they are likely `.zip`).
+
 ### 4.3 Two non-exclusive explanations (state both)
 
 **Explanation A - snapshots of a already-written tree.** 10Web/Manager/Migration Assistant/AI wrote live staging. Later Hostinger and Updraft copies captured the damaged state. Restoring them reproduces the damage. Local 24 July 16:59 archives, if still healthy, would **differ** from what the server restored in early August.
 
 **Explanation B - server backup files replaced or deleted.** Healthy pre-25 July archives on Hostinger/Updraft were removed or overwritten so the restore UI only offered damaged copies. Local PC copies would then be the only remaining healthy set.
 
-A and B can both be true. This agent has **not** opened a 24 July `-db` or the boxed 10,774 KB file, so it cannot yet say the local 24 July set is healthy. It **can** say: local pre-25 July Updraft sets exist; server restores did not return the working site; 10Web used Updraft while they had WP admin.
+A and B can both be true. This agent has **not** opened the 12 Jul or 23 Jul `-db.gz` files, a 24 July `-db`, or the boxed 10,774 KB file, so it cannot yet say those archives are healthy migrate-source SQL. It **can** say: local and Drive pre-25 July Updraft database copies exist and now have SHA256 fingerprints; server restores did not return the working site; 10Web used Updraft while they had WP admin.
 
 ### 4.4 Do not say these sentences
 
 - "This 174 KB zip proves 10Web wiped every backup."
+- "The Drive SHA256 hashes prove 10Web deleted the server files" (they fingerprint local copies; comparison to the server has not been run).
 - "10Web deleted Hostinger's own snapshot system" (not shown; Hostinger restore is a separate product from Updraft).
 - "No copies exist anywhere" (false: they exist on the PC).
 - "The 24 July 392 MB files are proven healthy migrate-source" (not opened).
@@ -189,25 +197,27 @@ If counsel bills (Hostinger restore + Cursor rebuild) as 10Web destruction, 10We
 - 10Web later denied fault in language that omits their own access demand.
 - Restores from the copies then present on the **server** did not return the working site.
 - Local Updraft archives dated 30 June, 12 July, 23 July, and 24 July 2026 still exist on Daniel's PC.
+- Google Drive holds SHA256-fingerprinted Updraft **database** copies from 12 July and 23 July 2026.
 
 **Not definitive (yet):**
 
 - Identity of who deleted `backup_2026-07-28-1945_…-db.gz` on the server.
+- That the SQL inside the 12 Jul / 23 Jul `-db.gz` files is the healthy migrate-source (not opened).
 - Byte-level proof that the local 24 July uploads zips are the healthy migrate-source.
 - Legal liability, damages dollars, or "culpability" as a verdict.
 
-Closing those gaps is mechanical: send the boxed 24 July 10,774 KB zip or a `-db` from the same timestamp; export Hostinger restore history; screenshot `wp-content/updraft` on the server if anything remains; Print-PDF the July Cloud Agent thread.
+Closing those gaps is mechanical: upload the 23 July `-db.gz` for offline SQL inspection; hash the Drive `*.zip` files; export Hostinger restore history; screenshot `wp-content/updraft` on the server if anything remains; Print-PDF the July Cloud Agent thread.
 
 ---
 
 ## 7. Next zip (one file, do not restore)
 
-Best next upload, under the 20-file cap:
+Best next send, under the 20-file cap:
 
-1. The **boxed** `backup_2026-07-24-1659_The_Truth_Collective_…` that is **10,774 KB**, or  
-2. Any file from that same timestamp whose name ends in `-db`, `-plugins`, or `-themes`, or  
-3. The matching `-db` from `2026-06-30-1930` so this `others` slice has a database to pair with.
+1. Drive file `backup_2026-07-23-1930_The_Truth_Collective_c9570a105596-db.gz` (last hashed DB before migrate). Offline SQL read only. **Do not restore.**  
+2. Or paste the `*.zip` SHA256 list from the same Drive folder (24 Jul and 30 Jun live there if they were copied).  
+3. Still useful: the boxed 24 Jul **10,774 KB** archive, or that set’s `-db`.
 
-Skip the ~392 MB files until a small slice confirms the set is a real Updraft database / plugin tree. Those large files are the media. They are worth it after the `db` is identified.
+Skip the ~392 MB files until a database slice from that timestamp is identified.
 
 Stay on this Cloud run for backup forensics. The destruction-conversation files (BDM testimony, Nazeli PDFs) live on PR #6 / `https://cursor.com/agents/bc-9792f378-7057-4b87-8755-73c8af5e2672`.
