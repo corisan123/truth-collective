@@ -2,6 +2,8 @@
 
 **Safest rule:** do not restore these onto Hostinger (live or staging) yet. Copy one complete night into a new folder. Peek. Only then, if you want to *see* the site, restore that copy into Local WP on the PC.
 
+To **find** copies on the CPU, Drive, and jump drive, use `diagnostics/FIND-CLEAN-JULY-BACKUPS-ON-CPU-AND-USB-2026-10-12.md`. Notepad++ themes and Code Snippets CSS are not backups.
+
 Updraft does not save extra websites when a date has more than two files. It saves **one night as several slices**: `-db`, `-uploads` (sometimes two), `-plugins`, `-themes`, `-others`. The 12 Oct Explorer shot of 24 July is four files with the **same** stamp `backup_2026-07-24-1659_`: two ~392 MB uploads, one 10,774 KB plugins zip, one 50,111 KB database zip. 23 July in that shot is one 19,827 KB archive; matching slices may still sit in Drive as `.gz`. Mix 23 July database with 24 July photos and you get the same class of damage as the August uploads-only restore.
 
 **Group by the full timestamp in the filename** (`2026-07-23-1930` vs `2026-07-24-1659`), not by the calendar day Explorer shows.
