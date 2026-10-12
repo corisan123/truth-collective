@@ -22,6 +22,34 @@
 
 ---
 
+## 0. Authorship (owner correction 12 October 2026)
+
+Daniel: **Copilot and Copilot Task wrote the governance content first. Cursor Desktop afterwards wrote the complex JS and HTML engine.**
+
+That matches Standing Brief §12, written 8 August 2026, before this Cloud run:
+
+| Lane | Assigned work |
+| --- | --- |
+| Copilot Edge | Quantitative / qualitative engineering evaluation **documents** and SME spec sheets |
+| Copilot Task | Interactive Master Binder **UI** (example: Premium Display Intelligence) |
+| **Cursor** | Complex **HTML/JS** so Daniel enters product URL or ID → summary + technical TC Grade (not vibe scoring) |
+
+Do not treat the 4 September Copilot.fun save as the whole engine, and do not treat Copilot as the author of the later Desktop coding.
+
+| Layer | Who | Where it is |
+| --- | --- | --- |
+| Governance binder, Stage I–VI PDFs/docx, Compliance Division | Copilot / Task, then filed in git | `docs/brand-references/selection-standards/`, `docs/legal/source-pdfs/` |
+| Copilot.fun “TC Unified Governance Binder” page (form + `AppSDK.ai.chat`) | Task-era interactive face, browser-saved 4 Sep 2026 | `corisan123/unified-governance-system.html` |
+| Excel Evaluation Engine v1 | Cursor **Cloud** Agent 3 Aug 2026 (`cursoragent@cursor.com`) | `evaluation-engine/TC_Evaluation_Engine_v1.xlsx` |
+| Complex JS/HTML URL-or-ID engine | **Cursor Desktop** (owner). Standing Brief paused it after the crash | **Not** in `truth-collective` as thousands of lines. **Not** the 1.5 MB Copilot Vite file. 11 Aug recovery already recorded Daniel could not locate that Cursor code in this repo |
+| ISI Consulting diagnostic engines (Monte Carlo, `math.js`, engine-bus, 91 JS files, ~579 KB) | Cursor Desktop, **different company** | `corisan123/ISI-CONSULTING-FULL`. ISI `HANDOFF.md` (23 Sep 2026) forbids mixing that window with Truth Collective and names a separate canvas “TC evaluation layer map” |
+
+Counsel sentence:
+
+> Copilot and Task wrote the governance standards. Cursor Desktop was then assigned the complex JS/HTML evaluation engine. A Copilot.fun save from 4 September still scores by calling Microsoft Copilot. That save is not proof Desktop never wrote a local engine. The Desktop TC engine files are not in the Truth Collective git checkout this agent has. A large Cursor Desktop quantitative JS tree exists for ISI Consulting and is a separate product.
+
+---
+
 ## 1. What `unified-governance-system_files` mapped to in this chat
 
 Six documents uploaded 12 October 2026 17:14. Same bytes as files already ingested:
@@ -142,15 +170,17 @@ Use this, not a shrug:
 > The unified governance system is a written 17-document binder (August 2026 v2.1), hub Stage documents, a manual master workbook, and an Excel Evaluation Engine v1 that emits TC Grades from weighted engineering or 21-point editorial scores. The live-site HTML/JS engine that was supposed to take a URL or ID and write a public grade tile was paused after the 10Web crash and is not in this git checkout. Product pages, catalogs, and overlay/grade markup were destroyed or gutted sitewide. Without those pages, and without the runtime on the site, the evaluation system has nowhere to attach. That labor (owner: about 110 days, plus the binder and workbooks) is wasted if the site cannot be finished.
 
 Do not write: “There was no evaluation engine.”  
-Do not write: “This repo contains thousands of JS engine lines” unless the `unified-governance-system_files` zip actually contains them.  
-Do not write: “quantum mathematics” as a repo fact; it is not in the binder text scanned today.
+Do not write: “Copilot wrote the JS engine.” Copilot/Task wrote the **content**; Cursor Desktop was assigned the **coding**.  
+Do not write: “The 1.5 MB `.js.download` file is Cursor Desktop’s TC engine.” That file is Copilot’s host.  
+Do not write: “ISI’s Monte Carlo kernel is the Truth Collective engine” unless Daniel says those files were also for TC. ISI’s own handoff says they are not.  
+Do not write: “quantum mathematics” as a string found in the TC binder; it is not in the binder text scanned today.
 
 ---
 
 ## 5. What to send next (specific)
 
-1. Zip of `unified-governance-system.html` **and** `unified-governance-system_files/` (the browser-complete save), or any folder that actually holds the JS/HTML runtime.  
-2. Any Cursor/Copilot export named like `engine`, `grade`, `scorer`, `.js`, `.html` from the 110-day build.  
-3. If “quantum advanced mathematics” is a separate paper or notebook, send that filename.
+1. The **Cursor Desktop** Truth Collective engine folder (JS/HTML that takes URL or ID / UL number and emits a TC Grade **without** `AppSDK.ai.chat`). Path on the PC, a zip, or the Desktop chat that built it.  
+2. Confirm whether ISI-CONSULTING-FULL (`internal/js/math.js`, engine-bus) is **only** ISI, or was also meant as the TC quantitative kernel.  
+3. If “quantum advanced mathematics” is a named file from the Desktop TC engine, send that filename.
 
 Do not restore Updraft archives onto staging while hunting this.

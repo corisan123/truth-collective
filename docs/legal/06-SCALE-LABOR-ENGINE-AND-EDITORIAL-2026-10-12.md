@@ -65,7 +65,9 @@ That is part of launch-ready work. It is not captured by overlay-class counts.
 
 ## 4. The evaluation engine (the work this chat had not accounted for)
 
-Daniel: a one-of-a-kind **unified governance evaluation system**, about **110 days** to build, thousands of lines of HTML and JavaScript, category-specific scoring so a book is not graded like an AI computer or a tablet. Public face of the site: compassionate, evidence-based, not copied star ratings or paid guesswork. Internal 21-point metric is **Stage III literature only**, not the whole professed system.
+Daniel: a one-of-a-kind **unified governance evaluation system**, about **110 days** to build, thousands of lines of HTML and JavaScript, category-specific scoring so a book is not graded like an AI computer or a tablet.
+
+**Authorship (owner, 12 Oct 2026):** Copilot and Copilot Task wrote the **governance content** first. **Cursor Desktop** afterwards wrote the **complex JS and HTML engine**. That is the Standing Brief §12 split. The 4 September Copilot.fun save is the Task-era interactive binder; it is not the Desktop engine. Scan: `08-EVALUATION-ENGINE-REPO-SCAN-2026-10-12.md` §0. Public face of the site: compassionate, evidence-based, not copied star ratings or paid guesswork. Internal 21-point metric is **Stage III literature only**, not the whole professed system.
 
 **What this turn ingested (snapshots, not the full JS runtime):**
 
