@@ -145,3 +145,40 @@ If Local asks for a site URL, keep the Local URL. Do not type `truth-collective.
 - Or the **23 July `-db`** file only (~19 MB) if search in step 3 looks dense.  
 
 Do not send 392 MB uploads here. Do not restore onto staging until this Cloud run has seen the name list and, ideally, the 23 July database.
+
+---
+
+## 6. Why these CPU files are not on Hostinger, and which row to open
+
+The five rows in the 12 Oct Explorer window (page 1 of 13, 23 July highlighted) are **copies you saved off the server**. Hostinger’s live Updraft list is a **rotating slot** of recent archives in `wp-content/updraft/`. Those two places are not the same pile.
+
+**Why Hostinger no longer lists 23 July / 24 July**
+
+- Those names are UpdraftPlus archives (`backup_YYYY-MM-DD-HHMM_The_Truth_Collective_…`). On the server they live only while the plugin still keeps that timestamp.
+- Updraft keeps a limited number of backups. A new save drops the oldest.
+- 10Web’s 30 Sep letter admits they **used Updraft to create a new backup** during the migrate window. That new save is enough to push a healthy July copy out of the slot.
+- After about 3 August the same plugin kept saving the **already damaged** site on a schedule. Each of those also rotated out older files.
+- The 10 Oct Hostinger/Updraft dump lists 16 timestamps. **Oldest on the server: 15 September 2026.** No June, July, or August filenames. The Drive SHA256 of this 23 July `-db.gz` is **not** in that dump.
+- Your CPU/Drive copies do not rotate. That is why you still have 19,827 KB from 23 July 7:30 PM and the four 24 July 5:00 PM files, and Hostinger does not.
+
+What this does **not** require: a proof that 10Web clicked Delete on each Hostinger file. Replacement by new saves is enough. Hostinger’s separate “Website Backup” product is also not these five files.
+
+**Why the sizes differ (this exact window)**
+
+| Row | Date in Explorer | Size | What it is | Open as a website? |
+| --- | --- | --- | --- | --- |
+| Highlighted | 7/23/2026 7:30 PM | 19,827 KB | **Database** (`-db.gz`) for `2026-07-23-1930` | No. Peek SQL only. |
+| 2 | 7/24/2026 5:00 PM | 50,111 KB | **Database** for `2026-07-24-1659` | Only together with the three files below. |
+| 3 | 7/24/2026 5:00 PM | 10,774 KB | **Plugins** | No, not alone. |
+| 4 | 7/24/2026 5:01 PM | 392,691 KB | **Uploads** (photos) | No, not alone. |
+| 5 | 7/24/2026 5:01 PM | 392,197 KB | **Uploads** part 2 | No, not alone. |
+
+They are different sizes because they are different **parts** of a backup, the way a database is smaller than a photo library. The two ~392 MB files are almost the same size because they are two halves of media, not two sites.
+
+**Which one to open**
+
+1. **First:** the highlighted 19,827 KB file (`c9570a105596-db.gz`). 7-Zip → inner `.sql` → search `tc-overlay-card` / `amzn.to`. That answers “are catalogs in the last hashed night before migrate.”
+2. **To see a website:** all **four** 24 July rows together in Local WP (50,111 + 10,774 + 392,691 + 392,197). Same stamp `1659`. Never one of the 392 MB files by itself.
+3. **Do not** pour the 23 July database into the 24 July photos. That mix already crushed Computers once.
+
+If 23 July SQL is dense, attach that one 19,827 KB file here. Leave the 392 MB files on the PC.
